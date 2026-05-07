@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="MerchantName.HeaderText" xml:space="preserve">
+    <value>Nombre del comerciante (*)</value>
+  </data>
+  <data name="MerchantName.HeaderTooltip" xml:space="preserve">
+    <value>Nombre del Comerciante</value>
+  </data>
+  <data name="MerchantName.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="EvenDollarTransactionPercent.HeaderText" xml:space="preserve">
+    <value>=%</value>
+  </data>
+  <data name="EvenDollarTransactionPercent.HeaderTooltip" xml:space="preserve">
+    <value>% de transacciones de números enteros en dólares</value>
+  </data>
+  <data name="EvenDollarTransactionPercent.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="DuplicateDollarTransactionPercent.HeaderText" xml:space="preserve">
+    <value>% DD</value>
+  </data>
+  <data name="DuplicateDollarTransactionPercent.HeaderTooltip" xml:space="preserve">
+    <value>% de transacciones duplicadas de dólares</value>
+  </data>
+  <data name="DuplicateDollarTransactionPercent.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="DuplicateBin.HeaderText" xml:space="preserve">
+    <value>DB</value>
+  </data>
+  <data name="DuplicateBin.HeaderTooltip" xml:space="preserve">
+    <value>Bin duplicado</value>
+  </data>
+  <data name="DuplicateBin.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="NegativeBatchCount.HeaderText" xml:space="preserve">
+    <value>#-</value>
+  </data>
+  <data name="NegativeBatchCount.HeaderTooltip" xml:space="preserve">
+    <value>Conteo del lote negativo</value>
+  </data>
+  <data name="NegativeBatchCount.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ZeroBatchCount.HeaderText" xml:space="preserve">
+    <value>#0</value>
+  </data>
+  <data name="ZeroBatchCount.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="TodayVolume.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ReturnPercent.HeaderText" xml:space="preserve">
+    <value>R%</value>
+  </data>
+  <data name="ReturnPercent.HeaderTooltip" xml:space="preserve">
+    <value>% de reembolso</value>
+  </data>
+  <data name="ReturnPercent.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="RiskScore.HeaderText" xml:space="preserve">
+    <value>RS</value>
+  </data>
+  <data name="RiskScore.HeaderTooltip" xml:space="preserve">
+    <value>Calificación de Riesgo</value>
+  </data>
+  <data name="RiskScore.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="SICCode.HeaderText" xml:space="preserve">
+    <value>SIC</value>
+  </data>
+  <data name="SICCode.HeaderTooltip" xml:space="preserve">
+    <value>Código industrial estándar</value>
+  </data>
+  <data name="SICCode.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ProfileDescription.HeaderText" xml:space="preserve">
+    <value>Perfil</value>
+  </data>
+  <data name="ProfileDescription.HeaderTooltip" xml:space="preserve">
+    <value>Descripción del perfil</value>
+  </data>
+  <data name="ProfileDescription.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="VolumePercent.HeaderText" xml:space="preserve">
+    <value>V%</value>
+  </data>
+  <data name="VolumePercent.HeaderTooltip" xml:space="preserve">
+    <value>% de volumen</value>
+  </data>
+  <data name="VolumePercent.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="AverageTicketPercent.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="DeclinedAuthorizationPercent.HeaderText" xml:space="preserve">
+    <value>% DA</value>
+  </data>
+  <data name="DeclinedAuthorizationPercent.HeaderTooltip" xml:space="preserve">
+    <value>% de autorización negada</value>
+  </data>
+  <data name="DeclinedAuthorizationPercent.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="RepeatAuthorizationCount.HeaderText" xml:space="preserve">
+    <value>#RA</value>
+  </data>
+  <data name="RepeatAuthorizationCount.HeaderTooltip" xml:space="preserve">
+    <value>Repetir el conteo de autorización</value>
+  </data>
+  <data name="RepeatAuthorizationCount.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="KeyPercent.HeaderText" xml:space="preserve">
+    <value>% K</value>
+  </data>
+  <data name="KeyPercent.HeaderTooltip" xml:space="preserve">
+    <value>Porcentaje codificado</value>
+  </data>
+  <data name="KeyPercent.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="CheckBoxColumn.HeaderText" xml:space="preserve">
+    <value>Wk</value>
+  </data>
+  <data name="CheckBoxColumn.HeaderTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Wk&lt;/strong&gt;</value>
+  </data>
+  <data name="RQCheckbox.HeaderText" xml:space="preserve">
+    <value>ReC</value>
+  </data>
+  <data name="RQCheckbox.HeaderTooltip" xml:space="preserve">
+    <value>Seleccionar todos los comerciantes (casilla de verificación para asignar)</value>
+  </data>
+  <data name="DetectionQueueRainbowReport_ascx_assignment" xml:space="preserve">
+    <value>Asignación</value>
+    <comment>n</comment>
+  </data>
+  <data name="DetectionQueueRainbowReport_ascx_PV" xml:space="preserve">
+    <value>Violaciones de parámetros</value>
+    <comment>n</comment>
+  </data>
+  <data name="MerchantNumber.HeaderText" xml:space="preserve">
+    <value>Número de Comerciante</value>
+  </data>
+  <data name="MerchantNumber.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MerchantNumber.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="uxReportGridResource1.HierarchySettings.CollapseTooltip" xml:space="preserve">
+    <value>Colapsar</value>
+  </data>
+  <data name="uxReportGridResource1.HierarchySettings.ExpandTooltip" xml:space="preserve">
+    <value>Expandir</value>
+  </data>
+  <data name="uxReportGridResource1.MasterTableView.NoDetailRecordsText" xml:space="preserve">
+    <value>No se encontraron resultados. Ajuste sus criterios de filtrado.</value>
+  </data>
+  <data name="uxReportGridResource1.MasterTableView.NoMasterRecordsText" xml:space="preserve">
+    <value>No se encontraron resultados. Ajuste sus criterios de filtrado.</value>
+  </data>
+  <data name="ASGridBoundColumnCardResource1.Text" xml:space="preserve">
+    <value>Nombre del comerciante (*)</value>
+  </data>
+  <data name="ASGroupViewCards.Text" xml:space="preserve">
+    <value>TARJETAS</value>
+  </data>
+  <data name="ASGroupViewGrids.Text" xml:space="preserve">
+    <value>CUADRÍCULAS</value>
+  </data>
+  <data name="ASCheckBoxResource1.Tooltip" xml:space="preserve">
+    <value>Seleccionar todos los comerciantes (casilla de verificación para asignar)</value>
+  </data>
+  <data name="ContractualVolume.HeaderText" xml:space="preserve">
+    <value>CV %</value>
+  </data>
+  <data name="ContractualVolume.HeaderTooltip" xml:space="preserve">
+    <value>Volumen Contractual %</value>
+  </data>
+  <data name="LiteralResourceCustomize.Text" xml:space="preserve">
+    <value>Personalizar</value>
+  </data>
+  <data name="RulesViolated.HeaderText" xml:space="preserve">
+    <value>PI</value>
+  </data>
+  <data name="RulesViolated.HeaderTooltip" xml:space="preserve">
+    <value>Párametros Violados</value>
+  </data>
+  <data name="TotalOfWorked.HeaderText" xml:space="preserve">
+    <value>#TRBDO</value>
+  </data>
+  <data name="TotalOfWorked.HeaderTooltip" xml:space="preserve">
+    <value>Las veces que han  trabajado en 30 dias</value>
+  </data>
+  <data name="WorkQueueName.HeaderText" xml:space="preserve">
+    <value>WQ</value>
+  </data>
+  <data name="WorkQueueName.HeaderTooltip" xml:space="preserve">
+    <value>WQ asignada</value>
+  </data>
+  <data name="ContractualValuenotBeenProvided_Resource" xml:space="preserve">
+    <value>El valor contractual es cero o no ha sido proporcionado.</value>
+  </data>
+  <data name="Literal7Resource.Text" xml:space="preserve">
+    <value>Refrescar</value>
+  </data>
+  <data name="optRequeuedMerchantResource.Text" xml:space="preserve">
+    <value>Vuelto a colocar en cola</value>
+  </data>
+  <data name="optWIPByMeMerchantResource.Text" xml:space="preserve">
+    <value>Trabajo en curso (TeC) realizado por mí</value>
+  </data>
+  <data name="optWIPByOrthersMerchantResource.Text" xml:space="preserve">
+    <value>Trabajo en curso (TeC) realizado por otros</value>
+  </data>
+  <data name="optWorkedMerchantResource.Text" xml:space="preserve">
+    <value>Trabajado</value>
+  </data>
+  <data name="btnAddToWorkQueueResource.Text" xml:space="preserve">
+    <value>Agregar a la Cola de Trabajos</value>
+  </data>
+  <data name="btnRemoveFromQueueResource.Text" xml:space="preserve">
+    <value>Retirar a la cola de Trabajos</value>
+  </data>
+  <data name="TooltipHeaderText" xml:space="preserve">
+    <value>Trabajo</value>
+  </data>
+  <data name="rm_DetectionQueue_aspx_ColorLegendResource1.Text" xml:space="preserve">
+    <value>Leyenda de Colores</value>
+  </data>
+  <data name="optNotWorkedMerchantResource.Text" xml:space="preserve">
+    <value>Listo para trabajar</value>
+  </data>
+  <data name="optAllMerchantResource.Text" xml:space="preserve">
+    <value>Todos</value>
+  </data>
+  <data name="RefreshSummaryResource.Text" xml:space="preserve">
+    <value>Refrescar</value>
+  </data>
+  <data name="ParametersWorked.HeaderText" xml:space="preserve">
+    <value>#PT</value>
+  </data>
+  <data name="Worked.HeaderText" xml:space="preserve">
+    <value>#TRBDO</value>
+  </data>
+  <data name="ASCheckBoxResource1.Text" xml:space="preserve">
+    <value>Reorganizar todas las colas</value>
+  </data>
+  <data name="AssignmentSummaryResource1.Text" xml:space="preserve">
+    <value>Resumen del Volumen de Asignación</value>
+  </data>
+</root>

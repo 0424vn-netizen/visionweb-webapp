@@ -1,0 +1,857 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnRebindResource2.Text" xml:space="preserve">
+    <value>Rebind</value>
+  </data>
+  <data name="imgCSVResource2.Text" xml:space="preserve">
+    <value>CSV</value>
+  </data>
+  <data name="imgExcelResource2.Text" xml:space="preserve">
+    <value>Excel</value>
+  </data>
+  <data name="imgPDFResource2.Text" xml:space="preserve">
+    <value>PDF</value>
+  </data>
+  <data name="Literal1Resource1.Text" xml:space="preserve">
+    <value>Eligible</value>
+  </data>
+  <data name="Literal2Resource1.Text" xml:space="preserve">
+    <value>Alerted</value>
+  </data>
+  <data name="Literal3Resource1.Text" xml:space="preserve">
+    <value>Worked</value>
+  </data>
+  <data name="Literal4Resource1.Text" xml:space="preserve">
+    <value>Remaining</value>
+  </data>
+  <data name="Literal5Resource1.Text" xml:space="preserve">
+    <value>Distinct Merchant Count</value>
+  </data>
+  <data name="Literal6Resource1.Text" xml:space="preserve">
+    <value>Distinct Merchant Net Amount</value>
+  </data>
+  <data name="Literal8Resource1.Text" xml:space="preserve">
+    <value>Assignments:</value>
+  </data>
+  <data name="Literal9Resource1.Text" xml:space="preserve">
+    <value>EXPORT</value>
+  </data>
+  <data name="PageResource2.Title" xml:space="preserve">
+    <value>Manage Assignments</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_FilterResource1.Text" xml:space="preserve">
+    <value> FILTER</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_GroupByResource1.Text" xml:space="preserve">
+    <value> Group By:</value>
+  </data>
+  <data name="uxActiveResource2.Text" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="uxAllResource2.Text" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="uxBtnSubmitResource2.Text" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="uxExpireResource2.Text" xml:space="preserve">
+    <value>Expired</value>
+  </data>
+  <data name="uxLnkCreateAssignemntResource2.Text" xml:space="preserve">
+    <value>Create New Assignment</value>
+  </data>
+  <data name="uxLnkShowAssignmentProcessingStatusResource2.Text" xml:space="preserve">
+    <value>Show Assignment Processing Status</value>
+  </data>
+  <data name="uxRealSubmitResource2.Text" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="rm_Assignment_Management_js_AssignmentmustSelect" xml:space="preserve">
+    <value>An assignment must be selected.</value>
+  </data>
+  <data name="rm_Assignment_Management_js_DeleteAssignment" xml:space="preserve">
+    <value>Delete Assignment Confirmation\n\n If you delete this assignment, you will lose access to view or work existing merchant alerts for both current and historical Report Dates in the Detection Queue.\n\nAlternatively, you can expire the assignment by editing the Expiration Date. This will stop the assignment from running after the selected date, while preserving access to view and work existing merchant alerts.\n\nAre you sure you want to delete this assignment?</value>
+  </data>
+  <data name="rm_Assignment_Management_js_ExpirationDate" xml:space="preserve">
+    <value>The expiration date must be greater than or equal to today</value>
+  </data>
+  <data name="rm_Assignment_Management_js_GroupmustSelect" xml:space="preserve">
+    <value>A group must be selected.</value>
+  </data>
+  <data name="rm_Assignment_Management_js_UsermustSelect" xml:space="preserve">
+    <value>A user must be selected.</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_cs_AssignmentName" xml:space="preserve">
+    <value>Assignment Name</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_cs_FutureStartDate" xml:space="preserve">
+    <value>Future Start Date</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_cs_Complete" xml:space="preserve">
+    <value>Percent Worked</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_cs_ExpirationDate" xml:space="preserve">
+    <value>Expiration Date</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_cs_First" xml:space="preserve">
+    <value>First</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_cs_Group" xml:space="preserve">
+    <value># Groups</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_cs_Last" xml:space="preserve">
+    <value>Last</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_cs_LastProcStatusDate" xml:space="preserve">
+    <value>Last Proc Status Date</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_cs_MerchantCountAlert" xml:space="preserve">
+    <value>Merchant Count: Alerted</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_cs_MerchantCountTotalMerch" xml:space="preserve">
+    <value>Merchant Count: Eligible</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_cs_Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_cs_Previous" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_cs_ProcStatus" xml:space="preserve">
+    <value>Proc Status</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_cs_TtlUser" xml:space="preserve">
+    <value>Ttl Users</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_cs_Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_cs_Volume" xml:space="preserve">
+    <value>Merchant Count: Net Amount</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_cs_WorkedCount" xml:space="preserve">
+    <value>Worked Count</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_cs_WorkedVolume" xml:space="preserve">
+    <value>Worked Net Amount</value>
+  </data>
+  <data name="rm_Assignment_Management_cs_HeaderExp_NeverExpire" xml:space="preserve">
+    <value>Never Expire</value>
+  </data>
+  <data name="rm_Assignment_Management_cs_HeaderExp_RequeuedCount" xml:space="preserve">
+    <value>Re-queued Count</value>
+  </data>
+  <data name="rm_Assignment_Management_cs_HeaderExp_RequeuedVolume" xml:space="preserve">
+    <value>Re-queued Net Amount</value>
+  </data>
+  <data name="rm_Assignment_Management_js_GridHeaderMerchantCount" xml:space="preserve">
+    <value>Merchant Count</value>
+  </data>
+  <data name="rm_Assignment_Management_js_GridHeaderRe_queued" xml:space="preserve">
+    <value>Re-queued</value>
+  </data>
+  <data name="rm_Assignment_Management_js_GridHeaderWorked" xml:space="preserve">
+    <value>Worked</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_cs_BrowserPages" xml:space="preserve">
+    <value>Browser Pages:</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_cs_Expiration" xml:space="preserve">
+    <value>The expiration date must be greater than or equal to today</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_cs_FoundPageOf" xml:space="preserve">
+    <value>{0} {3} found, page {1} of {2}</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_cs_nodata" xml:space="preserve">
+    <value>No results found. Adjust your filtering criteria.</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_cs_onlygroup" xml:space="preserve">
+    <value>Group found</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_cs_groups" xml:space="preserve">
+    <value>Groups found</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_cs_TextDelete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_cs_onlyuser" xml:space="preserve">
+    <value>User found</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_cs_users" xml:space="preserve">
+    <value>Users found</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_img_alt1" xml:space="preserve">
+    <value>Click to open Calendar popup</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_img_alt1_startDate" xml:space="preserve">
+    <value>Click to open Calendar popup</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_img_icon_future_startDate" xml:space="preserve">
+    <value>This assignment is scheduled to start in the future. It is currently not active.</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_ReportTitleResource1.ReportTitle" xml:space="preserve">
+    <value>Manage Assignments</value>
+  </data>
+  <data name="rm_Assignment_Management_cs_exportfileName" xml:space="preserve">
+    <value>RiskManagement-Assignments-ManageAssignment</value>
+  </data>
+  <data name="rm_Assignment_Management_cs_Na_Value" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="ASGridBoundColumnResource18.HeaderText" xml:space="preserve">
+    <value>Type</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource18.HeaderTooltip" xml:space="preserve">
+    <value>Assignment Type</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource19.HeaderText" xml:space="preserve">
+    <value>Count</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource19.HeaderTooltip" xml:space="preserve">
+    <value>Number of distinct merchants that qualify for an assignment based on the assignment filters selected (a merchant can re-alert for an assignment, but is counted as eligible once)</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource20.HeaderText" xml:space="preserve">
+    <value>Count</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource20.HeaderTooltip" xml:space="preserve">
+    <value>Number of distinct merchants that have alerted or re-alerted based on the assignment parameter configurations</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource21.HeaderText" xml:space="preserve">
+    <value>Net Amount</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource21.HeaderTooltip" xml:space="preserve">
+    <value>Cumulative amount associated with the Alerted Count</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource22.HeaderText" xml:space="preserve">
+    <value>Count</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource22.HeaderTooltip" xml:space="preserve">
+    <value>Number of distinct merchants worked</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource23.HeaderText" xml:space="preserve">
+    <value>Net Amount</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource23.HeaderTooltip" xml:space="preserve">
+    <value>Cumulative amount associated with the Worked - Count</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource24.HeaderText" xml:space="preserve">
+    <value>Count</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource24.HeaderTooltip" xml:space="preserve">
+    <value>Number of distinct merchants that have been added to a Work Queue Assignment from a Detection Queue Assignment using the Re-Queue or Auto Queue feature</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource25.HeaderText" xml:space="preserve">
+    <value>Net Amount</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource25.HeaderTooltip" xml:space="preserve">
+    <value>Cumulative amount associated with the Re-queued Count</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource26.HeaderText" xml:space="preserve">
+    <value># Groups</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource26.HeaderTooltip" xml:space="preserve">
+    <value># group assigned</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource27.HeaderText" xml:space="preserve">
+    <value># Ttl Users</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource27.HeaderTooltip" xml:space="preserve">
+    <value># individual users assigned (including users in groups)</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource28.HeaderText" xml:space="preserve">
+    <value>Expiration Date</value>
+    <comment>n</comment>
+  </data>
+  <data name="StartDateASGridBoundColumnResource.HeaderText" xml:space="preserve">
+    <value>Start Date</value>
+    <comment>n</comment>
+  </data>
+  <data name="FutureStartDateASGridBoundColumnResource.HeaderText" xml:space="preserve">
+    <value>Future Start Date</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource28.HeaderTooltip" xml:space="preserve">
+    <value>Expiration Date</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource30.HeaderText" xml:space="preserve">
+    <value>Proc Status</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource30.HeaderTooltip" xml:space="preserve">
+    <value>The processing status of the assignment</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource31.HeaderText" xml:space="preserve">
+    <value>Last Proc Status Date</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource31.HeaderTooltip" xml:space="preserve">
+    <value>The date and time of the processing status</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource36.HeaderText" xml:space="preserve">
+    <value>Type</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource36.HeaderTooltip" xml:space="preserve">
+    <value>Assignment Type</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource37.HeaderText" xml:space="preserve">
+    <value>Count</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource37.HeaderTooltip" xml:space="preserve">
+    <value>Number of distinct merchants that qualify for an assignment based on the assignment filters selected (a merchant can re-alert for an assignment, but is counted as eligible once)</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource38.HeaderText" xml:space="preserve">
+    <value>Count</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource38.HeaderTooltip" xml:space="preserve">
+    <value>Number of distinct merchants that have alerted or re-alerted based on the assignment parameter configurations</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource39.HeaderText" xml:space="preserve">
+    <value>Net Amount</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource39.HeaderTooltip" xml:space="preserve">
+    <value>Cumulative amount associated with the Alerted Count</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource40.HeaderText" xml:space="preserve">
+    <value>Count</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource40.HeaderTooltip" xml:space="preserve">
+    <value>Number of distinct merchants worked</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource41.HeaderText" xml:space="preserve">
+    <value>Net Amount</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource41.HeaderTooltip" xml:space="preserve">
+    <value>Cumulative amount associated with the Worked - Count</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource42.HeaderText" xml:space="preserve">
+    <value>Count</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource42.HeaderTooltip" xml:space="preserve">
+    <value>Number of distinct merchants that have been added to a Work Queue Assignment from a Detection Queue Assignment using the Re-Queue or Auto Queue feature</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource43.HeaderText" xml:space="preserve">
+    <value>Net Amount</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource43.HeaderTooltip" xml:space="preserve">
+    <value>Monto acumulado asociado al recuento de reorganización de cola</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource44.HeaderText" xml:space="preserve">
+    <value># Groups</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource44.HeaderTooltip" xml:space="preserve">
+    <value># group assigned</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource45.HeaderText" xml:space="preserve">
+    <value># Ttl Users</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource45.HeaderTooltip" xml:space="preserve">
+    <value># individual users assigned (including users in groups)</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource46.HeaderText" xml:space="preserve">
+    <value>Expiration Date</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource46.HeaderTooltip" xml:space="preserve">
+    <value>Expiration Date</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource48.HeaderText" xml:space="preserve">
+    <value>Proc Status</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource48.HeaderTooltip" xml:space="preserve">
+    <value>The processing status of the assignment</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource49.HeaderText" xml:space="preserve">
+    <value>Last Proc Status Date</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource49.HeaderTooltip" xml:space="preserve">
+    <value>The date and time of the processing status</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridTemplateColumnResource5.HeaderText" xml:space="preserve">
+    <value>Assignment Name</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridTemplateColumnResource5.HeaderTooltip" xml:space="preserve">
+    <value>The assignment name hyperlink navigates to the Manage Assignment modal.</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridTemplateColumnResource6.HeaderText" xml:space="preserve">
+    <value>Percent Worked</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridTemplateColumnResource6.HeaderTooltip" xml:space="preserve">
+    <value>Percent of merchants worked in relation to the number of merchants alerted = Worked Count  / Alerted Count</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridTemplateColumnResource7.HeaderText" xml:space="preserve">
+    <value>Expiration Date</value>
+    <comment>n</comment>
+  </data>
+  <data name="StartDateASGridTemplateColumnResource.HeaderTooltip" xml:space="preserve">
+    <value>The first date the assignment will be run</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridTemplateColumnResource7.HeaderTooltip" xml:space="preserve">
+    <value>The last date that the assignment is scheduled to execute</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridTemplateColumnResource8.HeaderText" xml:space="preserve">
+    <value>Delete</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridTemplateColumnResource8.HeaderTooltip" xml:space="preserve">
+    <value>Click to delete assignment</value>
+    <comment>n</comment>
+  </data>
+  <data name="GridTemplateColumnResource10.HeaderText" xml:space="preserve">
+    <value>Percent Worked</value>
+    <comment>n</comment>
+  </data>
+  <data name="GridTemplateColumnResource10.HeaderTooltip" xml:space="preserve">
+    <value>Percent of merchants worked in relation to the number of merchants alerted = Worked Count  / Alerted Count</value>
+    <comment>n</comment>
+  </data>
+  <data name="GridTemplateColumnResource11.HeaderText" xml:space="preserve">
+    <value>Expiration Date</value>
+    <comment>n</comment>
+  </data>
+  <data name="GridTemplateColumnResource11.HeaderTooltip" xml:space="preserve">
+    <value>The last date that the assignment is scheduled to execute</value>
+    <comment>n</comment>
+  </data>
+  <data name="GridTemplateColumnResource12.HeaderText" xml:space="preserve">
+    <value>Delete</value>
+    <comment>n</comment>
+  </data>
+  <data name="GridTemplateColumnResource12.HeaderTooltip" xml:space="preserve">
+    <value>Click to delete assignment</value>
+    <comment>n</comment>
+  </data>
+  <data name="GridTemplateColumnResource9.HeaderText" xml:space="preserve">
+    <value>Assignment Name</value>
+    <comment>n</comment>
+  </data>
+  <data name="GridTemplateColumnResource9.HeaderTooltip" xml:space="preserve">
+    <value>The assignment name hyperlink navigates to the Manage Assignment modal.</value>
+    <comment>n</comment>
+  </data>
+  <data name="uxExpirationDateNeverResource2.Text" xml:space="preserve">
+    <value>Never Expire</value>
+  </data>
+  <data name="ASRadComboBoxItemResource1.Text" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="ASRadComboBoxItemResource2.Text" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="ASRadComboBoxItemResource3.Text" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="ASRadComboBoxItemResource4.Text" xml:space="preserve">
+    <value>Assignment</value>
+  </data>
+  <data name="ASRadComboBoxItemResource5.Text" xml:space="preserve">
+    <value>Assignment</value>
+  </data>
+  <data name="ASRadComboBoxItemResource6.Text" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="ASRadComboBoxItemResource7.Text" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="uxSharedDatePickerResource1.Calendar.CalendarCaption" xml:space="preserve">
+    <value>Calendar</value>
+  </data>
+  <data name="uxSharedDatePickerResource1.Calendar.CalendarSummary" xml:space="preserve">
+    <value>Calendar control which enables the selection of dates.</value>
+  </data>
+  <data name="uxSharedDatePickerResource1.Calendar.FastNavigationSettings.CancelButtonCaption" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="uxSharedDatePickerResource1.Calendar.FastNavigationSettings.DateIsOutOfRangeMessage" xml:space="preserve">
+    <value>Date is out of range.</value>
+  </data>
+  <data name="uxSharedDatePickerResource1.Calendar.FastNavigationSettings.OkButtonCaption" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="uxSharedDatePickerResource1.Calendar.FastNavigationSettings.TodayButtonCaption" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="uxSharedDatePickerResource1.Calendar.ViewSelectorText" xml:space="preserve">
+    <value>x</value>
+  </data>
+  <data name="uxSharedDatePickerResource1.DatePopupButton.ToolTip" xml:space="preserve">
+    <value>Open the calendar popup.</value>
+  </data>
+  <data name="uxSharedDatePickerResource1.HiddenInputTitleAttibute" xml:space="preserve">
+    <value>Visually hidden input created for functionality purposes.</value>
+  </data>
+  <data name="uxSharedDatePickerResource1.WrapperTableCaption" xml:space="preserve">
+    <value>RadDatePicker</value>
+  </data>
+  <data name="rm_Assignment_Management_js_DeleteAssignment_Confirm_Assignment" xml:space="preserve">
+    <value>Assignment {0} is being used in Auto Queue {1}. It must be removed from the Auto Queue(s) list before you are permitted to delete it.</value>
+  </data>
+  <data name="rm_Assignment_Management_js_DeleteAssignment_Confirm_WQ" xml:space="preserve">
+    <value>Work Queue {0} is being used in Auto Queue {1}. It must be removed from the Auto Queue(s) list before you are permitted to delete it.</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_DateResource1.Text" xml:space="preserve">
+    <value>Date:</value>
+  </data>
+  <data name="rm_Assignment_Management_js_ReportedDate_Invalid" xml:space="preserve">
+    <value>The date format is invalid. Please enter MM/DD/YYYY.</value>
+  </data>
+  <data name="rm_Assignment_Management_js_ReportedDate_GreaterToday" xml:space="preserve">
+    <value>The date must not be greater than today\'s date.</value>
+  </data>
+  <data name="lblFilter.Text" xml:space="preserve">
+    <value>Filter:</value>
+  </data>
+  <data name="btnAdvancedFilterResource.Text" xml:space="preserve">
+    <value>Advanced Filter</value>
+  </data>
+  <data name="btnRefreshResource.Text" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="ASGridBoundColumnResource50.HeaderText" xml:space="preserve">
+    <value>Count</value>
+  </data>
+  <data name="ASGridBoundColumnResource50.HeaderTooltip" xml:space="preserve">
+    <value>Number of merchants in progress of being worked in the Assignment</value>
+  </data>
+  <data name="ASGridBoundColumnResource51.HeaderText" xml:space="preserve">
+    <value>Net Amount</value>
+  </data>
+  <data name="ASGridBoundColumnResource51.HeaderTooltip" xml:space="preserve">
+    <value>Cumulative amount associated with the Work in Progress - Count</value>
+  </data>
+  <data name="ASGridBoundColumnResource52.HeaderText" xml:space="preserve">
+    <value>Count</value>
+  </data>
+  <data name="ASGridBoundColumnResource52.HeaderTooltip" xml:space="preserve">
+    <value>Number of merchants in progress of being worked in the Assignment</value>
+  </data>
+  <data name="ASGridBoundColumnResource53.HeaderText" xml:space="preserve">
+    <value>Net Amount</value>
+  </data>
+  <data name="ASGridBoundColumnResource53.HeaderTooltip" xml:space="preserve">
+    <value>Cumulative amount associated with the Work in Progress - Count</value>
+  </data>
+  <data name="rm_Assignment_Management_js_GridHeaderWorkInProgress" xml:space="preserve">
+    <value>Work in Progress</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_cs_WIPCount" xml:space="preserve">
+    <value>Work in Progress Count</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_cs_WIPVolume" xml:space="preserve">
+    <value>Work in Progress Net Amount</value>
+  </data>
+  <data name="AssignmentHelpText.Text" xml:space="preserve">
+    <value>Based on the report date and other filters selected, the Assignment Summary grid reports various merchant counts, amounts, and other metrics at the individual assignment level. If a merchant alerts in multiple assignments, it will be counted in more than one assignment row. Therefore, it is not possible to reconcile between the counts and amounts in the Distinct Merchant Summary and the Assignment Summary grids.</value>
+  </data>
+  <data name="AlertedResource1ToolTip" xml:space="preserve">
+    <value>&lt;strong class='color-title' style='display: inline-table;margin-bottom: 5px;'&gt;Distinct Merchant Count - Alerted&lt;/strong&gt;&lt;br&gt;
+Number of distinct merchants alerted among active Detection Queue Assignments. A merchant can alert in multiple Detection Queue Assignments, or in the same assignment multiple times per day, but is counted once.&lt;br&gt;&lt;br&gt;
+&lt;strong class='color-title' style='display: inline-table;margin-bottom: 5px;'&gt;Distinct Merchant Net Amount- Alerted&lt;/strong&gt;&lt;br&gt;
+Amount associated with the Distinct Merchant Count Alerted.</value>
+  </data>
+  <data name="EligibleResource1Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title' style='display: inline-table;margin-bottom: 5px;'&gt;Distinct Merchant Count - Eligible&lt;/strong&gt;&lt;br&gt;
+
+Number of distinct merchants that qualify for a Detection Queue Assignment. A merchant can be eligible for multiple Detection Queue Assignments, but is counted once.&lt;br&gt;&lt;br&gt;
+&lt;strong class='color-title' style='display: inline-table;margin-bottom: 5px;'&gt;Distinct Merchant Net Amount - Eligible&lt;/strong&gt;&lt;br&gt;
+Amount associated with the Distinct Merchant Count Eligible.</value>
+  </data>
+  <data name="RemainingResource1ToolTip" xml:space="preserve">
+    <value>&lt;strong class='color-title' style='display: inline-table;margin-bottom: 5px;'&gt;Distinct Merchant Count - Remaining&lt;/strong&gt;&lt;br&gt;
+Difference between the Distinct Merchant Count Alerted and the Distinct Merchant Count Worked.&lt;br&gt;&lt;br&gt;
+&lt;strong class='color-title' style='display: inline-table;margin-bottom: 5px;'&gt;Distinct Merchant Net Amount - Remaining&lt;/strong&gt;&lt;br&gt;
+Amount associated with the Distinct Merchant Count Remaining.</value>
+  </data>
+  <data name="WorkedResource1ToolTip" xml:space="preserve">
+    <value>&lt;strong class='color-title' style='display: inline-table;margin-bottom: 5px;'&gt;Distinct Merchant Count - Worked&lt;/strong&gt;&lt;br&gt;
+Number of distinct merchants that alerted among Detection Queue Assignments and are in a state of Worked. An alerted merchant can be in a state of Worked in multiple Detection Queue Assignments, or in the same assignment multiple times per day, but is counted once.&lt;br&gt;&lt;br&gt;
+&lt;strong class='color-title' style='display: inline-table;margin-bottom: 5px;'&gt;Distinct Merchant Net Amount - Worked&lt;/strong&gt;&lt;br&gt;
+Amount associated with the Distinct Merchant Count Worked.</value>
+  </data>
+  <data name="AssignmentSummaryResource1.Text" xml:space="preserve">
+    <value>Assignment Summary</value>
+  </data>
+  <data name="DistinctMerchantResource1.Text" xml:space="preserve">
+    <value>Distinct Merchant Summary</value>
+  </data>
+  <data name="rm_Assignment_Management_js_GridHeaderAlerted" xml:space="preserve">
+    <value>Alerted</value>
+  </data>
+  <data name="rm_Assignment_Management_js_GridHeaderDistinctMerchantsCurrentStatus" xml:space="preserve">
+    <value>Distinct Merchants - Current Status</value>
+  </data>
+  <data name="rm_Assignment_Management_js_GridHeaderEligible" xml:space="preserve">
+    <value>Eligible</value>
+  </data>
+  <data name="rm_Assignment_Management_js_GridHeaderReadyToWork" xml:space="preserve">
+    <value>Ready to Work</value>
+  </data>
+  <data name="ASGridBoundColumnResource54.HeaderText" xml:space="preserve">
+    <value>Count</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource54.HeaderTooltip" xml:space="preserve">
+    <value>Number of distinct merchants that have alerted or re-alerted, but have not been worked</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource55.HeaderText" xml:space="preserve">
+    <value>Net Amount</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource55.HeaderTooltip" xml:space="preserve">
+    <value>Cumulative amount associated with the Ready to Work - Count</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource56.HeaderText" xml:space="preserve">
+    <value>Merchants Alerted and Re-Alerted</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource56.HeaderTooltip" xml:space="preserve">
+    <value>Cumulative number of merchants alerted and re-alerted. Example: If a merchant is alerted once and then re-alerted twice, it will be counted three times.</value>
+    <comment>n</comment>
+  </data>
+  <data name="rm_Assignment_Management_aspx_cs_WkCount" xml:space="preserve">
+    <value>Ready to Work Count</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_cs_WkVolume" xml:space="preserve">
+    <value>Ready to Work Net Amount</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_cs_AlertMerchantCountAllCycles" xml:space="preserve">
+    <value>Merchants Alerted and Re-Alerted</value>
+  </data>
+  <data name="rm_Assignment_Management_aspx_cs_StartDate" xml:space="preserve">
+    <value>Merchants Alerted and Re-Alerted</value>
+  </data>
+  <data name="ASGridBoundColumnResource57.HeaderText" xml:space="preserve">
+    <value>Merchants Alerted and Re-Alerted</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource57.HeaderTooltip" xml:space="preserve">
+    <value>Cumulative number of merchants alerted and re-alerted. Example: If a merchant is alerted once and then re-alerted twice, it will be counted three times.</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridBoundColumnResource58.HeaderText" xml:space="preserve">
+    <value>Net Amount</value>
+  </data>
+  <data name="ASGridBoundColumnResource58.HeaderTooltip" xml:space="preserve">
+    <value>Cumulative amount associated with the Work in Progress - Count</value>
+  </data>
+  <data name="ASGridBoundColumnResource59.HeaderText" xml:space="preserve">
+    <value>Count</value>
+  </data>
+  <data name="ASGridBoundColumnResource59.HeaderTooltip" xml:space="preserve">
+    <value>Number of distinct merchants marked as Work in Progress</value>
+  </data>
+  <data name="uxAssignmentGridResource2.MasterTableView.NoDetailRecordsText" xml:space="preserve">
+    <value>No results found. Adjust your filtering criteria.</value>
+  </data>
+  <data name="uxAssignmentGridResource2.MasterTableView.NoMasterRecordsText" xml:space="preserve">
+    <value>No results found. Adjust your filtering criteria.</value>
+  </data>
+  <data name="ASGridBoundColumnResource60.HeaderText" xml:space="preserve">
+    <value>Count</value>
+  </data>
+  <data name="ASGridBoundColumnResource60.HeaderTooltip" xml:space="preserve">
+    <value>Number of distinct merchants marked as Work in Progress</value>
+  </data>
+  <data name="ASGridTemplateColumnResource9.HeaderText" xml:space="preserve">
+    <value>Duplicate</value>
+    <comment>n</comment>
+  </data>
+  <data name="ASGridTemplateColumnResource9.HeaderTooltip" xml:space="preserve">
+    <value>Duplicate Assignment</value>
+    <comment>n</comment>
+  </data>
+  <data name="DuplicateAssignmentResource" xml:space="preserve">
+    <value>Duplicate Assignment</value>
+  </data>
+  <data name="SubAssignment.Text" xml:space="preserve">
+    <value>Subsite Assignment</value>
+  </data>
+  <data name="StartDateOutOfRangeTooltip" xml:space="preserve">
+    <value>The start date must be less than or equal to the Expiration date and greater than or equal to the current date. If you want the start date to be greater than the current expiration date, please edit expiration date value first, then edit the start date.</value>
+  </data>
+  <data name="rm_Assignment_Management_js_StartDate" xml:space="preserve">
+    <value>The start date must be greater than or equal to today</value>
+  </data>
+  <data name="DeleteAssignmentConfirm" xml:space="preserve">
+    <value>If you delete this assignment, you will &lt;b&gt;lose access to view or work&lt;/b&gt; existing merchant alerts for both &lt;b&gt;current and historical Report Dates &lt;/b&gt; 
+in the Detection Queue. 
+&lt;br/&gt;&lt;br/&gt;
+Alternatively, you can &lt;b&gt;expire&lt;/b&gt; the assignment by editing the Expiration Date. 
+This will stop the assignment from running after the selected date, 
+while &lt;b&gt;preserving access&lt;/b&gt; to view and work existing merchant alerts.
+&lt;br/&gt;&lt;br/&gt;
+&lt;b&gt;Are you sure you want to delete this assignment?&lt;/b&gt;</value>
+  </data>
+</root>

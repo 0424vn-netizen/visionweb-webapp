@@ -1,0 +1,75 @@
+﻿<div class="row" id="contractualInfo">
+    <div class="col-xs-12" data-toggle="collapse" data-target="#ciContractualInfo">
+        <h2 class="grid-title">
+            {{res:ContractualInformation}}
+        </h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 in" id="ciContractualInfo">
+        <table class="ASTable">
+            <colgroup>
+                <col class="w-40">
+                <col class="w-60">
+            </colgroup>
+            <tbody>
+                <tr class="Row">
+                    <td class="heading">
+                        {{res:AnnualVolume}}
+                    </td>
+                    <td>
+                        {{data:AnnualVolume|Currency|ContractualInformation}}
+                    </td>
+                </tr>
+                <tr class="AltRow">
+                    <td class="heading">
+                        {{res:AverageTicket}}
+                    </td>
+                    <td>
+                        {{data:Avg_Ticket_Amt|Currency|ContractualInformation}}
+                    </td>
+                </tr>
+                <tr class="Row">
+                    <td class="heading">
+                        {{res:HighTicket}}
+                    </td>
+                    <td>
+                        {{data:HighestTicket|Currency|ContractualInformation}}
+                    </td>
+                </tr>
+                <tr class="AltRow">
+                    <td class="heading">
+                        {{res:MOTO}}
+                    </td>
+                    <td>
+                        {{data:Moto|Percent|ContractualInformation}}
+                    </td>
+                </tr>
+                <tr class="Row">
+                    <td class="heading">
+                        {{res:eCommerce}}
+                    </td>
+                    <td>
+                        {{data:eCommerce|Percent|ContractualInformation}}
+                    </td>
+                </tr>
+                <tr class="AltRow">
+                    <td class="heading">
+                        {{res:CardNotPresent}}
+                    </td>
+                    <td>
+                        {{data:CardNotPresent|Percent|ContractualInformation}}
+                    </td>
+                </tr>
+                <tr class="Row">
+                    <td class="heading">
+                        {{res:FICO}}
+                    </td>
+                    <td>
+                        {{data:FICO|Percent|ContractualInformation}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

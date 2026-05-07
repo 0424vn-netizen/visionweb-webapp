@@ -1,0 +1,11 @@
+namespace AS.VW.PCI.Api.Client.Models.Requests
+{
+    public class AuthTokenRequest
+    {
+        public int ApplicationId { get; set; }
+
+        public string ApplicationName { get; set; }
+
+        public string ApplicationCode { get; set; }
+    }
+}

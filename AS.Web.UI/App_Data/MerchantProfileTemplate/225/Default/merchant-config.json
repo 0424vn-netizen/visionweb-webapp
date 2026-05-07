@@ -1,0 +1,63 @@
+{
+  "MerchantSpaName": "spa_cs_GetMerchantProfile_Detail",
+  "Sections": [
+    {
+      "Id": "MerchantInformation",
+      "Name": "Merchant Information",
+      "Title": "MerchantInformation",
+      "TemplateKey": "[MERCHANT_INFORMATION]",
+      "TemplateFile": "merchant-information.html",
+      "ExportTemplate": "merchant-information.html"
+    },
+    {
+      "Id": "BusinessInformation",
+      "Name": "Business Information",
+      "Title": "BusinessInformation",
+      "TemplateKey": "[BUSINESS_INFORMATION]",
+      "TemplateFile": "business-information.html",
+      "ExportTemplate": "business-information.html"
+    },
+    {
+      "Id": "RiskInformation",
+      "Name": "Risk Information",
+      "Title": "RiskInformation",
+      "HasPermissionCode": "RiskInfo,MSRiskInfo",
+      "TemplateKey": "[RISK_INFORMATION]",
+      "TemplateFile": "risk-information.html",
+      "ExportTemplate": "risk-information.html",
+      "SpaName": "spa_RM_MCF_MRS_Get_MIFClassificationByMerchant"
+    },
+    {
+      "Id": "HierarchyInformation",
+      "Name": "Hierarchy Information",
+      "Title": "HierarchyInformation",
+      "TemplateKey": "[HIERARCHY_INFORMATION]",
+      "TemplateFile": "hierarchy-information.html",
+      "ExportTemplate": "hierarchy-information.html"
+    },
+    {
+      "Id": "ContractualInformation",
+      "Name": "Contractual Information",
+      "Title": "ContractualInformation",
+      "TemplateKey": "[CONTRACTUAL_INFORMATION]",
+      "TemplateFile": "contractual-information.html",
+      "ExportTemplate": "contractual-information.html"
+    },
+    {
+      "Id": "AccountInformation",
+      "Name": "Account Information",
+      "Title": "AccountInformation",
+      "TemplateKey": "[ACCOUNT_INFORMATION]",
+      "TemplateFile": "account-information.html",
+      "ExportTemplate": "account-information.html"
+    },
+    {
+      "Id": "BankInformation",
+      "Name": "Bank Information",
+      "Title": "BankInformation",
+      "TemplateKey": "[BANK_INFORMATION]",
+      "TemplateFile": "bank-information.html",
+      "ExportTemplate": "bank-information.html"
+    }
+  ]
+}

@@ -1,0 +1,298 @@
+[
+  {
+    "dataField": "ReportDate",
+    "validation": "DateMMddyyyy",
+    "filterMenus": [
+      "NoFilter",
+      "EqualTo",
+      "NotEqualTo",
+      "GreaterThan",
+      "LessThan",
+      "GreaterThanOrEqualTo",
+      "LessThanOrEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "ISONumber",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "MerchantNumber",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "MerchantName",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "MCC",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "SubMCC",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "TransDate",
+    "validation": "DateMMddyyyy",
+    "filterMenus": [
+      "NoFilter",
+      "EqualTo",
+      "NotEqualTo",
+      "GreaterThan",
+      "LessThan",
+      "GreaterThanOrEqualTo",
+      "LessThanOrEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "TransTime",
+    "validation": "TimeHHmmss",
+    "filterMenus": [
+      "NoFilter",
+      "EqualTo",
+      "NotEqualTo",
+      "GreaterThan",
+      "LessThan",
+      "GreaterThanOrEqualTo",
+      "LessThanOrEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "TransCode",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "TransCode",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "Keyed",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo"
+    ]
+  },
+  {
+    "dataField": "EMV",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo"
+    ]
+  },
+  {
+    "dataField": "CardType",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo"
+    ]
+  },
+  {
+    "dataField": "AuthNumber",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "AuthAmount",
+    "validation": "Number",
+    "filterMenus": [
+      "NoFilter",
+      "EqualTo",
+      "NotEqualTo",
+      "GreaterThan",
+      "LessThan",
+      "GreaterThanOrEqualTo",
+      "LessThanOrEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "ADF",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo"
+    ]
+  },
+  {
+    "dataField": "ResponseCode",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo"
+    ]
+  },
+  {
+    "dataField": "AVS",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo"
+    ]
+  },
+  {
+    "dataField": "CVV",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo"
+    ]
+  },
+  {
+    "dataField": "AuthSource",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo"
+    ]
+  },
+  {
+    "dataField": "CustomerID",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "MOTO",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  }
+]

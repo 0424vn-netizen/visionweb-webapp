@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<META>
+  <POLICY-REFERENCES>
+    <POLICY-REF>
+      <INCLUDE>/</INCLUDE>
+      <COOKIE-INCLUDE domain="." />
+    </POLICY-REF>
+  </POLICY-REFERENCES>
+</META>

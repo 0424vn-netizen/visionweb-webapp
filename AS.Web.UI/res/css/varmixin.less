@@ -1,0 +1,191 @@
+﻿@pri-color: #143663;
+@sec-color: #359ee9;
+
+@pri-text-color: #FFFFFF;
+@sec-text-color: #FFFFFF;
+
+
+@body-bg: @pri-color;
+@container-bg: #FFFFFF;
+@body-text-color: @sec-text-color;
+@welcome-bar-bg: #000000;
+@welcome-bar-qa-bg: rgb(187,0,176);
+@site-header-pri-color: @pri-color;
+@site-header-alt-color: lighten(saturate(@pri-color,-2%),7.1975%);
+
+@nav-bg: #FFFFFF;
+@sub-nav-arrow-color: #CCCCCC;
+
+
+@btn-text-color: @default-text-color;
+@btn-default-color: #FFFFFF;
+@btn-default-alt-color: #E6E6E6;
+@btn-border-color: #D0D0D0;
+@btn-hover-bg: #666666;
+@input-text-color: @default-text-color;
+
+@default-text-color: #3E3E3E;
+@default-blue: #3072C0;
+@report-filter-bg: #F4F4F4;
+@btn-export-text-color: #6B7983;
+
+@default-gray: #999999;
+
+@login-form-text-color: #555555;
+@login-form-bg: #F6F6F6;
+@login-form-border-color: @container-bg;
+@login-form-input-border-color: @sub-nav-arrow-color;
+
+@grid-title-color: #666666;
+@hierarchy-title-color: #999999;
+@modal-title-color: @sec-color;
+@box-border-color: @radgrid-border-color;
+@error-text-color: #FF0000;
+@negative-color: @error-text-color;
+
+@report-filter-input-color: @form-control-color;
+@form-control-color: @default-text-color;
+@report-filter-input-border-color: #E8E8E8;
+@report-filter-link-color: @default-text-color;
+
+@risk-form-container-bg: #CCCCCC;
+
+@dashboard-highlight-color: #3DCC8A;
+@dashboard-muted-color: #969696;
+
+@radgrid-border-color: #E8E8E8;
+@radcbd-border-color: @radgrid-border-color;
+@radgrid-header-bg: #FFFFFF;
+@radgrid-text-color: @default-text-color;
+@radgrid-header-color: #999999;
+@radgrid-row-bg: #F6F6F6;
+@radgrid-alt-row-bg: #FFFFFF;
+@pricing-label-color: #ABABAB;
+@filterbox-border-color: #F0F0F0;
+
+@color-link: #00A8F7;
+@color-hover-link: #40C2FF;
+
+@color-negative : #FF0000;
+@color-hover-negative : #FF4949;
+/* Typography Variables */
+@default-font-family: Lato, @alt-font-family;
+@alt-font-family: Helvetica, Arial, sans-serif;
+
+@default-font-size: 14px;
+@small-font-size: (@default-font-size - 2);
+@hierarchy-title-font-size: (@default-font-size + 6);
+@login-input-font-size: (@default-font-size + 2);
+@session-warning-font-size: (@default-font-size + 4);
+@dashboard-highlight-font-size: 32px;
+@dashboard-highlight-muted-font-size: 32px;
+
+@light-font-weight: 300;
+@regular-font-weight: 500;
+@bold-font-weight: 700;
+
+@radgrid-font-family: @alt-font-family;
+@radgrid-font-size: 12px;
+@radgrid-th-font-weight: @bold-font-weight;
+
+/* Layout variables */
+@h1-top: 7px;
+@h1-bottom: 5px;
+@h2-top: 6px;
+@h2-bottom: 5px;
+@h3-top: 5px;
+@h3-bottom: 4px;
+@rgHeader-top: 8px;
+@welcome-bar-height: 30px;
+@welcome-bar-min-height: (@welcome-bar-height - 10);
+@body-padding: 20px;
+@box-padding: 10px;
+@container-padding: 24px;
+@modal-container-min-width: 320px;
+@subnav-popout-arrow-size: 6px;
+@subnav-item-arrow-size: 5px;
+@subnav-item-arrow-right: 10px;
+@report-title-padding-bottom: (30px - @h1-bottom);
+@grid-title-padding-top: (27px - @h2-top);
+@grid-title-padding-bottom: (22px - @h2-bottom - @rgHeader-top);
+@modal-title-padding-bottom: 10px;
+@export-dropdown-width: 60px;
+@asmodal-btn-padding: 10px;
+@default-btn-padding: 12px;
+@login-input-height: 42px;
+@modal-width: 640px;
+@report-filter-input-height: 26px;
+@btn-default-height: @report-filter-input-height;
+@merchant-sidenav-width: 190px;
+@merchant-number-width: 130px;
+@radgrid-line-height: 20px;
+@light-gray: #CCCCCC;
+.font-face(@name, @type, @weight) {
+    @url-eot: '../font/@{name}@{weight}.eot';
+    @url-woff: '../font/@{name}@{weight}.woff';
+
+    font-family: '@{name}';
+    font-style: normal;
+    font-weight: @weight;
+    src: url(@url-eot);
+    src: local('@{name} @{type}'), local('@{name}-@{type}'), url(@url-eot) format('embedded-opentype'), url(@url-woff) format('woff');
+}
+
+.font-face-italic(@name, @type, @weight) {
+    @url-eot: '../font/@{name}italic@{weight}.eot';
+    @url-woff: '../font/@{name}italic@{weight}.woff';
+
+    font-family: '@{name}';
+    font-style: italic;
+    font-weight: @weight;
+    src: url(@url-eot);
+    src: local('@{name} Italic @{type}'), local('@{name}-@{type}Italic'), url(@url-eot) format('embedded-opentype'), url(@url-woff) format('woff');
+}
+/* === FONT === */
+@font-face {
+    .font-face('Lato','Light',300);
+}
+
+@font-face {
+    .font-face('Lato','Regular',400);
+}
+
+@font-face {
+    .font-face('Lato','Bold',700);
+}
+
+@font-face {
+    .font-face-italic('Lato','Light',300);
+}
+
+@font-face {
+    .font-face-italic('Lato','Regular',400);
+}
+
+@font-face {
+    .font-face-italic('Lato','Bold',700);
+}
+
+@font-face {
+    text-rendering: optimizeLegibility;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Source Sans Pro";
+    src: url("../font/Source-Sans-Pro-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+    text-rendering: optimizeLegibility;
+    font-weight: 600;
+    font-style: normal;
+    font-family: "Source Sans Pro";
+    src: url("../font/Source-Sans-Pro-semibold-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), url('../font/iconfont.woff') format('woff'), url('../font/iconfont.ttf') format('truetype'), url('../font/iconfont.svg#fontawesome') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

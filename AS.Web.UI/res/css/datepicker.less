@@ -1,0 +1,106 @@
+.ui-datepicker {
+    border-radius: 0px !important;
+    padding: 0px !important;
+
+    .ui-datepicker-header {
+        border-color: #868686 #868686 #c4c4c4;
+        background: #eaeaea; 
+        color: #000;
+        border-radius: 0px !important;
+        border: none;
+        padding: 2px;
+
+        .ui-datepicker-title {
+            font-family: "Segoe UI",Arial,Helvetica,sans-serif;
+            font-size: 12px;
+            line-height: 23px;
+            font-weight: normal;
+        }
+
+        .ui-corner-all {
+        }
+
+        a.ui-datepicker-prev {
+            display: none;
+        }
+
+        a.ui-datepicker-next {
+            display: none;
+        }
+
+        a.ui-change {
+            position: absolute;
+            top: 4px;
+
+            .ui-icon {
+                background-image: url('../img/WebResource.gif'); 
+            }
+        }
+
+        a.prev-year {
+            left: 3px;
+
+            .ui-icon-circle-triangle-py {
+                background-position: 1px -197px;
+            }
+        }
+
+        a.next-year {
+            right: 17px;
+
+            .ui-icon-circle-triangle-ny {
+                background-position: 1px -497px;
+            }
+        }
+
+        a.prev-month {
+            left: 30px;
+
+            .ui-icon-circle-triangle-pm {
+                background-position: 4px -297px;
+            }
+        }
+
+        a.next-month {
+            right: 43px;
+
+            .ui-icon-circle-triangle-nm {
+                background-position: 3px -397px;
+            }
+        }
+    }
+
+    table.ui-datepicker-calendar {
+        thead {
+            border-bottom: 1px solid #c5c5c5;
+
+            tr th {
+                font-weight: normal;
+                font-size: 12px;
+            }
+        }
+
+        tbody tr td {
+
+            a {
+                border: none !important;
+                padding: 4px 1px 4px 0px;
+                text-decoration: none;
+                background: none;
+                font-size: 12px;
+                text-align: center;
+
+                &:hover {
+                    border-color: #c4c4c4 #b2b2b2 #9e9e9e;
+                    background: #c5c5c5 !important;
+                }
+            }
+
+                a.ui-state-highlight, a.ui-state-active {
+                    border-color: #8d8d8d #7d7d7d #6c6c6c;
+                    background: #828282;
+                    color: #fff;
+                }
+        }
+    }
+}

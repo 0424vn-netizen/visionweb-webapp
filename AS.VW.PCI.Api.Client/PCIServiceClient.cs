@@ -1,0 +1,306 @@
+﻿using AS.VW.Api.RestClient;
+using AS.VW.Api.RestClient.Models;
+using AS.VW.PCI.Api.Client.Common;
+using AS.VW.PCI.Api.Client.Models.Common;
+using AS.VW.PCI.Api.Client.Models.Requests;
+using AS.VW.PCI.Api.Client.Models.Responses;
+using AS.VW.PCI.Api.Client.Providers;
+using AS.VW.PCI.Api.Client.Settings;
+using Newtonsoft.Json;
+using RestSharp;
+using System;
+using System.Collections.Concurrent;
+using System.Collections.Generic;
+using System.IO;
+using System.Net;
+
+namespace VW.PCI.Api.Client
+{
+    public class PCIServiceClient : VWRestClient, IPCIServiceClient
+    {
+        private const string ApiSource = "pci";
+        private const string ApiSettingFile = "pciSettings.xml";
+
+        private TokenProvider tokenProvider { get; set; }
+
+        private static readonly Lazy<PCIServiceClient> _lazyInstance = new Lazy<PCIServiceClient>(() => new PCIServiceClient());
+
+        public PCIServiceClient()
+            : base(VWLogger.Instance, ApiLoggingService.Instance, ApiSource, ApiSettingFile, PCIClientSettings.Instance)
+        {
+            tokenProvider = new TokenProvider(base.Logger, this);
+        }
+
+        public static PCIServiceClient Instance
+        {
+            get { return _lazyInstance.Value; }
+        }
+
+        //public static void Configure(ILogger logger, ILoggingService loggingService)
+        //{
+        //    _sharedLogger = logger ?? throw new ArgumentNullException(nameof(logger));
+        //    _sharedLoggingService = loggingService ?? throw new ArgumentNullException(nameof(loggingService));
+        //}
+
+        //public static IPCIServiceClient ForUser(AuthTokenRequest credentials)
+        //{
+        //    if (_sharedLogger == null)
+        //    {
+        //        throw new InvalidOperationException("PCIServiceClient has not been configured. Call PCIServiceClient.Configure() at application startup.");
+        //    }
+
+        //    if (credentials == null) throw new ArgumentNullException(nameof(credentials));
+
+        //    return new PCIServiceClient(_sharedLogger, _sharedLoggingService, credentials);
+        //}
+
+        //private static readonly ConcurrentDictionary<string, PCITokenInfo> _tokenCache = new ConcurrentDictionary<string, PCITokenInfo>();
+
+        //private static readonly object _lock = new object();
+
+        //private readonly AuthTokenRequest _credentials;
+
+        //private PCIServiceClient(ILogger logger, ILoggingService loggingService, AuthTokenRequest credentials)
+        //    : base(logger, loggingService, ApiSource, ApiSettingFile, new RestClientSettings())
+        //{
+        //    _credentials = credentials;
+        //}
+
+        //protected override void InterceptRequest(string trackingId, ApiSetting apiSetting, IRestRequest request)
+        //{
+        //    if (apiSetting.Name == "auth/token")
+        //        return;
+
+        //    request.AddHeader("Authorization", $"Bearer {GetValidToken()}");
+        //}
+
+        protected override void InterceptResponse(string trackingId, ApiSetting apiSetting, IRestRequest request, IRestResponse response, out bool shouldRetryPrevRequest)
+        {
+            shouldRetryPrevRequest = false;
+        }
+
+        //private string GetValidToken()
+        //{
+        //    var key = _credentials.ApplicationId.ToString();
+
+        //    if (_tokenCache.TryGetValue(key, out var tokenInfo) && tokenInfo.IsValid())
+        //    {
+        //        return tokenInfo.AccessToken;
+        //    }
+
+        //    lock (_lock)
+        //    {
+        //        if (_tokenCache.TryGetValue(key, out tokenInfo) && tokenInfo.IsValid())
+        //        {
+        //            return tokenInfo.AccessToken;
+        //        }
+
+        //        Logger.Debug($"PCIServiceClient: Fetching new token for ApplicationId={key}...");
+
+        //        var apiSetting = this.GetApiSetting("auth/token");
+        //        var apiResponse = this.Post<AuthTokenRequest, PCIApiResponse<AuthTokenResponse>>(apiSetting, body: _credentials);
+        //        var response = apiResponse?.Data;
+
+        //        if (response == null || string.IsNullOrWhiteSpace(response.AccessToken))
+        //        {
+        //            throw new InvalidOperationException($"PCIServiceClient: Failed to retrieve access token for ApplicationId={key}.");
+        //        }
+                    
+        //        var newToken = new PCITokenInfo
+        //        {
+        //            AccessToken = response.AccessToken,
+        //            TokenType = response.TokenType,
+        //            ExpireAt = DateTime.UtcNow.AddMinutes(response.ExpireMinutes - 1)
+        //        };
+
+        //        _tokenCache[key] = newToken;
+        //        Logger.Debug($"PCIServiceClient: Token saved for ApplicationId={key}. Expires at {newToken.ExpireAt:O} UTC.");
+
+        //        return newToken.AccessToken;
+        //    }
+        //}
+
+        //public PCIApiResponse<CreateUserResponse> CreateUser(CreateUserRequest request)
+        //    => Execute<CreateUserRequest, CreateUserResponse>("user/CreateUser", request);
+
+        //public PCIApiResponse<UpdateUserResponse> UpdateUser(UpdateUserRequest request)
+        //    => Execute<UpdateUserRequest, UpdateUserResponse>("user/UpdateUser", request);
+
+        //public PCIApiResponse<GetMasterMerchantResponse> GetMasterMerchant(GetMasterMerchantRequest request)
+        //    => Execute<GetMasterMerchantRequest, GetMasterMerchantResponse>("user/GetMasterMerchant", request);
+
+        //public PCIApiResponse<GetHierarchyIDResponse> GetHierarchyID(GetHierarchyIDRequest request)
+        //    => Execute<GetHierarchyIDRequest, GetHierarchyIDResponse>("user/GetHierarchyID", request);
+
+        //public PCIApiResponse<UpdSecRoleByUserIDResponse> UpdSecRoleByUserID(UpdSecRoleByUserIDRequest request)
+        //    => Execute<UpdSecRoleByUserIDRequest, UpdSecRoleByUserIDResponse>("user/UpdSecRoleByUserID", request);
+
+        //public PCIApiResponse<UpdateOptInOutResponse> UpdateOptInOut(UpdateOptInOutRequest request)
+        //    => Execute<UpdateOptInOutRequest, UpdateOptInOutResponse>("user/UpdateOptInOut", request);
+
+        //public PCIApiResponse<GetAllHierarchyForAOResponse> GetAllHierarchyForAO(GetAllHierarchyForAORequest request)
+        //    => Execute<GetAllHierarchyForAORequest, GetAllHierarchyForAOResponse>("user/GetAllHierarchyForAO", request);
+
+        //public PCIApiResponse<GetUsersResponse> GetUsers(GetUsersRequest request)
+        //    => Execute<GetUsersRequest, GetUsersResponse>("user/GetUsers", request);
+
+        private PCIApiResponse<TResult> Execute<TBody, TResult>(string path, TBody body, string trackingId = null)
+            where TBody : class, new()
+            where TResult : class, new()
+        {
+            try
+            {
+                var apiSetting = this.GetApiSetting(path);
+                var tid = trackingId ?? Guid.NewGuid().ToString("N");
+                var response = this.PostForRestResponse<TBody, PCIApiResponse<TResult>>(apiSetting, body, trackingId: tid);
+
+                if (response.StatusCode == HttpStatusCode.OK)
+                    return new PCIApiResponse<TResult>
+                    {
+                        IsSuccess = true,
+                        StatusCode = response.StatusCode,
+                        TrackingId = tid,
+                        Data = response.Data?.Data
+                    };
+
+                var error = TryDeserializeError(response.Content);
+                return new PCIApiResponse<TResult>
+                {
+                    IsSuccess = false,
+                    StatusCode = response.StatusCode,
+                    TrackingId = error?.TrackId ?? tid,
+                    ErrorMessage = error?.ErrorMessage ?? response.StatusDescription
+                };
+            }
+            catch (ApiException ex)
+            {
+                Logger.Error(ex);
+                return new PCIApiResponse<TResult>
+                {
+                    IsSuccess = false,
+                    StatusCode = ex.StatusCode,
+                    TrackingId = ex.TrackingId,
+                    ErrorMessage = ex.Message
+                };
+            }
+            catch (Exception ex)
+            {
+                Logger.Error(ex);
+                return new PCIApiResponse<TResult>
+                {
+                    IsSuccess = false,
+                    StatusCode = HttpStatusCode.InternalServerError,
+                    ErrorMessage = ex.Message
+                };
+            }
+        }
+
+        private PCIErrorResponse TryDeserializeError(string content)
+        {
+            try { return JsonConvert.DeserializeObject<PCIErrorResponse>(content); }
+            catch { return null; }
+        }
+
+        public IApiResponse<AuthTokenResponse> Authenticate(AuthTokenRequest request)
+        {
+            var apiSetting = this.GetApiSetting("auth/token");
+            var trackingId = Utils.GetTrackingId();
+
+            var result = TryPost<AuthTokenRequest, AuthTokenResponse>(trackingId, apiSetting, request, null, null);
+
+            return result;
+        }
+
+        private ApiResponse<TResult> TryPost<T, TResult>(string trackingId, ApiSetting apiSetting, T body, IDictionary<string, string> parameters, IDictionary<string, string> headers)
+            where T : class, new()
+            where TResult : class, new()
+        {
+            try
+            {
+                var response = this.Post<T, ApiWrapperResponse<TResult>>(apiSetting, body, parameters, headers, DataFormat.Json, trackingId);
+                var unwrapped = response?.Data;
+                return CreateApiResponse(trackingId, unwrapped);
+            }
+            catch (Exception exception)
+            {
+                Logger.Error(exception);
+                return ErrorResponse<TResult>(trackingId, exception);
+            }
+        }
+
+        private ApiResponse<TResult> ErrorResponse<TResult>(string trackingId, Exception exception)
+        {
+            var responseStatusCode = HttpStatusCode.InternalServerError;
+            var messageContent = "An error occurred.";
+
+            if (exception is ApiException)
+            {
+                var apiException = exception as ApiException;
+                responseStatusCode = apiException.StatusCode;
+                messageContent = apiException.Message;
+            }
+
+            var message = new ApiMessage
+            {
+                Code = responseStatusCode.ToString(),
+                MessageCode = (int)responseStatusCode,
+                Description = messageContent
+            };
+
+            Logger.Debug($"ErrorResponse:: ATG Service client : response status code {responseStatusCode}");
+
+            return new ApiResponse<TResult>
+            {
+                Data = default(TResult),
+                Messages = new List<ApiMessage> { message },
+                Status = ApiResponseStatus.Error,
+                StatusCode = responseStatusCode,
+                TrackingId = trackingId
+            };
+        }
+
+        private ApiResponse<TResult> CreateApiResponse<TResult>(string trackingId, TResult response)
+        {
+            if (response == null)
+            {
+                Logger.Debug("ATG Service client : response is null, status code is 403");
+                return new ApiResponse<TResult>
+                {
+                    Status = ApiResponseStatus.Error,
+                    StatusCode = HttpStatusCode.Forbidden,
+                    TrackingId = trackingId,
+                    Messages = new List<ApiMessage>()
+                };
+            }
+
+            return new ApiResponse<TResult>
+            {
+                Status = ApiResponseStatus.Success,
+                StatusCode = HttpStatusCode.OK,
+                Data = response,
+                TrackingId = trackingId,
+                Messages = null
+            };
+        }
+
+        public IApiResponse<GetUsersResponse> GetUsers(GetUsersRequest request)
+        {
+            Logger.Debug($"GetUsers::Start function. \nRequest: \n{JsonConvert.SerializeObject(request)}");
+            var trackingId = Utils.GetTrackingId();
+            var apiSetting = GetApiSetting("user/GetUsers");
+
+            var tokenResult = tokenProvider.GetToken(request).Result;
+
+            Dictionary<string, string> headers = new Dictionary<string, string>();
+            headers.Add("Authorization", $"Bearer {tokenResult.AccessToken}");
+
+            Logger.Debug($"GetUsers::AccessToken {tokenResult.AccessToken}");
+
+            var apiResponse = TryPost<GetUsersRequest, GetUsersResponse>(trackingId, apiSetting, request, null, headers);
+
+            Logger.Debug($"GetUsers::End function. \nResponse: \n{JsonConvert.SerializeObject(apiResponse.Data)}");
+
+            return apiResponse;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+  <Item Text="" Value="" />
+  <Item Text="NoFilter" Value="NoFilter" />
+  <Item Text="Contains" Value="Contains" />
+  <Item Text="DoesNotContain" Value="DoesNotContain" />
+  <Item Text="StartsWith" Value="StartsWith" />
+  <Item Text="EndsWith" Value="EndsWith" />
+  <Item Text="EqualTo" Value="EqualTo" />
+  <Item Text="NotEqualTo" Value="NotEqualTo" />
+  <Item Text="GreaterThan" Value="GreaterThan" />
+  <Item Text="LessThan" Value="LessThan" />
+  <Item Text="GreaterThanOrEqualTo" Value="GreaterThanOrEqualTo" />
+  <Item Text="LessThanOrEqualTo" Value="LessThanOrEqualTo" />
+  <Item Text="IsEmpty" Value="IsEmpty" />
+  <Item Text="NotIsEmpty" Value="NotIsEmpty" />
+</Menu >

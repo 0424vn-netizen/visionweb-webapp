@@ -1,0 +1,115 @@
+{
+  "DefaultProcessor": "default",
+  "DecryptColumns": "EncryptedTaxID,TaxID,OwnerSSN,DDANumber,RoutingNumber",
+  "HasMultiProcessor": true,
+  "Columns": [
+    {
+      "UniqueName": "MerchantID",
+      "Key": "Entity",
+      "ASFormat": "StaticString",
+      "ReSourceKey": "MerchantID",
+      "Width": 130
+    },
+    {
+      "UniqueName": "DBAName",
+      "Key": "EntityName",
+      "ASFormat": "DynamicString",
+      "ReSourceKey": "MerchantName",
+      "Width": 180,
+      "ItemAlign": "left"
+    },
+    {
+      "UniqueName": "SYS_PRIN_AGENT",
+      "Key": "EntityNumber4",
+      "ASFormat": "DynamicString",
+      "ReSourceKey": "SYS_PRIN_AGENT",
+      "Width": 130
+    },
+    {
+      "UniqueName": "Provider",
+      "Key": "EntityNumber6",
+      "ASFormat": "DynamicString",
+      "ReSourceKey": "Provider",
+      "Width": 130
+    },
+    {
+      "UniqueName": "Channel",
+      "Key": "EntityNumber7",
+      "ASFormat": "DynamicString",
+      "ReSourceKey": "Channel",
+      "Width": 130
+    },
+    {
+      "UniqueName": "Market",
+      "Key": "EntityNumber8",
+      "ASFormat": "DynamicString",
+      "ReSourceKey": "Market",
+      "Width": 130
+    },
+    {
+      "UniqueName": "Agent",
+      "Key": "EntityNumber9",
+      "ASFormat": "DynamicString",
+      "ReSourceKey": "Agent",
+      "Width": 130
+    },
+    {
+      "UniqueName": "ChainNumber",
+      "Key": "ChainNumber",
+      "ASFormat": "DynamicString",
+      "ReSourceKey": "ChainNumber",
+      "Width": 130
+    },
+    {
+      "UniqueName": "SecondaryAccesChain",
+      "Key": "EntityNumber5",
+      "ASFormat": "DynamicString",
+      "ReSourceKey": "SecondaryAccesChain",
+      "Width": 130
+    },
+    {
+      "UniqueName": "Phone",
+      "Key": "Phone",
+      "ASFormat": "Phone",
+      "ReSourceKey": "Phone",
+      "Width": 130
+    },
+    {
+      "UniqueName": "MCCSIC",
+      "Key": "MCCSIC",
+      "ASFormat": "DynamicString",
+      "ReSourceKey": "MCCSIC",
+      "Width": 130
+    },
+    {
+      "UniqueName": "Address",
+      "Key": "Address",
+      "ASFormat": "DynamicString",
+      "ReSourceKey": "Address",
+      "Width": 200,
+      "ItemAlign": "left"
+    },
+    {
+      "UniqueName": "MerchantStatus",
+      "Key": "MerchantStatus",
+      "ASFormat": "DynamicString",
+      "ReSourceKey": "MerchantStatus",
+      "Width": 80,
+      "ItemAlign": "left"
+    },
+    {
+      "UniqueName": "LastBatchActivity",
+      "Key": "LastBatchActivity",
+      "ASFormat": "Date",
+      "ReSourceKey": "LastBatchActivity",
+      "Width": 80
+    },
+    {
+      "UniqueName": "Email",
+      "Key": "Email",
+      "ASFormat": "DynamicString",
+      "ReSourceKey": "Email",
+      "Width": 220
+    }
+  ]
+}

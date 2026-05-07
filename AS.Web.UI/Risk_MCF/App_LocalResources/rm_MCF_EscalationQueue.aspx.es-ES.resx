@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ASGridBoundColumnResource1.HeaderText" xml:space="preserve">
+    <value>Registro</value>
+  </data>
+  <data name="ASGridBoundColumnResource1.HeaderTooltip" xml:space="preserve">
+    <value>Ticket</value>
+  </data>
+  <data name="ASGridBoundColumnResource1.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource10.HeaderText" xml:space="preserve">
+    <value>Resolución</value>
+  </data>
+  <data name="ASGridBoundColumnResource10.HeaderTooltip" xml:space="preserve">
+    <value>Resolución</value>
+  </data>
+  <data name="ASGridBoundColumnResource10.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource11.HeaderText" xml:space="preserve">
+    <value>Asignado a</value>
+  </data>
+  <data name="ASGridBoundColumnResource11.HeaderTooltip" xml:space="preserve">
+    <value>Asignado a</value>
+  </data>
+  <data name="ASGridBoundColumnResource11.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource12.HeaderText" xml:space="preserve">
+    <value>Fecha de Apertura</value>
+  </data>
+  <data name="ASGridBoundColumnResource12.HeaderTooltip" xml:space="preserve">
+    <value>Fecha de Apertura</value>
+  </data>
+  <data name="ASGridBoundColumnResource12.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource13.HeaderText" xml:space="preserve">
+    <value>Última Actualización</value>
+  </data>
+  <data name="ASGridBoundColumnResource13.HeaderTooltip" xml:space="preserve">
+    <value>Última Actualización</value>
+  </data>
+  <data name="ASGridBoundColumnResource13.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource14.HeaderText" xml:space="preserve">
+    <value>Fecha de seguimiento</value>
+  </data>
+  <data name="ASGridBoundColumnResource14.HeaderTooltip" xml:space="preserve">
+    <value>Fecha de seguimiento</value>
+  </data>
+  <data name="ASGridBoundColumnResource14.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource2.HeaderText" xml:space="preserve">
+    <value>ID de Comerciante</value>
+  </data>
+  <data name="ASGridBoundColumnResource2.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource3.HeaderText" xml:space="preserve">
+    <value>Nombre del Comerciante</value>
+  </data>
+  <data name="ASGridBoundColumnResource3.HeaderTooltip" xml:space="preserve">
+    <value>Nombre del Comerciante</value>
+  </data>
+  <data name="ASGridBoundColumnResource3.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource4.HeaderText" xml:space="preserve">
+    <value>Perfil</value>
+  </data>
+  <data name="ASGridBoundColumnResource4.HeaderTooltip" xml:space="preserve">
+    <value>Perfil</value>
+  </data>
+  <data name="ASGridBoundColumnResource4.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource5.HeaderText" xml:space="preserve">
+    <value>Cerrado</value>
+  </data>
+  <data name="ASGridBoundColumnResource5.HeaderTooltip" xml:space="preserve">
+    <value>Cerrado</value>
+  </data>
+  <data name="ASGridBoundColumnResource5.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource6.HeaderText" xml:space="preserve">
+    <value>Observación</value>
+  </data>
+  <data name="ASGridBoundColumnResource6.HeaderTooltip" xml:space="preserve">
+    <value>Observación</value>
+  </data>
+  <data name="ASGridBoundColumnResource6.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource7.HeaderText" xml:space="preserve">
+    <value>Observación múltiple</value>
+  </data>
+  <data name="ASGridBoundColumnResource7.HeaderTooltip" xml:space="preserve">
+    <value>Observación múltiple</value>
+  </data>
+  <data name="ASGridBoundColumnResource7.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource8.HeaderText" xml:space="preserve">
+    <value>Estado Actual</value>
+  </data>
+  <data name="ASGridBoundColumnResource8.HeaderTooltip" xml:space="preserve">
+    <value>Estado Actual</value>
+  </data>
+  <data name="ASGridBoundColumnResource8.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource9.HeaderText" xml:space="preserve">
+    <value>Razón</value>
+  </data>
+  <data name="ASGridBoundColumnResource9.HeaderTooltip" xml:space="preserve">
+    <value>Razón</value>
+  </data>
+  <data name="ASGridBoundColumnResource9.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>Cola de Escalación</value>
+  </data>
+  <data name="RadComboBoxItemResource1.Text" xml:space="preserve">
+    <value>Abierto</value>
+  </data>
+  <data name="RadComboBoxItemResource10.Text" xml:space="preserve">
+    <value>Seguimiento</value>
+  </data>
+  <data name="RadComboBoxItemResource11.Text" xml:space="preserve">
+    <value>TODOS</value>
+  </data>
+  <data name="RadComboBoxItemResource12.Text" xml:space="preserve">
+    <value>Hoy</value>
+  </data>
+  <data name="RadComboBoxItemResource13.Text" xml:space="preserve">
+    <value>Ayer</value>
+  </data>
+  <data name="RadComboBoxItemResource14.Text" xml:space="preserve">
+    <value>Esta semana</value>
+  </data>
+  <data name="RadComboBoxItemResource15.Text" xml:space="preserve">
+    <value>Semana pasada</value>
+  </data>
+  <data name="RadComboBoxItemResource16.Text" xml:space="preserve">
+    <value>Último mes</value>
+  </data>
+  <data name="RadComboBoxItemResource17.Text" xml:space="preserve">
+    <value>Próxima semana</value>
+  </data>
+  <data name="RadComboBoxItemResource18.Text" xml:space="preserve">
+    <value>Próximo mes</value>
+  </data>
+  <data name="RadComboBoxItemResource19.Text" xml:space="preserve">
+    <value>Rango de Fechas</value>
+  </data>
+  <data name="RadComboBoxItemResource2.Text" xml:space="preserve">
+    <value>Cerrado</value>
+  </data>
+  <data name="RadComboBoxItemResource20.Text" xml:space="preserve">
+    <value>Vencido</value>
+  </data>
+  <data name="RadComboBoxItemResource21.Text" xml:space="preserve">
+    <value>Configurado</value>
+  </data>
+  <data name="RadComboBoxItemResource22.Text" xml:space="preserve">
+    <value>Sin configuración</value>
+  </data>
+  <data name="RadComboBoxItemResource3.Text" xml:space="preserve">
+    <value>Todos</value>
+  </data>
+  <data name="RadComboBoxItemResource4.Text" xml:space="preserve">
+    <value>Abierto entre</value>
+  </data>
+  <data name="RadComboBoxItemResource5.Text" xml:space="preserve">
+    <value>Cerrado entre</value>
+  </data>
+  <data name="RadComboBoxItemResource6.Text" xml:space="preserve">
+    <value>Ninguno</value>
+  </data>
+  <data name="RadComboBoxItemResource7.Text" xml:space="preserve">
+    <value>Número de Ticket</value>
+  </data>
+  <data name="RadComboBoxItemResource8.Text" xml:space="preserve">
+    <value>ID de Comerciante</value>
+  </data>
+  <data name="RadComboBoxItemResource8.Value" xml:space="preserve">
+    <value>MNO</value>
+  </data>
+  <data name="RadComboBoxItemResource9.Text" xml:space="preserve">
+    <value>Nombre del Comerciante</value>
+  </data>
+  <data name="rm_EscalationQueue_aspx_AllResource1.Text" xml:space="preserve">
+    <value>  Motivo:</value>
+  </data>
+  <data name="uxDateRangeFollowupFromResource1.DatePopupButton.ToolTip" xml:space="preserve">
+    <value>Abrir calendario emergente.</value>
+  </data>
+  <data name="uxDateRangeFollowupToResource1.DatePopupButton.ToolTip" xml:space="preserve">
+    <value>Abrir calendario emergente.</value>
+  </data>
+  <data name="uxOpenCloseFromDateResource1.DatePopupButton.ToolTip" xml:space="preserve">
+    <value>Abrir calendario emergente.</value>
+  </data>
+  <data name="uxOpenCloseToDateResource1.DatePopupButton.ToolTip" xml:space="preserve">
+    <value>Abrir calendario emergente.</value>
+  </data>
+  <data name="uxReportGridResource1.GroupPanel.Text" xml:space="preserve">
+    <value>Arrastre un encabezado de columna y colóquelo aquí para agrupar por esa columna</value>
+  </data>
+  <data name="uxReportGridResource1.HierarchySettings.CollapseTooltip" xml:space="preserve">
+    <value>Colapsar</value>
+  </data>
+  <data name="uxReportGridResource1.HierarchySettings.ExpandTooltip" xml:space="preserve">
+    <value>Expandir</value>
+  </data>
+  <data name="uxReportGridResource1.MasterTableView.CommandItemSettings.RefreshText" xml:space="preserve">
+    <value>Refrescar</value>
+  </data>
+  <data name="uxReportGridResource1.MasterTableView.NoDetailRecordsText" xml:space="preserve">
+    <value>No se encontraron resultados. Ajuste sus criterios de filtrado.</value>
+  </data>
+  <data name="uxReportGridResource1.MasterTableView.NoMasterRecordsText" xml:space="preserve">
+    <value>No se encontraron resultados. Ajuste sus criterios de filtrado.</value>
+  </data>
+  <data name="uxReportGridResource1.StatusBarSettings.ReadyText" xml:space="preserve">
+    <value>Listo</value>
+  </data>
+  <data name="uxSearchButtonResource1.Text" xml:space="preserve">
+    <value>Buscar</value>
+  </data>
+  <data name="rm_EscalationQueue_js_Alert1" xml:space="preserve">
+    <value>\'Número de tique\' se debe ingresar el valor de entrada de la búsqueda y este debe ser un número.</value>
+  </data>
+  <data name="rm_EscalationQueue_js_Alert2" xml:space="preserve">
+    <value>Formato no válido. Sólo caracteres numéricos(0-9), caracteres alfa (a-z, A-Z), y/o el símbolo (-) están permitidos en este campo.</value>
+  </data>
+  <data name="rm_EscalationQueue_js_Alert3" xml:space="preserve">
+    <value>\'Nombre del comerciante\' se debe ingresar el valor de entrada de la búsqueda.</value>
+  </data>
+  <data name="uxExporterTopResource1.GridHeader" xml:space="preserve">
+    <value>Gestión de riesgos - Análisis de riesgos - Cola de escalación</value>
+  </data>
+  <data name="uxLiteralAllResource1.Text" xml:space="preserve">
+    <value>Todos</value>
+  </data>
+  <data name="uxLiteralAssignedToResource1.Text" xml:space="preserve">
+    <value>Asignado a:</value>
+  </data>
+  <data name="uxLiteralFilterResource1.Text" xml:space="preserve">
+    <value>FILTRO</value>
+  </data>
+  <data name="uxLiteralNoneResource1.Text" xml:space="preserve">
+    <value>Ninguno</value>
+  </data>
+  <data name="uxReportTitleResource1.ReportTitle" xml:space="preserve">
+    <value>Cola de Escalación</value>
+  </data>
+  <data name="Literal10Resource1.Text" xml:space="preserve">
+    <value>Estatus:</value>
+    <comment>n</comment>
+  </data>
+  <data name="Literal11Resource1.Text" xml:space="preserve">
+    <value>Resolución:</value>
+    <comment>n</comment>
+  </data>
+  <data name="RadComboBoxItemSavingsLoss.Text" xml:space="preserve">
+    <value>Ahorros/pérdidas entre</value>
+    <comment>31486</comment>
+  </data>
+  <data name="SavingLossResource1.HeaderText" xml:space="preserve">
+    <value>Cant. de ahorros/pérdida</value>
+    <comment>31486</comment>
+  </data>
+  <data name="SavingsLossFromRequired_text" xml:space="preserve">
+    <value>El campo “ahorros/pérdidas de” es obligatorio.</value>
+    <comment>31486</comment>
+  </data>
+  <data name="SavingsLossFromToRequired_text" xml:space="preserve">
+    <value>Los campos “ahorros/pérdidas de y para” son obligatorios.</value>
+    <comment>31486</comment>
+  </data>
+  <data name="SavingsLossToGreaterThanFrom_text" xml:space="preserve">
+    <value> El valor de “ahorros/pérdidas para” debe ser mayor que el de “ahorros/pérdidas de”.</value>
+    <comment>31486</comment>
+  </data>
+  <data name="SavingsLossToRequired_text" xml:space="preserve">
+    <value>El campo “ahorros/pérdidas para” es obligatorio.</value>
+    <comment>31486</comment>
+  </data>
+  <data name="SavingLossResource1.HeaderTooltip" xml:space="preserve">
+    <value>Cant. de ahorros/pérdida</value>
+  </data>
+  <data name="RadComboBoxItemResource23.Text" xml:space="preserve">
+    <value>Nombre Corporativo</value>
+  </data>
+  <data name="RadComboBoxItemResource24.Text" xml:space="preserve">
+    <value>ID de Comerciante (Parcial)</value>
+  </data>
+  <data name="rm_EscalationQueue_js_Alert4" xml:space="preserve">
+    <value>Introduzca al menos 3 dígitos del ID del comerciante.</value>
+  </data>
+</root>

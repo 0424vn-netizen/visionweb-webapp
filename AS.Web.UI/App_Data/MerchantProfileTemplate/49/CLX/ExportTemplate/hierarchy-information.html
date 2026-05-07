@@ -1,0 +1,55 @@
+﻿<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <th colspan="2" align="left">
+      <b> {{res:HierarchyInformation}}</b>
+    </th>
+  </tr>
+  <tbody>
+      <tr class="Row">
+          <td class="heading">
+              {{res:ClientName}}
+          </td>
+          <td colspan="3">
+              {{data:ClientName||HierarchyInformation}}
+          </td>
+      </tr>
+      <tr class="AltRow">
+          <td class="heading">
+              {{res:ClientLogin}}
+          </td>
+          <td>
+              {{data:ClientLogin||HierarchyInformation}}
+          </td>
+      </tr>
+      <tr>
+          <td colspan="2" class="hierarchy heading">
+              {{res:MerchantHierarchy}}
+          </td>
+      </tr>
+      <tr class="Row">
+          <td class="heading">
+              {{res:Bank}}
+          </td>
+          <td>
+              {{data:EntityNumber7||HierarchyInformation}}
+          </td>
+      </tr>
+      <tr class="AltRow">
+          <td class="heading">
+              {{res:Association}}
+          </td>
+          <td>
+              {{data:EntityNumber9Text||HierarchyInformation}}
+          </td>
+      </tr>
+      <tr class="Row">
+
+          <td class="heading">
+              {{res:Chain}}
+          </td>
+          <td>
+              {{data:CHAIN||HierarchyInformation}}
+          </td>
+      </tr>
+  </tbody>
+</table>

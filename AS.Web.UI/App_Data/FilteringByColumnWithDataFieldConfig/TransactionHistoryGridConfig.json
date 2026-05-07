@@ -1,0 +1,255 @@
+[
+  {
+    "dataField": "ReportDate",
+    "validation": "DateMMddyyyy",
+    "filterMenus": [
+      "NoFilter",
+      "EqualTo",
+      "NotEqualTo",
+      "GreaterThan",
+      "LessThan",
+      "GreaterThanOrEqualTo",
+      "LessThanOrEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "TransDate",
+    "validation": "DateMMddyyyy",
+    "filterMenus": [
+      "NoFilter",
+      "EqualTo",
+      "NotEqualTo",
+      "GreaterThan",
+      "LessThan",
+      "GreaterThanOrEqualTo",
+      "LessThanOrEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "CardType",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "CountryCode",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "PartialCardNumber",
+    "filterMenus": [
+      "NoFilter",
+      "EqualTo",
+      "NotEqualTo",
+      "GreaterThan",
+      "LessThan",
+      "GreaterThanOrEqualTo",
+      "LessThanOrEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "BinNumber",
+    "filterMenus": [
+      "NoFilter",
+      "EqualTo"
+    ]
+  },
+  {
+    "dataField": "DupeCount",
+    "validation": "IntegerGreaterThanEqualZero",
+    "filterMenus": [
+      "NoFilter",
+      "EqualTo",
+      "NotEqualTo",
+      "GreaterThan",
+      "LessThan",
+      "GreaterThanOrEqualTo",
+      "LessThanOrEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },  
+  {
+    "dataField": "TransType",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo"
+    ]
+  },
+  {
+    "dataField": "Amount",
+    "validation": "Number",
+    "filterMenus": [
+      "NoFilter",
+      "EqualTo",
+      "NotEqualTo",
+      "GreaterThan",
+      "LessThan",
+      "GreaterThanOrEqualTo",
+      "LessThanOrEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "MatchCode",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo"
+    ]
+  },
+  {
+    "dataField": "ADF",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo"
+    ]
+  },
+  {
+    "dataField": "ResponseCode",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo"
+    ]
+  },
+  {
+    "dataField": "AuthCode",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo"
+    ]
+  },
+  {
+    "dataField": "AVS",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo"
+    ]
+  },
+  {
+    "dataField": "CVV",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo"
+    ]
+  },
+  {
+    "dataField": "KeyedEntry",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo"
+    ]
+  },
+  {
+    "dataField": "EMVIndicator",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo"
+    ]
+  },
+  {
+    "dataField": "SettleType",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo"
+    ]
+  },
+  {
+    "dataField": "FileSource",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo"
+    ]
+  },
+  {
+    "dataField": "TerminalNumber",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo"
+    ]
+  }
+]

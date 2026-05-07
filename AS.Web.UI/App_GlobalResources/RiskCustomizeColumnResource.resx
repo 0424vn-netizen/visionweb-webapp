@@ -1,0 +1,1342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ContractualValuenotBeenProvided_Resource" xml:space="preserve">
+    <value>Contractual value is zero or has not been provided.</value>
+  </data>
+  <data name="ACHRejects_CustomView_Text" xml:space="preserve">
+    <value>(ACH Rtrn $) ACH Return Amount</value>
+  </data>
+  <data name="ACHRejects_Text" xml:space="preserve">
+    <value>ACH Rtrn $</value>
+  </data>
+  <data name="ACHRejects_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;ACH Return Amount
+&lt;/strong&gt;&lt;br&gt;Automated Clearing House return amount</value>
+  </data>
+  <data name="AuthApprovalPercent_CustomView_Text" xml:space="preserve">
+    <value>(Auth Appr % by #) Authorization Approvals Percent by Count</value>
+  </data>
+  <data name="AuthApprovalPercent_Text" xml:space="preserve">
+    <value>Auth Appr % by #</value>
+  </data>
+  <data name="AuthApprovalPercent_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Authorization Approvals Percent by Count&lt;/strong&gt;&lt;br&gt;
+= (Authorization Count -  Authorization Declined Count) / Authorization Count </value>
+  </data>
+  <data name="AuthCount_CustomView_Text" xml:space="preserve">
+    <value>(Auth #) Number of Authorization Attempts</value>
+  </data>
+  <data name="AuthCount_Text" xml:space="preserve">
+    <value>Auth #</value>
+  </data>
+  <data name="AuthCount_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Authorization Count &lt;/strong&gt;&lt;br&gt;Number of total authorization attempts which includes  approvals and declines</value>
+  </data>
+  <data name="AuthorizationPercent_CustomView_Text" xml:space="preserve">
+    <value>(A % | P40) Authorization Percent</value>
+  </data>
+  <data name="AuthorizationPercent_Text" xml:space="preserve">
+    <value>A % | P40</value>
+  </data>
+  <data name="AuthorizationPercent_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Authorization Percent&lt;/strong&gt;&lt;br&gt;
+The greater of: 1) The excess in  Authorization Count above the Rolling 90-day Daily Average Authorization Count, expressed as a percent, or 2) The excess in Authorization  Amount above the Rolling 90-day Daily Average Authorization Amount expressed as a percent
+&lt;br&gt;&lt;strong class='color-title'&gt;Hyperlink&lt;/strong&gt;: Transaction History&lt;br&gt;&lt;strong class='color-title'&gt;
+Hover&lt;/strong&gt;: Authorization Amount (Authorization Count)</value>
+  </data>
+  <data name="AverageTicketPercent_CustomView_Text" xml:space="preserve">
+    <value>(AT % | P6) Average Transaction Percent</value>
+  </data>
+  <data name="AverageTicketPercent_Text" xml:space="preserve">
+    <value>AT % | P6</value>
+  </data>
+  <data name="AverageTicketPercent_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Average Transaction Percent
+&lt;/strong&gt;&lt;br&gt;= (Today’s Average Transaction Amount – 89-Day Average Transaction Amount) / 89-Day Average Transaction Amount)&lt;br&gt;&lt;strong class='color-title'&gt;
+Hover:&lt;/strong&gt; Average Transaction Amount</value>
+  </data>
+  <data name="AVGTicket_CustomView_Text" xml:space="preserve">
+    <value>(Avg Tran Amt) Average Transaction Amount</value>
+  </data>
+  <data name="AVGTicket_Text" xml:space="preserve">
+    <value>Avg Tran Amt</value>
+  </data>
+  <data name="AVGTicket_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Average Transaction Amount&lt;/strong&gt;&lt;br&gt;= Sales Amount / Total Transaction Count</value>
+  </data>
+  <data name="BusinessAge_CustomView_Text" xml:space="preserve">
+    <value>(Bus Age) Business Age</value>
+  </data>
+  <data name="BusinessAge_Text" xml:space="preserve">
+    <value>Bus Age</value>
+  </data>
+  <data name="BusinessAge_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Business Age
+&lt;/strong&gt;&lt;br&gt;Day Ranges that group merchants by number of days from  Appr. Date to the Report Date
+Day Ranges include: 0-30, 31-60, 61-90, and 91+.</value>
+  </data>
+  <data name="ChargeBackCountPercent_CustomView_Text" xml:space="preserve">
+    <value>(CB % by #) Chargeback Percent by Count</value>
+  </data>
+  <data name="ChargeBackCountPercent_Text" xml:space="preserve">
+    <value>CB % by #</value>
+  </data>
+  <data name="ChargeBackCountPercent_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Chargeback Percent by Count
+&lt;/strong&gt;&lt;br&gt;= Chargeback Count / Sales Count</value>
+  </data>
+  <data name="ChargeBackCount_CustomView_Text" xml:space="preserve">
+    <value>(CB #) Number of Chargebacks</value>
+  </data>
+  <data name="ChargeBackCount_Text" xml:space="preserve">
+    <value>CB #</value>
+  </data>
+  <data name="ChargeBackCount_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Chargeback Count&lt;/strong&gt;&lt;br&gt;
+Number of first-time presentments of disputed sales</value>
+  </data>
+  <data name="ChargeBackPercent_CustomView_Text" xml:space="preserve">
+    <value>(CB % by $) Chargeback Percent by Amount</value>
+  </data>
+  <data name="ChargeBackPercent_Text" xml:space="preserve">
+    <value>CB % by $</value>
+  </data>
+  <data name="ChargeBackPercent_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Chargeback Percent by Amount&lt;/strong&gt;&lt;br&gt;= Chargeback Amount / Sales Amount</value>
+  </data>
+  <data name="ContractualVolume_CustomView_Text" xml:space="preserve">
+    <value>(C Net Amt %) Contract Net Amount Percent</value>
+  </data>
+  <data name="ContractualVolume_Text" xml:space="preserve">
+    <value>C Net Amt %</value>
+  </data>
+  <data name="ContractualVolume_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Contract Net Amount Percent&lt;/strong&gt;
+&lt;br&gt;= Net Amount  / Contract Expected Daily Net Amount
+&lt;br&gt;&lt;strong class='color-title'&gt;Hover:&lt;/strong&gt; Contract Expected Daily Net Amount</value>
+  </data>
+  <data name="DaysActive_CustomView_Text" xml:space="preserve">
+    <value>(Day #) Day Count</value>
+  </data>
+  <data name="DaysActive_Text" xml:space="preserve">
+    <value>Day #</value>
+  </data>
+  <data name="DaysActive_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Day Count&lt;/strong&gt;&lt;br&gt;Number of days from the Appr. Date to the Report Date</value>
+  </data>
+  <data name="DaysProcessedLast90_CustomView_Text" xml:space="preserve">
+    <value>(Day # Batch 90) Number of days, during the last 90 days including today, that the merchant processed a batch</value>
+  </data>
+  <data name="DaysProcessedLast90_Text" xml:space="preserve">
+    <value>Day # Batch 90</value>
+  </data>
+  <data name="DaysProcessedLast90_Tooltip" xml:space="preserve">
+    <value>Number of days, during the last 90 days including today, that the merchant processed a batch</value>
+  </data>
+  <data name="DeclinedAuthorizationAmountPercent_CustomView_Text" xml:space="preserve">
+    <value>(Auth Decl % by $) Authorization Declined Percent by Amount</value>
+  </data>
+  <data name="DeclinedAuthorizationAmountPercent_Text" xml:space="preserve">
+    <value>Auth Decl % by $</value>
+  </data>
+  <data name="DeclinedAuthorizationAmountPercent_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Authorization Declined Percent by Amount&lt;/strong&gt;&lt;br&gt;= Authorization Declined Amount / Authorization Amount</value>
+  </data>
+  <data name="DeclinedAuthorizationAmount_CustomView_Text" xml:space="preserve">
+    <value>(Auth Decl $) Authorization Declined Amount</value>
+  </data>
+  <data name="DeclinedAuthorizationAmount_Text" xml:space="preserve">
+    <value>Auth Decl $</value>
+  </data>
+  <data name="DeclinedAuthorizationAmount_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Authorization Declined Amount&lt;/strong&gt;&lt;br&gt;Sum of the authorization declined amounts</value>
+  </data>
+  <data name="DeclinedAuthorizationCountPercent_CustomView_Text" xml:space="preserve">
+    <value>(Auth Decl % by #) Authorization Declined Percent by Count</value>
+  </data>
+  <data name="DeclinedAuthorizationCountPercent_Text" xml:space="preserve">
+    <value>Auth Decl % by #</value>
+  </data>
+  <data name="DeclinedAuthorizationCountPercent_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Authorization Declined Percent by Count&lt;/strong&gt;&lt;br&gt;= Authorization Declined Count / Authorization Count</value>
+  </data>
+  <data name="DeclinedAuthorizationCount_CustomView_Text" xml:space="preserve">
+    <value>(Auth Decl #) Authorization Declined Count</value>
+  </data>
+  <data name="DeclinedAuthorizationCount_Text" xml:space="preserve">
+    <value>Auth Decl #</value>
+  </data>
+  <data name="DeclinedAuthorizationCount_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Authorization Declined Count&lt;/strong&gt;&lt;br&gt;Number of authorizations declined</value>
+  </data>
+  <data name="DeclinedAuthorizationPercent_CustomView_Text" xml:space="preserve">
+    <value>(DA % | P167) Declined Authorization Percent</value>
+  </data>
+  <data name="DeclinedAuthorizationPercent_Text" xml:space="preserve">
+    <value>DA % | P167</value>
+  </data>
+  <data name="DeclinedAuthorizationPercent_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Declined Authorization Percent&lt;/strong&gt;
+&lt;br&gt;= (Daily Number of Declined Authorizations - Average Number of Daily Declined Authorizations )*100.0 / Average Number of Daily Declined Authorizations 
+&lt;br&gt;&lt;strong class='color-title'&gt;Hover:&lt;/strong&gt; Declined Authorization Amount</value>
+  </data>
+  <data name="DuplicateBin_CustomView_Text" xml:space="preserve">
+    <value>(DB Tran #) Duplicate BIN Transaction Count</value>
+  </data>
+  <data name="DuplicateBin_Text" xml:space="preserve">
+    <value>DB Tran #</value>
+  </data>
+  <data name="DuplicateBin_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Duplicate BIN Transaction Count
+&lt;/strong&gt;&lt;br&gt;The total number of transactions are counted when there are multiple transactions belonging to the same Bank Identification Number (BIN). Transactions are counted for both 6-digit and 8-digit BINs.
+&lt;br&gt;&lt;strong class='color-title'&gt;Hover:&lt;/strong&gt; Duplicate BIN Transaction Amount</value>
+  </data>
+  <data name="DuplicateDollarTransactionPercent_CustomView_Text" xml:space="preserve">
+    <value>(D Tran Amt %) Duplicate Transaction Amount Percent</value>
+  </data>
+  <data name="DuplicateDollarTransactionPercent_Text" xml:space="preserve">
+    <value>D Tran Amt %</value>
+  </data>
+  <data name="DuplicateDollarTransactionPercent_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Duplicate Transaction Amount Percent&lt;/strong&gt;&lt;br&gt;
+A Duplicate Transaction Amount occurs when there is more than one transaction with the same transaction amount
+&lt;br&gt;= Duplicate Transaction Amount Count  / Total Transaction Count&lt;br&gt;&lt;strong class='color-title'&gt;
+Hover:&lt;/strong&gt; Duplicate Transaction Amount Count</value>
+  </data>
+  <data name="EvenDollarTransactionPercent_CustomView_Text" xml:space="preserve">
+    <value>(E Tran Amt %) Even Transaction Amount Percent</value>
+  </data>
+  <data name="EvenDollarTransactionPercent_Text" xml:space="preserve">
+    <value>E Tran Amt %</value>
+  </data>
+  <data name="EvenDollarTransactionPercent_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Even Transaction Amount Percent&lt;/strong&gt;&lt;br&gt;
+= Number of even transaction amounts  / Total Transaction Count</value>
+  </data>
+  <data name="ExcessAboveContractAverage_CustomView_Text" xml:space="preserve">
+    <value>(Excess AT$) Excess Above Contact Expected Average Transaction Amount</value>
+  </data>
+  <data name="ExcessAboveContractAverage_Text" xml:space="preserve">
+    <value>Excess AT$</value>
+  </data>
+  <data name="ExcessAboveContractAverage_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Excess Above Contract Expected Average Transaction Amount&lt;/strong&gt;&lt;br&gt;
+=  Average Transaction Amount - Contract Expected Average Transaction Amount</value>
+  </data>
+  <data name="ExcessAboveContractHighest_CustomView_Text" xml:space="preserve">
+    <value>(Excess Lg Tran $) Excess Above Contract Expected Largest Transaction</value>
+  </data>
+  <data name="ExcessAboveContractHighest_Text" xml:space="preserve">
+    <value>Excess Lg Tran $</value>
+  </data>
+  <data name="ExcessAboveContractHighest_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Excess Above Contract Expected Largest Transaction&lt;/strong&gt;&lt;br&gt; 
+= Largest Transaction - Contract Expected Largest Transaction </value>
+  </data>
+  <data name="ExcessAboveDailyContractVolume_CustomView_Text" xml:space="preserve">
+    <value>(Excess C Net $) Excess Above Contract Expected Daily Net Amount</value>
+  </data>
+  <data name="ExcessAboveDailyContractVolume_Text" xml:space="preserve">
+    <value>Excess C Net $</value>
+  </data>
+  <data name="ExcessAboveDailyContractVolume_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Excess Above Contract Expected Daily Net Amount&lt;/strong&gt;&lt;br&gt;= Daily Bank Card Sales Amount - (Contract Annual Net Amount/ 365)
+	. Bank card is defined by each client during implementation.
+	</value>
+  </data>
+  <data name="ExcessAboveKeyedPercent_CustomView_Text" xml:space="preserve">
+    <value>(Excess K%) Excess Above Contract Expected Keyed Percent</value>
+  </data>
+  <data name="ExcessAboveKeyedPercent_Text" xml:space="preserve">
+    <value>Excess K%</value>
+  </data>
+  <data name="ExcessAboveKeyedPercent_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Excess Above Contract Expected Keyed Percent&lt;/strong&gt;&lt;br&gt;
+= Keyed Percent - Contract Expected Keyed Percent</value>
+  </data>
+  <data name="FirstRetrievalCount_CustomView_Text" xml:space="preserve">
+    <value>(Retrieval #) Retrieval Count</value>
+  </data>
+  <data name="FirstRetrievalCount_Text" xml:space="preserve">
+    <value>Retrieval #</value>
+  </data>
+  <data name="FirstRetrievalCount_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Retrieval Count&lt;/strong&gt;&lt;br&gt;
+Number of requests from a card holder's issuing bank when a cardholder questions the sale amount for any reason</value>
+  </data>
+  <data name="ForcedViolation_CustomView_Text" xml:space="preserve">
+    <value>(Forced | P105 &amp; P106) Forced Sale Violation Indicator</value>
+  </data>
+  <data name="ForcedViolation_Text" xml:space="preserve">
+    <value>Forced | P105 &amp; P106</value>
+  </data>
+  <data name="ForcedViolation_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Forced Sale Violation Indicator
+&lt;/strong&gt;&lt;br&gt;If merchant violates P105 or P106, then "Y", else "N"</value>
+  </data>
+  <data name="ForeignCardCountPercent_CustomView_Text" xml:space="preserve">
+    <value>(Foreign % by #) Foreign Card Percent by Count</value>
+  </data>
+  <data name="ForeignCardCountPercent_Text" xml:space="preserve">
+    <value>Foreign % by #</value>
+  </data>
+  <data name="ForeignCardCountPercent_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Foreign Card Percent by Count&lt;/strong&gt;&lt;br&gt;= Foreign Card Sales Count / Sales Count</value>
+  </data>
+  <data name="Foreign_CustomView_Text" xml:space="preserve">
+    <value>(Foreign $) Foreign Card Amount</value>
+  </data>
+  <data name="Foreign_Text" xml:space="preserve">
+    <value>Foreign $</value>
+  </data>
+  <data name="Foreign_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Foreign Card Amount&lt;/strong&gt;&lt;br&gt;Total Net Amount on cards that were issued in countries outside the USA.</value>
+  </data>
+  <data name="KeyPercent_CustomView_Text" xml:space="preserve">
+    <value>(K % | P8) Keyed Percent</value>
+  </data>
+  <data name="KeyPercent_Text" xml:space="preserve">
+    <value>K % | P8</value>
+  </data>
+  <data name="KeyPercent_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Keyed Percent&lt;/strong&gt;&lt;br&gt;= Keyed Count / Total Transaction Count&lt;br&gt;
+           &lt;strong class='color-title'&gt;Hover:&lt;/strong&gt; Keyed Transaction Amount (Keyed Count)</value>
+  </data>
+  <data name="KeyedPercent_CustomView_Text" xml:space="preserve">
+    <value>(K % | P8) Keyed Percent</value>
+  </data>
+  <data name="KeyedPercent_Text" xml:space="preserve">
+    <value>K % | P8</value>
+  </data>
+  <data name="KeyedPercent_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Keyed Percent&lt;/strong&gt;&lt;br&gt;= Keyed Count / Total Transaction Count&lt;br&gt;
+           &lt;strong class='color-title'&gt;Hover:&lt;/strong&gt; Keyed Transaction Amount (Keyed Count)</value>
+  </data>
+  <data name="MV1_CustomView_Text" xml:space="preserve">
+    <value>(Mo 1 Net Amt) Last Month's Net Amount</value>
+  </data>
+  <data name="MV1_Text" xml:space="preserve">
+    <value>Mo 1 Net Amt</value>
+  </data>
+  <data name="MV1_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Last Month's Net Amount&lt;/strong&gt;</value>
+  </data>
+  <data name="MV2_CustomView_Text" xml:space="preserve">
+    <value>(Mo 2 Net Amt) 2nd previous Month's Net Amount</value>
+  </data>
+  <data name="MV2_Text" xml:space="preserve">
+    <value>Mo 2 Net Amt</value>
+  </data>
+  <data name="MV2_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;2nd previous Month's Net Amount&lt;/strong&gt;</value>
+  </data>
+  <data name="MV3_CustomView_Text" xml:space="preserve">
+    <value>(Mo 3 Net Amt) 3rd previous Month's Net Amount</value>
+  </data>
+  <data name="MV3_Text" xml:space="preserve">
+    <value>Mo 3 Net Amt</value>
+  </data>
+  <data name="MV3_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;3rd previous Month's Net Amount&lt;/strong&gt;</value>
+  </data>
+  <data name="NegativeBatchCount_CustomView_Text" xml:space="preserve">
+    <value>(Batch # &lt; 0| P10) Number of Batches less than zero</value>
+  </data>
+  <data name="NegativeBatchCount_Text" xml:space="preserve">
+    <value>Batch # &lt; 0| P10</value>
+  </data>
+  <data name="NegativeBatchCount_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Batch Count less than zero&lt;/strong&gt;&lt;/br&gt;
+Number of batches where Sales Amount - Return Amount &lt; $0.00</value>
+  </data>
+  <data name="ProfileDescription_CustomView_Text" xml:space="preserve">
+    <value>(Profile) User defined Profile descriptions</value>
+  </data>
+  <data name="ProfileDescription_Text" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="ProfileDescription_Tooltip" xml:space="preserve">
+    <value>&lt;span&gt;User-defined merchant category values&lt;/span&gt;&lt;br&gt;&lt;strong class='color-title'&gt;
+Hover:&lt;/strong&gt; Full length of Profile Description</value>
+  </data>
+  <data name="RepeatAuthorizationCount_CustomView_Text" xml:space="preserve">
+    <value>(RA # | P42) Repeat Authorization Count</value>
+  </data>
+  <data name="RepeatAuthorizationCount_Text" xml:space="preserve">
+    <value>RA # | P42</value>
+  </data>
+  <data name="RepeatAuthorizationCount_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Repeat Authorization Count&lt;/strong&gt;&lt;br&gt;
+Number of times that more than one authorization occurred using the same card.</value>
+  </data>
+  <data name="RetrievalAmountPercent_CustomView_Text" xml:space="preserve">
+    <value>(Retrieval % by $) Retrieval Percent by Amount</value>
+  </data>
+  <data name="RetrievalAmountPercent_Text" xml:space="preserve">
+    <value>Retrieval % by $</value>
+  </data>
+  <data name="RetrievalAmountPercent_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Retrieval Percent by Amount&lt;/strong&gt;&lt;br&gt;= Retrieval Amount / Sales Amount</value>
+  </data>
+  <data name="RetrievalCountPercent_CustomView_Text" xml:space="preserve">
+    <value>(Retrieval % by #) Retrieval Percent by Count</value>
+  </data>
+  <data name="RetrievalCountPercent_Text" xml:space="preserve">
+    <value>Retrieval % by #</value>
+  </data>
+  <data name="RetrievalCountPercent_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Retrieval Percent by Count&lt;/strong&gt;&lt;br&gt;
+= Retrieval Count / Sales Count</value>
+  </data>
+  <data name="ReturnCountPercent_CustomView_Text" xml:space="preserve">
+    <value>(Return % by #) Return Percent by Count</value>
+  </data>
+  <data name="ReturnCountPercent_Text" xml:space="preserve">
+    <value>Return % by #</value>
+  </data>
+  <data name="ReturnCountPercent_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Return Percent by Count
+&lt;/strong&gt;&lt;br&gt;= Return Count /  Sales Count</value>
+  </data>
+  <data name="ReturnCount_CustomView_Text" xml:space="preserve">
+    <value>(Return #) Return Count</value>
+  </data>
+  <data name="ReturnCount_Text" xml:space="preserve">
+    <value>Return #</value>
+  </data>
+  <data name="ReturnCount_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Return Count&lt;/strong&gt;&lt;br&gt;Number of times that a merchant credited an amount to a cardholder's card</value>
+  </data>
+  <data name="ReturnPercent_CustomView_Text" xml:space="preserve">
+    <value>(Return % by $) Return Percent by Amount</value>
+  </data>
+  <data name="ReturnPercent_Text" xml:space="preserve">
+    <value>Return % by $</value>
+  </data>
+  <data name="ReturnPercent_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Return Percent by Amount
+&lt;/strong&gt;&lt;br&gt;= Absolute Value of the Return Amount / Sales Amount
+&lt;br&gt;&lt;strong class='color-title'&gt;Hover:&lt;/strong&gt; Return Amount</value>
+  </data>
+  <data name="Returns_CustomView_Text" xml:space="preserve">
+    <value>(Return $) Return Amount</value>
+  </data>
+  <data name="Returns_Text" xml:space="preserve">
+    <value>Return $</value>
+  </data>
+  <data name="Returns_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Return Amount&lt;/strong&gt;&lt;br&gt;Amount credited to the customer's card, expressed as a negative amount ($0.00)</value>
+  </data>
+  <data name="RiskScore_CustomView_Text" xml:space="preserve">
+    <value>(RS) Risk Score</value>
+  </data>
+  <data name="RiskScore_Text" xml:space="preserve">
+    <value>RS</value>
+  </data>
+  <data name="RiskScore_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Risk Score
+&lt;/strong&gt;&lt;br&gt;Risk Score is calculated each time that the Risk process runs based on the user defined ranges on the Risk Scores page.&lt;br&gt;&lt;strong class='color-title'&gt;
+Hyperlink:&lt;/strong&gt; Risk Score Details</value>
+  </data>
+  <data name="RulesViolated_CustomView_Text" xml:space="preserve">
+    <value>(PV) Parameters Violated</value>
+  </data>
+  <data name="RulesViolated_Text" xml:space="preserve">
+    <value>PV</value>
+  </data>
+  <data name="RulesViolated_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Parameters Violated
+&lt;/strong&gt;&lt;br&gt;Parameter numbers that the merchant violated&lt;br&gt;
+&lt;strong class='color-title'&gt;Hover:&lt;/strong&gt; Extended list of parameters violated</value>
+  </data>
+  <data name="SaleAmount_CustomView_Text" xml:space="preserve">
+    <value>(Sales $) Sales Transaction Amount</value>
+  </data>
+  <data name="SaleAmount_Text" xml:space="preserve">
+    <value>Sales $</value>
+  </data>
+  <data name="SaleAmount_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Sales Amount&lt;/strong&gt;&lt;br&gt;Sum of sales amounts</value>
+  </data>
+  <data name="SaleGroup_CustomView_Text" xml:space="preserve">
+    <value>(Sale Group) Sales Agent / Sales Office</value>
+  </data>
+  <data name="SaleGroup_Text" xml:space="preserve">
+    <value>Sale Group</value>
+  </data>
+  <data name="SaleGroup_Tooltip" xml:space="preserve">
+    <value>Sales Agent / Sales Office</value>
+  </data>
+  <data name="SalesCount_CustomView_Text" xml:space="preserve">
+    <value>(Sales #) Number of Sales Transactions</value>
+  </data>
+  <data name="SalesCount_Text" xml:space="preserve">
+    <value>Sales #</value>
+  </data>
+  <data name="SalesCount_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Sales Count&lt;/strong&gt;&lt;br&gt;Number of sales transactions</value>
+  </data>
+  <data name="SICCode_CustomView_Text" xml:space="preserve">
+    <value>(SIC) Standard Industry Codes - 4 digits</value>
+  </data>
+  <data name="SICCode_Text" xml:space="preserve">
+    <value>SIC</value>
+  </data>
+  <data name="SICCode_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Standard Industry Code&lt;/strong&gt;&lt;/br&gt;&lt;span class='color-title'&gt;4-digit code also known as Merchant Category Code (MCC)&lt;/span&gt;&lt;br&gt;
+    &lt;strong class='color-title'&gt;Hover:&lt;/strong&gt; SIC Descriptions</value>
+  </data>
+  <data name="SingleCardTransToday_CustomView_Text" xml:space="preserve">
+    <value>(SC Tran # | P14) Similar Card Transaction Count</value>
+  </data>
+  <data name="SingleCardTransToday_Text" xml:space="preserve">
+    <value>SC Tran # | P14</value>
+  </data>
+  <data name="SingleCardTransToday_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Similar Card Transaction Count&lt;/strong&gt;&lt;br&gt;
+Number of transactions on cards with the same first 12 digits.&lt;br&gt;&lt;strong class='color-title'&gt;
+Hover:&lt;/strong&gt; Similar Card Transaction Amount</value>
+  </data>
+  <data name="State_CustomView_Text" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="State_Text" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="State_Tooltip" xml:space="preserve">
+    <value>&lt;strong&gt;State&lt;/strong&gt;</value>
+  </data>
+  <data name="TodayBankCardSales_CustomView_Text" xml:space="preserve">
+    <value>(BC Sale #) Bank Card Sales Count</value>
+  </data>
+  <data name="TodayBankCardSales_Text" xml:space="preserve">
+    <value>BC Sale #</value>
+  </data>
+  <data name="TodayBankCardSales_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Bank Card Sales Count.&lt;/strong&gt;&lt;br&gt;
+&lt;span&gt;Sales Count using bank cards&lt;span&gt;. Bank card is defined by each client during implementation.
+    </value>
+  </data>
+  <data name="TodayBatchCount_CustomView_Text" xml:space="preserve">
+    <value>(Batch #) Number of Batches processed</value>
+  </data>
+  <data name="TodayBatchCount_Text" xml:space="preserve">
+    <value>Batch #</value>
+  </data>
+  <data name="TodayBatchCount_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Batch Count&lt;/strong&gt;&lt;br&gt;Number of batches processed</value>
+  </data>
+  <data name="TodayChargebackVolume_CustomView_Text" xml:space="preserve">
+    <value>(CB $) Chargeback Amount</value>
+  </data>
+  <data name="TodayChargebackVolume_Text" xml:space="preserve">
+    <value>CB $</value>
+  </data>
+  <data name="TodayChargebackVolume_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Chargeback Amount&lt;/strong&gt;&lt;br&gt;
+Sales Amount associated with first-time presentment of disputed sales&lt;br&gt;&lt;strong class='color-title'&gt;
+Hover:&lt;/strong&gt; Chargeback Count</value>
+  </data>
+  <data name="ChargeBackVolume_CustomView_Text" xml:space="preserve">
+    <value>(CB $) Chargeback Amount</value>
+  </data>
+  <data name="ChargeBackVolume_Text" xml:space="preserve">
+    <value>CB $</value>
+  </data>
+  <data name="ChargeBackVolume_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Chargeback Amount&lt;/strong&gt;&lt;br&gt;
+Sales Amount associated with first-time presentment of disputed sales&lt;br&gt;&lt;strong class='color-title'&gt;
+Hover:&lt;/strong&gt; Chargeback Count</value>
+  </data>
+  <data name="TodayFirstTimeRetrievalVolume_CustomView_Text" xml:space="preserve">
+    <value>(Ret Amt) Retrieval Amount</value>
+  </data>
+  <data name="TodayFirstTimeRetrievalVolume_Text" xml:space="preserve">
+    <value>Ret Amt</value>
+  </data>
+  <data name="TodayFirstTimeRetrievalVolume_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Retrieval Amount&lt;/strong&gt;&lt;br&gt;
+Retrieval Amount associated with retrieval request&lt;br&gt;&lt;strong class='color-title'&gt;
+Hover:&lt;/strong&gt; Retrieval Count</value>
+  </data>
+  <data name="Retrievals_CustomView_Text" xml:space="preserve">
+    <value>(Ret Amt) Retrieval Amount</value>
+  </data>
+  <data name="Retrievals_Text" xml:space="preserve">
+    <value>Ret Amt</value>
+  </data>
+  <data name="Retrievals_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Retrieval Amount&lt;/strong&gt;&lt;br&gt;
+Retrieval Amount associated with retrieval request&lt;br&gt;&lt;strong class='color-title'&gt;
+Hover:&lt;/strong&gt; Retrieval Count</value>
+  </data>
+  <data name="TodayForeignCardCount_CustomView_Text" xml:space="preserve">
+    <value>(FC Tran # | P2) Foreign Card Transaction Count</value>
+  </data>
+  <data name="TodayForeignCardCount_Text" xml:space="preserve">
+    <value>FC Tran # | P2</value>
+  </data>
+  <data name="TodayForeignCardCount_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Foreign Card Transaction Count&lt;/strong&gt;&lt;br&gt;
+Total Transaction Count on cards that were issued in countries outside the USA.
+&lt;br&gt;&lt;strong class='color-title'&gt;Hover:&lt;/strong&gt; Foreign Card Transaction Amount</value>
+  </data>
+  <data name="TodayHighestTransactionAmount_CustomView_Text" xml:space="preserve">
+    <value>(Lg Tran $) Largest Transaction Amount</value>
+  </data>
+  <data name="TodayHighestTransactionAmount_Text" xml:space="preserve">
+    <value>Lg Tran $</value>
+  </data>
+  <data name="TodayHighestTransactionAmount_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Largest Transaction Amount&lt;/strong&gt;&lt;br&gt;Either largest Sales Amount or Return Amount</value>
+  </data>
+  <data name="LargeTrans_CustomView_Text" xml:space="preserve">
+    <value>(Lg Tran $) Largest Transaction Amount</value>
+  </data>
+  <data name="LargeTrans_Text" xml:space="preserve">
+    <value>Lg Tran $</value>
+  </data>
+  <data name="LargeTrans_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Largest Transaction Amount&lt;/strong&gt;&lt;br&gt;Either largest Sales Amount or Return Amount</value>
+  </data>
+  <data name="TodayTransactionCount_CustomView_Text" xml:space="preserve">
+    <value>(Total Tran #) Total Transaction Count</value>
+  </data>
+  <data name="TodayTransactionCount_Text" xml:space="preserve">
+    <value>Total Tran #</value>
+  </data>
+  <data name="TodayTransactionCount_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Total Transaction Count&lt;/strong&gt;&lt;br&gt;= Sales Count + Return Count</value>
+  </data>
+  <data name="TodayUnmatchedCreditsVolume_CustomView_Text" xml:space="preserve">
+    <value>(U Rtrn $) Unmatched Return Amount</value>
+  </data>
+  <data name="TodayUnmatchedCreditsVolume_Text" xml:space="preserve">
+    <value>U Rtrn $</value>
+  </data>
+  <data name="TodayUnmatchedCreditsVolume_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Unmatched Return Amount&lt;/strong&gt;&lt;br&gt;
+Return amount that can't be matched with a Sales amount within 90 days from the return date.</value>
+  </data>
+  <data name="TodayVolume_CustomView_Text" xml:space="preserve">
+    <value>(Net Amt) Net Amount</value>
+  </data>
+  <data name="TodayVolume_Text" xml:space="preserve">
+    <value>Net Amt</value>
+  </data>
+  <data name="TodayVolume_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Net Amount
+&lt;/strong&gt;&lt;br&gt;= Sales Amount - Return Amount</value>
+  </data>
+  <data name="Volume_CustomView_Text" xml:space="preserve">
+    <value>(Net Amt) Net Amount</value>
+  </data>
+  <data name="Volume_Text" xml:space="preserve">
+    <value>Net Amt</value>
+  </data>
+  <data name="Volume_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Net Amount
+&lt;/strong&gt;&lt;br&gt;= Sales Amount - Return Amount</value>
+  </data>
+  <data name="TotalOfWorked_CustomView_Text" xml:space="preserve">
+    <value>(Day # WKD 30) Number of days, within the last 30 days, that merchant was worked</value>
+  </data>
+  <data name="TotalOfWorked_Text" xml:space="preserve">
+    <value>Day # WKD 30</value>
+  </data>
+  <data name="TotalOfWorked_Tooltip" xml:space="preserve">
+    <value>Number of days, within the last 30 days, that merchant was worked.</value>
+  </data>
+  <data name="TransactionCountLast60_CustomView_Text" xml:space="preserve">
+    <value>(Tran # 60) 60 Day Transaction Count</value>
+  </data>
+  <data name="TransactionCountLast60_Text" xml:space="preserve">
+    <value>Tran # 60</value>
+  </data>
+  <data name="TransactionCountLast60_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;60 Day Transaction Count&lt;/strong&gt;
+  &lt;br&gt;Total Transaction Count processed during the last 60 days, excluding today</value>
+  </data>
+  <data name="VolumePercent_CustomView_Text" xml:space="preserve">
+    <value>(Net Amt % | P4) Net Amount Percent</value>
+  </data>
+  <data name="VolumePercent_Text" xml:space="preserve">
+    <value>Net Amt % | P4</value>
+  </data>
+  <data name="VolumePercent_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Net Amount Percent
+&lt;/strong&gt;&lt;br&gt;= ((Today’s Net Amount – Previous 90-Day Average Net Amount) / Previous 90-Day Average Net Amount)
+&lt;br&gt;&lt;strong class='color-title'&gt;Hyperlink:&lt;/strong&gt;Transaction Details
+&lt;br&gt;&lt;strong class='color-title'&gt;Hover:&lt;/strong&gt; Net Amount</value>
+  </data>
+  <data name="WorkQueueName_CustomView_Text" xml:space="preserve">
+    <value>(Work Queue) Work Queue</value>
+  </data>
+  <data name="WorkQueueName_Text" xml:space="preserve">
+    <value>Work Queue</value>
+  </data>
+  <data name="WorkQueueName_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Work Queue&lt;/strong&gt;&lt;br&gt;
+Work Queue to which a merchant has been added.</value>
+  </data>
+  <data name="ZeroBatchCount_CustomView_Text" xml:space="preserve">
+    <value>(Batch # = 0 | P1) Batch Count equal to zero</value>
+  </data>
+  <data name="ZeroBatchCount_Text" xml:space="preserve">
+    <value>Batch # = 0| P1</value>
+  </data>
+  <data name="ZeroBatchCount_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Batch Count equal to zero&lt;/strong&gt;&lt;br&gt;Number of batches where Sales Amount - Return Amount = $0.00</value>
+  </data>
+  <data name="Zip3_CustomView_Text" xml:space="preserve">
+    <value>(Zip -3) First three digits of US Zip Code</value>
+  </data>
+  <data name="Zip3_Text" xml:space="preserve">
+    <value>Zip -3</value>
+  </data>
+  <data name="Zip3_Tooltip" xml:space="preserve">
+    <value>First three digits of US Zip Code</value>
+  </data>
+  <data name="MerchantName_CustomView_Text" xml:space="preserve">
+    <value>Merchant Name</value>
+  </data>
+  <data name="MerchantName_Text" xml:space="preserve">
+    <value>Merchant Name</value>
+  </data>
+  <data name="MerchantName_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Merchant Name&lt;/strong&gt;&lt;br&gt;If merchant name has an asterisk (*) the merchant is on Watch or on Multi-Merchant Watch.
+&lt;strong class='color-title'&gt;&lt;br&gt;Hover:&lt;/strong&gt; Merchant ID - Appr. Date. If (M) is displayed, it means that the merchant is on Watch</value>
+  </data>
+  <data name="ParametersWorked_CustomView_Text" xml:space="preserve">
+    <value>(PW #) Parameters Worked Count</value>
+  </data>
+  <data name="ParametersWorked_Text" xml:space="preserve">
+    <value>PW #</value>
+  </data>
+  <data name="ParametersWorked_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Parameters Worked Count&lt;/strong&gt;&lt;br&gt;Distinct violated parameter count when merchant was last worked</value>
+  </data>
+  <data name="Requeued_CustomView_Text" xml:space="preserve">
+    <value>(RQ) Requeued</value>
+  </data>
+  <data name="Requeued_Text" xml:space="preserve">
+    <value>RQ</value>
+  </data>
+  <data name="Requeued_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Re-queue&lt;/strong&gt;&lt;br&gt;When checkbox is selected, that merchant is in process of being moved to, or removed from, a Work Queue. Dark grey shading outside the checkbox indicates that the merchant has been moved to a Work Queue.</value>
+  </data>
+  <data name="Worked_CustomView_Text" xml:space="preserve">
+    <value>(WKD #) Worked Count</value>
+  </data>
+  <data name="Worked_Text" xml:space="preserve">
+    <value>WKD #</value>
+  </data>
+  <data name="Worked_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Worked Count&lt;/strong&gt;&lt;br&gt;Number of times a merchant was worked</value>
+  </data>
+  <data name="Work_CustomView_Text" xml:space="preserve">
+    <value>(Work) Work Status</value>
+  </data>
+  <data name="Work_Text" xml:space="preserve">
+    <value>Work</value>
+  </data>
+  <data name="Work_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Work Status&lt;/strong&gt;</value>
+  </data>
+  <data name="Disposition_CustomView_Text" xml:space="preserve">
+    <value>Disposition</value>
+  </data>
+  <data name="Disposition_Text" xml:space="preserve">
+    <value>Disposition</value>
+  </data>
+  <data name="Disposition_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Disposition
+&lt;/strong&gt;&lt;br&gt;Action taken when a merchant alert is worked.</value>
+  </data>
+  <data name="DispositionWork_Text" xml:space="preserve">
+    <value>Disposition</value>
+  </data>
+  <data name="WorkedStatus_Text" xml:space="preserve">
+    <value>WKD</value>
+  </data>
+  <data name="WorkInProgressStatus_Text" xml:space="preserve">
+    <value>WIP</value>
+  </data>
+  <data name="WorkInProgress_Text" xml:space="preserve">
+    <value>Work in Progress</value>
+  </data>
+  <data name="WorkStatus_Text" xml:space="preserve">
+    <value>WK</value>
+  </data>
+  <data name="Disposition_CustomView_Text1" xml:space="preserve">
+    <value>Disposition</value>
+  </data>
+  <data name="Disposition_Text1" xml:space="preserve">
+    <value>Disposition</value>
+  </data>
+  <data name="Disposition_Tooltip1" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Disposition&lt;/strong&gt;&lt;br&gt;
+User defined descriptions of the actions taken when merchant alert is worked.</value>
+  </data>
+  <data name="Ready_to_Work" xml:space="preserve">
+    <value>Ready to Work</value>
+  </data>
+  <data name="WIP_by_me" xml:space="preserve">
+    <value>WIP by me</value>
+  </data>
+  <data name="WIP_by_others" xml:space="preserve">
+    <value>WIP by others</value>
+  </data>
+  <data name="Worked" xml:space="preserve">
+    <value>Worked</value>
+  </data>
+  <data name="CurrentStatusDesc_Text" xml:space="preserve">
+    <value>Wk</value>
+  </data>
+  <data name="IsRequeuedDesc_Text" xml:space="preserve">
+    <value>RQ</value>
+  </data>
+  <data name="Barometer_WorkPopoverText" xml:space="preserve">
+    <value>Work</value>
+  </data>
+  <data name="LastActiveDate_Text" xml:space="preserve">
+    <value>Last Batch Date</value>
+  </data>
+  <data name="btnSubmitResource" xml:space="preserve">
+    <value>SUBMIT</value>
+  </data>
+  <data name="DefaultValueResource_Text" xml:space="preserve">
+    <value>(Default)</value>
+  </data>
+  <data name="AttritionScore_CustomView_Text" xml:space="preserve">
+    <value>ARS | P187</value>
+  </data>
+  <data name="AttritionScore_Text" xml:space="preserve">
+    <value>ARS | P187</value>
+  </data>
+  <data name="AttritionScore_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Attrition Risk Score&lt;/strong&gt;&lt;br&gt;Attrition Score attributed to the merchant.&lt;br&gt;
+&lt;strong class='color-title'&gt;Hover:&lt;/strong&gt; Reason codes</value>
+  </data>
+  <data name="ReserveScore_CustomView_Text" xml:space="preserve">
+    <value>RRS | P188</value>
+  </data>
+  <data name="ReserveScore_Text" xml:space="preserve">
+    <value>RRS | P188</value>
+  </data>
+  <data name="ReserveScore_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Reserve Risk  Score&lt;/strong&gt;&lt;br&gt;Reserve Risk  Score attributed to the merchant&lt;br&gt;
+&lt;strong class='color-title'&gt;Hover:&lt;/strong&gt; Reason codes</value>
+  </data>
+  <data name="ACHReturnAmount_CustomView_Text" xml:space="preserve">
+    <value>(ACH Rtrn $) ACH Return Amount</value>
+  </data>
+  <data name="ACHReturnAmount_Text" xml:space="preserve">
+    <value>ACH Rtrn $</value>
+  </data>
+  <data name="ACHReturnAmount_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;ACH Return Amount
+&lt;/strong&gt;&lt;br&gt;Automated Clearing House return amount</value>
+  </data>
+  <data name="TodayPrepaidCardSalesPercent_Text" xml:space="preserve">
+    <value>Prepaid Sales % by $ | P189</value>
+  </data>
+  <data name="TodayPrepaidCardSalesPercent_CustomView_Text" xml:space="preserve">
+    <value>(Prepaid Sales % by $ | P189) Today’s Prepaid Card Sales Percentage by Amount</value>
+  </data>
+  <data name="TodayPrepaidCardSalesPercent_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Today’s Prepaid Card Sales Percentage by Amount&lt;/strong&gt;&lt;br&gt;= Today’s Total Prepaid Sales Amount / Today’s Total Sales Amount&lt;br&gt;
+&lt;strong class='color-title'&gt;Hover:&lt;/strong&gt; Today’s Total Prepaid Sales Amount</value>
+  </data>
+  <data name="MaxBINAuth#_CustomView_Text" xml:space="preserve">
+    <value>(BIN Auth #) BIN Highest Authorization Count</value>
+  </data>
+  <data name="MaxBINAuth#_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;BIN Highest Authorization Count&lt;/strong&gt;&lt;br&gt;A count of the highest number of authorizations within a BIN today.&lt;br&gt;&lt;strong class='color-title'&gt;Hover:&lt;/strong&gt; BIN Number and Authorization Amount for the BIN.</value>
+  </data>
+  <data name="MaxBINAuth#_Text" xml:space="preserve">
+    <value>BIN Auth #</value>
+  </data>
+  <data name="MaxBINTrans#_CustomView_Text" xml:space="preserve">
+    <value>(BIN Trans #) BIN Highest Transaction Count</value>
+  </data>
+  <data name="MaxBINTrans#_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;BIN Highest Transaction Count&lt;/strong&gt;&lt;br&gt;A count of the highest number of sales and returns transactions within a BIN today.&lt;br&gt;&lt;strong class='color-title'&gt;Hover:&lt;/strong&gt; BIN Number and Net Amount = Sales Amount – Returns Amount for the BIN.</value>
+  </data>
+  <data name="MaxBINTrans#_Text" xml:space="preserve">
+    <value>BIN Trans #</value>
+  </data>
+  <data name="MIFStatusDesc_CustomView_Text" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="MIFStatusDesc_Text" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="MIFStatusDesc_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Merchant Status&lt;/strong&gt;&lt;/br&gt;&lt;span class='color-title'&gt;Current Status of the Merchant&lt;/span&gt;&lt;br&gt;
+    &lt;strong class='color-title'&gt;&lt;/strong&gt; </value>
+  </data>
+  <data name="ACHRejects_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;ACH Return Amount
+&lt;/strong&gt;&lt;br&gt;Automated Clearing House return amount</value>
+  </data>
+  <data name="AuthCount_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Authorization Count &lt;/strong&gt;&lt;br&gt;Number of total authorization attempts which includes  approvals and declines</value>
+  </data>
+  <data name="AuthApprovalPercent_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Authorization Approvals Percent by Count&lt;/strong&gt;&lt;br&gt;
+= (Authorization Count -  Authorization Declined Count) / Authorization Count </value>
+  </data>
+  <data name="DeclinedAuthorizationCount_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Authorization Declined Count&lt;/strong&gt;&lt;br&gt;Number of authorizations declined</value>
+  </data>
+  <data name="DeclinedAuthorizationCountPercent_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Authorization Declined Percent by Count&lt;/strong&gt;&lt;br&gt;= Authorization Declined Count / Authorization Count</value>
+  </data>
+  <data name="DeclinedAuthorizationAmount_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Authorization Declined Amount&lt;/strong&gt;&lt;br&gt;Sum of the authorization declined amounts</value>
+  </data>
+  <data name="DeclinedAuthorizationAmountPercent_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Authorization Declined Percent by Amount&lt;/strong&gt;&lt;br&gt;= Authorization Declined Amount / Authorization Amount</value>
+  </data>
+  <data name="AVGTicket_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Average Transaction Amount&lt;/strong&gt;&lt;br&gt;= Sales Amount / Total Transaction Count</value>
+  </data>
+  <data name="ChargeBackCount_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Chargeback Count&lt;/strong&gt;&lt;br&gt;
+Number of first-time presentments of disputed sales</value>
+  </data>
+  <data name="TodayChargebackVolume_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Chargeback Amount&lt;/strong&gt;&lt;br&gt;
+Sales Amount associated with first-time presentment of disputed sales</value>
+  </data>
+  <data name="ChargeBackVolume_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Chargeback Amount&lt;/strong&gt;&lt;br&gt;
+Sales Amount associated with first-time presentment of disputed sales</value>
+  </data>
+  <data name="ChargeBackCountPercent_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Chargeback Percent by Count
+&lt;/strong&gt;&lt;br&gt;= Chargeback Count / Sales Count</value>
+  </data>
+  <data name="ChargeBackPercent_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Chargeback Percent by Amount&lt;/strong&gt;&lt;br&gt;= Chargeback Amount / Sales Amount</value>
+  </data>
+  <data name="ForeignCardCountPercent_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Foreign Card Percent by Count&lt;/strong&gt;&lt;br&gt;= Foreign Card Sales Count / Sales Count</value>
+  </data>
+  <data name="Foreign_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Foreign Card Amount&lt;/strong&gt;&lt;br&gt;Total Net Amount on cards that were issued in countries outside the USA</value>
+  </data>
+  <data name="KeyPercent_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Keyed Percent&lt;/strong&gt;&lt;br&gt;= Keyed Count / Total Transaction Count</value>
+  </data>
+  <data name="KeyedPercent_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Keyed Percent&lt;/strong&gt;&lt;br&gt;= Keyed Count / Total Transaction Count</value>
+  </data>
+  <data name="TodayHighestTransactionAmount_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Largest Transaction Amount&lt;/strong&gt;&lt;br&gt;Either largest Sales Amount or Return Amount</value>
+  </data>
+  <data name="LargeTrans_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Largest Transaction Amount&lt;/strong&gt;&lt;br&gt;Either largest Sales Amount or Return Amount</value>
+  </data>
+  <data name="TodayVolume_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Net Amount
+&lt;/strong&gt;&lt;br&gt;= Sales Amount - Return Amount</value>
+  </data>
+  <data name="Volume_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Net Amount
+&lt;/strong&gt;&lt;br&gt;= Sales Amount - Return Amount</value>
+  </data>
+  <data name="TodayFirstTimeRetrievalVolume_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Retrieval Amount&lt;/strong&gt;&lt;br&gt;
+Retrieval Amount associated with retrieval request</value>
+  </data>
+  <data name="Retrievals_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Retrieval Amount&lt;/strong&gt;&lt;br&gt;
+Retrieval Amount associated with retrieval request</value>
+  </data>
+  <data name="FirstRetrievalCount_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Retrieval Count&lt;/strong&gt;&lt;br&gt;
+Number of requests from a card holder's issuing bank when a cardholder questions the sale amount for any reason</value>
+  </data>
+  <data name="RetrievalAmountPercent_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Retrieval Percent by Amount&lt;/strong&gt;&lt;br&gt;= Retrieval Amount / Sales Amount</value>
+  </data>
+  <data name="RetrievalCountPercent_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Retrieval Percent by Count&lt;/strong&gt;&lt;br&gt;
+= Retrieval Count / Sales Count</value>
+  </data>
+  <data name="ReturnCount_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Return Count&lt;/strong&gt;&lt;br&gt;Number of times that a merchant credited an amount to a cardholder's card</value>
+  </data>
+  <data name="ReturnCountPercent_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Return Percent by Count
+&lt;/strong&gt;&lt;br&gt;= Return Count /  Sales Count</value>
+  </data>
+  <data name="Returns_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Return Amount&lt;/strong&gt;&lt;br&gt;Amount credited to the customer's card, expressed as a negative amount ($0.00)</value>
+  </data>
+  <data name="ReturnPercent_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Return Percent by Amount
+&lt;/strong&gt;&lt;br&gt;= Absolute Value of the Return Amount / Sales Amount</value>
+  </data>
+  <data name="SalesCount_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Sales Count&lt;/strong&gt;&lt;br&gt;Number of sales transactions</value>
+  </data>
+  <data name="SaleAmount_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Sales Amount&lt;/strong&gt;&lt;br&gt;Sum of sales amounts</value>
+  </data>
+  <data name="ReportDate_CustomView_Text" xml:space="preserve">
+    <value>Report Date</value>
+  </data>
+  <data name="ReportDate_Tooltip" xml:space="preserve">
+    <value>Date that a transaction or authorization was made available to be reviewed in VisionWeb Risk</value>
+  </data>
+  <data name="TransDate_CustomView_Text" xml:space="preserve">
+    <value>Trans Date</value>
+  </data>
+  <data name="TransDate_Tooltip" xml:space="preserve">
+    <value>Date of the transaction or authorization</value>
+  </data>
+  <data name="CardType_CustomView_Text" xml:space="preserve">
+    <value>Card</value>
+  </data>
+  <data name="CardType_Tooltip" xml:space="preserve">
+    <value>Card brand abbreviation&lt;br&gt;
+&lt;strong class='color-title'&gt;Hover:&lt;/strong&gt; Displays full card brand name</value>
+  </data>
+  <data name="CountryCode_CustomView_Text" xml:space="preserve">
+    <value>Ctry</value>
+  </data>
+  <data name="CountryCode_Tooltip" xml:space="preserve">
+    <value>Country from which the card was issued</value>
+  </data>
+  <data name="CardNumber_CustomView_Text" xml:space="preserve">
+    <value>Acct Number</value>
+  </data>
+  <data name="CardNumber_Tooltip" xml:space="preserve">
+    <value>Card’s primary account number (PAN)</value>
+  </data>
+  <data name="BinNumber_CustomView_Text" xml:space="preserve">
+    <value>BIN</value>
+  </data>
+  <data name="BinNumber_Tooltip" xml:space="preserve">
+    <value>Bank Identification Number (six or eight digits)</value>
+  </data>
+  <data name="DupeCount_CustomView_Text" xml:space="preserve">
+    <value>Acct Used #</value>
+  </data>
+  <data name="DupeCount_Tooltip" xml:space="preserve">
+    <value>Account Used Count&lt;br&gt;
+    Number of times the Acct Number was used for the transaction Type displayed during the last 30 days including today.&lt;br&gt;
+    &lt;strong class='color-title'&gt;Hover:&lt;/strong&gt; The total amount of either authorization, and sale or return transactions during the last 30 days including today</value>
+  </data>
+  <data name="ExpirationDate_CustomView_Text" xml:space="preserve">
+    <value>Expire</value>
+  </data>
+  <data name="ExpirationDate_Tooltip" xml:space="preserve">
+    <value>Card expiration MM/YY</value>
+  </data>
+  <data name="TransType_CustomView_Text" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="TransType_Tooltip" xml:space="preserve">
+    <value>Transaction type: Authorization (Auth), Sale, or Return</value>
+  </data>
+  <data name="Amount_CustomView_Text" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="Amount_Tooltip" xml:space="preserve">
+    <value>Transaction amount</value>
+  </data>
+  <data name="MatchCode_CustomView_Text" xml:space="preserve">
+    <value>Match</value>
+  </data>
+  <data name="MatchCode_Tooltip" xml:space="preserve">
+    <value>Indicates if a return is matched (M), partially matched (P) or unmatched (U) to a previous sale within 90 days from the return date.&lt;br&gt;
+    &lt;strong class='color-title'&gt;Hover:&lt;/strong&gt; Displays description</value>
+  </data>
+  <data name="ADF_CustomView_Text" xml:space="preserve">
+    <value>A/D/F</value>
+  </data>
+  <data name="ADF_Tooltip" xml:space="preserve">
+    <value>Indicates if an authorization was approved (A), declined (D), or forced sale (F).&lt;br&gt;
+    &lt;strong class='color-title'&gt;Hover:&lt;/strong&gt; Displays description</value>
+  </data>
+  <data name="ResponseCode_CustomView_Text" xml:space="preserve">
+    <value>RC</value>
+  </data>
+  <data name="ResponseCode_Tooltip" xml:space="preserve">
+    <value>Response code for an approved or declined  authorization&lt;br&gt;
+    &lt;strong class='color-title'&gt;Hover:&lt;/strong&gt; Displays response code description</value>
+  </data>
+  <data name="AuthCode_CustomView_Text" xml:space="preserve">
+    <value>Auth Code</value>
+  </data>
+  <data name="AuthCode_Tooltip" xml:space="preserve">
+    <value>Alphanumeric authorization code provided by the card issuer</value>
+  </data>
+  <data name="AVS_CustomView_Text" xml:space="preserve">
+    <value>AVS</value>
+  </data>
+  <data name="AVS_Tooltip" xml:space="preserve">
+    <value>Address Verification Service code&lt;br&gt;
+    &lt;strong class='color-title'&gt;Hover:&lt;/strong&gt; Displays AVS code description</value>
+  </data>
+  <data name="CVV_CustomView_Text" xml:space="preserve">
+    <value>CVV</value>
+  </data>
+  <data name="CVV_Tooltip" xml:space="preserve">
+    <value>Cardholder Verification Value code</value>
+  </data>
+  <data name="KeyedEntry_CustomView_Text" xml:space="preserve">
+    <value>Keyed</value>
+  </data>
+  <data name="KeyedEntry_Tooltip" xml:space="preserve">
+    <value>Indicates if the authorization or transaction was entered manually (Y) or swiped (N)</value>
+  </data>
+  <data name="EMVIndicator_CustomView_Text" xml:space="preserve">
+    <value>EMV</value>
+  </data>
+  <data name="EMVIndicator_Tooltip" xml:space="preserve">
+    <value>Europay, Mastercard, and Visa – Indicates if the chip on a card was read to perform the authorization or transaction if the value displayed is Chip</value>
+  </data>
+  <data name="SettleType_CustomView_Text" xml:space="preserve">
+    <value>Settled</value>
+  </data>
+  <data name="SettleType_Tooltip" xml:space="preserve">
+    <value>Indicates that a merchant has received funds for a sale</value>
+  </data>
+  <data name="FileSource_CustomView_Text" xml:space="preserve">
+    <value>File Source</value>
+  </data>
+  <data name="FileSource_Tooltip" xml:space="preserve">
+    <value>The abbreviated file name</value>
+  </data>
+  <data name="TerminalNumber_CustomView_Text" xml:space="preserve">
+    <value>Terminal #</value>
+  </data>
+  <data name="TerminalNumber_Tooltip" xml:space="preserve">
+    <value>Terminal number used by merchant for the authorization or transaction</value>
+  </data>
+  <data name="PrepaidCardSalesPercent_CustomView_Text" xml:space="preserve">
+    <value>(Prepaid Sales % by $ | P189) Prepaid Card Sales Percentage by Amount</value>
+  </data>
+  <data name="PrepaidCardSalesPercent_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Prepaid Card Sales Percentage by Amount&lt;/strong&gt;&lt;br&gt;= Total Prepaid Sales Amount / Total Sales Amount&lt;br&gt;&lt;strong class='color-title'&gt;Hover: &lt;/strong&gt;Total Prepaid Sales Amount</value>
+  </data>
+  <data name="PrepaidCardSalesPercent_Text" xml:space="preserve">
+    <value>Prepaid Card Sales Percentage by Amount</value>
+  </data>
+  <data name="MTDMasterCardChargebackCountPercent_CustomView_Text" xml:space="preserve">
+    <value>MC MTD CB %</value>
+  </data>
+  <data name="MTDMasterCardChargebackCountPercent_Text" xml:space="preserve">
+    <value>MC MTD CB %</value>
+  </data>
+  <data name="MTDMasterCardChargebackCountPercent_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Mastercard's Month to Date Chargeback Ratio
+&lt;/strong&gt;&lt;br&gt;= Mastercard MTD First Time Chargeback Count / Previous Month's Mastercard Total Sale Transaction Count
+&lt;br&gt;&lt;strong class='color-title'&gt;Hover:&lt;/strong&gt; Displays the Mastercard MTD First Time Chargeback Count.</value>
+  </data>
+  <data name="MTDVisaChargebackCountPercent_CustomView_Text" xml:space="preserve">
+    <value>Visa MTD CB %</value>
+  </data>
+  <data name="MTDVisaChargebackCountPercent_Text" xml:space="preserve">
+    <value>Visa MTD CB %</value>
+  </data>
+  <data name="MTDVisaChargebackCountPercent_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Visa's Month to Date Chargeback Ratio
+&lt;/strong&gt;&lt;br&gt;= MTD Visa First Time Chargeback Count / MTD Visa Sale Transaction Count
+&lt;br&gt;&lt;strong class='color-title'&gt;Hover:&lt;/strong&gt; Displays the MTD Visa First Time Chargeback Count.</value>
+  </data>
+  <data name="ModelScoreValue_CustomView_Text" xml:space="preserve">
+    <value>RMS | P196</value>
+  </data>
+  <data name="ModelScoreValue_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Risk Model Score&lt;/strong&gt;&lt;br&gt;Risk Model Score attributed to the merchant.&lt;br&gt;&lt;strong class='color-title'&gt;Hover:&lt;/strong&gt; Reason Codes</value>
+  </data>
+  <data name="ModelScoreValue_Text" xml:space="preserve">
+    <value>RMS | P196</value>
+  </data>
+  <data name="ModelAlertValue_CustomView_Text" xml:space="preserve">
+    <value>RMAV $ | P197</value>
+  </data>
+  <data name="ModelAlertValue_Text" xml:space="preserve">
+    <value>RMAV $ | P197</value>
+  </data>
+  <data name="ModelAlertValue_Tooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Risk Model Alert Value&lt;/strong&gt;&lt;br&gt;Risk Model Alert Value attributed to the merchant.&lt;br&gt;&lt;strong class='color-title'&gt;Hover:&lt;/strong&gt; Reason Codes</value>
+  </data>
+  <data name="FirstChargebackRDRCount_CustomView_Text" xml:space="preserve">
+    <value>(RDR #) RDR Count</value>
+  </data>
+  <data name="FirstChargebackRDRCount_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;RDR Count&lt;/strong&gt;&lt;br&gt;Number of first time RDR chargebacks</value>
+  </data>
+  <data name="FirstChargebackRDRCount_Text" xml:space="preserve">
+    <value>RDR Count</value>
+  </data>
+  <data name="FirstChargebackRDRAmount_CustomView_Text" xml:space="preserve">
+    <value>(RDR $) RDR Amount</value>
+  </data>
+  <data name="FirstChargebackRDRAmount_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;RDR Amount&lt;/strong&gt;&lt;br&gt;Amount of first time RDR chargebacks</value>
+  </data>
+  <data name="FirstChargebackRDRAmount_Text" xml:space="preserve">
+    <value>RDR Amount</value>
+  </data>
+  <data name="PostChargebackRDRCount_CustomView_Text" xml:space="preserve">
+    <value>(Post RDR #) Post RDR Count</value>
+  </data>
+  <data name="PostChargebackRDRCount_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Post RDR Count&lt;/strong&gt;&lt;br&gt;Number of first time chargebacks and non-RDR</value>
+  </data>
+  <data name="PostChargebackRDRCount_Text" xml:space="preserve">
+    <value>Post RDR Count</value>
+  </data>
+  <data name="PostChargebackRDRAmount_CustomView_Text" xml:space="preserve">
+    <value>(Post RDR $) Post RDR Amount</value>
+  </data>
+  <data name="PostChargebackRDRAmount_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Post RDR Amount&lt;/strong&gt;&lt;br&gt;Amount of first time chargebacks and non-RDR</value>
+  </data>
+  <data name="PostChargebackRDRAmount_Text" xml:space="preserve">
+    <value>Post RDR Amount</value>
+  </data>
+  <data name="PostChargebackRDRAmountPercent_CustomView_Text" xml:space="preserve">
+    <value>(Post RDR $ %) Post RDR Amount Percentage</value>
+  </data>
+  <data name="PostChargebackRDRAmountPercent_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Post RDR Amount Percentage&lt;/strong&gt;&lt;br&gt;Percentage amount of all 1st time chargebacks that are non-RDR out of the total # sales</value>
+  </data>
+  <data name="PostChargebackRDRAmountPercent_Text" xml:space="preserve">
+    <value>Post RDR Amount Percentage</value>
+  </data>
+  <data name="PostChargebackRDRCountPercent_CustomView_Text" xml:space="preserve">
+    <value>(Post RDR # %) Post RDR Count Percentage</value>
+  </data>
+  <data name="PostChargebackRDRCountPercent_RiskTooltip" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Post RDR Count Percentage&lt;/strong&gt;&lt;br&gt;Percentage count of all 1st time chargebacks that are non-RDR out of the total # sales</value>
+  </data>
+  <data name="PostChargebackRDRCountPercent_Text" xml:space="preserve">
+    <value>Post RDR Count Percentage</value>
+  </data>
+</root>

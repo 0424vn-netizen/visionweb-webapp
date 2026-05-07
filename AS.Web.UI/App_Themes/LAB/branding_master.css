@@ -1,0 +1,92 @@
+﻿@pri-color: #319FFF;
+@sec-color: #00539B;
+
+@pri-text-color: #FFFFFF;
+@sec-text-color: #FFFFFF;
+
+@nav-top-level-text-color: #999999;
+@error-text-color: #FF0000;
+
+@header-bg-color: @pri-color;
+@header-alt-color: lighten(saturate(@pri-color,-2%),7.1975%);
+
+@logo-image: logo.png;
+@logo-width: 300px;
+@logo-height: 80px;
+
+@nav-top-level-bg-color: transparent;
+@nav-hover-text-color: @pri-text-color;
+@nav-hover-bg-color: @sec-color;
+
+body,
+.site-info,
+.popup-top
+{
+    background-color:@pri-color;
+}
+b.caret,
+.old-browser-warning .btn-close,
+.merchant-sidenav .icon-chevron-right
+{
+  color: @sec-color;
+}
+.main-navbar .navbar-nav > .open > a, 
+.main-navbar .navbar-nav > .open > a:hover, 
+.main-navbar .navbar-nav > .open > a:focus 
+{
+    background-color: @nav-top-level-bg-color;
+}
+.main-navbar .nav li.dropdown .caret,
+.main-navbar .nav li.dropdown .open > .dropdown-toggle .caret,
+.main-navbar .nav li.dropdown .active > .dropdown-toggle .caret,
+.main-navbar .nav li.dropdown > .dropdown-toggle .caret,
+.main-navbar .nav li.dropdown .open.active > .dropdown-toggle .caret 
+{
+  border-top-color: @nav-hover-bg-color;
+  border-bottom-color: @nav-hover-bg-color;
+}
+.white-bg-shadow {
+    border-color: @sec-color;
+}
+.logo
+{
+  background-image: url('img/@{logo-image}');
+    width: @logo-width;
+    height: @logo-height;
+}
+/*.login-form .btn-login
+{
+    background: @sec-color;
+    border-color: darken(@sec-color, 10%);
+    color: @sec-text-color;
+}*/
+.site-footer,
+.site-footer a
+{
+    color: @pri-text-color;
+}
+.login-form .login-alert
+{
+    color: @error-text-color;
+}
+.login-top,
+.old-browser-warning {
+    border-color: @sec-color;
+}
+.btn-old-browser {
+    @color: @sec-color;
+    @alt-color: lighten(@color, 20%);
+    background: @color;
+    color: @sec-text-color !important;
+    background: linear-gradient(@alt-color, @color) !important;
+    -pie-background: linear-gradient(@alt-color, @color) !important;
+}
+.navbar,
+.main-navbar .navbar-nav > li > a
+{
+    color:@nav-top-level-text-color;
+}
+.site-info
+{
+    color:@nav-top-level-text-color;
+}

@@ -1,0 +1,1218 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <style type="text/css">
+        td
+        {
+            border-style:solid;
+            border-width:thin;
+        }
+        tr.borderBottom td
+        {
+            border-bottom-style:solid;
+            border-bottom-width:thin;
+        }
+        tr.borderTop td
+        {
+            border-top-style:solid;
+            border-top-width:thin;   
+            background-color:#CFCFCF;  
+            font-weight:bold;                   
+        }
+    </style>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+</head>
+<body>
+    <table cellspacing="0" cellpadding="0" border="0">
+        <tr>
+            <th colspan="17" align="left" >
+                <b>[tpl_MerchantCardInformation_htm_MerchantCardInformation]</b>
+            </th>
+            <th>
+            </th>
+        </tr>
+        <tr class="borderTop">
+            <td style="width: 175px">
+            </td>
+            <td>
+                [tpl_MerchantCardInformation_htm_MC]
+            </td>
+            <td >
+                [tpl_MerchantCardInformation_htm_MCDB]
+            </td>
+            <td >
+                [tpl_MerchantCardInformation_htm_VISA]
+            </td>
+            <td >
+                [tpl_MerchantCardInformation_htm_VISADB]
+            </td>
+            <td >
+                [tpl_MerchantCardInformation_htm_DISCFULLACQ]
+            </td>
+            <td >
+                [tpl_MerchantCardInformation_htm_DISCFULLACQDB]
+            </td>
+            <td >
+                [tpl_MerchantCardInformation_htm_DISCPASSTHRU]
+            </td>
+            <td >
+                [tpl_MerchantCardInformation_htm_AMEXONEPT]
+            </td>
+            <td >
+                [tpl_MerchantCardInformation_htm_AMEXPASSTHRU]
+            </td>
+              <td >
+                [tpl_MerchantCardInformation_htm_AMEX]
+            </td>
+            <td >
+                [tpl_MerchantCardInformation_htm_WRIGHTEXPRESS]
+            </td>
+            <td >
+                [tpl_MerchantCardInformation_htm_VOYAGER]
+            </td>
+            <td >
+                [tpl_MerchantCardInformation_htm_GENERICDEBIT]
+            </td>
+            <td >
+                [tpl_MerchantCardInformation_htm_DINERS]
+            </td>
+            <td >
+                [tpl_MerchantCardInformation_htm_EBTCASH_B]
+            </td>
+            <td >
+                [tpl_MerchantCardInformation_htm_EBTF_STMP]
+            </td>
+            <td >
+                [tpl_MerchantCardInformation_htm_EBT_TAPE]
+            </td>
+            <td >
+                [tpl_MerchantCardInformation_htm_JCB]
+            </td>
+        </tr>
+        <tr>
+            <td>
+                [tpl_MerchantCardInformation_htm_ProcSW]
+            </td>
+            <td>
+                PROCESS_SWMC
+            </td>
+            <td>
+                PROCESS_SWMCDB
+            </td>
+            <td>
+                PROCESS_SWVS
+            </td>
+            <td>
+                PROCESS_SWVSDB
+            </td>
+            <td>
+                PROCESS_SWDI
+            </td>
+            <td>
+                PROCESS_SWDIDB
+            </td>
+            <td>
+                PROCESS_SWDIPASSTHRU
+            </td>
+            <td>
+                PROCESS_SWAMEXONEPT
+            </td>
+            <td>
+                PROCESS_SWAMESPASSTHRU
+            </td>
+             <td>
+                PROCESS_SWAMEXBLUE
+            </td>
+            <td>
+                PROCESS_SWWRIGHTEXPRESS
+            </td>
+            <td>
+                PROCESS_SWVOYAGER
+            </td>
+            <td>
+                PROCESS_SWGENERICDEBIT
+            </td>
+            <td>
+                PROCESS__SWDINNER
+            </td>
+            <td>
+                PROCESS_SWEBT_CASH_B
+            </td>
+            <td>
+                PROCESS_SWEBT_F_STMP
+            </td>
+            <td>
+                PROCESS_SWEBT_TAPE
+            </td>
+            <td>
+                PROCESS_SWJCB
+            </td>
+        </tr>
+        <tr >
+            <td>
+                [tpl_MerchantCardInformation_htm_FeeClass]
+            </td>
+            <td>
+                FeeClassMC
+            </td>
+            <td>
+                FeeClassMCDB
+            </td>
+            <td>
+                FeeClassVS
+            </td>
+            <td>
+                FeeClassVSDB
+            </td>
+            <td>
+                FeeClassDI
+            </td>
+            <td>
+                FeeClassDIDB
+            </td>
+            <td>
+                FeeClassDIPassThru
+            </td>
+            <td>
+                FeeClassAmexOnePT
+            </td>
+            <td>
+                FeeClassAmesPassThru
+            </td>
+             <td>
+                FeeClassAmexBlue
+            </td>
+            <td>
+                FeeClassWrightExpress
+            </td>
+            <td>
+                FeeClassVoyager
+            </td>
+            <td>
+                FeeClassGenericDebit
+            </td>
+            <td>
+                FeeClassDinner
+            </td>
+            <td>
+                FeeClassEBT_CASH_B
+            </td>
+            <td>
+                FeeClassEBT_F_STMP
+            </td>
+            <td>
+                FeeClassEBT_TAPE
+            </td>
+            <td>
+                FeeClassJCB
+            </td>
+        </tr>
+        <tr>
+            <td>
+                [tpl_MerchantCardInformation_htm_QualRate]
+            </td>
+            <td>
+                QualRateMC
+            </td>
+            <td>
+                QualRateMCDB
+            </td>
+            <td>
+                QualRateVS
+            </td>
+            <td>
+                QualRateVSDB
+            </td>
+            <td>
+                QualRateDI
+            </td>
+            <td>
+                QualRateDIDB
+            </td>
+            <td>
+                QualRateDIPassThru
+            </td>
+            <td>
+                QualRateAmexOnePT
+            </td>
+            <td>
+                QualRateAmesPassThru
+            </td>
+             <td>
+                QualRateAmexBlue
+            </td>
+            <td>
+                QualRateWrightExpress
+            </td>
+            <td>
+                QualRateVoyager
+            </td>
+            <td>
+                QualRateGenericDebit
+            </td>
+            <td>
+                QualRateDinner
+            </td>
+            <td>
+                QualRateEBT_CASH_B
+            </td>
+            <td>
+                QualRateEBT_F_STMP
+            </td>
+            <td>
+                QualRateEBT_TAPE
+            </td>
+            <td>
+                QualRateJCB
+            </td>
+        </tr>
+        <tr >
+            <td>
+                [tpl_MerchantCardInformation_htm_Mid_QualRate]
+            </td>
+            <td>
+                MidQualRateMC
+            </td>
+            <td>
+                MidQualRateMCDB
+            </td>
+            <td>
+                MidQualRateVS
+            </td>
+            <td>
+                MidQualRateVSDB
+            </td>
+            <td>
+                MidQualRateDI
+            </td>
+            <td>
+                MidQualRateDIDB
+            </td>
+            <td>
+                MidQualRateDIPassThru
+            </td>
+            <td>
+                MidQualRateAmexOnePT
+            </td>
+            <td>
+                MidQualRateAmesPassThru
+            </td>
+             <td>
+                MidQualRateAmexBlue
+            </td>
+            <td>
+                MidQualRateWrightExpress
+            </td>
+            <td>
+                MidQualRateVoyager
+            </td>
+            <td>
+                MidQualRateGenericDebit
+            </td>
+            <td>
+                MidQualRateDinner
+            </td>
+            <td>
+                MidQualRateEBT_CASH_B
+            </td>
+            <td>
+                MidQualRateEBT_F_STMP
+            </td>
+            <td>
+                MidQualRateEBT_TAPE
+            </td>
+            <td>
+                MidQualRateJCB
+            </td>
+        </tr>
+        <tr>
+            <td>
+                [tpl_MerchantCardInformation_htm_Non_QualRate]
+            </td>
+            <td>
+                NonQualRateMC
+            </td>
+            <td>
+                NonQualRateMCDB
+            </td>
+            <td>
+                NonQualRateVS
+            </td>
+            <td>
+                NonQualRateVSDB
+            </td>
+            <td>
+                NonQualRateDI
+            </td>
+            <td>
+                NonQualRateDIDB
+            </td>
+            <td>
+                NonQualRateDIPassThru
+            </td>
+            <td>
+                NonQualRateAmexOnePT
+            </td>
+            <td>
+                NonQualRateAmesPassThru
+            </td>
+             <td>
+                NonQualRateAmexBlue
+            </td>
+            <td>
+                NonQualRateWrightExpress
+            </td>
+            <td>
+                NonQualRateVoyager
+            </td>
+            <td>
+                NonQualRateGenericDebit
+            </td>
+            <td>
+                NonQualRateDinner
+            </td>
+            <td>
+                NonQualRateEBT_CASH_B
+            </td>
+            <td>
+                NonQualRateEBT_F_STMP
+            </td>
+            <td>
+                NonQualRateEBT_TAPE
+            </td>
+            <td>
+                NonQualRateJCB
+            </td>
+        </tr>
+        
+        <tr >
+            <td>
+                [tpl_MerchantCardInformation_htm_InterchangeFeeFlag]
+            </td>
+            <td>
+                InterchangeFeeFlagMC
+            </td>
+            <td>
+                InterchangeFeeFlag_MCDB
+            </td>
+            <td>
+                InterchangeFeeFlagVS
+            </td>
+            <td>
+                InterchangeFeeFlag_VSDB
+            </td>
+            <td>
+                InterchangeFeeFlagDI
+            </td>
+            <td>
+                InterchangeFeeFlag_DIDB
+            </td>
+            <td>
+                InterchangeFeeFlag_DIPassThru
+            </td>
+            <td>
+                InterchangeFeeFlagAmexOnePT
+            </td>
+            <td>
+                InterchangeFeeFlagAmesPassThru
+            </td>
+             <td>
+                InterchangeFeeFlagAmexBlue
+            </td>
+            <td>
+                InterchangeFeeFlagWrightExpress
+            </td>
+            <td>
+                InterchangeFeeFlagVoyager
+            </td>
+            <td>
+                InterchangeFeeFlagGenericDebit
+            </td>
+            <td>
+                InterchangeFeeFlagDinner
+            </td>
+            <td>
+                InterchangeFeeFlagEBT_CASH_B
+            </td>
+            <td>
+                InterchangeFeeFlagEBT_F_STMP
+            </td>
+            <td>
+                InterchangeFeeFlagEBT_TAPE
+            </td>
+            <td>
+                InterchangeFeeFlagJCB
+            </td>
+        </tr>
+        
+        <tr >
+            <td>
+                [tpl_MerchantCardInformation_htm_Dues_AssessmentFlag]
+            </td>
+            <td>
+                DuesAssessmentFlagMC
+            </td>
+            <td>
+                DuesAssessmentFlagMCDB
+            </td>
+            <td>
+                DuesAssessmentFlagVS
+            </td>
+            <td>
+                DuesAssessmentFlagVSDB
+            </td>
+            <td>
+                DuesAssessmentFlagDI
+            </td>
+            <td>
+                DuesAssessmentFlagDIDB
+            </td>
+            <td>
+                DuesAssessmentFlagDIPassThru
+            </td>
+            <td>
+                DuesAssessmentFlagAmexOnePT
+            </td>
+            <td>
+                DuesAssessmentFlagAmesPassThru
+            </td>
+             <td>
+                DuesAssessmentFlagAmexBlue
+            </td>
+            <td>
+                DuesAssessmentFlagWrightExpress
+            </td>
+            <td>
+                DuesAssessmentFlagVoyager
+            </td>
+            <td>
+                DuesAssessmentFlagGenericDebit
+            </td>
+            <td>
+                DuesAssessmentFlagDinner
+            </td>
+            <td>
+                DuesAssessmentFlagEBT_CASH_B
+            </td>
+            <td>
+                DuesAssessmentFlagEBT_F_STMP
+            </td>
+            <td>
+                DuesAssessmentFlagEBT_TAPE
+            </td>
+            <td>
+                DuesAssessmentFlagJCB
+            </td>
+        </tr>
+        
+        <tr >
+            <td>
+                [tpl_MerchantCardInformation_htm_Dues_AssessmentFlagVol_st_1000]
+            </td>
+            <td>
+                DueAsmtVolLower1MC
+            </td>
+            <td>
+                
+            </td>
+              <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>
+                [tpl_MerchantCardInformation_htm_Dues_AssessmentFlagItem_st_1000]
+            </td>
+            <td>
+                DueAsmtItemLower1MC
+            </td>
+            <td>
+                
+            </td>
+              <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>
+                [tpl_MerchantCardInformation_htm_Dues_AssessmentFlagVol_lt_1000]
+            </td>
+            <td>
+                DueAsmtVolGreater1MC
+            </td>
+              <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>
+                [tpl_MerchantCardInformation_htm_Dues_AssessmentFlagItem_lt_1000] 
+            </td>
+            <td>
+                DueAsmtItemGreater1MC
+            </td>
+              <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                [tpl_MerchantCardInformation_htm_MerchantPricingGrid]
+            </td>
+            <td>
+                MerchantPricingGridMC
+            </td>
+            <td>
+                MerchantPricingGridMCDB
+            </td>
+            <td>
+                MerchantPricingGridVS
+            </td>
+            <td>
+                MerchantPricingGridVSDB
+            </td>
+            <td>
+                MerchantPricingGridDI
+            </td>
+            <td>
+                MerchantPricingGridDIDB
+            </td>
+            <td>
+                MerchantPricingGridDIPassThru
+            </td>
+            <td>
+                MerchantPricingGridAmexOnePT
+            </td>
+            <td>
+                MerchantPricingGridAmesPassThru
+            </td>
+            <td>
+                MerchantPricingGridAmexBlue
+            </td>
+            <td>
+                MerchantPricingGridWrightExpress
+            </td>
+            <td>
+                MerchantPricingGridVoyager
+            </td>
+            <td>
+                MerchantPricingGridGenericDebit
+            </td>
+            <td>
+                MerchantPricingGridDinner
+            </td>
+            <td>
+                MerchantPricingGridEBT_CASH_B
+            </td>
+            <td>
+                MerchantPricingGridEBT_F_STMP
+            </td>
+            <td>
+                MerchantPricingGridEBT_TAPE
+            </td>
+            <td>
+                MerchantPricingGridJCB
+            </td>
+        </tr>
+        <tr >
+            <td>
+                [tpl_MerchantCardInformation_htm_TieredDiscountGrid]
+            </td>
+            <td>
+                TieredDiscountGridMC
+            </td>
+            <td>
+                TieredDiscountGridMCDB
+            </td>
+            <td>
+                TieredDiscountGridVS
+            </td>
+            <td>
+                TieredDiscountGridVSDB
+            </td>
+            <td>
+                TieredDiscountGridDI
+            </td>
+            <td>
+                TieredDiscountGridDIDB
+            </td>
+            <td>
+                TieredDiscountGridDIPassThru
+            </td>
+            <td>
+                TieredDiscountGridAmexOnePT
+            </td>
+            <td>
+                TieredDiscountGridAmesPassThru
+            </td>
+             <td>
+                TieredDiscountGridAmexBlue
+            </td>
+            <td>
+                TieredDiscountGridWrightExpress
+            </td>
+            <td>
+                TieredDiscountGridVoyager
+            </td>
+            <td>
+                TieredDiscountGridGenericDebit
+            </td>
+            <td>
+                TieredDiscountGridDinner
+            </td>
+            <td>
+                TieredDiscountGridEBT_CASH_B
+            </td>
+            <td>
+                TieredDiscountGridEBT_F_STMP
+            </td>
+            <td>
+                TieredDiscountGridEBT_TAPE
+            </td>
+            <td>
+                TieredDiscountGridJCB
+            </td>
+        </tr>
+        <tr>
+            <td>
+                [tpl_MerchantCardInformation_htm_ERRPercent]
+            </td>
+            <td>
+                ERRMC
+            </td>
+            <td>
+                ERRMCDB
+            </td>
+            <td>
+                ERRVS
+            </td>
+            <td>
+                ERRVSDB
+            </td>
+            <td>
+                ERRDI
+            </td>
+            <td>
+                ERRDIDB
+            </td>
+            <td>
+                ERRDIPassThru
+            </td>
+            <td>
+                ERRAmexOnePT
+            </td>
+            <td>
+                ERRAmesPassThru
+            </td>
+             <td>
+                ERRAmexBlue
+            </td>
+            <td>
+                ERRWrightExpress
+            </td>
+            <td>
+                ERRVoyager
+            </td>
+            <td>
+                ERRGenericDebit
+            </td>
+            <td>
+                ERRDinner
+            </td>
+            <td>
+                ERREBT_CASH_B
+            </td>
+            <td>
+                ERREBT_F_STMP
+            </td>
+            <td>
+                ERREBT_TAPE
+            </td>
+            <td>
+                ERRJCB
+            </td>
+        </tr>
+        <tr >
+            <td>
+                [tpl_MerchantCardInformation_htm_OtherVolumePercent]
+            </td>
+            <td>
+                OtherVolumeMC
+            </td>
+            <td>
+                OtherVolumeMCDB
+            </td>
+            <td>
+                OtherVolumeVS
+            </td>
+            <td>
+                OtherVolumeVSDB
+            </td>
+            <td>
+                OtherVolumeDI
+            </td>
+            <td>
+                OtherVolumeDIDB
+            </td>
+            <td>
+                OtherVolumeDIPassThru
+            </td>
+            <td>
+                OtherVolumeAmexOnePT
+            </td>
+            <td>
+                OtherVolumeAmesPassThru
+            </td>
+             <td>
+                OtherVolumeAmexBlue
+            </td>
+            <td>
+                OtherVolumeWrightExpress
+            </td>
+            <td>
+                OtherVolumeVoyager
+            </td>
+            <td>
+                OtherVolumeGenericDebit
+            </td>
+            <td>
+                OtherVolumeDinner
+            </td>
+            <td>
+                OtherVolumeEBT_CASH_B
+            </td>
+            <td>
+                OtherVolumeEBT_F_STMP
+            </td>
+            <td>
+                OtherVolumeEBT_TAPE
+            </td>
+            <td>
+                OtherVolumeJCB
+            </td>
+        </tr>
+        <tr>
+            <td>
+                [tpl_MerchantCardInformation_htm_OtherItemRate]
+            </td>
+            <td>
+                OtherItemRateMC
+            </td>
+            <td>
+                OtherItemRateMCDB
+            </td>
+            <td>
+                OtherItemRateVS
+            </td>
+            <td>
+                OtherItemRateVSDB
+            </td>
+            <td>
+                OtherItemRateDI
+            </td>
+            <td>
+                OtherItemRateDIDB
+            </td>
+            <td>
+                OtherItemRateDIPassThru
+            </td>
+            <td>
+                OtherItemRateAmexOnePT
+            </td>
+            <td>
+                OtherItemRateAmesPassThru
+            </td>
+              <td>
+                OtherItemRateAmexBlue
+            </td>
+            <td>
+                OtherItemRateWrightExpress
+            </td>
+            <td>
+                OtherItemRateVoyager
+            </td>
+            <td>
+                OtherItemRateGenericDebit
+            </td>
+            <td>
+                OtherItemRateDinner
+            </td>
+            <td>
+                OtherItemRateEBT_CASH_B
+            </td>
+            <td>
+                OtherItemRateEBT_F_STMP
+            </td>
+            <td>
+                OtherItemRateEBT_TAPE
+            </td>
+            <td>
+                OtherItemRateJCB
+            </td>
+        </tr>
+        <tr >
+            <td>
+                [tpl_MerchantCardInformation_htm_DiscountMethod]
+            </td>
+            <td>
+                DiscountMethodMC
+            </td>
+            <td>
+                DiscountMethodMCDB
+            </td>
+            <td>
+                DiscountMethodVS
+            </td>
+            <td>
+                DiscountMethodVSDB
+            </td>
+            <td>
+                DiscountMethodDI
+            </td>
+            <td>
+                DiscountMethodDIDB
+            </td>
+            <td>
+                DiscountMethodDIPassThru
+            </td>
+            <td>
+                DiscountMethodAmexOnePT
+            </td>
+            <td>
+                DiscountMethodAmesPassThru
+            </td>
+            <td>
+                DiscountMethodAmexBlue
+            </td>
+            <td>
+                DiscountMethodWrightExpress
+            </td>
+            <td>
+                DiscountMethodVoyager
+            </td>
+            <td>
+                DiscountMethodGenericDebit
+            </td>
+            <td>
+                DiscountMethodDinner
+            </td>
+            <td>
+                DiscountMethodEBT_CASH_B
+            </td>
+            <td>
+                DiscountMethodEBT_F_STMP
+            </td>
+            <td>
+                DiscountMethodEBT_TAPE
+            </td>
+            <td>
+                DiscountMethodJCB
+            </td>
+        </tr>
+        <tr>
+            <td>
+                [tpl_MerchantCardInformation_htm_AmexOnePTRate]
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                AmexOnePTRateAmexOnePT
+            </td>
+            <td>                
+            </td>
+            <td>                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr class="borderBottom" >
+            <td>
+                [tpl_MerchantCardInformation_htm_AmexOnePTPerItemFee]
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                AmexOnePTPerItemFeeAmexOnePT
+            </td>
+            <td>                
+            </td>
+            <td>             
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

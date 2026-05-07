@@ -1,0 +1,90 @@
+﻿<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <th colspan="2" align="left">
+      <b> {{res:BankInformation}}</b>
+    </th>
+  </tr>
+
+  <tbody>
+    <tr class="Row">
+      <td class="heading">
+        {{res:BankName}}
+      </td>
+      <td>
+          {{data:BankName||BankInformation}}
+      </td>
+    </tr>
+    <tr class="AltRow">
+      <td class="heading">
+        {{res:Routing}}
+      </td>
+      <td>
+        {{data:PartialRoutingNumber||BankInformation}}
+      </td>
+    </tr>
+    <tr class="Row">
+      <td class="heading">
+        {{res:DDA}}
+      </td>
+      <td>
+        {{data:PartialDDANumber||BankInformation}}
+      </td>
+    </tr>
+    <tr class="AltRow">
+      <td class="heading">
+        {{res:DaysHold}}
+      </td>
+      <td>
+        {{data:DaysHold||BankInformation}}
+      </td>
+    </tr>
+    <tr class="Row">
+      <td class="heading">
+        {{res:ACHMonthly}}
+      </td>
+      <td>
+          {{data:MonthlyACH||BankInformation}}
+      </td>
+    </tr>
+    <tr class="AltRow">
+      <td class="heading">
+        {{res:DisbursementMethodDeposit}}
+      </td>
+      <td>
+        {{data:DisbursementDeposit||BankInformation}}
+      </td>
+    </tr>
+    <tr class="Row">
+      <td class="heading">
+        {{res:DisbursementMethodAdjustments}}
+      </td>
+      <td>
+        {{data:DisbursementAdjustments||BankInformation}}
+      </td>
+    </tr>
+    <tr class="AltRow">
+      <td class="heading">
+        {{res:DisbursementMethodDiscount}}
+      </td>
+      <td>
+        {{data:DisbursementDiscount||BankInformation}}
+      </td>
+    </tr>
+    <tr class="Row">
+      <td class="heading">
+        {{res:DisbursementMethodGenericDebit}}
+      </td>
+      <td>
+        {{data:DisbursementGenericDebit||BankInformation}}
+      </td>
+    </tr>
+    <tr class="AltRow">
+      <td class="heading">
+        {{res:DisbursementDetail}}
+      </td>
+      <td>
+        {{data:DisbursementDetail||BankInformation}}
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,70 @@
+body,
+.site-info,
+.popup-top {
+  background-color: #364043;
+}
+b.caret,
+.old-browser-warning .btn-close,
+.merchant-sidenav .icon-chevron-right {
+  color: #dc2529;
+}
+.main-navbar .navbar-nav > .open > a,
+.main-navbar .navbar-nav > .open > a:hover,
+.main-navbar .navbar-nav > .open > a:focus {
+  background-color: transparent;
+}
+.main-navbar .nav li.dropdown .caret,
+.main-navbar .nav li.dropdown .open > .dropdown-toggle .caret,
+.main-navbar .nav li.dropdown .active > .dropdown-toggle .caret,
+.main-navbar .nav li.dropdown > .dropdown-toggle .caret,
+.main-navbar .nav li.dropdown .open.active > .dropdown-toggle .caret {
+  border-top-color: #dc2529;
+  border-bottom-color: #dc2529;
+}
+.white-bg-shadow {
+  border-color: #dc2529;
+}
+.logo {
+  background-image: url('img/logo.png');
+  width: 300px;
+  height: 80px;
+}
+/*.login-form .btn-login
+{
+    background: @primary-color;
+    border-color: darken(@primary-color, 10%);
+    color: @sec-text-color;
+}*/
+.site-footer,
+.site-footer a {
+  color: #ffffff;
+}
+.login-form .login-alert {
+  color: #ff0000;
+}
+.login-top,
+.old-browser-warning {
+  border-color: #dc2529;
+}
+.btn-old-browser {
+  background: #dc2529;
+  color: #ffffff !important;
+  background: linear-gradient(#ea7d7f, #dc2529) !important;
+  -pie-background: linear-gradient(#ea7d7f, #dc2529) !important;
+}
+.navbar,
+.main-navbar .navbar-nav > li > a {
+  color: #999999;
+}
+.site-info {
+  color: #ffffff;
+}
+.title-maintenance {
+  color: #dc2529;
+}
+.background-modal {
+  background-color: #dc2529 !important;
+}
+#ASModal {
+  background: #364043;
+}

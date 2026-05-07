@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ab_AccountNumberMaxLength" xml:space="preserve">
+    <value>You enterred an invalid account number. Please try again.</value>
+  </data>
+  <data name="ab_AverageSale" xml:space="preserve">
+    <value>The Average Sale From cannot be greater than the Average Sale To</value>
+  </data>
+  <data name="ab_AverageVolume" xml:space="preserve">
+    <value>The Average Volume From cannot be greater than the Average Volume To</value>
+  </data>
+  <data name="ab_DateLastActive" xml:space="preserve">
+    <value>The Date Last Active From cannot be greater than the Date Last Active To</value>
+  </data>
+  <data name="ab_OpenDate" xml:space="preserve">
+    <value>The Open Date From cannot be greater than the Open Date To</value>
+  </data>
+  <data name="ab_ReferralDate" xml:space="preserve">
+    <value>The Referral Date From cannot be greater than the Referral Date To</value>
+  </data>
+  <data name="ab_Volume" xml:space="preserve">
+    <value>The Volume From cannot be greater than the Volume To</value>
+  </data>
+  <data name="CardSearch_CheckCardNumber" xml:space="preserve">
+    <value>Please enter card number before searching.</value>
+  </data>
+  <data name="CardSearch_CheckFirstCardNum" xml:space="preserve">
+    <value>First Card Number must not be empty.</value>
+  </data>
+  <data name="CardSearch_CheckFullCardNum" xml:space="preserve">
+    <value>Full Card Number must not be empty.</value>
+  </data>
+  <data name="CardSearch_CheckLastCardNum" xml:space="preserve">
+    <value>Last Card Number must not be empty.</value>
+  </data>
+  <data name="CardSearch_CheckParticalCardNum" xml:space="preserve">
+    <value>First Card Number and Last Card Number must not be empty.</value>
+  </data>
+  <data name="Delinquency_daysDelinquency" xml:space="preserve">
+    <value>The Days Delinquent cannot be less than zero</value>
+  </data>
+  <data name="Delinquency_monthsDelinquency" xml:space="preserve">
+    <value>The Months Delinquent cannot be less than zero</value>
+  </data>
+  <data name="Delinquency_monthsoverDelinquency" xml:space="preserve">
+    <value>The Days Over Limit cannot be less than zero</value>
+  </data>
+  <data name="Generic_BeginDateGreaterEndDate" xml:space="preserve">
+    <value>The begin date cannot be greater than the end date.</value>
+    <comment>begin date &gt; end date</comment>
+  </data>
+  <data name="Generic_BeginDateGreaterNowDate" xml:space="preserve">
+    <value>The begin date cannot be greater than the present date.</value>
+  </data>
+  <data name="Generic_CardHolderName_SpecialCharacter" xml:space="preserve">
+    <value>The Cardholder Name must not be special character.</value>
+  </data>
+  <data name="Generic_CheckChain_SpecialCharacter" xml:space="preserve">
+    <value>The chain number must not be special character.</value>
+  </data>
+  <data name="Generic_CheckChainNumber_SpecialCharacter" xml:space="preserve">
+    <value>The chain number must not be special character.</value>
+  </data>
+  <data name="Generic_CheckLengthOfComment" xml:space="preserve">
+    <value>Length of string must be from 1 to 500 characters.</value>
+    <comment>Check length of string entered.</comment>
+  </data>
+  <data name="Generic_CheckLengthOfMerchantChain" xml:space="preserve">
+    <value>The chain number must be from 1 to 20 characters.</value>
+  </data>
+  <data name="Generic_CheckLengthOfMerchantName" xml:space="preserve">
+    <value>The merchant name must be from 1 to 55 characters.</value>
+    <comment>Check length of string entered.</comment>
+  </data>
+  <data name="Generic_CheckLengthOfMerchantNumber" xml:space="preserve">
+    <value>Please enter a valid Merchant ID.</value>
+    <comment>Check length of string entered.</comment>
+  </data>
+  <data name="Generic_CheckMerchantName_SpecialCharacter" xml:space="preserve">
+    <value>The merchant name must not be special character.</value>
+  </data>
+  <data name="Generic_CheckMerchantNumber_MinLength" xml:space="preserve">
+    <value>The Merchant ID must be at least 13 characters.</value>
+  </data>
+  <data name="Generic_CheckMerchantNumber_Numeric" xml:space="preserve">
+    <value>The Merchant ID must be alpha numeric.</value>
+  </data>
+  <data name="Generic_CheckSysPrin_MinLength" xml:space="preserve">
+    <value>The SYS/PRIN must be at least 9 characters.</value>
+  </data>
+  <data name="Generic_CheckSysPrin_Numeric" xml:space="preserve">
+    <value>The SYS/PRIN must be numeric.</value>
+  </data>
+  <data name="Generic_CompanyID_SpecialCharacter" xml:space="preserve">
+    <value>The Company ID must not be special character.</value>
+  </data>
+  <data name="Generic_CompanyName_SpecialCharacter" xml:space="preserve">
+    <value>The Company Name must not be special character.</value>
+  </data>
+  <data name="Generic_CompIDRequire" xml:space="preserve">
+    <value>The Company Id cannot be blank</value>
+  </data>
+  <data name="Generic_InvalidBeginDate" xml:space="preserve">
+    <value>You have selected an invalid date. Please try again.</value>
+  </data>
+  <data name="Generic_InvalidEndDate" xml:space="preserve">
+    <value>You have selected an invalid date. Please try again.</value>
+  </data>
+  <data name="Generic_PagerText" xml:space="preserve">
+    <value>Displaying page {0} of {1}, records {2} - {3} of {4}.</value>
+  </data>
+  <data name="Generic_RequireDate" xml:space="preserve">
+    <value>You have selected an invalid date. Please try again.</value>
+    <comment>User does not enter begin date or end date</comment>
+  </data>
+  <data name="Generic_RequireText" xml:space="preserve">
+    <value>You did not enter data. Please enter data to search.</value>
+    <comment>User does not enter data.</comment>
+  </data>
+  <data name="global_AccountBalance" xml:space="preserve">
+    <value>The Account Balance From cannot be greater than the Account Balance To</value>
+  </data>
+  <data name="global_DateStart" xml:space="preserve">
+    <value>The Start Date From cannot be greater than the Start Date To</value>
+  </data>
+  <data name="history_CreditLine" xml:space="preserve">
+    <value>The Credit Line Form cannot be greater than the Credit Line To</value>
+  </data>
+  <data name="history_ExpirationDate" xml:space="preserve">
+    <value>The Expiration Date From cannot be greater than the Expiration Date To</value>
+  </data>
+  <data name="inactive_DateLastMonetary" xml:space="preserve">
+    <value>The Date Last Monetary From cannot be greater than the Date Last Monetary To</value>
+  </data>
+  <data name="inactive_OpenDate" xml:space="preserve">
+    <value>The Open Date From cannot be greater than the Open Date To</value>
+  </data>
+  <data name="linechange_Change" xml:space="preserve">
+    <value>The Change Percent From cannot be greater than the Change Percent To</value>
+  </data>
+  <data name="Messaging_InvalidMaxLengthMessage" xml:space="preserve">
+    <value>The messages length must be less than or equal to 1000 characters.</value>
+  </data>
+  <data name="Messaging_RequireMessage" xml:space="preserve">
+    <value>The message must be entered before sending.</value>
+  </data>
+  <data name="Messaging_RequirePostedBy" xml:space="preserve">
+    <value>Please enter posted by before sending message.</value>
+  </data>
+  <data name="Messaging_RequireRecipient" xml:space="preserve">
+    <value>You must specify at least one recipient before sending your message.</value>
+  </data>
+  <data name="Messaging_RequireUser" xml:space="preserve">
+    <value>You must specify at least one recipient before sending your message.</value>
+  </data>
+  <data name="Messaging_SentSuccessfully" xml:space="preserve">
+    <value>The message has been delivered to the specified recipient(s).</value>
+  </data>
+  <data name="Returns_ComfirmVerify" xml:space="preserve">
+    <value>Are you sure that you want to verify this return?</value>
+  </data>
+  <data name="Returns_ComfirmVerify_All" xml:space="preserve">
+    <value>Are you sure that you want to verify all returns?</value>
+  </data>
+  <data name="CardSearch_CardNumber_Required" xml:space="preserve">
+    <value>Please enter card number before searching.</value>
+  </data>
+  <data name="CardSearch_InvalidCardNumber" xml:space="preserve">
+    <value>You have entered an invalid Card Number. Please try again.</value>
+    <comment>V14</comment>
+  </data>
+  <data name="ContactUs_FailEmail" xml:space="preserve">
+    <value>The message was unable to be delivered.</value>
+  </data>
+  <data name="ContactUs_SuccessfulEmail" xml:space="preserve">
+    <value>Email sent to Merchant Customer Service.</value>
+  </data>
+  <data name="Generic_CheckLengthOfComment1" xml:space="preserve">
+    <value>Length of string must be from 1 to 1000 characters.</value>
+    <comment>Check Length Of Comment</comment>
+  </data>
+  <data name="Generic_DeleteRecord" xml:space="preserve">
+    <value>Are you sure you would like to delete this record?</value>
+    <comment>C5</comment>
+  </data>
+  <data name="Generic_FieldLengthExceeded" xml:space="preserve">
+    <value>This field must not exceed {0} characters.</value>
+    <comment>V13</comment>
+  </data>
+  <data name="Generic_FromGreaterTo" xml:space="preserve">
+    <value>The "To" value must be greater than the "From" value.</value>
+    <comment>V9</comment>
+  </data>
+  <data name="Generic_GroupAssigned" xml:space="preserve">
+    <value>Assignment "{0}" is currently assigned to this group. You must select a different group or user for the assignment before you delete this group.</value>
+    <comment>V10</comment>
+  </data>
+  <data name="Generic_InvalidDateFormat" xml:space="preserve">
+    <value>The date format is invalid. Please enter MM/DD/YYYY.</value>
+    <comment>V1</comment>
+  </data>
+  <data name="Generic_InvalidDateFormat_FromDateGreaterToDate" xml:space="preserve">
+    <value>The end date must be greater than the begin date.</value>
+    <comment>V2</comment>
+  </data>
+  <data name="Generic_InvalidEmail" xml:space="preserve">
+    <value>You have entered an invalid Email. Please try again.</value>
+    <comment>V21</comment>
+  </data>
+  <data name="Generic_InvalidUser" xml:space="preserve">
+    <value>You have input an invalid user. Please select a user in the list and try again.</value>
+  </data>
+  <data name="Generic_NumbericOnly" xml:space="preserve">
+    <value>Only numbers are allowed in this field.</value>
+    <comment>V4</comment>
+  </data>
+  <data name="Generic_OutOfMemory" xml:space="preserve">
+    <value>The systems is being out of memory. You should limit data before execute this action.</value>
+  </data>
+  <data name="Generic_PastDate" xml:space="preserve">
+    <value>A date in the past cannot be selected. Please try again.</value>
+  </data>
+  <data name="Generic_ProcessingFailed" xml:space="preserve">
+    <value>Processing failed. Please try again.</value>
+  </data>
+  <data name="Generic_Required" xml:space="preserve">
+    <value>This is a required field.</value>
+    <comment>V8</comment>
+  </data>
+  <data name="Generic_RequiredBodyEmail" xml:space="preserve">
+    <value>The Body cannot be blank. Please try again.</value>
+  </data>
+  <data name="Generic_Required_Unique" xml:space="preserve">
+    <value>This field is required and must be unique.</value>
+    <comment>V3</comment>
+  </data>
+  <data name="Generic_SelectedDate_Greater_Today" xml:space="preserve">
+    <value>The selected date must be less than or equal to today.</value>
+  </data>
+  <data name="Generic_SelectedDate_Less_Today" xml:space="preserve">
+    <value>The expiration date must be greater than or equal to today</value>
+  </data>
+  <data name="Group_Assigned" xml:space="preserve">
+    <value>Assignment "{0}" is currently assigned to this group. You must select a different group or user for the assignment before you delete this group.</value>
+    <comment>V10</comment>
+  </data>
+  <data name="Login_Forgot_Password_Required_Email" xml:space="preserve">
+    <value>You must enter an email address to continue.</value>
+  </data>
+  <data name="Login_Forgot_Password_Required_UserName" xml:space="preserve">
+    <value>You must enter a User Name to continue.</value>
+  </data>
+  <data name="Login_Forgot_Password_Success" xml:space="preserve">
+    <value>A new password has been generated and emailed to the address on file.</value>
+  </data>
+  <data name="Login_Invalid_Answer" xml:space="preserve">
+    <value>You have entered an invalid answer. You may try again or contact Customer Service for assistance.</value>
+    <comment>V7</comment>
+  </data>
+  <data name="Login_Invalid_UserName_Email" xml:space="preserve">
+    <value>You have entered an invalid username or email address. You may try again or contact Customer Service for assistance.</value>
+    <comment>V6</comment>
+  </data>
+  <data name="Login_Invalid_UserName_Password" xml:space="preserve">
+    <value>You have entered an invalid username or password. Please try again.</value>
+    <comment>V5</comment>
+  </data>
+  <data name="MIF_NoApprovalDate" xml:space="preserve">
+    <value>The Approval Date of this merchant is not between the selected dates.</value>
+  </data>
+  <data name="MIF_NoDataMerchantNumber" xml:space="preserve">
+    <value>Invalid specified ID.</value>
+    <comment>No data for Merchant ID.</comment>
+  </data>
+  <data name="ReportFilter_BlankMerchantName" xml:space="preserve">
+    <value>Please enter a partial Merchant Name.</value>
+  </data>
+  <data name="ReportFilter_InvalidChainNumber" xml:space="preserve">
+    <value>This is an invalid Chain Number. Please check the Chain Number and try again.</value>
+  </data>
+  <data name="ReportFilter_InvalidMerchantName" xml:space="preserve">
+    <value>This is an invalid partial Merchant Name. Special characters not allowed ^ * = | \\ ~ [ ] { } ; “ &lt; . Please check the partial Merchant Name and try again.</value>
+  </data>
+  <data name="ReportFilter_InvalidMerchantNumber" xml:space="preserve">
+    <value>This is an invalid Merchant ID. Please check the Merchant ID and try again.</value>
+  </data>
+  <data name="ReportFilter_InvalidSysPrin" xml:space="preserve">
+    <value>The SYS/PRIN must be numeric.</value>
+  </data>
+  <data name="ReportFilter_LessThan2Year" xml:space="preserve">
+    <value>A date which is not within the last 2 years cannot be selected. Please try again.</value>
+    <comment>V12</comment>
+  </data>
+  <data name="ReportFilter_ReportDate_FromDateGreaterThanToDate" xml:space="preserve">
+    <value>The "To" value must be greater than the "From" value.</value>
+    <comment>from date &gt; to date</comment>
+  </data>
+  <data name="ReportFilter_ReportDate_FromDateToDateGreaterThanCurrentDate" xml:space="preserve">
+    <value>From or to date must be less than or equal to today.</value>
+    <comment>from date, to date &gt; today</comment>
+  </data>
+  <data name="ReportFilter_ReportDate_InvaidDate" xml:space="preserve">
+    <value>The date format is invalid. Please enter MM/DD/YYYY.</value>
+    <comment>empty, invalid date, wrong format</comment>
+  </data>
+  <data name="ReportFilter_ReportDate_Msg1" xml:space="preserve">
+    <value>A date which is not within the last 2 years cannot be selected. Please try again.</value>
+  </data>
+  <data name="ReportFilter_ReportDate_Msg2" xml:space="preserve">
+    <value>The To date must be greater than or equal to the From date. Please try again.</value>
+  </data>
+  <data name="ReportFilter_ReportDate_Msg3" xml:space="preserve">
+    <value>A date in future cannot be selected. Please try again.</value>
+  </data>
+  <data name="ReportFilter_ReportDate_SelectedDateGreaterThanCurrentDate" xml:space="preserve">
+    <value>The selected date must be less than or equal to today.</value>
+    <comment>selected date&gt; today</comment>
+  </data>
+  <data name="ReportFilter_V1" xml:space="preserve">
+    <value>The date format is invalid. Please enter MM/DD/YYYY.</value>
+    <comment>Invalid date format</comment>
+  </data>
+  <data name="ReportFilter_V2" xml:space="preserve">
+    <value>{0}: This is a required field.</value>
+    <comment>Required</comment>
+  </data>
+  <data name="ReportFilter_V3" xml:space="preserve">
+    <value>The end date must be greater than the begin date.</value>
+    <comment>Invalid date (to&lt; from)</comment>
+  </data>
+  <data name="ReportFilter_V4" xml:space="preserve">
+    <value>{0}: This field must not exceed {1} characters.</value>
+    <comment>Field length exceeded</comment>
+  </data>
+  <data name="ReportFilter_V5" xml:space="preserve">
+    <value>{0}: Special characters except * are not allowed in this field.</value>
+    <comment>Alphanumeric/* only</comment>
+  </data>
+  <data name="ReportFilter_V6" xml:space="preserve">
+    <value>{0}: Special characters are not allowed in this field.</value>
+    <comment>Alphanumeric only</comment>
+  </data>
+  <data name="ReportFilter_V7" xml:space="preserve">
+    <value>{0}: Only numbers are allowed in this field.</value>
+    <comment>Numeric only</comment>
+  </data>
+  <data name="ReportFilter_V8" xml:space="preserve">
+    <value>{0}: You have entered an incorrect value format.</value>
+    <comment>Incorrect format</comment>
+  </data>
+  <data name="Role_ConfirmDelete" xml:space="preserve">
+    <value>Are you sure you would like to delete this user role?</value>
+  </data>
+  <data name="Field_RequireAndUnique" xml:space="preserve">
+    <value>This field is required and must be unique.</value>
+  </data>
+  <data name="Field_Unique" xml:space="preserve">
+    <value>{0}: This is a required field.</value>
+  </data>
+  <data name="Field_NotExcessed" xml:space="preserve">
+    <value>This field must not exceed &lt;x number&gt; characters.</value>
+  </data>
+  <data name="Field_At_Least_2_Characters" xml:space="preserve">
+    <value>: You must enter at least 2 characters.</value>
+  </data>
+  <data name="Field_Incorrect_Email" xml:space="preserve">
+    <value>You have entered an incorrect email address format. Please try again.</value>
+  </data>
+  <data name="Field_Require" xml:space="preserve">
+    <value>{0}: This is a required field.</value>
+  </data>
+  <data name="Field_Conform_Pass_Not_Math" xml:space="preserve">
+    <value>Your New Password and Confirm New Password do not match.</value>
+  </data>
+  <data name="Field_Incorrect_Password" xml:space="preserve">
+    <value>You have entered an incorrect password format. Please try again.</value>
+  </data>
+  <data name="Field_Incorect_Username_Format" xml:space="preserve">
+    <value>: This field must be alpha characters or numbers, and the length must be from 7 to 10 characters.</value>
+  </data>
+  <data name="ReportFilter_V9" xml:space="preserve">
+    <value>{0}: The date must not be greater than today\'s date.</value>
+    <comment>Date &gt; present day</comment>
+  </data>
+  <data name="Field_Incorect_MS_Username_Format" xml:space="preserve">
+    <value>: This field must be alpha characters or numbers, and the length must be from 7 to 20 characters.</value>
+  </data>
+  <data name="ContactUs_BodyExceedLength" xml:space="preserve">
+    <value>Body: This field must not exceed 1000 characters</value>
+  </data>
+  <data name="ContactUs_BodyRequired" xml:space="preserve">
+    <value>Body: This is a required field</value>
+  </data>
+  <data name="ContactUs_FromInvalidEmail" xml:space="preserve">
+    <value>You have entered an incorrect email address format. Please try again.</value>
+  </data>
+  <data name="ContactUs_FromRequired" xml:space="preserve">
+    <value>From: This is a required field</value>
+  </data>
+  <data name="ContactUs_FromExceedLength" xml:space="preserve">
+    <value>From: This field must not exceed 200 characters</value>
+  </data>
+  <data name="Assignment_Filter_Required" xml:space="preserve">
+    <value>You must choose at least one filter.</value>
+    <comment>V12</comment>
+  </data>
+  <data name="RiskScore_Overlap" xml:space="preserve">
+    <value>A Risk Score already exists for this range. The Risk Score ranges may not overlap.</value>
+    <comment>V16</comment>
+  </data>
+  <data name="Group_GroupCheckUser" xml:space="preserve">
+    <value>There are currently user(s) assigned to this group. You must remove the user(s) before deleting the group.</value>
+    <comment>V24</comment>
+  </data>
+  <data name="ReassignUser_ReassignToEqualUserName" xml:space="preserve">
+    <value>This assignment can not be reassigned to its current owner.</value>
+    <comment>V6</comment>
+  </data>
+  <data name="Reassign_Overlap" xml:space="preserve">
+    <value>This assignment was already reassigned to another user with overlapped time frame.</value>
+    <comment>V5</comment>
+  </data>
+  <data name="ReassignUser_ConfirmAssign" xml:space="preserve">
+    <value>Are you sure you would like to reassign &lt;User Name&gt;\'s assignments to &lt;Reassign To&gt; for the period of &lt;From&gt; - &lt;To&gt;?</value>
+  </data>
+  <data name="ReportFilter_V21" xml:space="preserve">
+    <value>{0}: The length must be {1} digits.</value>
+    <comment>Check the length of Card #</comment>
+  </data>
+  <data name="Statement_NoStatement" xml:space="preserve">
+    <value>No results found. Adjust your filtering criteria.</value>
+  </data>
+  <data name="ReportFilter_V16" xml:space="preserve">
+    <value>This field must be numbers and the length must be {0} digits.</value>
+    <comment>This field must be numbers and the length must be &lt;x number&gt; digits.</comment>
+  </data>
+  <data name="Assignment_GroupUser_Required" xml:space="preserve">
+    <value>You must select a group, user, or both for this assignment.</value>
+    <comment>V1</comment>
+  </data>
+  <data name="EscalationStatus_Duplicate" xml:space="preserve">
+    <value>An Escalation Status is already exists. If it is currently inactive you should activate it instead of adding a duplicate one.</value>
+  </data>
+  <data name="Resolution_Duplicate" xml:space="preserve">
+    <value>A Resolution is already exists. If it is currently inactive you should activate it instead of adding a duplicate one.</value>
+  </data>
+  <data name="Group_Duplicate" xml:space="preserve">
+    <value>A Group with the same name is already exists. If it is currently inactive you should activate it instead of adding a duplicate one.</value>
+  </data>
+  <data name="CaseFilter_V1" xml:space="preserve">
+    <value>Please enter a valid {0}.</value>
+  </data>
+  <data name="CaseManagement_MerchantNameNotFound" xml:space="preserve">
+    <value>The Merchant Name entered not found, please revise your search.</value>
+  </data>
+  <data name="CaseManagement_MerchantNumberNotFound" xml:space="preserve">
+    <value>The Merchant ID entered not found, please revise your search.</value>
+  </data>
+  <data name="IssueMaintenance_MaxLength" xml:space="preserve">
+    <value>{0}: This field must not exceed {1} characters.</value>
+  </data>
+  <data name="IssueMaintenance_RequiredField" xml:space="preserve">
+    <value>{0}: This is a required field.</value>
+  </data>
+  <data name="IssueMaintenance_CannotInactiveGroup" xml:space="preserve">
+    <value>There are currently active issue(s) assigned to this group.</value>
+  </data>
+  <data name="IssueMaintenance_CannotInactiveIssue" xml:space="preserve">
+    <value>There are currently open ticket(s) that are using this issue.</value>
+  </data>
+  <data name="IssueMaintenance_UniqueName" xml:space="preserve">
+    <value>Issue name already exists in the system. Re-enter using different issue name</value>
+  </data>
+  <data name="IssueMaintenance_GroupUniqueName" xml:space="preserve">
+    <value>Issue group name already exists in the system. Re-enter using different issue group name</value>
+  </data>
+  <data name="Generic_CheckLengthOfBody" xml:space="preserve">
+    <value>Length of string must be from 1 to 1000 characters.</value>
+  </data>
+  <data name="ValidationMessages_V1b" xml:space="preserve">
+    <value>{0}: The date must not be greater than today\'s date.</value>
+  </data>
+  <data name="ValidationMessages_V2" xml:space="preserve">
+    <value>{0}: This is a required field.</value>
+  </data>
+  <data name="ValidationMessages_V1" xml:space="preserve">
+    <value>The date format is invalid. Please enter MM/DD/YYYY.</value>
+  </data>
+  <data name="ValidationMessages_V1b1" xml:space="preserve">
+    <value>{0}: The date must be greater than or equal to today\'s date.</value>
+  </data>
+  <data name="ValidationMessages_V21" xml:space="preserve">
+    <value>{0}: This is a required field.</value>
+  </data>
+  <data name="ValidationMessages_V3" xml:space="preserve">
+    <value>The end date must be greater than or equal to the begin date.</value>
+  </data>
+  <data name="ValidationMessages_V7" xml:space="preserve">
+    <value>{0}: Only numbers are allowed in this field.</value>
+  </data>
+  <data name="ValidationMessages_V9" xml:space="preserve">
+    <value>{0}: The date must not be greater than today\'s date.</value>
+  </data>
+  <data name="IssuingBank_NoFullLength" xml:space="preserve">
+    <value>Please enter the First Six (6) digits of the Card Number</value>
+  </data>
+  <data name="IssuingBank_NoNumeric" xml:space="preserve">
+    <value>Please enter a numeric value only.</value>
+  </data>
+  <data name="IssuingBank_NoValueSearching" xml:space="preserve">
+    <value>Please enter a value.</value>
+  </data>
+  <data name="ContactUs_Required" xml:space="preserve">
+    <value>{0} is a required field. Please enter data to send email.</value>
+  </data>
+  <data name="ReportFilter_V10" xml:space="preserve">
+    <value>The date must not be greater than today’s date.</value>
+  </data>
+  <data name="RiskParameter_js_AssignmentDisablingParam" xml:space="preserve">
+    <value>You must remove the parameter from the assignment(s) before disabling the parameter.</value>
+  </data>
+  <data name="RiskParameter_js_AssignmentMonitoringParam" xml:space="preserve">
+    <value>There are currently assignment(s) monitoring this parameter</value>
+  </data>
+  <data name="RiskParameter_js_HighMustBeGreaterThanLow" xml:space="preserve">
+    <value>The "High" value must be greater than or equal to the "Low" value.</value>
+  </data>
+  <data name="RiskParameter_js_IntergerNumber" xml:space="preserve">
+    <value>The value of this field must be an integer number.</value>
+  </data>
+  <data name="RiskParameter_js_MonitoringParameter" xml:space="preserve">
+    <value>There are currently market data element(s) monitoring this parameter</value>
+  </data>
+  <data name="RiskParameter_js_Msg1DisablingParameter" xml:space="preserve">
+    <value>There are currently assignment(s)/riskscore(s) monitoring this parameter. You must remove the parameter from the assignment(s)/riskscore(s) before disabling the parameter</value>
+  </data>
+  <data name="RiskParameter_js_MsgDisablingParameter" xml:space="preserve">
+    <value>There are currently market data element(s)/riskscore(s) monitoring this parameter. You must remove the parameter from the market data element(s)/riskscore(s) before disabling the parameter</value>
+  </data>
+  <data name="RiskParameter_js_MustBeSelected" xml:space="preserve">
+    <value>A parameter must be selected.</value>
+  </data>
+  <data name="RiskParameter_js_OnlyNumbers" xml:space="preserve">
+    <value>Only numbers are allowed in this field.</value>
+  </data>
+  <data name="RiskParameter_js_RemoveTheParameter" xml:space="preserve">
+    <value>You must remove the parameter from the market data element(s) before disabling the parameter.</value>
+  </data>
+  <data name="RiskParameter_js_RequiredField" xml:space="preserve">
+    <value>This is a required field.</value>
+  </data>
+  <data name="RiskParameter_js_RiskScoreDisablingParam" xml:space="preserve">
+    <value>There are currently risk scores(s) set for this parameter.  You must delete the risk score(s) before disabling the parameter.</value>
+  </data>
+  <data name="RiskParameter_js_ThePartMustBeLessThan" xml:space="preserve">
+    <value>The precision part of the value of this field must be less than</value>
+  </data>
+  <data name="RiskParameter_js_ToMustBeGreaterThanFrom" xml:space="preserve">
+    <value>The "To" value must be greater than or equal to the "From" value.</value>
+  </data>
+  <data name="RiskParameter_js_ValueMayNotExceed" xml:space="preserve">
+    <value>The value of this field may not exceed</value>
+  </data>
+  <data name="RiskParameter_js_ValueMayNotLowerThan" xml:space="preserve">
+    <value>The value of this field may not lower than</value>
+  </data>
+  <data name="RiskParameter_js_Indicator" xml:space="preserve">
+    <value>Indicator</value>
+    <comment>n</comment>
+  </data>
+  <data name="RiskParameter_js_IndicatorFrom" xml:space="preserve">
+    <value>Indicator From</value>
+    <comment>n</comment>
+  </data>
+  <data name="RiskParameter_js_IndicatorTo" xml:space="preserve">
+    <value>Indicator To</value>
+    <comment>n</comment>
+  </data>
+  <data name="RiskParameter_js_Threshold" xml:space="preserve">
+    <value>Threshold</value>
+    <comment>n</comment>
+  </data>
+  <data name="UserProfile_TMS_Note" xml:space="preserve">
+    <value>Note: The information above appears as your primary account record. Please click {0} to update your information.</value>
+  </data>
+  <data name="ManageRole_PrefinedRole" xml:space="preserve">
+    <value>This role is a pre-defined role and is not editable</value>
+  </data>
+  <data name="DataNotFound" xml:space="preserve">
+    <value>Data not found.</value>
+  </data>
+  <data name="LimitFileByUser" xml:space="preserve">
+    <value>User is allowed to have up to {0} files at a time. Please delete one of them to continue exporting.</value>
+  </data>
+  <data name="ConfirmDeleteFile" xml:space="preserve">
+    <value>Are you sure you want to delete this file?</value>
+  </data>
+  <data name="TextCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="textNo" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="textYes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="textOk" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="ValidationMessages_DayWorkingHours1" xml:space="preserve">
+    <value>Hours per day must be greater than 0 and less than 24</value>
+  </data>
+  <data name="ValidationMessages_DayWorkingHours2" xml:space="preserve">
+    <value>Hours per day must not extend to the next day.</value>
+  </data>
+  <data name="ValidationMessages_Required" xml:space="preserve">
+    <value>This is a required field.</value>
+  </data>
+  <data name="ValidationMessages_WeekendDay" xml:space="preserve">
+    <value>Hours per day must be less than 24</value>
+  </data>
+  <data name="ValidationMessages_RestrictionPasswordGreaterOrEqualThanField" xml:space="preserve">
+    <value>Only 0 or positive numbers are allowed in this field.</value>
+  </data>
+  <data name="ValidationMessages_RestrictionPasswordLessOrEqualThanField" xml:space="preserve">
+    <value>The maximum number is 10. Please try again.</value>
+  </data>
+  <data name="RiskParameter_js_Indicator_Min" xml:space="preserve">
+    <value>Indicator : The value of this field must be greater than</value>
+  </data>
+  <data name="ValidationMessagesMerchantNumber" xml:space="preserve">
+    <value>Invalid format. Only numeric characters (0-9), alpha characters (a-z, A-Z), and/or the symbol (-) are allowed in this field.</value>
+  </data>
+  <data name="RiskParameter_js_Indicator_ReAlert01" xml:space="preserve">
+    <value>First Alert Indicator's value is = 0. If you want this Parameter to re-alert, then you must enter a value in the Re-Alert Indicator that is = 0.</value>
+  </data>
+  <data name="RiskParameter_js_Indicator_ReAlert02" xml:space="preserve">
+    <value>First Alert Indicator's value is &amp;gt; = 0. If you want this Parameter to re-alert, then you must enter a value in the Re-Alert Indicator that is &amp;gt; = 0.</value>
+  </data>
+  <data name="RiskParameter_js_Threshold_ReAlert01" xml:space="preserve">
+    <value>First Alert Threshold's value is = 0. If you want this Parameter to re-alert, then you must enter a value in the Re-Alert Threshold that is = 0.</value>
+  </data>
+  <data name="RiskParameter_js_Threshold_ReAlert02" xml:space="preserve">
+    <value>First Alert Threshold's value is &amp;gt; = 0. If you want this Parameter to re-alert, then you must enter a value in the Re-Alert Threshold that is &amp;gt; = 0.</value>
+  </data>
+  <data name="RiskParameter_js_Threshold_ReAlertCM" xml:space="preserve">
+    <value>First Alert Indicator and Threshold values are = 0. If you want this Parameter to re-alert, then you must enter values in the Re-Alert Indicator and Threshold that are = 0.</value>
+  </data>
+  <data name="ReportFilter_V11" xml:space="preserve">
+    <value>Merchant Name must not include the following special characters: '&amp;#' and there must be a space after ‘&lt;’.</value>
+  </data>
+  <data name="RiskParameter_js_ToMustBeGreaterThanFrom1" xml:space="preserve">
+    <value>The "To" value must be greater than the "From" value.</value>
+  </data>
+  <data name="ValidationMessages_V10" xml:space="preserve">
+    <value>No results found. Adjust your filtering criteria.</value>
+  </data>
+  <data name="ReportFilter_CardNumberLength" xml:space="preserve">
+    <value>{0}: The length must be {1} or {2} digits.</value>
+  </data>
+  <data name="First6_Or8" xml:space="preserve">
+    <value>First 6 or 8</value>
+  </data>
+  <data name="NoResultsFound" xml:space="preserve">
+    <value>No results found. Adjust your filtering criteria.</value>
+  </data>
+  <data name="FieldMustNotIncludeScriptTagSpecialChars" xml:space="preserve">
+    <value>Fields must not include the following special characters: &lt; , &gt; or &amp;#.</value>
+  </data>
+</root>

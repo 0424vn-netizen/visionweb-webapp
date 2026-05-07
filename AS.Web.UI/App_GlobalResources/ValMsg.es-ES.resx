@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Assignment_Filter_Required" xml:space="preserve">
+    <value>Debe elegir por lo menos un filtro.</value>
+  </data>
+  <data name="Assignment_GroupUser_Required" xml:space="preserve">
+    <value>Debe seleccionar un grupo, usuario, o ambos para esta asignación.</value>
+  </data>
+  <data name="Assignment_SelectedDate_Less_Today" xml:space="preserve">
+    <value>La fecha de vencimiento debe ser mayor o igual que la fecha de hoy.</value>
+  </data>
+  <data name="CustomFieldLengthExceeded" xml:space="preserve">
+    <value>{0}: Este campo no debe exceder {1} carácter. </value>
+  </data>
+  <data name="CustomIncorrectFormat" xml:space="preserve">
+    <value>Usted ha ingresado un formato incorrecto de {0}. Inténtelo de nuevo.</value>
+  </data>
+  <data name="CustomInvalidCharacter" xml:space="preserve">
+    <value>{0}: Caracteres Inválidos.</value>
+  </data>
+  <data name="CustomMaxLength" xml:space="preserve">
+    <value>{0}: Este campo no debe exceder {1} caracteres.</value>
+  </data>
+  <data name="CustomMinLength" xml:space="preserve">
+    <value>{0}: Debe colocar por los menos {1} caracteres.</value>
+  </data>
+  <data name="CustomNumber" xml:space="preserve">
+    <value>{0}: Sólo se permiten números en este campo.</value>
+  </data>
+  <data name="CustomRequired" xml:space="preserve">
+    <value>{0}: Este campo es requerido. </value>
+  </data>
+  <data name="CustomRequired_Unique" xml:space="preserve">
+    <value>{0}: Este campo es requerido y debe ser único. </value>
+  </data>
+  <data name="EscalationStatus_Duplicate" xml:space="preserve">
+    <value>Ya existe un Estatus de Escalada. Si se encuentra actualmente inactivo, debe activarlo en lugar de añadir un duplicado.</value>
+  </data>
+  <data name="FieldLengthExceeded" xml:space="preserve">
+    <value>Este campo no debe exceder {0} carácter.</value>
+  </data>
+  <data name="Field_Incorect_Username_Format" xml:space="preserve">
+    <value>{0}: Este campo debe contener caracteres alfabéticos o numéricos, y debe tener de {1} a {2} caracteres de longitud.</value>
+  </data>
+  <data name="ForceResetPass_Invalid" xml:space="preserve">
+    <value>{0} no es válido.</value>
+  </data>
+  <data name="ForceResetPass_NotMatch" xml:space="preserve">
+    <value>{0} no coincide.</value>
+  </data>
+  <data name="ForceResetPass_Required" xml:space="preserve">
+    <value>{0} es requerido.</value>
+  </data>
+  <data name="forgotPWD_AnswerIncorrect" xml:space="preserve">
+    <value>La respuesta que usted ingresó no coincide con la respuesta de validación que aparece en el expediente para este Usuario. Puede intentarlo de nuevo o comunicarse con Servicios de Atención al Cliente para recibir ayuda. </value>
+  </data>
+  <data name="forgotPWD_RequiredField" xml:space="preserve">
+    <value>Debe ingresar {0} para continuar.</value>
+  </data>
+  <data name="Group_Duplicate" xml:space="preserve">
+    <value>Ya existe un Grupo con el mismo nombre. Si se encuentra actualmente inactivo, debe activarlo en lugar de añadir un duplicado.</value>
+  </data>
+  <data name="InvalidAccount" xml:space="preserve">
+    <value>Usted ha ingresado una cuenta de usuario inválida. </value>
+  </data>
+  <data name="InvalidAnswer" xml:space="preserve">
+    <value>Caracteres {0} Inválidos</value>
+  </data>
+  <data name="InvalidCharacter" xml:space="preserve">
+    <value>Caracteres Inválidos.</value>
+  </data>
+  <data name="InvalidDateFormat" xml:space="preserve">
+    <value>El formato de fecha es inválido. Ingrese MM/DD/AAAA</value>
+  </data>
+  <data name="InvalidEmail" xml:space="preserve">
+    <value>Usted ha ingresado un formato incorrecto de dirección de correo electrónico. Inténtelo de nuevo.</value>
+  </data>
+  <data name="InvalidName" xml:space="preserve">
+    <value>Caracteres de Nombre Inválidos</value>
+  </data>
+  <data name="ManageProfile_ConfirmPassNotMatch" xml:space="preserve">
+    <value>Su Nueva Contraseña y Confirme su Nueva Contraseña no coinciden</value>
+  </data>
+  <data name="ManageProfile_InvalidContent" xml:space="preserve">
+    <value>Usted ha ingresado un {0} inválido. Inténtelo de nuevo.</value>
+  </data>
+  <data name="ManageProfile_InvalidFormat" xml:space="preserve">
+    <value>Formato {0} Inválido</value>
+  </data>
+  <data name="ManageProfile_InvalidLength" xml:space="preserve">
+    <value>La longitud no es válida (por lo menos {0} caracteres y máx {1} caracteres).</value>
+  </data>
+  <data name="ManageProfile_LengthInvalid" xml:space="preserve">
+    <value>la longitud de {0} no es válida ({1}-{2})</value>
+  </data>
+  <data name="ManageProfile_NoSpecialChar" xml:space="preserve">
+    <value>{0} no debe contener caracteres especiales</value>
+  </data>
+  <data name="ManageProfile_OldPassNotCorrect" xml:space="preserve">
+    <value>La nueva contraseña no puede ser la misma que cualquiera de las últimas seis contraseñas.</value>
+  </data>
+  <data name="ManageProfile_OneCharOneNum" xml:space="preserve">
+    <value>{0} debe tener por lo menos un carácter  alfabético y uno numérico</value>
+  </data>
+  <data name="ManageProfile_PassNotMatch" xml:space="preserve">
+    <value>Confirmar que la contraseña no coincide</value>
+  </data>
+  <data name="ManageRole_Role_Required" xml:space="preserve">
+    <value>Debe seleccionar por lo menos un rol.</value>
+  </data>
+  <data name="ManageUser_FirstName_InvalidCharacters" xml:space="preserve">
+    <value>Caracteres {0} Inválidos</value>
+  </data>
+  <data name="ManageUser_UserName_AlphaLength" xml:space="preserve">
+    <value>{0} puede ser cualquier carácter excepto el símbolo de menor que '&lt;' o el de mayor que '&gt;', y debe tener una longitud de {1} a {2}</value>
+  </data>
+  <data name="MaxLength" xml:space="preserve">
+    <value>Este campo no debe exceder {0} caracteres.</value>
+  </data>
+  <data name="MIF_InvalidEmail" xml:space="preserve">
+    <value>Dirección(es) de Correo Electrónico Inválida(s)</value>
+  </data>
+  <data name="MinLength" xml:space="preserve">
+    <value>Debe ingresar por lo menos {0} caracteres.</value>
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>Sólo se permiten números en este campo.</value>
+  </data>
+  <data name="ProcessingFailed" xml:space="preserve">
+    <value>El procesamiento falló. Inténtelo de nuevo.</value>
+  </data>
+  <data name="PRO_EndDateGreaterStart" xml:space="preserve">
+    <value>La Fecha Final debe ser mayor que la Fecha Inicial.</value>
+  </data>
+  <data name="PRO_EndDateGreaterToday" xml:space="preserve">
+    <value>La Fecha Final debe ser mayor que hoy.</value>
+  </data>
+  <data name="PRO_RateBlank" xml:space="preserve">
+    <value>La tarifa no puede quedar en blanco.</value>
+  </data>
+  <data name="PRO_RateCharacter" xml:space="preserve">
+    <value>La tarifa sólo acepta los siguientes caracteres: 0123456789.</value>
+  </data>
+  <data name="PRO_SelectBilling" xml:space="preserve">
+    <value>Seleccione un rubro de facturación.</value>
+  </data>
+  <data name="PRO_StartDateGreaterToday" xml:space="preserve">
+    <value>La Fecha Inicial debe ser mayor o igual que la fecha de hoy.</value>
+  </data>
+  <data name="ReassignUser_FromDateGreaterToDate" xml:space="preserve">
+    <value>La fecha final debe ser mayor que la fecha inicial.</value>
+  </data>
+  <data name="ReassignUser_InvalidDate" xml:space="preserve">
+    <value>Fecha inválida.</value>
+  </data>
+  <data name="ReassignUser_InvalidUser" xml:space="preserve">
+    <value>Usted ha ingresado un usuario inválido. Seleccione un usuario de la lista e inténtelo de nuevo.</value>
+  </data>
+  <data name="ReassignUser_PastDate" xml:space="preserve">
+    <value>No se puede seleccionar una fecha pasada. Intente de nuevo.</value>
+  </data>
+  <data name="ReassignUser_ReassignToEqualUserName" xml:space="preserve">
+    <value>Esta asignación no puede ser reasignada a su dueño actual.</value>
+  </data>
+  <data name="Required" xml:space="preserve">
+    <value>Este campo es requerido.</value>
+  </data>
+  <data name="Required_Asterisk" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="Required_Unique" xml:space="preserve">
+    <value>Este campo es requerido y debe ser único.</value>
+  </data>
+  <data name="Resolution_Duplicate" xml:space="preserve">
+    <value>Ya existe una Resolución. Si se encuentra actualmente inactiva, debe activarla en lugar de añadir un duplicado.</value>
+  </data>
+  <data name="RiskScore_Overlap" xml:space="preserve">
+    <value>Ya existe una Punctuación  de riesgo de parametron para este rango. Los rangos de la puntuación de riesgo del parámetro no pueden concidir.</value>
+  </data>
+  <data name="rm_Report_SelectRquired" xml:space="preserve">
+    <value>Debe seleccionar {0}.</value>
+  </data>
+  <data name="SelectedDate_Greater_Today" xml:space="preserve">
+    <value>La fecha seleccionada debe ser menor o igual que la fecha de hoy.</value>
+  </data>
+  <data name="SetMaxSec_PredefinedNumber" xml:space="preserve">
+    <value>El número pre-definido debe ser mayor o igual que el número actual de usuarios secundarios.</value>
+  </data>
+  <data name="Theme_Allow" xml:space="preserve">
+    <value>Puede crear {0} temas en un período de {1} horas. Le quedan {2} temas disponibles. </value>
+  </data>
+  <data name="Theme_Cannot_Change_Theme" xml:space="preserve">
+    <value>No puede cambiar el tema</value>
+  </data>
+  <data name="Theme_Hierarchy_From_Theme" xml:space="preserve">
+    <value>La jerarquía seleccionada está actualmente asignada al tema {0}. Elimínela de ese tema.</value>
+  </data>
+  <data name="Theme_Logo_CanNotUpload" xml:space="preserve">
+    <value>No puedo cargar el archivo.</value>
+  </data>
+  <data name="Theme_Logo_FileType" xml:space="preserve">
+    <value>La imagen cargada debe ser un archivo {0}. </value>
+  </data>
+  <data name="Theme_Logo_Size" xml:space="preserve">
+    <value>El archivo excede {0}KB.</value>
+  </data>
+  <data name="Theme_Logo_With_Height" xml:space="preserve">
+    <value>La imagen cargada debe medir {0} x {1} píxeles (ancho por altura).</value>
+  </data>
+  <data name="Theme_Name_Characters" xml:space="preserve">
+    <value>No se permiten caracteres especiales en este campo.</value>
+  </data>
+  <data name="Theme_Not_Allow" xml:space="preserve">
+    <value>Sólo puede crear {0} temas en un período de {1} horas. Le quedan 0 temas disponibles. Inténtelo de nuevo en {2}.</value>
+  </data>
+  <data name="Theme_Not_Allow_Zero_Theme_Threshold" xml:space="preserve">
+    <value>Puede crear {0} temas en un período de {1} horas. Le quedan {2} temas disponibles. </value>
+  </data>
+  <data name="Theme_Special_Characters" xml:space="preserve">
+    <value>No se permiten caracteres especiales en este campo.</value>
+  </data>
+  <data name="Theme_State_Valid" xml:space="preserve">
+    <value>{0}: Sólo se permiten caracteres alfabéticos en este campo.</value>
+  </data>
+  <data name="To_Greater" xml:space="preserve">
+    <value>El valor "Hasta" debe ser superior al del valor "Desde".</value>
+  </data>
+  <data name="Unique" xml:space="preserve">
+    <value>{0} debe ser único.</value>
+  </data>
+  <data name="Assignment_SpecialCharacters" xml:space="preserve">
+    <value>Este campo contiene algunos caracteres especiales no permitidos.</value>
+  </data>
+  <data name="CustomGreaterThanZero" xml:space="preserve">
+    <value>El valor "{0}" debe ser mayor que 0.</value>
+  </data>
+  <data name="CustomTo_Greater" xml:space="preserve">
+    <value>El valor "{0}" debe ser mayor que el valor "{1}".</value>
+  </data>
+  <data name="scriptRquireNameMessage" xml:space="preserve">
+    <value>Este campo es obligatorio y debe ser único.</value>
+  </data>
+  <data name="modalConfirm" xml:space="preserve">
+    <value>Confirmación</value>
+  </data>
+  <data name="modalWarning" xml:space="preserve">
+    <value>Advertencia</value>
+  </data>
+  <data name="modalSucess" xml:space="preserve">
+    <value>Éxito</value>
+  </data>
+  <data name="DuplicateMerchantMsg" xml:space="preserve">
+    <value>Esta identificación del comerciante ya existe en el sistema. Actualice.</value>
+  </data>
+  <data name="FixedLengthValidationMsg" xml:space="preserve">
+    <value>La identificación del comerciante debe tener un número de {0} dígitos.</value>
+  </data>
+  <data name="StringUnacceptMsg" xml:space="preserve">
+    <value>{0} no debe incluir los siguientes caracteres especiales '&amp;#' y el texto &lt;...&gt;.</value>
+  </data>
+  <data name="InvalidURL" xml:space="preserve">
+    <value>Ingresó una dirección web con formato incorrecto. Inténtelo de nuevo.</value>
+  </data>
+  <data name="InvalidState" xml:space="preserve">
+    <value>El estado es inválido.</value>
+  </data>
+  <data name="MerchantNameStringUnacceptMsg" xml:space="preserve">
+    <value>El nombre de comerciante no puede incluir los siguientes caracteres especiales: &lt; , &gt; o &amp;#.</value>
+  </data>
+  <data name="MerchantNumberNumericOnly" xml:space="preserve">
+    <value>ID de Comerciante: Formato no válido. Sólo caracteres numéricos(0-9), caracteres alfa (a-z, A-Z), y/o el símbolo (-) están permitidos en este campo.</value>
+  </data>
+  <data name="MerchantNameRequiredMsg" xml:space="preserve">
+    <value>Nombre del comerciante: Este es un campo obligatorio.</value>
+  </data>
+  <data name="ValidateSpecialCharacters" xml:space="preserve">
+    <value>Nombre de la cola automática no debe incluir los siguientes caracteres especiales : '&amp;amp;#' y debe haber un espacio después de '&amp;#60;'.</value>
+  </data>
+  <data name="ChangedBy" xml:space="preserve">
+    <value>Modificada Por no debe incluir los siguientes caracteres especiales : '&amp;#' y debe haber un espacio después de ‘&lt;’.</value>
+  </data>
+  <data name="ChangedEntity" xml:space="preserve">
+    <value>Entidad Modificada no debe incluir los siguientes caracteres especiales : '&amp;#' y debe haber un espacio después de ‘&lt;’.</value>
+  </data>
+  <data name="File_Size_Over" xml:space="preserve">
+    <value>El tamaño del archivo excede los 50MB.</value>
+  </data>
+  <data name="Invalid_File_Type" xml:space="preserve">
+    <value>El tipo de archivo es inválido.</value>
+  </data>
+  <data name="File_Size_Over_Multi" xml:space="preserve">
+    <value>El tamaño del archivo excede los 50 MB.</value>
+  </data>
+  <data name="Invalid_File_Type_Multi" xml:space="preserve">
+    <value>Los tipos de archivo son inválidos.</value>
+  </data>
+  <data name="ValidateSpecialCharactersDescription" xml:space="preserve">
+    <value>Descripción breve no debe incluir los siguientes caracteres especiales : '&amp;amp;#' y debe haber un espacio después de '&amp;#60;'.</value>
+  </data>
+	<data name="Invalid_Username" xml:space="preserve">
+    <value>Nombre de usuario inválido</value>
+  </data>
+	<data name="At_Least_7_Chars" xml:space="preserve">
+    <value>Debe ingresar por lo menos 7 caracteres.</value>
+  </data>
+	<data name="InvalidEmailFormat" xml:space="preserve">
+    <value>Usted ha ingresado un formato incorrecto de dirección de correo electrónico. Inténtelo de nuevo.</value>
+  </data>
+</root>

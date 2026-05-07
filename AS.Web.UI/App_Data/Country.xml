@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Items>
+  <Item Text="English" Value="1" />
+  <Item Text="Español" Value="2" />
+</Items>

@@ -1,0 +1,75 @@
+[
+  {
+    "dataField": "AcquirerID",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "MerchantNumber",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "FraudAmount",
+    "validation": "Number",
+    "filterMenus": [
+      "NoFilter",
+      "EqualTo",
+      "NotEqualTo",
+      "GreaterThan",
+      "LessThan",
+      "GreaterThanOrEqualTo",
+      "LessThanOrEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "FraudVolumeRatio",
+    "validation": "Number",
+    "filterMenus": [
+      "NoFilter",
+      "EqualTo",
+      "NotEqualTo",
+      "GreaterThan",
+      "LessThan",
+      "GreaterThanOrEqualTo",
+      "LessThanOrEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "TransactionCount",
+    "validation": "Number",
+    "filterMenus": [
+      "NoFilter",
+      "EqualTo",
+      "NotEqualTo",
+      "GreaterThan",
+      "LessThan",
+      "GreaterThanOrEqualTo",
+      "LessThanOrEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  }
+]

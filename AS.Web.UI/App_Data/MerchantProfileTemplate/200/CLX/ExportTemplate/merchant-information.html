@@ -1,0 +1,89 @@
+﻿<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <th colspan="6" align="left">
+      <b> {{res:MerchantInformation}}</b>
+    </th>
+  </tr>
+  <tbody>
+      <tr class="Row">
+          <td class="heading valign-middle">
+              {{res:MerchantID}}
+          </td>
+          <td>
+              &nbsp;{{data:MerchantNumber||MerchantInformation}}
+          </td>
+          <td class="heading valign-middle">
+              {{res:Contact}}
+          </td>
+          <td>
+              {{data:Contact||MerchantInformation}}
+          </td>
+          <td class="heading valign-middle">
+              {{res:Status}}
+          </td>
+          <td>
+              {{data:Status||MerchantInformation}}
+          </td>
+      </tr>
+      <tr class="AltRow">
+          <td class="heading valign-middle">
+              {{res:MerchantName}}
+          </td>
+          <td>
+              {{data:MerchantName||MerchantInformation}}
+          </td>
+          <td class="heading valign-middle">
+              {{res:Phone}}
+          </td>
+          <td>
+              {{data:Phone|Phone|MerchantInformation}}
+          </td>
+          <td class="heading valign-middle">
+              {{res:LastBatchActivity}}
+          </td>
+          <td>
+              {{data:LastBactchActivity|BatchLink|MerchantInformation}}
+          </td>
+      </tr>
+      <tr class="Row">
+          <td class="heading valign-middle">
+              {{res:OwnerName}}
+          </td>
+          <td>
+              {{data:OwnerName||MerchantInformation}}
+          </td>
+          <td class="heading valign-middle">
+              {{res:Address}}
+          </td>
+          <td>
+              {{data:Address|Address|MerchantInformation}}
+          </td>
+          <td class="heading valign-middle">
+              {{res:Email}}
+          </td>
+          <td>
+              {{data:Email||MerchantInformation}}
+          </td>
+      </tr>
+      <tr class="AltRow">
+          <td class="heading valign-middle">
+              {{res:OwnerSSN}}
+          </td>
+          <td>
+              {{data:PartialOwnerSSN|MerchantInformation}}
+          </td>
+          <td class="heading valign-middle">
+              {{res:Fax}}
+          </td>
+          <td>
+              {{data:Fax||MerchantInformation}}
+          </td>
+          <td class="heading valign-middle">
+              {{res:Website}}
+          </td>
+          <td>
+              {{data:MerchantWebsite||MerchantInformation}}
+          </td>
+      </tr>
+  </tbody>
+</table>

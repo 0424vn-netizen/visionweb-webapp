@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblHeaderResource1.Text" xml:space="preserve">
+    <value>Definir Rol de Usuario MS</value>
+  </data>
+  <data name="LiteralResource10.Text" xml:space="preserve">
+    <value>Seleccionar todo</value>
+  </data>
+  <data name="LiteralResource11.Text" xml:space="preserve">
+    <value>1099-K:</value>
+  </data>
+  <data name="LiteralResource12.Text" xml:space="preserve">
+    <value>Asignar roles de usuario MS</value>
+  </data>
+  <data name="LiteralResource13.Text" xml:space="preserve">
+    <value>Roles de usuario MS</value>
+  </data>
+  <data name="LiteralResource2.Text" xml:space="preserve">
+    <value>Seleccione el nivel de jerarquía</value>
+  </data>
+  <data name="LiteralResource3.Text" xml:space="preserve">
+    <value>Seleccione el nivel de jerarquía en el que se utilizará este rol MS.</value>
+  </data>
+  <data name="LiteralResource4.Text" xml:space="preserve">
+    <value>Seleccionar tipo de usuario de jerarquía</value>
+  </data>
+  <data name="LiteralResource5.Text" xml:space="preserve">
+    <value>Seleccione el tipo de usuario de jerarquía MS al que desea que se aplique este rol.</value>
+  </data>
+  <data name="LiteralResource6.Text" xml:space="preserve">
+    <value>Permiso</value>
+  </data>
+  <data name="LiteralResource7.Text" xml:space="preserve">
+    <value>Menús</value>
+  </data>
+  <data name="LiteralResource8.Text" xml:space="preserve">
+    <value>Seleccionar todo</value>
+  </data>
+  <data name="LiteralResource9.Text" xml:space="preserve">
+    <value>Funciones de Acceso</value>
+  </data>
+  <data name="ux1099KRoleResource1.LoadingMessage" xml:space="preserve">
+    <value>Cargando…</value>
+  </data>
+  <data name="ux1099KRoleResource1.Localization.AllItemsCheckedString" xml:space="preserve">
+    <value>Todos los ítems marcados</value>
+  </data>
+  <data name="ux1099KRoleResource1.Localization.CheckAllString" xml:space="preserve">
+    <value>Marcar Todos</value>
+  </data>
+  <data name="ux1099KRoleResource1.Localization.ItemsCheckedString" xml:space="preserve">
+    <value>ítems marcados</value>
+  </data>
+  <data name="ux1099KRoleResource1.Localization.NoMatches" xml:space="preserve">
+    <value>Ningún Resultado</value>
+  </data>
+  <data name="ux1099KRoleResource1.Localization.ShowMoreFormatString" xml:space="preserve">
+    <value>Ítems &lt;b&gt;1&lt;/b&gt;-&lt;b&gt;{0}&lt;/b&gt; de &lt;b&gt;{1}&lt;/b&gt;</value>
+  </data>
+  <data name="uxBackStep1Resource1.Text" xml:space="preserve">
+    <value>Volver</value>
+  </data>
+  <data name="uxCancelAtStep2Resource1.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="uxContinueStep2Resource1.Text" xml:space="preserve">
+    <value>Continuar</value>
+  </data>
+  <data name="uxRadPrimaryUserResource1.Text" xml:space="preserve">
+    <value>Usuario Principal</value>
+  </data>
+  <data name="uxRadSecondaryUserResource1.Text" xml:space="preserve">
+    <value>Usuario Secundario</value>
+  </data>
+  <data name="uxSaveResource1.Text" xml:space="preserve">
+    <value>Terminar</value>
+  </data>
+  <data name="ManageMSRoleCS_Text_All" xml:space="preserve">
+    <value>Todos</value>
+  </data>
+  <data name="ManageMSRoleCS_Text_RoleExist" xml:space="preserve">
+    <value>El Rol de Usuario ya existe en el sistema, inténtelo de nuevo.</value>
+  </data>
+  <data name="ManageMSRoleCS_Text_SelectHierarchy" xml:space="preserve">
+    <value>Seleccione Nivel de Jerarquía</value>
+  </data>
+  <data name="ManageMSRoleJS_Text_AtLeastOneRole" xml:space="preserve">
+    <value>Seleccione por lo menos un rol de usuario.</value>
+  </data>
+  <data name="ManageMSRoleJS_Text_RequiredHierarchy" xml:space="preserve">
+    <value>Nivel de Jerarquía: Este campo es requerido.</value>
+  </data>
+  <data name="ManageMSRoleJS_Text_RequiredUserType" xml:space="preserve">
+    <value>Tipo de Usuario: Este campo es requerido.</value>
+  </data>
+  <data name="ManageMSRoleASCX_ValidatorLabel_Description.Text" xml:space="preserve">
+    <value>Descripción:&lt;br/&gt;(300 caracteres)</value>
+  </data>
+  <data name="ManageMSRoleASCX_ValidatorLabel_UserRole.Text" xml:space="preserve">
+    <value>Rol de Usuario:</value>
+  </data>
+  <data name="ManageMSRoleASCX_ValidatorMessage_AtLeast2Chars.Message" xml:space="preserve">
+    <value>Debe ingresar por lo menos 2 caracteres.</value>
+  </data>
+  <data name="ManageMSRoleASCX_ValidatorMessage_RequiredField.Message" xml:space="preserve">
+    <value>Este campo es requerido.</value>
+  </data>
+  <data name="ManageMSRole_ascx_cs_ALL" xml:space="preserve">
+    <value>[TODOS]</value>
+  </data>
+  <data name="ManageMSRole_ascx_cs_SelectHierarchy" xml:space="preserve">
+    <value>Seleccione Nivel de Jerarquía</value>
+  </data>
+  <data name="ManageMSRoleASCX_ValidatorMessage_NotSpecialChars.Message" xml:space="preserve">
+    <value>Rol de Usuario: No se permiten caracteres especiales en este campo.</value>
+  </data>
+  <data name="LiteralResource1.Text" xml:space="preserve">
+    <value>Este asistente le guiará a través de la creación del rol de usuario. Complete el Rol de Usuario y la Descripción para pasar a la siguiente pantalla.</value>
+  </data>
+  <data name="LiteralResource15.Text" xml:space="preserve">
+    <value>Nivel de Jerarquía:</value>
+  </data>
+  <data name="LiteralResourceUserType.Text" xml:space="preserve">
+    <value>Tipo de Usuario:</value>
+  </data>
+  <data name="ManageRole_ascxDefaultLandingPage.Text" xml:space="preserve">
+    <value>Página de Destino Predeterminada:</value>
+  </data>
+  <data name="ManageRoleASCX_ValidatorMessage_RequiredField.Message" xml:space="preserve">
+    <value>Este campo es requerido.</value>
+  </data>
+  <data name="uxDefaultLandingPage_DefaultMessage.DefaultMessage" xml:space="preserve">
+    <value>Eligir un destino</value>
+  </data>
+  <data name="ManageMSRole_ascx_cs_ThisNewRole" xml:space="preserve">
+    <value>[ESTE ROL NUEVO]</value>
+  </data>
+  <data name="ViewChangesLink" xml:space="preserve">
+    <value>Ver Cambios</value>
+  </data>
+</root>

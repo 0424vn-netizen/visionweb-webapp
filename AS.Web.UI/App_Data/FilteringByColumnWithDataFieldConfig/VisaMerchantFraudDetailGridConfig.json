@@ -1,0 +1,173 @@
+[
+  {
+    "dataField": "AcquirerID",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "MerchantNumber",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "MerchantName",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "FraudAmount",
+    "validation": "Number",
+    "filterMenus": [
+      "NoFilter",
+      "EqualTo",
+      "NotEqualTo",
+      "GreaterThan",
+      "LessThan",
+      "GreaterThanOrEqualTo",
+      "LessThanOrEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "PurchaseDate",
+    "validation": "DateMMddyyyy",
+    "filterMenus": [
+      "NoFilter",
+      "EqualTo",
+      "NotEqualTo",
+      "GreaterThan",
+      "LessThan",
+      "GreaterThanOrEqualTo",
+      "LessThanOrEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "FraudPostDate",
+    "validation": "DateMMddyyyy",
+    "filterMenus": [
+      "NoFilter",
+      "EqualTo",
+      "NotEqualTo",
+      "GreaterThan",
+      "LessThan",
+      "GreaterThanOrEqualTo",
+      "LessThanOrEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "PartialCardNumber",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "FraudType",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "TerminalID",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "ECIMOTO",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "POSEntryMode",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "POSTerminalCapability",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  }
+]

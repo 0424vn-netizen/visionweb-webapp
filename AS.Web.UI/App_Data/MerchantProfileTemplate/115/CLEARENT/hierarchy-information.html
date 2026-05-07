@@ -1,0 +1,125 @@
+﻿<div class="row" id="hierarchyinfo">
+    <div class="col-md-12" data-toggle="collapse" data-target="#ciHierarchyInformation" aria-expanded="true">
+        <h2 class="grid-title">
+            {{res:HierarchyInformation}}
+        </h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 collapse in" id="ciHierarchyInformation" aria-expanded="true">
+        <table class="ASTable" aria-hidden="true">
+            <tbody>
+                <tr class="Row">
+                    <td class="heading">
+                        {{res:SponsoringBank}}
+                    </td>
+                    <td>
+                        {{data:CLRSPB|Hierarchy|HierarchyInformation|SponsoringBank}}
+                    </td>
+                </tr>
+                <tr class="AltRow">
+                    <td class="heading">
+                        {{res:SponsoringBankUserID}}
+                    </td>
+                    <td>
+                        {{data:SponsoringBankUserID||HierarchyInformation}}
+                    </td>
+                </tr>
+                <tr class="Row">
+                    <td class="heading">
+                        {{res:SponsoringBankBIN}}
+                    </td>
+                    <td>
+                        {{data:CLRSPBBIN|Hierarchy|HierarchyInformation|SponsoringBankBIN}}
+                    </td>
+                </tr>
+                <tr class="AltRow">
+                    <td class="heading">
+                        {{res:SalesChannel}}
+                    </td>
+                    <td>
+                        {{data:CLRPSPL|Hierarchy|HierarchyInformation|ProcessingPlatform}}
+                    </td>
+                </tr>
+                <tr class="Row">
+                    <td class="heading">
+                        {{res:SalesChannelUserID}}
+                    </td>
+                    <td>
+                        {{data:SalesChannelUserID||HierarchyInformation}}
+                    </td>
+                </tr>
+                <tr class="AltRow">
+                    <td class="heading">
+                        {{res:Reseller}}
+                    </td>
+                    <td>
+                        {{data:RESELLER|Hierarchy|HierarchyInformation|ResellerName}}
+                    </td>
+                </tr>
+                <tr class="Row">
+                    <td class="heading">
+                        {{res:ResellerUserID}}
+                    </td>
+                    <td>
+                        {{data:ResellerUserID||HierarchyInformation}}
+                    </td>
+                </tr>
+                <tr class="AltRow">
+                    <td class="heading">
+                        {{res:Partner}}
+                    </td>
+                    <td>
+                        {{data:PARTNER|Hierarchy|HierarchyInformation|PartnerName}}
+                    </td>
+                </tr>
+                <tr class="Row">
+                    <td class="heading">
+                        {{res:Chain}}
+                    </td>
+                    <td>
+                        {{data:Chain|ChainLink|HierarchyInformation}}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="hierarchy heading">
+                        {{res:ProcessorInformation}}
+                    </td>
+                </tr>
+                <tr class="Row">
+                    <td class="heading">
+                        {{res:FrontEndProcessor}}
+                    </td>
+                    <td>
+                        {{data:FrontEndProcessor||HierarchyInformation}}
+                    </td>
+                </tr>
+                <tr class="AltRow">
+                    <td class="heading">
+                        {{res:FrontEndMID}}
+                    </td>
+                    <td>
+                        {{data:FrontEndMID||HierarchyInformation}}
+                    </td>
+                </tr>
+                <tr class="Row">
+
+                    <td class="heading">
+                        {{res:BackEndProcessor}}
+                    </td>
+                    <td>
+                        {{data:BackEndProcessor||HierarchyInformation}}
+                    </td>
+                </tr>
+                <tr class="AltRow">
+                    <td class="heading">
+                        {{res:BackEndMID}}
+                    </td>
+                    <td>
+                        {{data:BackEndMID||HierarchyInformation}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

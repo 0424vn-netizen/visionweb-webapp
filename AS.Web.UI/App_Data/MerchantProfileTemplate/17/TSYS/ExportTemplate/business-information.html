@@ -1,0 +1,131 @@
+﻿<table border="0">
+    <tr>
+        <th colspan="2">
+            <b> {{res:BusinessInformation}}</b>
+        </th>
+    </tr>
+    <tbody>
+        <tr class="Row">
+            <td class="heading">
+                {{res:Status}}
+            </td>
+            <td>
+                {{data:ActivityStatus||BusinessInformation}}
+            </td>
+        </tr>
+        <tr class="AltRow">
+            <td class="heading">
+                {{res:Date}}
+            </td>
+            <td>
+                {{data:OpenDate|Date|BusinessInformation}}
+            </td>
+        </tr>
+        <tr class="Row">
+            <td class="heading">
+                {{res:FederalTaxID}}
+            </td>
+            <td>
+                {{data:TaxID|TaxView|BusinessInformation}}
+            </td>
+        </tr>
+
+        <tr class="AltRow">
+            <td class="heading valign-middle">
+                {{res:SiteAccess}}
+            </td>
+            <td>
+                {{data:SiteAccess|SiteAcessLink|BusinessInformation}}
+
+            </td>
+        </tr>
+        <tr class="Row">
+            <td class="heading">
+                {{res:AverageSalesAmount}}
+            </td>
+            <td>
+                {{data:AVGSalesAmount|Currency|BusinessInformation}}
+            </td>
+        </tr>
+        <tr class="AltRow">
+            <td class="heading">
+                {{res:CustomerType}}
+            </td>
+            <td>
+                {{data:CustomerType||BusinessInformation}}
+            </td>
+        </tr>
+        <tr class="Row">
+            <td class="heading">
+                {{res:LeaseNumber}}
+            </td>
+            <td>
+                {{data:LeaseNumber||BusinessInformation}}
+            </td>
+        </tr>
+        <tr class="AltRow">
+            <td class="heading">
+                {{res:Lessor}}
+            </td>
+            <td>
+                {{data:Lessor||BusinessInformation}}
+            </td>
+        </tr>
+        <tr class="Row">
+            <td class="heading">
+                {{res:GiftCardCustomerNumber}}
+            </td>
+            <td>
+                {{data:GiftCardCustomerNumber||BusinessInformation}}
+            </td>
+        </tr>
+        <tr class="AltRow">
+            <td class="heading">
+                {{res:Gold}}
+            </td>
+            <td>
+                {{data:Gold||BusinessInformation}}
+            </td>
+        </tr>
+        <tr class="Row">
+            <td class="heading">
+                {{res:SocialSecurityNumber}}
+            </td>
+            <td>
+                {{data:SocialSecurityNumber||BusinessInformation}}
+            </td>
+        </tr>
+        <tr class="AltRow">
+            <td class="heading">
+                {{res:RiskPlan}}
+            </td>
+            <td>
+                {{data:RiskPlan||BusinessInformation}}
+            </td>
+        </tr>
+        <tr class="Row">
+            <td class="heading">
+                {{res:LeaseDate}}
+            </td>
+            <td>
+                {{data:LeaseDate||BusinessInformation}}
+            </td>
+        </tr>
+        <tr class="AltRow">
+            <td class="heading">
+                {{res:RemainingPayment}}
+            </td>
+            <td>
+                {{data:RemainingPayment||BusinessInformation}}
+            </td>
+        </tr>
+        <tr class="Row">
+            <td class="heading">
+                {{res:OnHold}}
+            </td>
+            <td>
+                {{data:OnHold||BusinessInformation}}
+            </td>
+        </tr>
+    </tbody>
+</table>

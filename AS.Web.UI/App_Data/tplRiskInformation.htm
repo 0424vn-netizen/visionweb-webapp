@@ -1,0 +1,80 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <style type="text/css">
+        td {
+            border-style: solid;
+            border-width: thin;
+        }
+
+        tr.borderBottom td {
+            border-bottom-style: solid;
+            border-bottom-width: thin;
+        }
+
+        tr.borderTop td {
+            border-top-style: solid;
+            border-top-width: thin;
+        }
+    </style>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+</head>
+<body>
+    <table cellspacing="0" cellpadding="0" border="0">
+        <tr>
+            <th colspan="2" align="left">
+                <b>[tpl_MerchantInformation_htm_RiskInformationResource]</b>
+            </th>
+        </tr>
+        <tr class="borderTop">
+            <td>
+                [tpl_MerchantInformation_htm_ClassificationNameResource]
+            </td>
+            <td>
+                RI_CLASSIFICATIONNAME
+            </td>
+        </tr>
+        <tr>
+            <td>
+                [tpl_MerchantInformation_htm_MultiplierResource]
+            </td>
+            <td>
+                RI_MULTIPLIER
+            </td>
+        </tr>
+        <tr>
+            <td>
+                [tpl_MerchantInformation_htm_RiskScoreResource]
+            </td>
+            <td>
+                RI_RISKSCORE
+            </td>
+        </tr>
+        <tr [GVERIFYCODEDISPLAY]>
+            <td>
+                [tpl_MerchantInformation_htm_GverifyCodeResource]
+            </td>
+            <td>
+                RI_GVERIFYCODE
+            </td>
+        </tr>
+        <tr [GAUTHENTICATECODEDISPLAY]>
+            <td>
+                [tpl_MerchantInformation_htm_GauthenticateCodeResource]
+            </td>
+            <td>
+               RI_GAUTHENTICATECODE
+            </td>
+        </tr>
+        <tr [AUTOAPPOVALINDICATORDISPLAY]>
+            <td>
+                [tpl_MerchantInformation_htm_AutoApprovalIndicatorResource]
+            </td>
+            <td>
+                RI_AUTOAPPOVALINDICATOR
+            </td>
+        </tr>
+
+    </table>
+</body>
+</html>

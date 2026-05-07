@@ -1,0 +1,99 @@
+﻿<div class="row" id="bankinfo">
+    <div class="col-xs-12" data-toggle="collapse" data-target="#ciBankInformation" aria-expanded="true">
+        <h2 class="grid-title">
+            {{res:BankInformation}}
+        </h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 collapse in" id="ciBankInformation" aria-expanded="true" style="">
+        <table class="ASTable">
+            <colgroup>
+                <col class="w-40">
+                <col class="w-60">
+            </colgroup>
+            <tbody>
+                <tr class="Row">
+                    <td class="heading">
+                        {{res:BankName}}
+                    </td>
+                    <td>
+                        {{data:BankName||BankInformation}}
+                    </td>
+                </tr>
+                <tr class="AltRow">
+                    <td class="heading">
+                        {{res:Routing}}
+                    </td>
+                    <td>
+                        {{data:RoutingNumber|PartialData|BankInformation}}
+                    </td>
+                </tr>
+                <tr class="Row">
+                    <td class="heading">
+                        {{res:DDA}}
+                    </td>
+                    <td>
+                        {{data:DDANumber|DDAView|BankInformation}}
+                    </td>
+                </tr>
+                <tr class="AltRow">
+                    <td class="heading">
+                        {{res:DaysHold}}
+                    </td>
+                    <td>
+                        {{data:DaysHold||BankInformation}}
+                    </td>
+                </tr>
+                <tr class="Row">
+                    <td class="heading">
+                        {{res:ACHMonthly}}
+                    </td>
+                    <td>
+                        {{data:MonthlyACH||BankInformation}}
+                    </td>
+                </tr>
+                <tr class="AltRow">
+                    <td class="heading">
+                        {{res:DisbursementMethodDeposit}}
+                    </td>
+                    <td>
+                        {{data:DisbursementDeposit||BankInformation}}
+                    </td>
+                </tr>
+                <tr class="Row">
+                    <td class="heading">
+                        {{res:DisbursementMethodAdjustments}}
+                    </td>
+                    <td>
+                        {{data:DisbursementAdjustments||BankInformation}}
+                    </td>
+                </tr>
+                <tr class="AltRow">
+                    <td class="heading">
+                        {{res:DisbursementMethodDiscount}}
+                    </td>
+                    <td>
+                        {{data:DisbursementDiscount||BankInformation}}
+                    </td>
+                </tr>
+                <tr class="Row">
+                    <td class="heading">
+                        {{res:DisbursementMethodGenericDebit}}
+                    </td>
+                    <td>
+                        {{data:DisbursementGenericDebit||BankInformation}}
+                    </td>
+                </tr>
+                <tr class="AltRow">
+                    <td class="heading">
+                        {{res:DisbursementDetail}}
+                    </td>
+                    <td>
+                        {{data:DisbursementDetail||BankInformation}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

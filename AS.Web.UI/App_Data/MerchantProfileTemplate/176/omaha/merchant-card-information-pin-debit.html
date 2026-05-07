@@ -1,0 +1,47 @@
+﻿<div id="merchantcardpindebitinfo">
+    <div class="col-xs-12" data-toggle="collapse" data-target="#ciMerchantCardPinDebitInformation">
+        <h2 class="grid-title">
+            {{res:MerchantCardInformationPINDebit}}
+        </h2>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12 in table-responsive" id="ciMerchantCardPinDebitInformation">
+        <table class="ASTable format-table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>
+                        {{res:OtherVolume}}
+                    </th>
+                    <th>
+                        {{res:OtherItemRate}}
+                    </th>
+                    <th>
+                        {{res:OnlineDebitFeeFlag}}
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--LOOP_START--><!--Loop:MerchantCardInformationPINDebit:Loop-->
+                <tr>
+                    <td class="font-weight-bold">
+                        {{data:CardType|Resource}}
+                    </td>
+                    <td>
+                        {{data:OtherVolume}}
+                    </td>
+                    <td>
+                        {{data:OtherItemRate}}
+                    </td>
+                    <td>
+                        {{data:OnlDbtFeeFlag}}
+                    </td>
+                </tr>
+                <!--LOOP_END-->                
+            </tbody>
+        </table>
+        {{data:NoRecordsToDisplay|NoRecords|MerchantCardInformationPINDebit}}
+    </div>
+</div>

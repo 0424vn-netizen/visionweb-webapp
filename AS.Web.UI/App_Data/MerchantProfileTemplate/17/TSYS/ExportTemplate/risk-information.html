@@ -1,0 +1,33 @@
+﻿<table border="0">
+    <tr>
+        <th colspan="2">
+            <b> {{res:RiskInformation}}</b>
+        </th>
+    </tr>
+    <tbody>
+        <tr>
+            <td class="heading">
+                {{res:ClassificationName}}
+            </td>
+            <td>
+                {{data:MerchantClassificationName||RiskInformation}}
+            </td>
+        </tr>
+        <tr>
+            <td class="heading">
+                {{res:Multiplier}}
+            </td>
+            <td>
+                {{data:Multiplier||RiskInformation}}
+            </td>
+        </tr>
+        <tr>
+            <td class="heading">
+                {{res:RiskScore}}
+            </td>
+            <td>
+                {{data:TotalRS||RiskInformation}}
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1D8FB94B-F0F6-4630-BDBE-D63C08D590A2}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AS.VWSheduler.Tasks.UnitTestConsole</RootNamespace>
+    <AssemblyName>AS.VWSheduler.Tasks.UnitTestConsole</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml">
+      <HintPath>..\..\3rdLibrary\OpenXML\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="ITask">
+      <HintPath>..\Libraries\ITask.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="App_Data\MerchantAlertHistoryTemplate\ASMerchantAlertHistory_Template.xlsx" />
+    <None Include="App_Data\StatisticsTemplate\AssignmentStatistics_Template.xlsx" />
+    <None Include="App_Data\StatisticsTemplate\MerchantStatistics_Template.xlsx" />
+    <None Include="App_Data\StatisticsTemplate\ParameterStatistics_Template.xlsx" />
+    <None Include="App_Data\StatisticsTemplate\PortfolioStatistics_Template.xlsx" />
+    <None Include="App_Data\StatisticsTemplate\UserPerformanceStatistics_Template.xlsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AS.VW.Scheduler.Extensions\AS.VW.Scheduler.Extensions.csproj">
+      <Project>{1f6236a8-ee62-4d5a-858d-90fc487b15df}</Project>
+      <Name>AS.VW.Scheduler.Extensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AS.VW.Scheduler.Tasks\AS.VW.Scheduler.Tasks.csproj">
+      <Project>{7c50a993-005f-4fc9-9f8f-e0226406ad0c}</Project>
+      <Name>AS.VW.Scheduler.Tasks</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\MgmtReporting\StatisticReportColumns.xml" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

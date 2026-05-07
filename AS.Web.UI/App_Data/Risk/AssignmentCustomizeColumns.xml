@@ -1,0 +1,83 @@
+<page>
+  <column Key="Work" ASFormat="DynamicString" IsDefault="true" OrderNo="340"/>
+  <column Key="Worked" ASFormat="Integer" IsDefault="true" OrderNo="335"/>
+  <column Key="ParametersWorked" ASFormat="Integer" IsDefault="true" OrderNo="230"/>
+  <column Key="Requeued" ASFormat="DynamicString" IsDefault="true" OrderNo="280"/>
+  <column Key="MerchantName" ASFormat="DynamicString" IsDefault="true" OrderNo="-1"/>
+  <column Key="AuthorizationPercent" ASFormat="Percentage0Digits" CustomFormat="#,#0" OrderNo="0"/>
+  <column Key="AverageTicketPercent" ASFormat="Percentage0Digits" CustomFormat="#,#0" OrderNo="10"  DefaultValue="—" />
+  <column Key="BusinessAge" ASFormat="DynamicString" OrderNo="70" />
+  <column Key="TodayBatchCount" ASFormat="Integer" OrderNo="50"/>
+  <column Key="TodayChargebackVolume" ASFormat="Currency" OrderNo="85"/>
+  <column Key="ContractualVolume" ASFormat="Percentage" CustomFormat="N"  DefaultValue="—" OrderNo="75" />
+  <column Key="DeclinedAuthorizationPercent" ASFormat="Percentage0Digits"  CustomFormat="#,#0" OrderNo="105" />
+  <column Key="DuplicateBin" ASFormat="Integer" OrderNo="125" />
+  <column Key="DuplicateDollarTransactionPercent" ASFormat="Percentage0Digits" CustomFormat="#,#0" OrderNo="100" />
+  <column Key="EvenDollarTransactionPercent" ASFormat="Percentage0Digits" CustomFormat="#,#0" OrderNo="135" />
+  <column Key="TodayForeignCardCount" ASFormat="Integer" OrderNo="160" />
+  <column Key="KeyPercent" ASFormat="Percentage0Digits"  CustomFormat="#,#0" OrderNo="180" />
+  <column Key="TodayHighestTransactionAmount" ASFormat="Currency" OrderNo="185" />
+  <column Key="NegativeBatchCount" ASFormat="Integer" OrderNo="55" />
+  <column Key="TodayVolume" ASFormat="Currency" OrderNo="210" />
+  <column Key="ProfileDescription" ASFormat="DynamicString" OrderNo="220" />
+  <column Key="RulesViolated" ASFormat="DynamicString" OrderNo="225" />
+  <column Key="RepeatAuthorizationCount" ASFormat="Integer" OrderNo="235" />
+  <column Key="RiskScore" ASFormat="Integer" OrderNo="285" />
+  <column Key="ReturnPercent" ASFormat="Percentage0Digits"  CustomFormat="#,#0" OrderNo="275" />
+  <column Key="TodayFirstTimeRetrievalVolume" ASFormat="Currency" OrderNo="240" />
+  <column Key="SingleCardTransToday" ASFormat="Integer" OrderNo="305" />
+  <column Key="SICCode" ASFormat="DynamicString" OrderNo="310" />
+  <column Key="MIFStatusDesc" ASFormat="DynamicString" OrderNo="315" Vertical="center" IsAutoText="true"/> 
+  <column Key="TodayTransactionCount" ASFormat="Integer" OrderNo="320" />
+  <column Key="VolumePercent" ASFormat="Percentage0Digits" CustomFormat="#,#0" OrderNo="215" />
+  <column Key="TotalOfWorked" ASFormat="Integer"  OrderNo="120" />
+  <column Key="WorkQueueName" ASFormat="DynamicString" OrderNo="345" />
+  <column Key="ZeroBatchCount" ASFormat="Integer" OrderNo="60" />
+  <column Key="DaysActive"  ASFormat="Integer" OrderNo="110" />
+  <column Key="DaysProcessedLast90" ASFormat="Integer" OrderNo="115" />
+  <column Key="ExcessAboveContractAverage" ASFormat="Currency" OrderNo="140" />
+  <column Key="ExcessAboveDailyContractVolume" ASFormat="Currency" OrderNo="145" />
+  <column Key="ExcessAboveKeyedPercent" ASFormat="Percentage" OrderNo="150" />
+  <column Key="ExcessAboveContractHighest" ASFormat="Currency" OrderNo="155" />
+  <column Key="ForcedViolation" ASFormat="DynamicString" OrderNo="165" />
+  <column Key="MV1" ASFormat="Currency" Width="100" OrderNo="195" />
+  <column Key="MV2" ASFormat="Currency" Width="100" OrderNo="200" />
+  <column Key="MV3" ASFormat="Currency" Width="100" OrderNo="205" />
+  <column Key="SaleGroup" ASFormat="DynamicString" OrderNo="290" />
+  <column Key="State" ASFormat="DynamicString" OrderNo="315" />
+  <column Key="TransactionCountLast60" ASFormat="Integer" OrderNo="325" />
+  <column Key="TodayBankCardSales" ASFormat="Integer" OrderNo="65" />
+  <column Key="TodayUnmatchedCreditsVolume" ASFormat="Currency" OrderNo="330" />
+  <column Key="Zip3" ASFormat="DynamicString" OrderNo="350" />
+  <column Key="ACHRejects" ASFormat="Currency"  DefaultValue="N/A" OrderNo="5" />
+  <column Key="AuthCount" ASFormat="Integer"  DefaultValue="N/A"  OrderNo="15" />
+  <column Key="AuthApprovalPercent" ASFormat="Percentage" DefaultValue="N/A"  OrderNo="20" />
+  <column Key="DeclinedAuthorizationCount" ASFormat="Integer" DefaultValue="N/A"  OrderNo="25" />
+  <column Key="DeclinedAuthorizationCountPercent" ASFormat="Percentage" DefaultValue="N/A"  OrderNo="35" />
+  <column Key="DeclinedAuthorizationAmount" ASFormat="Currency" DefaultValue="N/A" OrderNo="30" />
+  <column Key="DeclinedAuthorizationAmountPercent" ASFormat="Percentage"  DefaultValue="N/A" OrderNo="40" />
+  <column Key="AVGTicket" ASFormat="Currency" DefaultValue="N/A"  OrderNo="45" />
+  <column Key="ChargeBackCount" ASFormat="Integer" DefaultValue="N/A"  OrderNo="80" />
+  <column Key="ChargeBackCountPercent" ASFormat="Percentage" DefaultValue="N/A"  OrderNo="90" />
+  <column Key="ChargeBackPercent" ASFormat="Percentage" DefaultValue="N/A"  OrderNo="95" />
+  <column Key="ForeignCardCountPercent" ASFormat="Percentage" DefaultValue="N/A"  OrderNo="175" />
+  <column Key="Foreign" ASFormat="Currency" DefaultValue="N/A"  OrderNo="170" />
+  <column Key="ReturnCount" ASFormat="Integer" DefaultValue="N/A"  OrderNo="260" />
+  <column Key="ReturnCountPercent" ASFormat="Percentage" DefaultValue="N/A"  OrderNo="270" />
+  <column Key="Returns" ASFormat="Currency" DefaultValue="N/A"  OrderNo="265" />
+  <column Key="FirstRetrievalCount" ASFormat="Integer" DefaultValue="N/A"  OrderNo="245" />
+  <column Key="RetrievalCountPercent" ASFormat="Percentage"  DefaultValue="N/A"  OrderNo="250" />
+  <column Key="RetrievalAmountPercent" ASFormat="Percentage" DefaultValue="N/A"  OrderNo="255" />
+  <column Key="SalesCount" ASFormat="Integer" DefaultValue="N/A"  OrderNo="295" />
+  <column Key="SaleAmount" ASFormat="Currency" DefaultValue="N/A" OrderNo="300" />
+  <column Key="Disposition" ASFormat="DynamicString" Width="150"  OrderNo="130" />
+  <column Key="AttritionScore" ASFormat="Integer" OrderNo="400" IsHide="false" />
+  <column Key="ReserveScore" ASFormat="Integer" OrderNo="401"  IsHide="false"  />
+  <column Key="TodayPrepaidCardSalesPercent" ASFormat="Percentage" OrderNo="402" IsAutoText="true" HasBorder="true" ToolTipKey="{{TodayPrepaidSalesAmount:Currency}}" DefaultValue="—" DisplayDashValue="0"/>
+  <column Key="MaxBINAuth#" ASFormat="Integer" OrderNo="405" IsAutoText="true" ToolTipKey="BIN #{{MaxBINAuth#BINNo}} - {{MaxBINAuth#Auth$:Currency}}" DefaultValue="—"/>
+  <column Key="MaxBINTrans#" ASFormat="Integer" OrderNo="410"  IsAutoText="true" ToolTipKey="BIN #{{MaxBINTrans#BINNo}} - {{MaxBINTrans#Trans$:Currency}}" DefaultValue="—" />
+  <column Key="MTDMasterCardChargebackCountPercent" ASFormat="Percentage" OrderNo="415" DefaultValue="—" />
+  <column Key="MTDVisaChargebackCountPercent" ASFormat="Percentage" OrderNo="420" DefaultValue="—" />
+  <column Key="ModelScoreValue" ASFormat="Number2Digit" OrderNo="421" DefaultValue="—" />
+  <column Key="ModelAlertValue" ASFormat="Number2Digit" OrderNo="422" DefaultValue="—" Width="100" />
+</page>

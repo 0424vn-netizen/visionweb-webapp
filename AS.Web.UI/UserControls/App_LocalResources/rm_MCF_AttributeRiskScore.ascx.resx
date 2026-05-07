@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AttributeRiskScoreOperandOverlap" xml:space="preserve">
+    <value>The Attribute Risk Score already exist for this operand. The Attribute Risk Score metric may not overlap.</value>
+  </data>
+  <data name="AttributeRiskScoreRangeOverlap" xml:space="preserve">
+    <value>The Attribute Risk Score already exist for this range. The Attribute Risk Score ranges may not overlap.</value>
+  </data>
+  <data name="ComboboxResourceAttributeName.EmptyMessage" xml:space="preserve">
+    <value>Select Attribute Name</value>
+  </data>
+  <data name="LabelResourceAttributeName.Text" xml:space="preserve">
+    <value>Attribute Name:</value>
+  </data>
+  <data name="LabelResourceFrom.Text" xml:space="preserve">
+    <value>From:</value>
+  </data>
+  <data name="LabelResourceMetric.Text" xml:space="preserve">
+    <value>Metric:</value>
+  </data>
+  <data name="LabelResourceOperand.Text" xml:space="preserve">
+    <value>Operand:</value>
+  </data>
+  <data name="LabelResourceOr.Text" xml:space="preserve">
+    <value>or</value>
+  </data>
+  <data name="LabelResourceRangeName.Text" xml:space="preserve">
+    <value>Range Name:</value>
+  </data>
+  <data name="LabelResourceScore.Text" xml:space="preserve">
+    <value>Score:</value>
+  </data>
+  <data name="LabelResourceTo.Text" xml:space="preserve">
+    <value>To:</value>
+  </data>
+  <data name="LiteralResourceFind.Text" xml:space="preserve">
+    <value>Find</value>
+  </data>
+  <data name="LiteralResourceFindMoreitem" xml:space="preserve">
+    <value>items selected</value>
+  </data>
+  <data name="RiskScore_ascx_AttributeRequired.Message" xml:space="preserve">
+    <value>This is a required field.</value>
+  </data>
+  <data name="RiskScore_ascx_IndicatorFromNumber.Message" xml:space="preserve">
+    <value>The From value must be a whole number that is greater than or equal to 0.</value>
+  </data>
+  <data name="RiskScore_ascx_IndicatorFromNumberGreaterOrEqualThan.Message" xml:space="preserve">
+    <value>The From value must be a whole number that is greater than or equal to 0.</value>
+  </data>
+  <data name="RiskScore_ascx_IndicatorFromRequired.Message" xml:space="preserve">
+    <value>Indicator From: This is a required field.</value>
+  </data>
+  <data name="RiskScore_ascx_IndicatorToNumber.Message" xml:space="preserve">
+    <value>The To value must be a whole number that is greater than or equal to 0.</value>
+  </data>
+  <data name="RiskScore_ascx_IndicatorToNumberGreaterOrEqualThan.Message" xml:space="preserve">
+    <value>The To value must be a whole number that is greater than or equal to 0.</value>
+  </data>
+  <data name="RiskScore_ascx_IndicatorToRequired.Message" xml:space="preserve">
+    <value>Indicator To: This is a required field.</value>
+  </data>
+  <data name="RiskScore_ascx_MetricFromBetween.Message" xml:space="preserve">
+    <value>The Indicator From value must be a whole number that is greater than or equal to [minvalue] and less than or equal to [maxvalue].</value>
+  </data>
+  <data name="RiskScore_ascx_MetricRequired.Message" xml:space="preserve">
+    <value>Indicator Metric: This is a required field.</value>
+  </data>
+  <data name="RiskScore_ascx_MetricRequired_Between.Message" xml:space="preserve">
+    <value>The Metric value must be a whole number that is greater than or equal to [minvalue] and less than or equal to [maxvalue].</value>
+  </data>
+  <data name="RiskScore_ascx_MetricToBetween.Message" xml:space="preserve">
+    <value>The Indicator To value must be a whole number that is greater than or equal to [minvalue] and less than or equal to [maxvalue].</value>
+  </data>
+  <data name="RiskScore_ascx_OperandRequired.Message" xml:space="preserve">
+    <value>Indicator Operand: This is a required field.</value>
+  </data>
+  <data name="RiskScore_ascx_RangeNameInvalid.Message" xml:space="preserve">
+    <value>Indicator Range Name: Range Name must not include the following special characters: '&amp;#' and there must be a space after ‘&lt;’.</value>
+  </data>
+  <data name="RiskScore_ascx_RangeNameRequired.Message" xml:space="preserve">
+    <value>Indicator Range Name: This is a required field.</value>
+  </data>
+  <data name="RiskScore_ascx_ScoreNumber.Message" xml:space="preserve">
+    <value>The Score value must be a whole number that is greater than or equal to 0.</value>
+  </data>
+  <data name="RiskScore_ascx_ScoreNumberGreaterOrEqualThan.Message" xml:space="preserve">
+    <value>The Score value must be a whole number that is greater than or equal to 0.</value>
+  </data>
+  <data name="RiskScore_ascx_ScoreRequired.Message" xml:space="preserve">
+    <value>Score: This is a required field.</value>
+  </data>
+  <data name="RiskScore_ascx_ToMustBeGreaterThanFrom.Message" xml:space="preserve">
+    <value>The “Indicator To” value must be greater than the “Indicator From” value.</value>
+  </data>
+  <data name="RiskScore_ascx_ToMustBeGreaterThanorEqualFrom.Message" xml:space="preserve">
+    <value>The “Indicator To” value must be greater than or equal the “Indicator From” value.</value>
+  </data>
+  <data name="uxCancelResource.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="uxUpdateResource.Text" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+</root>

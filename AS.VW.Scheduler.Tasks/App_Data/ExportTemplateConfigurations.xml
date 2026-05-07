@@ -1,0 +1,277 @@
+﻿<templates>
+  <template Key="1001" Path="\\StatisticsTemplate\\AssignmentStatistics_Template.xlsx" IsCreateNewTemplate="true">
+    <sheets>
+      <sheet Name="Assignment Statistics">
+        <Columns>
+          <ColumnName DataKey="Report Date" Name="Report Date" ASFormat="Date" Width="25"/>
+          <ColumnName DataKey="Assignment Type" Name="Assignment Type" Width="35"/>
+          <ColumnName DataKey="Assignment Name" Name="Assignment Name" Width="25.5"/>
+          <ColumnName DataKey="Distinct Queue" Name="Distinct Queue" Width="17"/>
+          <ColumnName DataKey="Expiration Date" Name="Expiration Date" Width="25"/>
+          <ColumnName DataKey="Group" Name="Group" Width="30"/>
+          <ColumnName DataKey="User" Name="User" Width="30"/>
+          <ColumnName DataKey="Eligible Merchants" Name="Eligible Merchants" ASFormat="Integer" Width="23"/>
+          <ColumnName DataKey="#Distinct Merchants Alerted" Name="#Distinct Merchants Alerted" ASFormat="Integer" Width="24.5"/>
+          <ColumnName DataKey="#Distinct Merchants Worked" Name="#Distinct Merchants Worked" ASFormat="Integer" Width="26"/>
+          <ColumnName DataKey="%Distinct Merchants Worked" Name="%Distinct Merchants Worked" ASFormat="Percentage" Width="25.5"/>
+          <ColumnName DataKey="#Times Merchants Alerted" Name="#Times Merchants Alerted" ASFormat="Integer" Width="29"/>
+          <ColumnName DataKey="#Times Merchants Worked" Name="#Times Merchants Worked" ASFormat="Integer" Width="21.5"/>
+          <ColumnName DataKey="%Times Merchants Worked" Name="%Times Merchants Worked" ASFormat="Percentage" Width="28"/>
+          <ColumnName DataKey="#Times Merchant Re-Alerted" Name="#Times Merchant Re-Alerted" ASFormat="Integer" Width="24"/>
+          <ColumnName DataKey="#Parameters Violated" Name="#Parameters Violated" ASFormat="Integer" Width="22.5"/>
+          <ColumnName DataKey="#Distinct Parameters Violated" Name="#Distinct Parameters Violated" ASFormat="Integer" Width="29.5"/>
+          <ColumnName DataKey="Sales Amount Alerted" Name="Sales Amount Alerted" ASFormat="Currency" Width="22.5"/>
+          <ColumnName DataKey="Return Amount Alerted" Name="Return Amount Alerted" ASFormat="Currency" Width="22.5"/>
+          <ColumnName DataKey="Net Amount Alerted" Name="Net Amount Alerted" ASFormat="Currency" Width="22.5"/>
+          <ColumnName DataKey="Sales Amount Worked" Name="Sales Amount Worked" ASFormat="Currency" Width="22.5"/>
+          <ColumnName DataKey="Return Amount Worked" Name="Return Amount Worked" ASFormat="Currency" Width="22.5"/>
+          <ColumnName DataKey="Net Amount Worked" Name="Net Amount Worked" ASFormat="Currency" Width="22.5"/>
+          <ColumnName DataKey="#Times Default Disposition" Name="#Times Default Disposition" ASFormat="Integer" Width="22.5"/>
+          <ColumnName DataKey="#Times Non-Default Disposition" Name="#Times Non-Default Disposition" ASFormat="Integer" Width="25.5"/>
+          <ColumnName DataKey="#Cases Opened" Name="#Cases Opened" ASFormat="Integer" Width="22.5"/>
+          <ColumnName DataKey="#Cases Closed" Name="#Cases Closed" ASFormat="Integer" Width="22.5"/>
+          <ColumnName DataKey="%Worked by Count" Name="%Worked by Count" ASFormat="Percentage" Width="22.5"/>
+          <ColumnName DataKey="%Worked by Sales Amount" Name="%Worked by Sales Amount" ASFormat="Percentage" Width="22.5"/>
+          <ColumnName DataKey="#Times Re-queued" Name="#Times Re-queued" ASFormat="Integer" Width="22.5"/>
+          <ColumnName DataKey="Sales Amount - Requeued" Name="Sales Amount - Requeued" ASFormat="Currency" Width="22.5"/>
+          <ColumnName DataKey="Return Amount - Requeued" Name="Return Amount - Requeued" ASFormat="Currency" Width="22.5"/>
+          <ColumnName DataKey="Net Amount - Requeued" Name="Net Amount - Requeued" ASFormat="Currency" Width="22.5"/>
+        </Columns>
+      </sheet>
+      <sheet Name="Filters">
+        <Columns>
+          <ColumnName Name="Key" Width="25"/>
+          <ColumnName Name="Value" Width="30"/>
+        </Columns>
+      </sheet>
+    </sheets>
+  </template>
+  <template Key="1002" Path="\\StatisticsTemplate\\MerchantStatistics_Template.xlsx" IsCreateNewTemplate="false">
+    <sheets>
+      <sheet Name="Merchant Statistics">
+        <Columns>
+          <ColumnName DataKey="Report Date" Name="Report Date" ASFormat="Date" Width="25"/>
+          <ColumnName DataKey="Merchant ID" Name="Merchant ID" Width="23"/>
+          <ColumnName DataKey="Merchant Name" Name="Merchant Name" Width="36"/>
+          <ColumnName DataKey="SIC" Name="SIC" Width="90"/>
+          <ColumnName DataKey="Profile" Name="Profile" Width="13"/>
+          <ColumnName DataKey="Watch" Name="Watch" Width="12"/>
+          <ColumnName DataKey="Sales Amount Alerted" Name="Sales Amount Alerted" ASFormat="Currency" Width="18.5"/>
+          <ColumnName DataKey="Return Amount Alerted" Name="Return Amount Alerted" ASFormat="Currency" Width="18.5"/>
+          <ColumnName DataKey="Net Amount Alerted" Name="Net Amount Alerted" ASFormat="Currency" Width="18.5"/>
+          <ColumnName DataKey="Sales Amount Worked" Name="Sales Amount Worked" ASFormat="Currency" Width="20.5"/>
+          <ColumnName DataKey="Return Amount Worked" Name="Return Amount Worked" ASFormat="Currency" Width="20.5"/>
+          <ColumnName DataKey="Net Amount Worked" Name="Net Amount Worked" ASFormat="Currency" Width="20.5"/>
+          <ColumnName DataKey="#Times Merchant Alerted" Name="#Times Merchant Alerted" ASFormat="Integer" Width="25"/>
+          <ColumnName DataKey="#Times Merchant Re-Alerted" Name="#Times Merchant Re-Alerted" ASFormat="Integer" Width="25"/>
+          <ColumnName DataKey="Work Status" Name="Work Status" Width="23"/>
+          <ColumnName DataKey="#Times Merchant Worked" Name="#Times Merchant Worked" ASFormat="Integer" Width="23"/>
+          <ColumnName DataKey="%Times Merchant Worked" Name="%Times Merchant Worked" ASFormat="Percentage" Width="26.5"/>
+          <ColumnName DataKey="WKD #" Name="WKD #" ASFormat="Integer" Width="11"/>
+          <ColumnName DataKey="#WKD 30" Name="#WKD 30" ASFormat="Integer" Width="11"/>
+          <ColumnName DataKey="#Parameters Violated" Name="#Parameters Violated" ASFormat="Integer" Width="20.5"/>
+          <ColumnName DataKey="#Distinct Parameters Violated" Name="#Distinct Parameters Violated" ASFormat="Integer" Width="29"/>
+          <ColumnName DataKey="Parameters Violated" Name="Parameters Violated" Width="100"/>
+          <ColumnName DataKey="Dispositions" Name="Dispositions" Width="27.5"/>
+          <ColumnName DataKey="Dispositions (default only)?" Name="Dispositions (default only)?" Width="27.5"/>
+          <ColumnName DataKey="Merchant Classification" Name="Merchant Classification" Width="22.5"/>
+          <ColumnName DataKey="Merchant Classification Multiplier" Name="Merchant Classification Multiplier" Width="29"/>
+          <ColumnName DataKey="Risk Score" Name="Risk Score" ASFormat="Integer" Width="16"/>
+          <ColumnName DataKey="#Cases Opened" Name="#Cases Opened" ASFormat="Integer" Width="15"/>
+          <ColumnName DataKey="#Cases noted" Name="#Cases noted" ASFormat="Integer" Width="16"/>
+          <ColumnName DataKey="#Cases closed" Name="#Cases closed" ASFormat="Integer" Width="17"/>
+          <ColumnName DataKey="User Name - Worked" Name="User Name - Worked" Width="20"/>
+        </Columns>
+      </sheet>
+      <sheet Name="Filters">
+        <Columns>
+          <ColumnName Name="Key" Width="25"/>
+          <ColumnName Name="Value" Width="30"/>
+        </Columns>
+      </sheet>
+    </sheets>
+  </template>
+  <template Key="1003" Path="\\StatisticsTemplate\\ParameterStatistics_Template.xlsx" IsCreateNewTemplate="false">
+    <sheets>
+      <sheet Name="Parameter Statistics">
+        <Columns>
+          <ColumnName DataKey="Report Date" Name="Report Date" ASFormat="Date" Width="25"/>
+          <ColumnName DataKey="Assignment Name" Name="Assignment Name" Width="23"/>
+          <ColumnName DataKey="Parameter Number" Name="Parameter Number" Width="20.5"/>
+          <ColumnName DataKey="Parameter Name" Name="Parameter Name" Width="45.5"/>
+          <ColumnName DataKey="Parameter Group" Name="Parameter Group" Width="20.5"/>
+          <ColumnName DataKey="#Times Parameter Violated" Name="#Times Parameter Violated" ASFormat="Integer" Width="25"/>
+          <ColumnName DataKey="ParameterValue" Name="First Alert Parameter Indicator %/#/$" Width="45"/>
+          <ColumnName DataKey="ParameterThreshold" Name="First Alert Parameter Threshold %/#/$" Width="38.5"/>
+          <ColumnName DataKey="#Times First Alert Parameter Violated" Name="#Times First Alert Parameter Violated" ASFormat="Integer" Width="40"/>
+          <ColumnName DataKey="ReParameterValue" Name="Re-Alert Parameter Indicator %/#/$" Width="32"/>
+          <ColumnName DataKey="ReParameterThreshold" Name="Re-Alert Parameter Threshold %/#/$" Width="36"/>
+          <ColumnName DataKey="#Times Re-Alert Parameter Violated" Name="#Times Re-Alert Parameter Violated" ASFormat="Integer" Width="30"/>
+          <ColumnName DataKey="Sales Amount - Violated Parameter" Name="Sales Amount - Violated Parameter" ASFormat="Currency" Width="31"/>
+          <ColumnName DataKey="Return Amount - Violated Parameter" Name="Return Amount - Violated Parameter" ASFormat="Currency" Width="31"/>
+          <ColumnName DataKey="Net Amount - Violated Parameter" Name="Net Amount - Violated Parameter" ASFormat="Currency" Width="31"/>
+          <ColumnName DataKey="#Distinct Merchants - Violated Parameter" Name="#Distinct Merchants - Violated Parameter" ASFormat="Integer" Width="39"/>
+        </Columns>
+      </sheet>
+      <sheet Name="Filters">
+        <Columns>
+          <ColumnName Name="Key" Width="25"/>
+          <ColumnName Name="Value" Width="30"/>
+        </Columns>
+      </sheet>
+    </sheets>
+    <extensionMethod>
+      <method name="FormatDataForExcel" dllName="AS.VW.Scheduler.Extensions" type="AS.VW.Scheduler.Extensions.FormatDataValue" />
+    </extensionMethod>
+  </template>
+  <template Key="1004" Path="\\StatisticsTemplate\\PortfolioStatistics_Template.xlsx" IsCreateNewTemplate="false">
+    <sheets>
+      <sheet Name="Portfolio Statistics">
+        <Columns>
+          <ColumnName DataKey="Report Date" Name="Report Date" ASFormat="Date" Width="25"/>
+          <ColumnName DataKey="#Active Assignments with Alerts" Name="#Active Assignments with Alerts" ASFormat="Integer" Width="27"/>
+          <ColumnName DataKey="#Distinct Merchants Alerted" Name="#Distinct Merchants Alerted" ASFormat="Integer" Width="25.5"/>
+          <ColumnName DataKey="#Distinct Merchants Worked" Name="#Distinct Merchants Worked" ASFormat="Integer" Width="24"/>
+          <ColumnName DataKey="#Times Merchants Alerted" Name="#Times Merchants Alerted" ASFormat="Integer" Width="23.5"/>
+          <ColumnName DataKey="#Times Merchants Worked" Name="#Times Merchants Worked" ASFormat="Integer" Width="22"/>
+          <ColumnName DataKey="%Times Merchant Worked" Name="% Times Merchant Worked" ASFormat="Percentage" Width="22"/>
+          <ColumnName DataKey="WKD #" Name="WKD #" ASFormat="Integer" Width="17"/>
+          <ColumnName DataKey="#Parameters Violated" Name="#Parameters Violated" ASFormat="Integer" Width="18"/>
+          <ColumnName DataKey="#Distinct Parameters Violated" Name="#Distinct Parameters Violated" ASFormat="Integer" Width="25"/>
+          <ColumnName DataKey="Sales Amount Alerted" Name="Sales Amount Alerted" ASFormat="Currency" Width="18.5"/>
+          <ColumnName DataKey="Return Amount Alerted" Name="Return Amount Alerted" ASFormat="Currency" Width="18.5"/>
+          <ColumnName DataKey="Net Amount Alerted" Name="Net Amount Alerted" ASFormat="Currency" Width="18.5"/>
+          <ColumnName DataKey="Sales Amount Worked" Name="Sales Amount Worked" ASFormat="Currency" Width="20.5"/>
+          <ColumnName DataKey="Return Amount Worked" Name="Return Amount Worked" ASFormat="Currency" Width="20.5"/>
+          <ColumnName DataKey="Net Amount Worked" Name="Net Amount Worked" ASFormat="Currency" Width="20.5"/>
+          <ColumnName DataKey="#Times Default Disposition" Name="#Times Default Disposition" ASFormat="Integer" Width="24"/>
+          <ColumnName DataKey="#Times Non-Default Disposition" Name="#Times Non-Default Disposition" ASFormat="Integer" Width="24"/>
+          <ColumnName DataKey="#Cases Opened" Name="#Cases Opened" ASFormat="Integer" Width="17"/>
+          <ColumnName DataKey="#Cases Closed" Name="#Cases Closed" ASFormat="Integer" Width="17"/>
+        </Columns>
+      </sheet>
+      <sheet Name="Filters">
+        <Columns>
+          <ColumnName Name="Key" Width="25"/>
+          <ColumnName Name="Value" Width="30"/>
+        </Columns>
+      </sheet>
+    </sheets>
+  </template>
+  <template Key="1005" Path="\\StatisticsTemplate\\UserPerformanceStatistics_Template.xlsx" IsCreateNewTemplate="false">
+    <sheets>
+      <sheet Name="User Performance Statistics">
+        <Columns>
+          <ColumnName DataKey="Report Date" Name="Report Date" ASFormat="Date" Width="25"/>
+          <ColumnName DataKey="User" Name="User" Width="22"/>
+          <ColumnName DataKey="Sales Amount Worked" Name="Sales Amount Worked" ASFormat="Currency" Width="20.5"/>
+          <ColumnName DataKey="Return Amount Worked" Name="Return Amount Worked" ASFormat="Currency" Width="20.5"/>
+          <ColumnName DataKey="Net Amount Worked" Name="Net Amount Worked" ASFormat="Currency" Width="20.5"/>
+          <ColumnName DataKey="#Distinct Merchants Worked" Name="#Distinct Merchants Worked" ASFormat="Integer" Width="22.5"/>
+          <ColumnName DataKey="#Assignment Alerts Worked" Name="#Assignment Alerts Worked" ASFormat="Integer" Width="24"/>
+          <ColumnName DataKey="#Times Default Disposition" Name="#Times Default Disposition" ASFormat="Integer" Width="23"/>
+          <ColumnName DataKey="%Default Disposition" Name="%Default Disposition" ASFormat="Percentage" Width="17"/>
+          <ColumnName DataKey="#Times Non-Default Disposition" Name="#Times Non-Default Disposition" ASFormat="Integer" Width="26"/>
+          <ColumnName DataKey="% Non-Default Disposition" Name="% Non-Default Disposition" ASFormat="Percentage" Width="21.5"/>
+          <ColumnName DataKey="# Cases Opened" Name="# Cases Opened" ASFormat="Integer" Width="17"/>
+          <ColumnName DataKey="#Cases Noted" Name="#Cases Noted" ASFormat="Integer" Width="14"/>
+          <ColumnName DataKey="#Cases Closed" Name="#Cases Closed" ASFormat="Integer" Width="15"/>
+          <ColumnName DataKey="#Merchant Notes (Risk Report)" Name="#Merchant Notes (Risk Report)" ASFormat="Integer" Width="25"/>
+        </Columns>
+      </sheet>
+      <sheet Name="Filters">
+        <Columns>
+          <ColumnName Name="Key" Width="25"/>
+          <ColumnName Name="Value" Width="30"/>
+        </Columns>
+      </sheet>
+    </sheets>
+  </template>
+  <template Key="1101" Path="\\MerchantAlertHistoryTemplate\\ASMerchantAlertHistory_Template.xlsx" IsDefaul="true" IsCreateNewTemplate="false">
+    <sheets>
+      <sheet Name="Merchant Alert And Worked History">
+        <Columns>
+          <ColumnName DataKey="Report Date" Name="Report Date" ASFormat="Date" Width="25"/>
+          <ColumnName DataKey="Merchant ID" Name="Merchant ID" Width="23"/>
+          <ColumnName DataKey="Merchant Name" Name="Merchant Name" Width="26"/>
+          <ColumnName DataKey="WK" Name="WK" Width="18"/>
+          <ColumnName DataKey="Alerted On" Name="Alerted On" ASFormat="datetimeshorttime" Width="21"/>
+          <ColumnName DataKey="Assignment Name" Name="Assignment Name" Width="15"/>
+          <ColumnName DataKey="P#" Name="P#" Width="19"/>
+          <ColumnName DataKey="Parameter Name" Name="Parameter Name" Width="39"/>
+          <ColumnName DataKey="Re Alert" Name="Re Alert" Width="9"/>
+          <ColumnName DataKey="ParameterValue" Name="Parameter Indicator" Width="16.5"/>
+          <ColumnName DataKey="ActualValue" Name="Actual Indicator" Width="17"/>
+          <ColumnName DataKey="ParameterThreshold" Name="Parameter Threshold" Width="22.5"/>
+          <ColumnName DataKey="ActualThreshold" Name="Actual Threshold" Width="17"/>
+          <ColumnName DataKey="Disposition" Name="Disposition" Width="40"/>
+          <ColumnName DataKey="Worked On" Name="Worked On" ASFormat="datetimeshorttime" Width="21"/>
+          <ColumnName DataKey="User Name" Name="User Name" Width="14.5"/>
+          <ColumnName DataKey="File Type" Name="File Type" Width="28"/>
+          <ColumnName DataKey="Net Amount" Name="Net Amount" ASFormat="Currency" Width="13"/>
+          <ColumnName DataKey="Average Transaction Amount" Name="Average Transaction Amount" ASFormat="Currency" Width="25.5"/>
+          <ColumnName DataKey="Largest Transaction Amount" Name="Largest Transaction Amount​" ASFormat="Currency" Width="23"/>
+        </Columns>
+      </sheet>
+      <sheet Name="Filters">
+        <Columns>
+          <ColumnName Name="Key" Width="25"/>
+          <ColumnName Name="Value" Width="30"/>
+        </Columns>
+      </sheet>
+    </sheets>
+    <extensionMethod>
+      <method name="FormatDataForExcel" dllName="AS.VW.Scheduler.Extensions" type="AS.VW.Scheduler.Extensions.FormatDataValue" />
+    </extensionMethod>
+  </template>
+  <template Key="1300" Path="TransactionHistoryTemplate\\TransactionHistory_Template.xlsx" IsCreateNewTemplate="true">
+		<sheets>
+			<sheet Name="Transaction History">
+				<Columns>
+					<ColumnName DataKey="ReportDate" Name="Report Date" ASFormat="Date" Width="25"/>
+					<ColumnName DataKey="TransDate" Name="Trans Date" ASFormat="Date" Width="25"/>
+					<ColumnName DataKey="CardType" Name="Card" ASFormat="StaticString" Width="25"/>
+					<ColumnName DataKey="CountryCode" Name="Country Code" ASFormat="StaticString" Width="25"/>
+					<ColumnName DataKey="CardNumber" Name="Acct Number" ASFormat="StaticString" Width="25" PartialColumn="PartialCardNumber"/>
+					<ColumnName DataKey="BinNumber" Name="BIN" ASFormat="StaticString" Width="25"/>
+					<ColumnName DataKey="DupeCount" Name="Acct Used #" ASFormat="StaticString" Width="25"/>
+					<ColumnName DataKey="ExpirationDate" Name="Expire" ASFormat="StaticString" Width="25"/>
+					<ColumnName DataKey="TransType" Name="Type" ASFormat="StaticString" Width="25"/>
+					<ColumnName DataKey="Amount" Name="Amount" ASFormat="Currency" Width="25"/>
+					<ColumnName DataKey="MatchCode" Name="Match" ASFormat="StaticString" Width="25"/>
+					<ColumnName DataKey="ADF" Name="A/D/F" ASFormat="StaticString" Width="25"/>
+					<ColumnName DataKey="ResponseCode" Name="RC" ASFormat="StaticString" Width="25"/>
+					<ColumnName DataKey="AuthCode" Name="Auth Code" ASFormat="StaticString" Width="25"/>
+					<ColumnName DataKey="AVS" Name="AVS" ASFormat="StaticString" Width="25"/>
+					<ColumnName DataKey="CVV" Name="CVV" ASFormat="StaticString" Width="25"/>
+					<ColumnName DataKey="KeyedEntry" Name="Keyed" ASFormat="StaticString" Width="25"/>
+					<ColumnName DataKey="EMVIndicator" Name="EMV" ASFormat="StaticString" Width="25"/>
+					<ColumnName DataKey="SettleType" Name="Settled" ASFormat="StaticString" Width="25"/>
+					<ColumnName DataKey="FileSource" Name="File Source" ASFormat="StaticString" Width="25"/>
+					<ColumnName DataKey="TerminalNumber" Name="Terminal #" ASFormat="StaticString" Width="25"/>
+				</Columns>
+			</sheet>
+		</sheets>
+	</template>
+  <template Key="200" Path="MerchantListTemplate\\ESQR_MerchantList_Template.xlsx" IsCreateNewTemplate="true">
+		<sheets>
+			<sheet Name="Merchant List">
+				<Columns>
+					<ColumnName DataKey="Entity" Name="Merchant ID" ASFormat="StaticString" Width="25"/>
+					<ColumnName DataKey="EntityName" Name="Merchant Name" ASFormat="StaticString" Width="25"/>
+					<ColumnName DataKey="EntityNumber1" Name="ISO" ASFormat="StaticString" Width="25"/>
+					<ColumnName DataKey="EntityNumber2" Name="Sub-ISO" ASFormat="StaticString" Width="25"/>
+					<ColumnName DataKey="EntityNumber3" Name="Agent" ASFormat="StaticString" Width="25"/>
+					<ColumnName DataKey="EntityNumber4" Name="Payfac Entity" ASFormat="StaticString" Width="25"/>
+					<ColumnName DataKey="Address" Name="Address" ASFormat="StaticString" Width="25"/>
+					<ColumnName DataKey="ChainNumber" Name="Chain" ASFormat="StaticString" Width="25"/>
+					<ColumnName DataKey="MCCSIC" Name="MCC/SIC" ASFormat="StaticString" Width="25"/>
+					<ColumnName DataKey="Phone" Name="Phone" ASFormat="phone" Width="25"/>
+					<ColumnName DataKey="Email" Name="Email" ASFormat="StaticString" Width="25"/>
+					<ColumnName DataKey="MerchantStatus" Name="Merchant Status" ASFormat="StaticString" Width="25"/>
+					<ColumnName DataKey="LastBatchActivity" Name="Last Batch Activity" ASFormat="Date" Width="25"/>
+				</Columns>
+			</sheet>
+		</sheets>
+	</template>
+</templates>

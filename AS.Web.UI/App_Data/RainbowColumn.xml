@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Items>
+    <Item Text="RainbowColumn_xml_MerchantName" Value="MerchantName" />
+    <Item Text="RainbowColumn_xml_Profile" Value="ProfileDescription" />
+    <Item Text="RainbowColumn_xml_LastBatchDate" Value="LastBatchDate" />
+    <Item Text="RainbowColumn_xml_BusinessAge" Value="BusinessAge" />
+    <Item Text="RainbowColumn_xml_RiskScore" Value="RiskScore" />
+    <Item Text="RainbowColumn_xml_VolPercent" Value="VolumePercent" />
+    <Item Text="RainbowColumn_xml_AvgTktPercent" Value="AverageTicketPercent" />
+    <Item Text="RainbowColumn_xml_AuthPercent" Value="AuthorizationPercent" />
+    <Item Text="RainbowColumn_xml_DeclPercent" Value="DeclinedAuthorizationPercent" />
+    <Item Text="RainbowColumn_xml_SharpRptAuth" Value="RepeatAuthorizationCount" />
+    <Item Text="RainbowColumn_xml_FC" Value="TodayForeignCardCount" />
+    <Item Text="RainbowColumn_xml_KeyPercent" Value="KeyPercent" />
+    <Item Text="RainbowColumn_xml_EvenPercent" Value="EvenDollarTransactionPercent" />
+    <Item Text="RainbowColumn_xml_DupPercent" Value="DuplicateDollarTransactionPercent" />
+    <Item Text="RainbowColumn_xml_DupBin" Value="DuplicateBin" />
+    <Item Text="RainbowColumn_xml_SharpNeg" Value="NegativeBatchCount" />
+    <Item Text="RainbowColumn_xml_SharpZero" Value="ZeroBatchCount" />
+    <Item Text="RainbowColumn_xml_TotalVolume" Value="TodayVolume" Selected="True" />
+    <Item Text="RainbowColumn_xml_CB" Value="TodayChargebackCount" />
+    <Item Text="RainbowColumn_xml_RtnPercent" Value="ReturnPercent" />
+    <Item Text="RainbowColumn_xml_SharpTkts" Value="TodayTransactionCount" />
+    <Item Text="RainbowColumn_xml_SharpBatch" Value="TodayBatchCount" />
+    <Item Text="RainbowColumn_xml_SIC" Value="SICCode" />
+    <Item Text="RainbowColumn_xml_MTDollar" Value="TodayHighestTransactionAmount" />
+    <Item Text="RainbowColumn_xml_TotalOfWorked" Value="TotalOfWorked" />
+    <Item Text="RainbowColumn_xml_WorkQueueName" Value="WorkQueueName" />
+</Items>
+

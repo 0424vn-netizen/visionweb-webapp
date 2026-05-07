@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MobileRedirectSetting baseMobileUrl="https://vwreskin-ms-qa.local/mobile/" systemApplied="2" xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform" xdt:Transform="Replace">
+	<Urls>
+		<Url clientId="126" name="tsys" alias="tsys" />
+
+	</Urls>
+	<Redirects>
+		<!-- <Redirect agent="window" active="true" />   -->
+		<Redirect agent="mobile|ip(hone|od)|opera m(obi|ini)|blazer|dolfin|dolphin|skyfire|zune" active="true" />
+	</Redirects>
+</MobileRedirectSetting>
+

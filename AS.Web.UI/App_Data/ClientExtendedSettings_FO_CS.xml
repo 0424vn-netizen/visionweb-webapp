@@ -1,0 +1,1552 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ClientExtendedSettings>
+	<ExtendedSetting clientId="0" settingName="CUSTOM_CLIENT_MAXLENGTH" data="191,200"/>
+	<ExtendedSetting clientId="0" settingName="CUSTOM_USERNAME_MAXLENGTH" data="30"/>
+	<ExtendedSetting clientId="0" settingName="CUSTOM_DEFAULT_MAXLENGTH" data="10"/>
+  <ExtendedSetting clientId="0" settingName="LIMIT_REPORT_DAY_MERCHANT_ALERT_HISTORY" data="90"/>
+
+	<ExtendedSetting clientId="22" settingName="ExtendCustomColumn" data="AttritionScore,ReserveScore"/>
+	<ExtendedSetting clientId="95" settingName="ExtendCustomColumn" data="AttritionScore,ReserveScore"/>
+	<ExtendedSetting clientId="15" settingName="ExtendCustomColumn" data="AttritionScore,ReserveScore"/>
+	<ExtendedSetting clientId="144" settingName="ExtendCustomColumn" data="AttritionScore,ReserveScore"/>
+	<ExtendedSetting clientId="217" settingName="ExtendCustomColumn" data="AttritionScore,ReserveScore"/>
+	<ExtendedSetting clientId="49" settingName="ExtendCustomColumn" data="AttritionScore,ReserveScore"/>
+	<ExtendedSetting clientId="91" settingName="ExtendCustomColumn" data="AttritionScore,ReserveScore"/>
+	<ExtendedSetting clientId="113" settingName="ExtendCustomColumn" data="AttritionScore,ReserveScore"/>
+	<ExtendedSetting clientId="82" settingName="ExtendCustomColumn" data="AttritionScore,ReserveScore"/>
+	<ExtendedSetting clientId="69" settingName="ExtendCustomColumn" data="AttritionScore,ReserveScore"/>
+	<ExtendedSetting clientId="1000" settingName="ExtendCustomColumn" data="AttritionScore,ReserveScore"/>
+
+	<ExtendedSetting clientId="82" settingName="LimitGenerateStatisticsReport" data="20"/>
+	<ExtendedSetting clientId="22" settingName="LimitGenerateStatisticsReport" data="20"/>
+	<ExtendedSetting clientId="115" settingName="LimitGenerateStatisticsReport" data="20"/>
+
+	<ExtendedSetting clientId="82" settingName="LimitExtractMerchanAlertHistory" data="20"/>
+	<ExtendedSetting clientId="22" settingName="LimitExtractMerchanAlertHistory" data="20"/>
+	<ExtendedSetting clientId="115" settingName="LimitExtractMerchanAlertHistory" data="20"/>
+
+	<ExtendedSetting clientId="58" settingName="ADD_GEOGRAPHIC_DATA" data="CS,AS"/>
+	<ExtendedSetting clientId="23" settingName="ADD_GEOGRAPHIC_DATA" data="CS,AS"/>
+	<ExtendedSetting clientId="82" settingName="ADD_GEOGRAPHIC_DATA" data="CS,AS"/>
+	<ExtendedSetting clientId="999" settingName="ADD_GEOGRAPHIC_DATA" data="CS,AS"/>
+	<ExtendedSetting clientId="29" settingName="ADD_GEOGRAPHIC_DATA" data="CS,AS"/>
+	<ExtendedSetting clientId="86" settingName="ADD_GEOGRAPHIC_DATA" data="CS,AS"/>
+	<ExtendedSetting clientId="22" settingName="ADD_GEOGRAPHIC_DATA" data="CS,AS"/>
+	<ExtendedSetting clientId="91" settingName="ADD_GEOGRAPHIC_DATA" data="CS,AS"/>
+	<ExtendedSetting clientId="15" settingName="ADD_GEOGRAPHIC_DATA" data="CS,AS"/>
+	<ExtendedSetting clientId="49" settingName="ADD_GEOGRAPHIC_DATA" data="CS,AS"/>
+	<ExtendedSetting clientId="97" settingName="ADD_GEOGRAPHIC_DATA" data="CS,AS"/>
+	<ExtendedSetting clientId="95" settingName="ADD_GEOGRAPHIC_DATA" data="CS,AS"/>
+	<ExtendedSetting clientId="65" settingName="ADD_GEOGRAPHIC_DATA" data="CS,AS"/>
+	<ExtendedSetting clientId="126" settingName="ADD_GEOGRAPHIC_DATA" data="CS,AS"/>
+	<ExtendedSetting clientId="122" settingName="ADD_GEOGRAPHIC_DATA" data="CS,AS"/>
+	<ExtendedSetting clientId="119" settingName="ADD_GEOGRAPHIC_DATA" data="CS,AS"/>
+	<ExtendedSetting clientId="998" settingName="ADD_GEOGRAPHIC_DATA" data="CS,AS"/>
+	<ExtendedSetting clientId="115" settingName="ADD_GEOGRAPHIC_DATA" data="CS,AS"/>
+	<ExtendedSetting clientId="142" settingName="ADD_GEOGRAPHIC_DATA" data="CS,AS"/>
+
+	<!--Dashboard tab-->
+	<ExtendedSetting clientId="22" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<ExtendedSetting clientId="29" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<ExtendedSetting clientId="49" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<ExtendedSetting clientId="65" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<ExtendedSetting clientId="82" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<ExtendedSetting clientId="86" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<ExtendedSetting clientId="91" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<ExtendedSetting clientId="97" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<ExtendedSetting clientId="119" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<ExtendedSetting clientId="126" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<ExtendedSetting clientId="129" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<ExtendedSetting clientId="1000" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<ExtendedSetting clientId="142" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<ExtendedSetting clientId="15" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<ExtendedSetting clientId="23" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<ExtendedSetting clientId="76" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<ExtendedSetting clientId="95" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<ExtendedSetting clientId="122" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<ExtendedSetting clientId="998" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<ExtendedSetting clientId="999" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<!--End dashboard tab-->
+
+	<!--Notification tab-->
+	<ExtendedSetting clientId="22" settingName="HasAlertNotification" data="true"/>
+	<ExtendedSetting clientId="29" settingName="HasAlertNotification" data="true"/>
+	<ExtendedSetting clientId="49" settingName="HasAlertNotification" data="true"/>
+	<ExtendedSetting clientId="65" settingName="HasAlertNotification" data="true"/>
+	<ExtendedSetting clientId="82" settingName="HasAlertNotification" data="true"/>
+	<ExtendedSetting clientId="91" settingName="HasAlertNotification" data="true"/>
+	<ExtendedSetting clientId="97" settingName="HasAlertNotification" data="true"/>
+	<ExtendedSetting clientId="119" settingName="HasAlertNotification" data="true"/>
+	<ExtendedSetting clientId="998" settingName="HasAlertNotification" data="true"/>
+	<ExtendedSetting clientId="1000" settingName="HasAlertNotification" data="true"/>
+	<ExtendedSetting clientId="95" settingName="HasAlertNotification" data="true"/>
+	<ExtendedSetting clientId="15" settingName="HasAlertNotification" data="true"/>
+	<!--End notification tab-->
+
+	<!--Coming Soon Modal-->
+	<ExtendedSetting clientId="22" settingName="ComingSoonTime" data="01/13/2020,02/17/2020"/>
+	<ExtendedSetting clientId="22" settingName="AvailableTime" data="02/18/2020,02/29/2020"/>
+	<ExtendedSetting clientId="115" settingName="ComingSoonTime" data="01/13/2020,02/17/2020"/>
+	<ExtendedSetting clientId="115" settingName="AvailableTime" data="02/18/2020,02/29/2020"/>
+	<ExtendedSetting clientId="82" settingName="ComingSoonTime" data="01/13/2020,02/17/2020"/>
+	<ExtendedSetting clientId="82" settingName="AvailableTime" data="02/18/2020,02/29/2020"/>
+
+	<ExtendedSetting clientId="113" settingName="ComingSoonTime" data="06/01/2020,06/16/2020"/>
+	<ExtendedSetting clientId="113" settingName="AvailableTime" data="06/17/2020,06/30/2020"/>
+	<ExtendedSetting clientId="126" settingName="ComingSoonTime" data="06/01/2020,06/16/2020"/>
+	<ExtendedSetting clientId="126" settingName="AvailableTime" data="06/17/2020,06/30/2020"/>
+	<ExtendedSetting clientId="95" settingName="ComingSoonTime" data="06/01/2020,06/16/2020"/>
+	<ExtendedSetting clientId="95" settingName="AvailableTime" data="06/17/2020,06/30/2020"/>
+	<ExtendedSetting clientId="15" settingName="ComingSoonTime" data="06/01/2020,06/16/2020"/>
+	<ExtendedSetting clientId="15" settingName="AvailableTime" data="06/17/2020,06/30/2020"/>
+
+	<ExtendedSetting clientId="91" settingName="ComingSoonTime" data="11/02/2019,11/05/2019"/>
+	<ExtendedSetting clientId="91" settingName="AvailableTime" data="11/06/2019,11/30/2019"/>
+	<ExtendedSetting clientId="49" settingName="ComingSoonTime" data="11/02/2019"/>
+	<ExtendedSetting clientId="49" settingName="AvailableTime" data="11/12/2019,11/30/2019"/>
+	<!--End Coming Soon Modal-->
+
+	<!--AS 0 -->
+	<!--for LOGIN_ configs: data="CS" or "CS,MS" or "MS" or blank: not display-->
+	<ExtendedSetting clientId="0" settingName="LOGIN_SHOW_CONTACT_PHONE" data=""/>
+	<ExtendedSetting clientId="0" settingName="LOGIN_SHOW_CONTACT_MESSAGE" data="CS,MS"/>
+	<ExtendedSetting clientId="0" settingName="LOGIN_SHOW_CONTACT_EMAIL" data="CS,MS"/>
+	<ExtendedSetting clientId="0" settingName="LOGIN_CONTACT_MESSAGE_MS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="0" settingName="LOGIN_CONTACT_MESSAGE_CS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="0" settingName="InvisibleHyperlinkByEntityTypeIDs" data="11"/>
+	<ExtendedSetting clientId="0" settingName="AllowBatchHyperLink" data="true"/>
+	<ExtendedSetting clientId="0" settingName="HasMSUserManagement" data="false"/>
+	<ExtendedSetting clientId="0" settingName="DEFAULT_HIERARCHY_FILTER_MODE" data="MERCHANTNUMBER"/>
+	<ExtendedSetting clientId="0" settingName="ADD_GEOGRAPHIC_DATA" data="CS,AS"/>
+	<ExtendedSetting clientId="0" settingName="DisplayTextForActualValue1" data="P147,P148,P185"/>
+
+	<!--PPI-->
+	<ExtendedSetting clientId="15" settingName="PRODUCT_ENVIRONMENT" data="MS_CS_RISK"/>
+	<ExtendedSetting clientId="15" settingName="CONTACT_US_HIDE_ADDRESS_3" data="true"/>
+	<ExtendedSetting clientId="15" settingName="STATEMENT_BACK_END_PROCESSOR" data="TSYS"/>
+	<ExtendedSetting clientId="15" settingName="STATEMENT_DISPLAY_FORMAT" data="STMT {1}- {0}"/>
+	<ExtendedSetting clientId="15" settingName="STATEMENT_REPORT_DATE_FORMAT" data="MM/dd/yyyy"/>
+	<ExtendedSetting clientId="15" settingName="RESET_PASSWORD" data="Merchant Intel"/>
+	<ExtendedSetting clientId="15" settingName="LOGIN_SHOW_CONTACT_EMAIL" data="CS,MS"/>
+	<ExtendedSetting clientId="15" settingName="LOGIN_CONTACT_MESSAGE_MS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="15" settingName="LOGIN_CONTACT_MESSAGE_CS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="15" settingName="MIF_Profile_HideSessionAddEditChain" data="true"/>
+	<ExtendedSetting clientId="15" settingName="LOGIN_SHOW_COMPANY_NAME" data="CS,MS"/>
+	<ExtendedSetting clientId="15" settingName="LOGIN_SHOW_FAX" data="CS,MS"/>
+	<ExtendedSetting clientId="15" settingName="CLIENT_INFO_HIDE_ADDRESS_MS" data="false"/>
+	<ExtendedSetting clientId="15" settingName="LOGIN_HIDE_CONTACT_INFO" data=""/>
+	<ExtendedSetting clientId="15" settingName="CLIENT_INFO_HIDE_ADDRESS_2" data="true"/>
+	<ExtendedSetting clientId="15" settingName="LOGIN_SHOW_CONTACT_PHONE" data=""/>
+	<ExtendedSetting clientId="15" settingName="LOGIN_SHOW_CONTACT_MESSAGE" data="CS,MS"/>
+	<ExtendedSetting clientId="15" settingName="STATE_LABEL_TEXT" data="State, Territory, or Province"/>
+	<ExtendedSetting clientId="15" settingName="STATE_LABEL_TEXT_PLURAL" data="States, Territories, or Provinces"/>
+	<ExtendedSetting clientId="15" settingName="InvisibleHyperlinkByEntityTypeIDs" data="11"/>
+	<ExtendedSetting clientId="15" settingName="AllowBatchHyperLink" data="true"/>
+	<ExtendedSetting clientId="15" settingName="DEFAULT_HIERARCHY_FILTER_MODE" data="MERCHANTNUMBER"/>
+	<ExtendedSetting clientId="15" settingName="EnableTerminalComboBox" data="true"/>
+	<ExtendedSetting clientId="15" settingName="Has12MonthsChart" data="true"/>
+	<ExtendedSetting clientId="15" settingName="VIEW_FIRST_BATCH_INFO" data="true"/>
+	<ExtendedSetting clientId="15" settingName="LimitExtractMerchanAlertHistory" data="20"/>
+	<ExtendedSetting clientId="15" settingName="LimitGenerateStatisticsReport" data="20"/>
+	<ExtendedSetting clientId="15" settingName="LimitExtractMerchantReport" data="10"/>
+	<ExtendedSetting clientId="15" settingName="NEXTQUEUE_REPORT" data="true"/>
+	<ExtendedSetting clientId="15" settingName="HasQueuingMechanism" data="true"/>
+	
+	<!--FIS-->
+	<ExtendedSetting clientId="22" settingName="PRODUCT_ENVIRONMENT" data="MS_CS_RISK"/>
+	<ExtendedSetting clientId="22" settingName="COMPLIASSURE_USER_SYNCH" data="true"/>
+	<ExtendedSetting clientId="22" settingName="COMPLIASSURE_ROLE_SYNCH" data="true"/>
+	<ExtendedSetting clientId="22" settingName="PCI_DEFAULT_HIERARCHY_ID_CS" data="149"/>
+	<ExtendedSetting clientId="22" settingName="PCI_HIERARCHY_USER_ACCESS" data="true"/>
+	<ExtendedSetting clientId="22" settingName="PCI_HIERARCHY_ACCESS" data="true"/>
+	<ExtendedSetting clientId="22" settingName="PCI_DEFAULT_HIERARCHY_ID_HU_SEC" data="25"/>
+	<ExtendedSetting clientId="22" settingName="PCI_USER_SYNCH" data="true"/>
+	<ExtendedSetting clientId="22" settingName="PCI_USER_SYNCH_THEME_NAME" data="FIS"/>
+	<ExtendedSetting clientId="22" settingName="PCI_ROLE_SYNCH" data="true"/>
+	<ExtendedSetting clientId="22" settingName="CLIENT_INFO_HIDE_ADDRESS_2" data="true"/>
+	<ExtendedSetting clientId="22" settingName="CONTACT_US_HIDE_ADDRESS_3" data="true"/>
+	<ExtendedSetting clientId="22" settingName="STATEMENT_BACK_END_PROCESSOR" data="TSYS,MPS"/>
+	<ExtendedSetting clientId="22" settingName="STATEMENT_DISPLAY_FORMAT" data="STMT {1}- {0}" reskey="ClientExtendedSettings_xml_STMT"/>
+	<ExtendedSetting clientId="22" settingName="STATEMENT_REPORT_DATE_FORMAT" data="MM/dd/yyyy"/>
+	<ExtendedSetting clientId="22" settingName="RESET_PASSWORD" data="Merchant Intel" reskey="ClientExtendedSettings_xml_MerchantIntel"/>
+	<ExtendedSetting clientId="22" settingName="CLIENT_INFO_HIDE_ADDRESS_MS" data="true"/>
+	<!--data="CS" or "CS,MS" or "MS" or blank: not display-->
+	<ExtendedSetting clientId="22" settingName="LOGIN_HIDE_CONTACT_INFO" data="MS"/>
+	<ExtendedSetting clientId="22" settingName="LOGIN_SHOW_CONTACT_PHONE" data=""/>
+	<ExtendedSetting clientId="22" settingName="LOGIN_SHOW_CONTACT_MESSAGE" data="CS,MS"/>
+	<ExtendedSetting clientId="22" settingName="LOGIN_SHOW_CONTACT_EMAIL" data="CS"/>
+	<ExtendedSetting clientId="22" settingName="LOGIN_CONTACT_MESSAGE_MS" data="&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;If you are having difficulties accessing this site, please contact your Merchant Services Representative." reskey="ClientExtendedSettings_xml_ContactMSR"/>
+	<ExtendedSetting clientId="22" settingName="LOGIN_CONTACT_MESSAGE_CS" data="If you are having difficulties accessing this site, please contact {0}." reskey="ClientExtendedSettings_xml_PleaseContact"/>
+	<ExtendedSetting clientId="22" settingName="IS_ALERT" data="true"/>
+	<!--Turn ON/OFF Voided/Rejected and/or Trans Qualification grids on Batch History report-->
+	<ExtendedSetting clientId="22" settingName="HIDE_TRANSQUAL_BATCHHISTORY" data="true"/>
+	<ExtendedSetting clientId="22" settingName="HIDE_VOIREJECTTRANS_BATCHHISTORY" data="true"/>
+	<ExtendedSetting clientId="22" settingName="FILTERING_OPTIONS_DATERANGE" data="true"/>
+	<ExtendedSetting clientId="22" settingName="WEBSITE_TITLE_MS" data="Merchant Intelligence Center" reskey="ClientExtendedSettings_xml_MerchantIntelligenceCenter"/>
+	<ExtendedSetting clientId="22" settingName="WEBSITE_TITLE_CS" data="Fidelity Information Services" reskey="ClientExtendedSettings_xml_FidelityInformationServices"/>
+	<ExtendedSetting clientId="22" settingName="AllowChainAccessToPCIWithOldestMerchant" data="true"/>
+	<ExtendedSetting clientId="22" settingName="IS_DEPOSIT_HISTORY" data="true"/>
+	<ExtendedSetting clientId="22" settingName="BRANDING_EMAIL_ALERT_UPDATE_USER" data="BNK8714"/>
+	<ExtendedSetting clientId="22" settingName="STATE_LABEL_TEXT" data="State, Territory, or Province" reskey="ClientExtendedSettings_xml_StateTerritoryProvine_Single"/>
+	<ExtendedSetting clientId="22" settingName="STATE_LABEL_TEXT_PLURAL" data="States, Territories, or Provinces" reskey="ClientExtendedSettings_xml_StateTerritoryProvine_Plural"/>
+	<ExtendedSetting clientId="22" settingName="PasswordRuleLabel" data="The password must be minimum of 8 and maximum of 50 characters, contains at least 1 number, at least 1 upper case and at least 1 lower case."/>
+	<ExtendedSetting clientId="22" settingName="REMOVE_COLUMN_RTCB" data="true"/>
+	<ExtendedSetting clientId="22" settingName="ERROR_MSG" data="You have entered an invalid username or password. Please try again." reskey="ClientExtendedSettings_xml_InvalidUsernamePassword"/>
+	<ExtendedSetting clientId="22" settingName="FIRSTLOGIN_ERROR_MSG" data="There is a problem with your account. Please contact Customer Service." reskey="ClientExtendedSettings_xml_PleaseContactCustomerService"/>
+	<ExtendedSetting clientId="22" settingName="InvisibleMemosGrid" data="true"/>
+	<ExtendedSetting clientId="22" settingName="InvisibleHyperlinkByEntityTypeIDs" data="11"/>
+	<ExtendedSetting clientId="22" settingName="HasMSUserManagement" data="true"/>
+	<ExtendedSetting clientId="22" settingName="HasServicedByFieldInRskRpt" data="true"/>
+	<ExtendedSetting clientId="22" settingName="HasEmailFieldInRskRpt" data="true"/>
+	<ExtendedSetting clientId="22" settingName="SHOW_SEND_IE_REPORT" data="true"/>
+	<ExtendedSetting clientId="22" settingName="AllowBatchHyperLink" data="true"/>
+	<ExtendedSetting clientId="22" settingName="ForceHttpsProtocol" data="1"/>
+	<ExtendedSetting clientId="22" settingName="GainLossInvestigationAmount" data="true"/>
+	<ExtendedSetting clientId="22" settingName="MultiLanguage" data="true"/>
+	<ExtendedSetting clientId="22" settingName="LimitExtractMerchantReport" data="10"/>
+	<ExtendedSetting clientId="22" settingName="DEFAULT_HIERARCHY_FILTER_MODE" data="MERCHANTNUMBER"/>
+	<ExtendedSetting clientId="22" settingName="PREDIFINED_ROLE" data="Sales Rep,Sales Admin,Sales Manager,Ops Staff"/>
+	<!-- <ExtendedSetting clientId="22" settingName="EXCLUDE_PERMISSIONS_BY_HIERARCHY" data="21:MSViewMPAList,MSViewTaskList,MSViewAllMPAs,MSKeyMerchantApplications,MSManageMPAAssignments,MSViewFullSensitiveData,MSWithdrawMPA,MSManageDocuments"/> -->
+	<ExtendedSetting clientId="22" settingName="EnableTerminalComboBox" data="true"/>
+	<ExtendedSetting clientId="22" settingName="SHOW_USER_ID_ON_MIF" data="CS"/>
+	<ExtendedSetting clientId="22" settingName="IS_CHANGE_USERNAME_MS_SITE" data="true"/>
+	<ExtendedSetting clientId="22" settingName="Has12MonthsChart" data="true"/>
+	<ExtendedSetting clientId="22" settingName="VIEW_FIRST_BATCH_INFO" data="true"/>
+	<ExtendedSetting clientId="22" settingName="NEXTQUEUE_REPORT" data="true"/>
+	<ExtendedSetting clientId="22" settingName="HasQueuingMechanism" data="true"/>
+
+	<!--ORION-->
+	<ExtendedSetting clientId="29" settingName="PRODUCT_ENVIRONMENT" data="MS_CS_RISK"/>
+	<ExtendedSetting clientId="29" settingName="SizeOfUpdateUserModal" data="980,710"/>
+	<ExtendedSetting clientId="29" settingName="PCI_DEFAULT_HIERARCHY_ID_CS" data="131"/>
+	<ExtendedSetting clientId="29" settingName="PCI_DEFAULT_HIERARCHY_ID_HU_SEC" data="23"/>
+	<ExtendedSetting clientId="29" settingName="COMPLIASSURE_USER_SYNCH" data="false"/>
+	<ExtendedSetting clientId="29" settingName="PCI_USER_SYNCH" data="true"/>
+	<ExtendedSetting clientId="29" settingName="PCI_USER_SYNCH_THEME_NAME" data="ORI"/>
+	<ExtendedSetting clientId="29" settingName="PCI_ROLE_SYNCH" data="true"/>
+	<ExtendedSetting clientId="29" settingName="STATEMENT_BACK_END_PROCESSOR" data="FDR,MPS,GLOBAL"/>
+	<ExtendedSetting clientId="29" settingName="STATEMENT_DISPLAY_FORMAT" data="STMT {1}- {0}"/>
+	<ExtendedSetting clientId="29" settingName="STATEMENT_REPORT_DATE_FORMAT" data="MM/dd/yyyy"/>
+	<ExtendedSetting clientId="29" settingName="RESET_PASSWORD" data="VisionWeb"/>
+	<!--for LOGIN_ configs: data="CS" or "CS,MS" or "MS" or blank: not display-->
+	<ExtendedSetting clientId="29" settingName="LOGIN_SHOW_CONTACT_PHONE" data=""/>
+	<ExtendedSetting clientId="29" settingName="LOGIN_SHOW_CONTACT_MESSAGE" data="CS,MS"/>
+	<ExtendedSetting clientId="29" settingName="LOGIN_SHOW_CONTACT_EMAIL" data="CS,MS"/>
+	<ExtendedSetting clientId="29" settingName="LOGIN_CONTACT_MESSAGE_MS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="29" settingName="LOGIN_CONTACT_MESSAGE_CS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<!--Turn ON/OFF Voided/Rejected and/or Trans Qualification grids on Batch History report-->
+	<ExtendedSetting clientId="29" settingName="HIDE_VOIREJECTTRANS_BATCHHISTORY" data="true"/>
+	<ExtendedSetting clientId="29" settingName="STATE_LABEL_TEXT" data="State, Territory, or Province"/>
+	<ExtendedSetting clientId="29" settingName="STATE_LABEL_TEXT_PLURAL" data="States, Territories, or Provinces"/>
+	<ExtendedSetting clientId="29" settingName="InvisibleMemosGrid" data="true"/>
+	<ExtendedSetting clientId="29" settingName="InvisibleHyperlinkByEntityTypeIDs" data="11"/>
+	<ExtendedSetting clientId="29" settingName="AllowChainAccessToPCIWithOldestMerchant" data="true"/>
+	<ExtendedSetting clientId="29" settingName="AllowBatchHyperLink" data="true"/>
+	<ExtendedSetting clientId="29" settingName="HasMSUserManagement" data="false"/>
+	<ExtendedSetting clientId="29" settingName="DEFAULT_HIERARCHY_FILTER_MODE" data="MERCHANTNUMBER"/>
+	<ExtendedSetting clientId="29" settingName="EnableTerminalComboBox" data="true"/>
+	<ExtendedSetting clientId="29" settingName="Has12MonthsChart" data="true"/>
+	<ExtendedSetting clientId="29" settingName="SHOW_PRINTER_LINK" data="true"/>
+	<ExtendedSetting clientId="29" settingName="VIEW_FIRST_BATCH_INFO" data="true"/>
+
+	<!--TNBCI-->
+	<ExtendedSetting clientId="49" settingName="PRODUCT_ENVIRONMENT" data="CS_RISK"/>
+	<ExtendedSetting clientId="49" settingName="PCI_ROLE_SYNCH" data="true"/>
+	<ExtendedSetting clientId="49" settingName="PCI_DEFAULT_HIERARCHY_ID_CS" data="7"/>
+	<ExtendedSetting clientId="49" settingName="PCI_HIERARCHY_USER_ACCESS" data="false"/>
+	<ExtendedSetting clientId="49" settingName="PCI_HIERARCHY_ACCESS" data="true"/>
+	<ExtendedSetting clientId="49" settingName="PCI_DEFAULT_HIERARCHY_ID_HU_SEC" data="318"/>
+	<ExtendedSetting clientId="49" settingName="PCI_USER_SYNCH" data="true"/>
+	<ExtendedSetting clientId="49" settingName="PCI_USER_SYNCH_THEME_NAME" data="SIA"/>
+	<ExtendedSetting clientId="49" settingName="CONTACT_US_HIDE_ADDRESS_3" data="true"/>
+	<ExtendedSetting clientId="49" settingName="STATEMENT_BACK_END_PROCESSOR" data="GLOBAL,TSYS"/>
+	<ExtendedSetting clientId="49" settingName="STATEMENT_DISPLAY_FORMAT" data="STMT {1}- {0}"/>
+	<ExtendedSetting clientId="49" settingName="STATEMENT_REPORT_DATE_FORMAT" data="MM/dd/yyyy"/>
+	<ExtendedSetting clientId="49" settingName="RESET_PASSWORD" data="Trans National Bankcard Services"/>
+	<ExtendedSetting clientId="49" settingName="LOGIN_SHOW_CONTACT_EMAIL" data="CS,MS"/>
+	<ExtendedSetting clientId="49" settingName="LOGIN_CONTACT_MESSAGE_MS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="49" settingName="LOGIN_CONTACT_MESSAGE_CS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="49" settingName="MIF_Profile_HideSessionAddEditChain" data="false"/>
+	<ExtendedSetting clientId="49" settingName="LOGIN_SHOW_COMPANY_NAME" data="CS,MS"/>
+	<ExtendedSetting clientId="49" settingName="LOGIN_SHOW_FAX" data="CS,MS"/>
+	<ExtendedSetting clientId="49" settingName="CLIENT_INFO_HIDE_ADDRESS_MS" data="false"/>
+	<ExtendedSetting clientId="49" settingName="LOGIN_HIDE_CONTACT_INFO" data=""/>
+	<ExtendedSetting clientId="49" settingName="CLIENT_INFO_HIDE_ADDRESS_2" data="true"/>
+	<ExtendedSetting clientId="49" settingName="LOGIN_SHOW_CONTACT_PHONE" data=""/>
+	<ExtendedSetting clientId="49" settingName="LOGIN_SHOW_CONTACT_MESSAGE" data="CS,MS"/>
+	<ExtendedSetting clientId="49" settingName="STATE_LABEL_TEXT" data="State, Territory, or Province"/>
+	<ExtendedSetting clientId="49" settingName="STATE_LABEL_TEXT_PLURAL" data="States, Territories, or Provinces"/>
+	<ExtendedSetting clientId="49" settingName="MERCHANT_MODE" data="MERCHANTNUMBER"/>
+	<ExtendedSetting clientId="49" settingName="HIDE_MESSAGE_MERCHANT" data="true"/>
+	<ExtendedSetting clientId="49" settingName="HIDE_VOIREJECTTRANS_BATCHHISTORY" data="true"/>
+	<ExtendedSetting clientId="49" settingName="LOGO_STMT" data="logo.png"/>
+	<ExtendedSetting clientId="49" settingName="InvisibleHyperlinkByEntityTypeIDs" data="6,11"/>
+	<ExtendedSetting clientId="49" settingName="InvisibleMemosGrid" data="true"/>
+	<ExtendedSetting clientId="49" settingName="CREATE_MS_CHAIN_USER_WHEN_ADDING_NEW_CHAIN" data="true"/>
+	<ExtendedSetting clientId="49" settingName="HAS_SSO_LOGIN" data="true"/>
+	<ExtendedSetting clientId="49" settingName="AllowChainAccessToPCIWithOldestMerchant" data="true"/>
+	<ExtendedSetting clientId="49" settingName="IS_DEPOSIT_HISTORY_MS" data="true"/>
+	<ExtendedSetting clientId="49" settingName="CLIENT_CONTACT_INFO_KEY_MS" data="ClientInformation_MS"/>
+	<ExtendedSetting clientId="49" settingName="AllowBatchHyperLink" data="true"/>
+	<ExtendedSetting clientId="49" settingName="HasMSUserManagement" data="false"/>
+	<ExtendedSetting clientId="49" settingName="DisableCreateMSRole" data="true"/>
+	<ExtendedSetting clientId="49" settingName="DEFAULT_HIERARCHY_FILTER_MODE" data="MERCHANTNUMBER"/>
+	<ExtendedSetting clientId="49" settingName="EnableTerminalComboBox" data="true"/>
+	<ExtendedSetting clientId="49" settingName="Has12MonthsChart" data="true"/>
+	<ExtendedSetting clientId="49" settingName="HasQueuingMechanism" data="true"/>
+	<ExtendedSetting clientId="49" settingName="NEXTQUEUE_REPORT" data="true"/>
+	<ExtendedSetting clientId="49" settingName="VIEW_FIRST_BATCH_INFO" data="true"/>
+	<ExtendedSetting clientId="49" settingName="LimitExtractMerchanAlertHistory" data="20"/>
+	<ExtendedSetting clientId="49" settingName="LimitGenerateStatisticsReport" data="20"/>
+	<ExtendedSetting clientId="49" settingName="LimitExtractMerchantReport" data="10"/>
+	<ExtendedSetting clientId="49" settingName="SHOW_PROCESSINGDATA_ENTITYNAME" data="true"/>
+	<ExtendedSetting clientId="49" settingName="FORCE_TURNOFF_MODULE" data="RskEscalation"/>
+
+	<!--DEMO 58 - MPS-->
+	<!--FULTON MCF DEMO-->
+	<ExtendedSetting clientId="58" settingName="PRODUCT_ENVIRONMENT" data="CS_RISK"/>
+	<ExtendedSetting clientId="58" settingName="COMPLIASSURE_USER_SYNCH" data="false"/>
+	<ExtendedSetting clientId="58" settingName="RESET_PASSWORD" data="VisionWeb"/>
+	<ExtendedSetting clientId="58" settingName="LOGIN_SHOW_CONTACT_PHONE" data=""/>
+	<ExtendedSetting clientId="58" settingName="LOGIN_SHOW_CONTACT_MESSAGE" data="CS,MS"/>
+	<ExtendedSetting clientId="58" settingName="LOGIN_SHOW_CONTACT_EMAIL" data="CS,MS"/>
+	<ExtendedSetting clientId="58" settingName="LOGIN_CONTACT_MESSAGE_MS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="58" settingName="LOGIN_CONTACT_MESSAGE_CS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="58" settingName="InvisibleHyperlinkByEntityTypeIDs" data="11"/>
+	<ExtendedSetting clientId="58" settingName="STATE_LABEL_TEXT" data="State, Territory, or Province"/>
+	<ExtendedSetting clientId="58" settingName="HasAlertNotification" data="true"/>
+	<ExtendedSetting clientId="58" settingName="InvisibleMemosGrid" data="true"/>
+	<ExtendedSetting clientId="58" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<ExtendedSetting clientId="58" settingName="NEXTQUEUE_REPORT" data="true"/>
+	<ExtendedSetting clientId="58" settingName="HasQueuingMechanism" data="true"/>
+	<ExtendedSetting clientId="58" settingName="LimitExtractMerchantReport" data="10"/>
+	<ExtendedSetting clientId="58" settingName="LimitExtractMerchanAlertHistory" data="20"/>
+	<ExtendedSetting clientId="58" settingName="LimitGenerateStatisticsReport" data="20"/>
+	<ExtendedSetting clientId="58" settingName="HasMSUserManagement" data="true"/>
+
+	<!--IPMT-->
+	<ExtendedSetting clientId="65" settingName="MerchantProfile_ExcludedColumns" data="SalesAgent,Headquarter,ISO,SALESOFFICE,BANKNUMBER,Status"/>
+	<ExtendedSetting clientId="65" settingName="PRODUCT_ENVIRONMENT" data="CS_RISK"/>
+	<ExtendedSetting clientId="65" settingName="COMPLIASSURE_USER_SYNCH" data="false"/>
+	<ExtendedSetting clientId="65" settingName="STATEMENT_BACK_END_PROCESSOR" data="FDR_NORTH,OMAHA"/>
+	<ExtendedSetting clientId="65" settingName="STATEMENT_DISPLAY_FORMAT" data="{0}{1}"/>
+	<ExtendedSetting clientId="65" settingName="STATEMENT_REPORT_DATE_FORMAT" data="MM/yyyy"/>
+	<ExtendedSetting clientId="65" settingName="RESET_PASSWORD" data="VisionWeb"/>
+	<ExtendedSetting clientId="65" settingName="DISABLE_SYSPRINAGENT_FIELD" data="true"/>
+	<ExtendedSetting clientId="65" settingName="PCI_DEFAULT_HIERARCHY_ID_CS" data="7"/>
+	<ExtendedSetting clientId="65" settingName="PCI_USER_SYNCH" data="true"/>
+	<ExtendedSetting clientId="65" settingName="PCI_ROLE_SYNCH" data="true"/>
+	<ExtendedSetting clientId="65" settingName="LOGIN_SHOW_CONTACT_PHONE" data=""/>
+	<ExtendedSetting clientId="65" settingName="LOGIN_SHOW_CONTACT_MESSAGE" data="CS"/>
+	<ExtendedSetting clientId="65" settingName="LOGIN_SHOW_CONTACT_EMAIL" data="CS"/>
+	<ExtendedSetting clientId="65" settingName="IS_ALERT" data="true"/>
+	<ExtendedSetting clientId="65" settingName="LOGIN_CONTACT_MESSAGE_MS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="65" settingName="LOGIN_CONTACT_MESSAGE_CS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="65" settingName="STATE_LABEL_TEXT" data="State, Territory, or Province"/>
+	<ExtendedSetting clientId="65" settingName="STATE_LABEL_TEXT_PLURAL" data="States, Territories, or Provinces"/>
+	<ExtendedSetting clientId="65" settingName="NEXTQUEUE_REPORT" data="true"/>
+	<ExtendedSetting clientId="65" settingName="HasQueuingMechanism" data="true"/>
+	<ExtendedSetting clientId="65" settingName="LimitExtractMerchantReport" data="10"/>
+	<ExtendedSetting clientId="65" settingName="MultiLanguage" data="false"/>
+	<!--<ExtendedSetting clientId="65" settingName="Show_HR_ACH" data="true"/>-->
+	<ExtendedSetting clientId="65" settingName="EnableTerminalComboBox" data="true"/>
+	<ExtendedSetting clientId="65" settingName="IS_DEPOSIT_HISTORY" data="true"/>
+	<ExtendedSetting clientId="65" settingName="Has12MonthsChart" data="true"/>
+	<ExtendedSetting clientId="65" settingName="ENABLED_SUPPLEMENTAL" data="ACHHoldDays"/>
+	<ExtendedSetting clientId="65" settingName="Show_HR" data="true"/>
+	<ExtendedSetting clientId="65" settingName="Show_ACH" data="true"/>
+	<ExtendedSetting clientId="65" settingName="VIEW_FIRST_BATCH_INFO" data="true"/>
+
+	<!--PIVOT-->
+	<ExtendedSetting clientId="82" settingName="MerchantProfile_ExcludedColumns" data="SalesAgent,Headquarter,ISO,SALESOFFICE,BANKNUMBER,Status"/>
+	<ExtendedSetting clientId="82" settingName="PRODUCT_ENVIRONMENT" data="MS_CS_RISK"/>
+	<ExtendedSetting clientId="82" settingName="COMPLIASSURE_USER_SYNCH" data="false"/>
+	<ExtendedSetting clientId="82" settingName="PCI_DEFAULT_HIERARCHY_ID_CS" data="159"/>
+	<ExtendedSetting clientId="82" settingName="PCI_HIERARCHY_ACCESS" data="false"/>
+	<ExtendedSetting clientId="82" settingName="PCI_USER_SYNCH" data="true"/>
+	<ExtendedSetting clientId="82" settingName="PCI_USER_SYNCH_THEME_NAME" data="PIVOTAL"/>
+	<ExtendedSetting clientId="82" settingName="PCI_ROLE_SYNCH" data="true"/>
+	<ExtendedSetting clientId="82" settingName="STATEMENT_BACK_END_PROCESSOR" data="FDR,MPS,GLOBAL"/>
+	<ExtendedSetting clientId="82" settingName="STATEMENT_DISPLAY_FORMAT" data="{0}{1}"/>
+	<ExtendedSetting clientId="82" settingName="STATEMENT_REPORT_DATE_FORMAT" data="MM/yyyy"/>
+	<ExtendedSetting clientId="82" settingName="RESET_PASSWORD" data="VisionWeb"/>
+	<!--for LOGIN_ configs: data="CS" or "CS,MS" or "MS" or blank: not display-->
+	<ExtendedSetting clientId="82" settingName="LOGIN_SHOW_CONTACT_PHONE" data=""/>
+	<ExtendedSetting clientId="82" settingName="LOGIN_SHOW_CONTACT_MESSAGE" data="CS"/>
+	<ExtendedSetting clientId="82" settingName="LOGIN_SHOW_CONTACT_EMAIL" data="CS"/>
+	<ExtendedSetting clientId="82" settingName="LOGIN_CONTACT_MESSAGE_MS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="82" settingName="LOGIN_CONTACT_MESSAGE_CS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="82" settingName="STATE_LABEL_TEXT" data="State, Territory, or Province"/>
+	<ExtendedSetting clientId="82" settingName="STATE_LABEL_TEXT_PLURAL" data="States, Territories, or Provinces"/>
+	<ExtendedSetting clientId="82" settingName="SHOW_RELATIONSHIP_MANAGER" data="true"/>
+	<ExtendedSetting clientId="82" settingName="InvisibleHyperlinkByEntityTypeIDs" data="11"/>
+	<ExtendedSetting clientId="82" settingName="DefaultReportFilterMode" data="HEADQUARTER,MERCHANTNUMBER"/>
+	<ExtendedSetting clientId="82" settingName="AllowBatchHyperLink" data="true"/>
+	<ExtendedSetting clientId="82" settingName="HasMSUserManagement" data="false"/>
+	<ExtendedSetting clientId="82" settingName="LimitExtractMerchantReport" data="10"/>
+	<ExtendedSetting clientId="82" settingName="DEFAULT_HIERARCHY_FILTER_MODE" data="MERCHANTNUMBER"/>
+	<ExtendedSetting clientId="82" settingName="EnableTerminalComboBox" data="true"/>
+	<ExtendedSetting clientId="82" settingName="EnableACHReturnDetail" data="true"/>
+	<ExtendedSetting clientId="82" settingName="Has12MonthsChart" data="true"/>
+	<ExtendedSetting clientId="82" settingName="NEXTQUEUE_REPORT" data="true"/>
+	<ExtendedSetting clientId="82" settingName="HasQueuingMechanism" data="true"/>
+	<ExtendedSetting clientId="82" settingName="VIEW_FIRST_BATCH_INFO" data="true"/>
+
+	<!--SNET-->
+	<ExtendedSetting clientId="86" settingName="PRODUCT_ENVIRONMENT" data="CS_RISK"/>
+	<ExtendedSetting clientId="86" settingName="PCI_DEFAULT_HIERARCHY_ID_CS" data="148"/>
+	<ExtendedSetting clientId="86" settingName="COMPLIASSURE_USER_SYNCH" data="false"/>
+	<ExtendedSetting clientId="86" settingName="PCI_USER_SYNCH" data="true"/>
+	<ExtendedSetting clientId="86" settingName="PCI_USER_SYNCH_THEME_NAME" data="SNET"/>
+	<ExtendedSetting clientId="86" settingName="PCI_ROLE_SYNCH" data="true"/>
+	<ExtendedSetting clientId="86" settingName="STATEMENT_BACK_END_PROCESSOR" data="FDR,MPS,GLOBAL"/>
+	<ExtendedSetting clientId="86" settingName="STATEMENT_DISPLAY_FORMAT" data="{0}{1}"/>
+	<ExtendedSetting clientId="86" settingName="STATEMENT_REPORT_DATE_FORMAT" data="MM/yyyy"/>
+	<ExtendedSetting clientId="86" settingName="RESET_PASSWORD" data="VisionWeb"/>
+	<!--for LOGIN_ configs: data="CS" or "CS,MS" or "MS" or blank: not display-->
+	<ExtendedSetting clientId="86" settingName="LOGIN_SHOW_CONTACT_PHONE" data=""/>
+	<ExtendedSetting clientId="86" settingName="LOGIN_SHOW_CONTACT_MESSAGE" data="CS"/>
+	<ExtendedSetting clientId="86" settingName="LOGIN_SHOW_CONTACT_EMAIL" data="CS"/>
+	<ExtendedSetting clientId="86" settingName="LOGIN_CONTACT_MESSAGE_MS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="86" settingName="LOGIN_CONTACT_MESSAGE_CS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="86" settingName="STATE_LABEL_TEXT" data="State, Territory, or Province"/>
+	<ExtendedSetting clientId="86" settingName="STATE_LABEL_TEXT_PLURAL" data="States, Territories, or Provinces"/>
+	<ExtendedSetting clientId="86" settingName="InvisibleMemosGrid" data="true"/>
+	<ExtendedSetting clientId="86" settingName="InvisibleHyperlinkByEntityTypeIDs" data="11"/>
+	<ExtendedSetting clientId="86" settingName="DisplayNewContractualRskMgmtGui" data="true"/>
+	<ExtendedSetting clientId="86" settingName="HasQueuingMechanism" data="false"/>
+	<ExtendedSetting clientId="86" settingName="AllowBatchHyperLink" data="true"/>
+	<ExtendedSetting clientId="86" settingName="DEFAULT_HIERARCHY_FILTER_MODE" data="MERCHANTNUMBER"/>
+	<ExtendedSetting clientId="86" settingName="EnableTerminalComboBox" data="true"/>
+	<ExtendedSetting clientId="86" settingName="Has12MonthsChart" data="true"/>
+	<ExtendedSetting clientId="86" settingName="VIEW_FIRST_BATCH_INFO" data="true"/>
+
+	<!--FULTON-->
+	<ExtendedSetting clientId="91" settingName="PRODUCT_ENVIRONMENT" data="MS_CS_RISK"/>
+	<ExtendedSetting clientId="91" settingName="SizeOfUpdateUserModal" data="980,710"/>
+	<ExtendedSetting clientId="91" settingName="COMPLIASSURE_USER_SYNCH" data="true"/>
+	<ExtendedSetting clientId="91" settingName="COMPLIASSURE_ROLE_SYNCH" data="true"/>
+	<ExtendedSetting clientId="91" settingName="PCI_ROLE_SYNCH" data="true"/>
+	<ExtendedSetting clientId="91" settingName="PCI_DEFAULT_HIERARCHY_ID_CS" data="165"/>
+	<ExtendedSetting clientId="91" settingName="PCI_HIERARCHY_USER_ACCESS" data="false"/>
+	<ExtendedSetting clientId="91" settingName="PCI_HIERARCHY_ACCESS" data="true"/>
+	<ExtendedSetting clientId="91" settingName="PCI_DEFAULT_HIERARCHY_ID_HU_SEC" data="164"/>
+	<ExtendedSetting clientId="91" settingName="PCI_USER_SYNCH" data="true"/>
+	<ExtendedSetting clientId="91" settingName="PCI_USER_SYNCH_THEME_NAME" data="FFC"/>
+	<ExtendedSetting clientId="91" settingName="CONTACT_US_HIDE_ADDRESS_3" data="true"/>
+	<ExtendedSetting clientId="91" settingName="STATEMENT_BACK_END_PROCESSOR" data="TSYS"/>
+	<ExtendedSetting clientId="91" settingName="STATEMENT_DISPLAY_FORMAT" data="STMT {1}- {0}"/>
+	<ExtendedSetting clientId="91" settingName="STATEMENT_REPORT_DATE_FORMAT" data="MM/dd/yyyy"/>
+	<ExtendedSetting clientId="91" settingName="RESET_PASSWORD" data="Merchant Intel"/>
+	<!--data="CS" or "CS,MS" or "MS" or blank: not display-->
+	<ExtendedSetting clientId="91" settingName="LOGIN_SHOW_CONTACT_EMAIL" data="CS,MS"/>
+	<ExtendedSetting clientId="91" settingName="LOGIN_CONTACT_MESSAGE_MS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="91" settingName="LOGIN_CONTACT_MESSAGE_CS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="91" settingName="MIF_Profile_HideSessionAddEditChain" data="false"/>
+	<ExtendedSetting clientId="91" settingName="LOGIN_SHOW_COMPANY_NAME" data="CS,MS"/>
+	<ExtendedSetting clientId="91" settingName="LOGIN_SHOW_FAX" data="CS,MS"/>
+	<ExtendedSetting clientId="91" settingName="CLIENT_INFO_HIDE_ADDRESS_MS" data="false"/>
+	<ExtendedSetting clientId="91" settingName="LOGIN_HIDE_CONTACT_INFO" data=""/>
+	<ExtendedSetting clientId="91" settingName="CLIENT_INFO_HIDE_ADDRESS_2" data="true"/>
+	<ExtendedSetting clientId="91" settingName="LOGIN_SHOW_CONTACT_PHONE" data=""/>
+	<ExtendedSetting clientId="91" settingName="LOGIN_SHOW_CONTACT_MESSAGE" data="CS,MS"/>
+	<ExtendedSetting clientId="91" settingName="STATE_LABEL_TEXT" data="State, Territory, or Province"/>
+	<ExtendedSetting clientId="91" settingName="STATE_LABEL_TEXT_PLURAL" data="States, Territories, or Provinces"/>
+	<ExtendedSetting clientId="91" settingName="InvisibleMemosGrid" data="true"/>
+	<ExtendedSetting clientId="91" settingName="InvisibleHyperlinkByEntityTypeIDs" data="11"/>
+	<ExtendedSetting clientId="91" settingName="AllowChainAccessToPCIWithOldestMerchant" data="true"/>
+	<ExtendedSetting clientId="91" settingName="AllowBatchHyperLink" data="true"/>
+	<ExtendedSetting clientId="91" settingName="HasMSUserManagement" data="false"/>
+	<ExtendedSetting clientId="91" settingName="Has12MonthsChart" data="true"/>
+	<ExtendedSetting clientId="91" settingName="DEFAULT_HIERARCHY_FILTER_MODE" data="MERCHANTNUMBER"/>
+	<ExtendedSetting clientId="91" settingName="EnableTerminalComboBox" data="true"/>
+	<ExtendedSetting clientId="91" settingName="VIEW_FIRST_BATCH_INFO" data="true"/>
+	<ExtendedSetting clientId="91" settingName="LimitExtractMerchanAlertHistory" data="20"/>
+	<ExtendedSetting clientId="91" settingName="LimitGenerateStatisticsReport" data="20"/>
+	<ExtendedSetting clientId="91" settingName="LimitExtractMerchantReport" data="10"/>
+	<ExtendedSetting clientId="91" settingName="NEXTQUEUE_REPORT" data="true"/>
+	<ExtendedSetting clientId="91" settingName="HasQueuingMechanism" data="true"/>
+	<ExtendedSetting clientId="91" settingName="ContactUs_EntityDisplayName" data="ltMerchantIDorChain.Text"/>
+
+	<!--NTS-->
+	<ExtendedSetting clientId="95" settingName="PRODUCT_ENVIRONMENT" data="MS_CS_RISK"/>
+	<ExtendedSetting clientId="95" settingName="CONTACT_US_HIDE_ADDRESS_3" data="true"/>
+	<ExtendedSetting clientId="95" settingName="STATEMENT_BACK_END_PROCESSOR" data="TSYS"/>
+	<ExtendedSetting clientId="95" settingName="STATEMENT_DISPLAY_FORMAT" data="STMT {1}- {0}"/>
+	<ExtendedSetting clientId="95" settingName="STATEMENT_REPORT_DATE_FORMAT" data="MM/dd/yyyy"/>
+	<ExtendedSetting clientId="95" settingName="RESET_PASSWORD" data="Merchant Intel"/>
+	<ExtendedSetting clientId="95" settingName="LOGIN_SHOW_CONTACT_EMAIL" data="CS,MS"/>
+	<ExtendedSetting clientId="95" settingName="LOGIN_CONTACT_MESSAGE_MS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="95" settingName="LOGIN_CONTACT_MESSAGE_CS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="95" settingName="MIF_Profile_HideSessionAddEditChain" data="true"/>
+	<ExtendedSetting clientId="95" settingName="LOGIN_SHOW_COMPANY_NAME" data="CS,MS"/>
+	<ExtendedSetting clientId="95" settingName="LOGIN_SHOW_FAX" data="CS,MS"/>
+	<ExtendedSetting clientId="95" settingName="CLIENT_INFO_HIDE_ADDRESS_MS" data="false"/>
+	<ExtendedSetting clientId="95" settingName="LOGIN_HIDE_CONTACT_INFO" data=""/>
+	<ExtendedSetting clientId="95" settingName="CLIENT_INFO_HIDE_ADDRESS_2" data="true"/>
+	<ExtendedSetting clientId="95" settingName="LOGIN_SHOW_CONTACT_PHONE" data=""/>
+	<ExtendedSetting clientId="95" settingName="LOGIN_SHOW_CONTACT_MESSAGE" data="CS,MS"/>
+	<ExtendedSetting clientId="95" settingName="STATE_LABEL_TEXT" data="State, Territory, or Province"/>
+	<ExtendedSetting clientId="95" settingName="STATE_LABEL_TEXT_PLURAL" data="States, Territories, or Provinces"/>
+	<ExtendedSetting clientId="95" settingName="InvisibleHyperlinkByEntityTypeIDs" data="11"/>
+	<ExtendedSetting clientId="95" settingName="AllowBatchHyperLink" data="true"/>
+	<ExtendedSetting clientId="95" settingName="DEFAULT_HIERARCHY_FILTER_MODE" data="MERCHANTNUMBER"/>
+	<ExtendedSetting clientId="95" settingName="EnableTerminalComboBox" data="true"/>
+	<ExtendedSetting clientId="95" settingName="Has12MonthsChart" data="true"/>
+	<ExtendedSetting clientId="95" settingName="VIEW_FIRST_BATCH_INFO" data="true"/>
+	<ExtendedSetting clientId="95" settingName="LimitExtractMerchanAlertHistory" data="20"/>
+	<ExtendedSetting clientId="95" settingName="LimitGenerateStatisticsReport" data="20"/>
+	<ExtendedSetting clientId="95" settingName="LimitExtractMerchantReport" data="10"/>
+	<ExtendedSetting clientId="95" settingName="NEXTQUEUE_REPORT" data="true"/>
+	<ExtendedSetting clientId="95" settingName="HasQueuingMechanism" data="true"/>
+
+	<!--WRFC-->
+	<ExtendedSetting clientId="97" settingName="PRODUCT_ENVIRONMENT" data="MS_CS"/>
+	<ExtendedSetting clientId="97" settingName="SizeOfUpdateUserModal" data="980,710"/>
+	<ExtendedSetting clientId="97" settingName="PCI_HIERARCHY_USER_ACCESS" data="false"/>
+	<ExtendedSetting clientId="97" settingName="PCI_HIERARCHY_ACCESS" data="false"/>
+	<ExtendedSetting clientId="97" settingName="PCI_USER_SYNCH" data="false"/>
+	<ExtendedSetting clientId="97" settingName="CLIENT_INFO_HIDE_ADDRESS_2" data="true"/>
+	<ExtendedSetting clientId="97" settingName="CONTACT_US_HIDE_ADDRESS_3" data="true"/>
+	<ExtendedSetting clientId="97" settingName="STATEMENT_BACK_END_PROCESSOR" data="TSYS"/>
+	<ExtendedSetting clientId="97" settingName="STATEMENT_DISPLAY_FORMAT" data="STMT {1}- {0}"/>
+	<ExtendedSetting clientId="97" settingName="STATEMENT_REPORT_DATE_FORMAT" data="MM/dd/yyyy"/>
+	<ExtendedSetting clientId="97" settingName="RESET_PASSWORD" data="WindLinks"/>
+	<ExtendedSetting clientId="97" settingName="LOGIN_SHOW_CONTACT_PHONE" data=""/>
+	<ExtendedSetting clientId="97" settingName="LOGIN_SHOW_CONTACT_MESSAGE" data="CS,MS"/>
+	<ExtendedSetting clientId="97" settingName="LOGIN_CONTACT_MESSAGE_MS" data="If you are having difficulties accessing this site, please call 800.704.7253 or email info@windriverpayments.com."/>
+	<ExtendedSetting clientId="97" settingName="LOGIN_CONTACT_MESSAGE_CS" data="If you are having difficulties accessing this site, please call 800.704.7253 or email info@windriverpayments.com."/>
+	<ExtendedSetting clientId="97" settingName="STATE_LABEL_TEXT" data="State, Territory, or Province"/>
+	<ExtendedSetting clientId="97" settingName="STATE_LABEL_TEXT_PLURAL" data="States, Territories, or Provinces"/>
+	<ExtendedSetting clientId="97" settingName="InvisibleMemosGrid" data="true"/>
+	<ExtendedSetting clientId="97" settingName="InvisibleHyperlinkByEntityTypeIDs" data="11"/>
+	<ExtendedSetting clientId="97" settingName="CREATE_MS_CHAIN_USER_WHEN_ADDING_NEW_CHAIN" data="true"/>
+	<ExtendedSetting clientId="97" settingName="IS_DEPOSIT_HISTORY" data="true"/>
+	<ExtendedSetting clientId="97" settingName="REPORT_RETURN_TITLE" data="Credit Refunds"/>
+	<ExtendedSetting clientId="97" settingName="SET_ORDER_CARD_TYPE" data="VI,MC,AX,DI"/>
+	<!--Turn ON/OFF Voided/Rejected and/or Trans Qualification grids on Batch History report-->
+	<ExtendedSetting clientId="97" settingName="HIDE_TRANSQUAL_BATCHHISTORY" data="true"/>
+	<ExtendedSetting clientId="97" settingName="HIDE_VOIREJECTTRANS_BATCHHISTORY" data="true"/>
+	<ExtendedSetting clientId="97" settingName="METRICS_DEBIT_TEXT" data="PIN DEBIT"/>
+	<ExtendedSetting clientId="97" settingName="CONTACT_US_MESSAGE" data="Use the form below to submit general questions about Research, Statements, or User Maintenance. For other detailed or urgent questions about your account or services &lt;br/&gt; please call or email your Relationship Manager directly."/>
+	<ExtendedSetting clientId="97" settingName="HIDE_COLUMNS_BATCH_HISTORY_MS" data="FileSource"/>
+	<ExtendedSetting clientId="97" settingName="HIDE_COLUMNS_BATCH_DETAIL_MS" data="FileSource,TransactionTime,ExpirationDate"/>
+	<ExtendedSetting clientId="97" settingName="HIDE_COLUMNS_TRANS_SEARCH_MS" data="FileSource,TransactionTime,ExpirationDate"/>
+	<ExtendedSetting clientId="97" settingName="HIDE_COLUMNS_CARD_MODAL_CARD_HISTORY" data="TransTime"/>
+	<ExtendedSetting clientId="97" settingName="EnableTerminalComboBox" data="true"/>
+	<ExtendedSetting clientId="97" settingName="AllowBatchHyperLink" data="true"/>
+	<ExtendedSetting clientId="97" settingName="HasMSUserManagement" data="false"/>
+	<ExtendedSetting clientId="97" settingName="COMPLIASSURE_USER_SYNCH" data="true"/>
+	<ExtendedSetting clientId="97" settingName="COMPLIASSURE_ROLE_SYNCH" data="true"/>
+	<ExtendedSetting clientId="97" settingName="COMPLIASSURE_SYNCH_CUSTOM" data="true"/>
+	<ExtendedSetting clientId="97" settingName="SHOW_1099K_GROUP" data="true"/>
+	<ExtendedSetting clientId="97" settingName="DEFAULT_HIERARCHY_FILTER_MODE" data="MERCHANTNUMBER"/>
+	<ExtendedSetting clientId="97" settingName="Has12MonthsChart" data="true"/>
+	<ExtendedSetting clientId="97" settingName="VIEW_FIRST_BATCH_INFO" data="true"/>
+
+	<!--SignaPay-->
+	<ExtendedSetting clientId="113" settingName="PRODUCT_ENVIRONMENT" data="CS_RISK"/>
+	<ExtendedSetting clientId="113" settingName="RESET_PASSWORD" data="VisionWeb"/>
+	<ExtendedSetting clientId="113" settingName="DISABLE_SYSPRINAGENT_FIELD" data="true"/>
+	<ExtendedSetting clientId="113" settingName="LOGIN_SHOW_CONTACT_PHONE" data=""/>
+	<ExtendedSetting clientId="113" settingName="LOGIN_SHOW_CONTACT_MESSAGE" data="CS"/>
+	<ExtendedSetting clientId="113" settingName="LOGIN_SHOW_CONTACT_EMAIL" data="CS"/>
+	<ExtendedSetting clientId="113" settingName="IS_ALERT" data="true"/>
+	<ExtendedSetting clientId="113" settingName="LOGIN_CONTACT_MESSAGE_MS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="113" settingName="LOGIN_CONTACT_MESSAGE_CS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="113" settingName="STATE_LABEL_TEXT" data="State, Territory, or Province"/>
+	<ExtendedSetting clientId="113" settingName="STATE_LABEL_TEXT_PLURAL" data="States, Territories, or Provinces"/>
+	<ExtendedSetting clientId="113" settingName="LimitExtractMerchantReport" data="10"/>
+	<ExtendedSetting clientId="113" settingName="MultiLanguage" data="true"/>
+	<ExtendedSetting clientId="113" settingName="Show_HR_ACH" data="true"/>
+	<ExtendedSetting clientId="113" settingName="CLIENT_INFO_HIDE_ADDRESS_CS" data="true"/>
+	<ExtendedSetting clientId="113" settingName="InvisibleMemosGrid" data="false"/>
+	<ExtendedSetting clientId="113" settingName="VisibleFilterCorpName" data="true"/>
+	<ExtendedSetting clientId="113" settingName="HasAlertNotification" data="true"/>
+	<ExtendedSetting clientId="113" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<ExtendedSetting clientId="113" settingName="HasQueuingMechanism" data="true"/>
+	<ExtendedSetting clientId="113" settingName="EnableTerminalComboBox" data="true"/>
+	<ExtendedSetting clientId="113" settingName="VIEW_FIRST_BATCH_INFO" data="true"/>
+	<ExtendedSetting clientId="113" settingName="Show_Partial_TaxID_Export" data="true"/>
+	<ExtendedSetting clientId="113" settingName="NEXTQUEUE_REPORT" data="true"/>
+	<ExtendedSetting clientId="113" settingName="ALERT_DEFAULT" data="false"/>
+	<ExtendedSetting clientId="113" settingName="STATEMENT_BACK_END_PROCESSOR" data="TSYS"/>
+	<ExtendedSetting clientId="113" settingName="STATEMENT_DISPLAY_FORMAT" data="STMT {1}- {0}"/>
+	<ExtendedSetting clientId="113" settingName="STATEMENT_REPORT_DATE_FORMAT" data="MM/yyyy"/>
+	<ExtendedSetting clientId="113" settingName="HIDE_VOIREJECTTRANS_BATCHHISTORY" data="true"/>
+	<ExtendedSetting clientId="113" settingName="LimitExtractMerchanAlertHistory" data="20"/>
+	<ExtendedSetting clientId="113" settingName="LimitGenerateStatisticsReport" data="20"/>
+
+	<!--CLEARENT-->
+	<ExtendedSetting clientId="115" settingName="PRODUCT_ENVIRONMENT" data="CS_RISK"/>
+	<ExtendedSetting clientId="115" settingName="COMPLIASSURE_USER_SYNCH" data="false"/>
+	<ExtendedSetting clientId="115" settingName="RESET_PASSWORD" data="VisionWeb"/>
+	<ExtendedSetting clientId="115" settingName="DISABLE_SYSPRINAGENT_FIELD" data="true"/>
+	<ExtendedSetting clientId="115" settingName="LOGIN_SHOW_CONTACT_PHONE" data=""/>
+	<ExtendedSetting clientId="115" settingName="LOGIN_SHOW_CONTACT_MESSAGE" data="CS"/>
+	<ExtendedSetting clientId="115" settingName="LOGIN_SHOW_CONTACT_EMAIL" data="CS"/>
+	<ExtendedSetting clientId="115" settingName="IS_ALERT" data="true"/>
+	<ExtendedSetting clientId="115" settingName="LOGIN_CONTACT_MESSAGE_MS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="115" settingName="LOGIN_CONTACT_MESSAGE_CS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="115" settingName="STATE_LABEL_TEXT" data="State, Territory, or Province"/>
+	<ExtendedSetting clientId="115" settingName="STATE_LABEL_TEXT_PLURAL" data="States, Territories, or Provinces"/>
+	<ExtendedSetting clientId="115" settingName="LimitExtractMerchantReport" data="10"/>
+	<ExtendedSetting clientId="115" settingName="MultiLanguage" data="true"/>
+	<ExtendedSetting clientId="115" settingName="Show_HR_ACH" data="true"/>
+	<ExtendedSetting clientId="115" settingName="CLIENT_INFO_HIDE_ADDRESS_CS" data="true"/>
+	<ExtendedSetting clientId="115" settingName="InvisibleMemosGrid" data="false"/>
+	<ExtendedSetting clientId="115" settingName="VisibleFilterCorpName" data="true"/>
+	<ExtendedSetting clientId="115" settingName="HasAlertNotification" data="true"/>
+	<ExtendedSetting clientId="115" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<ExtendedSetting clientId="115" settingName="HasQueuingMechanism" data="true"/>
+	<ExtendedSetting clientId="115" settingName="EnableTerminalComboBox" data="true"/>
+	<ExtendedSetting clientId="115" settingName="NEXTQUEUE_REPORT" data="true"/>
+	<!--Turn ON/OFF Voided/Rejected and/or Trans Qualification grids on Batch History report-->
+	<ExtendedSetting clientId="115" settingName="HIDE_TRANSQUAL_BATCHHISTORY" data="true"/>
+	<ExtendedSetting clientId="115" settingName="HIDE_VOIREJECTTRANS_BATCHHISTORY" data="true"/>
+	<ExtendedSetting clientId="115" settingName="ALERT_DEFAULT" data="false"/>
+	<ExtendedSetting clientId="115" settingName="VIEW_FIRST_BATCH_INFO" data="true"/>
+	<ExtendedSetting clientId="115" settingName="Assignment_Filter_Extend" data="GverifyCode,GauthenticateCode,G2Compass,ActualDeliveryDays,DaystoFund,FICOScore,FutureDeliveryIndicator,FutureDeliveryDayMaximum,SeasonalIndicator,SeasonalActiveMonths"/>
+	<ExtendedSetting clientId="115" settingName="RiskReport_Extend" data="GverifyCode,GauthenticateCode,G2Compass,ActualDeliveryDays,DaystoFund,FICOScore,FutureDeliveryIndicator,FutureDeliveryDayMaximum,SeasonalIndicator,SeasonalActiveMonths"/>
+
+	<!--Softek-->
+	<ExtendedSetting clientId="122" settingName="MerchantProfile_ExcludedColumns" data="SalesAgent,Headquarter,ISO,SALESOFFICE,BANKNUMBER"/>
+	<ExtendedSetting clientId="122" settingName="PRODUCT_ENVIRONMENT" data="MS_CS_RISK"/>
+	<ExtendedSetting clientId="122" settingName="COMPLIASSURE_USER_SYNCH" data="false"/>
+	<ExtendedSetting clientId="122" settingName="STATEMENT_BACK_END_PROCESSOR" data="GLOBAL"/>
+	<ExtendedSetting clientId="122" settingName="STATEMENT_DISPLAY_FORMAT" data="STMT {1}- {0}"/>
+	<ExtendedSetting clientId="122" settingName="STATEMENT_REPORT_DATE_FORMAT" data="MM/dd/yyyy"/>
+	<ExtendedSetting clientId="122" settingName="RESET_PASSWORD" data="VisionWeb"/>
+	<ExtendedSetting clientId="122" settingName="DISABLE_SYSPRINAGENT_FIELD" data="true"/>
+	<ExtendedSetting clientId="122" settingName="PCI_DEFAULT_HIERARCHY_ID_CS" data="7"/>
+	<ExtendedSetting clientId="122" settingName="PCI_USER_SYNCH" data="true"/>
+	<ExtendedSetting clientId="122" settingName="PCI_ROLE_SYNCH" data="true"/>
+	<ExtendedSetting clientId="122" settingName="LOGIN_SHOW_CONTACT_PHONE" data=""/>
+	<ExtendedSetting clientId="122" settingName="LOGIN_SHOW_CONTACT_MESSAGE" data="CS,MS"/>
+	<ExtendedSetting clientId="122" settingName="LOGIN_SHOW_CONTACT_EMAIL" data="CS,MS"/>
+	<ExtendedSetting clientId="122" settingName="IS_ALERT" data="true"/>
+	<ExtendedSetting clientId="122" settingName="LOGIN_CONTACT_MESSAGE_MS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="122" settingName="LOGIN_CONTACT_MESSAGE_CS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="122" settingName="STATE_LABEL_TEXT" data="State, Territory, or Province"/>
+	<ExtendedSetting clientId="122" settingName="STATE_LABEL_TEXT_PLURAL" data="States, Territories, or Provinces"/>
+	<ExtendedSetting clientId="122" settingName="NEXTQUEUE_REPORT" data="true"/>
+	<ExtendedSetting clientId="122" settingName="HasQueuingMechanism" data="true"/>
+	<ExtendedSetting clientId="122" settingName="LimitExtractMerchantReport" data="10"/>
+	<ExtendedSetting clientId="122" settingName="MultiLanguage" data="true"/>
+	<!--<ExtendedSetting clientId="122" settingName="Show_HR_ACH" data="true"/>-->
+	<ExtendedSetting clientId="122" settingName="CLIENT_INFO_HIDE_ADDRESS_CS" data="true"/>
+	<ExtendedSetting clientId="122" settingName="InvisibleMemosGrid" data="true"/>
+	<ExtendedSetting clientId="122" settingName="VisibleFilterCorpName" data="true"/>
+	<ExtendedSetting clientId="122" settingName="EnableStatementAPI" data="false"/>
+	<ExtendedSetting clientId="122" settingName="AllowChainAccessToPCIWithOldestMerchant" data="true"/>
+	<ExtendedSetting clientId="122" settingName="InvisibleHyperlinkByEntityTypeIDs" data="11"/>
+	<ExtendedSetting clientId="122" settingName="ThemeForStatement" data="SOFTEK_STMT"/>
+	<ExtendedSetting clientId="122" settingName="DisableSecondaryUserInCreateMSRole" data="true"/>
+	<ExtendedSetting clientId="122" settingName="Has12MonthsChart" data="true"/>
+	<ExtendedSetting clientId="122" settingName="EnableTerminalComboBox" data="true"/>
+	<ExtendedSetting clientId="122" settingName="VIEW_FIRST_BATCH_INFO" data="true"/>
+
+	<!--CAYAN-->
+	<ExtendedSetting clientId="126" settingName="MerchantProfile_ExcludedColumns" data="SalesAgent,Headquarter,ISO,SALESOFFICE,BANKNUMBER,Status"/>
+	<ExtendedSetting clientId="126" settingName="PRODUCT_ENVIRONMENT" data="MS_CS_RISK"/>
+	<ExtendedSetting clientId="126" settingName="COMPLIASSURE_USER_SYNCH" data="false"/>
+	<ExtendedSetting clientId="126" settingName="STATEMENT_BACK_END_PROCESSOR" data="FDR_NORTH,OMAHA,TSYS"/>
+	<ExtendedSetting clientId="126" settingName="STATEMENT_DISPLAY_FORMAT" data="{0}{1}"/>
+	<ExtendedSetting clientId="126" settingName="STATEMENT_REPORT_DATE_FORMAT" data="MM/yyyy"/>
+	<ExtendedSetting clientId="126" settingName="RESET_PASSWORD" data="VisionWeb"/>
+	<ExtendedSetting clientId="126" settingName="DISABLE_SYSPRINAGENT_FIELD" data="true"/>
+	<ExtendedSetting clientId="126" settingName="PCI_DEFAULT_HIERARCHY_ID_CS" data="1261"/>
+	<ExtendedSetting clientId="126" settingName="PCI_USER_SYNCH" data="true"/>
+	<ExtendedSetting clientId="126" settingName="PCI_ROLE_SYNCH" data="true"/>
+	<ExtendedSetting clientId="126" settingName="LOGIN_SHOW_CONTACT_PHONE" data=""/>
+	<ExtendedSetting clientId="126" settingName="LOGIN_SHOW_CONTACT_MESSAGE" data="CS"/>
+	<ExtendedSetting clientId="126" settingName="IS_ALERT" data="true"/>
+	<ExtendedSetting clientId="126" settingName="LOGIN_CONTACT_MESSAGE_MS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="126" settingName="LOGIN_CONTACT_MESSAGE_CS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="126" settingName="STATE_LABEL_TEXT" data="State, Territory, or Province"/>
+	<ExtendedSetting clientId="126" settingName="STATE_LABEL_TEXT_PLURAL" data="States, Territories, or Provinces"/>
+	<ExtendedSetting clientId="126" settingName="HasMSUserManagement" data="false"/>
+	<ExtendedSetting clientId="126" settingName="LimitExtractMerchantReport" data="10"/>
+	<!--<ExtendedSetting clientId="126" settingName="Show_HR_ACH" data="true"/>-->
+	<ExtendedSetting clientId="126" settingName="MultiLanguage" data="false"/>
+	<ExtendedSetting clientId="126" settingName="DisableCreateMSRole" data="true"/>
+	<ExtendedSetting clientId="126" settingName="CLIENT_INFO_HIDE_ADDRESS_CS" data="true"/>
+	<ExtendedSetting clientId="126" settingName="DEFAULT_HIERARCHY_FILTER_MODE" data="MERCHANTNUMBER"/>
+	<ExtendedSetting clientId="126" settingName="InvisibleMemosGrid" data="true"/>
+	<ExtendedSetting clientId="126" settingName="HasQueuingMechanism" data="true"/>
+	<ExtendedSetting clientId="126" settingName="AllowChainAccessToPCIWithOldestMerchant" data="true"/>
+	<ExtendedSetting clientId="126" settingName="InvisibleHyperlinkByEntityTypeIDs" data="11"/>
+	<ExtendedSetting clientId="126" settingName="VisibleFilterCorpName" data="true"/>
+	<ExtendedSetting clientId="126" settingName="EnableStatementAPI" data="true"/>
+	<ExtendedSetting clientId="126" settingName="EnableTerminalComboBox" data="true"/>
+	<ExtendedSetting clientId="126" settingName="Has12MonthsChart" data="true"/>
+	<ExtendedSetting clientId="126" settingName="NEXTQUEUE_REPORT" data="true"/>
+	<ExtendedSetting clientId="126" settingName="Show_ACH" data="true"/>
+	<ExtendedSetting clientId="126" settingName="HasAlertNotification" data="true"/>
+	<ExtendedSetting clientId="126" settingName="VIEW_FIRST_BATCH_INFO" data="true"/>
+	<ExtendedSetting clientId="126" settingName="EnableChainStatement" data="true"/>
+	<ExtendedSetting clientId="126" settingName="ExtendStatement" data="CHAIN_CHN"/>
+	<ExtendedSetting clientId="126" settingName="CARD_HISTORY_ALWAYS_PASS_FULL_CARD" data="true"/>
+	<ExtendedSetting clientId="126" settingName="LimitExtractMerchanAlertHistory" data="20"/>
+	<ExtendedSetting clientId="126" settingName="LimitGenerateStatisticsReport" data="20"/>
+	<ExtendedSetting clientId="126" settingName="SSO_Redirecting_To_URL" data="https://accounts.globalpaymentsintegrated.com/"/>
+
+	<!--SPHERE-->
+	<ExtendedSetting clientId="144" settingName="MerchantProfile_ExcludedColumns" data="SalesAgent,Headquarter,ISO,SALESOFFICE,BANKNUMBER,Status"/>
+	<ExtendedSetting clientId="144" settingName="PRODUCT_ENVIRONMENT" data="CS_RISK"/>
+	<ExtendedSetting clientId="144" settingName="COMPLIASSURE_USER_SYNCH" data="true"/>
+	<ExtendedSetting clientId="144" settingName="COMPLIASSURE_ROLE_SYNCH" data="true"/>
+	<ExtendedSetting clientId="144" settingName="PCI_DEFAULT_HIERARCHY_ID_CS" data="14401"/>
+	<ExtendedSetting clientId="144" settingName="PCI_HIERARCHY_USER_ACCESS" data="true"/>
+	<ExtendedSetting clientId="144" settingName="PCI_HIERARCHY_ACCESS" data="true"/>
+	<ExtendedSetting clientId="144" settingName="PCI_DEFAULT_HIERARCHY_ID_HU_SEC" data="25"/>
+	<ExtendedSetting clientId="144" settingName="PCI_USER_SYNCH" data="true"/>
+	<ExtendedSetting clientId="144" settingName="PCI_USER_SYNCH_THEME_NAME" data="SPHERE"/>
+	<ExtendedSetting clientId="144" settingName="STATEMENT_BACK_END_PROCESSOR" data="TSYS"/>
+	<ExtendedSetting clientId="144" settingName="STATEMENT_DISPLAY_FORMAT" data="{0}{1}"/>
+	<ExtendedSetting clientId="144" settingName="STATEMENT_REPORT_DATE_FORMAT" data="MM/dd/yyyy"/>
+	<ExtendedSetting clientId="144" settingName="RESET_PASSWORD" data="SphereTransact"/>
+	<!--for LOGIN_ configs: data="CS" or "CS,MS" or "MS" or blank: not display-->
+	<ExtendedSetting clientId="144" settingName="CLIENT_INFO_HIDE_ADDRESS_1" data="true"/>
+	<ExtendedSetting clientId="144" settingName="CLIENT_INFO_HIDE_ADDRESS_2" data="true"/>
+	<ExtendedSetting clientId="144" settingName="CLIENT_INFO_HIDE_ADDRESS_3" data="true"/>
+	<ExtendedSetting clientId="144" settingName="LOGIN_SHOW_CONTACT_PHONE" data="CS,MS"/>
+	<ExtendedSetting clientId="144" settingName="LOGIN_HIDE_CONTACT_PHONE_FINANCIAL" data="true" />
+	<ExtendedSetting clientId="144" settingName="LOGIN_SHOW_CONTACT_MESSAGE" data="CS,MS"/>
+	<ExtendedSetting clientId="144" settingName="LOGIN_SHOW_CONTACT_EMAIL" data="CS,MS"/>
+	<ExtendedSetting clientId="144" settingName="LOGIN_SHOW_CONTACT_MESSAGE_NOTE_HEADER" data="MS"/>
+	<ExtendedSetting clientId="144" settingName="LOGIN_CONTACT_MESSAGE_NOTE_HEADER" data=" Starting June 15, access reports only at reporting.manageyourpayments.com. Please update bookmarks."/>
+	<ExtendedSetting clientId="144" settingName="LOGIN_CONTACT_MESSAGE_MS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="144" settingName="LOGIN_CONTACT_MESSAGE_CS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="144" settingName="LOGIN_CONTACT_MESSAGE_NOTE" data=""/>
+	<ExtendedSetting clientId="144" settingName="STATE_LABEL_TEXT" data="State, Territory, or Province"/>
+	<ExtendedSetting clientId="144" settingName="STATE_LABEL_TEXT_PLURAL" data="States, Territories, or Provinces"/>
+	<ExtendedSetting clientId="144" settingName="NEXTQUEUE_REPORT" data="true"/>
+	<ExtendedSetting clientId="144" settingName="InvisibleHyperlinkByEntityTypeIDs" data="11"/>
+	<ExtendedSetting clientId="144" settingName="HasQueuingMechanism" data="true"/>
+	<ExtendedSetting clientId="144" settingName="DisableChangeMSRoleByEntities" data="13"/>
+	<ExtendedSetting clientId="144" settingName="HasMSUserManagement" data="false"/>
+	<ExtendedSetting clientId="144" settingName="IS_CHANGE_USERNAME_MS_SITE" data="true"/>
+	<ExtendedSetting clientId="144" settingName="ENABLED_TSYS_CONVERSION" data="true"/>
+	<ExtendedSetting clientId="144" settingName="EnableACHReturnDetail" data="true"/>
+	<ExtendedSetting clientId="144" settingName="EnableAuthWorkedCheckBox" data="true"/>
+	<ExtendedSetting clientId="144" settingName="ENABLED_SUPPLEMENTAL" data="CreaditCore,ECommerce,Keyed,Swiped,LeadSource,ReferralSource"/>
+	<ExtendedSetting clientId="144" settingName="Show_HR" data="true"/>
+	<ExtendedSetting clientId="144" settingName="VIEW_FIRST_BATCH_INFO" data="true"/>
+	<ExtendedSetting clientId="144" settingName="ADD_GEOGRAPHIC_DATA" data="CS,AS"/>
+	<ExtendedSetting clientId="144" settingName="LimitExtractMerchanAlertHistory" data="20"/>
+	<ExtendedSetting clientId="144" settingName="LimitGenerateStatisticsReport" data="20"/>
+	<ExtendedSetting clientId="144" settingName="DISABLE_MIF_PROFILE_EDIT_MAINTENANCE" data="false"/>
+	<ExtendedSetting clientId="144" settingName="HIDE_ASSIGNMENT_FILTERS_DEMOGRAPHIC_PROFILE" data="false"/>
+	<ExtendedSetting clientId="144" settingName="HIDE_ASSIGNMENT_FILTERS_HIGHRISK_HRCODE" data="true"/>
+	<ExtendedSetting clientId="144" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<ExtendedSetting clientId="144" settingName="MultiLanguage" data="true"/>
+	<ExtendedSetting clientId="144" settingName="HasAlertNotification" data="true"/>
+	<!--data="CS" or "CS,MS" or "MS" or blank: not display-->
+	<ExtendedSetting clientId="144" settingName="SHOW_PROCESSINGDATA_ENTITYNAME" data="true"/>
+	<ExtendedSetting clientId="144" settingName="HIDE_VOIREJECTTRANS_BATCHHISTORY" data="true"/>
+	<ExtendedSetting clientId="144" settingName="DEFAULT_HIERARCHY_FILTER_MODE" data="BANK,MERCHANTNUMBER"/>
+	<ExtendedSetting clientId="144" settingName="EnableTerminalComboBox" data="true"/>
+	<ExtendedSetting clientId="144" settingName="AllowChainAccessToPCIWithOldestMerchant" data="true"/>
+	<ExtendedSetting clientId="144" settingName="IS_DEPOSIT_HISTORY" data="true"/>
+	<!--Turn ON/OFF Voided/Rejected and/or Trans Qualification grids on Batch History report-->
+	<ExtendedSetting clientId="144" settingName="HIDE_TRANSQUAL_BATCHHISTORY" data="false"/>
+	<ExtendedSetting clientId="144" settingName="SHOW_USER_ID_ON_MIF" data="CS"/>
+	<ExtendedSetting clientId="144" settingName="IS_ALERT" data="true"/>
+	<ExtendedSetting clientId="144" settingName="CLIENT_SMTP_SETTING" data="{'Server':'192.168.160.35','Port':25,'EnableSSL':false}" />
+	<ExtendedSetting clientId="144" settingName="LimitExtractMerchantReport" data="10"/>
+  <ExtendedSetting clientId="144" settingName="PCI_Site_Jump_MappingPrimaryUser" data="true"/>
+  <ExtendedSetting clientId="144" settingName="EntityType_MappingPrimaryUser" data="4, 6"/>
+
+	<!--TIB Demo-->
+	<ExtendedSetting clientId="998" settingName="DEFAULT_HIERARCHY_FILTER_MODE" data="MERCHANTNUMBER"/>
+	<ExtendedSetting clientId="998" settingName="EnableTerminalComboBox" data="true"/>
+	<ExtendedSetting clientId="998" settingName="HasMSUserManagement" data="true"/>
+	<ExtendedSetting clientId="998" settingName="DisableCreateMSRole" data="false"/>
+	<ExtendedSetting clientId="998" settingName="DisableStepCreateMSRole" data="true"/>
+	<ExtendedSetting clientId="998" settingName="PasswordRuleLabel" data="The password must be minimum of 8 and maximum of 50 characters, contains at least 1 number, at least 1 upper case and at least 1 lower case." reskey="ClientExtendedSettings_xml_PasswordRule"/>
+	<ExtendedSetting clientId="998" settingName="SEC_PERMISSION_DELETE_MS_ROLE" data="true"/>
+	<ExtendedSetting clientId="998" settingName="IS_CHANGE_USERNAME_MS_SITE" data="true"/>
+	<ExtendedSetting clientId="998" settingName="ENABLE_MS_THIS_NEW_ROLE_OPTION" data="true"/>
+	<ExtendedSetting clientId="998" settingName="IS_ALERT" data="true"/>
+	<ExtendedSetting clientId="998" settingName="BRANDING_EMAIL_ALERT_UPDATE_CS_MS_USER" data="Lead"/>
+	<ExtendedSetting clientId="998" settingName="SHOW_LOGO_DESCRIPTION" data="MS"/>
+	<ExtendedSetting clientId="998" settingName="VIEW_FIRST_BATCH_INFO" data="true"/>
+	<!--END TIB-->
+
+	<!--FIS Demo-->
+	<ExtendedSetting clientId="1000" settingName="PRODUCT_ENVIRONMENT" data="MS_CS_RISK"/>
+	<ExtendedSetting clientId="1000" settingName="COMPLIASSURE_USER_SYNCH" data="true"/>
+	<ExtendedSetting clientId="1000" settingName="COMPLIASSURE_ROLE_SYNCH" data="true"/>
+	<ExtendedSetting clientId="1000" settingName="PCI_DEFAULT_HIERARCHY_ID_CS" data="152"/>
+	<ExtendedSetting clientId="1000" settingName="PCI_HIERARCHY_USER_ACCESS" data="true"/>
+	<ExtendedSetting clientId="1000" settingName="PCI_HIERARCHY_ACCESS" data="true"/>
+	<ExtendedSetting clientId="1000" settingName="PCI_DEFAULT_HIERARCHY_ID_HU_SEC" data="25"/>
+	<ExtendedSetting clientId="1000" settingName="PCI_USER_SYNCH" data="true"/>
+	<ExtendedSetting clientId="1000" settingName="PCI_USER_SYNCH_THEME_NAME" data="FIS_DEMO"/>
+	<ExtendedSetting clientId="1000" settingName="PCI_ROLE_SYNCH" data="true"/>
+	<ExtendedSetting clientId="1000" settingName="CLIENT_INFO_HIDE_ADDRESS_2" data="true"/>
+	<ExtendedSetting clientId="1000" settingName="CONTACT_US_HIDE_ADDRESS_3" data="true"/>
+	<ExtendedSetting clientId="1000" settingName="STATEMENT_BACK_END_PROCESSOR" data="TSYS,MPS"/>
+	<ExtendedSetting clientId="1000" settingName="STATEMENT_DISPLAY_FORMAT" data="STMT {1}- {0}"/>
+	<ExtendedSetting clientId="1000" settingName="STATEMENT_REPORT_DATE_FORMAT" data="MM/dd/yyyy"/>
+	<ExtendedSetting clientId="1000" settingName="RESET_PASSWORD" data="Merchant Intel"/>
+	<ExtendedSetting clientId="1000" settingName="CLIENT_INFO_HIDE_ADDRESS_MS" data="true"/>
+	<!--for LOGIN_ configs: data="CS" or "CS,MS" or "MS" or blank: not display-->
+	<ExtendedSetting clientId="1000" settingName="LOGIN_HIDE_CONTACT_INFO" data="MS"/>
+	<ExtendedSetting clientId="1000" settingName="LOGIN_SHOW_CONTACT_PHONE" data=""/>
+	<ExtendedSetting clientId="1000" settingName="LOGIN_SHOW_CONTACT_MESSAGE" data="CS,MS"/>
+	<ExtendedSetting clientId="1000" settingName="LOGIN_SHOW_CONTACT_EMAIL" data="CS"/>
+	<ExtendedSetting clientId="1000" settingName="LOGIN_CONTACT_MESSAGE_MS" data="&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;If you are having difficulties accessing this site, please contact your Merchant Services Representative."/>
+	<ExtendedSetting clientId="1000" settingName="LOGIN_CONTACT_MESSAGE_CS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<!--Turn ON/OFF Voided/Rejected and/or Trans Qualification grids on Batch History report-->
+	<ExtendedSetting clientId="1000" settingName="HIDE_TRANSQUAL_BATCHHISTORY" data="true"/>
+	<ExtendedSetting clientId="1000" settingName="HIDE_VOIREJECTTRANS_BATCHHISTORY" data="true"/>
+	<ExtendedSetting clientId="1000" settingName="FILTERING_OPTIONS_DATERANGE" data="true"/>
+	<ExtendedSetting clientId="1000" settingName="WEBSITE_TITLE_MS" data="Merchant Intelligence Center"/>
+	<ExtendedSetting clientId="1000" settingName="WEBSITE_TITLE_CS" data="Fidelity Information Services"/>
+	<ExtendedSetting clientId="1000" settingName="AllowChainAccessToPCIWithOldestMerchant" data="true"/>
+	<ExtendedSetting clientId="1000" settingName="IS_DEPOSIT_HISTORY" data="true"/>
+	<ExtendedSetting clientId="1000" settingName="PasswordRuleLabel" data="The password must be minimum of 8 and maximum of 50 characters, contains at least 1 number, at least 1 upper case and at least 1 lower case."/>
+	<ExtendedSetting clientId="1000" settingName="STATE_LABEL_TEXT" data="State, Territory, or Province"/>
+	<ExtendedSetting clientId="1000" settingName="STATE_LABEL_TEXT_PLURAL" data="States, Territories, or Provinces"/>
+	<ExtendedSetting clientId="1000" settingName="REMOVE_COLUMN_RTCB" data="true"/>
+	<ExtendedSetting clientId="1000" settingName="InvisibleMemosGrid" data="true"/>
+	<ExtendedSetting clientId="1000" settingName="InvisibleHyperlinkByEntityTypeIDs" data="11"/>
+	<ExtendedSetting clientId="1000" settingName="AllowBatchHyperLink" data="true"/>
+	<ExtendedSetting clientId="1000" settingName="HasMSUserManagement" data="true"/>
+	<ExtendedSetting clientId="1000" settingName="HasQueuingMechanism" data="true"/>
+	<ExtendedSetting clientId="1000" settingName="NEXTQUEUE_REPORT" data="true"/>
+	<ExtendedSetting clientId="1000" settingName="DEFAULT_HIERARCHY_FILTER_MODE" data="MERCHANTNUMBER"/>
+	<ExtendedSetting clientId="1000" settingName="MultiLanguage" data="true"/>
+	<ExtendedSetting clientId="1000" settingName="GainLossInvestigationAmount" data="true"/>
+	<ExtendedSetting clientId="1000" settingName="IS_ALERT" data="true"/>
+	<ExtendedSetting clientId="1000" settingName="EnableTerminalComboBox" data="true"/>
+	<ExtendedSetting clientId="1000" settingName="Has12MonthsChart" data="true"/>
+	<ExtendedSetting clientId="1000" settingName="LimitExtractMerchantReport" data="10"/>
+	<ExtendedSetting clientId="1000" settingName="VIEW_FIRST_BATCH_INFO" data="true"/>
+	<ExtendedSetting clientId="1000" settingName="LimitExtractMerchanAlertHistory" data="20"/>
+	<ExtendedSetting clientId="1000" settingName="LimitGenerateStatisticsReport" data="20"/>
+	<ExtendedSetting clientId="1000" settingName="RiskReport_Extend" data="GverifyCode,GauthenticateCode,G2Compass,DaystoFund,FICOScore,FutureDeliveryIndicator,FutureDeliveryDayMaximum,SeasonalIndicator,SeasonalActiveMonths"/>
+	<ExtendedSetting clientId="1000" settingName="IS_ACTIVE_PWD" data="true"/>
+	<ExtendedSetting clientId="1000" settingName="CS_DOMAIN" data="https://demo.merchantintel.net"/>
+	<ExtendedSetting clientId="1000" settingName="MS_DOMAIN" data="https://merchantintel.com"/>
+	<ExtendedSetting clientId="1000" settingName="LOGIN_PAGE" data="https://demo.merchantintel.net"/>
+
+	<!--RS2-->
+	<ExtendedSetting clientId="152" settingName="MerchantProfile_ExcludedColumns" data="BANKNUMBER,Status"/>
+	<ExtendedSetting clientId="152" settingName="PRODUCT_ENVIRONMENT" data="MS_CS_RISK"/>
+	<ExtendedSetting clientId="152" settingName="COMPLIASSURE_USER_SYNCH" data="true"/>
+	<ExtendedSetting clientId="152" settingName="COMPLIASSURE_ROLE_SYNCH" data="true"/>
+	<ExtendedSetting clientId="152" settingName="PCI_DEFAULT_HIERARCHY_ID_CS" data="15201"/>
+	<ExtendedSetting clientId="152" settingName="PCI_HIERARCHY_USER_ACCESS" data="true"/>
+	<ExtendedSetting clientId="152" settingName="PCI_HIERARCHY_ACCESS" data="true"/>
+	<ExtendedSetting clientId="152" settingName="PCI_DEFAULT_HIERARCHY_ID_HU_SEC" data="25"/>
+	<ExtendedSetting clientId="152" settingName="PCI_USER_SYNCH" data="true"/>
+	<ExtendedSetting clientId="152" settingName="PCI_USER_SYNCH_THEME_NAME" data="RS2"/>
+	<ExtendedSetting clientId="152" settingName="PCI_ROLE_SYNCH" data="true"/>
+	<ExtendedSetting clientId="152" settingName="STATEMENT_BACK_END_PROCESSOR" data="ALL"/>
+	<ExtendedSetting clientId="152" settingName="STATEMENT_DISPLAY_FORMAT" data="{0}{1}"/>
+	<ExtendedSetting clientId="152" settingName="STATEMENT_REPORT_DATE_FORMAT" data="MM/dd/yyyy"/>
+	<ExtendedSetting clientId="152" settingName="RESET_PASSWORD" data="VisionWeb"/>
+	<!--for LOGIN_ configs: data="CS" or "CS,MS" or "MS" or blank: not display-->
+	<ExtendedSetting clientId="152" settingName="CLIENT_INFO_HIDE_ADDRESS_2" data="true"/>
+	<ExtendedSetting clientId="152" settingName="IS_ALERT" data="true"/>
+	<ExtendedSetting clientId="152" settingName="LOGIN_SHOW_CONTACT_PHONE" data=""/>
+	<ExtendedSetting clientId="152" settingName="LOGIN_SHOW_CONTACT_MESSAGE" data="CS,MS"/>
+	<ExtendedSetting clientId="152" settingName="LOGIN_SHOW_CONTACT_EMAIL" data="CS,MS"/>
+	<ExtendedSetting clientId="152" settingName="LOGIN_CONTACT_MESSAGE_MS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="152" settingName="LOGIN_CONTACT_MESSAGE_CS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="152" settingName="STATE_LABEL_TEXT" data="State, Territory, or Province"/>
+	<ExtendedSetting clientId="152" settingName="STATE_LABEL_TEXT_PLURAL" data="States, Territories, or Provinces"/>
+	<ExtendedSetting clientId="152" settingName="NEXTQUEUE_REPORT" data="true"/>
+	<ExtendedSetting clientId="152" settingName="DISABLE_MIF_PROFILE_EDIT_MAINTENANCE" data="true"/>
+	<ExtendedSetting clientId="152" settingName="InvisibleHyperlinkByEntityTypeIDs" data="11"/>
+	<ExtendedSetting clientId="152" settingName="HasQueuingMechanism" data="true"/>
+	<ExtendedSetting clientId="152" settingName="DisableChangeMSRoleByEntities" data="13"/>
+	<ExtendedSetting clientId="152" settingName="HasMSUserManagement" data="false"/>
+	<ExtendedSetting clientId="152" settingName="IS_CHANGE_USERNAME_MS_SITE" data="true"/>
+	<ExtendedSetting clientId="152" settingName="ENABLED_TSYS_CONVERSION" data="true"/>
+	<ExtendedSetting clientId="152" settingName="EnableACHReturnDetail" data="true"/>
+	<ExtendedSetting clientId="152" settingName="EnableAuthWorkedCheckBox" data="true"/>
+	<ExtendedSetting clientId="152" settingName="ENABLED_SUPPLEMENTAL" data=""/>
+	<ExtendedSetting clientId="152" settingName="Show_HR" data="true"/>
+	<ExtendedSetting clientId="152" settingName="VIEW_FIRST_BATCH_INFO" data="true"/>
+	<ExtendedSetting clientId="152" settingName="ADD_GEOGRAPHIC_DATA" data="CS,AS"/>
+	<ExtendedSetting clientId="152" settingName="LimitExtractMerchanAlertHistory" data="20"/>
+	<ExtendedSetting clientId="152" settingName="LimitGenerateStatisticsReport" data="20"/>
+	<ExtendedSetting clientId="152" settingName="LimitExtractMerchantReport" data="10"/>
+	<ExtendedSetting clientId="152" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<ExtendedSetting clientId="152" settingName="MultiLanguage" data="true"/>
+	<ExtendedSetting clientId="152" settingName="SHOW_PROCESSINGDATA_ENTITYNAME" data="true"/>
+	<ExtendedSetting clientId="152" settingName="HIDE_VOIREJECTTRANS_BATCHHISTORY" data="true"/>
+	<ExtendedSetting clientId="152" settingName="DefaultReportFilterMode" data="MERCHANTNUMBER"/>
+	<ExtendedSetting clientId="152" settingName="IS_DEPOSIT_HISTORY" data="true"/>
+	<ExtendedSetting clientId="152" settingName="AllowChainAccessToPCIWithOldestMerchant" data="true"/>
+	<ExtendedSetting clientId="152" settingName="HIDE_TRANSQUAL_BATCHHISTORY" data="true"/>
+	<ExtendedSetting clientId="152" settingName="HasAlertNotification" data="true"/>
+	<ExtendedSetting clientId="152" settingName="Show_Partial_TaxID_Export" data="true"/>
+
+	<!--MLS Client-->
+	<ExtendedSetting clientId="39" settingName="PRODUCT_ENVIRONMENT" data="MS_CS"/>
+	<ExtendedSetting clientId="39" settingName="STATEMENT_BACK_END_PROCESSOR" data="TSYS"/>
+	<ExtendedSetting clientId="39" settingName="STATEMENT_DISPLAY_FORMAT" data="{0}{1}"/>
+	<ExtendedSetting clientId="39" settingName="STATEMENT_REPORT_DATE_FORMAT" data="MM/dd/yyyy"/>
+	<ExtendedSetting clientId="39" settingName="RESET_PASSWORD" data="VisionWeb"/>
+	<ExtendedSetting clientId="39" settingName="CLIENT_INFO_HIDE_ADDRESS_2" data="true"/>
+	<ExtendedSetting clientId="39" settingName="LOGIN_SHOW_CONTACT_PHONE" data=""/>
+	<ExtendedSetting clientId="39" settingName="LOGIN_SHOW_CONTACT_MESSAGE" data="CS,MS"/>
+	<ExtendedSetting clientId="39" settingName="LOGIN_SHOW_CONTACT_EMAIL" data="CS,MS"/>
+	<ExtendedSetting clientId="39" settingName="LOGIN_CONTACT_MESSAGE_MS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="39" settingName="LOGIN_CONTACT_MESSAGE_CS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="39" settingName="STATE_LABEL_TEXT" data="State, Territory, or Province"/>
+	<ExtendedSetting clientId="39" settingName="STATE_LABEL_TEXT_PLURAL" data="States, Territories, or Provinces"/>
+	<ExtendedSetting clientId="39" settingName="DISABLE_MIF_PROFILE_EDIT_MAINTENANCE" data="true"/>
+	<ExtendedSetting clientId="39" settingName="InvisibleHyperlinkByEntityTypeIDs" data="11"/>
+	<ExtendedSetting clientId="39" settingName="DisableChangeMSRoleByEntities" data="13"/>
+	<ExtendedSetting clientId="39" settingName="EnableACHReturnDetail" data="true"/>
+	<ExtendedSetting clientId="39" settingName="EnableAuthWorkedCheckBox" data="true"/>
+	<ExtendedSetting clientId="39" settingName="VIEW_FIRST_BATCH_INFO" data="true"/>
+	<ExtendedSetting clientId="39" settingName="ADD_GEOGRAPHIC_DATA" data="CS,AS"/>
+	<ExtendedSetting clientId="39" settingName="LimitExtractMerchanAlertHistory" data="20"/>
+	<ExtendedSetting clientId="39" settingName="LimitGenerateStatisticsReport" data="20"/>
+	<ExtendedSetting clientId="39" settingName="LimitExtractMerchantReport" data="10"/>
+	<ExtendedSetting clientId="39" settingName="MultiLanguage" data="true"/>
+	<ExtendedSetting clientId="39" settingName="SHOW_PROCESSINGDATA_ENTITYNAME" data="true"/>
+	<ExtendedSetting clientId="39" settingName="HIDE_VOIREJECTTRANS_BATCHHISTORY" data="true"/>
+	<ExtendedSetting clientId="39" settingName="DefaultReportFilterMode" data="MERCHANTNUMBER"/>
+	<ExtendedSetting clientId="39" settingName="IS_CHANGE_USERNAME_MS_SITE" data="true"/>
+	<ExtendedSetting clientId="39" settingName="SHOW_USER_ID_ON_MIF" data="CS,MS"/>
+	<ExtendedSetting clientId="39" settingName="IS_ALERT" data="true"/>
+	<ExtendedSetting clientId="39" settingName="HIDE_TRANSQUAL_BATCHHISTORY" data="true"/>
+	<ExtendedSetting clientId="39" settingName="IS_CUSTOM_CONTACT_US" data="true"/>
+	<ExtendedSetting clientId="39" settingName="Show_Partial_TaxID_Export" data="true"/>
+	<ExtendedSetting clientId="39" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<ExtendedSetting clientId="39" settingName="HasAlertNotification" data="true"/>
+	<ExtendedSetting clientId="39" settingName="Has12MonthsChart" data="true"/>
+
+	<!--Paya-->
+	<ExtendedSetting clientId="76" settingName="MerchantProfile_ExcludedColumns" data="BANKNUMBER,Status"/>
+	<ExtendedSetting clientId="76" settingName="PRODUCT_ENVIRONMENT" data="MS_CS_RISK"/>
+	<ExtendedSetting clientId="76" settingName="STATEMENT_BACK_END_PROCESSOR" data="TSYS,BANKCARD,ACH"/>
+	<ExtendedSetting clientId="76" settingName="STATEMENT_DISPLAY_FORMAT" data="{0}{1}"/>
+	<ExtendedSetting clientId="76" settingName="STATEMENT_REPORT_DATE_FORMAT" data="MM/dd/yyyy"/>
+	<ExtendedSetting clientId="76" settingName="RESET_PASSWORD" data="VisionWeb"/>
+	<ExtendedSetting clientId="76" settingName="CLIENT_INFO_HIDE_ADDRESS_2" data="true"/>
+	<ExtendedSetting clientId="76" settingName="LOGIN_SHOW_CONTACT_PHONE" data=""/>
+	<ExtendedSetting clientId="76" settingName="LOGIN_SHOW_CONTACT_MESSAGE" data="CS,MS"/>
+	<ExtendedSetting clientId="76" settingName="LOGIN_SHOW_CONTACT_EMAIL" data="CS,MS"/>
+	<ExtendedSetting clientId="76" settingName="LOGIN_CONTACT_MESSAGE_MS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="76" settingName="LOGIN_CONTACT_MESSAGE_CS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="76" settingName="STATE_LABEL_TEXT" data="State, Territory, or Province"/>
+	<ExtendedSetting clientId="76" settingName="STATE_LABEL_TEXT_PLURAL" data="States, Territories, or Provinces"/>
+	<ExtendedSetting clientId="76" settingName="NEXTQUEUE_REPORT" data="true"/>
+	<ExtendedSetting clientId="76" settingName="DISABLE_MIF_PROFILE_EDIT_MAINTENANCE" data="true"/>
+	<ExtendedSetting clientId="76" settingName="InvisibleHyperlinkByEntityTypeIDs" data="11"/>
+	<ExtendedSetting clientId="76" settingName="HasQueuingMechanism" data="true"/>
+	<ExtendedSetting clientId="76" settingName="DisableChangeMSRoleByEntities" data="13"/>
+	<ExtendedSetting clientId="76" settingName="HasMSUserManagement" data="false"/>
+	<ExtendedSetting clientId="76" settingName="ENABLED_TSYS_CONVERSION" data="true"/>
+	<ExtendedSetting clientId="76" settingName="EnableACHReturnDetail" data="true"/>
+	<ExtendedSetting clientId="76" settingName="EnableAuthWorkedCheckBox" data="true"/>
+	<ExtendedSetting clientId="76" settingName="ENABLED_SUPPLEMENTAL" data=""/>
+	<ExtendedSetting clientId="76" settingName="Show_HR" data="true"/>
+	<ExtendedSetting clientId="76" settingName="VIEW_FIRST_BATCH_INFO" data="true"/>
+	<ExtendedSetting clientId="76" settingName="ADD_GEOGRAPHIC_DATA" data="CS,AS"/>
+	<ExtendedSetting clientId="76" settingName="MultiLanguage" data="true"/>
+	<ExtendedSetting clientId="76" settingName="SHOW_PROCESSINGDATA_ENTITYNAME" data="true"/>
+	<ExtendedSetting clientId="76" settingName="HIDE_VOIREJECTTRANS_BATCHHISTORY" data="true"/>
+	<ExtendedSetting clientId="76" settingName="DefaultReportFilterMode" data="MERCHANTNUMBER"/>
+	<ExtendedSetting clientId="76" settingName="IS_DEPOSIT_HISTORY" data="false"/>
+	<ExtendedSetting clientId="76" settingName="AllowChainAccessToPCIWithOldestMerchant" data="true"/>
+	<ExtendedSetting clientId="76" settingName="IS_CHANGE_USERNAME_MS_SITE" data="true"/>
+	<ExtendedSetting clientId="76" settingName="SHOW_USER_ID_ON_MIF" data="CS"/>
+	<ExtendedSetting clientId="76" settingName="EnableMerchantHierarchyStatement" data="true"/>
+	<ExtendedSetting clientId="76" settingName="IS_ALERT" data="true"/>
+	<ExtendedSetting clientId="76" settingName="HIDE_TRANSQUAL_BATCHHISTORY" data="true"/>
+	<ExtendedSetting clientId="76" settingName="ExtendStatement" data="MERCHANT_MRCH"/>
+	<ExtendedSetting clientId="76" settingName="IsHideContactInfo" data="true"/>
+	<ExtendedSetting clientId="76" settingName="Has12MonthsChart" data="true"/>
+	<ExtendedSetting clientId="76" settingName="IS_CUSTOM_CONTACT_US" data="true"/>
+	<ExtendedSetting clientId="76" settingName="SHOW_ROUTING_ACCOUNT" data="true"/>
+	<ExtendedSetting clientId="76" settingName="ContactUs_EntityDisplayName" data="ltMIDorVT.Text"/>
+
+	<!--FIPS-->
+	<ExtendedSetting clientId="69" settingName="PRODUCT_ENVIRONMENT" data="CS_RISK"/>
+	<ExtendedSetting clientId="69" settingName="PCI_DEFAULT_HIERARCHY_ID_CS" data="15201"/>
+	<ExtendedSetting clientId="69" settingName="PCI_HIERARCHY_USER_ACCESS" data="true"/>
+	<ExtendedSetting clientId="69" settingName="PCI_HIERARCHY_ACCESS" data="true"/>
+	<ExtendedSetting clientId="69" settingName="PCI_DEFAULT_HIERARCHY_ID_HU_SEC" data="25"/>
+	<ExtendedSetting clientId="69" settingName="PCI_USER_SYNCH" data="true"/>
+	<ExtendedSetting clientId="69" settingName="PCI_USER_SYNCH_THEME_NAME" data="FIPS"/>
+	<ExtendedSetting clientId="69" settingName="PCI_ROLE_SYNCH" data="true"/>
+	<ExtendedSetting clientId="69" settingName="RESET_PASSWORD" data="VisionWeb"/>
+	<ExtendedSetting clientId="69" settingName="CLIENT_INFO_HIDE_ADDRESS_2" data="true"/>
+	<ExtendedSetting clientId="69" settingName="LOGIN_SHOW_CONTACT_PHONE" data=""/>
+	<ExtendedSetting clientId="69" settingName="LOGIN_SHOW_CONTACT_MESSAGE" data="CS,MS"/>
+	<ExtendedSetting clientId="69" settingName="LOGIN_SHOW_CONTACT_EMAIL" data="CS,MS"/>
+	<ExtendedSetting clientId="69" settingName="LOGIN_CONTACT_MESSAGE_MS" data="If you are having difficulties accessing this site, please contact your credit card services provider."/>
+	<ExtendedSetting clientId="69" settingName="LOGIN_CONTACT_MESSAGE_CS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="69" settingName="STATE_LABEL_TEXT" data="State, Territory, or Province"/>
+	<ExtendedSetting clientId="69" settingName="STATE_LABEL_TEXT_PLURAL" data="States, Territories, or Provinces"/>
+	<ExtendedSetting clientId="69" settingName="NEXTQUEUE_REPORT" data="true"/>
+	<ExtendedSetting clientId="69" settingName="DISABLE_MIF_PROFILE_EDIT_MAINTENANCE" data="true"/>
+	<ExtendedSetting clientId="69" settingName="InvisibleHyperlinkByEntityTypeIDs" data="11"/>
+	<ExtendedSetting clientId="69" settingName="HasQueuingMechanism" data="true"/>
+	<ExtendedSetting clientId="69" settingName="DisableChangeMSRoleByEntities" data="13"/>
+	<ExtendedSetting clientId="69" settingName="HasMSUserManagement" data="false"/>
+	<ExtendedSetting clientId="69" settingName="IS_CHANGE_USERNAME_MS_SITE" data="true"/>
+	<ExtendedSetting clientId="69" settingName="ENABLED_TSYS_CONVERSION" data="true"/>
+	<ExtendedSetting clientId="69" settingName="EnableACHReturnDetail" data="true"/>
+	<ExtendedSetting clientId="69" settingName="EnableAuthWorkedCheckBox" data="true"/>
+	<ExtendedSetting clientId="69" settingName="ENABLED_SUPPLEMENTAL" data=""/>
+	<ExtendedSetting clientId="69" settingName="Show_HR" data="true"/>
+	<ExtendedSetting clientId="69" settingName="VIEW_FIRST_BATCH_INFO" data="true"/>
+	<ExtendedSetting clientId="69" settingName="ADD_GEOGRAPHIC_DATA" data="CS,AS"/>
+	<ExtendedSetting clientId="69" settingName="LimitExtractMerchanAlertHistory" data="20"/>
+	<ExtendedSetting clientId="69" settingName="LimitGenerateStatisticsReport" data="20"/>
+	<ExtendedSetting clientId="69" settingName="LimitExtractMerchantReport" data="10"/>
+	<ExtendedSetting clientId="69" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<ExtendedSetting clientId="69" settingName="MultiLanguage" data="true"/>
+	<ExtendedSetting clientId="69" settingName="HIDE_VOIREJECTTRANS_BATCHHISTORY" data="true"/>
+	<ExtendedSetting clientId="69" settingName="DefaultReportFilterMode" data="MERCHANTNUMBER"/>
+	<ExtendedSetting clientId="69" settingName="IS_DEPOSIT_HISTORY" data="true"/>
+	<ExtendedSetting clientId="69" settingName="AllowChainAccessToPCIWithOldestMerchant" data="true"/>
+	<ExtendedSetting clientId="69" settingName="LOGIN_HIDE_CONTACT_INFO" data="MS"/>
+	<ExtendedSetting clientId="69" settingName="HIDE_ASSIGNMENT_FILTERS_HIGHRISK_HRCODE" data="true"/>
+	<ExtendedSetting clientId="69" settingName="HIDE_TRANSQUAL_BATCHHISTORY" data="true"/>
+	<ExtendedSetting clientId="69" settingName="HasAlertNotification" data="true"/>
+	<ExtendedSetting clientId="69" settingName="Has12MonthsChart" data="true"/>
+
+	<!--Greenbox-->
+	<ExtendedSetting clientId="165" settingName="MerchantProfile_ExcludedColumns" data="BANKNUMBER,Status"/>
+	<ExtendedSetting clientId="165" settingName="PRODUCT_ENVIRONMENT" data="CS_RISK"/>
+	<ExtendedSetting clientId="165" settingName="COMPLIASSURE_USER_SYNCH" data="false"/>
+	<ExtendedSetting clientId="165" settingName="COMPLIASSURE_ROLE_SYNCH" data="false"/>
+	<ExtendedSetting clientId="165" settingName="PCI_DEFAULT_HIERARCHY_ID_CS" data="15201"/>
+	<ExtendedSetting clientId="165" settingName="PCI_HIERARCHY_USER_ACCESS" data="true"/>
+	<ExtendedSetting clientId="165" settingName="PCI_HIERARCHY_ACCESS" data="true"/>
+	<ExtendedSetting clientId="165" settingName="PCI_DEFAULT_HIERARCHY_ID_HU_SEC" data="25"/>
+	<ExtendedSetting clientId="165" settingName="PCI_USER_SYNCH" data="true"/>
+	<ExtendedSetting clientId="165" settingName="PCI_USER_SYNCH_THEME_NAME" data="SPHERE"/>
+	<ExtendedSetting clientId="165" settingName="PCI_ROLE_SYNCH" data="true"/>
+	<ExtendedSetting clientId="165" settingName="STATEMENT_BACK_END_PROCESSOR" data="TSYS"/>
+	<ExtendedSetting clientId="165" settingName="STATEMENT_DISPLAY_FORMAT" data="{0}{1}"/>
+	<ExtendedSetting clientId="165" settingName="STATEMENT_REPORT_DATE_FORMAT" data="MM/dd/yyyy"/>
+	<ExtendedSetting clientId="165" settingName="RESET_PASSWORD" data="VisionWeb"/>
+	<ExtendedSetting clientId="165" settingName="CLIENT_INFO_HIDE_ADDRESS_2" data="true"/>
+	<ExtendedSetting clientId="165" settingName="LOGIN_SHOW_CONTACT_PHONE" data=""/>
+	<ExtendedSetting clientId="165" settingName="LOGIN_SHOW_CONTACT_MESSAGE" data="CS,MS"/>
+	<ExtendedSetting clientId="165" settingName="LOGIN_SHOW_CONTACT_EMAIL" data="CS,MS"/>
+	<ExtendedSetting clientId="165" settingName="LOGIN_CONTACT_MESSAGE_MS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="165" settingName="LOGIN_CONTACT_MESSAGE_CS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="165" settingName="STATE_LABEL_TEXT" data="State, Territory, or Province"/>
+	<ExtendedSetting clientId="165" settingName="STATE_LABEL_TEXT_PLURAL" data="States, Territories, or Provinces"/>
+	<ExtendedSetting clientId="165" settingName="NEXTQUEUE_REPORT" data="true"/>
+	<ExtendedSetting clientId="165" settingName="DISABLE_MIF_PROFILE_EDIT_MAINTENANCE" data="true"/>
+	<ExtendedSetting clientId="165" settingName="InvisibleHyperlinkByEntityTypeIDs" data="11"/>
+	<ExtendedSetting clientId="165" settingName="HasQueuingMechanism" data="true"/>
+	<ExtendedSetting clientId="165" settingName="DisableChangeMSRoleByEntities" data="13"/>
+	<ExtendedSetting clientId="165" settingName="HasMSUserManagement" data="false"/>
+	<ExtendedSetting clientId="165" settingName="IS_CHANGE_USERNAME_MS_SITE" data="true"/>
+	<ExtendedSetting clientId="165" settingName="ENABLED_TSYS_CONVERSION" data="true"/>
+	<ExtendedSetting clientId="165" settingName="EnableACHReturnDetail" data="true"/>
+	<ExtendedSetting clientId="165" settingName="EnableAuthWorkedCheckBox" data="true"/>
+	<ExtendedSetting clientId="165" settingName="ENABLED_SUPPLEMENTAL" data=""/>
+	<ExtendedSetting clientId="165" settingName="Show_HR" data="false"/>
+	<ExtendedSetting clientId="165" settingName="VIEW_FIRST_BATCH_INFO" data="true"/>
+	<ExtendedSetting clientId="165" settingName="ADD_GEOGRAPHIC_DATA" data="CS,AS"/>
+	<ExtendedSetting clientId="165" settingName="LimitExtractMerchanAlertHistory" data="20"/>
+	<ExtendedSetting clientId="165" settingName="LimitGenerateStatisticsReport" data="20"/>
+	<ExtendedSetting clientId="165" settingName="LimitExtractMerchantReport" data="10"/>
+	<ExtendedSetting clientId="165" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<ExtendedSetting clientId="165" settingName="MultiLanguage" data="true"/>
+	<ExtendedSetting clientId="165" settingName="SHOW_PROCESSINGDATA_ENTITYNAME" data="true"/>
+	<ExtendedSetting clientId="165" settingName="HIDE_VOIREJECTTRANS_BATCHHISTORY" data="true"/>
+	<ExtendedSetting clientId="165" settingName="DefaultReportFilterMode" data="MERCHANTNUMBER"/>
+	<ExtendedSetting clientId="165" settingName="IS_DEPOSIT_HISTORY" data="true"/>
+	<ExtendedSetting clientId="165" settingName="AllowChainAccessToPCIWithOldestMerchant" data="true"/>
+	<ExtendedSetting clientId="165" settingName="Has12MonthsChart" data="true"/>
+	<ExtendedSetting clientId="165" settingName="HIDE_TRANSQUAL_BATCHHISTORY" data="true"/>
+	<ExtendedSetting clientId="165" settingName="HIDE_ASSIGNMENT_FILTERS_DEMOGRAPHIC_PROFILE" data="false"/>
+	<ExtendedSetting clientId="165" settingName="HIDE_ASSIGNMENT_FILTERS_HIGHRISK_HRCODE" data="true"/>
+	<ExtendedSetting clientId="165" settingName="DISABLE_SYSPRINAGENT_FIELD" data="true"/>
+	<ExtendedSetting clientId="165" settingName="HasAlertNotification" data="true"/>
+	<ExtendedSetting clientId="165" settingName="IS_ALERT" data="true"/>
+
+	<!--DYNAMIC-->
+	<ExtendedSetting clientId="176" settingName="PRODUCT_ENVIRONMENT" data="CS_RISK"/>
+	<ExtendedSetting clientId="176" settingName="RESET_PASSWORD" data="VisionWeb"/>
+	<!--for LOGIN_ configs: data="CS" or "CS,MS" or "MS" or blank: not display-->
+	<ExtendedSetting clientId="176" settingName="CLIENT_INFO_HIDE_ADDRESS_2" data="true"/>
+	<ExtendedSetting clientId="176" settingName="LOGIN_SHOW_CONTACT_PHONE" data=""/>
+	<ExtendedSetting clientId="176" settingName="LOGIN_SHOW_CONTACT_MESSAGE" data="CS,MS"/>
+	<ExtendedSetting clientId="176" settingName="LOGIN_SHOW_CONTACT_EMAIL" data="CS,MS"/>
+	<ExtendedSetting clientId="176" settingName="LOGIN_CONTACT_MESSAGE_MS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="176" settingName="LOGIN_CONTACT_MESSAGE_CS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="176" settingName="STATE_LABEL_TEXT" data="State, Territory, or Province"/>
+	<ExtendedSetting clientId="176" settingName="STATE_LABEL_TEXT_PLURAL" data="States, Territories, or Provinces"/>
+	<ExtendedSetting clientId="176" settingName="NEXTQUEUE_REPORT" data="true"/>
+	<ExtendedSetting clientId="176" settingName="DISABLE_MIF_PROFILE_EDIT_MAINTENANCE" data="true"/>
+	<ExtendedSetting clientId="176" settingName="InvisibleHyperlinkByEntityTypeIDs" data="11"/>
+	<ExtendedSetting clientId="176" settingName="HasQueuingMechanism" data="true"/>
+	<ExtendedSetting clientId="176" settingName="DisableChangeMSRoleByEntities" data="13"/>
+	<ExtendedSetting clientId="176" settingName="HasMSUserManagement" data="false"/>
+	<ExtendedSetting clientId="176" settingName="IS_CHANGE_USERNAME_MS_SITE" data="true"/>
+	<ExtendedSetting clientId="176" settingName="ENABLED_TSYS_CONVERSION" data="true"/>
+	<ExtendedSetting clientId="176" settingName="EnableACHReturnDetail" data="true"/>
+	<ExtendedSetting clientId="176" settingName="EnableAuthWorkedCheckBox" data="true"/>
+	<ExtendedSetting clientId="176" settingName="ENABLED_SUPPLEMENTAL" data=""/>
+	<ExtendedSetting clientId="176" settingName="Show_HR" data="false"/>
+	<ExtendedSetting clientId="176" settingName="VIEW_FIRST_BATCH_INFO" data="true"/>
+	<ExtendedSetting clientId="176" settingName="ADD_GEOGRAPHIC_DATA" data="CS,AS"/>
+	<ExtendedSetting clientId="176" settingName="LimitExtractMerchanAlertHistory" data="20"/>
+	<ExtendedSetting clientId="176" settingName="LimitGenerateStatisticsReport" data="20"/>
+	<ExtendedSetting clientId="176" settingName="LimitExtractMerchantReport" data="10"/>
+	<ExtendedSetting clientId="176" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<ExtendedSetting clientId="176" settingName="MultiLanguage" data="true"/>
+	<ExtendedSetting clientId="176" settingName="SHOW_PROCESSINGDATA_ENTITYNAME" data="false"/>
+	<ExtendedSetting clientId="176" settingName="DefaultReportFilterMode" data="MERCHANTNUMBER"/>
+	<ExtendedSetting clientId="176" settingName="IS_DEPOSIT_HISTORY" data="true"/>
+	<ExtendedSetting clientId="176" settingName="AllowChainAccessToPCIWithOldestMerchant" data="true"/>
+	<ExtendedSetting clientId="176" settingName="Has12MonthsChart" data="true"/>
+	<ExtendedSetting clientId="176" settingName="HIDE_ASSIGNMENT_FILTERS_DEMOGRAPHIC_PROFILE" data="false"/>
+	<ExtendedSetting clientId="176" settingName="HIDE_ASSIGNMENT_FILTERS_HIGHRISK_HRCODE" data="true"/>
+	<ExtendedSetting clientId="176" settingName="DISABLE_SYSPRINAGENT_FIELD" data="true"/>
+	<ExtendedSetting clientId="176" settingName="HasAlertNotification" data="true"/>
+	<ExtendedSetting clientId="176" settingName="IS_ALERT" data="true"/>
+
+	<!--PRO CARE-->
+	<ExtendedSetting clientId="170" settingName="PRODUCT_ENVIRONMENT" data="CS_RISK"/>
+	<ExtendedSetting clientId="170" settingName="COMPLIASSURE_USER_SYNCH" data="false"/>
+	<ExtendedSetting clientId="170" settingName="COMPLIASSURE_ROLE_SYNCH" data="false"/>
+	<ExtendedSetting clientId="170" settingName="PCI_DEFAULT_HIERARCHY_ID_CS" data="15201"/>
+	<ExtendedSetting clientId="170" settingName="PCI_HIERARCHY_USER_ACCESS" data="true"/>
+	<ExtendedSetting clientId="170" settingName="PCI_HIERARCHY_ACCESS" data="true"/>
+	<ExtendedSetting clientId="170" settingName="PCI_DEFAULT_HIERARCHY_ID_HU_SEC" data="25"/>
+	<ExtendedSetting clientId="170" settingName="PCI_USER_SYNCH" data="true"/>
+	<ExtendedSetting clientId="170" settingName="PCI_USER_SYNCH_THEME_NAME" data="FIPS"/>
+	<ExtendedSetting clientId="170" settingName="PCI_ROLE_SYNCH" data="true"/>
+	<ExtendedSetting clientId="170" settingName="RESET_PASSWORD" data="VisionWeb"/>
+	<!--for LOGIN_ configs: data="CS" or "CS,MS" or "MS" or blank: not display-->
+	<ExtendedSetting clientId="170" settingName="CLIENT_INFO_HIDE_ADDRESS_2" data="true"/>
+	<ExtendedSetting clientId="170" settingName="LOGIN_SHOW_CONTACT_PHONE" data=""/>
+	<ExtendedSetting clientId="170" settingName="LOGIN_SHOW_CONTACT_MESSAGE" data="CS,MS"/>
+	<ExtendedSetting clientId="170" settingName="LOGIN_SHOW_CONTACT_EMAIL" data="CS,MS"/>
+	<ExtendedSetting clientId="170" settingName="LOGIN_CONTACT_MESSAGE_MS" data="If you are having difficulties accessing this site, please contact your credit card services provider."/>
+	<ExtendedSetting clientId="170" settingName="LOGIN_CONTACT_MESSAGE_CS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="170" settingName="STATE_LABEL_TEXT" data="State, Territory, or Province"/>
+	<ExtendedSetting clientId="170" settingName="STATE_LABEL_TEXT_PLURAL" data="States, Territories, or Provinces"/>
+	<ExtendedSetting clientId="170" settingName="NEXTQUEUE_REPORT" data="true"/>
+	<ExtendedSetting clientId="170" settingName="DISABLE_MIF_PROFILE_EDIT_MAINTENANCE" data="true"/>
+	<ExtendedSetting clientId="170" settingName="InvisibleHyperlinkByEntityTypeIDs" data="11"/>
+	<ExtendedSetting clientId="170" settingName="HasQueuingMechanism" data="true"/>
+	<ExtendedSetting clientId="170" settingName="DisableChangeMSRoleByEntities" data="13"/>
+	<ExtendedSetting clientId="170" settingName="HasMSUserManagement" data="false"/>
+	<ExtendedSetting clientId="170" settingName="IS_CHANGE_USERNAME_MS_SITE" data="true"/>
+	<ExtendedSetting clientId="170" settingName="ENABLED_TSYS_CONVERSION" data="true"/>
+	<ExtendedSetting clientId="170" settingName="EnableACHReturnDetail" data="true"/>
+	<ExtendedSetting clientId="170" settingName="EnableAuthWorkedCheckBox" data="true"/>
+	<ExtendedSetting clientId="170" settingName="ENABLED_SUPPLEMENTAL" data=""/>
+	<ExtendedSetting clientId="170" settingName="Show_HR" data="false"/>
+	<ExtendedSetting clientId="170" settingName="VIEW_FIRST_BATCH_INFO" data="true"/>
+	<ExtendedSetting clientId="170" settingName="ADD_GEOGRAPHIC_DATA" data="CS,AS"/>
+	<ExtendedSetting clientId="170" settingName="LimitExtractMerchanAlertHistory" data="20"/>
+	<ExtendedSetting clientId="170" settingName="LimitGenerateStatisticsReport" data="20"/>
+	<ExtendedSetting clientId="170" settingName="LimitExtractMerchantReport" data="10"/>
+	<ExtendedSetting clientId="170" settingName="HasAlertNotification" data="true"/>
+	<ExtendedSetting clientId="170" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<ExtendedSetting clientId="170" settingName="MultiLanguage" data="true"/>
+	<ExtendedSetting clientId="170" settingName="SHOW_PROCESSINGDATA_ENTITYNAME" data="false"/>
+	<ExtendedSetting clientId="170" settingName="HIDE_VOIREJECTTRANS_BATCHHISTORY" data="true"/>
+	<ExtendedSetting clientId="170" settingName="DefaultReportFilterMode" data="MERCHANTNUMBER"/>
+	<ExtendedSetting clientId="170" settingName="IS_DEPOSIT_HISTORY" data="true"/>
+	<ExtendedSetting clientId="170" settingName="AllowChainAccessToPCIWithOldestMerchant" data="true"/>
+	<ExtendedSetting clientId="170" settingName="LOGIN_HIDE_CONTACT_INFO" data="MS"/>
+	<ExtendedSetting clientId="170" settingName="Has12MonthsChart" data="true"/>
+	<ExtendedSetting clientId="170" settingName="HIDE_ASSIGNMENT_FILTERS_DEMOGRAPHIC_PROFILE" data="false"/>
+	<ExtendedSetting clientId="170" settingName="HIDE_ASSIGNMENT_FILTERS_HIGHRISK_HRCODE" data="true"/>
+	<ExtendedSetting clientId="170" settingName="DISABLE_SYSPRINAGENT_FIELD" data="true"/>
+	<ExtendedSetting clientId="170" settingName="HIDE_TRANSQUAL_BATCHHISTORY" data="false"/>
+	<ExtendedSetting clientId="170" settingName="IS_ALERT" data="true"/>
+	<ExtendedSetting clientId="170" settingName="STATEMENT_BACK_END_PROCESSOR" data="ALL"/>
+	<ExtendedSetting clientId="170" settingName="STATEMENT_DISPLAY_FORMAT" data="{0}{1}"/>
+	<ExtendedSetting clientId="170" settingName="STATEMENT_REPORT_DATE_FORMAT" data="MM/dd/yyyy"/>
+
+	<!--KYBNK-->
+	<ExtendedSetting clientId="181" settingName="PRODUCT_ENVIRONMENT" data="CS_RISK"/>
+	<ExtendedSetting clientId="181" settingName="RESET_PASSWORD" data="VisionWeb"/>
+	<!--for LOGIN_ configs: data="CS" or "CS,MS" or "MS" or blank: not display-->
+	<ExtendedSetting clientId="181" settingName="CLIENT_INFO_HIDE_ADDRESS_2" data="true"/>
+	<ExtendedSetting clientId="181" settingName="LOGIN_SHOW_CONTACT_PHONE" data=""/>
+	<ExtendedSetting clientId="181" settingName="LOGIN_SHOW_CONTACT_MESSAGE" data="CS,MS"/>
+	<ExtendedSetting clientId="181" settingName="LOGIN_SHOW_CONTACT_EMAIL" data="CS,MS"/>
+	<ExtendedSetting clientId="181" settingName="LOGIN_CONTACT_MESSAGE_MS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="181" settingName="LOGIN_CONTACT_MESSAGE_CS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="181" settingName="STATE_LABEL_TEXT" data="State, Territory, or Province"/>
+	<ExtendedSetting clientId="181" settingName="STATE_LABEL_TEXT_PLURAL" data="States, Territories, or Provinces"/>
+	<ExtendedSetting clientId="181" settingName="NEXTQUEUE_REPORT" data="true"/>
+	<ExtendedSetting clientId="181" settingName="DISABLE_MIF_PROFILE_EDIT_MAINTENANCE" data="true"/>
+	<ExtendedSetting clientId="181" settingName="InvisibleHyperlinkByEntityTypeIDs" data="11"/>
+	<ExtendedSetting clientId="181" settingName="HasQueuingMechanism" data="true"/>
+	<ExtendedSetting clientId="181" settingName="DisableChangeMSRoleByEntities" data="13"/>
+	<ExtendedSetting clientId="181" settingName="HasMSUserManagement" data="false"/>
+	<ExtendedSetting clientId="181" settingName="ENABLED_TSYS_CONVERSION" data="true"/>
+	<ExtendedSetting clientId="181" settingName="EnableACHReturnDetail" data="false"/>
+	<ExtendedSetting clientId="181" settingName="EnableAuthWorkedCheckBox" data="true"/>
+	<ExtendedSetting clientId="181" settingName="ENABLED_SUPPLEMENTAL" data="ACHHoldDays,CreaditCore"/>
+	<ExtendedSetting clientId="181" settingName="Show_HR" data="false"/>
+	<ExtendedSetting clientId="181" settingName="VIEW_FIRST_BATCH_INFO" data="true"/>
+	<ExtendedSetting clientId="181" settingName="ADD_GEOGRAPHIC_DATA" data="CS,AS"/>
+	<ExtendedSetting clientId="181" settingName="LimitExtractMerchanAlertHistory" data="20"/>
+	<ExtendedSetting clientId="181" settingName="LimitGenerateStatisticsReport" data="20"/>
+	<ExtendedSetting clientId="181" settingName="LimitExtractMerchantReport" data="10"/>
+	<ExtendedSetting clientId="181" settingName="HasAlertNotification" data="true"/>
+	<ExtendedSetting clientId="181" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<ExtendedSetting clientId="181" settingName="MultiLanguage" data="true"/>
+	<ExtendedSetting clientId="181" settingName="SHOW_PROCESSINGDATA_ENTITYNAME" data="true"/>
+	<ExtendedSetting clientId="181" settingName="HIDE_VOIREJECTTRANS_BATCHHISTORY" data="true"/>
+	<ExtendedSetting clientId="181" settingName="DefaultReportFilterMode" data="MERCHANTNUMBER"/>
+	<ExtendedSetting clientId="181" settingName="IS_DEPOSIT_HISTORY" data="true"/>
+	<ExtendedSetting clientId="181" settingName="AllowChainAccessToPCIWithOldestMerchant" data="true"/>
+	<ExtendedSetting clientId="181" settingName="Has12MonthsChart" data="true"/>
+	<ExtendedSetting clientId="181" settingName="HIDE_ASSIGNMENT_FILTERS_DEMOGRAPHIC_PROFILE" data="false"/>
+	<ExtendedSetting clientId="181" settingName="HIDE_ASSIGNMENT_FILTERS_HIGHRISK_HRCODE" data="true"/>
+	<ExtendedSetting clientId="181" settingName="DISABLE_SYSPRINAGENT_FIELD" data="true"/>
+	<ExtendedSetting clientId="181" settingName="HIDE_TRANSQUAL_BATCHHISTORY" data="false"/>
+	<!--Addition Access function in create/update role: (Permission:GroupName)-->
+	<ExtendedSetting clientId="181" settingName="AdditionAccessFunctions" data="SponsorMerchantShadowUnderwriting:cs_shadow_underwriting"/>
+	<ExtendedSetting clientId="181" settingName="Has_Shadow_Underwriting" data="true"/>
+	<ExtendedSetting clientId="181" settingName="HasAssignmentSubsite" data="true"/>
+  <ExtendedSetting clientId="181" settingName="EnableTerminalComboBox" data="true"/>
+  <ExtendedSetting clientId="181" settingName="COMPLIASSURE_USER_SYNCH" data="true"/>
+  <ExtendedSetting clientId="181" settingName="COMPLIASSURE_ROLE_SYNCH" data="true"/>
+  <ExtendedSetting clientId="181" settingName="COMPLIASSURE_SYNCH_CUSTOM" data="true"/>
+
+	<!--FORTIS-->
+	<ExtendedSetting clientId="158" settingName="PRODUCT_ENVIRONMENT" data="CS_RISK"/>
+	<ExtendedSetting clientId="158" settingName="RESET_PASSWORD" data="VisionWeb"/>
+	<!--for LOGIN_ configs: data="CS" or "CS,MS" or "MS" or blank: not display-->
+	<ExtendedSetting clientId="158" settingName="CLIENT_INFO_HIDE_ADDRESS_2" data="true"/>
+	<ExtendedSetting clientId="158" settingName="LOGIN_SHOW_CONTACT_PHONE" data=""/>
+	<ExtendedSetting clientId="158" settingName="LOGIN_SHOW_CONTACT_MESSAGE" data="CS,MS"/>
+	<ExtendedSetting clientId="158" settingName="LOGIN_SHOW_CONTACT_EMAIL" data="CS,MS"/>
+	<ExtendedSetting clientId="158" settingName="LOGIN_CONTACT_MESSAGE_MS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="158" settingName="LOGIN_CONTACT_MESSAGE_CS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="158" settingName="STATE_LABEL_TEXT" data="State, Territory, or Province"/>
+	<ExtendedSetting clientId="158" settingName="STATE_LABEL_TEXT_PLURAL" data="States, Territories, or Provinces"/>
+	<ExtendedSetting clientId="158" settingName="NEXTQUEUE_REPORT" data="true"/>
+	<ExtendedSetting clientId="158" settingName="DISABLE_MIF_PROFILE_EDIT_MAINTENANCE" data="false"/>
+	<ExtendedSetting clientId="158" settingName="InvisibleHyperlinkByEntityTypeIDs" data="11"/>
+	<ExtendedSetting clientId="158" settingName="HasQueuingMechanism" data="true"/>
+	<ExtendedSetting clientId="158" settingName="DisableChangeMSRoleByEntities" data="13"/>
+	<ExtendedSetting clientId="158" settingName="HasMSUserManagement" data="false"/>
+	<ExtendedSetting clientId="158" settingName="ENABLED_TSYS_CONVERSION" data="true"/>
+	<ExtendedSetting clientId="158" settingName="EnableACHReturnDetail" data="true"/>
+	<ExtendedSetting clientId="158" settingName="EnableAuthWorkedCheckBox" data="true"/>
+	<ExtendedSetting clientId="158" settingName="ENABLED_SUPPLEMENTAL" data="ACHHoldDays,CreaditCore"/>
+	<ExtendedSetting clientId="158" settingName="Show_HR" data="false"/>
+	<ExtendedSetting clientId="158" settingName="VIEW_FIRST_BATCH_INFO" data="true"/>
+	<ExtendedSetting clientId="158" settingName="ADD_GEOGRAPHIC_DATA" data="CS,AS"/>
+	<ExtendedSetting clientId="158" settingName="LimitExtractMerchanAlertHistory" data="20"/>
+	<ExtendedSetting clientId="158" settingName="LimitGenerateStatisticsReport" data="20"/>
+	<ExtendedSetting clientId="158" settingName="LimitExtractMerchantReport" data="10"/>
+	<ExtendedSetting clientId="158" settingName="HasAlertNotification" data="true"/>
+	<ExtendedSetting clientId="158" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<ExtendedSetting clientId="158" settingName="MultiLanguage" data="true"/>
+	<ExtendedSetting clientId="158" settingName="SHOW_PROCESSINGDATA_ENTITYNAME" data="true"/>
+	<ExtendedSetting clientId="158" settingName="HIDE_VOIREJECTTRANS_BATCHHISTORY" data="true"/>
+	<ExtendedSetting clientId="158" settingName="DefaultReportFilterMode" data="MERCHANTNUMBER"/>
+	<ExtendedSetting clientId="158" settingName="IS_DEPOSIT_HISTORY" data="true"/>
+	<ExtendedSetting clientId="158" settingName="AllowChainAccessToPCIWithOldestMerchant" data="true"/>
+	<ExtendedSetting clientId="158" settingName="Has12MonthsChart" data="true"/>
+	<ExtendedSetting clientId="158" settingName="HIDE_ASSIGNMENT_FILTERS_DEMOGRAPHIC_PROFILE" data="false"/>
+	<ExtendedSetting clientId="158" settingName="HIDE_ASSIGNMENT_FILTERS_HIGHRISK_HRCODE" data="true"/>
+	<ExtendedSetting clientId="158" settingName="DISABLE_SYSPRINAGENT_FIELD" data="true"/>
+	<ExtendedSetting clientId="158" settingName="HIDE_TRANSQUAL_BATCHHISTORY" data="true"/>
+	<ExtendedSetting clientId="158" settingName="IS_ALERT" data="true"/>
+	<ExtendedSetting clientId="158" settingName="EnableTerminalComboBox" data="true"/>
+	<ExtendedSetting clientId="158" settingName="CARD_NUMBER_LENGTH" data="30"/>
+
+	<!--WoodForest-->
+	<ExtendedSetting clientId="191" settingName="PRODUCT_ENVIRONMENT" data="CS_RISK"/>
+	<ExtendedSetting clientId="191" settingName="RESET_PASSWORD" data="VisionWeb"/>
+	<!--for LOGIN_ configs: data="CS" or "CS,MS" or "MS" or blank: not display-->
+	<ExtendedSetting clientId="191" settingName="CLIENT_INFO_HIDE_ADDRESS_2" data="true"/>
+	<ExtendedSetting clientId="191" settingName="LOGIN_SHOW_CONTACT_PHONE" data=""/>
+	<ExtendedSetting clientId="191" settingName="LOGIN_SHOW_CONTACT_MESSAGE" data="CS,MS"/>
+	<ExtendedSetting clientId="191" settingName="LOGIN_SHOW_CONTACT_EMAIL" data="CS,MS"/>
+	<ExtendedSetting clientId="191" settingName="LOGIN_CONTACT_MESSAGE_MS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="191" settingName="LOGIN_CONTACT_MESSAGE_CS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="191" settingName="STATE_LABEL_TEXT" data="State, Territory, or Province"/>
+	<ExtendedSetting clientId="191" settingName="STATE_LABEL_TEXT_PLURAL" data="States, Territories, or Provinces"/>
+	<ExtendedSetting clientId="191" settingName="NEXTQUEUE_REPORT" data="true"/>
+	<ExtendedSetting clientId="191" settingName="DISABLE_MIF_PROFILE_EDIT_MAINTENANCE" data="false"/>
+	<ExtendedSetting clientId="191" settingName="InvisibleHyperlinkByEntityTypeIDs" data="11"/>
+	<ExtendedSetting clientId="191" settingName="HasQueuingMechanism" data="true"/>
+	<ExtendedSetting clientId="191" settingName="DisableChangeMSRoleByEntities" data="13"/>
+	<ExtendedSetting clientId="191" settingName="HasMSUserManagement" data="false"/>
+	<ExtendedSetting clientId="191" settingName="ENABLED_TSYS_CONVERSION" data="true"/>
+	<ExtendedSetting clientId="191" settingName="EnableACHReturnDetail" data="true"/>
+	<ExtendedSetting clientId="191" settingName="EnableAuthWorkedCheckBox" data="true"/>
+	<ExtendedSetting clientId="191" settingName="Show_HR" data="false"/>
+	<ExtendedSetting clientId="191" settingName="VIEW_FIRST_BATCH_INFO" data="true"/>
+	<ExtendedSetting clientId="191" settingName="ADD_GEOGRAPHIC_DATA" data="CS,AS"/>
+	<ExtendedSetting clientId="191" settingName="LimitExtractMerchanAlertHistory" data="20"/>
+	<ExtendedSetting clientId="191" settingName="LimitGenerateStatisticsReport" data="20"/>
+	<ExtendedSetting clientId="191" settingName="LimitExtractMerchantReport" data="10"/>
+	<ExtendedSetting clientId="191" settingName="HasAlertNotification" data="true"/>
+	<ExtendedSetting clientId="191" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<ExtendedSetting clientId="191" settingName="MultiLanguage" data="true"/>
+	<ExtendedSetting clientId="191" settingName="SHOW_PROCESSINGDATA_ENTITYNAME" data="true"/>
+	<ExtendedSetting clientId="191" settingName="HIDE_VOIREJECTTRANS_BATCHHISTORY" data="true"/>
+	<ExtendedSetting clientId="191" settingName="DefaultReportFilterMode" data="MERCHANTNUMBER"/>
+	<ExtendedSetting clientId="191" settingName="IS_DEPOSIT_HISTORY" data="true"/>
+	<ExtendedSetting clientId="191" settingName="AllowChainAccessToPCIWithOldestMerchant" data="true"/>
+	<ExtendedSetting clientId="191" settingName="Has12MonthsChart" data="true"/>
+	<ExtendedSetting clientId="191" settingName="HIDE_ASSIGNMENT_FILTERS_DEMOGRAPHIC_PROFILE" data="false"/>
+	<ExtendedSetting clientId="191" settingName="HIDE_ASSIGNMENT_FILTERS_HIGHRISK_HRCODE" data="true"/>
+	<ExtendedSetting clientId="191" settingName="DISABLE_SYSPRINAGENT_FIELD" data="true"/>
+	<ExtendedSetting clientId="191" settingName="HIDE_TRANSQUAL_BATCHHISTORY" data="true"/>
+	<ExtendedSetting clientId="191" settingName="IS_ALERT" data="true"/>
+	<ExtendedSetting clientId="191" settingName="EnableTerminalComboBox" data="true"/>
+
+	<!--AVIDIA-->
+	<ExtendedSetting clientId="187" settingName="PRODUCT_ENVIRONMENT" data="CS_RISK"/>
+	<ExtendedSetting clientId="187" settingName="RESET_PASSWORD" data="VisionWeb"/>
+	<ExtendedSetting clientId="187" settingName="CLIENT_INFO_HIDE_ADDRESS_2" data="true"/>
+	<ExtendedSetting clientId="187" settingName="LOGIN_SHOW_CONTACT_PHONE" data=""/>
+	<ExtendedSetting clientId="187" settingName="LOGIN_SHOW_CONTACT_MESSAGE" data="CS,MS"/>
+	<ExtendedSetting clientId="187" settingName="LOGIN_SHOW_CONTACT_EMAIL" data="CS,MS"/>
+	<ExtendedSetting clientId="187" settingName="LOGIN_CONTACT_MESSAGE_MS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="187" settingName="LOGIN_CONTACT_MESSAGE_CS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="187" settingName="STATE_LABEL_TEXT" data="State, Territory, or Province"/>
+	<ExtendedSetting clientId="187" settingName="STATE_LABEL_TEXT_PLURAL" data="States, Territories, or Provinces"/>
+	<ExtendedSetting clientId="187" settingName="NEXTQUEUE_REPORT" data="true"/>
+	<ExtendedSetting clientId="187" settingName="DISABLE_MIF_PROFILE_EDIT_MAINTENANCE" data="true"/>
+	<ExtendedSetting clientId="187" settingName="InvisibleHyperlinkByEntityTypeIDs" data="11"/>
+	<ExtendedSetting clientId="187" settingName="HasQueuingMechanism" data="true"/>
+	<ExtendedSetting clientId="187" settingName="DisableChangeMSRoleByEntities" data="13"/>
+	<ExtendedSetting clientId="187" settingName="HasMSUserManagement" data="false"/>
+	<ExtendedSetting clientId="187" settingName="ENABLED_TSYS_CONVERSION" data="true"/>
+	<ExtendedSetting clientId="187" settingName="EnableACHReturnDetail" data="true"/>
+	<ExtendedSetting clientId="187" settingName="EnableAuthWorkedCheckBox" data="true"/>
+	<ExtendedSetting clientId="187" settingName="ENABLED_SUPPLEMENTAL" data=""/>
+	<ExtendedSetting clientId="187" settingName="Show_HR" data="false"/>
+	<ExtendedSetting clientId="187" settingName="VIEW_FIRST_BATCH_INFO" data="true"/>
+	<ExtendedSetting clientId="187" settingName="ADD_GEOGRAPHIC_DATA" data="CS,AS"/>
+	<ExtendedSetting clientId="187" settingName="LimitExtractMerchanAlertHistory" data="20"/>
+	<ExtendedSetting clientId="187" settingName="LimitGenerateStatisticsReport" data="20"/>
+	<ExtendedSetting clientId="187" settingName="LimitExtractMerchantReport" data="10"/>
+	<ExtendedSetting clientId="187" settingName="HasAlertNotification" data="true"/>
+	<ExtendedSetting clientId="187" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<ExtendedSetting clientId="187" settingName="MultiLanguage" data="true"/>
+	<ExtendedSetting clientId="187" settingName="SHOW_PROCESSINGDATA_ENTITYNAME" data="true"/>
+	<ExtendedSetting clientId="187" settingName="HIDE_VOIREJECTTRANS_BATCHHISTORY" data="true"/>
+	<ExtendedSetting clientId="187" settingName="DefaultReportFilterMode" data="MERCHANTNUMBER"/>
+	<ExtendedSetting clientId="187" settingName="IS_DEPOSIT_HISTORY" data="true"/>
+	<ExtendedSetting clientId="187" settingName="AllowChainAccessToPCIWithOldestMerchant" data="true"/>
+	<ExtendedSetting clientId="187" settingName="Has12MonthsChart" data="true"/>
+	<ExtendedSetting clientId="187" settingName="HIDE_ASSIGNMENT_FILTERS_DEMOGRAPHIC_PROFILE" data="false"/>
+	<ExtendedSetting clientId="187" settingName="HIDE_ASSIGNMENT_FILTERS_HIGHRISK_HRCODE" data="true"/>
+	<ExtendedSetting clientId="187" settingName="DISABLE_SYSPRINAGENT_FIELD" data="true"/>
+	<ExtendedSetting clientId="187" settingName="HIDE_TRANSQUAL_BATCHHISTORY" data="true"/>
+	<ExtendedSetting clientId="187" settingName="IS_ALERT" data="true"/>
+
+	<!--MBH-->
+	<ExtendedSetting clientId="186" settingName="PRODUCT_ENVIRONMENT" data="CS_RISK"/>
+	<ExtendedSetting clientId="186" settingName="RESET_PASSWORD" data="VisionWeb"/>
+	<ExtendedSetting clientId="186" settingName="CLIENT_INFO_HIDE_ADDRESS_2" data="true"/>
+	<ExtendedSetting clientId="186" settingName="LOGIN_SHOW_CONTACT_PHONE" data=""/>
+	<ExtendedSetting clientId="186" settingName="LOGIN_SHOW_CONTACT_MESSAGE" data="CS,MS"/>
+	<ExtendedSetting clientId="186" settingName="LOGIN_SHOW_CONTACT_EMAIL" data="CS,MS"/>
+	<ExtendedSetting clientId="186" settingName="LOGIN_CONTACT_MESSAGE_MS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="186" settingName="LOGIN_CONTACT_MESSAGE_CS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="186" settingName="STATE_LABEL_TEXT" data="State, Territory, or Province"/>
+	<ExtendedSetting clientId="186" settingName="STATE_LABEL_TEXT_PLURAL" data="States, Territories, or Provinces"/>
+	<ExtendedSetting clientId="186" settingName="NEXTQUEUE_REPORT" data="true"/>
+	<ExtendedSetting clientId="186" settingName="DISABLE_MIF_PROFILE_EDIT_MAINTENANCE" data="true"/>
+	<ExtendedSetting clientId="186" settingName="InvisibleHyperlinkByEntityTypeIDs" data="11"/>
+	<ExtendedSetting clientId="186" settingName="HasQueuingMechanism" data="true"/>
+	<ExtendedSetting clientId="186" settingName="DisableChangeMSRoleByEntities" data="13"/>
+	<ExtendedSetting clientId="186" settingName="HasMSUserManagement" data="false"/>
+	<ExtendedSetting clientId="186" settingName="ENABLED_TSYS_CONVERSION" data="true"/>
+	<ExtendedSetting clientId="186" settingName="EnableACHReturnDetail" data="true"/>
+	<ExtendedSetting clientId="186" settingName="EnableAuthWorkedCheckBox" data="true"/>
+	<ExtendedSetting clientId="186" settingName="ENABLED_SUPPLEMENTAL" data=""/>
+	<ExtendedSetting clientId="186" settingName="Show_HR" data="false"/>
+	<ExtendedSetting clientId="186" settingName="VIEW_FIRST_BATCH_INFO" data="true"/>
+	<ExtendedSetting clientId="186" settingName="ADD_GEOGRAPHIC_DATA" data="CS,AS"/>
+	<ExtendedSetting clientId="186" settingName="LimitExtractMerchanAlertHistory" data="20"/>
+	<ExtendedSetting clientId="186" settingName="LimitGenerateStatisticsReport" data="20"/>
+	<ExtendedSetting clientId="186" settingName="LimitExtractMerchantReport" data="10"/>
+	<ExtendedSetting clientId="186" settingName="HasAlertNotification" data="true"/>
+	<ExtendedSetting clientId="186" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<ExtendedSetting clientId="186" settingName="MultiLanguage" data="true"/>
+	<ExtendedSetting clientId="186" settingName="SHOW_PROCESSINGDATA_ENTITYNAME" data="true"/>
+	<ExtendedSetting clientId="186" settingName="HIDE_VOIREJECTTRANS_BATCHHISTORY" data="true"/>
+	<ExtendedSetting clientId="186" settingName="DefaultReportFilterMode" data="MERCHANTNUMBER"/>
+	<ExtendedSetting clientId="186" settingName="IS_DEPOSIT_HISTORY" data="true"/>
+	<ExtendedSetting clientId="186" settingName="AllowChainAccessToPCIWithOldestMerchant" data="true"/>
+	<ExtendedSetting clientId="186" settingName="Has12MonthsChart" data="true"/>
+	<ExtendedSetting clientId="186" settingName="HIDE_ASSIGNMENT_FILTERS_DEMOGRAPHIC_PROFILE" data="false"/>
+	<ExtendedSetting clientId="186" settingName="HIDE_ASSIGNMENT_FILTERS_HIGHRISK_HRCODE" data="true"/>
+	<ExtendedSetting clientId="186" settingName="DISABLE_SYSPRINAGENT_FIELD" data="true"/>
+	<ExtendedSetting clientId="186" settingName="HIDE_TRANSQUAL_BATCHHISTORY" data="true"/>
+	<ExtendedSetting clientId="186" settingName="IS_ALERT" data="true"/>
+
+	<!--ESQUIRE-->
+	<ExtendedSetting clientId="200" settingName="PRODUCT_ENVIRONMENT" data="CS_RISK"/>
+	<ExtendedSetting clientId="200" settingName="RESET_PASSWORD" data="VisionWeb"/>
+	<ExtendedSetting clientId="200" settingName="CLIENT_INFO_HIDE_ADDRESS_2" data="true"/>
+	<ExtendedSetting clientId="200" settingName="LOGIN_SHOW_CONTACT_PHONE" data=""/>
+	<ExtendedSetting clientId="200" settingName="LOGIN_SHOW_CONTACT_MESSAGE" data="CS,MS"/>
+	<ExtendedSetting clientId="200" settingName="LOGIN_SHOW_CONTACT_EMAIL" data="CS,MS"/>
+	<ExtendedSetting clientId="200" settingName="LOGIN_CONTACT_MESSAGE_MS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="200" settingName="LOGIN_CONTACT_MESSAGE_CS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="200" settingName="STATE_LABEL_TEXT" data="State, Territory, or Province"/>
+	<ExtendedSetting clientId="200" settingName="STATE_LABEL_TEXT_PLURAL" data="States, Territories, or Provinces"/>
+	<ExtendedSetting clientId="200" settingName="NEXTQUEUE_REPORT" data="true"/>
+	<ExtendedSetting clientId="200" settingName="DISABLE_MIF_PROFILE_EDIT_MAINTENANCE" data="false"/>
+	<ExtendedSetting clientId="200" settingName="InvisibleHyperlinkByEntityTypeIDs" data="11"/>
+	<ExtendedSetting clientId="200" settingName="HasQueuingMechanism" data="true"/>
+	<ExtendedSetting clientId="200" settingName="DisableChangeMSRoleByEntities" data="13"/>
+	<ExtendedSetting clientId="200" settingName="HasMSUserManagement" data="false"/>
+	<ExtendedSetting clientId="200" settingName="ENABLED_TSYS_CONVERSION" data="true"/>
+	<ExtendedSetting clientId="200" settingName="EnableACHReturnDetail" data="true"/>
+	<ExtendedSetting clientId="200" settingName="EnableAuthWorkedCheckBox" data="true"/>
+	<ExtendedSetting clientId="200" settingName="ENABLED_SUPPLEMENTAL" data=""/>
+	<ExtendedSetting clientId="200" settingName="Show_HR" data="false"/>
+	<ExtendedSetting clientId="200" settingName="VIEW_FIRST_BATCH_INFO" data="true"/>
+	<ExtendedSetting clientId="200" settingName="ADD_GEOGRAPHIC_DATA" data="CS,AS"/>
+	<ExtendedSetting clientId="200" settingName="LimitExtractMerchanAlertHistory" data="20"/>
+	<ExtendedSetting clientId="200" settingName="LimitGenerateStatisticsReport" data="20"/>
+	<ExtendedSetting clientId="200" settingName="LimitExtractMerchantReport" data="10"/>
+	<ExtendedSetting clientId="200" settingName="HasAlertNotification" data="true"/>
+	<ExtendedSetting clientId="200" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<ExtendedSetting clientId="200" settingName="MultiLanguage" data="true"/>
+	<ExtendedSetting clientId="200" settingName="SHOW_PROCESSINGDATA_ENTITYNAME" data="true"/>
+	<ExtendedSetting clientId="200" settingName="HIDE_VOIREJECTTRANS_BATCHHISTORY" data="true"/>
+	<ExtendedSetting clientId="200" settingName="DefaultReportFilterMode" data="MERCHANTNUMBER"/>
+	<ExtendedSetting clientId="200" settingName="IS_DEPOSIT_HISTORY" data="true"/>
+	<ExtendedSetting clientId="200" settingName="AllowChainAccessToPCIWithOldestMerchant" data="true"/>
+	<ExtendedSetting clientId="200" settingName="Has12MonthsChart" data="true"/>
+	<ExtendedSetting clientId="200" settingName="HIDE_ASSIGNMENT_FILTERS_DEMOGRAPHIC_PROFILE" data="false"/>
+	<ExtendedSetting clientId="200" settingName="HIDE_ASSIGNMENT_FILTERS_HIGHRISK_HRCODE" data="true"/>
+	<ExtendedSetting clientId="200" settingName="DISABLE_SYSPRINAGENT_FIELD" data="true"/>
+	<ExtendedSetting clientId="200" settingName="HIDE_TRANSQUAL_BATCHHISTORY" data="true"/>
+	<ExtendedSetting clientId="200" settingName="IS_ALERT" data="true"/>
+
+	<!--SPHERECOMMERCE-->
+	<ExtendedSetting clientId="217" settingName="MerchantProfile_ExcludedColumns" data="SalesAgent,Headquarter,ISO,SALESOFFICE,BANKNUMBER,Status"/>
+	<ExtendedSetting clientId="217" settingName="PRODUCT_ENVIRONMENT" data="CS_RISK"/>
+	<ExtendedSetting clientId="217" settingName="COMPLIASSURE_USER_SYNCH" data="true"/>
+	<ExtendedSetting clientId="217" settingName="COMPLIASSURE_ROLE_SYNCH" data="true"/>
+	<ExtendedSetting clientId="217" settingName="PCI_DEFAULT_HIERARCHY_ID_CS" data="14401"/>
+	<ExtendedSetting clientId="217" settingName="PCI_HIERARCHY_USER_ACCESS" data="true"/>
+	<ExtendedSetting clientId="217" settingName="PCI_HIERARCHY_ACCESS" data="true"/>
+	<ExtendedSetting clientId="217" settingName="PCI_DEFAULT_HIERARCHY_ID_HU_SEC" data="25"/>
+	<ExtendedSetting clientId="217" settingName="PCI_USER_SYNCH" data="true"/>
+	<ExtendedSetting clientId="217" settingName="PCI_USER_SYNCH_THEME_NAME" data="SPHERE"/>
+	<ExtendedSetting clientId="217" settingName="STATEMENT_BACK_END_PROCESSOR" data="TSYS"/>
+	<ExtendedSetting clientId="217" settingName="STATEMENT_DISPLAY_FORMAT" data="{0}{1}"/>
+	<ExtendedSetting clientId="217" settingName="STATEMENT_REPORT_DATE_FORMAT" data="MM/dd/yyyy"/>
+	<ExtendedSetting clientId="217" settingName="RESET_PASSWORD" data="SphereTransact"/>
+	<!--for LOGIN_ configs: data="CS" or "CS,MS" or "MS" or blank: not display-->
+	<ExtendedSetting clientId="217" settingName="LOGIN_SHOW_CONTACT_PHONE" data=""/>
+	<ExtendedSetting clientId="217" settingName="LOGIN_SHOW_CONTACT_MESSAGE" data="CS,MS"/>
+	<ExtendedSetting clientId="217" settingName="LOGIN_SHOW_CONTACT_EMAIL" data="MS"/>
+	<ExtendedSetting clientId="217" settingName="LOGIN_CONTACT_MESSAGE_MS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="217" settingName="LOGIN_CONTACT_MESSAGE_CS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="217" settingName="STATE_LABEL_TEXT" data="State, Territory, or Province"/>
+	<ExtendedSetting clientId="217" settingName="STATE_LABEL_TEXT_PLURAL" data="States, Territories, or Provinces"/>
+	<ExtendedSetting clientId="217" settingName="NEXTQUEUE_REPORT" data="true"/>
+	<ExtendedSetting clientId="217" settingName="InvisibleHyperlinkByEntityTypeIDs" data="11"/>
+	<ExtendedSetting clientId="217" settingName="HasQueuingMechanism" data="true"/>
+	<ExtendedSetting clientId="217" settingName="DisableChangeMSRoleByEntities" data="13"/>
+	<ExtendedSetting clientId="217" settingName="HasMSUserManagement" data="false"/>
+	<ExtendedSetting clientId="217" settingName="IS_CHANGE_USERNAME_MS_SITE" data="true"/>
+	<ExtendedSetting clientId="217" settingName="ENABLED_TSYS_CONVERSION" data="true"/>
+	<ExtendedSetting clientId="217" settingName="EnableACHReturnDetail" data="true"/>
+	<ExtendedSetting clientId="217" settingName="EnableAuthWorkedCheckBox" data="true"/>
+	<ExtendedSetting clientId="217" settingName="ENABLED_SUPPLEMENTAL" data="CreaditCore,ECommerce,Keyed,Swiped,LeadSource,ReferralSource"/>
+	<ExtendedSetting clientId="217" settingName="Show_HR" data="true"/>
+	<ExtendedSetting clientId="217" settingName="VIEW_FIRST_BATCH_INFO" data="true"/>
+	<ExtendedSetting clientId="217" settingName="ADD_GEOGRAPHIC_DATA" data="CS,AS"/>
+	<ExtendedSetting clientId="217" settingName="LimitExtractMerchanAlertHistory" data="20"/>
+	<ExtendedSetting clientId="217" settingName="LimitGenerateStatisticsReport" data="20"/>
+	<ExtendedSetting clientId="217" settingName="DISABLE_MIF_PROFILE_EDIT_MAINTENANCE" data="false"/>
+	<ExtendedSetting clientId="217" settingName="HIDE_ASSIGNMENT_FILTERS_DEMOGRAPHIC_PROFILE" data="false"/>
+	<ExtendedSetting clientId="217" settingName="HIDE_ASSIGNMENT_FILTERS_HIGHRISK_HRCODE" data="true"/>
+	<ExtendedSetting clientId="217" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<ExtendedSetting clientId="217" settingName="MultiLanguage" data="true"/>
+	<ExtendedSetting clientId="217" settingName="HasAlertNotification" data="true"/>
+	<!--data="CS" or "CS,MS" or "MS" or blank: not display-->
+	<ExtendedSetting clientId="217" settingName="SHOW_PROCESSINGDATA_ENTITYNAME" data="true"/>
+	<ExtendedSetting clientId="217" settingName="HIDE_VOIREJECTTRANS_BATCHHISTORY" data="true"/>
+	<ExtendedSetting clientId="217" settingName="DEFAULT_HIERARCHY_FILTER_MODE" data="BANK,MERCHANTNUMBER"/>
+	<ExtendedSetting clientId="217" settingName="EnableTerminalComboBox" data="true"/>
+	<ExtendedSetting clientId="217" settingName="AllowChainAccessToPCIWithOldestMerchant" data="true"/>
+	<ExtendedSetting clientId="217" settingName="IS_DEPOSIT_HISTORY" data="true"/>
+	<!--Turn ON/OFF Voided/Rejected and/or Trans Qualification grids on Batch History report-->
+	<ExtendedSetting clientId="217" settingName="HIDE_TRANSQUAL_BATCHHISTORY" data="false"/>
+	<ExtendedSetting clientId="217" settingName="SHOW_USER_ID_ON_MIF" data="CS"/>
+	<ExtendedSetting clientId="217" settingName="IS_ALERT" data="true"/>
+	<ExtendedSetting clientId="217" settingName="CLIENT_SMTP_SETTING" data="{'Server':'192.168.160.36','Port':25,'EnableSSL':false}" />
+	<ExtendedSetting clientId="217" settingName="LimitExtractMerchantReport" data="10"/>
+  <ExtendedSetting clientId="217" settingName="PCI_Site_Jump_MappingPrimaryUser" data="true"/>
+  <ExtendedSetting clientId="217" settingName="EntityType_MappingPrimaryUser" data="4, 6"/>
+	<!--End SPHERECOMMERCE-->
+
+	<!--STAX-->
+	<ExtendedSetting clientId="218" settingName="MerchantProfile_ExcludedColumns" data="SalesAgent,Headquarter,ISO,SALESOFFICE,BANKNUMBER,Status"/>
+	<ExtendedSetting clientId="218" settingName="PRODUCT_ENVIRONMENT" data="CS_RISK"/>
+	<ExtendedSetting clientId="218" settingName="STATEMENT_BACK_END_PROCESSOR" data="TSYS"/>
+	<ExtendedSetting clientId="218" settingName="STATEMENT_DISPLAY_FORMAT" data="{0}{1}"/>
+	<ExtendedSetting clientId="218" settingName="STATEMENT_REPORT_DATE_FORMAT" data="MM/dd/yyyy"/>
+	<ExtendedSetting clientId="218" settingName="RESET_PASSWORD" data="SphereTransact"/>
+	<!--for LOGIN_ configs: data="CS" or "CS,MS" or "MS" or blank: not display-->
+	<ExtendedSetting clientId="218" settingName="LOGIN_SHOW_CONTACT_PHONE" data=""/>
+	<ExtendedSetting clientId="218" settingName="LOGIN_SHOW_CONTACT_MESSAGE" data="CS,MS"/>
+	<ExtendedSetting clientId="218" settingName="LOGIN_SHOW_CONTACT_EMAIL" data="CS,MS"/>
+	<ExtendedSetting clientId="218" settingName="LOGIN_CONTACT_MESSAGE_MS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="218" settingName="LOGIN_CONTACT_MESSAGE_CS" data="If you are having difficulties accessing this site, please contact {0}."/>
+	<ExtendedSetting clientId="218" settingName="STATE_LABEL_TEXT" data="State, Territory, or Province"/>
+	<ExtendedSetting clientId="218" settingName="STATE_LABEL_TEXT_PLURAL" data="States, Territories, or Provinces"/>
+	<ExtendedSetting clientId="218" settingName="NEXTQUEUE_REPORT" data="true"/>
+	<ExtendedSetting clientId="218" settingName="InvisibleHyperlinkByEntityTypeIDs" data="11"/>
+	<ExtendedSetting clientId="218" settingName="HasQueuingMechanism" data="true"/>
+	<ExtendedSetting clientId="218" settingName="DisableChangeMSRoleByEntities" data="13"/>
+	<ExtendedSetting clientId="218" settingName="HasMSUserManagement" data="false"/>
+	<ExtendedSetting clientId="218" settingName="IS_CHANGE_USERNAME_MS_SITE" data="true"/>
+	<ExtendedSetting clientId="218" settingName="ENABLED_TSYS_CONVERSION" data="true"/>
+	<ExtendedSetting clientId="218" settingName="EnableACHReturnDetail" data="true"/>
+	<ExtendedSetting clientId="218" settingName="EnableAuthWorkedCheckBox" data="true"/>
+	<ExtendedSetting clientId="218" settingName="ENABLED_SUPPLEMENTAL" data="CreaditCore,ECommerce,Keyed,Swiped,LeadSource,ReferralSource"/>
+	<ExtendedSetting clientId="218" settingName="Show_HR" data="true"/>
+	<ExtendedSetting clientId="218" settingName="VIEW_FIRST_BATCH_INFO" data="true"/>
+	<ExtendedSetting clientId="218" settingName="ADD_GEOGRAPHIC_DATA" data="CS,AS"/>
+	<ExtendedSetting clientId="218" settingName="LimitExtractMerchanAlertHistory" data="20"/>
+	<ExtendedSetting clientId="218" settingName="LimitGenerateStatisticsReport" data="20"/>
+	<ExtendedSetting clientId="218" settingName="DISABLE_MIF_PROFILE_EDIT_MAINTENANCE" data="false"/>
+	<ExtendedSetting clientId="218" settingName="HIDE_ASSIGNMENT_FILTERS_DEMOGRAPHIC_PROFILE" data="false"/>
+	<ExtendedSetting clientId="218" settingName="HIDE_ASSIGNMENT_FILTERS_HIGHRISK_HRCODE" data="true"/>
+	<ExtendedSetting clientId="218" settingName="SHOW_TAB_MENU_DASHBOARD" data="true"/>
+	<ExtendedSetting clientId="218" settingName="MultiLanguage" data="true"/>
+	<ExtendedSetting clientId="218" settingName="HasAlertNotification" data="true"/>
+	<!--data="CS" or "CS,MS" or "MS" or blank: not display-->
+	<ExtendedSetting clientId="218" settingName="SHOW_PROCESSINGDATA_ENTITYNAME" data="true"/>
+	<ExtendedSetting clientId="218" settingName="HIDE_VOIREJECTTRANS_BATCHHISTORY" data="true"/>
+	<ExtendedSetting clientId="218" settingName="DEFAULT_HIERARCHY_FILTER_MODE" data="BANK,MERCHANTNUMBER"/>
+	<ExtendedSetting clientId="218" settingName="EnableTerminalComboBox" data="true"/>
+	<ExtendedSetting clientId="218" settingName="AllowChainAccessToPCIWithOldestMerchant" data="true"/>
+	<ExtendedSetting clientId="218" settingName="IS_DEPOSIT_HISTORY" data="true"/>
+	<!--Turn ON/OFF Voided/Rejected and/or Trans Qualification grids on Batch History report-->
+	<ExtendedSetting clientId="218" settingName="HIDE_TRANSQUAL_BATCHHISTORY" data="false"/>
+	<ExtendedSetting clientId="218" settingName="SHOW_USER_ID_ON_MIF" data="CS"/>
+	<ExtendedSetting clientId="218" settingName="IS_ALERT" data="true"/>
+	<ExtendedSetting clientId="218" settingName="CLIENT_SMTP_SETTING" data="{'Server':'192.168.160.35','Port':25,'EnableSSL':false}" />
+	<ExtendedSetting clientId="218" settingName="LimitExtractMerchantReport" data="10"/>
+	<!--End STAX-->
+
+</ClientExtendedSettings>

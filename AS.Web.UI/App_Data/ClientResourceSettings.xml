@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RootDesc>
+    <Client ClientID="22">
+        <!--INTRUST BANK-->
+        <Item mode="LOGIN_INSTRUCTIONS_BNK8714" title="">
+            <div style="font-style:italic;">
+              <reskey>ClientResourceSettings_xml_Message1</reskey>    
+            </div>
+        </Item>
+        
+        <Item mode="LOGIN_INSTRUCTIONS_BNK8714_Agent" title="">
+            <div style="font-style:italic;">
+              <reskey>ClientResourceSettings_xml_Message2</reskey>
+            </div>
+        </Item>
+    </Client>
+</RootDesc>

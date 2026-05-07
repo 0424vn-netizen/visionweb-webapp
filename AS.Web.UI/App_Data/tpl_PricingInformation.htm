@@ -1,0 +1,390 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <style type="text/css"> 
+        td
+        {
+            border-style:solid;
+            border-width:thin;
+        }
+        tr.borderBottom td
+        {
+            border-bottom-style:solid;
+            border-bottom-width:thin;
+        }
+        tr.borderTop td
+        {
+            border-top-style:solid;
+            border-top-width:thin;   
+        }
+    </style>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+</head>
+<body>
+    <table cellspacing="0" cellpadding="0" border="0">
+        <tr>
+            <th colspan="8" align="left">
+                 <b>[tpl_PricingInformation_htm_PricingInformation]</b>
+            </th>
+        </tr>
+        <tr class="borderTop">
+             <td rowspan="2"></td>
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_DailyDeposit]
+            </td>
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_WeeklyDeposit]
+            </td>
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_DailyAuthAmount]
+            </td>
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_Avg_TicketAmount]
+            </td>
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_AuthGrid]
+            </td>
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_UserDefinedGrid]
+            </td>
+            <td style="text-decoration:underline">                
+            </td>            
+        </tr>
+        <tr>
+            <td>
+                PI_DAILY_DEPOSIT
+            </td>
+            <td>
+                PI_WEEKLY_DEPOSIT
+            </td>
+            <td>
+                PI_DAILY_AUTH_AMOUNT
+            </td>
+            <td>
+                PI_AVG_TICKET_AMOUNT
+            </td>
+            <td>
+                PI_AUTH_GRID
+            </td>
+            <td>
+                PI_USER_DEFINED_GRID
+            </td>
+            <td>
+            </td>            
+        </tr>
+        <tr>
+             <td rowspan="8" style="vertical-align: middle">
+                [tpl_PricingInformation_htm_IncomeFactors]
+            </td>
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_AccountFee1]
+            </td>
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_AccountFee2]
+            </td>
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_AccountFee3]
+            </td>
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_AccountFee4]
+            </td>
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_AccountFee5]
+            </td>
+            <td style="text-decoration:underline">
+				[tpl_PricingInformation_htm_RecurringFeeFlag]
+			</td>
+            <td style="text-decoration:underline">
+				[tpl_PricingInformation_htm_RecurFeeInd]
+			</td>
+        </tr>
+        <tr>
+            <td>
+                PI_ACCOUNT_FEE1
+            </td>
+            <td>
+                PI_ACCOUNT_FEE2
+            </td>
+            <td>
+                PI_ACCOUNT_FEE3
+            </td>
+            <td>
+                PI_ACCOUNT_FEE4
+            </td>
+            <td>
+                PI_ACCOUNT_FEE5
+            </td>
+            <td>
+				PI_RECURRING_FEE_FLAG
+			</td>
+            <td>
+				PI_RECUR_FEE_IND
+			</td>
+        </tr>
+        <tr>         
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_RecurFeeAmt]
+            </td>
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_RecurFeeDesc]
+            </td>
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_StmtBundleOption]
+            </td>
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_BundlePct]
+            </td>
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_BundleRate]
+            </td>
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_BatchHeaderFee]
+            </td>
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_ReturnTransactionFee]
+            </td>
+        </tr>
+        <tr>          
+            <td>
+                PI_RECUR_FEE_AMT
+            </td>
+            <td>
+                PI_RECUR_FEE_DESC
+            </td>
+            <td>
+                PI_STMT_BUNDLE_OPTION
+            </td>
+            <td>
+                PI_BUNDLE_PCT
+            </td>
+            <td>
+                PI_BUNDLE_RATE
+            </td>
+            <td>
+                PI_BATCH_HEADER_FEE
+            </td>
+            <td>
+                PI_RETURN_TRANSACTION_FEE
+            </td>
+        </tr>
+        <tr>          
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_ChargebackFee]
+            </td>
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_RetrievalFee]
+            </td>
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_SalesTransFee]
+            </td>
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_OtherVolumePercent]
+            </td>
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_OtherItemCharge]
+            </td>
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_WebsiteUsage]
+            </td>
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_IVRUsage]
+            </td>
+        </tr>
+        <tr>           
+            <td>
+                PI_CHARGEBACK_FEE
+            </td>
+            <td>
+                PI_RETRIEVAL_FEE
+            </td>
+            <td>
+                PI_SALES_TRANS_FEE
+            </td>
+            <td>
+                PI_OTHER_VOLUME
+            </td>
+            <td>
+                PI_OTHER_ITEM_CHARGE
+            </td>
+            <td>
+                PI_WEBSITE_USAGE
+            </td>
+            <td>
+                PI_IVR_USAGE
+            </td>
+        </tr>
+        <tr>        
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_UnregPct]
+            </td>
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_UnregRate]
+            </td>
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_RegPct]
+            </td>
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_RegRate]
+            </td>
+            <td style="text-decoration:underline">
+            </td>
+            <td style="text-decoration:underline">
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>           
+            <td>
+                PI_UNREG_PCT
+            </td>
+            <td>
+                PI_UNREG_RATE
+            </td>
+            <td>
+                PI_REG_PCT
+            </td>
+            <td>
+                PI_REG_RATE
+            </td>
+            <td>
+            </td>
+            <td>                
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="vertical-align: middle">
+                [tpl_PricingInformation_htm_VisaAssocFees]
+            </td>
+            <td  style="text-decoration:underline">
+                [tpl_PricingInformation_htm_AcqrPrFee]
+            </td>
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_MisuseAuthFee]
+            </td>
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_ISA]
+            </td>
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_ZeroFloor]
+            </td>
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_IntlAcq]
+            </td>
+            <td style="text-decoration:underline">                
+            </td>
+            <td style="text-decoration:underline">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                PI_ACQR_PR_FEE
+            </td>
+            <td>
+                PI_MISUSE_AUTH_FEE
+            </td>
+            <td>
+                PI_ISA
+            </td>
+            <td>
+                PI_ZERO_FLOOR
+            </td>
+            <td>
+                PI_INTL_ACQ
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+		<tr>
+            <td rowspan="2" style="vertical-align: middle">   
+				[tpl_PricingInformation_htm_MCAssocFees]			
+            </td>
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_NABUFee]
+            </td>
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_CrossBorderFee]
+            </td>
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_AcqSupportFee]
+            </td>
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_ReversalFee]
+            </td>
+            <td style="text-decoration:underline">
+                
+            </td>
+            <td style="text-decoration:underline">
+               
+            </td>
+            <td style="text-decoration:underline">
+                
+            </td>            
+        </tr>
+        <tr>
+            <td>
+                PI_NABU_FEE
+            </td>
+            <td>
+                PI_CROSS_BORDER_FEE
+            </td>
+            <td>
+                PI_ACQ_SUPPORT_FEE
+            </td>
+            <td>
+                PI_REVERSAL_FEE
+            </td>
+            <td>                
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>           
+        </tr>
+		<tr>
+            <td rowspan="2" style="vertical-align: middle">
+                [tpl_PricingInformation_htm_DiscFullAcqAssoc]
+            </td>
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_INTLProcessFlag]
+            </td>
+            <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_INTLServiceFlag]
+            </td>
+             <td style="text-decoration:underline">
+                [tpl_PricingInformation_htm_DataUsageFlag]
+            </td>            
+            <td style="text-decoration:underline">
+            </td>
+            <td style="text-decoration:underline">
+            </td>
+            <td>
+            </td>
+            <td>
+			</td>
+        </tr>
+        <tr>
+            <td>
+                PI_INTL_PROCESS_FLAG
+            </td>
+            <td>
+                PI_INTL_SERVICE_FLAG
+            </td>
+            <td>
+                PI_DATA_USAGE_FLAG
+            </td>
+            <td>              
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>            
+        </tr>		    
+	</table>
+</body>
+</html>

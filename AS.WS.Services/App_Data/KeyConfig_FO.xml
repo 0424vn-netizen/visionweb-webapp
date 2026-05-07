@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Clients>
+	<client id="15" 	name="PPI" 	keyPath="\\asissks01\kcomp\vw_1.xml" />
+	<client id="22" 	name="FIS" 	keyPath="\\asissks01\kcomp\FIS.xml" />
+	<client id="29" 	name="ORION" 	keyPath="\\asissks01\kcomp\vw_1.xml" />
+	<client id="49" 	name="TNBCI" 	keyPath="\\asissks01\kcomp\vw_1.xml" />
+	<client id="65" 	name="IPMT" 	keyPath="\\asissks01\kcomp\vw_1.xml" />
+	<client id="82" 	name="PIVOTAL" 	keyPath="\\asissks01\kcomp\vw_1.xml" />
+	<client id="86" 	name="SNET" 	keyPath="\\asissks01\kcomp\vw_1.xml" />
+	<client id="89" 	name="TOTAL" 	keyPath="\\asissks01\kcomp\vw_1.xml" />
+	<client id="91" 	name="FULTON" 	keyPath="\\asissks01\kcomp\vw_1.xml" />
+	<client id="95" 	name="NTS" 	keyPath="\\asissks01\kcomp\vw_1.xml" />
+  	<client id="97" 	name="WRFC" 	keyPath="\\asissks01\kcomp\vw_1.xml" />
+	<client id="113" 	name="SIGNAPAY" keyPath="\\asissks01\kcomp\vw_1.xml" />
+	<client id="115" 	name="CLEARENT" keyPath="\\asissks01\kcomp\vw_1.xml" />
+	<client id="122" 	name="SFTI" 	keyPath="\\asissks01\kcomp\vw_1.xml" />
+	<client id="126" 	name="CAYAN" 	keyPath="\\asisks01\kcomp\vw_1.xml" />
+	<client id="127" 	name="PAYLINE" 	keyPath="\\asissks01\kcomp\vw_1.xml" />
+	<client id="1000" 	name="DEMO" 	keyPath="\\asissks01\kcomp\FIS_D.xml" />
+	<client id="144" 	name="SPHERE" 	keyPath="\\asissks01\kcomp\vw_1.xml" />
+	<client id="152" 	name="RS2" 	keyPath="\\asissks01\kcomp\vw_1.xml" />
+	<client id="39"  	name="MLS" 	keyPath="\\asissks01\kcomp\vw_1.xml" />
+	<client id="76"  	name="PAYA" 	keyPath="\\asissks01\kcomp\vw_1.xml" />
+	<client id="69"  	name="FIPS" 	keyPath="\\asissks01\kcomp\vw_1.xml" />
+	<client id="176" 	name="DYNAMIC" 	keyPath="\\asissks01\kcomp\vw_1.xml" />
+	<client id="165" 	name="GREENBOX" keyPath="\\asissks01\kcomp\vw_1.xml" />
+	<client id="170" 	name="ProCare"  keyPath="\\asissks01\kcomp\vw_1.xml" />
+	<client id="181" 	name="KeyBank"  keyPath="\\asissks01\kcomp\vw_1.xml" />
+	<client id="191" 	name="WOODFOREST" keyPath="\\asissks01\kcomp\vw_1.xml" />
+	<client id="158" 	name="FORTIS" keyPath="\\asissks01\kcomp\vw_1.xml" />
+	<client id="187" 	name="AVIDIA" keyPath="\\asissks01\kcomp\vw_1.xml" />
+	<client id="186" 	name="MBH" keyPath="\\asissks01\kcomp\vw_1.xml" />
+	<client id="200" 	name="ESQUIRE" keyPath="\\asissks01\kcomp\vw_1.xml" />
+	<client id="218" 	name="STAX" keyPath="\\asissks01\kcomp\vw_1.xml" />
+</Clients>

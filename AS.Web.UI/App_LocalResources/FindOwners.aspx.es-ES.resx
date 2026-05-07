@@ -1,0 +1,606 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ASGridBoundColumnResource1.AndCurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridBoundColumnResource1.ColumnGroupName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridBoundColumnResource1.CurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridBoundColumnResource1.DataFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridBoundColumnResource1.EditFormHeaderTextFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="ASGridBoundColumnResource1.EmptyDataText" xml:space="preserve">
+    <value>&amp;nbsp;</value>
+  </data>
+  <data name="ASGridBoundColumnResource1.FooterAggregateFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridBoundColumnResource1.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridBoundColumnResource1.GroupByExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridBoundColumnResource1.HeaderAbbr" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridBoundColumnResource1.HeaderAxis" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridBoundColumnResource1.HeaderImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridBoundColumnResource1.HeaderText" xml:space="preserve">
+    <value># Comerciante </value>
+  </data>
+  <data name="ASGridBoundColumnResource1.HeaderTooltip" xml:space="preserve">
+    <value>ID de Comerciante</value>
+  </data>
+  <data name="ASGridBoundColumnResource1.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource1.SortExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridBoundColumnResource2.AndCurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridBoundColumnResource2.ColumnGroupName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridBoundColumnResource2.CurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridBoundColumnResource2.DataFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridBoundColumnResource2.EditFormHeaderTextFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="ASGridBoundColumnResource2.EmptyDataText" xml:space="preserve">
+    <value>&amp;nbsp;</value>
+  </data>
+  <data name="ASGridBoundColumnResource2.FooterAggregateFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridBoundColumnResource2.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridBoundColumnResource2.GroupByExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridBoundColumnResource2.HeaderAbbr" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridBoundColumnResource2.HeaderAxis" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridBoundColumnResource2.HeaderImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridBoundColumnResource2.HeaderText" xml:space="preserve">
+    <value>Nombre del Comerciante</value>
+  </data>
+  <data name="ASGridBoundColumnResource2.HeaderTooltip" xml:space="preserve">
+    <value>Nombre del Comerciante</value>
+  </data>
+  <data name="ASGridBoundColumnResource2.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource2.SortExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridTemplateColumnResource1.AndCurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridTemplateColumnResource1.ColumnGroupName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridTemplateColumnResource1.CurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridTemplateColumnResource1.EditFormHeaderTextFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="ASGridTemplateColumnResource1.FooterAggregateFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridTemplateColumnResource1.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridTemplateColumnResource1.GroupByExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridTemplateColumnResource1.HeaderAbbr" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridTemplateColumnResource1.HeaderAxis" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridTemplateColumnResource1.HeaderImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridTemplateColumnResource1.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridTemplateColumnResource1.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridTemplateColumnResource1.SortExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxCloseResource1.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="uxCloseResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.BackImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.FilterMenu.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.GroupingSettings.CollapseTooltip" xml:space="preserve">
+    <value>Colapsar Grupo</value>
+  </data>
+  <data name="uxMerchantGridResource1.GroupingSettings.ExpandTooltip" xml:space="preserve">
+    <value>Expandir grupo</value>
+  </data>
+  <data name="uxMerchantGridResource1.GroupingSettings.GroupByFieldsSeparator" xml:space="preserve">
+    <value>;  </value>
+  </data>
+  <data name="uxMerchantGridResource1.GroupingSettings.GroupContinuedFormatString" xml:space="preserve">
+    <value>…grupo continuado de la página anterior. </value>
+  </data>
+  <data name="uxMerchantGridResource1.GroupingSettings.GroupContinuesFormatString" xml:space="preserve">
+    <value> El grupo continúa en la próxima página.</value>
+  </data>
+  <data name="uxMerchantGridResource1.GroupingSettings.GroupSplitDisplayFormat" xml:space="preserve">
+    <value>Mostrando {0} de {1} ítems.</value>
+  </data>
+  <data name="uxMerchantGridResource1.GroupingSettings.GroupSplitFormat" xml:space="preserve">
+    <value> ({0})</value>
+  </data>
+  <data name="uxMerchantGridResource1.GroupingSettings.UnGroupButtonTooltip" xml:space="preserve">
+    <value>Haga clic aquí para desagrupar</value>
+  </data>
+  <data name="uxMerchantGridResource1.GroupingSettings.UnGroupTooltip" xml:space="preserve">
+    <value>Arrastre fuera  de la barra para desagrupar</value>
+  </data>
+  <data name="uxMerchantGridResource1.GroupPanel.Text" xml:space="preserve">
+    <value>Arrastre un encabezado de columna y colóquelo aquí para agrupar por esa columna</value>
+  </data>
+  <data name="uxMerchantGridResource1.GroupPanel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.HeaderContextMenu.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.HierarchySettings.CollapseTooltip" xml:space="preserve">
+    <value>Colapsar</value>
+  </data>
+  <data name="uxMerchantGridResource1.HierarchySettings.ExpandTooltip" xml:space="preserve">
+    <value>Expandir</value>
+  </data>
+  <data name="uxMerchantGridResource1.HierarchySettings.SelfCollapseTooltip" xml:space="preserve">
+    <value>Colapsar auto-referencia</value>
+  </data>
+  <data name="uxMerchantGridResource1.HierarchySettings.SelfExpandTooltip" xml:space="preserve">
+    <value>Expandir auto-referencia</value>
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.CommandItemSettings.AddNewRecordImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.CommandItemSettings.AddNewRecordText" xml:space="preserve">
+    <value>Agregar nuevo registro</value>
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.CommandItemSettings.CancelChangesText" xml:space="preserve">
+    <value>Cancelar cambios</value>
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.CommandItemSettings.ExportToCsvImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.CommandItemSettings.ExportToCsvText" xml:space="preserve">
+    <value>Exportar a CSV</value>
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.CommandItemSettings.ExportToExcelImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.CommandItemSettings.ExportToExcelText" xml:space="preserve">
+    <value>Exportar a Excel</value>
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.CommandItemSettings.ExportToPdfImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.CommandItemSettings.ExportToPdfText" xml:space="preserve">
+    <value>Exportar a PDF</value>
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.CommandItemSettings.ExportToWordImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.CommandItemSettings.ExportToWordText" xml:space="preserve">
+    <value>Exportar a Word</value>
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.CommandItemSettings.RefreshImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.CommandItemSettings.RefreshText" xml:space="preserve">
+    <value>Refrescar</value>
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.CommandItemSettings.SaveChangesText" xml:space="preserve">
+    <value>Guardar cambios</value>
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.EditFormSettings.CaptionFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.EditFormSettings.InsertCaption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.ExpandCollapseColumn.AndCurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.ExpandCollapseColumn.CollapseImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.ExpandCollapseColumn.ColumnGroupName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.ExpandCollapseColumn.CurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.ExpandCollapseColumn.EditFormHeaderTextFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.ExpandCollapseColumn.ExpandImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.ExpandCollapseColumn.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.ExpandCollapseColumn.GroupByExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.ExpandCollapseColumn.HeaderAbbr" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.ExpandCollapseColumn.HeaderAxis" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.ExpandCollapseColumn.HeaderImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.ExpandCollapseColumn.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.ExpandCollapseColumn.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.ExpandCollapseColumn.SortExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.NoDetailRecordsText" xml:space="preserve">
+    <value>No se encontraron datos.</value>
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.NoMasterRecordsText" xml:space="preserve">
+    <value>No se encontraron datos.</value>
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.PagerStyle.ChangePageSizeButtonToolTip" xml:space="preserve">
+    <value>Cambiar Tamaño de Página</value>
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.PagerStyle.ChangePageSizeComboBoxTableSummary" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.PagerStyle.ChangePageSizeComboBoxToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.PagerStyle.ChangePageSizeTextBoxToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.PagerStyle.FirstPageText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.PagerStyle.FirstPageToolTip" xml:space="preserve">
+    <value>Primera Página</value>
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.PagerStyle.GoToPageButtonToolTip" xml:space="preserve">
+    <value>Ir a Página</value>
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.PagerStyle.GoToPageTextBoxToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.PagerStyle.LastPageText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.PagerStyle.LastPageToolTip" xml:space="preserve">
+    <value>Última Página</value>
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.PagerStyle.NextPagesToolTip" xml:space="preserve">
+    <value>Siguientes Páginas</value>
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.PagerStyle.NextPageText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.PagerStyle.NextPageToolTip" xml:space="preserve">
+    <value>Siguiente Página</value>
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.PagerStyle.PagerTextFormat" xml:space="preserve">
+    <value>Cambiar página: {4} &amp;nbsp;Página &lt;strong&gt;{0}&lt;/strong&gt; de &lt;strong&gt;{1}&lt;/strong&gt;, ítems &lt;strong&gt;{2}&lt;/strong&gt; a &lt;strong&gt;{3}&lt;/strong&gt; de &lt;strong&gt;{5}&lt;/strong&gt;.</value>
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.PagerStyle.PageSizeLabelText" xml:space="preserve">
+    <value>Tamaño de página:</value>
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.PagerStyle.PrevPagesToolTip" xml:space="preserve">
+    <value>Páginas Anteriores</value>
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.PagerStyle.PrevPageText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.PagerStyle.PrevPageToolTip" xml:space="preserve">
+    <value>Página Anterior</value>
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.RowIndicatorColumn.AndCurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.RowIndicatorColumn.ColumnGroupName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.RowIndicatorColumn.CurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.RowIndicatorColumn.EditFormHeaderTextFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.RowIndicatorColumn.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.RowIndicatorColumn.GroupByExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.RowIndicatorColumn.HeaderAbbr" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.RowIndicatorColumn.HeaderAxis" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.RowIndicatorColumn.HeaderImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.RowIndicatorColumn.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.RowIndicatorColumn.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.RowIndicatorColumn.SortExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.Summary" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.MasterTableView.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.PagerStyle.ChangePageSizeButtonToolTip" xml:space="preserve">
+    <value>Cambiar Tamaño de Página</value>
+  </data>
+  <data name="uxMerchantGridResource1.PagerStyle.ChangePageSizeComboBoxTableSummary" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.PagerStyle.ChangePageSizeComboBoxToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.PagerStyle.ChangePageSizeTextBoxToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.PagerStyle.FirstPageText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.PagerStyle.FirstPageToolTip" xml:space="preserve">
+    <value>Primera Página</value>
+  </data>
+  <data name="uxMerchantGridResource1.PagerStyle.GoToPageButtonToolTip" xml:space="preserve">
+    <value>Ir a Página</value>
+  </data>
+  <data name="uxMerchantGridResource1.PagerStyle.GoToPageTextBoxToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.PagerStyle.LastPageText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.PagerStyle.LastPageToolTip" xml:space="preserve">
+    <value>Última Página</value>
+  </data>
+  <data name="uxMerchantGridResource1.PagerStyle.NextPagesToolTip" xml:space="preserve">
+    <value>Siguientes Páginas</value>
+  </data>
+  <data name="uxMerchantGridResource1.PagerStyle.NextPageText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.PagerStyle.NextPageToolTip" xml:space="preserve">
+    <value>Siguiente Página</value>
+  </data>
+  <data name="uxMerchantGridResource1.PagerStyle.PagerTextFormat" xml:space="preserve">
+    <value>Cambiar página: {4} &amp;nbsp;Página &lt;strong&gt;{0}&lt;/strong&gt; de &lt;strong&gt;{1}&lt;/strong&gt;, ítems &lt;strong&gt;{2}&lt;/strong&gt; a &lt;strong&gt;{3}&lt;/strong&gt; de &lt;strong&gt;{5}&lt;/strong&gt;.</value>
+  </data>
+  <data name="uxMerchantGridResource1.PagerStyle.PageSizeLabelText" xml:space="preserve">
+    <value>Tamaño de página:</value>
+  </data>
+  <data name="uxMerchantGridResource1.PagerStyle.PrevPagesToolTip" xml:space="preserve">
+    <value>Páginas Anteriores</value>
+  </data>
+  <data name="uxMerchantGridResource1.PagerStyle.PrevPageText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantGridResource1.PagerStyle.PrevPageToolTip" xml:space="preserve">
+    <value>Página Anterior</value>
+  </data>
+  <data name="uxMerchantGridResource1.SortingSettings.SortedAscToolTip" xml:space="preserve">
+    <value>Ordenado por orden ascendente</value>
+  </data>
+  <data name="uxMerchantGridResource1.SortingSettings.SortedDescToolTip" xml:space="preserve">
+    <value>Ordenado por orden descendente</value>
+  </data>
+  <data name="uxMerchantGridResource1.SortingSettings.SortToolTip" xml:space="preserve">
+    <value>Haga clic aquí para ordenar</value>
+  </data>
+  <data name="uxMerchantGridResource1.StatusBarSettings.LoadingText" xml:space="preserve">
+    <value>Cargando…</value>
+  </data>
+  <data name="uxMerchantGridResource1.StatusBarSettings.ReadyText" xml:space="preserve">
+    <value>Listo</value>
+  </data>
+  <data name="uxMerchantGridResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxSubmitResource1.Text" xml:space="preserve">
+    <value>Agregar</value>
+  </data>
+  <data name="uxSubmitResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridBoundColumnResourceOwner.HeaderText" xml:space="preserve">
+    <value>Dueño</value>
+  </data>
+  <data name="ASGridBoundColumnResourceOwner.HeaderTooltip" xml:space="preserve">
+    <value>Dueño</value>
+  </data>
+  <data name="PageTitleResourceOwner.Title" xml:space="preserve">
+    <value>Encontrar Propietarios</value>
+  </data>
+  <data name="ASGridBoundColumnResourceZip.HeaderText" xml:space="preserve">
+    <value>Código Postal</value>
+  </data>
+  <data name="ASGridBoundColumnResourceZip.HeaderTooltip" xml:space="preserve">
+    <value>Código Postal</value>
+  </data>
+  <data name="PageTitleResourceZip" xml:space="preserve">
+    <value>Encontrar Zips</value>
+  </data>
+</root>

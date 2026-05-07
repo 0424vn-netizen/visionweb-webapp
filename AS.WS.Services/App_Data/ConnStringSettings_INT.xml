@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ConnectionSettings>
+  <!--PIVOT-->
+  <Client id="82">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+  </Client>
+  <!--MPS-->
+  <Client id="23">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=MPS_RISK_US;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=MPS_RISK_US;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=MPS_RISK_US;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=MPS_RISK_US;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=MPS_RISK_US;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+  </Client>
+  <!--ORION-->
+  <Client id="29">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" connectionString="Server=generic_testser\EN17;Database=MULTI_PCI;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;"/>
+  </Client>
+  <!--DemoVisionWeb-->
+  <!-- <Client id="999">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb_DEMO_US;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb_DEMO_US;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb_DEMO_US;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb_DEMO_US;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+  </Client> -->
+  <!--DemoVisionWeb-->
+  <!--  <Client id="58">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb_DEMO_US;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb_DEMO_US;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb_DEMO_US;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb_DEMO_US;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+  </Client> -->
+  <!--When the app first starts, it inserts a log record with clientId = 0. This need to be specify-->
+  <Client id="0">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+  </Client>
+  <Client id="86">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" connectionString="Server=generic_testserver\EN17;Database=MULTI_PCI;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;"/>
+  </Client>
+  <Client id="22">
+
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" connectionString="Server=generic_testserver\EN17;Database=MULTI_PCI;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;"/>
+  </Client>
+
+  <Client id="69">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" connectionString="Server=generic_testserver\EN17;Database=MULTI_PCI;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;"/>
+  </Client>
+
+  <Client id="1000">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=FIS_DEMO;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=FIS_DEMO;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=FIS_DEMO;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=FIS_DEMO;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=FIS_DEMO;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" connectionString="Server=generic_testserver\EN17;Database=MULTI_PCI;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;"/>
+  </Client>
+
+  <!--Fulton-->
+  <Client id="91">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" connectionString="Server=generic_testserver\EN17;Database=MULTI_PCI;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;"/>
+  </Client>
+  <Client id="89">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+  </Client>
+
+  <Client id="15">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" connectionString="Server=generic_testserver\EN17;Database=MULTI_PCI;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;"/>
+  </Client>
+  <Client id="49">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" connectionString="Server=generic_testserver\EN17;Database=MULTI_PCI;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;"/>
+  </Client>
+  <Client id="97">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" connectionString="Server=generic_testserver\EN17;Database=MULTI_PCI;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+  </Client>
+  <Client id="95">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+  </Client>
+  <!--IPMT-->
+  <Client id="65">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" connectionString="Server=generic_testserver\EN17;Database=MULTI_PCI;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;"/>
+  </Client>
+
+  <!--SOFT-->
+  <Client id="122">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" connectionString="Server=generic_testserver\EN17;Database=MULTI_PCI;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;"/>
+    <ConnectionSetting name="MB_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+  </Client>
+
+  <!--CAYAN-->
+
+
+  <Client id="126">
+
+
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" connectionString="Server=generic_testserver\EN17;Database=MULTI_PCI;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;"/>
+    <ConnectionSetting name="MB_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+  </Client>
+  <!--
+  <Client id="126">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database= VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database= VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database= VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database= VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" connectionString="Server=generic_testserver\en08;Database=MULTI_PCI_QA_V3;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;"/>
+  </Client>
+  -->
+  <!--EVANCE-->
+  <Client id="119">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" connectionString="Server=generic_testserver\EN17;Database=MULTI_PCI;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;"/>
+  </Client>
+  <!--PAYLINE-->
+  <Client id="127">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" connectionString="Server=generic_testserver\EN17;Database=MULTI_PCI;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;"/>
+  </Client>
+  <Client id="129">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" connectionString="Server=generic_testserver\EN17;Database=MULTI_PCI;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;"/>
+    <ConnectionSetting name="MB_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+  </Client>
+  <!--PUREPORTAL-->
+  <Client id="118">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database= AperiaSecurity_US;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=AperiaLogs_US;Trusted_Connection=Yes;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" connectionString="Server=generic_testserver\EN17;Database=MULTI_PCI;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;"/>
+    <ConnectionSetting name="LEAD_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=Leads_US;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;"/>
+  </Client>
+  <!--PUREPORTAL DEMO-->
+  <Client id="998">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database= AperiaSecurity_US;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=AperiaLogs_US;Trusted_Connection=Yes;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" connectionString="Server=generic_testserver\EN17;Database=MULTI_PCI;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;"/>
+    <ConnectionSetting name="LEAD_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=Leads_US;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;"/>
+  </Client>
+  <!--CLEARENT-->
+  <Client id="115">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+  </Client>
+
+
+  <Client id="113">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;Trusted_Connection=Yes;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;Trusted_Connection=Yes;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;Trusted_Connection=Yes;Connect Timeout=20;" />
+  </Client>
+  <!--Allied Wallet-->
+  <Client id="142">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" connectionString="Server=generic_testserver\EN17;Database=MULTI_PCI;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;"/>
+  </Client>
+
+  <!--Fulton Demo -->
+  <Client id="58">
+
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=FIS_DEMO;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=FIS_DEMO;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=FIS_DEMO;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=FIS_DEMO;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=FIS_DEMO;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=FIS_DEMO;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" connectionString="Server=generic_testserver\EN17;Database=MULTI_PCI;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;"/>
+  </Client>
+
+
+
+
+  <Client id="144">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" connectionString="Server=generic_testserver\EN17;Database=MULTI_PCI;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;"/>
+    <ConnectionSetting name="MB_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+  </Client>
+
+  <Client id="152">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" connectionString="Server=generic_testserver\EN17;Database=MULTI_PCI;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;"/>
+    <ConnectionSetting name="MB_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+  </Client>
+
+  <Client id="76">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" connectionString="Server=generic_testserver\EN17;Database=MULTI_PCI;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;"/>
+    <ConnectionSetting name="MB_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+  </Client>
+  <Client id="39">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" connectionString="Server=generic_testserver\EN17;Database=MULTI_PCI;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;"/>
+    <ConnectionSetting name="MB_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+  </Client>
+
+
+  <Client id="165">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" connectionString="Server=generic_testserver\EN17;Database=MULTI_PCI;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;"/>
+    <ConnectionSetting name="MB_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+  </Client>
+
+  <Client id="176">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" connectionString="Server=generic_testserver\EN17;Database=MULTI_PCI;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;"/>
+    <ConnectionSetting name="MB_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+  </Client>
+
+  <Client id="170">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" connectionString="Server=generic_testserver\EN17;Database=MULTI_PCI;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;"/>
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=PIVOT_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+  </Client>
+
+  <!--KYBNK-->
+  <Client id="181">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" connectionString="Server=generic_testserver\EN17;Database=MULTI_PCI;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;"/>
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+  </Client>
+
+  <!--EIRTH-->
+  <Client id="160">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=Visionweb2_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=Visionweb2_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=Visionweb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=Visionweb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=Visionweb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" connectionString="Server=generic_testserver\EN17;Database=MULTI_PCI;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;"/>
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=Visionweb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+  </Client>
+
+  <Client id="158">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=Visionweb2_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=Visionweb2_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=Visionweb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=Visionweb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=Visionweb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" connectionString="Server=generic_testserver\EN17;Database=MULTI_PCI;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;"/>
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=Visionweb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+  </Client>
+  <Client id="191">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=Visionweb2_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=Visionweb2_QA;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=Visionweb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=Visionweb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=Visionweb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=MULTI_PCI;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=Visionweb2_QA;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+  </Client>
+  <Client id="187">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+  </Client>
+  <Client id="186">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+  </Client>
+  <Client id="200">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+  </Client>
+  <Client id="206">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+  </Client>
+  <Client id="207">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+  </Client>
+  <Client id="215">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+  </Client>
+  <Client id="217">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=MULTI_PCI;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+  </Client>
+  <Client id="218">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;" />
+    <ConnectionSetting name="RM_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=VisionWeb;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" connectionString="Server=GENERIC_TESTSERVER\EN17;Database=MULTI_PCI;uid=ddsvn_sa;pwd=123456;Connect Timeout=20;" />
+  </Client>
+</ConnectionSettings>

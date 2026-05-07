@@ -1,0 +1,16 @@
+[
+  {
+    "ClientId": 191,
+    "BaseApiUrl": "https://api.cybersource.com",
+    "SearchApiUrl": "/tss/v2/searches",
+    "DetailApiUrl": "/tss/v2/transactions",
+    "Limit": "100",
+    "Sort": "submitTimeUtc:asc",
+    "Timezone": "America/Chicago",
+    "Query": "submitTimeUtc:[NOW/HOUR-1HOUR TO NOW/HOUR}",
+    "CardDummy": "999999",
+    "PrefixFileName": "API_AUTH_",
+    "SpaName": "spa_cs_Process_MerchantAuthorization_API",
+    "LogSummaryFile": true
+  }
+]

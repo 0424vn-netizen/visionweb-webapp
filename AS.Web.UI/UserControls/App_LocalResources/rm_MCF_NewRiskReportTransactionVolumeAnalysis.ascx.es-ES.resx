@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="uxGridTransVolumeAnalysisResource.GridName" xml:space="preserve">
+    <value>Análisis del Volumen de Transacción</value>
+  </data>
+  <data name="Time.HeaderText" xml:space="preserve">
+    <value>Tiempo</value>
+  </data>
+  <data name="Time.HeaderTooltip" xml:space="preserve">
+    <value>Tiempo</value>
+  </data>
+  <data name="SalesCount.HeaderText" xml:space="preserve">
+    <value># de Ventas</value>
+  </data>
+  <data name="SalesCount.HeaderTooltip" xml:space="preserve">
+    <value>Conteo de Ventas</value>
+  </data>
+  <data name="Volume.HeaderText" xml:space="preserve">
+    <value>Monto neto</value>
+  </data>
+  <data name="VolumeTooltipText.HeaderText" xml:space="preserve">
+    <value>Net Amount</value>
+  </data>
+  <data name="Volume.HeaderTooltip" xml:space="preserve">
+    <value>Volumen Neto</value>
+  </data>
+  <data name="AVGTicket.HeaderText" xml:space="preserve">
+    <value>Monto prom trans</value>
+  </data>
+  <data name="AVGTicket.HeaderTooltip" xml:space="preserve">
+    <value>Ticket Promedio</value>
+  </data>
+  <data name="AuthCount.HeaderText" xml:space="preserve">
+    <value># de Aut</value>
+  </data>
+  <data name="AuthCount.HeaderTooltip" xml:space="preserve">
+    <value>Cuenta de Autorización</value>
+  </data>
+  <data name="AuthApprovalPercent.HeaderText" xml:space="preserve">
+    <value>% Aut Apr por #</value>
+  </data>
+  <data name="KeyedPercent.HeaderText" xml:space="preserve">
+    <value>PC % | P8</value>
+  </data>
+  <data name="Returns.HeaderText" xml:space="preserve">
+    <value>$ Devolución</value>
+  </data>
+  <data name="ReturnPercent.HeaderText" xml:space="preserve">
+    <value>% de Dev en $</value>
+  </data>
+  <data name="ChargeBackPercent.HeaderText" xml:space="preserve">
+    <value>% CC por #</value>
+  </data>
+  <data name="ChargeBackVolume.HeaderText" xml:space="preserve">
+    <value>$ CC</value>
+  </data>
+  <data name="Retrievals.HeaderText" xml:space="preserve">
+    <value>Mon Recup</value>
+  </data>
+  <data name="Foreign.HeaderText" xml:space="preserve">
+    <value>$ TE</value>
+  </data>
+  <data name="ACHRejects.HeaderText" xml:space="preserve">
+    <value>Dev ACH $</value>
+  </data>
+  <data name="AuthApprovalPercent.HeaderTooltip" xml:space="preserve">
+    <value>%(Porcentaje) de Aprobaciones de  Autorización</value>
+  </data>
+  <data name="KeyedPercent.HeaderTooltip" xml:space="preserve">
+    <value>Porcentaje de las transacciones ingresadas</value>
+  </data>
+  <data name="Returns.HeaderTooltip" xml:space="preserve">
+    <value>Devulociones en  Cantidad de Dólares</value>
+  </data>
+  <data name="ReturnPercent.HeaderTooltip" xml:space="preserve">
+    <value>% de Devoluciones</value>
+  </data>
+  <data name="ChargeBackPercent.HeaderTooltip" xml:space="preserve">
+    <value>% de Contracargos</value>
+  </data>
+  <data name="ChargeBackVolume.HeaderTooltip" xml:space="preserve">
+    <value>Cantidad de Dolares  de contracargo</value>
+  </data>
+  <data name="Retrievals.HeaderTooltip" xml:space="preserve">
+    <value>Recuperación en Cantidad de Dólares</value>
+  </data>
+  <data name="Foreign.HeaderTooltip" xml:space="preserve">
+    <value>Cantidades de la Tarjeta Extranjeras</value>
+  </data>
+  <data name="ACHRejects.HeaderTooltip" xml:space="preserve">
+    <value>Rechazamientos Automatizados de la Casa de Compensación</value>
+  </data>
+  <data name="LargeTrans.HeaderText" xml:space="preserve">
+    <value>$ Tran MG</value>
+  </data>
+  <data name="LargeTrans.HeaderTooltip" xml:space="preserve">
+    <value>Cantidad grande del Dolar de la Transacción</value>
+  </data>
+  <data name="uxExportTransVolumeAnalysisResourcekey.FileName" xml:space="preserve">
+    <value>InformedeRiesgo-AnálisisDelVolumenDeTransacción</value>
+  </data>
+  <data name="Literal15Resource1.Text" xml:space="preserve">
+    <value>Análisis del Volumen de Transacción</value>
+  </data>
+  <data name="Literal16Resource1.Text" xml:space="preserve">
+    <value>Personalizar</value>
+  </data>
+  <data name="uxExportTransVolumeAnalysisResourcekey.GridHeader" xml:space="preserve">
+    <value>ANÁLISIS DEL VOLUMEN DE TRANSACCIÓN</value>
+  </data>
+  <data name="ReturnCount.HeaderText" xml:space="preserve">
+    <value># Devolución</value>
+  </data>
+  <data name="ReturnCount.HeaderTooltip" xml:space="preserve">
+    <value>Conteo de Devolución</value>
+  </data>
+  <data name="ChargeBackCount.HeaderText" xml:space="preserve">
+    <value># CC</value>
+  </data>
+  <data name="ChargeBackCount.HeaderTooltip" xml:space="preserve">
+    <value>Recuentro de Cargo</value>
+  </data>
+  <data name="SaleAmount.HeaderText" xml:space="preserve">
+    <value>$ de Ventas</value>
+  </data>
+  <data name="SaleAmount.HeaderTooltip" xml:space="preserve">
+    <value>Cantidad de Ventas en Dolares</value>
+  </data>
+  <data name="ChargeBackCountPercent.HeaderText" xml:space="preserve">
+    <value>% CC por #</value>
+  </data>
+  <data name="ChargeBackCountPercent.HeaderTooltip" xml:space="preserve">
+    <value>Recuentro de Cargo Porcentaje</value>
+  </data>
+  <data name="ReturnCountPercent.HeaderText" xml:space="preserve">
+    <value>% Dev por $</value>
+  </data>
+  <data name="ReturnCountPercent.HeaderTooltip" xml:space="preserve">
+    <value>Porcentaje de Conteo Regresado</value>
+  </data>
+  <data name="ForeignCardCountPercent.HeaderText" xml:space="preserve">
+    <value>% TE por #</value>
+  </data>
+  <data name="ForeignCardCountPercent.HeaderTooltip" xml:space="preserve">
+    <value>Porcentaje de Conteo de Tarjetas extranjeras</value>
+  </data>
+  <data name="DeclinedAuthorizationAmount.HeaderText" xml:space="preserve">
+    <value>$ Aut Rech</value>
+  </data>
+  <data name="DeclinedAuthorizationAmount.HeaderTooltip" xml:space="preserve">
+    <value>Porcentaje de la cantidad en dólares de la disminución de la autorización</value>
+  </data>
+  <data name="DeclinedAuthorizationCount.HeaderText" xml:space="preserve">
+    <value># Aut Rech</value>
+  </data>
+  <data name="DeclinedAuthorizationCount.HeaderTooltip" xml:space="preserve">
+    <value>Cantidad de Autorización Disminuida</value>
+  </data>
+  <data name="DeclinedAuthorizationAmountPercent.HeaderText" xml:space="preserve">
+    <value>% Aut Rech por $</value>
+  </data>
+  <data name="DeclinedAuthorizationAmountPercent.HeaderTooltip" xml:space="preserve">
+    <value>Porcentaje de la cantidad en dólares de la disminución de la autorización</value>
+  </data>
+  <data name="DeclinedAuthorizationCountPercent.HeaderText" xml:space="preserve">
+    <value>% Aut Rech por #</value>
+  </data>
+  <data name="DeclinedAuthorizationCountPercent.HeaderTooltip" xml:space="preserve">
+    <value>Porcentaje de Cantidad de Autorización Disminuida</value>
+  </data>
+  <data name="RetrievalCountPercent.HeaderText" xml:space="preserve">
+    <value>% Recup por #</value>
+  </data>
+  <data name="RetrievalCountPercent.HeaderTooltip" xml:space="preserve">
+    <value>Porcentaje de Recuento de Recuperación</value>
+  </data>
+  <data name="RetrievalAmountPercent.HeaderText" xml:space="preserve">
+    <value>% Recup por $</value>
+  </data>
+  <data name="RetrievalAmountPercent.HeaderTooltip" xml:space="preserve">
+    <value>Porcentaje de Cantidad en Dólares de Recuperación</value>
+  </data>
+  <data name="FirstRetrievalCount.HeaderText" xml:space="preserve">
+    <value># Recuperación</value>
+  </data>
+  <data name="FirstRetrievalCount.HeaderTooltip" xml:space="preserve">
+    <value>Recuento de Recuperación</value>
+  </data>
+  <data name="txtContractExpected" xml:space="preserve">
+    <value>Expectación de Contrato</value>
+  </data>
+  <data name="txt30day" xml:space="preserve">
+    <value>30 - dias</value>
+  </data>
+  <data name="Time.HeaderDescription" xml:space="preserve">
+    <value>Tiempo</value>
+  </data>
+  <data name="SalesCount.HeaderDescription" xml:space="preserve">
+    <value>Número de transacciones de tarjeta de crédito/débito liquidadas</value>
+  </data>
+  <data name="Volume.HeaderDescription" xml:space="preserve">
+    <value>Suma de transacciones de tarjeta de crédito menos importes de transacción devueltos</value>
+  </data>
+  <data name="AVGTicket.HeaderDescription" xml:space="preserve">
+    <value>Cantidad en dólares del promedio de tarjetas de credito de un comerciante</value>
+  </data>
+  <data name="AuthCount.HeaderDescription" xml:space="preserve">
+    <value>Número Total de Intentos de Autorización</value>
+  </data>
+  <data name="AuthApprovalPercent.HeaderDescription" xml:space="preserve">
+    <value>Porcentaje de Autorizaciones aprobadas que son trasacciones liquidadas</value>
+  </data>
+  <data name="KeyedPercent.HeaderDescription" xml:space="preserve">
+    <value>Porcentaje de transacciones de tarjetas de credito codificadas</value>
+  </data>
+  <data name="Returns.HeaderDescription" xml:space="preserve">
+    <value>Cantidad en dólares de transacciones de ventas devueltas</value>
+  </data>
+  <data name="ReturnPercent.HeaderDescription" xml:space="preserve">
+    <value>Recuento de devolución dividido por cantidad de ventas</value>
+  </data>
+  <data name="ChargeBackPercent.HeaderDescription" xml:space="preserve">
+    <value>Porcentaje de transacciones de tarjetas de credito en disputa versus ventas</value>
+  </data>
+  <data name="ChargeBackVolume.HeaderDescription" xml:space="preserve">
+    <value>Cantidad en dólares de la transacción de tarjeta de crédito en disputa</value>
+  </data>
+  <data name="Retrievals.HeaderDescription" xml:space="preserve">
+    <value>Cantidad en dólares de recuperaciones divididas por el número de ventas</value>
+  </data>
+  <data name="Foreign.HeaderDescription" xml:space="preserve">
+    <value>Cantidad en dólares de transacciones de tarjetas de crédito procesadas no emitidas por Estados Unidos</value>
+  </data>
+  <data name="ACHRejects.HeaderDescription" xml:space="preserve">
+    <value>La Cantidad Dólares que Devoluciones ACH para el Periodo</value>
+  </data>
+  <data name="LargeTrans.HeaderDescription" xml:space="preserve">
+    <value>Transacción más grande</value>
+  </data>
+  <data name="ReturnCount.HeaderDescription" xml:space="preserve">
+    <value>Número de cargos de tarjeta de crédito devueltos después de liquidar las ventas</value>
+  </data>
+  <data name="ChargeBackCount.HeaderDescription" xml:space="preserve">
+    <value>Número de transacciones de tarjeta de credito que se facturan de nuevo al comerciante después de la venta se ha liquidado</value>
+  </data>
+  <data name="SaleAmount.HeaderDescription" xml:space="preserve">
+    <value>Candidad de dólares de ventas por period especifico</value>
+  </data>
+  <data name="ChargeBackCountPercent.HeaderDescription" xml:space="preserve">
+    <value>Porcentaje del conteo de devoluciones dividido por cuenta de ventas</value>
+  </data>
+  <data name="ReturnCountPercent.HeaderDescription" xml:space="preserve">
+    <value>Recuento de devolución dividido por cuenta de ventas</value>
+  </data>
+  <data name="ForeignCardCountPercent.HeaderDescription" xml:space="preserve">
+    <value>Porcentaje de transacciones de tarjetas de crédito no emitas por Estados Unidos</value>
+  </data>
+  <data name="DeclinedAuthorizationAmount.HeaderDescription" xml:space="preserve">
+    <value>Cantidad en dólares de Autorizaciones recibidas en Transacciones de Ventas Exitosas o Rechazadas</value>
+  </data>
+  <data name="DeclinedAuthorizationCount.HeaderDescription" xml:space="preserve">
+    <value>Número de autorizaciones recibidas en transacciones de ventas exitosas o rechazadas</value>
+  </data>
+  <data name="DeclinedAuthorizationAmountPercent.HeaderDescription" xml:space="preserve">
+    <value>Porcentaje de la cantidad total de la autorización que fue rechazada</value>
+  </data>
+  <data name="DeclinedAuthorizationCountPercent.HeaderDescription" xml:space="preserve">
+    <value>Recuento de autorizaciones rechazadas / Recuento de autorizaciones</value>
+  </data>
+  <data name="RetrievalCountPercent.HeaderDescription" xml:space="preserve">
+    <value>La cantidad de recuperaciones dividido por la cantidad de número de ventas</value>
+  </data>
+  <data name="RetrievalAmountPercent.HeaderDescription" xml:space="preserve">
+    <value>Cantidad de recuperación dividida por cuenta de ventas</value>
+  </data>
+  <data name="FirstRetrievalCount.HeaderDescription" xml:space="preserve">
+    <value>Número de Solicitudes de un Banco Emisor de Titulares cuando un titular de tarjeta pone la transacción en duda por cualquier motivo</value>
+  </data>
+  <data name="lblContractExpectedResource.Text" xml:space="preserve">
+    <value>Expectación de Contrato</value>
+  </data>
+  <data name="lblViewResource.Text" xml:space="preserve">
+    <value>Ver:</value>
+  </data>
+  <data name="txtTotal" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="txtTotalToolTip" xml:space="preserve">
+    <value>La suma de los valores mensuales</value>
+  </data>
+  <data name="KeyedPercentContractedTooltip.HeaderText" xml:space="preserve">
+    <value>Keyed Percent</value>
+  </data>
+  <data name="AVGTicketContractedTooltip.HeaderText" xml:space="preserve">
+    <value>Monto promedio de la transacción</value>
+  </data>
+  <data name="LargeTransContractedTooltip.HeaderText" xml:space="preserve">
+    <value>Transacción más grande</value>
+  </data>
+  <data name="PrepaidCardSalesPercent.HeaderText" xml:space="preserve">
+    <value>% de ventas prepagadas por $ | P189</value>
+  </data>
+  <data name="PrepaidCardSalesPercent.HeaderTooltip" xml:space="preserve">
+    <value>Porcentaje de ventas con tarjetas prepagadas de hoy por monto</value>
+  </data>
+  <data name="PrepaidCardSalesPercent.HeaderDescription" xml:space="preserve">
+    <value>= Monto total de ventas prepagadas de hoy / Monto total de ventas de hoy&lt;br&gt;
+&lt;strong class='color-title'&gt;Fluctuación alrededor de:&lt;/strong&gt; monto total de ventas prepagadas de hoy</value>
+  </data>
+</root>

@@ -1,0 +1,63 @@
+﻿<!--BEGIN_HEADER-->
+<html>
+<head>
+<title>[REPORT_TITLE]</title>
+<style type="text/css">
+table{border:1px solid #000;border-collapse:collapse;width:100%;}td,th{border:1px solid #000;padding:3px;text-align:center;}td.dt{text-align:left;}table.gna{border:none;width:50%;}table.gna td{width:50%;border:none;padding:0;}
+</style>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+</head>
+<body>
+<table>
+<tr><td class='dt' colspan='8'><b>[REPORT_TITLE]</b></td></tr>
+<!--END_HEADER-->
+
+<!--BEGIN_GROUP-->
+<tr>
+    <td class='dt' colspan='8'>
+        <b>[GROUP_NAME]</b>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[tpl_TotalWorked]: <b>[TOTAL_WORKED]</b>
+    </td>
+</tr>
+<!--END_GROUP-->
+
+<!--BEGIN_AGENT-->
+<tr>
+    <td class='dt' colspan='8'>
+        <b>[AGENT_NAME]</b>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[tpl_TotalWorked]: <b>[TOTAL_WORKED]</b>
+    </td>
+</tr>
+<!--END_AGENT-->
+
+<!--BEGIN_DETAIL_TITLE-->
+<tr>
+    <th>[tpl_WorkedOn]</th>
+    <th>[tpl_MerchantNumber]</th>
+    <th>[tpl_MerchantName]</th>
+    <th>[tpl_CaseNumber]</th>
+    <th>[tpl_InvestigationOpenedOn]</th>
+    <th>[tpl_Status]</th>
+    <th>[tpl_InvestigationClosedOn]</th>
+    <th>[tpl_Resolution]</th>
+</tr>
+<!--END_DETAIL_TITLE-->
+
+<!--BEGIN_DETAIL-->
+<tr>
+    <td>[WORKED_ON]</td>
+    <td>[MERCHANT_NUMBER]</td>
+    <td class='dt'>[MERCHANT_NAME]</td>
+    <td>[CASE_NUMBER]</td>
+    <td>[INVESTIGATION_OPENED_ON]</td>
+    <td>[STATUS]</td>
+    <td>[INVESTIGATION_CLOSED_ON]</td>
+    <td class='dt'>[RESOLUTION]</td>
+</tr>
+<!--END_DETAIL-->
+
+<!--BEGIN_FOOTER-->
+</table>
+</body>
+</html>
+<!--END_FOOTER-->

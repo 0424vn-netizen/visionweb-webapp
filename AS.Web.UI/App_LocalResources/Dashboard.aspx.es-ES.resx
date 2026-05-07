@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Dashboard_aspx_cs_strCSVTotal" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="Dashboard_aspx_cs_CardVolumeHeaderCSV" xml:space="preserve">
+    <value> , Ventas brutas de Del Mes a la Fecha, # Transacciones de Del Mes a la Fecha, Ventas brutas de Del Año a la Fecha, # Transacciones de Del Año a la Fecha, Ventas brutas de Año Anterior, # Transacciones de Año Anterior</value>
+  </data>
+  <data name="Dashboard_aspx_cs_MerchantApprovals" xml:space="preserve">
+    <value>Aprobaciones del Comerciante</value>
+  </data>
+  <data name="Dashboard_aspx_cs_SharpMerchants" xml:space="preserve">
+    <value># Comerciantes</value>
+  </data>
+  <data name="Dashboard_aspx_cs_TotalOpenMerchants" xml:space="preserve">
+    <value>Total de Comerciantes Abiertos</value>
+  </data>
+  <data name="Dashboard_aspx_cs_Type" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="Dashboard_aspx_KEYED" xml:space="preserve">
+    <value>TECLEADO</value>
+  </data>
+  <data name="Literal10Resource1.Text" xml:space="preserve">
+    <value>Transacciones</value>
+  </data>
+  <data name="Literal11Resource1.Text" xml:space="preserve">
+    <value>Devoluciones</value>
+  </data>
+  <data name="Literal12Resource1.Text" xml:space="preserve">
+    <value>% de ventas</value>
+  </data>
+  <data name="Literal13Resource1.Text" xml:space="preserve">
+    <value>Reembolsos</value>
+  </data>
+  <data name="Literal14Resource1.Text" xml:space="preserve">
+    <value>Transacciones</value>
+  </data>
+  <data name="Literal15Resource1.Text" xml:space="preserve">
+    <value>% de ventas</value>
+  </data>
+  <data name="Literal16Resource1.Text" xml:space="preserve">
+    <value>Recuperaciones</value>
+  </data>
+  <data name="Literal17Resource1.Text" xml:space="preserve">
+    <value>Transacciones</value>
+  </data>
+  <data name="Literal18Resource1.Text" xml:space="preserve">
+    <value>% de ventas</value>
+  </data>
+  <data name="Literal19Resource1.Text" xml:space="preserve">
+    <value>Tecleado</value>
+  </data>
+  <data name="Literal1Resource1.Text" xml:space="preserve">
+    <value>Ventas Brutas</value>
+  </data>
+  <data name="Literal20Resource1.Text" xml:space="preserve">
+    <value>% de trans.</value>
+  </data>
+  <data name="Literal21Resource1.Text" xml:space="preserve">
+    <value>Volumen Net</value>
+  </data>
+  <data name="Literal22Resource1.Text" xml:space="preserve">
+    <value>DEVOLUCIONES</value>
+  </data>
+  <data name="Literal23Resource1.Text" xml:space="preserve">
+    <value>REEMBOLSOS</value>
+  </data>
+  <data name="Literal24Resource1.Text" xml:space="preserve">
+    <value>RECUPERACIONES</value>
+  </data>
+  <data name="Literal25Resource1.Text" xml:space="preserve">
+    <value>Del Mes a la Fecha</value>
+  </data>
+  <data name="Literal26Resource1.Text" xml:space="preserve">
+    <value>Del Año a la Fecha</value>
+  </data>
+  <data name="Literal27Resource1.Text" xml:space="preserve">
+    <value>Año Anterior</value>
+  </data>
+  <data name="Literal28Resource1.Text" xml:space="preserve">
+    <value>Ventas Brutas</value>
+  </data>
+  <data name="Literal29Resource1.Text" xml:space="preserve">
+    <value># Transacciones</value>
+  </data>
+  <data name="Literal2Resource1.Text" xml:space="preserve">
+    <value># Transacciones</value>
+  </data>
+  <data name="Literal30Resource1.Text" xml:space="preserve">
+    <value>Ventas Brutas</value>
+  </data>
+  <data name="Literal31Resource1.Text" xml:space="preserve">
+    <value># Transacciones</value>
+  </data>
+  <data name="Literal32Resource1.Text" xml:space="preserve">
+    <value>Ventas Brutas</value>
+  </data>
+  <data name="Literal33Resource1.Text" xml:space="preserve">
+    <value># Transacciones</value>
+  </data>
+  <data name="Literal34Resource1.Text" xml:space="preserve">
+    <value>No hay registros que mostrar.</value>
+  </data>
+  <data name="Literal3Resource1.Text" xml:space="preserve">
+    <value>Aprobaciones del Comerciante</value>
+  </data>
+  <data name="Literal4Resource1.Text" xml:space="preserve">
+    <value>ABIERTO</value>
+  </data>
+  <data name="Literal5Resource1.Text" xml:space="preserve">
+    <value>APROBACIONES</value>
+  </data>
+  <data name="Literal6Resource1.Text" xml:space="preserve">
+    <value>Del Mes a la Fecha</value>
+  </data>
+  <data name="Literal7Resource1.Text" xml:space="preserve">
+    <value>Del Año a la Fecha</value>
+  </data>
+  <data name="Literal8Resource1.Text" xml:space="preserve">
+    <value>Año Anterior</value>
+  </data>
+  <data name="Literal9Resource1.Text" xml:space="preserve">
+    <value>Ventas Brutas</value>
+  </data>
+  <data name="monthsResource1.Text" xml:space="preserve">
+    <value>12 meses</value>
+  </data>
+  <data name="MTDResource1.Text" xml:space="preserve">
+    <value>Del Mes a la Fecha</value>
+  </data>
+  <data name="uxExportCardVolumeResource1.Title" xml:space="preserve">
+    <value>Volumen De Tarjeta</value>
+  </data>
+  <data name="UxExportMonthlyCardVolumeResource1.Title" xml:space="preserve">
+    <value>Volumen mensual</value>
+  </data>
+  <data name="UxExportVolumeAnalysisResource1.Title" xml:space="preserve">
+    <value>Análisis De Volumen</value>
+  </data>
+  <data name="uxPageTitleResource1.ReportTitle" xml:space="preserve">
+    <value>El tablero de control</value>
+  </data>
+  <data name="YTDResource1.Text" xml:space="preserve">
+    <value>Del Año a la Fecha</value>
+  </data>
+  <data name="Dashboard_aspx_cs_Closed" xml:space="preserve">
+    <value>Cerrado</value>
+  </data>
+  <data name="Dashboard_aspx_cs_Opened" xml:space="preserve">
+    <value>Abierto/reabierto</value>
+  </data>
+  <data name="Literal35Resource1.Text" xml:space="preserve">
+    <value>Día Anterior</value>
+  </data>
+  <data name="Literal38Resource1.Text" xml:space="preserve">
+    <value>Conteo de reembolsos</value>
+  </data>
+  <data name="Literal39Resource1.Text" xml:space="preserve">
+    <value>Codificado $</value>
+  </data>
+  <data name="Literal40Resource1.Text" xml:space="preserve">
+    <value>CERRADO</value>
+  </data>
+  <data name="DashboardASPX_Text_Graph.Text" xml:space="preserve">
+    <value>GRÁFICA</value>
+  </data>
+  <data name="Dashboard_aspx_cs_Alice" xml:space="preserve">
+    <value>Alice</value>
+  </data>
+  <data name="Dashboard_aspx_cs_CaseManagement" xml:space="preserve">
+    <value>GESTIÓN DE CASO</value>
+  </data>
+  <data name="Dashboard_aspx_cs_General" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="Dashboard_aspx_cs_MarginAnalysis" xml:space="preserve">
+    <value>ANÁLISIS DE MARGEN</value>
+  </data>
+  <data name="Dashboard_aspx_cs_MYDASHBOARD" xml:space="preserve">
+    <value>MI PANEL DE CONTROL</value>
+  </data>
+  <data name="Dashboard_aspx_cs_Reporting" xml:space="preserve">
+    <value>Informes</value>
+  </data>
+  <data name="PageResource2.Title" xml:space="preserve">
+    <value>Hogar</value>
+  </data>
+</root>

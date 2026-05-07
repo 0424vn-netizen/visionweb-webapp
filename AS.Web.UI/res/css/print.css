@@ -1,0 +1,476 @@
+﻿@media print {
+    @page {
+        size: A3;
+    }
+
+    .row {
+        min-width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+        float: left;
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
+
+    .col-md-11 {
+        width: 91.66666667%;
+    }
+
+    .col-md-10 {
+        width: 83.33333333%;
+    }
+
+    .col-md-9 {
+        width: 75%;
+    }
+
+    .col-md-8 {
+        width: 66.66666667%;
+    }
+
+    .col-md-7 {
+        width: 58.33333333%;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    .col-md-5 {
+        width: 41.66666667%;
+    }
+
+    .col-md-4 {
+        width: 33.33333333%;
+    }
+
+    .col-md-3 {
+        width: 25%;
+    }
+
+    .col-md-2 {
+        width: 16.66666667%;
+    }
+
+    .col-md-1 {
+        width: 8.33333333%;
+    }
+
+    .col-md-offset-12 {
+        margin-left: 100%;
+    }
+
+    .col-md-offset-11 {
+        margin-left: 91.66666667%;
+    }
+
+    .col-md-offset-10 {
+        margin-left: 83.33333333%;
+    }
+
+    .col-md-offset-9 {
+        margin-left: 75%;
+    }
+
+    .col-md-offset-8 {
+        margin-left: 66.66666667%;
+    }
+
+    .col-md-offset-7 {
+        margin-left: 58.33333333%;
+    }
+
+    .col-md-offset-6 {
+        margin-left: 50%;
+    }
+
+    .col-md-offset-5 {
+        margin-left: 41.66666667%;
+    }
+
+    .col-md-offset-4 {
+        margin-left: 33.33333333%;
+    }
+
+    .col-md-offset-3 {
+        margin-left: 25%;
+    }
+
+    .col-md-offset-2 {
+        margin-left: 16.66666667%;
+    }
+
+    .col-md-offset-1 {
+        margin-left: 8.33333333%;
+    }
+
+    .col-md-offset-0 {
+        margin-left: 0%;
+    }
+
+    body {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        background: #FFF !important;
+    }
+
+
+        html.rwPreventPageScrolling,
+        body.rwPreventPageScrolling {
+            position: static !important;
+            overflow: auto !important;
+        }
+
+    .site-info,
+    .popup-top {
+        background: none !important;
+    }
+
+    .welcomebar.navbar,
+    .site-header,
+    .report-export,
+    .report-filter-panel,
+    .white-bg-shadow,
+    .btn-report-filter,
+    .report-export,
+    .report-export-no-title,
+    .action-bar-container {
+        display: none !important;
+    }
+
+    * {
+        color: #000 !important;
+    }
+
+    .container {
+        margin: 0 !important;
+        padding: 2px !important;
+        border: none !important;
+    }
+
+
+    .k-ff .chart-container {
+        width: 1200px;
+    }
+
+    .k-ff .container {
+        display: table;
+    }
+
+
+    .modal-container {
+        margin: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        border: none !important;
+    }
+
+    .popupmodal-open {
+        background-color: #fff;
+    }
+
+        .popupmodal-open > form > * {
+            display: none !important;
+        }
+
+        .popupmodal-open .RadWindow {
+            display: block !important;
+            top: 0px !important;
+            left: 0px !important;
+            min-height: 28cm;
+        }
+
+            .popupmodal-open .RadWindow iframe {
+                min-height: 28cm;
+            }
+
+
+        .popupmodal-open .rwTitlebarControls,
+        .popupmodal-open .rwTitleRow .rwCorner,
+        .popupmodal-open .rwTitleRow .rwTopResize,
+        .popupmodal-open .rwTitleRow .rwIcon,
+        .popupmodal-open .rwFooterRow,
+        .popupmodal-open .rwTitleRow .rwControlButtons,
+        .popupmodal-open .rwCorner,
+        .popupmodal-open form > .rwInactiveWindow {
+            display: none !important;
+        }
+
+        .popupmodal-open .rwTitleRow .rwTitlebar {
+            background: none !important;
+        }
+
+    body.body-modal {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin: 0 !important;
+        background-color: #fff !important;
+        overflow: hidden !important;
+    }
+
+    .body-modal .modal-xs,
+    .body-modal .modal-sm,
+    .body-modal .modal-lg,
+    .body-modal .modal-xl,
+    .body-modal .modal-xxl {
+        float: left;
+        width: 100% !important;
+    }
+
+
+    .body-modal .modal-xs {
+        width: 320px !important;
+        min-width: 320px !important;
+    }
+
+    .body-modal .modal-sm {
+        width: 480px !important;
+        min-width: 480px !important;
+    }
+
+    .body-modal .modal-md {
+        width: 640px !important;
+        min-width: 640px !important;
+    }
+
+    .form-inline .form-control {
+        display: inline-block;
+    }
+
+    #fixedPanel,
+    #fixCommandArea,
+    a[href]:after {
+        display: none !important;
+    }
+
+    .mif-container {
+        background: #fff !important;
+    }
+
+        .mif-container .mif-content-container {
+            margin-left: 0 !important;
+        }
+
+            .mif-container .mif-content-container > .btn-default {
+                display: none;
+            }
+
+    .mif-sidebar-container {
+        display: none;
+    }
+
+    .grid-action-container .btn-default {
+        display: inline-block !important;
+        margin: 0 !important;
+        margin-left: 12px !important;
+    }
+
+        .grid-action-container .btn-default:first-child, .grid-action-container a.btn-default:first-child {
+            margin-left: 0 !important;
+        }
+
+    .k-chart {
+        display: inline-block !important;
+    }
+
+    a.btn {
+        text-decoration: none !important;
+    }
+
+    .body-modal .block-center {
+        margin-left: 0;
+    }
+
+    .wrapper-table .rgMasterTable > tbody > tr .rgDetailTable tfoot tr td {
+        width: 100%;
+    }
+
+    h1, h2, h3, h4, h5 {
+        line-height: 1.5 !important;
+    }
+
+    #aspnetForm > div:first-child.rcbSlide {
+        display: none !important;
+    }
+
+    .hierarchy-title, .hierarchy-title-no-filter {
+        margin-top: 0 !important;
+    }
+
+
+    body.print-investigation .rwNormalWindow.rwTransparentWindow {
+        display: block !important;
+        top: 10px !important;
+        left: 0 !important;
+        position: absolute !important;
+    }
+
+        body.print-investigation .rwNormalWindow.rwTransparentWindow > table > tbody > tr,
+        .rwCorner {
+            display: none;
+        }
+
+        body.print-investigation .rwNormalWindow.rwTransparentWindow > table tr.rwContentRow {
+            display: block !Important;
+        }
+
+    body.print-investigation form > * {
+        display: none;
+    }
+
+    .btn {
+        display: none !important;
+    }
+
+    .btn-group, .btn-group .btn {
+        display: inline-block !important;
+    }
+
+    .grid-action-container .btn-default {
+        display: none !important;
+    }
+
+    .print-supported-table.freeze-table .rgDataDiv {
+        height: auto !important;
+        max-height: none !important;
+    }
+
+    .print-supported-table .rgHeaderWrapper,
+    .print-supported-table .rgFooterWrapper {
+        display: none !important;
+    }
+
+    .RadGrid.freeze-table > .rgMasterTable {
+        margin-right: -1px;
+    }
+
+    .print-supported-table.freeze-table .rgDataDiv .rgMasterTable.rgClipCells {
+        table-layout: auto !important;
+        border-collapse: collapse !important;
+    }
+
+    .freeze-table .rgDataDiv .rgMasterTable.rgClipCells {
+        border-collapse: collapse !important;
+    }
+
+    .k-webkit .print-supported-table.freeze-table {
+        display: table;
+    }
+
+    .print-supported-table.freeze-table .rgDataDiv {
+        display: table;
+    }
+
+
+
+    .k-ff .freeze-table .rgDataDiv,
+    .k-ff .freeze-table .rgDataDiv .rgMasterTable.rgClipCells {
+        min-width: 100% !important;
+    }
+
+
+
+    .rgDataDiv thead {
+        display: table-header-group !important;
+    }
+
+    .freeze-table .rgDataDiv .rgMasterTable.rgClipCells tfoot {
+        display: table-footer-group !important;
+        border-collapse: collapse !important;
+    }
+
+    .RadGrid_Default.freeze-table .rgDataDiv table.rgMasterTable tbody tr td:first-child {
+        border-right-color: #000 !important;
+    }
+
+    .freeze-table.print-supported-table .rgDataDiv table.rgMasterTable.rgClipCells thead tr:last-child th,
+    .freeze-table .rgDataDiv table.rgMasterTable.rgClipCells thead th.mh.rgHeader,
+    .freeze-table .rgDataDiv .rgMasterTable.rgClipCells tbody tr td,
+    .freeze-table .rgDataDiv .rgMasterTable tbody tr td:first-child,
+    .freeze-table .rgDataDiv .rgMasterTable tfoot tr.rgFooter td:first-child,
+    .RadGrid_Default.freeze-table .rgDataDiv table.rgMasterTable td.ReportTotal,
+    .RadGrid_Default .rgDataDiv .rgMasterTable.rgClipCells tbody tr:first-child td:first-child {
+        border: 1px solid #000 !important;
+    }
+
+    .RadGrid_Default .rgMasterTable.rgClipCells tbody tr.rgPager td,
+    .RadGrid_Default .rgMasterTable.rgClipCells tbody tr td:first-child {
+        border: 1px solid #000 !important;
+        border-top: 0 !important;
+        border-left-color: #000 !important;
+    }
+
+    .RadGrid_Default .rgPager td,
+    .RadGrid_Default .rgMasterTable tbody tr td:first-child .RadComboBox > table tr td {
+        border: none !important;
+    }
+
+    .RadGrid_Default .rgFilterRow td {
+        border-color: #000 !important;
+        border-collapse: collapse;
+    }
+
+
+    .RadGrid_Default .rgFilterRow tr td:first-child {
+        border-left: 1px solid #000 !important;
+    }
+
+    .RadGrid div.rgHeaderWrapper {
+        border-bottom: none;
+    }
+
+    .RadGrid_Default .rgHeader.end-border,
+    .RadGrid_Default .rgHeader.mh:first-child,
+    .RadGrid_Default .rgHeader.start-border,
+    .RadGrid_Default .rgHeader.mh:not([colspan="1"]),
+    .RadGrid_Default .rgHeader.mh:last-child {
+        border-color: #000 !important;
+    }
+
+    .ASTable {
+        border-collapse: collapse !important;
+    }
+
+        .ASTable tr td {
+            border: 1px solid #000 !important;
+        }
+
+
+
+        .RadGrid_Default .rgFilterRow td:first-child,
+        .ASTable tr th {
+            border-color: #000 !important;
+        }
+
+    .noBorderTable tr td,
+    .noBorderTable th {
+        border-color: transparent !important;
+    }
+
+    .RadGrid_Default .rgDataDiv {
+        overflow-x: hidden !important;
+    }
+}
+
+.loader-adv-control {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

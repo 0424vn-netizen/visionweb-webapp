@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="LiteralResource1.Text" xml:space="preserve">
+    <value>El nombre de usuario debe contener entre 7 y {0} caracteres alfanuméricos después del número de cuenta.</value>
+  </data>
+  <data name="LiteralResource2.Text" xml:space="preserve">
+    <value>Normalmente, esto contendrá alguna combinación de nombre y apellido.</value>
+  </data>
+  <data name="LiteralResource5.Text" xml:space="preserve">
+    <value>Después de seleccionar submit, se mostrará una contraseña temporal de 72 horas.</value>
+  </data>
+  <data name="LiteralResource6.Text" xml:space="preserve">
+    <value>Copie o guarde esta contraseña temporal de 72 horas y envíela de forma segura al nuevo usuario junto con el nombre de usuario</value>
+  </data>
+  <data name="LiteralResource7.Text" xml:space="preserve">
+    <value>El nuevo usuario debe acceder en 72 horas y se le pedirá que cambie la contraseña temporal.</value>
+  </data>
+  <data name="uxActiveResource1.Text" xml:space="preserve">
+    <value>Activo</value>
+  </data>
+  <data name="uxCancelResource1.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="uxInactiveResource1.Text" xml:space="preserve">
+    <value>Inactivo</value>
+  </data>
+  <data name="uxRiskManagementResource1.Text" xml:space="preserve">
+    <value>Gestión de Riesgos</value>
+  </data>
+  <data name="uxSaveResource1.Text" xml:space="preserve">
+    <value>Enviar</value>
+  </data>
+  <data name="ManageUserASCX_Text_AccessFunction.Text" xml:space="preserve">
+    <value>Funciones de Acceso:</value>
+  </data>
+  <data name="ManageUserASCX_Text_Active.Text" xml:space="preserve">
+    <value>Estatus:</value>
+  </data>
+  <data name="ManageUserASCX_Text_Email.Text" xml:space="preserve">
+    <value>Correo electrónico:</value>
+  </data>
+  <data name="ManageUserASCX_Text_Firstname.Text" xml:space="preserve">
+    <value>Nombre de Pila:</value>
+  </data>
+  <data name="ManageUserASCX_Text_Lastname.Text" xml:space="preserve">
+    <value>Apellido:</value>
+  </data>
+  <data name="ManageUserASCX_Text_OwnershipGroup.Text" xml:space="preserve">
+    <value>Grupo(s)   de propietarios:</value>
+  </data>
+  <data name="ManageUserASCX_Text_RiskGroup.Text" xml:space="preserve">
+    <value>Grupo de Riesgo:</value>
+  </data>
+  <data name="ManageUserASCX_Text_Role.Text" xml:space="preserve">
+    <value>Rol de Usuario:</value>
+  </data>
+  <data name="ManageUserASCX_Text_Username.Text" xml:space="preserve">
+    <value>Nombre de Usuario:</value>
+  </data>
+  <data name="ManageUserCS_Text_NewPassword" xml:space="preserve">
+    <value>CONTRASEÑA NUEVA:</value>
+  </data>
+  <data name="ManageUserCS_Text_RequestedUserNotFound" xml:space="preserve">
+    <value>El usuario solicitado no fue encontrado</value>
+  </data>
+  <data name="ManageUserCS_Text_RequireParam" xml:space="preserve">
+    <value>La modalidad de actualización requiere de parámetro de consulta</value>
+  </data>
+  <data name="ManageUserCS_Text_UserChangeNotification" xml:space="preserve">
+    <value>Notificación de Cambio de Usuario</value>
+  </data>
+  <data name="ManageUserASCX_Text_AtLeast2Chars.Message" xml:space="preserve">
+    <value>Debe ingresar por lo menos 2 caracteres.</value>
+  </data>
+  <data name="ManageUserASCX_Text_AtLeast7Chars.Message" xml:space="preserve">
+    <value>Debe ingresar por lo menos 7 caracteres.</value>
+  </data>
+  <data name="ManageUserASCX_Text_IncorrectEmail.Message" xml:space="preserve">
+    <value>Usted ha ingresado un formato incorrecto de dirección de correo electrónico. Inténtelo de nuevo.</value>
+  </data>
+  <data name="ManageUserASCX_Text_InvalidUsername.Message" xml:space="preserve">
+    <value>Nombre de usuario inválido</value>
+  </data>
+  <data name="ManageUserASCX_Text_Required.Message" xml:space="preserve">
+    <value>Este campo es requerido.</value>
+  </data>
+  <data name="ManageUserASCX_Text_RequiredAndUnique.Message" xml:space="preserve">
+    <value>Este campo es requerido y debe ser único.</value>
+  </data>
+  <data name="ManageUserASCX_Text_InvalidFirstName.Message" xml:space="preserve">
+    <value>Contiene caracteres inválidos. Por favor, vuelva a introducir su nombre.</value>
+  </data>
+  <data name="ManageUserASCX_Text_InvalidLastName.Message" xml:space="preserve">
+    <value>Contiene caracteres inválidos. Por favor, vuelva a introducir su apellido.</value>
+  </data>
+  <data name="ManageUserASCX_Text_1099KGroup.Text" xml:space="preserve">
+    <value>Grupo de 1099K:</value>
+  </data>
+  <data name="uxLnkAssignActivityGroupsResource1.Text" xml:space="preserve">
+    <value>ES - Task Permissions</value>
+  </data>
+  <data name="ManageUserASCX_Text_AtLeast4DigitChars.Message" xml:space="preserve">
+    <value>Por favor introduzca al minimo 4 dígitos.</value>
+  </data>
+  <data name="ManageUserASCX_Text_SaleRepCode.Text" xml:space="preserve">
+    <value>Código Representante de Ventas:</value>
+  </data>
+  <data name="uxLnkAddOrganizationResource1.Text" xml:space="preserve">
+    <value>Añadir Organizaciones</value>
+  </data>
+  <data name="lbOrganizationAdded" xml:space="preserve">
+    <value>Organizacion(es) Añadidas</value>
+  </data>
+  <data name="ManageUserASCX_Text_Organizations.Text" xml:space="preserve">
+    <value>Organización:</value>
+  </data>
+  <data name="uxSaleRepCodeUniqueValidation.Message" xml:space="preserve">
+    <value>El código representante de ventas tiene que ser único.</value>
+  </data>
+  <data name="uxLnkViewOrganizationResource1.Text" xml:space="preserve">
+    <value>Ver Organizaciones</value>
+  </data>
+  <data name="txtKeyMerchantApplications" xml:space="preserve">
+    <value>Aplicaciones de comerciante clave</value>
+  </data>
+  <data name="AccessFuntionControlGroupFuncLabel_AliceAccess.Text" xml:space="preserve">
+    <value>Funciones de acceso de ALICE</value>
+  </data>
+  <data name="AccessFuntionControlGroupFuncLabel_MerchantProfileAccess.Text" xml:space="preserve">
+    <value>Funciones de acceso al perfil del comerciante</value>
+  </data>
+  <data name="AccessFuntionControlGroupFuncLabel_RiskAccess.Text" xml:space="preserve">
+    <value>Funciones de acceso de riesgo</value>
+  </data>
+  <data name="AccessFuntionControlGroupFuncLabel_SecurityAccess.Text" xml:space="preserve">
+    <value>Funciones de acceso de seguridad</value>
+  </data>
+  <data name="ManageUserASCX_Text_SelectDropDownOwnershipGroup.Text" xml:space="preserve">
+    <value>Seleccione   el grupo de propietarios que aparecerá por defecto al abrir un caso nuevo</value>
+  </data>
+  <data name="ManageUserASCX_Text_SelectOwnershipGroup.Text" xml:space="preserve">
+    <value>Seleccione   el/los grupo(s) de propietarios</value>
+  </data>
+  <data name="uxOwnershipGroupEmptyMessage.EmptyMessage" xml:space="preserve">
+    <value>Grupo de propietarios</value>
+  </data>
+  <data name="lbOrganizationAssociated" xml:space="preserve">
+    <value> Organizaciones Asociadas</value>
+  </data>
+  <data name="ManageUserASCX_Text_SaleRepNote.Text" xml:space="preserve">
+    <value>Al Ingresar un Código de Representante de Ventas, los siguientes campos no estarán disponibles: Nombre, Apellido, Correo lectrónico y Activo.</value>
+  </data>
+  <data name="AccessFuntionControlGroupFuncLabel_NotificationAccess.Text" xml:space="preserve">
+    <value>Función de acceso de la notificación</value>
+  </data>
+  <data name="uxExternalAccess.Text" xml:space="preserve">
+    <value>ES - External Access</value>
+  </data>
+  <data name="AccessFuntionControlGroupFuncLabel_ProcessingDataAccess.Text" xml:space="preserve">
+    <value>Procesamiento de funciones de acceso a datos</value>
+  </data>
+  <data name="AccessFuntionControlGroupFuncLabel_DocumentTypeAccess.Text" xml:space="preserve">
+    <value>Administrar tipos de documentos acceder a funciones</value>
+  </data>
+</root>

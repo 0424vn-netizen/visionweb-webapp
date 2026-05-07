@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="DDS" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="DDS" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="DDS">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckExistFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clientid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filename" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckExistFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckExistFileResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadFileWithDocCategory">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strClient" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strEntity" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strDocumentCategory" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strFileName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strDescription" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strRetention" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="objFile" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="RemoteAddress" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadFileWithDocCategoryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UploadFileWithDocCategoryResult" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="DocId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="strReturnStatus" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strStorageFileName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadFileWithFilePath">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="client" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dirPath" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileContent" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="docCategory" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="remoteAddress" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadFileWithFilePathResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UploadFileWithFilePathResult" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="docID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadFileWithDocCategoryEncrypted">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strClient" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strEntity" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strDocumentCategory" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strFileName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strDescription" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strRetention" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="objFile" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="RemoteAddress" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadFileWithDocCategoryEncryptedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UploadFileWithDocCategoryEncryptedResult" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="DocId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="strReturnStatus" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strStorageFileName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadFileWithFilePathEncrypted">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="client" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dirPath" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileContent" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="docCategory" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="remoteAddress" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadFileWithFilePathEncryptedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UploadFileWithFilePathEncryptedResult" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="docID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteDocumentByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strClient" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strEntity" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="recid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteDocumentByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteDocumentByIDResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateDocumentByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strClient" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strEntity" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="recid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="desc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateDocumentByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateDocumentByIDResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFileStorageByRecID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="recid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFileStorageByRecIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFileStorageByRecIDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDocumentListByCategory">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clientID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="entityID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="docCategory" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="maxReturn" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDocumentListByCategoryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDocumentListByCategoryResult" type="tns:ArrayOfDocumentMetadataInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfDocumentMetadataInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DocumentMetadataInfo" nillable="true" type="tns:DocumentMetadataInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DocumentMetadataInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="RecId" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="DDSClient" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="RetentionDays" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProcessingFlag" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="DateUploaded" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ExpirationDate" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="EntityID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StorageFileName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DocumentCategory" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DocumentStatus" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DocumentName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DisplayDescription" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckExistFileSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckExistFile" />
+  </wsdl:message>
+  <wsdl:message name="CheckExistFileSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckExistFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileWithDocCategorySoapIn">
+    <wsdl:part name="parameters" element="tns:UploadFileWithDocCategory" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileWithDocCategorySoapOut">
+    <wsdl:part name="parameters" element="tns:UploadFileWithDocCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileWithFilePathSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadFileWithFilePath" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileWithFilePathSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadFileWithFilePathResponse" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileWithDocCategoryEncryptedSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadFileWithDocCategoryEncrypted" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileWithDocCategoryEncryptedSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadFileWithDocCategoryEncryptedResponse" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileWithFilePathEncryptedSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadFileWithFilePathEncrypted" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileWithFilePathEncryptedSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadFileWithFilePathEncryptedResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteDocumentByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteDocumentByID" />
+  </wsdl:message>
+  <wsdl:message name="DeleteDocumentByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteDocumentByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateDocumentByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateDocumentByID" />
+  </wsdl:message>
+  <wsdl:message name="UpdateDocumentByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateDocumentByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFileStorageByRecIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFileStorageByRecID" />
+  </wsdl:message>
+  <wsdl:message name="GetFileStorageByRecIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFileStorageByRecIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDocumentListByCategorySoapIn">
+    <wsdl:part name="parameters" element="tns:GetDocumentListByCategory" />
+  </wsdl:message>
+  <wsdl:message name="GetDocumentListByCategorySoapOut">
+    <wsdl:part name="parameters" element="tns:GetDocumentListByCategoryResponse" />
+  </wsdl:message>
+  <wsdl:portType name="DocProcessorSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckExistFile">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Check file is existed</wsdl:documentation>
+      <wsdl:input message="tns:CheckExistFileSoapIn" />
+      <wsdl:output message="tns:CheckExistFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadFileWithDocCategory">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">File Upload Web Service</wsdl:documentation>
+      <wsdl:input message="tns:UploadFileWithDocCategorySoapIn" />
+      <wsdl:output message="tns:UploadFileWithDocCategorySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadFileWithFilePath">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">File Upload Web Service</wsdl:documentation>
+      <wsdl:input message="tns:UploadFileWithFilePathSoapIn" />
+      <wsdl:output message="tns:UploadFileWithFilePathSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadFileWithDocCategoryEncrypted">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">File Upload Web Service</wsdl:documentation>
+      <wsdl:input message="tns:UploadFileWithDocCategoryEncryptedSoapIn" />
+      <wsdl:output message="tns:UploadFileWithDocCategoryEncryptedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadFileWithFilePathEncrypted">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">File Upload Web Service</wsdl:documentation>
+      <wsdl:input message="tns:UploadFileWithFilePathEncryptedSoapIn" />
+      <wsdl:output message="tns:UploadFileWithFilePathEncryptedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDocumentByID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Delete Document</wsdl:documentation>
+      <wsdl:input message="tns:DeleteDocumentByIDSoapIn" />
+      <wsdl:output message="tns:DeleteDocumentByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDocumentByID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update Document</wsdl:documentation>
+      <wsdl:input message="tns:UpdateDocumentByIDSoapIn" />
+      <wsdl:output message="tns:UpdateDocumentByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFileStorageByRecID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get File Name via ID</wsdl:documentation>
+      <wsdl:input message="tns:GetFileStorageByRecIDSoapIn" />
+      <wsdl:output message="tns:GetFileStorageByRecIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDocumentListByCategory">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get list of document.</wsdl:documentation>
+      <wsdl:input message="tns:GetDocumentListByCategorySoapIn" />
+      <wsdl:output message="tns:GetDocumentListByCategorySoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DocProcessorSoap" type="tns:DocProcessorSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="DDS/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckExistFile">
+      <soap:operation soapAction="DDS/CheckExistFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFileWithDocCategory">
+      <soap:operation soapAction="DDS/UploadFileWithDocCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFileWithFilePath">
+      <soap:operation soapAction="DDS/UploadFileWithFilePath" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFileWithDocCategoryEncrypted">
+      <soap:operation soapAction="DDS/UploadFileWithDocCategoryEncrypted" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFileWithFilePathEncrypted">
+      <soap:operation soapAction="DDS/UploadFileWithFilePathEncrypted" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDocumentByID">
+      <soap:operation soapAction="DDS/DeleteDocumentByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDocumentByID">
+      <soap:operation soapAction="DDS/UpdateDocumentByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFileStorageByRecID">
+      <soap:operation soapAction="DDS/GetFileStorageByRecID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDocumentListByCategory">
+      <soap:operation soapAction="DDS/GetDocumentListByCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DocProcessorSoap12" type="tns:DocProcessorSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="DDS/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckExistFile">
+      <soap12:operation soapAction="DDS/CheckExistFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFileWithDocCategory">
+      <soap12:operation soapAction="DDS/UploadFileWithDocCategory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFileWithFilePath">
+      <soap12:operation soapAction="DDS/UploadFileWithFilePath" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFileWithDocCategoryEncrypted">
+      <soap12:operation soapAction="DDS/UploadFileWithDocCategoryEncrypted" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFileWithFilePathEncrypted">
+      <soap12:operation soapAction="DDS/UploadFileWithFilePathEncrypted" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDocumentByID">
+      <soap12:operation soapAction="DDS/DeleteDocumentByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDocumentByID">
+      <soap12:operation soapAction="DDS/UpdateDocumentByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFileStorageByRecID">
+      <soap12:operation soapAction="DDS/GetFileStorageByRecID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDocumentListByCategory">
+      <soap12:operation soapAction="DDS/GetDocumentListByCategory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DocProcessor">
+    <wsdl:port name="DocProcessorSoap" binding="tns:DocProcessorSoap">
+      <soap:address location="http://192.168.119.5/DocProcessor.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DocProcessorSoap12" binding="tns:DocProcessorSoap12">
+      <soap12:address location="http://192.168.119.5/DocProcessor.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

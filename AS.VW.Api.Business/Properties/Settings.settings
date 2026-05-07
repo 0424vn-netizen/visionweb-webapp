@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="AS.VW.Api.Business.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="AS_VW_Api_Business_vw_ApiServices_vw_ApiServices" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:20001/ApiServices.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

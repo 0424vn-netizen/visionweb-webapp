@@ -1,0 +1,122 @@
+﻿
+.grid-card-view .card-view-container a.mn-link {
+    color: #999 !important;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 0;
+    padding-right: 5px;
+    font-family: Lato,Helvetica,Arial,sans-serif
+}
+
+.mr-16 {
+    margin-right: 16px;
+}
+
+.color9 {
+    color: #999 !important;
+}
+
+.grid-card-view .card-view-container div.text-overflow {
+    display: inline-flex
+}
+
+.with85 {
+    width: 85px;
+}
+
+.grid-card-view .card-view-container div.text-overflow span {
+    width: calc(100% - 85px);
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.btn-item-merchant-note {
+    text-align: right;
+}
+
+.box-edit-note {
+    padding-top: 16px;
+    background-color: #fff;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+}
+
+.body-modal .container {
+    padding: 24px;
+}
+
+.edit-note-title {
+    color: #333;
+    font-family: 'Lato';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.3px;
+    margin: 0;
+    height: 24px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-self:stretch;
+}
+
+.edit-note-comment-overflow-text {
+    overflow-wrap: anywhere;
+}
+
+.btn-risk-note-submit {
+    margin-right: 11px;
+}
+
+.box-edit-note .reToolbarWrapper {
+    margin: 0;
+}
+
+.box-edit-note .Default.reWrapper {
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+.box-edit-note .RadEditor.Default .reContentCell iframe {
+    border: 1px solid #b3b3b3;
+}
+
+.risk-note-source {
+    min-width: 133px;
+}
+
+.risk-note-case {
+    min-width: 99px;
+}
+
+.risk-note-create-date {
+    min-width: 196px;
+}
+
+.risk-note-added-by {
+    min-width: 140px;
+}
+
+.risk-note-update-date {
+    min-width: 187px;
+}
+
+.risk-note-update-by {
+    min-width: 140px;
+}
+
+.risk-note-action {
+    min-width: 69px;
+    padding-left: 24px;
+    display: inline-flex;
+}
+
+.risk-note-action a {
+    font-weight: 400;
+    font-size: 14px !important;
+}

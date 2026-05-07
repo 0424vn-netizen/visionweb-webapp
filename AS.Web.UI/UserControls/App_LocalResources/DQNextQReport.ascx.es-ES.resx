@@ -1,0 +1,900 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ASGridBoundColumnResource1.HeaderText" xml:space="preserve">
+    <value>RS</value>
+  </data>
+  <data name="ASGridBoundColumnResource1.HeaderTooltip" xml:space="preserve">
+    <value>Calificación de Riesgo</value>
+  </data>
+  <data name="ASGridBoundColumnResource1.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource10.HeaderText" xml:space="preserve">
+    <value>% DD</value>
+  </data>
+  <data name="ASGridBoundColumnResource10.HeaderTooltip" xml:space="preserve">
+    <value>% de transacciones duplicadas de dólares</value>
+  </data>
+  <data name="ASGridBoundColumnResource10.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource11.HeaderText" xml:space="preserve">
+    <value>#-</value>
+  </data>
+  <data name="ASGridBoundColumnResource11.HeaderTooltip" xml:space="preserve">
+    <value>Conteo del lote negativo</value>
+  </data>
+  <data name="ASGridBoundColumnResource11.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource12.HeaderText" xml:space="preserve">
+    <value>#0</value>
+  </data>
+  <data name="ASGridBoundColumnResource12.HeaderTooltip" xml:space="preserve">
+    <value>Ningún conteo de lote</value>
+  </data>
+  <data name="ASGridBoundColumnResource12.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource13.HeaderText" xml:space="preserve">
+    <value>TV</value>
+  </data>
+  <data name="ASGridBoundColumnResource13.HeaderTooltip" xml:space="preserve">
+    <value>Volumen total de hoy</value>
+  </data>
+  <data name="ASGridBoundColumnResource13.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource14.HeaderText" xml:space="preserve">
+    <value>RV$</value>
+  </data>
+  <data name="ASGridBoundColumnResource14.HeaderTooltip" xml:space="preserve">
+    <value>Volumen de recuperación de primera vez de hoy</value>
+  </data>
+  <data name="ASGridBoundColumnResource14.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource15.HeaderText" xml:space="preserve">
+    <value>CB</value>
+  </data>
+  <data name="ASGridBoundColumnResource15.HeaderTooltip" xml:space="preserve">
+    <value>Volumen de recargos de hoy</value>
+  </data>
+  <data name="ASGridBoundColumnResource15.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource16.HeaderText" xml:space="preserve">
+    <value>R%</value>
+  </data>
+  <data name="ASGridBoundColumnResource16.HeaderTooltip" xml:space="preserve">
+    <value>% de reembolso</value>
+  </data>
+  <data name="ASGridBoundColumnResource16.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource17.HeaderText" xml:space="preserve">
+    <value>MT$</value>
+  </data>
+  <data name="ASGridBoundColumnResource17.HeaderTooltip" xml:space="preserve">
+    <value>Monto más alto de la transacción de hoy</value>
+  </data>
+  <data name="ASGridBoundColumnResource17.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource18.HeaderText" xml:space="preserve">
+    <value>#T</value>
+  </data>
+  <data name="ASGridBoundColumnResource18.HeaderTooltip" xml:space="preserve">
+    <value>Conteo de transacción de hoy</value>
+  </data>
+  <data name="ASGridBoundColumnResource18.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource19.HeaderText" xml:space="preserve">
+    <value>#B</value>
+  </data>
+  <data name="ASGridBoundColumnResource19.HeaderTooltip" xml:space="preserve">
+    <value>Conteo del lote de hoy</value>
+  </data>
+  <data name="ASGridBoundColumnResource19.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource2.HeaderText" xml:space="preserve">
+    <value>V%</value>
+  </data>
+  <data name="ASGridBoundColumnResource2.HeaderTooltip" xml:space="preserve">
+    <value>% de volumen</value>
+  </data>
+  <data name="ASGridBoundColumnResource2.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource20.HeaderText" xml:space="preserve">
+    <value>SC</value>
+  </data>
+  <data name="ASGridBoundColumnResource20.HeaderTooltip" xml:space="preserve">
+    <value>Transacciones de tarjetas similares de hoy</value>
+  </data>
+  <data name="ASGridBoundColumnResource20.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource21.HeaderText" xml:space="preserve">
+    <value>SIC</value>
+  </data>
+  <data name="ASGridBoundColumnResource21.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridBoundColumnResource21.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource22.HeaderText" xml:space="preserve">
+    <value>Perfil</value>
+  </data>
+  <data name="ASGridBoundColumnResource22.HeaderTooltip" xml:space="preserve">
+    <value>Descripción del perfil</value>
+  </data>
+  <data name="ASGridBoundColumnResource22.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource23.HeaderText" xml:space="preserve">
+    <value>Cta. #</value>
+  </data>
+  <data name="ASGridBoundColumnResource23.HeaderTooltip" xml:space="preserve">
+    <value># Tarjeta</value>
+  </data>
+  <data name="ASGridBoundColumnResource23.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource24.HeaderText" xml:space="preserve">
+    <value>Cta. #</value>
+  </data>
+  <data name="ASGridBoundColumnResource24.HeaderTooltip" xml:space="preserve">
+    <value># Tarjeta</value>
+  </data>
+  <data name="ASGridBoundColumnResource24.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource25.HeaderText" xml:space="preserve">
+    <value>CT</value>
+  </data>
+  <data name="ASGridBoundColumnResource25.HeaderTooltip" xml:space="preserve">
+    <value>Tipo de Tarjeta</value>
+  </data>
+  <data name="ASGridBoundColumnResource25.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource26.HeaderText" xml:space="preserve">
+    <value>Fuente</value>
+  </data>
+  <data name="ASGridBoundColumnResource26.HeaderTooltip" xml:space="preserve">
+    <value>Fuente del Archivo</value>
+  </data>
+  <data name="ASGridBoundColumnResource26.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource27.HeaderText" xml:space="preserve">
+    <value>Dt de transacciones</value>
+  </data>
+  <data name="ASGridBoundColumnResource27.HeaderTooltip" xml:space="preserve">
+    <value>Fecha de la Transacción</value>
+  </data>
+  <data name="ASGridBoundColumnResource27.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource28.HeaderText" xml:space="preserve">
+    <value>Hora</value>
+  </data>
+  <data name="ASGridBoundColumnResource28.HeaderTooltip" xml:space="preserve">
+    <value>Hora de la Transacción</value>
+  </data>
+  <data name="ASGridBoundColumnResource28.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource29.HeaderText" xml:space="preserve">
+    <value># Autorización</value>
+  </data>
+  <data name="ASGridBoundColumnResource29.HeaderTooltip" xml:space="preserve">
+    <value># Autorización</value>
+  </data>
+  <data name="ASGridBoundColumnResource29.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource3.HeaderText" xml:space="preserve">
+    <value>%AT</value>
+  </data>
+  <data name="ASGridBoundColumnResource3.HeaderTooltip" xml:space="preserve">
+    <value>% de tiques promedios</value>
+  </data>
+  <data name="ASGridBoundColumnResource3.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource30.HeaderText" xml:space="preserve">
+    <value>Tecla</value>
+  </data>
+  <data name="ASGridBoundColumnResource30.HeaderTooltip" xml:space="preserve">
+    <value>Tecleado</value>
+  </data>
+  <data name="ASGridBoundColumnResource30.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource31.HeaderText" xml:space="preserve">
+    <value>Trans</value>
+  </data>
+  <data name="ASGridBoundColumnResource31.HeaderTooltip" xml:space="preserve">
+    <value>Tipo de Transacción</value>
+  </data>
+  <data name="ASGridBoundColumnResource31.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource32.HeaderText" xml:space="preserve">
+    <value>Coincidencia</value>
+  </data>
+  <data name="ASGridBoundColumnResource32.HeaderTooltip" xml:space="preserve">
+    <value>Coincidencia de retorno</value>
+  </data>
+  <data name="ASGridBoundColumnResource32.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource33.HeaderText" xml:space="preserve">
+    <value>Cantidad de la Transacción</value>
+  </data>
+  <data name="ASGridBoundColumnResource33.HeaderTooltip" xml:space="preserve">
+    <value>Cantidad de la Transacción</value>
+  </data>
+  <data name="ASGridBoundColumnResource33.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource34.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridBoundColumnResource34.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridBoundColumnResource34.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource35.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridBoundColumnResource35.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASGridBoundColumnResource35.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource36.HeaderText" xml:space="preserve">
+    <value>Cta. #</value>
+  </data>
+  <data name="ASGridBoundColumnResource36.HeaderTooltip" xml:space="preserve">
+    <value># Tarjeta</value>
+  </data>
+  <data name="ASGridBoundColumnResource36.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource37.HeaderText" xml:space="preserve">
+    <value>Cta. #</value>
+  </data>
+  <data name="ASGridBoundColumnResource37.HeaderTooltip" xml:space="preserve">
+    <value># Tarjeta</value>
+  </data>
+  <data name="ASGridBoundColumnResource37.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource38.HeaderText" xml:space="preserve">
+    <value>Dt de transacciones</value>
+  </data>
+  <data name="ASGridBoundColumnResource38.HeaderTooltip" xml:space="preserve">
+    <value>Fecha de la Transacción</value>
+  </data>
+  <data name="ASGridBoundColumnResource38.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource39.HeaderText" xml:space="preserve">
+    <value>Desc de RC</value>
+  </data>
+  <data name="ASGridBoundColumnResource39.HeaderTooltip" xml:space="preserve">
+    <value>Código de Motivo</value>
+  </data>
+  <data name="ASGridBoundColumnResource39.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource4.HeaderText" xml:space="preserve">
+    <value>% A</value>
+  </data>
+  <data name="ASGridBoundColumnResource4.HeaderTooltip" xml:space="preserve">
+    <value>% de autorización</value>
+  </data>
+  <data name="ASGridBoundColumnResource4.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource40.HeaderText" xml:space="preserve">
+    <value>Tecla</value>
+  </data>
+  <data name="ASGridBoundColumnResource40.HeaderTooltip" xml:space="preserve">
+    <value>Tecleado</value>
+  </data>
+  <data name="ASGridBoundColumnResource40.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource41.HeaderText" xml:space="preserve">
+    <value>Cantidad de la Transacción</value>
+  </data>
+  <data name="ASGridBoundColumnResource41.HeaderTooltip" xml:space="preserve">
+    <value>Cantidad de la Transacción</value>
+  </data>
+  <data name="ASGridBoundColumnResource41.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource42.HeaderText" xml:space="preserve">
+    <value>País</value>
+  </data>
+  <data name="ASGridBoundColumnResource42.HeaderTooltip" xml:space="preserve">
+    <value>País</value>
+  </data>
+  <data name="ASGridBoundColumnResource42.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource43.HeaderText" xml:space="preserve">
+    <value>Recuento</value>
+  </data>
+  <data name="ASGridBoundColumnResource43.HeaderTooltip" xml:space="preserve">
+    <value>Recuento de Transacciones</value>
+  </data>
+  <data name="ASGridBoundColumnResource43.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource44.HeaderText" xml:space="preserve">
+    <value>Volumen</value>
+  </data>
+  <data name="ASGridBoundColumnResource44.HeaderTooltip" xml:space="preserve">
+    <value>Volumen</value>
+  </data>
+  <data name="ASGridBoundColumnResource44.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource5.HeaderText" xml:space="preserve">
+    <value>% DA</value>
+  </data>
+  <data name="ASGridBoundColumnResource5.HeaderTooltip" xml:space="preserve">
+    <value>% de autorización negada</value>
+  </data>
+  <data name="ASGridBoundColumnResource5.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource6.HeaderText" xml:space="preserve">
+    <value>#RA</value>
+  </data>
+  <data name="ASGridBoundColumnResource6.HeaderTooltip" xml:space="preserve">
+    <value>Repetir el conteo de autorización</value>
+  </data>
+  <data name="ASGridBoundColumnResource6.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource7.HeaderText" xml:space="preserve">
+    <value>FC</value>
+  </data>
+  <data name="ASGridBoundColumnResource7.HeaderTooltip" xml:space="preserve">
+    <value>Conteo de la tarjeta extranjera de hoy</value>
+  </data>
+  <data name="ASGridBoundColumnResource7.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource8.HeaderText" xml:space="preserve">
+    <value>% K</value>
+  </data>
+  <data name="ASGridBoundColumnResource8.HeaderTooltip" xml:space="preserve">
+    <value>Porcentaje codificado</value>
+  </data>
+  <data name="ASGridBoundColumnResource8.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource9.HeaderText" xml:space="preserve">
+    <value>=%</value>
+  </data>
+  <data name="ASGridBoundColumnResource9.HeaderTooltip" xml:space="preserve">
+    <value>% de transacciones de números enteros en dólares</value>
+  </data>
+  <data name="ASGridBoundColumnResource9.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="GridBoundColumnResource11.HeaderText" xml:space="preserve">
+    <value>DB</value>
+  </data>
+  <data name="GridBoundColumnResource11.HeaderTooltip" xml:space="preserve">
+    <value>Bin duplicado</value>
+  </data>
+  <data name="GridBoundColumnResource11.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="lblProfileResource1.Text" xml:space="preserve">
+    <value>Etiqueta</value>
+  </data>
+  <data name="lblProfileResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="litHeaderChargeback90daysResource1.Text" xml:space="preserve">
+    <value>Contracargos (90 días)</value>
+  </data>
+  <data name="litHeaderDailyFCAnalysisResource1.Text" xml:space="preserve">
+    <value>Análisis diario de Tarjeta Extranjera (Foreign Card, FC)</value>
+  </data>
+  <data name="litHeaderTransactionTodayResource1.Text" xml:space="preserve">
+    <value>Transacciones (hoy)</value>
+  </data>
+  <data name="lituxMerchantInfoHeaderApprDateResource1.Text" xml:space="preserve">
+    <value>Fecha de aprobación:</value>
+  </data>
+  <data name="lituxMerchantInfoHeaderAuthDeclResource1.Text" xml:space="preserve">
+    <value>% de autorizaciones declinadas:</value>
+  </data>
+  <data name="lituxMerchantInfoHeaderAuthResource1.Text" xml:space="preserve">
+    <value>$, #, % de autorizaciones:</value>
+  </data>
+  <data name="lituxMerchantInfoHeaderAvgDailyVolResource1.Text" xml:space="preserve">
+    <value>Vol. diario prom.:</value>
+  </data>
+  <data name="lituxMerchantInfoHeaderBEProcResource1.Text" xml:space="preserve">
+    <value>Procedimiento de BE:</value>
+  </data>
+  <data name="lituxMerchantInfoHeaderChainNOResource1.Text" xml:space="preserve">
+    <value>Cadena #:</value>
+  </data>
+  <data name="lituxMerchantInfoHeaderCityStateResource1.Text" xml:space="preserve">
+    <value>Ciudad/Estado:</value>
+  </data>
+  <data name="lituxMerchantInfoHeaderExpAvgTktResource1.Text" xml:space="preserve">
+    <value>Exp TktProm:</value>
+  </data>
+  <data name="lituxMerchantInfoHeaderExpMVResource1.Text" xml:space="preserve">
+    <value>Exp MV:</value>
+  </data>
+  <data name="lituxMerchantInfoHeaderExpVSActKeyedResource1.Text" xml:space="preserve">
+    <value>Exp vs % de Act Tecleado:</value>
+  </data>
+  <data name="lituxMerchantInfoHeaderExpYVResource1.Text" xml:space="preserve">
+    <value>Exp YV:</value>
+  </data>
+  <data name="lituxMerchantInfoHeaderMTDVolResource1.Text" xml:space="preserve">
+    <value>Vol. de MTD:</value>
+  </data>
+  <data name="lituxMerchantInfoHeaderMv1Resource1.Text" xml:space="preserve">
+    <value>MV-1:</value>
+  </data>
+  <data name="lituxMerchantInfoHeaderMV2Resource1.Text" xml:space="preserve">
+    <value>MV-2:</value>
+  </data>
+  <data name="lituxMerchantInfoHeaderNoRptAuthResource1.Text" xml:space="preserve">
+    <value># de autorizaciones notificadas:</value>
+  </data>
+  <data name="lituxMerchantInfoHeaderProfileResource1.Text" xml:space="preserve">
+    <value>Perfil:</value>
+  </data>
+  <data name="lituxMerchantInfoHeaderRiskScoreResource1.Text" xml:space="preserve">
+    <value>Calificación de Riesgo:</value>
+  </data>
+  <data name="lituxMerchantInfoHeaderSalesRtnResource1.Text" xml:space="preserve">
+    <value>Ventas, retornos:</value>
+  </data>
+  <data name="lituxMerchantInfoHeaderSICCodeResource1.Text" xml:space="preserve">
+    <value>Código SIC:</value>
+  </data>
+  <data name="lituxMerchantInfoHeaderStatusResource1.Text" xml:space="preserve">
+    <value>Estatus:</value>
+  </data>
+  <data name="lituxMerchantInfoHeaderTodayAvgTktResource1.Text" xml:space="preserve">
+    <value>Tckt. prom. de hoy:</value>
+  </data>
+  <data name="lituxMerchantInfoHeaderTodayVolResource1.Text" xml:space="preserve">
+    <value>Vol. de hoy:</value>
+  </data>
+  <data name="lituxMerchantInfoHeaderYTDVolResource1.Text" xml:space="preserve">
+    <value>Vol. de YTD:</value>
+  </data>
+  <data name="txtMerchantNumberResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxAccountNumberClickResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxAccountNumberClickResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxAccountResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxAccountResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxAccReloadResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxAccReloadResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxAVGDailyVolumeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxAVGDailyVolumeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxBarometerGridResource1.HierarchySettings.CollapseTooltip" xml:space="preserve">
+    <value>Colapsar</value>
+  </data>
+  <data name="uxBarometerGridResource1.HierarchySettings.ExpandTooltip" xml:space="preserve">
+    <value>Expandir</value>
+  </data>
+  <data name="uxBarometerGridResource1.MasterTableView.NoDetailRecordsText" xml:space="preserve">
+    <value>No se encontraron datos.</value>
+  </data>
+  <data name="uxBarometerGridResource1.MasterTableView.NoMasterRecordsText" xml:space="preserve">
+    <value>No se encontraron datos.</value>
+  </data>
+  <data name="uxChargebackResource1.HierarchySettings.CollapseTooltip" xml:space="preserve">
+    <value>Colapsar</value>
+  </data>
+  <data name="uxChargebackResource1.HierarchySettings.ExpandTooltip" xml:space="preserve">
+    <value>Expandir</value>
+  </data>
+  <data name="uxChargebackResource1.MasterTableView.NoDetailRecordsText" xml:space="preserve">
+    <value>No se encontraron datos.</value>
+  </data>
+  <data name="uxChargebackResource1.MasterTableView.NoMasterRecordsText" xml:space="preserve">
+    <value>No se encontraron datos.</value>
+  </data>
+  <data name="uxCwinButtonResource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxCwinButtonResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxDailyFCResource1.HierarchySettings.CollapseTooltip" xml:space="preserve">
+    <value>Colapsar</value>
+  </data>
+  <data name="uxDailyFCResource1.HierarchySettings.ExpandTooltip" xml:space="preserve">
+    <value>Expandir</value>
+  </data>
+  <data name="uxDailyFCResource1.MasterTableView.NoDetailRecordsText" xml:space="preserve">
+    <value>No se encontraron datos.</value>
+  </data>
+  <data name="uxDailyFCResource1.MasterTableView.NoMasterRecordsText" xml:space="preserve">
+    <value>No se encontraron datos.</value>
+  </data>
+  <data name="uxExpectedAverageTicketResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxExpectedAverageTicketResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxExpectedMonthlyVolumeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxExpectedMonthlyVolumeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxExpectedYearlyVolumeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxExpectedYearlyVolumeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMTDVolumeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMTDVolumeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMV1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMV1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMV2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMV2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMV3Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMV3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxPanelChargebackResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxPanelChargebackResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxPanelDailyFCResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxPanelDailyFCResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxPanelTransactionResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxPanelTransactionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxReportGridTransactionsResource1.HierarchySettings.CollapseTooltip" xml:space="preserve">
+    <value>Colapsar</value>
+  </data>
+  <data name="uxReportGridTransactionsResource1.HierarchySettings.ExpandTooltip" xml:space="preserve">
+    <value>Expandir</value>
+  </data>
+  <data name="uxReportGridTransactionsResource1.MasterTableView.NoDetailRecordsText" xml:space="preserve">
+    <value>No se encontraron datos.</value>
+  </data>
+  <data name="uxReportGridTransactionsResource1.MasterTableView.NoMasterRecordsText" xml:space="preserve">
+    <value>No se encontraron datos.</value>
+  </data>
+  <data name="uxShowBarometerResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxShowBarometerResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxShowChargebackResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxShowChargebackResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxShowDailyFCResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxShowDailyFCResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxShowTransactionResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxShowTransactionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxTodayAuthorizationVolumeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxTodayAuthorizationVolumeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxTodayAverageTicketResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxTodayAverageTicketResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxTodayReturnAmountResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxTodayReturnAmountResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxTodaySaleAmountResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxTodaySaleAmountResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxTodayVolumeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxTodayVolumeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxYTDVolumeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxYTDVolumeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DQNextQReportCS_Text_DuplicateAccountNumber" xml:space="preserve">
+    <value>Número de cuenta duplicado</value>
+  </data>
+  <data name="DQNextQReportCS_Text_HighestTransactionAmount" xml:space="preserve">
+    <value>Monto de transacción más alta</value>
+  </data>
+  <data name="DQNextQReportCS_Text_MaximumTicketAmount" xml:space="preserve">
+    <value>Monto de tique máximo</value>
+  </data>
+  <data name="DQNextQReportCS_Text_Total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="DQNextReportCS_Test_NestQReport" xml:space="preserve">
+    <value>InformeQSiguiente</value>
+  </data>
+  <data name="ASGridBoundColumnResource45.HeaderToolTip" xml:space="preserve">
+    <value>País</value>
+  </data>
+  <data name="ASGridBoundColumnResource45.HeaderText" xml:space="preserve">
+    <value>País</value>
+  </data>
+  <data name="BarometerReport.Text" xml:space="preserve">
+    <value>Informe del barómetro</value>
+  </data>
+  <data name="ASGridBoundColumnResource46.HeaderText" xml:space="preserve">
+    <value>N.º de la cuenta usada</value>
+  </data>
+  <data name="ASGridBoundColumnResource46.HeaderTooltip" xml:space="preserve">
+    <value>Recuento de los últimos 30 días</value>
+  </data>
+  <data name="uxBarometerNoDataPanelResource.Text" xml:space="preserve">
+    <value>No se encontraron datos.</value>
+  </data>
+  <data name="lituxMerchantInfoHeaderExpAvgTktResource2.Tooltip" xml:space="preserve">
+    <value>Registro de transacción promedio esperado</value>
+  </data>
+  <data name="tdAverageDailyVolume.Title" xml:space="preserve">
+    <value>Volumen diario promedio</value>
+  </data>
+  <data name="tdBackEndProcessor.Title" xml:space="preserve">
+    <value>Procesador de unidad de apoyo</value>
+  </data>
+  <data name="tdExpectedMonthlyVolume.Title" xml:space="preserve">
+    <value>Volumen mensual esperado</value>
+  </data>
+  <data name="tdExpectedYearlyVolume.Title" xml:space="preserve">
+    <value>Volumen anual esperado</value>
+  </data>
+  <data name="tdMonthlyVolume2MonthsAgo.Title" xml:space="preserve">
+    <value>Volumen mensual hace 2 meses</value>
+  </data>
+  <data name="tdMonthlyVolume3MonthsAgo.Title" xml:space="preserve">
+    <value>Volumen mensual hace 3 meses</value>
+  </data>
+  <data name="tdMonthlyVolumeLastMonth.Title" xml:space="preserve">
+    <value>Volumen mensual el mes pasado</value>
+  </data>
+  <data name="tdRepeatAuthorizationCount.Title" xml:space="preserve">
+    <value>Repetir el conteo de autorización</value>
+  </data>
+  <data name="rm_DQNextQReport_aspx_Text1Resource1.Text" xml:space="preserve">
+    <value>La estadística</value>
+  </data>
+  <data name="ASGridBoundColumnResource0.HeaderText" xml:space="preserve">
+    <value>BA</value>
+  </data>
+  <data name="ASGridBoundColumnResource0.HeaderTooltip" xml:space="preserve">
+    <value>Edad del negocio</value>
+  </data>
+  <data name="ASGridBoundColumnResourceCV.HeaderText" xml:space="preserve">
+    <value>CV %</value>
+  </data>
+  <data name="ASGridBoundColumnResourceCV.HeaderTooltip" xml:space="preserve">
+    <value>Volumen Contractual %</value>
+  </data>
+  <data name="ASGridBoundColumnResource47.HeaderText" xml:space="preserve">
+    <value>CT</value>
+  </data>
+  <data name="ASGridBoundColumnResource47.HeaderTooltip" xml:space="preserve">
+    <value>Tipo de Tarjeta</value>
+  </data>
+  <data name="ASGridBoundColumnResource48.HeaderText" xml:space="preserve">
+    <value>Dt del informe</value>
+  </data>
+  <data name="ASGridBoundColumnResource48.HeaderTooltip" xml:space="preserve">
+    <value>Fecha del Informe</value>
+  </data>
+  <data name="ContractualValuenotBeenProvided_Resource" xml:space="preserve">
+    <value>El valor contractual es cero o no ha sido proporcionado.</value>
+  </data>
+</root>

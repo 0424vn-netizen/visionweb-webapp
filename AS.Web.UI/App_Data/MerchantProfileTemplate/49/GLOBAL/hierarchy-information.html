@@ -1,0 +1,69 @@
+﻿<div class="row" id="hierarchyinfo">
+    <div class="col-md-12" data-toggle="collapse" data-target="#ciHierarchyInformation" aria-expanded="true">
+        <h2 class="grid-title">
+            {{res:HierarchyInformation}}
+        </h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 collapse in" id="ciHierarchyInformation" aria-expanded="true">
+        <table class="ASTable">
+            <colgroup>
+                <col class="w-15">
+                <col class="w-30">
+                <col class="w-15">
+                <col class="w-35">
+            </colgroup>
+            <tr class="Row">
+                <td class="heading">
+                    {{res:ClientName}}
+                </td>
+                <td colspan="3">
+                    {{data:ClientName||HierarchyInformation}}
+                </td>
+            </tr>
+            <tr class="AltRow">
+                <td class="heading">
+                    {{res:ClientLogin}}
+                </td>
+                <td>
+                    {{data:ClientLogin||HierarchyInformation}}
+                </td>
+                <td class="heading">
+                    {{res:Corporate}}
+                </td>
+                <td>
+                    {{data:TNCORP|Hierarchy|HierarchyInformation|EntityNumber1}}
+                </td>
+            </tr>
+            <tr class="Row">
+                <td class="heading">
+                    {{res:Region}}
+                </td>
+                <td>
+                    {{data:TNREG|Hierarchy|HierarchyInformation|EntityNumber2}}
+                </td>               
+                <td class="heading">
+                    {{res:Principal}}
+                </td>
+                <td>
+                    {{data:TNPRIN|Hierarchy|HierarchyInformation|EntityNumber3}}
+                </td>
+            </tr>
+            <tr class="AltRow">
+                <td class="heading">
+                    {{res:Association}}
+                </td>
+                <td>
+                    {{data:TNASSO|Hierarchy|HierarchyInformation|EntityNumber4}}
+                </td>
+                <td class="heading">
+                    {{res:Chain}}
+                </td>
+                <td>
+                    {{data:CHAIN|ChainLink|HierarchyInformation}}
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

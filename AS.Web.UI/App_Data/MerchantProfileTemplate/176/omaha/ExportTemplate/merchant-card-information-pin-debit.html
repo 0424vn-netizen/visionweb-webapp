@@ -1,0 +1,37 @@
+﻿<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <th colspan="4" align="left">
+      <b> {{res:MerchantCardInformationPINDebit}}</b>
+    </th>
+  </tr>
+  <tbody>
+      <tr class="borderTop">
+          <td></td>
+          <td>
+              {{res:OtherVolume}}
+          </td>
+          <td>
+              {{res:OtherItemRate}}
+          </td>
+          <td>
+              {{res:OnlineDebitFeeFlag}}
+          </td>
+      </tr>
+      <!--LOOP_START--><!--Loop:MerchantCardInformationPINDebit:Loop-->
+      <tr>
+          <td class="font-weight-bold">
+              {{data:CardType}}
+          </td>
+          <td>
+              {{data:OtherVolume}}
+          </td>
+          <td>
+              {{data:OtherItemRate}}
+          </td>
+          <td>
+              {{data:OnlDbtFeeFlag}}
+          </td>
+      </tr>
+      <!--LOOP_END-->
+  </tbody>
+</table>

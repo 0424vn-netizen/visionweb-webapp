@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Clients>
+  <!-- TIB -->
+  <Client Id="118">
+    <Control GroupPage="HeaderMenu" ControlPath="Lead/LeadHeaderMenu.ascx"/>
+    <Control GroupPage="CreateNewUser" ControlPath="Lead/LeadCreateNewUser.ascx"/>
+    <Control GroupPage="UserProfile" ControlPath="Lead/LeadUserProfile.ascx"/>
+    <Control GroupPage="ManageUsers" ControlPath="Lead/LeadManageUsers.ascx"/>
+  </Client>
+  <Client Id="998">
+    <Control GroupPage="HeaderMenu" ControlPath="Lead/LeadHeaderMenu.ascx"/>
+    <Control GroupPage="CreateNewUser" ControlPath="Lead/LeadCreateNewUser.ascx"/>
+    <Control GroupPage="UserProfile" ControlPath="Lead/LeadUserProfile.ascx"/>
+    <Control GroupPage="ManageUsers" ControlPath="Lead/LeadManageUsers.ascx"/>
+  </Client>
+</Clients>

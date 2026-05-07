@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        table td, table th
+        {
+            text-align: left;
+			padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            [tpl_AlertEmail_htm_UpdatesMadeToUser]
+        </div>
+        <br />
+        <table style="border-collapse: collapse;" border="1" width="100%">
+            <tr>
+                <th>
+                    [tpl_AlertEmail_htm_ChangeType]
+                </th>
+                <th>
+                    [tpl_AlertEmail_htm_Field]
+                </th>
+                <th>
+                    [tpl_AlertEmail_htm_OldValue]
+                </th>
+                <th>
+                    [tpl_AlertEmail_htm_NewValue]
+                </th>
+            </tr>
+            [CONTENT]
+        </table>
+        <div style="padding: 5px; margin-top: 10px;">
+            [tpl_AlertEmail_htm_ContactService]
+            <ul>
+                <li>[tpl_AlertEmail_BNK8714_htm_LocalPhone]</li>
+                <li>[tpl_AlertEmail_BNK8714_htm_TollFree]</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+﻿<div class="row" id="hierarchyinfo">
+    <div class="col-md-12" data-toggle="collapse" data-target="#ciHierarchyInformation" aria-expanded="true">
+        <h2 class="grid-title">
+            {{res:HierarchyInformation}}
+        </h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 collapse in" id="ciHierarchyInformation" aria-expanded="true">
+        <table class="ASTable">
+            <colgroup>
+                <col class="w-45">
+                <col class="w-55">
+            </colgroup>
+            <tr>
+                <td colspan="2" class="hierarchy heading">
+                    {{res:MerchantHierarchy}}
+                </td>
+            </tr>
+            <tr class="Row">
+                <td class="heading">
+                    {{res:Corporate}}
+                </td>
+                <td>
+                    {{data:EntityNumber1|Text|HierarchyInformation}}
+                </td>
+            </tr>
+            <tr class="AltRow">
+                <td class="heading">
+                    {{res:Bank}}
+                </td>
+                <td>
+                    {{data:EntityNumber2|Text|HierarchyInformation}}
+                </td>
+            </tr>
+            <tr class="Row">
+                <td class="heading">
+                    {{res:Region}}
+                </td>
+                <td>
+                    {{data:EntityNumber3|Text|HierarchyInformation}}
+                </td>
+            </tr>
+            <tr class="AltRow">
+                <td class="heading">
+                    {{res:AssociationSubGroup}}
+                </td>
+                <td>
+                    {{data:EntityNumber4|Text|HierarchyInformation}}
+                </td>
+            </tr>
+            <tr class="Row">
+                <td class="heading">
+                    {{res:Association}}
+                </td>
+                <td>
+                    {{data:EntityNumber5|Text|HierarchyInformation}}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="hierarchy heading">
+                    {{res:SalesHierarchy}}
+                </td>
+            </tr>
+            <tr class="Row">
+                <td class="heading">
+                    {{res:SVPMerchantCardServices}}
+                </td>
+                <td>
+                    {{data:EntityNumber6|Text|HierarchyInformation}}
+                </td>
+            </tr>
+            <tr class="AltRow">
+                <td class="heading">
+                    {{res:RegionalSalesManager}}
+                </td>
+                <td>
+                    {{data:EntityNumber7|Text|HierarchyInformation}}
+                </td>
+            </tr>
+            <tr class="Row">
+                <td class="heading">
+                    {{res:SalesAgent}}
+                </td>
+                <td>
+                    {{data:EntityNumber8|Text|HierarchyInformation}}
+                </td>
+            </tr>
+            <tr class="AltRow">
+
+                <td class="heading">
+                    {{res:Chain}}
+                </td>
+                <td>
+                    {{data:CHAIN|Text|HierarchyInformation}}
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

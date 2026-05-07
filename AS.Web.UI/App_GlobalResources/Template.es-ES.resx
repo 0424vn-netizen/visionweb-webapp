@@ -1,0 +1,1850 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AssigmentFilters_xml_Contains" xml:space="preserve">
+    <value>Contiene</value>
+  </data>
+  <data name="AssigmentFilters_xml_DoesNotContain" xml:space="preserve">
+    <value>NoContiene</value>
+  </data>
+  <data name="AssigmentFilters_xml_EndsWith" xml:space="preserve">
+    <value>TerminaCon</value>
+  </data>
+  <data name="AssigmentFilters_xml_EqualTo" xml:space="preserve">
+    <value>IgualA</value>
+  </data>
+  <data name="AssigmentFilters_xml_GreaterThan" xml:space="preserve">
+    <value>MayorQue</value>
+  </data>
+  <data name="AssigmentFilters_xml_GreaterThanOrEqualTo" xml:space="preserve">
+    <value>MayorQueOIgualQue</value>
+  </data>
+  <data name="AssigmentFilters_xml_IsEmpty" xml:space="preserve">
+    <value>EstáVacío</value>
+  </data>
+  <data name="AssigmentFilters_xml_LessThan" xml:space="preserve">
+    <value>MenorQue</value>
+  </data>
+  <data name="AssigmentFilters_xml_LessThanOrEqualTo" xml:space="preserve">
+    <value>MenorQueoIgualQue</value>
+  </data>
+  <data name="AssigmentFilters_xml_NoFilter" xml:space="preserve">
+    <value>SinFiltro</value>
+  </data>
+  <data name="AssigmentFilters_xml_NotEqualTo" xml:space="preserve">
+    <value>NoIgualQue</value>
+  </data>
+  <data name="AssigmentFilters_xml_NotIsEmpty" xml:space="preserve">
+    <value>NoVacío</value>
+  </data>
+  <data name="AssigmentFilters_xml_StartsWith" xml:space="preserve">
+    <value>ComienzaCon</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_11" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_123451112" xml:space="preserve">
+    <value>1,2,3,4,5,11,12</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_141" xml:space="preserve">
+    <value>141</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_185" xml:space="preserve">
+    <value>185 </value>
+  </data>
+  <data name="ClientExtendedSettings_xml_186" xml:space="preserve">
+    <value>186</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_23" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_232" xml:space="preserve">
+    <value>232</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_25" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_611" xml:space="preserve">
+    <value>6,11</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_7" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_ALL" xml:space="preserve">
+    <value>TODOS</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_BNK8714" xml:space="preserve">
+    <value>BNK8714</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_ContactMSR" xml:space="preserve">
+    <value>&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Si está experimentando dificultades para acceder a este sitio, comuníquese con su Representante de Servicios a Comerciantes</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_CreditRefunds" xml:space="preserve">
+    <value>Reembolsos de Crédito</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_CS" xml:space="preserve">
+    <value>CS</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_CSMS" xml:space="preserve">
+    <value>CS,MS</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_CS_RISK" xml:space="preserve">
+    <value>CS_RIESGO</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_EMS" xml:space="preserve">
+    <value>SME</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_False" xml:space="preserve">
+    <value>falso</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_FDRMPSGLOBAL" xml:space="preserve">
+    <value>FDR,MPS,GLOBAL</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_FFC" xml:space="preserve">
+    <value>FFC</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_FidelityInformationServices" xml:space="preserve">
+    <value>Servicios de Información de Fidelity</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_FileSource" xml:space="preserve">
+    <value>FuentedelArchivo</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_FIS" xml:space="preserve">
+    <value>FIS</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_FTE" xml:space="preserve">
+    <value>FuentedelArchivo,TiempodeTransacción,FechadeVencimiento</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_GLOBAL" xml:space="preserve">
+    <value>GLOBAL</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_Groovv" xml:space="preserve">
+    <value>Groovv</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_HEADQUARTER_MERCHANTNUMBER" xml:space="preserve">
+    <value>SEDE,NÚMERODECOMERCIANTE</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_InvalidUsernamePassword" xml:space="preserve">
+    <value>El nombre de usuario o contraseña que ha ingresado es inválido. Inténtelo de nuevo.</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_logo_png" xml:space="preserve">
+    <value>logo.png</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_MerchantIntel" xml:space="preserve">
+    <value>Intel. del Comerciante</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_MerchantIntelligenceCenter" xml:space="preserve">
+    <value>Centro de Inteligencia del Comerciante</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_MERCHANTNUMBER" xml:space="preserve">
+    <value>NÚMERODECOMERCIANTE</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_MerchantProfileExcludedColumn" xml:space="preserve">
+    <value>AgentedeVentas,Sede,ISO,OFICINADEVENTAS,NÚMERODEBANCO,Estatus</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_MMDDYYYY" xml:space="preserve">
+    <value>MM/dd/aaaa</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_MMYYYY" xml:space="preserve">
+    <value>MM/aaaa</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_MS" xml:space="preserve">
+    <value>MS</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_MS_CS" xml:space="preserve">
+    <value>MS_CS</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_MS_CS_RISK" xml:space="preserve">
+    <value>MS_CS_RIESGO</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_NoteChangeEmail" xml:space="preserve">
+    <value>Nota: Esto NO modifica sus direcciones de correo electrónico de &lt;b&gt;register.groovv.com&lt;/b&gt; u &lt;b&gt;offers.groovv.com&lt;/b&gt;.</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_NoteChangePassword" xml:space="preserve">
+    <value>Nota: Esto NO modifica sus contraseñas de &lt;b&gt;register.groovv.com&lt;/b&gt; u &lt;b&gt;register.groovv.com&lt;/b&gt;.</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_ORI" xml:space="preserve">
+    <value>ORI</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_PasswordRule" xml:space="preserve">
+    <value>La contraseña debe tener un mínimo de 8 y un máximo de 50 caracteres, contener por lo menos 1 número, por lo menos una letra en mayúscula y por lo menos una en minúscula.</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_PIN_DEBIT" xml:space="preserve">
+    <value>DÉBITO CON PIN</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_PIVOTAL" xml:space="preserve">
+    <value>PIVOTAL</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_Placeholder_01" xml:space="preserve">
+    <value>{0}{1}</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_PleaseContact" xml:space="preserve">
+    <value>Si está teniendo dificultades para acceder a este sitio, comuníquese con {0}.</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_PleaseContactCustomerService" xml:space="preserve">
+    <value>Hay un problema con su cuenta. Comuníquese con Servicios de Atención al Cliente</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_SNET" xml:space="preserve">
+    <value>SNET</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_StateTerritoryProvine_Plural" xml:space="preserve">
+    <value>Estados, Territorios, o Provincias</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_StateTerritoryProvine_Single" xml:space="preserve">
+    <value>Estado, Territorio, o Provincia</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_STMT" xml:space="preserve">
+    <value>EDO. DE CTA. {1}- {0}</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_SubmitGeneralQuestion" xml:space="preserve">
+    <value>Use el siguiente formulario para enviar preguntas generales sobre investigación, estados de cuenta o mantenimiento de usuarios. Para otras preguntas detalladas o urgentes sobre su cuenta o servicios &amp;lt;br/&amp;gt; por favor llame o envíe un correo electrónico a su Gerente de Relaciones directamente.</value>
+    <comment>Use el siguiente formulario para enviar preguntas generales sobre investigación, estados de cuenta o mantenimiento de usuarios. Para otras preguntas detalladas o urgentes sobre su cuenta o servicios &lt;br/&gt; por favor llame o envíe un correo electrónico a su Gerente de Relaciones directamente.</comment>
+  </data>
+  <data name="ClientExtendedSettings_xml_TransactionTime_ExpirationDate" xml:space="preserve">
+    <value>TiempodelaTransacción,FechadeVencimiento</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_TransTime" xml:space="preserve">
+    <value>TiempodelaTransacción</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_True" xml:space="preserve">
+    <value>Verdadero</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_TSYS" xml:space="preserve">
+    <value>TSYS</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_VisionWeb" xml:space="preserve">
+    <value>VisionWeb</value>
+  </data>
+  <data name="ClientExtendedSettings_xml_VI_MC_AX_DI" xml:space="preserve">
+    <value>VI,MC,AX,DI</value>
+  </data>
+  <data name="ClientResourceSettings_xml_Message1" xml:space="preserve">
+    <value>Para nuevos usuarios, su nombre de usuario es el número de comerciante que se muestra en su estado de cuenta mensual de comerciante y su contraseña temporal es el número de teléfono de oficina de 10 dígitos que tiene registrado con INTRUST Bank. Para inscribir más de un número de comerciante, por favor contacte a INTRUST Bank.&lt;br/&gt;&lt;br/&gt;Contacte a Servicios para el Comerciante de INTRUST Bank para asistencia en el inicio de sesión o inscripción a través del 316-383-1433 u 866-597-5666 o envíenos un correo electrónico a &lt;a href="mailto:MerchantServices@intrustbank.com"&gt;MerchantServices@intrustbank.com&lt;/a&gt;.</value>
+  </data>
+  <data name="ClientResourceSettings_xml_Message2" xml:space="preserve">
+    <value>Para nuevos usuarios, su Nombre de Usuario es el número de comerciante que aparece en su estado de cuenta mensual de comerciante y su contraseña temporal es el número telefónico de 10 dígitos que aparece en su expediente con Wheatland Card Solutions. Para inscribir más de un número de comerciante, comuníquese con Wheatland Card Solutions.&lt;br/&gt;&lt;br/&gt;Para ayuda con inicio de sesión o inscripción, comuníquese con el Departamento de Servicios para Comerciantes de Wheatland Card Solutions llamando al 316-383-1433 o al 866-597-5666, o envíenos un correo electrónico a &lt;a href="mailto:MerchantServices@wheatlandcardsolutions.com"&gt;MerchantServices@wheatlandcardsolutions.com&lt;/a&gt;.</value>
+    <comment>Para nuevos usuarios, su Nombre de Usuario es el número de comerciante que aparece en su estado de cuenta mensual de comerciante y su contraseña temporal es el número telefónico de 10 dígitos que aparece en su expediente con Wheatland Card Solutions. Para inscribir más de un número de comerciante, comuníquese con Wheatland Card Solutions.&lt;br/&gt;&lt;br/&gt;Para ayuda con inicio de sesión o inscripción, comuníquese con el Departamento de Servicios para Comerciantes de Wheatland Card Solutions llamando al 316-383-1433 o al 866-597-5666, o envíenos un correo electrónico a &lt;a href="mailto:MerchantServices@wheatlandcardsolutions.com"&gt;MerchantServices@wheatlandcardsolutions.com&lt;/a&gt;.</comment>
+  </data>
+  <data name="MerchantProfileNavigator_xml_AccountInfo" xml:space="preserve">
+    <value>Info. de Cuenta</value>
+  </data>
+  <data name="MerchantProfileNavigator_xml_BankInfo" xml:space="preserve">
+    <value>Información del Banco</value>
+  </data>
+  <data name="MerchantProfileNavigator_xml_BusinessInfo" xml:space="preserve">
+    <value>Info. Comercial</value>
+  </data>
+  <data name="MerchantProfileNavigator_xml_CSRComments" xml:space="preserve">
+    <value>Comentarios CSR</value>
+  </data>
+  <data name="MerchantProfileNavigator_xml_HierarchyInfo" xml:space="preserve">
+    <value>Información Jerárquica</value>
+  </data>
+  <data name="MerchantProfileNavigator_xml_MerchantMemos" xml:space="preserve">
+    <value>Memos del Comerciante</value>
+  </data>
+  <data name="MerchantProfileNavigator_xml_MerchCardInfo" xml:space="preserve">
+    <value>Info. Tarjeta Comerc. </value>
+  </data>
+  <data name="MerchantProfileNavigator_xml_MerchCardInfo_PDB" xml:space="preserve">
+    <value>Información de tarjeta de comerciante – PDB</value>
+  </data>
+  <data name="MerchantProfileNavigator_xml_MerchInfo" xml:space="preserve">
+    <value>Info. Comerc.</value>
+  </data>
+  <data name="MerchantProfileNavigator_xml_MerchMemos" xml:space="preserve">
+    <value>Memos Comerc.</value>
+  </data>
+  <data name="MerchantProfileNavigator_xml_OtherCardInfo" xml:space="preserve">
+    <value>Otra Info. de Tarjeta</value>
+  </data>
+  <data name="MerchantProfileNavigator_xml_PricingInfo" xml:space="preserve">
+    <value>Info. de Precios</value>
+  </data>
+  <data name="MerchantProfileNavigator_xml_ReportAccess" xml:space="preserve">
+    <value>Acceso al Informe</value>
+  </data>
+  <data name="MerchantProfileNavigator_xml_TerminalInfo" xml:space="preserve">
+    <value>Info. de Terminal</value>
+  </data>
+  <data name="RainbowColumn_xml_AuthPercent" xml:space="preserve">
+    <value>% Autorización</value>
+  </data>
+  <data name="RainbowColumn_xml_AvgTktPercent" xml:space="preserve">
+    <value>Registro de Transacción de Promedio %</value>
+  </data>
+  <data name="RainbowColumn_xml_CB" xml:space="preserve">
+    <value>CB</value>
+  </data>
+  <data name="RainbowColumn_xml_DeclPercent" xml:space="preserve">
+    <value>% Declinado</value>
+  </data>
+  <data name="RainbowColumn_xml_DupBin" xml:space="preserve">
+    <value>Número Duplicado de Identificación de Banco </value>
+  </data>
+  <data name="RainbowColumn_xml_DupPercent" xml:space="preserve">
+    <value>% Dup</value>
+  </data>
+  <data name="RainbowColumn_xml_EvenPercent" xml:space="preserve">
+    <value>% Par</value>
+  </data>
+  <data name="RainbowColumn_xml_FC" xml:space="preserve">
+    <value>FC</value>
+  </data>
+  <data name="RainbowColumn_xml_KeyPercent" xml:space="preserve">
+    <value>% Tecla</value>
+  </data>
+  <data name="RainbowColumn_xml_LastBatchDate" xml:space="preserve">
+    <value>Fecha del Último Lote</value>
+  </data>
+  <data name="RainbowColumn_xml_MerchantName" xml:space="preserve">
+    <value>Nombre del Comerciante</value>
+  </data>
+  <data name="RainbowColumn_xml_MTDollar" xml:space="preserve">
+    <value>MT$</value>
+  </data>
+  <data name="RainbowColumn_xml_Profile" xml:space="preserve">
+    <value>Perfil</value>
+  </data>
+  <data name="RainbowColumn_xml_RiskScore" xml:space="preserve">
+    <value>Calificación de Riesgo</value>
+  </data>
+  <data name="RainbowColumn_xml_RtnPercent" xml:space="preserve">
+    <value>% Devoluciones</value>
+  </data>
+  <data name="RainbowColumn_xml_SharpBatch" xml:space="preserve">
+    <value># Lote</value>
+  </data>
+  <data name="RainbowColumn_xml_SharpNeg" xml:space="preserve">
+    <value># Neg</value>
+  </data>
+  <data name="RainbowColumn_xml_SharpRptAuth" xml:space="preserve">
+    <value># Autorizaciones Rpt</value>
+  </data>
+  <data name="RainbowColumn_xml_SharpTkts" xml:space="preserve">
+    <value># Registros</value>
+  </data>
+  <data name="RainbowColumn_xml_SharpZero" xml:space="preserve">
+    <value># Cero</value>
+  </data>
+  <data name="RainbowColumn_xml_SIC" xml:space="preserve">
+    <value>SIC</value>
+  </data>
+  <data name="RainbowColumn_xml_TotalVolume" xml:space="preserve">
+    <value>Volumen Total</value>
+  </data>
+  <data name="RainbowColumn_xml_VolPercent" xml:space="preserve">
+    <value>% Vol</value>
+  </data>
+  <data name="tpl_AccountInformation_FULTON_htm_AccountInformation" xml:space="preserve">
+    <value>Información de Cuenta</value>
+  </data>
+  <data name="tpl_AccountInformation_FULTON_htm_EffectiveDate" xml:space="preserve">
+    <value>Fecha de Validez</value>
+  </data>
+  <data name="tpl_AccountInformation_FULTON_htm_Status" xml:space="preserve">
+    <value>Estatus </value>
+  </data>
+  <data name="tpl_AlertEmail_BNK8714_htm_LocalPhone" xml:space="preserve">
+    <value>316-383-1433 (Local)</value>
+  </data>
+  <data name="tpl_AlertEmail_BNK8714_htm_TollFree" xml:space="preserve">
+    <value>866-597-5666 (Línea Gratuita)</value>
+  </data>
+  <data name="tpl_AlertEmail_htm_ChangeType" xml:space="preserve">
+    <value>Tipo de Cambio</value>
+  </data>
+  <data name="tpl_AlertEmail_htm_ContactService" xml:space="preserve">
+    <value>Si cree que este cambio se hizo por equivocación, comuníquese con Servicios de Atención al Cliente en:</value>
+  </data>
+  <data name="tpl_AlertEmail_htm_DirectMerchants" xml:space="preserve">
+    <value>800 - 552 - 5828 (Comerciantes Directos)</value>
+  </data>
+  <data name="tpl_AlertEmail_htm_Field" xml:space="preserve">
+    <value>Campo</value>
+  </data>
+  <data name="tpl_AlertEmail_htm_FinancialInstitutions" xml:space="preserve">
+    <value>800 - 252 - 2509 (Instituciones Financieras)</value>
+  </data>
+  <data name="tpl_AlertEmail_htm_NewValue" xml:space="preserve">
+    <value>Valor Nuevo</value>
+  </data>
+  <data name="tpl_AlertEmail_htm_OldValue" xml:space="preserve">
+    <value>Antiguo Valor</value>
+  </data>
+  <data name="tpl_AlertEmail_htm_UpdatesMadeToUser" xml:space="preserve">
+    <value>Se realizaron las siguientes actualizaciones a su usuario.</value>
+  </data>
+  <data name="tpl_BankInformation_htm_ACHMonthly" xml:space="preserve">
+    <value>ACH Mensual:</value>
+  </data>
+  <data name="tpl_BankInformation_htm_BankInformation" xml:space="preserve">
+    <value>Información del Banco</value>
+  </data>
+  <data name="tpl_BankInformation_htm_BankName" xml:space="preserve">
+    <value>Nombre del Banco:</value>
+  </data>
+  <data name="tpl_BankInformation_htm_DaysHold" xml:space="preserve">
+    <value>Días de Retención:</value>
+  </data>
+  <data name="tpl_BankInformation_htm_DDASharp" xml:space="preserve">
+    <value>DDA #:</value>
+  </data>
+  <data name="tpl_BankInformation_htm_DisbursementDetail" xml:space="preserve">
+    <value>Detalles del Desembolso:</value>
+  </data>
+  <data name="tpl_BankInformation_htm_DisbursementMethod_Adjustments" xml:space="preserve">
+    <value>Método de Desembolso: Ajustes:</value>
+  </data>
+  <data name="tpl_BankInformation_htm_DisbursementMethod_Deposit" xml:space="preserve">
+    <value>Método de Desembolso: Depósito:</value>
+  </data>
+  <data name="tpl_BankInformation_htm_DisbursementMethod_Discount" xml:space="preserve">
+    <value>Método de Desembolso: Descuento:</value>
+  </data>
+  <data name="tpl_BankInformation_htm_DisbursementMethod_GenericDebit" xml:space="preserve">
+    <value>Método de Desembolso: Débito Genérico:</value>
+  </data>
+  <data name="tpl_BankInformation_htm_RoutingSharp" xml:space="preserve">
+    <value># Ruta Bancaria:</value>
+  </data>
+  <data name="tpl_BankInformation_SNET_htm_ChargebackDDASharp" xml:space="preserve">
+    <value>Reembolso a Cuenta de Depósito a La Vista #:</value>
+  </data>
+  <data name="tpl_BankInformation_SNET_htm_DailyDDASharp" xml:space="preserve">
+    <value>DDA # Diario</value>
+  </data>
+  <data name="tpl_BankInformation_TSYS_htm_AcctSharp" xml:space="preserve">
+    <value>Cta. #:</value>
+  </data>
+  <data name="tpl_BankInformation_TSYS_htm_TransitRoutingSharp" xml:space="preserve">
+    <value># Tránsito/Enrutamiento:</value>
+  </data>
+  <data name="tpl_BusinessInformation_htm_BusinessInformation" xml:space="preserve">
+    <value>Información Comercial</value>
+  </data>
+  <data name="tpl_BusinessInformation_htm_ClosedDate" xml:space="preserve">
+    <value>Fecha Cerrada:</value>
+  </data>
+  <data name="tpl_BusinessInformation_htm_CorporateAddress" xml:space="preserve">
+    <value>Dirección Corporativa:</value>
+  </data>
+  <data name="tpl_BusinessInformation_htm_CorporateName" xml:space="preserve">
+    <value>Nombre Corporativo:</value>
+  </data>
+  <data name="tpl_BusinessInformation_htm_DepositType" xml:space="preserve">
+    <value>Tipo de Depósito:</value>
+  </data>
+  <data name="tpl_BusinessInformation_EMS_htm_AverageSalesAmount" xml:space="preserve">
+    <value>Suma Promedio de Ventas</value>
+  </data>
+  <data name="tpl_BusinessInformation_EMS_htm_CustomerType" xml:space="preserve">
+    <value>Tipo de Cliente:</value>
+  </data>
+  <data name="tpl_BusinessInformation_EMS_htm_Date" xml:space="preserve">
+    <value>Fecha:</value>
+  </data>
+  <data name="tpl_BusinessInformation_EMS_htm_FederalTaxID" xml:space="preserve">
+    <value>Identificación Fiscal Federal</value>
+  </data>
+  <data name="tpl_BusinessInformation_EMS_htm_GiftCardCustomerNumber" xml:space="preserve">
+    <value>Número de Cliente de Tarjeta de Obsequio</value>
+  </data>
+  <data name="tpl_BusinessInformation_EMS_htm_GoldCDP" xml:space="preserve">
+    <value>Oro(CDP)</value>
+  </data>
+  <data name="tpl_BusinessInformation_EMS_htm_LeaseDate" xml:space="preserve">
+    <value>Fecha de Arrendamiento:</value>
+  </data>
+  <data name="tpl_BusinessInformation_EMS_htm_LeaseNumber" xml:space="preserve">
+    <value>Número de Arrendamiento</value>
+  </data>
+  <data name="tpl_BusinessInformation_EMS_htm_Lessor" xml:space="preserve">
+    <value>Arrendador:</value>
+  </data>
+  <data name="tpl_BusinessInformation_EMS_htm_OnHold" xml:space="preserve">
+    <value>En Espera:</value>
+  </data>
+  <data name="tpl_BusinessInformation_EMS_htm_RemainingPayment" xml:space="preserve">
+    <value>Pago Restante:</value>
+  </data>
+  <data name="tpl_BusinessInformation_EMS_htm_RiskPlan" xml:space="preserve">
+    <value>Plan de Riesgos:</value>
+  </data>
+  <data name="tpl_BusinessInformation_EMS_htm_SiteAcess" xml:space="preserve">
+    <value>Acceso al Sitio:</value>
+  </data>
+  <data name="tpl_BusinessInformation_EMS_htm_SocialSecuritySharp" xml:space="preserve">
+    <value># Seguro Social:</value>
+  </data>
+  <data name="tpl_BusinessInformation_htm_ETCCutoff" xml:space="preserve">
+    <value>Límite ETC</value>
+  </data>
+  <data name="tpl_BusinessInformation_htm_ETCType" xml:space="preserve">
+    <value>Tipo de ETC</value>
+  </data>
+  <data name="tpl_BusinessInformation_htm_Fax" xml:space="preserve">
+    <value>Fax:</value>
+  </data>
+  <data name="tpl_BusinessInformation_htm_Misc1" xml:space="preserve">
+    <value>Misc. 1:</value>
+  </data>
+  <data name="tpl_BusinessInformation_htm_Misc2" xml:space="preserve">
+    <value>Misc.2:</value>
+  </data>
+  <data name="tpl_BusinessInformation_htm_OnlineDebitFeePrintOption" xml:space="preserve">
+    <value>Opción de Impresión de Cargo de Débito de Estado de Cuenta en Línea:</value>
+  </data>
+  <data name="tpl_BusinessInformation_htm_OpenDate" xml:space="preserve">
+    <value>Fecha de Apertura:</value>
+  </data>
+  <data name="tpl_BusinessInformation_ORION_htm_ApprovalDate" xml:space="preserve">
+    <value>Fecha de Aprobación:</value>
+  </data>
+  <data name="tpl_BusinessInformation_ORION_htm_BillingAddress" xml:space="preserve">
+    <value>Dirección de Facturación: </value>
+  </data>
+  <data name="tpl_BusinessInformation_ORION_htm_Phone" xml:space="preserve">
+    <value>Teléfono:</value>
+  </data>
+  <data name="tpl_BusinessInformation_PLANET_htm_MerchantName" xml:space="preserve">
+    <value>Nombre del Comerciante:</value>
+  </data>
+  <data name="tpl_BusinessInformation_htm_SeasonalMerchant" xml:space="preserve">
+    <value>Comerciante Estacional:</value>
+  </data>
+  <data name="tpl_BusinessInformation_htm_SICMCC" xml:space="preserve">
+    <value>SIC/MCC:</value>
+  </data>
+  <data name="tpl_BusinessInformation_htm_SiteAccess" xml:space="preserve">
+    <value>Acceso al Sitio:</value>
+  </data>
+  <data name="tpl_BusinessInformation_SNET_htm_BusinessType" xml:space="preserve">
+    <value>Tipo de Negocio:</value>
+  </data>
+  <data name="tpl_BusinessInformation_htm_Spark_Excl_ID" xml:space="preserve">
+    <value>Identificación de Spark Excl</value>
+  </data>
+  <data name="tpl_BusinessInformation_htm_StatementHoldFlag" xml:space="preserve">
+    <value>Indicador de Retención de Estado de Cuenta</value>
+  </data>
+  <data name="tpl_BusinessInformation_htm_StatementICPrintOptions" xml:space="preserve">
+    <value>Opciones de Impresión I/C del Estado de Cuenta</value>
+  </data>
+  <data name="tpl_BusinessInformation_htm_StatementMailFlag" xml:space="preserve">
+    <value>Indicador de Envío por Correo de Estado de Cuenta</value>
+  </data>
+  <data name="tpl_BusinessInformation_htm_Status" xml:space="preserve">
+    <value>Estatus:</value>
+  </data>
+  <data name="tpl_BusinessInformation_htm_TaxID" xml:space="preserve">
+    <value>Identificación Fiscal:</value>
+  </data>
+  <data name="tpl_BusinessInformation_htm_TinType" xml:space="preserve">
+    <value>Tipo de Identificación Fiscal</value>
+  </data>
+  <data name="tpl_BusinessInformation_TSYS_htm_FederalTaxID" xml:space="preserve">
+    <value>Identificación Fiscal Federal</value>
+  </data>
+  <data name="tpl_BusinessInformation_TSYS_htm_GiftCardCustomerNumber" xml:space="preserve">
+    <value>Número de Cliente de Tarjeta de Obsequio</value>
+  </data>
+  <data name="tpl_BusinessInformation_TSYS_htm_Lessor" xml:space="preserve">
+    <value>Arrendador:</value>
+  </data>
+  <data name="tpl_CardTypeModal_htm_Cards" xml:space="preserve">
+    <value>Tarjetas</value>
+  </data>
+  <data name="tpl_CardTypeModal_htm_CardTypes" xml:space="preserve">
+    <value>Tipos de Tarjeta</value>
+  </data>
+  <data name="tpl_CardTypeModal_htm_MTD" xml:space="preserve">
+    <value>Del Mes a la Fecha</value>
+  </data>
+  <data name="tpl_CardTypeModal_htm_Previousday" xml:space="preserve">
+    <value>Día anterior</value>
+  </data>
+  <data name="tpl_CardTypeModal_htm_YTD" xml:space="preserve">
+    <value>Del Año a la Fecha</value>
+  </data>
+  <data name="tpl_CardVolume_htm_CardVolume" xml:space="preserve">
+    <value>Volumen de Tarjeta</value>
+  </data>
+  <data name="tpl_CardVolume_htm_PreviousDay" xml:space="preserve">
+    <value>Día Anterior</value>
+  </data>
+  <data name="tpl_CardVolume_htm_SharpTransactions" xml:space="preserve">
+    <value># Transacciones</value>
+  </data>
+  <data name="tpl_CardVolume_htm_Volume" xml:space="preserve">
+    <value>Volumen</value>
+  </data>
+  <data name="tpl_EmailForgotPassword_htm_Message1" xml:space="preserve">
+    <value>Ha ocurrido un número excesivo de intentos de inicio de sesión con su {0} nombre de usuario</value>
+  </data>
+  <data name="tpl_EmailForgotPassword_htm_Message2" xml:space="preserve">
+    <value>Utilice la función '¿Se le olvidó su contraseña?' para acceder al sitio.</value>
+  </data>
+  <data name="tpl_EmailForgotPassword_htm_Message3" xml:space="preserve">
+    <value>No responda a esta dirección de correo electrónico.</value>
+  </data>
+  <data name="tpl_EmailForgotPassword_htm_Title" xml:space="preserve">
+    <value>VisionWeb En Línea</value>
+  </data>
+  <data name="tpl_ForgotPassword_htm_Message1" xml:space="preserve">
+    <value>Su [ReajustarContraseñaNombredeUsuario]contraseña en línea ha sido cambiada a:</value>
+  </data>
+  <data name="tpl_ForgotPassword_htm_Message2" xml:space="preserve">
+    <value>Esta contraseña vencerá dentro de [Tiempo]. Inicie sesión y restablezca su contraseña tras&lt;br/&gt; recibir este mensaje.</value>
+  </data>
+  <data name="tpl_HierarchyInfomation_PLANET_htm_Agent" xml:space="preserve">
+    <value>Agente:</value>
+  </data>
+  <data name="tpl_HierarchyInfomation_PLANET_htm_SalesUnit" xml:space="preserve">
+    <value>Unidad de Ventas:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_ChainCode" xml:space="preserve">
+    <value>Código de Cadena:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_ClientLogin" xml:space="preserve">
+    <value>Acceso (Login) de Clientes:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_ClientName" xml:space="preserve">
+    <value>Nombre del Cliente:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_EMS_htm_BankNumber" xml:space="preserve">
+    <value>Número de Banco:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_EMS_htm_ISO" xml:space="preserve">
+    <value>ISO:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_EMS_htm_SalesOffice" xml:space="preserve">
+    <value>Oficina de Ventas:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_FIS_htm_ASSOCIATION" xml:space="preserve">
+    <value>ASOCIACIÓN:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_FIS_htm_Bank" xml:space="preserve">
+    <value>Banco:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_FIS_htm_Chain" xml:space="preserve">
+    <value>Cadena:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_FIS_htm_ServicedBy" xml:space="preserve">
+    <value>Servido Por:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_Fulton_htm_Association" xml:space="preserve">
+    <value>Asociación:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_Fulton_htm_Association_Sub_Group" xml:space="preserve">
+    <value>Subgrupo de la Asociación</value>
+  </data>
+  <data name="tpl_HierarchyInformation_Fulton_htm_Chain" xml:space="preserve">
+    <value>Cadena:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_Fulton_htm_Corporate" xml:space="preserve">
+    <value>Corporación:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_Fulton_htm_MerchantHierarchy" xml:space="preserve">
+    <value>Jerarquía del Comerciante</value>
+  </data>
+  <data name="tpl_HierarchyInformation_Fulton_htm_Region" xml:space="preserve">
+    <value>Región:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_Fulton_htm_SalesAgentManager" xml:space="preserve">
+    <value>Gerente regional de ventas:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_Fulton_htm_SalesAgentRegionalManager" xml:space="preserve">
+    <value>Servicios de tarjeta para comerciante SVP:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_Fulton_htm_SalesHierarchy" xml:space="preserve">
+    <value>Jerarquía de Ventas</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_Headqrtr_Merchant" xml:space="preserve">
+    <value>Sede Comercial</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_HierarchyInformation" xml:space="preserve">
+    <value>Información Jerárquica</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_MerchantType" xml:space="preserve">
+    <value>Tipo de Comerciante:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_ORION_htm_Group" xml:space="preserve">
+    <value>Grupo:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_ORION_htm_Porfolio" xml:space="preserve">
+    <value>Portafolio:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_SalesAgent" xml:space="preserve">
+    <value>Agente de Ventas:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_SNET_htm_PartnerID" xml:space="preserve">
+    <value>Identificación de Asociados:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_Sys_Prin_Agent" xml:space="preserve">
+    <value>Sis/Impr/Agente:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_TNBCI_htm_Principal" xml:space="preserve">
+    <value>Principio:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_TOTAL_htm_Business" xml:space="preserve">
+    <value>Negocio:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_TSYS_htm_ChainNumber" xml:space="preserve">
+    <value>Número de Cadena:</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_AMEXONEPT" xml:space="preserve">
+    <value>AMEXONEPT</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_AmexOnePTPerItemFee" xml:space="preserve">
+    <value>Cargo por Artículo Amex OnePT</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_AmexOnePTRate" xml:space="preserve">
+    <value>Tarifa Amex OnePt</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_AMEXPASSTHRU" xml:space="preserve">
+    <value>AMEX PASS THRU</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_AMEX" xml:space="preserve">
+    <value>AMEX</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_DINERS" xml:space="preserve">
+    <value>DINERS</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_DISCFULLACQ" xml:space="preserve">
+    <value>DISC FULL ACQ</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_DISCFULLACQDB" xml:space="preserve">
+    <value>DISC FULL ACQ DB</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_DiscountMethod" xml:space="preserve">
+    <value>Método de Descuento</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_DISCPASSTHRU" xml:space="preserve">
+    <value>DISC PASS THRU</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_Dues_AssessmentFlag" xml:space="preserve">
+    <value>Indicador de Cuotas y Gravámenes</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_Dues_AssessmentFlagItem_lt_1000" xml:space="preserve">
+    <value>Unidad de Cuotas y Gravámenes &gt; 1.000</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_Dues_AssessmentFlagItem_st_1000" xml:space="preserve">
+    <value>Unidad de Cuotas y Gravámenes &lt; 1.000</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_Dues_AssessmentFlagVol_lt_1000" xml:space="preserve">
+    <value>Vol. de Cuotas y Gravámenes &gt; 1.000</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_Dues_AssessmentFlagVol_st_1000" xml:space="preserve">
+    <value>Vol. de Cuotas y Gravámenes &lt; 1.000</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_EBTCASH_B" xml:space="preserve">
+    <value>EBT CASH/B</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_EBTF_STMP" xml:space="preserve">
+    <value>EBT F/STMP</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_EBT_TAPE" xml:space="preserve">
+    <value>EBT-TAPE</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_ERRPercent" xml:space="preserve">
+    <value>% ERROR</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_FeeClass" xml:space="preserve">
+    <value>Clase de Cargo</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_GENERICDEBIT" xml:space="preserve">
+    <value>DÉBITO GENÉRICO</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_InterchangeFeeFlag" xml:space="preserve">
+    <value>Indicador de Cargo de Intercambio</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_JCB" xml:space="preserve">
+    <value>JCB</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_MC" xml:space="preserve">
+    <value>MC</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_MCDB" xml:space="preserve">
+    <value>DB MC</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_MerchantCardInformation" xml:space="preserve">
+    <value>Información de Tarjeta del Comerciante</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_MerchantPricingGrid" xml:space="preserve">
+    <value>Cuadro de Precios del Comerciante</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_Mid_QualRate" xml:space="preserve">
+    <value>Tarifa Intermedia (Mid-Qualified)</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_Non_QualRate" xml:space="preserve">
+    <value>Tarifa  No Calificada (Non-Qualified)</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_OtherItemRate" xml:space="preserve">
+    <value>Otras Tarifas</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_OtherVolumePercent" xml:space="preserve">
+    <value>Otro % de Volumen</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_ProcSW" xml:space="preserve">
+    <value>SW Proc.</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_QualRate" xml:space="preserve">
+    <value>Tarifa de Calificación</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_TieredDiscountGrid" xml:space="preserve">
+    <value>Cuadro de Descuentos por Niveles</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_VISA" xml:space="preserve">
+    <value>VISA</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_VISADB" xml:space="preserve">
+    <value>BD VISA</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_VOYAGER" xml:space="preserve">
+    <value>VOYAGER</value>
+  </data>
+  <data name="tpl_MerchantCardInformation_htm_WRIGHTEXPRESS" xml:space="preserve">
+    <value>WRIGHT EXPRESS</value>
+  </data>
+  <data name="tpl_MerchantCardPinDebitInformation_htm_ACCEL" xml:space="preserve">
+    <value>ACCEL</value>
+  </data>
+  <data name="tpl_MerchantCardPinDebitInformation_htm_AFFN" xml:space="preserve">
+    <value>AFFN</value>
+  </data>
+  <data name="tpl_MerchantCardPinDebitInformation_htm_ALASKAOPTION" xml:space="preserve">
+    <value>OPCIÓN ALASKA</value>
+  </data>
+  <data name="tpl_MerchantCardPinDebitInformation_htm_CU24" xml:space="preserve">
+    <value>CU24</value>
+  </data>
+  <data name="tpl_MerchantCardPinDebitInformation_htm_INTERLINK" xml:space="preserve">
+    <value>INTERLINK</value>
+  </data>
+  <data name="tpl_MerchantCardPinDebitInformation_htm_JEANIE" xml:space="preserve">
+    <value>JEANIE</value>
+  </data>
+  <data name="tpl_MerchantCardPinDebitInformation_htm_MAESTRO" xml:space="preserve">
+    <value>MAESTRO</value>
+  </data>
+  <data name="tpl_MerchantCardPinDebitInformation_htm_MCI_PINDebit" xml:space="preserve">
+    <value>Información de Tarjeta del Comerciante - Débito PIN</value>
+  </data>
+  <data name="tpl_MerchantCardPinDebitInformation_htm_NYCE" xml:space="preserve">
+    <value>NYCE</value>
+  </data>
+  <data name="tpl_MerchantCardPinDebitInformation_htm_OnlineDebitFeeFlag" xml:space="preserve">
+    <value>Indicador de Cargo de Débito En Línea</value>
+  </data>
+  <data name="tpl_MerchantCardPinDebitInformation_htm_PULSE" xml:space="preserve">
+    <value>PULSAR</value>
+  </data>
+  <data name="tpl_MerchantCardPinDebitInformation_htm_SHAZAM" xml:space="preserve">
+    <value>SHAZAM</value>
+  </data>
+  <data name="tpl_MerchantCardPinDebitInformation_htm_STAR" xml:space="preserve">
+    <value>STAR</value>
+  </data>
+  <data name="tpl_MonthlyCardVolume_htm_Month" xml:space="preserve">
+    <value>Mes</value>
+  </data>
+  <data name="tpl_MonthlyCardVolume_htm_MonthlyCardVolume" xml:space="preserve">
+    <value>Volumen Mensual de Tarjeta</value>
+  </data>
+  <data name="tpl_MonthlyCardVolume_htm_SharpTrans" xml:space="preserve">
+    <value># Transacciones</value>
+  </data>
+  <data name="tpl_MonthlyCardVolume_htm_Total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="tpl_MonthlyCardVolume_htm_Volume" xml:space="preserve">
+    <value>Volumen</value>
+  </data>
+  <data name="tpl_OtherCardInformation_FIS_htm_AMEXMID" xml:space="preserve">
+    <value>AMEX MID:</value>
+  </data>
+  <data name="tpl_OtherCardInformation_FIS_htm_DiscoverMID" xml:space="preserve">
+    <value>Discover MID:</value>
+  </data>
+  <data name="tpl_OtherCardInformation_htm_AMEX" xml:space="preserve">
+    <value>AMEX</value>
+  </data>
+  <data name="tpl_OtherCardInformation_htm_AMEXONEPOINT" xml:space="preserve">
+    <value>AMEX ONEPOINT:</value>
+  </data>
+  <data name="tpl_OtherCardInformation_htm_Discover" xml:space="preserve">
+    <value>Discover</value>
+  </data>
+  <data name="tpl_OtherCardInformation_htm_DiscoverFullAQC" xml:space="preserve">
+    <value>Discover Full Aqc</value>
+  </data>
+  <data name="tpl_OtherCardInformation_htm_JCB" xml:space="preserve">
+    <value>JCB</value>
+  </data>
+  <data name="tpl_OtherCardInformation_htm_OtherCardInformation" xml:space="preserve">
+    <value>Otra Información de Tarjeta</value>
+  </data>
+  <data name="tpl_OtherCardInformation_htm_PinDebit" xml:space="preserve">
+    <value>Débito con Pin</value>
+  </data>
+  <data name="tpl_OtherCardInformation_htm_Voyager" xml:space="preserve">
+    <value>Voyager</value>
+  </data>
+  <data name="tpl_OtherCardInformation_htm_WrightExpress" xml:space="preserve">
+    <value>Wright Express</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_AccountFee1" xml:space="preserve">
+    <value>Cargo de Cuenta 1</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_AccountFee2" xml:space="preserve">
+    <value>Cargo de Cuenta 2</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_AccountFee3" xml:space="preserve">
+    <value>Cargo de Cuenta 3</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_AccountFee4" xml:space="preserve">
+    <value>Cargo de Cuenta 4</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_AccountFee5" xml:space="preserve">
+    <value>Cargo de Cuenta 5</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_AcqrPrFee" xml:space="preserve">
+    <value>Cargo de Pr del Adq.</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_AcqSupportFee" xml:space="preserve">
+    <value>Cargo de Soporte al Adq.</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_AuthGrid" xml:space="preserve">
+    <value>Cuadro de Autorización</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_Avg_TicketAmount" xml:space="preserve">
+    <value>Suma Promedio de Ticket</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_BatchHeaderFee" xml:space="preserve">
+    <value>Cargo de Encabezado de Lotes</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_BundlePct" xml:space="preserve">
+    <value>Porcentaje del Paquete</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_BundleRate" xml:space="preserve">
+    <value>Tarifa del Paquete</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_ChargebackFee" xml:space="preserve">
+    <value>Cargo de Reembolso</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_CrossBorderFee" xml:space="preserve">
+    <value>Comisión Transfronteriza</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_DailyAuthAmount" xml:space="preserve">
+    <value>Suma Diaria Autorizada </value>
+  </data>
+  <data name="tpl_PricingInformation_htm_DailyDeposit" xml:space="preserve">
+    <value>Depósito Diario</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_DataUsageFlag" xml:space="preserve">
+    <value>Indicador de Uso de Datos</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_DiscFullAcqAssoc" xml:space="preserve">
+    <value>Disc Full Acq Assoc Fees:</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_IncomeFactors" xml:space="preserve">
+    <value>Factores de Ingreso:</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_IntlAcq" xml:space="preserve">
+    <value>Adq. Internacional</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_INTLProcessFlag" xml:space="preserve">
+    <value>Indicador de Proceso INTERNACIONAL</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_INTLServiceFlag" xml:space="preserve">
+    <value>Indicador de Servicio INTERNACIONAL</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_ISA" xml:space="preserve">
+    <value>ISA</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_IVRUsage" xml:space="preserve">
+    <value>Uso de IVR</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_MCAssocFees" xml:space="preserve">
+    <value>Cargos Asociados con MC</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_MisuseAuthFee" xml:space="preserve">
+    <value>Cargo por Uso Indebido de Autorización</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_NABUFee" xml:space="preserve">
+    <value>Cargo por Acceso a la Red y Uso de Marca (NABU)</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_OtherItemCharge" xml:space="preserve">
+    <value>Otros Cargos</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_OtherVolumePercent" xml:space="preserve">
+    <value>Otro % de Volumen</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_PricingInformation" xml:space="preserve">
+    <value>Información de Precios</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_RecurFeeAmt" xml:space="preserve">
+    <value>Suma de Cargo Recurrente</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_RecurFeeDesc" xml:space="preserve">
+    <value>Descripción de Cargo Recurrente</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_RecurFeeInd" xml:space="preserve">
+    <value>Ind. Cargo Recurrente</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_RecurringFeeFlag" xml:space="preserve">
+    <value>Indicador de Cargo Recurrente</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_RegPct" xml:space="preserve">
+    <value>Porcentaje Regular</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_RegRate" xml:space="preserve">
+    <value>Tarifa Regular</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_RetrievalFee" xml:space="preserve">
+    <value>Cargo de Recuperación</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_ReturnTransactionFee" xml:space="preserve">
+    <value>Cargo por Transacción de Devolución</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_ReversalFee" xml:space="preserve">
+    <value>Cargo de Inversión</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_SalesTransFee" xml:space="preserve">
+    <value>Cargo por Transacción de Venta</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_StmtBundleOption" xml:space="preserve">
+    <value>Opción de Paquete de Estado de Cuenta</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_UnregPct" xml:space="preserve">
+    <value>Porcentaje no regulado</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_UnregRate" xml:space="preserve">
+    <value>Tarifa no regulada</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_UserDefinedGrid" xml:space="preserve">
+    <value>Cuadro Definido por el Usuario</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_VisaAssocFees" xml:space="preserve">
+    <value>Comisiones Asociadas con Visa:</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_WebsiteUsage" xml:space="preserve">
+    <value>Uso del Sitio de Internet</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_WeeklyDeposit" xml:space="preserve">
+    <value>Depósito Semanal</value>
+  </data>
+  <data name="tpl_PricingInformation_htm_ZeroFloor" xml:space="preserve">
+    <value>Piso Cero</value>
+  </data>
+  <data name="tpl_PricingInformation_ORION_htm_DepositType" xml:space="preserve">
+    <value>Tipo de Depósito:</value>
+  </data>
+  <data name="tpl_PricingInformation_ORION_htm_FeeClasses" xml:space="preserve">
+    <value>Clases de Cargos</value>
+  </data>
+  <data name="tpl_PricingInformation_ORION_htm_FeeFlag1" xml:space="preserve">
+    <value>Indicador de Cargo 1:</value>
+  </data>
+  <data name="tpl_PricingInformation_ORION_htm_FeeFlag2" xml:space="preserve">
+    <value>Indicador de Cargo 2:</value>
+  </data>
+  <data name="tpl_PricingInformation_ORION_htm_MasterCard" xml:space="preserve">
+    <value>Mastercard</value>
+  </data>
+  <data name="tpl_PricingInformation_ORION_htm_Merch_ServiceFee" xml:space="preserve">
+    <value>Cargo de Servicio Comerc.</value>
+  </data>
+  <data name="tpl_PricingInformation_ORION_htm_Mid_QualRate" xml:space="preserve">
+    <value>Tarifa Intermedia (Mid-Qualified):</value>
+  </data>
+  <data name="tpl_PricingInformation_ORION_htm_MinMonthlyFee" xml:space="preserve">
+    <value>Cargo Mensual Mín.:</value>
+  </data>
+  <data name="tpl_PricingInformation_ORION_htm_Non_QualRate" xml:space="preserve">
+    <value>Tarifa  No Calificada (Non-Qualified):</value>
+  </data>
+  <data name="tpl_PricingInformation_ORION_htm_OtherCardTypes" xml:space="preserve">
+    <value>Otros Tipos de Tarjeta</value>
+  </data>
+  <data name="tpl_PricingInformation_ORION_htm_QualRate" xml:space="preserve">
+    <value>Tarifa de Calificación:</value>
+  </data>
+  <data name="tpl_PricingInformation_ORION_htm_Visa" xml:space="preserve">
+    <value>Visa</value>
+  </data>
+  <data name="tpl_ResetUserPassword_htm_Message1" xml:space="preserve">
+    <value>Su [ReserPasswordUserName] contraseña en línea ha sido cambiada a:</value>
+  </data>
+  <data name="tpl_ResetUserPassword_htm_Message2" xml:space="preserve">
+    <value>Esta contraseña vencerá dentro de [Time]. Inicie sesión y restablezca su contraseña tras recibir este mensaje.</value>
+  </data>
+  <data name="tpl_TerminalInformation_TSYS_htm_OtherCardType" xml:space="preserve">
+    <value>Otro Tipo de Tarjeta:</value>
+  </data>
+  <data name="tpl_TerminalInformation_TSYS_htm_Terminal" xml:space="preserve">
+    <value>Terminal:</value>
+  </data>
+  <data name="tpl_TerminalInformation_TSYS_htm_TerminalInformation" xml:space="preserve">
+    <value>Información de Terminal</value>
+  </data>
+  <data name="tpl_TotalMerchant_htm_MerchantApprovals" xml:space="preserve">
+    <value>Aprobaciones del Comerciante</value>
+  </data>
+  <data name="tpl_TotalMerchant_htm_SharpMerchants" xml:space="preserve">
+    <value># Comerciantes</value>
+  </data>
+  <data name="tpl_TotalMerchant_htm_TotalOpenMerchants" xml:space="preserve">
+    <value>Total de Comerciantes Abiertos</value>
+  </data>
+  <data name="tpl_VolumeAnalysis_htm_Chargebacks" xml:space="preserve">
+    <value>Reembolsos</value>
+  </data>
+  <data name="tpl_VolumeAnalysis_htm_ChargebackVolume" xml:space="preserve">
+    <value>Volumen de Reembolsos</value>
+  </data>
+  <data name="tpl_VolumeAnalysis_htm_Chargeback_Sales" xml:space="preserve">
+    <value>Reembolso/Ventas</value>
+  </data>
+  <data name="tpl_VolumeAnalysis_htm_KeyedPercent" xml:space="preserve">
+    <value>% Tecleadas</value>
+  </data>
+  <data name="tpl_VolumeAnalysis_htm_KeyedSharpTrans" xml:space="preserve">
+    <value># Trans. Tecleadas</value>
+  </data>
+  <data name="tpl_VolumeAnalysis_htm_PreviousDay" xml:space="preserve">
+    <value>Día Anterior</value>
+  </data>
+  <data name="tpl_VolumeAnalysis_htm_Retrievals" xml:space="preserve">
+    <value>Recuperaciones</value>
+  </data>
+  <data name="tpl_VolumeAnalysis_htm_RetrievalVolume" xml:space="preserve">
+    <value>Volumen de Recuperaciones</value>
+  </data>
+  <data name="tpl_VolumeAnalysis_htm_Retrieval_Sales" xml:space="preserve">
+    <value>Recuperación/Ventas</value>
+  </data>
+  <data name="tpl_VolumeAnalysis_htm_Returns_Sales" xml:space="preserve">
+    <value>Devoluciones/Ventas</value>
+  </data>
+  <data name="tpl_VolumeAnalysis_htm_ReturnVolume" xml:space="preserve">
+    <value>Volumen de Devoluciones</value>
+  </data>
+  <data name="tpl_VolumeAnalysis_htm_SharpTransactions" xml:space="preserve">
+    <value># Transacciones</value>
+  </data>
+  <data name="tpl_VolumeAnalysis_htm_VolumeAnalysisRatioToSales" xml:space="preserve">
+    <value>Análisis de Volumen y Relación con las Ventas</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_AcctNumber" xml:space="preserve">
+    <value>Número de Cta.</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_Amount" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_AuthCode" xml:space="preserve">
+    <value>Código de Autorización</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_AVS" xml:space="preserve">
+    <value>AVS</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_A_D_F" xml:space="preserve">
+    <value>A/D/F</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_BatchDollar" xml:space="preserve">
+    <value>Lote $</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_Card" xml:space="preserve">
+    <value>Tarjeta</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_CVV2" xml:space="preserve">
+    <value>CVV2</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_Expire" xml:space="preserve">
+    <value>Vence</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_FileSource" xml:space="preserve">
+    <value>Fuente del Archivo</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_F_D" xml:space="preserve">
+    <value>F/D</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_Keyed" xml:space="preserve">
+    <value>Tecleado</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_RC" xml:space="preserve">
+    <value>CM</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_ReportDate" xml:space="preserve">
+    <value>Fecha del Informe</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_Settled" xml:space="preserve">
+    <value>Liquidado</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_SharpBatch" xml:space="preserve">
+    <value># Lote</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_TerminalSharp" xml:space="preserve">
+    <value># Terminal</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_TransDate" xml:space="preserve">
+    <value>Fecha de la Transacción</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_Type" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="GeneralFuncsLib_GridTitle_All" xml:space="preserve">
+    <value>Todos</value>
+  </data>
+  <data name="tpl_HierarchyInformation_FIS_htm_Agent" xml:space="preserve">
+    <value>Agente:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_FIS_htm_MICChain" xml:space="preserve">
+    <value>MIC Cadena:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_Agent" xml:space="preserve">
+    <value>Agente:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_Agent" xml:space="preserve">
+    <value>Agente:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_Bank" xml:space="preserve">
+    <value>Banco:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_Chain" xml:space="preserve">
+    <value>Cadena:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_Corporate" xml:space="preserve">
+    <value>Corporación:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_Outlet" xml:space="preserve">
+    <value>Outlet:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_Sys" xml:space="preserve">
+    <value>Sis:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_Sys_Prin" xml:space="preserve">
+    <value>Sis/Impr:</value>
+  </data>
+  <data name="tpl_BusinessInformation_htm_AnnualVol" xml:space="preserve">
+    <value>Volumen Anual:</value>
+  </data>
+  <data name="tpl_BusinessInformation_htm_AverTicket" xml:space="preserve">
+    <value>Registro de Transacción de Promedio:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_Address" xml:space="preserve">
+    <value>Dirección:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_Contact" xml:space="preserve">
+    <value>Comuníquese con:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_Email" xml:space="preserve">
+    <value>Correo electrónico:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_LastBatchActivity" xml:space="preserve">
+    <value>Actividad del Último Lote:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_MerchantInformation" xml:space="preserve">
+    <value>Información Del Comerciante</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_MerchantName" xml:space="preserve">
+    <value>Nombre del Comerciante:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_MerchantNumber" xml:space="preserve">
+    <value># Comerciante:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_Phone" xml:space="preserve">
+    <value>Teléfono:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_RelationshipManager" xml:space="preserve">
+    <value>Gerente de Relaciones:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_Status" xml:space="preserve">
+    <value>Estatus:</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_Ctry" xml:space="preserve">
+    <value>Ctry</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_EMV" xml:space="preserve">
+    <value>EMV</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_InternalMerchantNumber" xml:space="preserve">
+    <value>Número interno del comerciante:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_ExternalMerchantNumber" xml:space="preserve">
+    <value>Número externo del comerciante:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_ExternalAgentInd" xml:space="preserve">
+    <value>Indicador externo del representante:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_ChannelName" xml:space="preserve">
+    <value>Nombre del Canal:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_DBAName" xml:space="preserve">
+    <value>Nombre Comercial:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_Attention" xml:space="preserve">
+    <value>Atención:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_Url" xml:space="preserve">
+    <value>Dirección URL:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_PaperlessMerchantIndicator" xml:space="preserve">
+    <value>Indicador electrónico del comerciante:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_Seasonal" xml:space="preserve">
+    <value>De temporada:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_City" xml:space="preserve">
+    <value>Ciudad:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_State" xml:space="preserve">
+    <value>Estado:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_Zip1" xml:space="preserve">
+    <value>Código postal 1:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_Zip2" xml:space="preserve">
+    <value>Código postal 1:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_Country" xml:space="preserve">
+    <value>País:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_StoreNumber" xml:space="preserve">
+    <value>Número de la tienda:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_FaxInd" xml:space="preserve">
+    <value>Indicador de fax:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_FaxNumber" xml:space="preserve">
+    <value>Número de fax:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_DescriptorName" xml:space="preserve">
+    <value>Nombre del descriptor:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_DescriptorPhone" xml:space="preserve">
+    <value>Número telefónico del descriptor:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_DescriptorCity" xml:space="preserve">
+    <value>Ciudad del descriptor:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_DescriptorState" xml:space="preserve">
+    <value>Estado del descriptor:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_PrimaryEmail" xml:space="preserve">
+    <value>Correo electrónico principal:</value>
+  </data>
+  <data name="MerchantProfileNavigator_xml_AccCancelation" xml:space="preserve">
+    <value>Cancelación de cuenta</value>
+  </data>
+  <data name="MerchantProfileNavigator_xml_Billing" xml:space="preserve">
+    <value>Facturación</value>
+  </data>
+  <data name="MerchantProfileNavigator_xml_BillingInfo" xml:space="preserve">
+    <value>Información de facturación</value>
+  </data>
+  <data name="MerchantProfileNavigator_xml_DiscountInfo" xml:space="preserve">
+    <value>Información de descuento</value>
+  </data>
+  <data name="MerchantProfileNavigator_xml_FundingInfo" xml:space="preserve">
+    <value>Información de financiación</value>
+  </data>
+  <data name="MerchantProfileNavigator_xml_LegalIRSInfo" xml:space="preserve">
+    <value>Información legal/del Servicio de Rentas Internas (Internal Revenue Service, IRS)</value>
+  </data>
+  <data name="MerchantProfileNavigator_xml_ProcessingDates" xml:space="preserve">
+    <value>Fechas de procesamiento</value>
+  </data>
+  <data name="MerchantProfileNavigator_xml_ProgramProducts" xml:space="preserve">
+    <value>Productos y programas</value>
+  </data>
+  <data name="MerchantProfileNavigator_xml_Reporting" xml:space="preserve">
+    <value>Presentación de informes</value>
+  </data>
+  <data name="MerchantProfileNavigator_xml_TransProcessing" xml:space="preserve">
+    <value>Tramitación de transacciones</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_InsertTimeStamp" xml:space="preserve">
+    <value>ES Insert Timestamp</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_ProgramCode" xml:space="preserve">
+    <value>ES Program Code</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_ProgramDetails" xml:space="preserve">
+    <value>ES Program Details</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_ProgramName" xml:space="preserve">
+    <value>ES Program Name</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_UpdateTimeStamp" xml:space="preserve">
+    <value>ES Update Timestamp</value>
+  </data>
+  <data name="tpl_HierarchyInformation_FinancialAdjustment" xml:space="preserve">
+    <value>ES Financial Adjustment:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_Chargebacks" xml:space="preserve">
+    <value>Contracargos:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_Chargeback_Reversal" xml:space="preserve">
+    <value>Contracargo / Revocación:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_DDAs" xml:space="preserve">
+    <value>Cuentas bancarias:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_DepositAdjustment" xml:space="preserve">
+    <value>Ajuste de depósito:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_Deposits" xml:space="preserve">
+    <value>Depósitos:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_DiscServ" xml:space="preserve">
+    <value>Desc./Serv.:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_DivertFunding" xml:space="preserve">
+    <value>Desvío de fondos:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_Fees" xml:space="preserve">
+    <value>Cuotas:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_FundingCategory" xml:space="preserve">
+    <value>Categoría financiera</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_Interchange_Asmt" xml:space="preserve">
+    <value>ES Interchange/Amts:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_NonBankAdjustment" xml:space="preserve">
+    <value>Ajuste no bancario:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_TransactionRollup" xml:space="preserve">
+    <value>Rollup de transacción:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_Branch_Number" xml:space="preserve">
+    <value>Número de sucursal:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_Business" xml:space="preserve">
+    <value>Negocio:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_Entitlement_Sales_Agent" xml:space="preserve">
+    <value>Representante de ventas de derechos:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_MarkerBank" xml:space="preserve">
+    <value>Indicador de banco:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_Master_Sales_Agent" xml:space="preserve">
+    <value>Representante de ventas principal:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_Relationship_Mananger" xml:space="preserve">
+    <value>Gerente de Relación:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_Corp" xml:space="preserve">
+    <value>Corporación:</value>
+  </data>
+  <data name="MerchantProfileNavigator_xml_BankingInfo" xml:space="preserve">
+    <value>Información bancaria</value>
+  </data>
+  <data name="MerchantProfileNavigator_xml_MerchCard" xml:space="preserve">
+    <value>Tarjeta del comerciante</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_BankCard_City" xml:space="preserve">
+    <value>Bankcard City:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_BankCard_State" xml:space="preserve">
+    <value>Bankcard State:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_City_State_Zip" xml:space="preserve">
+    <value>City/State/Zip:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_ContactPhone" xml:space="preserve">
+    <value>Contact Phone:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_CSPhone" xml:space="preserve">
+    <value>CS Phone:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_LastActiveDate" xml:space="preserve">
+    <value>Last Active Date:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_LastNonMonDate" xml:space="preserve">
+    <value>Last NonMon Date:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_LastReviewDate" xml:space="preserve">
+    <value>Last Review Date:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_LegalName" xml:space="preserve">
+    <value>Legal Name:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_ReOpenDate" xml:space="preserve">
+    <value>ReOpen Date:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_RetailCity" xml:space="preserve">
+    <value>Retail City:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_RetailState" xml:space="preserve">
+    <value>Retail State:</value>
+  </data>
+  <data name="MerchantProfileNavigator_xml_Transactions" xml:space="preserve">
+    <value>Transacciones</value>
+  </data>
+  <data name="MerchantProfileNavigator_xml_OtherCard" xml:space="preserve">
+    <value>Otra Información de Tarjeta</value>
+  </data>
+  <data name="MerchantProfileNavigator_xml_PinDebit" xml:space="preserve">
+    <value>Débito con Pin</value>
+  </data>
+  <data name="MerchantProfileNavigator_xml_PrivateLabel" xml:space="preserve">
+    <value>Etiqueta privada</value>
+  </data>
+  <data name="MIF_MerchantProfile_OptIn" xml:space="preserve">
+    <value>Incluirse</value>
+  </data>
+  <data name="MIF_MerchantProfile_OptOut" xml:space="preserve">
+    <value>Excluirse</value>
+  </data>
+  <data name="tpl_BusinessInformation_TSYS_htm_ConversionDate" xml:space="preserve">
+    <value>Fecha de Conversación:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_eVANCE_htm_Sales" xml:space="preserve">
+    <value>Rama de ventas:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_eVANCE_htm_SponsoringBank" xml:space="preserve">
+    <value>Banco Patrocinador:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_SOFTEK_htm_ServiceRep" xml:space="preserve">
+    <value>Representante de Servicio:</value>
+  </data>
+  <data name="SiteAccess" xml:space="preserve">
+    <value>Acceso al Sitio</value>
+  </data>
+  <data name="Message_InvalidUserAccount" xml:space="preserve">
+    <value>Usted ha ingresado una cuenta de usuario inválida. Inténtelo de nuevo.</value>
+  </data>
+  <data name="Message_MerchantIsOptedOut" xml:space="preserve">
+    <value>El comerciante se ha excluido.</value>
+  </data>
+  <data name="Message_UserIsOptedOut" xml:space="preserve">
+    <value>El usuario se ha excluido.</value>
+  </data>
+  <data name="UserID" xml:space="preserve">
+    <value>ID de Usuario:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_PAYLINE_htm_SponsorBank" xml:space="preserve">
+    <value>Banco Patrocinador:</value>
+  </data>
+  <data name="OptedIn" xml:space="preserve">
+    <value>Incluido</value>
+  </data>
+  <data name="MerchantProfileNavigator_xml_RiskScoreInfo" xml:space="preserve">
+    <value>Información de Riesgo</value>
+  </data>
+  <data name="tpl_htm_RiskInformation" xml:space="preserve">
+    <value>Información de Riesgo</value>
+  </data>
+  <data name="tpl_RiskInformation_htm_ClassificationName" xml:space="preserve">
+    <value>Nombre de Clasificación:</value>
+  </data>
+  <data name="tpl_RiskInformation_htm_Multiplier" xml:space="preserve">
+    <value>Multiplicador:</value>
+  </data>
+  <data name="tpl_RiskInformation_htm_RiskScore" xml:space="preserve">
+    <value>Calificación de Riesgo:</value>
+  </data>
+  <data name="tpl_AlertEmail_htm_note" xml:space="preserve">
+    <value>Your temporary password will be sent to you in a separate email.</value>
+  </data>
+  <data name="RainbowColumn_xml_BusinessAge" xml:space="preserve">
+    <value>Edad del negocio</value>
+  </data>
+  <data name="MerchantProfileNavigator_xml_MerchantNote" xml:space="preserve">
+    <value>Notas</value>
+  </data>
+  <data name="MerchantProfileNavigator_xml_AddNote" xml:space="preserve">
+    <value>Agregar Nota</value>
+  </data>
+  <data name="tpl_PricingInformation_ORION_htm_DiscountRate" xml:space="preserve">
+    <value>Tasa De Descuento:</value>
+  </data>
+  <data name="MerchantProfileNavigator_xml_ContractualInfo" xml:space="preserve">
+    <value>Info. Contractual</value>
+  </data>
+  <data name="tpl_AccountInformation_htm_AccountNumber" xml:space="preserve">
+    <value>Número de Cuenta</value>
+  </data>
+  <data name="tpl_AccountInformation_htm_Program" xml:space="preserve">
+    <value>Programa</value>
+  </data>
+  <data name="tpl_BusinessInformation_htm_Seasonal" xml:space="preserve">
+    <value>De temporada:</value>
+  </data>
+  <data name="tpl_ContractualInformation_htm_AnnualVolume" xml:space="preserve">
+    <value>Volumen Anual:</value>
+  </data>
+  <data name="tpl_ContractualInformation_htm_AverageTicket" xml:space="preserve">
+    <value>Registro de Transacción de Promedio:</value>
+  </data>
+  <data name="tpl_ContractualInformation_htm_CardNotPresent" xml:space="preserve">
+    <value>%Tarjeta no Presente:</value>
+  </data>
+  <data name="tpl_ContractualInformation_htm_ContractualInformation" xml:space="preserve">
+    <value>Información Contractual</value>
+  </data>
+  <data name="tpl_ContractualInformation_htm_eCommerce" xml:space="preserve">
+    <value>%Comercio electrónico:</value>
+  </data>
+  <data name="tpl_ContractualInformation_htm_HighTicket" xml:space="preserve">
+    <value>Alto Ticket:</value>
+  </data>
+  <data name="tpl_ContractualInformation_htm_MOTO" xml:space="preserve">
+    <value>%MOTO:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_BackEndMID" xml:space="preserve">
+    <value>Parte trasera de MID:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_BackEndProcessor" xml:space="preserve">
+    <value>Procesador de unidad de apoyo:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_FrontEndMID" xml:space="preserve">
+    <value>MID Frontal:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_FrontEndProcessor" xml:space="preserve">
+    <value>Procesador Frontal:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_ProcessorInformation" xml:space="preserve">
+    <value>Información Procesador:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_ProcessPlatform" xml:space="preserve">
+    <value>Plataforma de Procesamiendo:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_SponsoringBank" xml:space="preserve">
+    <value>Banco Patrocinador:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_SponsoringBankBIN" xml:space="preserve">
+    <value>Patrocinando Banco BIN:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_Fax" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_OwnerName" xml:space="preserve">
+    <value>Nombre del Propietario</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_OwnerSSN" xml:space="preserve">
+    <value>Numero Seguro Social(SSN) del Propietario</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_Partner" xml:space="preserve">
+    <value>El socio:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_Reseller" xml:space="preserve">
+    <value>Revendedor:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_Website" xml:space="preserve">
+    <value>El sitio de Web:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_FundingMethod" xml:space="preserve">
+    <value>Método de financiación:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_ReferralPartner" xml:space="preserve">
+    <value>Socio de referencia</value>
+  </data>
+  <data name="tpl_HierarchyInformation_RS2_htm_Acquirer" xml:space="preserve">
+    <value>Acquirer</value>
+  </data>
+  <data name="tpl_HierarchyInformation_RS2_htm_Sub_Acquirer" xml:space="preserve">
+    <value>Sub-Acquirer</value>
+  </data>
+  <data name="tpl_HierarchyInformation_Paya_htm_Contractor" xml:space="preserve">
+    <value>Contratista:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_Paya_htm_Coporate" xml:space="preserve">
+    <value>Corporación:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_Paya_htm_Merchant" xml:space="preserve">
+    <value>Comerciante:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_Paya_htm_Office" xml:space="preserve">
+    <value>Oficina:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_Paya_htm_Parent_Regional" xml:space="preserve">
+    <value>Compañía Matriz Regional:</value>
+  </data>
+  <data name="tpl_ContractualInformation_htm_FICO" xml:space="preserve">
+    <value>FICO</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_SubMerchant" xml:space="preserve">
+    <value>Sub-Merchant</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_Tenant" xml:space="preserve">
+    <value>Tenant</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_AutoApprovalIndicatorResource" xml:space="preserve">
+    <value>Indicador de aprobación automática G2 Compass:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_GauthenticateCodeResource" xml:space="preserve">
+    <value>Código Gauthenticate:</value>
+  </data>
+  <data name="tpl_MerchantInformation_htm_GverifyScoreResource" xml:space="preserve">
+    <value>Código Gverify:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_Paya_htm_SecondaryChain" xml:space="preserve">
+    <value>Cadena secundario:</value>
+  </data>
+  <data name="tpl_AlertEmail_ActivePwd_htm_ContactService" xml:space="preserve">
+    <value>If you think this account has been created in error, please contact Customer Service at</value>
+  </data>
+  <data name="tpl_AlertEmail_ActivePwd_htm_CreateUser" xml:space="preserve">
+    <value>Your user account has been created. Your username is &lt;strong class="strong"&gt;{0}&lt;/strong&gt; .Click or paste this link in your browser to log in and update your password:</value>
+  </data>
+  <data name="tpl_ResetUserPassword_htm_Message1_ActivePwd" xml:space="preserve">
+    <value>Your online password has been reset. Click or paste this link in your browser to log in and update your password:</value>
+  </data>
+  <data name="tpl_ResetUserPassword_htm_Message2_ActivePwd" xml:space="preserve">
+    <value>This password is set to expire within [Time]. If you think this account has been created in error, please contact Customer Service at 877-846-5844.</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_AgentChain" xml:space="preserve">
+    <value>Cadena de agentes</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_BankChain" xml:space="preserve">
+    <value>Cadena bancaria</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_BusinessChain" xml:space="preserve">
+    <value>Cadena comercial</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_CorporateChain" xml:space="preserve">
+    <value>Cadena corporativa</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_Group" xml:space="preserve">
+    <value>Grupo:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_ReferralSource" xml:space="preserve">
+    <value>Fuente de referencia:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_ReferralPartnerUserID" xml:space="preserve">
+    <value>ID de usuario de fuente de referencia:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_ReferralSourceUserID" xml:space="preserve">
+    <value>ID de usuario del socio de referencia:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_ResellerUserID" xml:space="preserve">
+    <value>Reseller User ID:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_SponsoringBankUserID" xml:space="preserve">
+    <value>Sponsoring Bank User ID:</value>
+  </data>
+  <data name="tpl_HierarchyInformation_htm_SalesChannelUserID" xml:space="preserve">
+    <value>Sales Channel User ID:</value>
+  </data>
+</root>

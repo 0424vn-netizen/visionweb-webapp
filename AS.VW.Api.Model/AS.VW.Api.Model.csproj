@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6E67138B-AD0E-4F74-8501-9C2A23A79128}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AS.VW.Api.Model</RootNamespace>
+    <AssemblyName>AS.VW.Api.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Filter\BatchDetailFilter.cs" />
+    <Compile Include="Filter\CardSummaryFilter.cs" />
+    <Compile Include="Filter\DetailFilter.cs" />
+    <Compile Include="Filter\DetailPagingFilter.cs" />
+    <Compile Include="Filter\GenericReportFilterNoViewLevel.cs" />
+    <Compile Include="Filter\HierarchyPagingFilter.cs" />
+    <Compile Include="Filter\IDataViewLevelFilter.cs" />
+    <Compile Include="Filter\HierarchyFilter.cs" />
+    <Compile Include="Filter\IMerchantNumberFilter.cs" />
+    <Compile Include="Filter\MerchantInformationFilter.cs" />
+    <Compile Include="Filter\MerchantInformationPagingFilter.cs" />
+    <Compile Include="Filter\MerchantSummaryFilter.cs" />
+    <Compile Include="Filter\GenericReportFilter.cs" />
+    <Compile Include="EntityTypes.cs" />
+    <Compile Include="Filter\DataViewLevel.cs" />
+    <Compile Include="Filter\IDateFilter.cs" />
+    <Compile Include="Filter\IHierarchyFilter.cs" />
+    <Compile Include="Filter\IPagingFilter.cs" />
+    <Compile Include="Filter\Platforms.cs" />
+    <Compile Include="Filter\TransactionOperator.cs" />
+    <Compile Include="Filter\TransactionSearchFilter.cs" />
+    <Compile Include="Filter\VendorAuthorizationDetailFilter.cs" />
+    <Compile Include="Filter\VendorAuthorizationFilter.cs" />
+    <Compile Include="Filter\VoucherFilter.cs" />
+    <Compile Include="Report\AdjustmentBatchSummary.cs" />
+    <Compile Include="Report\AdjustmentDetail.cs" />
+    <Compile Include="Report\AdjustmentHierarchySummary.cs" />
+    <Compile Include="Report\AuthorizationDetail..cs" />
+    <Compile Include="Report\AuthorizationLogSummary.cs" />
+    <Compile Include="Report\AuthorizationVendorDetail.cs" />
+    <Compile Include="Report\AuthorizationVendorHierarchySummary.cs" />
+    <Compile Include="Report\BatchHierarchySummary.cs" />
+    <Compile Include="Report\BatchSummary.cs" />
+    <Compile Include="Report\RetrievalHierarchySummary.cs" />
+    <Compile Include="Report\MerchantStatement.cs" />
+    <Compile Include="Report\MerchantStatementList.cs" />
+    <Compile Include="Report\CardSummary.cs" />
+    <Compile Include="Filter\DateFilterType.cs" />
+    <Compile Include="Report\ChargebackDetail.cs" />
+    <Compile Include="Report\MerchantComment.cs" />
+    <Compile Include="Report\TransactionDetail.cs" />
+    <Compile Include="Report\DepositDetail.cs" />
+    <Compile Include="Report\DepositHierarchySummary.cs" />
+    <Compile Include="Report\DepositSummary.cs" />
+    <Compile Include="Filter\HierarchyFilterMode.cs" />
+    <Compile Include="Pagination.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\InterchangeDetail.cs" />
+    <Compile Include="Report\InterchangeHierarchySummary.cs" />
+    <Compile Include="Report\MerchantSummary.cs" />
+    <Compile Include="Report\RetrievalDetail.cs" />
+    <Compile Include="Report\ChargebackHierarchySummary.cs" />
+    <Compile Include="Report\ReturnHierarchySummary.cs" />
+    <Compile Include="Report\ReturnSummary.cs" />
+    <Compile Include="Report\TransactionDetailBatch.cs" />
+    <Compile Include="Report\VoidRejectDetail.cs" />
+    <Compile Include="Report\VoidRejectHierarchySummary.cs" />
+    <Compile Include="Dto\ReportResponse.cs" />
+    <Compile Include="Report\Voucher.cs" />
+    <Compile Include="Security\ApiAuthToken.cs" />
+    <Compile Include="Security\BaseFilter.cs" />
+    <Compile Include="Security\LoginActions.cs" />
+    <Compile Include="Security\AuthorizationResult.cs" />
+    <Compile Include="Security\ServiceRequestLog.cs" />
+    <Compile Include="Security\User.cs" />
+    <Compile Include="Security\UserModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Filter\ClassDiagramFilter.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

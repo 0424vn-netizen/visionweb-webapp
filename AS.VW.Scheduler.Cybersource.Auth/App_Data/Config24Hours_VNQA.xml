@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Items>
+	<ItemNormal>
+		<Item Value="16" IsPreviousDate ="true" />
+		<Item Value="17" IsPreviousDate ="true" />
+		<Item Value="18" IsPreviousDate ="true" />
+		<Item Value="19" IsPreviousDate ="true" />
+		<Item Value="20" IsPreviousDate ="true" />
+		<Item Value="21" IsPreviousDate ="true" />
+		<Item Value="22" IsPreviousDate ="true" />
+		<Item Value="23" IsPreviousDate ="true" />
+		<Item Value="00" />
+		<Item Value="01" />
+		<Item Value="02" />
+		<Item Value="03" />
+		<Item Value="04" />
+		<Item Value="05" />
+		<Item Value="06" />
+		<Item Value="07" />
+		<Item Value="08" />
+		<Item Value="09" />
+		<Item Value="10" />
+		<Item Value="11" />
+		<Item Value="12" />
+		<Item Value="13" />
+		<Item Value="14" />
+		<Item Value="15" />
+	</ItemNormal>
+</Items>

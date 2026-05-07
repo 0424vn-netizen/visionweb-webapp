@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CHAIN_Add_Existing_Secondary" xml:space="preserve">
+    <value>Add to Existing Secondary Access Chain</value>
+  </data>
+  <data name="CHAIN_Create_New_Secondary" xml:space="preserve">
+    <value>Create New Secondary Access Chain</value>
+  </data>
+  <data name="LiteralResource1.Text" xml:space="preserve">
+    <value>Información del Comerciante</value>
+  </data>
+  <data name="LiteralResource10.Text" xml:space="preserve">
+    <value>Excel</value>
+  </data>
+  <data name="LiteralResource11.Text" xml:space="preserve">
+    <value>Fecha de Aprobación:</value>
+  </data>
+  <data name="LiteralResource12.Text" xml:space="preserve">
+    <value>Fecha Cerrada:</value>
+  </data>
+  <data name="LiteralResource13.Text" xml:space="preserve">
+    <value>Estatus:</value>
+  </data>
+  <data name="LiteralResource14.Text" xml:space="preserve">
+    <value>Acceso al Sitio:</value>
+  </data>
+  <data name="LiteralResource15.Text" xml:space="preserve">
+    <value>Identificación Fiscal</value>
+  </data>
+  <data name="LiteralResource16.Text" xml:space="preserve">
+    <value>SIC/MCC:</value>
+  </data>
+  <data name="LiteralResource17.Text" xml:space="preserve">
+    <value>Suma Promedio de Ventas</value>
+  </data>
+  <data name="LiteralResource18.Text" xml:space="preserve">
+    <value>Información del Banco</value>
+  </data>
+  <data name="LiteralResource19.Text" xml:space="preserve">
+    <value>EXPORTAR</value>
+  </data>
+  <data name="LiteralResource2.Text" xml:space="preserve">
+    <value># Comerciante: </value>
+  </data>
+  <data name="LiteralResource20.Text" xml:space="preserve">
+    <value>Excel</value>
+  </data>
+  <data name="LiteralResource21.Text" xml:space="preserve">
+    <value>Nombre del Banco:</value>
+  </data>
+  <data name="LiteralResource22.Text" xml:space="preserve">
+    <value># Ruta Bancaria:</value>
+  </data>
+  <data name="LiteralResource23.Text" xml:space="preserve">
+    <value>DDA #:</value>
+  </data>
+  <data name="LiteralResource24.Text" xml:space="preserve">
+    <value>Información Jerárquica</value>
+  </data>
+  <data name="LiteralResource25.Text" xml:space="preserve">
+    <value>EXPORTAR</value>
+  </data>
+  <data name="LiteralResource26.Text" xml:space="preserve">
+    <value>Excel</value>
+  </data>
+  <data name="LiteralResource27.Text" xml:space="preserve">
+    <value>Nombre del Cliente:</value>
+  </data>
+  <data name="LiteralResource28.Text" xml:space="preserve">
+    <value>Acceso (Login) de Clientes:</value>
+  </data>
+  <data name="LiteralResource29.Text" xml:space="preserve">
+    <value>Jerarquía del Comerciante</value>
+  </data>
+  <data name="LiteralResource3.Text" xml:space="preserve">
+    <value>Comuníquese con:</value>
+  </data>
+  <data name="LiteralResource30.Text" xml:space="preserve">
+    <value>Grupo:</value>
+  </data>
+  <data name="LiteralResource31.Text" xml:space="preserve">
+    <value>Banco:</value>
+  </data>
+  <data name="LiteralResource32.Text" xml:space="preserve">
+    <value>Región:</value>
+  </data>
+  <data name="LiteralResource33.Text" xml:space="preserve">
+    <value>Subgrupo de la Asociación</value>
+  </data>
+  <data name="LiteralResource34.Text" xml:space="preserve">
+    <value>Asociación:</value>
+  </data>
+  <data name="LiteralResource35.Text" xml:space="preserve">
+    <value>Servicios de tarjeta para comerciante SVP:</value>
+  </data>
+  <data name="LiteralResource36.Text" xml:space="preserve">
+    <value>Gerente regional de ventas:</value>
+  </data>
+  <data name="LiteralResource37.Text" xml:space="preserve">
+    <value>Agente de Ventas:</value>
+  </data>
+  <data name="LiteralResource38.Text" xml:space="preserve">
+    <value>Cadena:</value>
+  </data>
+  <data name="LiteralResource39.Text" xml:space="preserve">
+    <value>Información de Cuenta</value>
+  </data>
+  <data name="LiteralResource4.Text" xml:space="preserve">
+    <value>Estatus:</value>
+  </data>
+  <data name="LiteralResource40.Text" xml:space="preserve">
+    <value>EXPORTAR</value>
+  </data>
+  <data name="LiteralResource41.Text" xml:space="preserve">
+    <value>Excel</value>
+  </data>
+  <data name="LiteralResource42.Text" xml:space="preserve">
+    <value>Información de Cuenta</value>
+  </data>
+  <data name="LiteralResource43.Text" xml:space="preserve">
+    <value>Estatus </value>
+  </data>
+  <data name="LiteralResource44.Text" xml:space="preserve">
+    <value>Fecha de Validez</value>
+  </data>
+  <data name="LiteralResource45.Text" xml:space="preserve">
+    <value>Discover MAP</value>
+  </data>
+  <data name="LiteralResource46.Text" xml:space="preserve">
+    <value>Dirección: </value>
+  </data>
+  <data name="LiteralResource5.Text" xml:space="preserve">
+    <value>Nombre del Comerciante:</value>
+  </data>
+  <data name="LiteralResource6.Text" xml:space="preserve">
+    <value>Teléfono:</value>
+  </data>
+  <data name="LiteralResource7.Text" xml:space="preserve">
+    <value>Actividad del Último Lote:</value>
+  </data>
+  <data name="LiteralResource8.Text" xml:space="preserve">
+    <value>Información Comercial</value>
+  </data>
+  <data name="LiteralResource9.Text" xml:space="preserve">
+    <value>EXPORTAR</value>
+  </data>
+  <data name="LiteralResourceCorporateName.Text" xml:space="preserve">
+    <value>Nombre de la empresa:</value>
+  </data>
+  <data name="LiteralResourceOR.Text" xml:space="preserve">
+    <value>o</value>
+  </data>
+  <data name="ltrSecondaryChain.Text" xml:space="preserve">
+    <value>Cadena de acceso secundario:</value>
+  </data>
+  <data name="MIF_MerchantDetails_FULTONCS_Text_AccountInformation" xml:space="preserve">
+    <value>Información de Cuenta</value>
+  </data>
+  <data name="MIF_MerchantDetails_FULTONCS_Text_BankInformation" xml:space="preserve">
+    <value>Información del Banco</value>
+  </data>
+  <data name="MIF_MerchantDetails_FULTONCS_Text_BusinessInformation" xml:space="preserve">
+    <value>Información Comercial</value>
+  </data>
+  <data name="MIF_MerchantDetails_FULTONCS_Text_DiscoverMap" xml:space="preserve">
+    <value>Discover MAP</value>
+  </data>
+  <data name="MIF_MerchantDetails_FULTONCS_Text_HierarchyInformation" xml:space="preserve">
+    <value>Información Jerárquica</value>
+  </data>
+  <data name="MIF_MerchantDetails_FULTONCS_Text_NonRetained" xml:space="preserve">
+    <value>No Retenido</value>
+  </data>
+  <data name="MIF_MerchantDetails_FULTONCS_Text_NotAvailable" xml:space="preserve">
+    <value>No Disponible</value>
+  </data>
+  <data name="MIF_MerchantDetails_FULTONCS_Text_Retained" xml:space="preserve">
+    <value>Retenido</value>
+  </data>
+  <data name="MIF_MerchantDetails_FULTONCS_Text_SalesHierarchy" xml:space="preserve">
+    <value>Jerarquía de Ventas</value>
+  </data>
+  <data name="MIF_MerchantDetails_Text_RiskInformation" xml:space="preserve">
+    <value>Información de Riesgo</value>
+  </data>
+</root>

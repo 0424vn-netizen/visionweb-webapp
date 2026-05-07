@@ -1,0 +1,25 @@
+﻿<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <th colspan="2" align="left">
+      <b> {{res:BankInformation}}</b>
+    </th>
+  </tr>
+  <tbody>
+      <tr class="Row">
+          <td class="heading">
+              {{res:Routing}}
+          </td>
+          <td>
+              {{data:RoutingNumber||BankInformation}}
+          </td>
+      </tr>
+      <tr class="AltRow">
+          <td class="heading">
+              {{res:DDA}}
+          </td>
+          <td>
+              {{data:DDANumber||BankInformation}}
+          </td>
+      </tr>
+  </tbody>
+</table>

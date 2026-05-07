@@ -1,0 +1,54 @@
+﻿<div class="row" id="hierarchyinfo">
+    <div class="col-md-12" data-toggle="collapse" data-target="#ciHierarchyInformation" aria-expanded="true">
+        <h2 class="grid-title">
+            {{res:HierarchyInformation}}
+        </h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 collapse in" id="ciHierarchyInformation" aria-expanded="true">
+        <table class="ASTable">
+            <colgroup>
+                <col class="w-45">
+                <col class="w-55">
+            </colgroup>
+            <tr>
+                <td colspan="2" class="hierarchy heading">
+                    {{res:MerchantHierarchy}}
+                </td>
+            </tr>
+            <tr class="Row">
+                <td class="heading">
+                    {{res:Office}}
+                </td>
+                <td>
+                    {{data:OFFC|Hierarchy|HierarchyInformation|EntityNumber1}}
+                </td>
+            </tr>
+            <tr class="AltRow">
+                <td class="heading">
+                    {{res:SalesRepresentativeId}}
+                </td>
+                <td>
+                    {{data:REP|Hierarchy|HierarchyInformation|EntityNumber2}}
+                </td>
+            </tr>
+            <tr class="Row">
+                <td class="heading">
+                    {{res:FapsChain}}
+                </td>
+                <td>
+                    {{data:FAPSCHN|Hierarchy|HierarchyInformation|EntityNumber3}}
+                </td>
+            </tr>
+            <tr class="AltRow">
+                <td class="heading">
+                    {{res:Chain}}
+                </td>
+                <td>
+                    {{data:CHAIN|ChainLink|HierarchyInformation|IsShowChainLink}}
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

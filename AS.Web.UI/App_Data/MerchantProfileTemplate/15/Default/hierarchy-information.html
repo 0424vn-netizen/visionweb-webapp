@@ -1,0 +1,42 @@
+﻿<div class="row" id="hierarchyinfo">
+    <div class="col-md-12" data-toggle="collapse" data-target="#ciHierarchyInformation" aria-expanded="true">
+        <h2 class="grid-title">
+            {{res:HierarchyInformation}}
+        </h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 collapse in" id="ciHierarchyInformation" aria-expanded="true">
+        <table class="ASTable">
+            <colgroup>
+                <col class="w-45">
+                <col class="w-55">
+            </colgroup>
+            <tr class="Row">
+                <td class="heading">
+                    {{res:ClientName}}
+                </td>
+                <td>
+                    {{data:HifBankName|Text|HierarchyInformation}}
+                </td>
+            </tr>
+            <tr class="AltRow">
+                <td class="heading">
+                    {{res:ClientLogin}}
+                </td>
+                <td>
+                    {{data:ClientLogin|Text|HierarchyInformation}}
+                </td>
+            </tr>
+            <tr class="Row">
+
+                <td class="heading">
+                    {{res:Chain}}
+                </td>
+                <td>
+                    {{data:CHAIN|Text|HierarchyInformation}}
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

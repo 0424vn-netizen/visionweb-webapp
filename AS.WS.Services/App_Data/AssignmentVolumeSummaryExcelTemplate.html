@@ -1,0 +1,86 @@
+﻿<!--BEGIN_HEADER-->
+<html>
+<head>
+<title>[REPORT_TITLE]</title>
+<style type="text/css">
+table{border:1px solid #000;border-collapse:collapse;width:100%;}td,th{border:1px solid #000;padding:3px;text-align:center;}td.dt{text-align:left;}.s1,.s2,.s3{border-right:none;}.s1{width:30px;}.s2{width:60px;}.s3{width:90px;}.n{border-left:none; text-align:left;}table table{border:0;width:600px;}table table td{border:0;padding:0;}.n{border:none;}
+</style>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+</head>
+<body>
+<table>
+<tr><td class='dt' colspan='11'><b>[REPORT_TITLE]</b></td></tr>
+<tr>
+    <th width='7%'>[tpl_Date]</th>
+    <th width='22%'>[tpl_AssignmentVolume]</th>
+    <th width='8%'>[tpl_Worked]</th>
+    <th width='8%'>[tpl_NotWorked]</th>
+    <th width='7%'></th>
+    <th width='8%'></th>
+    <th width='7%'></th>
+    <th width='8%'></th>
+    <th width='8%'></th>
+    <th width='8%'></th>
+    <th width='8%'></th>
+</tr>
+<!--END_HEADER-->
+
+<!--BEGIN_BLANK_ROW-->
+<tr>
+    <td colspan='10'>&nbsp;</td>
+</tr>
+<!--END_BLANK_ROW-->
+
+<!--BEGIN_DATE-->
+<tr>
+    <td>[REPORT_DATE]</td>
+    <td>[TOTAL_ASSIGNED]</td>
+    <td>[PER_WORKED]</td>
+    <td>[PER_PENDING]</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<!--END_DATE-->
+
+<!--BEGIN_ASSIGNMENT_HEADER-->
+<tr>
+    <th class='n'></th>
+    <th>[tpl_Assignment]</th>
+    <th>[tpl_TotalAssigned]</th>
+    <th>[tpl_TotalWorked]</th>
+    <th>[tpl_WorkedPercentage]</th>
+    <th>[tpl_CasesClosed]</th>
+    <th>[tpl_ClosedPercentage]</th>
+    <th>[tpl_CasesOpened]</th>
+    <th>[tpl_OpenedPercentage]</th>
+    <th>[tpl_PendingPercentage]</th>
+    <th>[tpl_TotalPending]</th>
+</tr>
+<!--END_ASSIGNMENT_HEADER-->
+
+<!--BEGIN_ASSIGNMENT-->
+<tr>
+    <td class='n'></td>
+    <td class='dt'>[RECORD_NAME]</td>
+    <td>[TOTAL_ASSIGNED]</td>
+    <td>[TOTAL_WORKED]</td>
+    <td>[PER_WORKED]</td>
+    <td>[CASE_CLOSED]</td>
+    <td>[PER_CLOSED]</td>
+    <td>[CASE_OPENED]</td>
+    <td>[PER_OPENED]</td>
+    <td>[PER_PENDING]</td>
+    <td>[TOTAL_PENDING]</td>
+</tr>
+<!--END_ASSIGNMENT-->
+
+<!--BEGIN_FOOTER-->
+</table>
+</body>
+</html>
+<!--END_FOOTER-->

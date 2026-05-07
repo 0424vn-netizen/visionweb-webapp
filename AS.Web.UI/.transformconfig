@@ -1,0 +1,30 @@
+﻿ENVS:INT_CS
+ENVS:INT_MS
+ENVS:VNQA_CS
+ENVS:VNQA_MS
+ENVS:QA_CS
+ENVS:QA_MS
+ENVS:UAT_CS
+ENVS:UAT_MS
+ENVS:STAG_CS
+ENVS:STAG_MS
+ENVS:PROD_CS
+ENVS:PROD_MS
+ENVS:FO_CS
+ENVS:FO_MS
+
+TRANSFORM_FILE:web.config
+TRANSFORM_FILE:App_Data\ClientExtendedSettings.xml
+TRANSFORM_FILE:App_Data\LoginPageConfigs.xml
+TRANSFORM_FILE:App_Data\MobileRedirectSettings.xml
+TRANSFORM_FILE:App_Data\\ApiSettings\api-settings.xml
+
+//For windowservice 
+//TRANSFORM_FILE:App.config
+//TRANSFORM_FILE_REPLACE:App.config=>ConsoleApp1.dll.config
+
+//TRANFORM_PACKAGE_ORIGIN_PATH: D:\Publish\VW\WebUI
+//TRANSFORM_ENV:VNQA_CS
+
+// = true for web legacy only
+LEGACY_WEB:true

@@ -1,0 +1,45 @@
+﻿<div class="row" id="hierarchyinfo">
+    <div class="col-md-12" data-toggle="collapse" data-target="#ciHierarchyInformation" aria-expanded="true">
+        <h2 class="grid-title">
+            {{res:HierarchyInformation}}
+        </h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 in" id="ciHierarchyInformation">
+        <table class="ASTable">
+            <tr class="Row">
+                <td class="heading valign-middle">
+                    {{res:Bank}}
+                </td>
+                <td colspan="3">
+                    {{data:PROBANK|Hierarchy|HierarchyInformation|EntityNumber1}}
+                </td>
+            </tr>
+            <tr class="AltRow">
+                <td class="heading">
+                    {{res:Group}}
+                </td>
+                <td>
+                    {{data:PROGROUP|Hierarchy|HierarchyInformation|EntityNumber2}}
+                </td>
+            </tr>
+            <tr class="Row">
+                <td class="heading">
+                    {{res:Association}}
+                </td>
+                <td>
+                    {{data:PROASSO|Hierarchy|HierarchyInformation|EntityNumber3}}
+                </td>
+            </tr>
+            <tr class="AltRow">
+                <td class="heading">
+                    {{res:Chain}}
+                </td>
+                <td>
+                    {{data:CHAIN|ChainLink|HierarchyInformation}}
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+﻿<div class="row" id="TerminalInfo">
+    <div class="col-xs-12" data-toggle="collapse" data-target="#ciTerminalInformation">
+        <h2 class="grid-title">
+            {{res:TerminalInformation}}
+        </h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 in" id="ciTerminalInformation">
+        <table class="ASTable" aria-hidden="true">
+            <colgroup>
+                <col class="w-40">
+                <col class="w-60">
+            </colgroup>
+            <tbody>
+                <tr class="Row">
+                    <td class="heading">
+                        {{res:Terminal}}
+                    </td>
+                    <td>
+                        {{data:Terminal||TerminalInformation}}
+                    </td>
+                </tr>
+                <tr class="AltRow">
+                    <td class="heading">
+                        {{res:OtherCardTypes}}
+                    </td>
+                    <td>
+                        {{data:OtherCardTypes||TerminalInformation}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

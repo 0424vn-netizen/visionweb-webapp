@@ -1,0 +1,1924 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetReports">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="spName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:ArrayOfFilterParameter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfFilterParameter">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="FilterParameter" nillable="true" type="tns:FilterParameter" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="FilterParameter">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ParameterName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ParameterValue" />
+          <s:element minOccurs="0" maxOccurs="1" name="ParameterType" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsOutParameter" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetReportsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetReportsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteNonQueryCommand">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="spName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:ArrayOfFilterParameter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteNonQueryCommandResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExecuteNonQueryCommandResult" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="outputParams" type="tns:ArrayOfFilterParameter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteQueryCommand">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="spName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:ArrayOfFilterParameter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteQueryCommandResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExecuteQueryCommandResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="outputParams" type="tns:ArrayOfFilterParameter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReportsAsDataSet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="spName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:ArrayOfFilterParameter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReportsAsDataSetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetReportsAsDataSetResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteNonQueryCommandOnExternalDB">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="connString" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="spName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_paramaters" type="tns:ArrayOfFilterParameter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteNonQueryCommandOnExternalDBResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExecuteNonQueryCommandOnExternalDBResult" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="OutputParams" type="tns:ArrayOfFilterParameter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReportsFromExternalDB">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="connString" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="spName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_paramaters" type="tns:ArrayOfFilterParameter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReportsFromExternalDBResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetReportsFromExternalDBResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EncryptText">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="encryptStr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EncryptTextResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EncryptTextResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DecryptText">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="decryptStr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DecryptTextResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DecryptTextResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAcquirerMerchantsVisa">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="spa" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ASClient" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ClientIdList" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="userIDMode" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="MerchantStatus" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sFilter" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAcquirerMerchantsVisaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAcquirerMerchantsVisaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExportAcquirerVisaMerchantsExcelL4">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DDSClient" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="userIDMode" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ClientIDList" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="MerchantStatus" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="lblAcquirer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="completedBy" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lblDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lblTotalMerchant" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lblCompliant" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lblNonResponsive" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lblNewOrReview" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tipParticipants" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExportAcquirerVisaMerchantsExcelL4Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExportAcquirerVisaMerchantsExcelL4Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExportAcquirerVisaMerchantsExcelL3">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DDSClient" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="userIDMode" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ClientIDList" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="MerchantStatus" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="lblAcquirer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="completedBy" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lblDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lblTotalMerchant" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lblCompliant" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lblNonResponsive" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lblNewOrReview" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cnp1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cnp2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cnp3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sFilter" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExportAcquirerVisaMerchantsExcelL3Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExportAcquirerVisaMerchantsExcelL3Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVisaScoreCard">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ASClient" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ClientIdList" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="userIDMode" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="MerchantStatus" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sFilter" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVisaScoreCardResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVisaScoreCardResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFDROptedOutReport">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clientList" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ASClient" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CurrentUserMode" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="orderExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filterExpression" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="reportMonth" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFDROptedOutReportResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFDROptedOutReportResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExportAcquirerVisaScoreCardExcel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DDSClient" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="userIDMode" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ClientIDList" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="MerchantStatus" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="AcquirerMember" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CompletedBy" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Date" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TotalMerchants" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TotalMerchantsCompliant" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PercentCompliant" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TotalMerchantsRemediation" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PercentRemediation" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TotalNew" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PercentNew" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sFilter" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExportAcquirerVisaScoreCardExcelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExportAcquirerVisaScoreCardExcelResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAcquirerMerchantsMaster">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ASClient" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ClientIdList" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="userIDMode" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="MerchantStatus" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sFilter" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAcquirerMerchantsMasterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAcquirerMerchantsMasterResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExportAcquirerMasterMerchantsExcel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DDSClient" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="userIDMode" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ClientIDList" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="MerchantStatus" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="lblAcquirer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="completedBy" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lblDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lblTotalMerchant" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lblCompliant" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lblNonResponsive" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lblNewOrReview" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sFilter" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExportAcquirerMasterMerchantsExcelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExportAcquirerMasterMerchantsExcelResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAcquirerMerchantsDiscover">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ASClient" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ClientIdList" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="userIDMode" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="MerchantStatus" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sfilter" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAcquirerMerchantsDiscoverResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAcquirerMerchantsDiscoverResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExportAcquirerDiscoverMerchantsExcel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DDSClient" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="userIDMode" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ClientIDList" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="MerchantStatus" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="lblAcquirer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="completedBy" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lblDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lblTotalMerchant" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lblCompliant" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lblNonResponsive" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lblNewOrReview" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sFilter" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExportAcquirerDiscoverMerchantsExcelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExportAcquirerDiscoverMerchantsExcelResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExportFDROptedOutReportExcel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clientList" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ASClient" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CurrentUserMode" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="orderExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filterExpression" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="reportMonth" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExportFDROptedOutReportExcelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExportFDROptedOutReportExcelResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExtractFRDReport">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientIdList" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ASClient" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="UserASClient" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userIDMode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sFilter" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExtractFRDReportResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetExtractFRDReportResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertExtractFRDReport">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ASClient" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="UserASClient" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CurrentUserMode" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ReportMonth" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="FileName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FileType" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="logID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="DocID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="processType" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertExtractFRDReportResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertExtractFRDReportResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerateFRDReport">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ASClient" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="UserASClient" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CurrentUserMode" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ReportMonth" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="FileName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FileType" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="logID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="DocID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerateFRDReportResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="CheckIsExtractFRDReportExisted">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ASClient" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="UserASClient" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CurrentUserMode" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ReportMonth" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckIsExtractFRDReportExistedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckIsExtractFRDReportExistedResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckNoDataExtractFRDReport">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ASClient" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="UserASClient" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CurrentUserMode" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ReportMonth" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckNoDataExtractFRDReportResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckNoDataExtractFRDReportResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PCIExportReport">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serializedExportParam" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="filterParameterCollection" type="tns:ArrayOfFilterParameter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PCIExportReportResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PCIExportReportResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_ExportByWebServices">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serializedExportParam" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="storedProcName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAnyType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="anyType" nillable="true" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="_ExportByWebServicesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_ExportByWebServicesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_ExportWSByWebServices">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serializedExportParam" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="storedProcName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_ExportWSByWebServicesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_ExportWSByWebServicesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_ExportByWebServicesUsingDataReader">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="info" type="tns:ExportInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ExportInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FileName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExportColumnHeaders" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExportColumnNames" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExportTotalColumnNames" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExportSortExpression" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExportFilterExpression" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FileType" type="tns:ExportFileType" />
+          <s:element minOccurs="0" maxOccurs="1" name="StoredProcName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Parameters" type="tns:ArrayOfAnyType" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReportHeader" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="ExportFileType">
+        <s:restriction base="s:string">
+          <s:enumeration value="EXCEL" />
+          <s:enumeration value="CSV" />
+          <s:enumeration value="WORD" />
+          <s:enumeration value="PDF" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="_ExportByWebServicesUsingDataReaderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="_ExportByWebServicesUsingDataReaderResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPager">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="startIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sortExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filterExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="callbackName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="totalColumns" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="webMethodName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="methodParams" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="outParamPos" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfInt">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="int" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfDecimal">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="decimal" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="_BasicPagerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_BasicPagerResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="totalRecords" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="totalValues" type="tns:ArrayOfDecimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="notifyMessage" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paramOuts" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerWithSeparatedMethod">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="startIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sortExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filterExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="totalColumns" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="webMethodName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="methodParams" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="outParamPos" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerWithSeparatedMethodResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_BasicPagerWithSeparatedMethodResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="totalRecords" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="totalValues" type="tns:ArrayOfDecimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="notifyMessage" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paramOuts" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerWithOneMethod">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="startIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sortExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filterExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="totalColumns" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="webMethodName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="methodParams" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="outParamPos" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerWithOneMethodResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_BasicPagerWithOneMethodResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="totalRecords" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="totalValues" type="tns:ArrayOfDecimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="notifyMessage" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paramOuts" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerSPASingleMethod">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="startIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sortExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filterExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="callbackName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pagingSuffix" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="totalSuffix" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="totalColumns" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="webMethodName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="methodParams" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="outParamPos" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerSPASingleMethodResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_BasicPagerSPASingleMethodResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="totalRecords" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="totalValues" type="tns:ArrayOfDecimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="notifyMessage" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paramOuts" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerSPAMultipleMethod">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="startIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sortExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filterExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="callbackName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pagingSuffix" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="totalSuffix" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="totalColumns" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="webMethodName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="methodParams" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="outParamPos" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerSPAMultipleMethodResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_BasicPagerSPAMultipleMethodResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="totalRecords" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="totalValues" type="tns:ArrayOfDecimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="notifyMessage" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paramOuts" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerWithExport">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="webMethodName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sortExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filterExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerWithExportResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_BasicPagerWithExportResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerWithSPASingleMethodExport">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="webMethodName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sortExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filterExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerWithSPASingleMethodExportResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_BasicPagerWithSPASingleMethodExportResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerWithSPAMultipleMethodExport">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="webMethodName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sortExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filterExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerWithSPAMultipleMethodExportResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_BasicPagerWithSPAMultipleMethodExportResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetReportsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetReports" />
+  </wsdl:message>
+  <wsdl:message name="GetReportsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetReportsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteNonQueryCommandSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteNonQueryCommand" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteNonQueryCommandSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteNonQueryCommandResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteQueryCommandSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteQueryCommand" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteQueryCommandSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteQueryCommandResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetReportsAsDataSetSoapIn">
+    <wsdl:part name="parameters" element="tns:GetReportsAsDataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetReportsAsDataSetSoapOut">
+    <wsdl:part name="parameters" element="tns:GetReportsAsDataSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteNonQueryCommandOnExternalDBSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteNonQueryCommandOnExternalDB" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteNonQueryCommandOnExternalDBSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteNonQueryCommandOnExternalDBResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetReportsFromExternalDBSoapIn">
+    <wsdl:part name="parameters" element="tns:GetReportsFromExternalDB" />
+  </wsdl:message>
+  <wsdl:message name="GetReportsFromExternalDBSoapOut">
+    <wsdl:part name="parameters" element="tns:GetReportsFromExternalDBResponse" />
+  </wsdl:message>
+  <wsdl:message name="EncryptTextSoapIn">
+    <wsdl:part name="parameters" element="tns:EncryptText" />
+  </wsdl:message>
+  <wsdl:message name="EncryptTextSoapOut">
+    <wsdl:part name="parameters" element="tns:EncryptTextResponse" />
+  </wsdl:message>
+  <wsdl:message name="DecryptTextSoapIn">
+    <wsdl:part name="parameters" element="tns:DecryptText" />
+  </wsdl:message>
+  <wsdl:message name="DecryptTextSoapOut">
+    <wsdl:part name="parameters" element="tns:DecryptTextResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAcquirerMerchantsVisaSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAcquirerMerchantsVisa" />
+  </wsdl:message>
+  <wsdl:message name="GetAcquirerMerchantsVisaSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAcquirerMerchantsVisaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExportAcquirerVisaMerchantsExcelL4SoapIn">
+    <wsdl:part name="parameters" element="tns:ExportAcquirerVisaMerchantsExcelL4" />
+  </wsdl:message>
+  <wsdl:message name="ExportAcquirerVisaMerchantsExcelL4SoapOut">
+    <wsdl:part name="parameters" element="tns:ExportAcquirerVisaMerchantsExcelL4Response" />
+  </wsdl:message>
+  <wsdl:message name="ExportAcquirerVisaMerchantsExcelL3SoapIn">
+    <wsdl:part name="parameters" element="tns:ExportAcquirerVisaMerchantsExcelL3" />
+  </wsdl:message>
+  <wsdl:message name="ExportAcquirerVisaMerchantsExcelL3SoapOut">
+    <wsdl:part name="parameters" element="tns:ExportAcquirerVisaMerchantsExcelL3Response" />
+  </wsdl:message>
+  <wsdl:message name="GetVisaScoreCardSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVisaScoreCard" />
+  </wsdl:message>
+  <wsdl:message name="GetVisaScoreCardSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVisaScoreCardResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFDROptedOutReportSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFDROptedOutReport" />
+  </wsdl:message>
+  <wsdl:message name="GetFDROptedOutReportSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFDROptedOutReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExportAcquirerVisaScoreCardExcelSoapIn">
+    <wsdl:part name="parameters" element="tns:ExportAcquirerVisaScoreCardExcel" />
+  </wsdl:message>
+  <wsdl:message name="ExportAcquirerVisaScoreCardExcelSoapOut">
+    <wsdl:part name="parameters" element="tns:ExportAcquirerVisaScoreCardExcelResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAcquirerMerchantsMasterSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAcquirerMerchantsMaster" />
+  </wsdl:message>
+  <wsdl:message name="GetAcquirerMerchantsMasterSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAcquirerMerchantsMasterResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExportAcquirerMasterMerchantsExcelSoapIn">
+    <wsdl:part name="parameters" element="tns:ExportAcquirerMasterMerchantsExcel" />
+  </wsdl:message>
+  <wsdl:message name="ExportAcquirerMasterMerchantsExcelSoapOut">
+    <wsdl:part name="parameters" element="tns:ExportAcquirerMasterMerchantsExcelResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAcquirerMerchantsDiscoverSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAcquirerMerchantsDiscover" />
+  </wsdl:message>
+  <wsdl:message name="GetAcquirerMerchantsDiscoverSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAcquirerMerchantsDiscoverResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExportAcquirerDiscoverMerchantsExcelSoapIn">
+    <wsdl:part name="parameters" element="tns:ExportAcquirerDiscoverMerchantsExcel" />
+  </wsdl:message>
+  <wsdl:message name="ExportAcquirerDiscoverMerchantsExcelSoapOut">
+    <wsdl:part name="parameters" element="tns:ExportAcquirerDiscoverMerchantsExcelResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExportFDROptedOutReportExcelSoapIn">
+    <wsdl:part name="parameters" element="tns:ExportFDROptedOutReportExcel" />
+  </wsdl:message>
+  <wsdl:message name="ExportFDROptedOutReportExcelSoapOut">
+    <wsdl:part name="parameters" element="tns:ExportFDROptedOutReportExcelResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetExtractFRDReportSoapIn">
+    <wsdl:part name="parameters" element="tns:GetExtractFRDReport" />
+  </wsdl:message>
+  <wsdl:message name="GetExtractFRDReportSoapOut">
+    <wsdl:part name="parameters" element="tns:GetExtractFRDReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertExtractFRDReportSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertExtractFRDReport" />
+  </wsdl:message>
+  <wsdl:message name="InsertExtractFRDReportSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertExtractFRDReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="GenerateFRDReportSoapIn">
+    <wsdl:part name="parameters" element="tns:GenerateFRDReport" />
+  </wsdl:message>
+  <wsdl:message name="GenerateFRDReportSoapOut">
+    <wsdl:part name="parameters" element="tns:GenerateFRDReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckIsExtractFRDReportExistedSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckIsExtractFRDReportExisted" />
+  </wsdl:message>
+  <wsdl:message name="CheckIsExtractFRDReportExistedSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckIsExtractFRDReportExistedResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckNoDataExtractFRDReportSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckNoDataExtractFRDReport" />
+  </wsdl:message>
+  <wsdl:message name="CheckNoDataExtractFRDReportSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckNoDataExtractFRDReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="PCIExportReportSoapIn">
+    <wsdl:part name="parameters" element="tns:PCIExportReport" />
+  </wsdl:message>
+  <wsdl:message name="PCIExportReportSoapOut">
+    <wsdl:part name="parameters" element="tns:PCIExportReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="_ExportByWebServicesSoapIn">
+    <wsdl:part name="parameters" element="tns:_ExportByWebServices" />
+  </wsdl:message>
+  <wsdl:message name="_ExportByWebServicesSoapOut">
+    <wsdl:part name="parameters" element="tns:_ExportByWebServicesResponse" />
+  </wsdl:message>
+  <wsdl:message name="_ExportWSByWebServicesSoapIn">
+    <wsdl:part name="parameters" element="tns:_ExportWSByWebServices" />
+  </wsdl:message>
+  <wsdl:message name="_ExportWSByWebServicesSoapOut">
+    <wsdl:part name="parameters" element="tns:_ExportWSByWebServicesResponse" />
+  </wsdl:message>
+  <wsdl:message name="_ExportByWebServicesUsingDataReaderSoapIn">
+    <wsdl:part name="parameters" element="tns:_ExportByWebServicesUsingDataReader" />
+  </wsdl:message>
+  <wsdl:message name="_ExportByWebServicesUsingDataReaderSoapOut">
+    <wsdl:part name="parameters" element="tns:_ExportByWebServicesUsingDataReaderResponse" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerSoapIn">
+    <wsdl:part name="parameters" element="tns:_BasicPager" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerSoapOut">
+    <wsdl:part name="parameters" element="tns:_BasicPagerResponse" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerWithSeparatedMethodSoapIn">
+    <wsdl:part name="parameters" element="tns:_BasicPagerWithSeparatedMethod" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerWithSeparatedMethodSoapOut">
+    <wsdl:part name="parameters" element="tns:_BasicPagerWithSeparatedMethodResponse" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerWithOneMethodSoapIn">
+    <wsdl:part name="parameters" element="tns:_BasicPagerWithOneMethod" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerWithOneMethodSoapOut">
+    <wsdl:part name="parameters" element="tns:_BasicPagerWithOneMethodResponse" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerSPASingleMethodSoapIn">
+    <wsdl:part name="parameters" element="tns:_BasicPagerSPASingleMethod" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerSPASingleMethodSoapOut">
+    <wsdl:part name="parameters" element="tns:_BasicPagerSPASingleMethodResponse" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerSPAMultipleMethodSoapIn">
+    <wsdl:part name="parameters" element="tns:_BasicPagerSPAMultipleMethod" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerSPAMultipleMethodSoapOut">
+    <wsdl:part name="parameters" element="tns:_BasicPagerSPAMultipleMethodResponse" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerWithExportSoapIn">
+    <wsdl:part name="parameters" element="tns:_BasicPagerWithExport" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerWithExportSoapOut">
+    <wsdl:part name="parameters" element="tns:_BasicPagerWithExportResponse" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerWithSPASingleMethodExportSoapIn">
+    <wsdl:part name="parameters" element="tns:_BasicPagerWithSPASingleMethodExport" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerWithSPASingleMethodExportSoapOut">
+    <wsdl:part name="parameters" element="tns:_BasicPagerWithSPASingleMethodExportResponse" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerWithSPAMultipleMethodExportSoapIn">
+    <wsdl:part name="parameters" element="tns:_BasicPagerWithSPAMultipleMethodExport" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerWithSPAMultipleMethodExportSoapOut">
+    <wsdl:part name="parameters" element="tns:_BasicPagerWithSPAMultipleMethodExportResponse" />
+  </wsdl:message>
+  <wsdl:portType name="PCIServicesSoap">
+    <wsdl:operation name="GetReports">
+      <wsdl:input message="tns:GetReportsSoapIn" />
+      <wsdl:output message="tns:GetReportsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteNonQueryCommand">
+      <wsdl:input message="tns:ExecuteNonQueryCommandSoapIn" />
+      <wsdl:output message="tns:ExecuteNonQueryCommandSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteQueryCommand">
+      <wsdl:input message="tns:ExecuteQueryCommandSoapIn" />
+      <wsdl:output message="tns:ExecuteQueryCommandSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReportsAsDataSet">
+      <wsdl:input message="tns:GetReportsAsDataSetSoapIn" />
+      <wsdl:output message="tns:GetReportsAsDataSetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteNonQueryCommandOnExternalDB">
+      <wsdl:input message="tns:ExecuteNonQueryCommandOnExternalDBSoapIn" />
+      <wsdl:output message="tns:ExecuteNonQueryCommandOnExternalDBSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReportsFromExternalDB">
+      <wsdl:input message="tns:GetReportsFromExternalDBSoapIn" />
+      <wsdl:output message="tns:GetReportsFromExternalDBSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EncryptText">
+      <wsdl:input message="tns:EncryptTextSoapIn" />
+      <wsdl:output message="tns:EncryptTextSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DecryptText">
+      <wsdl:input message="tns:DecryptTextSoapIn" />
+      <wsdl:output message="tns:DecryptTextSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAcquirerMerchantsVisa">
+      <wsdl:input message="tns:GetAcquirerMerchantsVisaSoapIn" />
+      <wsdl:output message="tns:GetAcquirerMerchantsVisaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExportAcquirerVisaMerchantsExcelL4">
+      <wsdl:input message="tns:ExportAcquirerVisaMerchantsExcelL4SoapIn" />
+      <wsdl:output message="tns:ExportAcquirerVisaMerchantsExcelL4SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExportAcquirerVisaMerchantsExcelL3">
+      <wsdl:input message="tns:ExportAcquirerVisaMerchantsExcelL3SoapIn" />
+      <wsdl:output message="tns:ExportAcquirerVisaMerchantsExcelL3SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVisaScoreCard">
+      <wsdl:input message="tns:GetVisaScoreCardSoapIn" />
+      <wsdl:output message="tns:GetVisaScoreCardSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFDROptedOutReport">
+      <wsdl:input message="tns:GetFDROptedOutReportSoapIn" />
+      <wsdl:output message="tns:GetFDROptedOutReportSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExportAcquirerVisaScoreCardExcel">
+      <wsdl:input message="tns:ExportAcquirerVisaScoreCardExcelSoapIn" />
+      <wsdl:output message="tns:ExportAcquirerVisaScoreCardExcelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAcquirerMerchantsMaster">
+      <wsdl:input message="tns:GetAcquirerMerchantsMasterSoapIn" />
+      <wsdl:output message="tns:GetAcquirerMerchantsMasterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExportAcquirerMasterMerchantsExcel">
+      <wsdl:input message="tns:ExportAcquirerMasterMerchantsExcelSoapIn" />
+      <wsdl:output message="tns:ExportAcquirerMasterMerchantsExcelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAcquirerMerchantsDiscover">
+      <wsdl:input message="tns:GetAcquirerMerchantsDiscoverSoapIn" />
+      <wsdl:output message="tns:GetAcquirerMerchantsDiscoverSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExportAcquirerDiscoverMerchantsExcel">
+      <wsdl:input message="tns:ExportAcquirerDiscoverMerchantsExcelSoapIn" />
+      <wsdl:output message="tns:ExportAcquirerDiscoverMerchantsExcelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExportFDROptedOutReportExcel">
+      <wsdl:input message="tns:ExportFDROptedOutReportExcelSoapIn" />
+      <wsdl:output message="tns:ExportFDROptedOutReportExcelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExtractFRDReport">
+      <wsdl:input message="tns:GetExtractFRDReportSoapIn" />
+      <wsdl:output message="tns:GetExtractFRDReportSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertExtractFRDReport">
+      <wsdl:input message="tns:InsertExtractFRDReportSoapIn" />
+      <wsdl:output message="tns:InsertExtractFRDReportSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerateFRDReport">
+      <wsdl:input message="tns:GenerateFRDReportSoapIn" />
+      <wsdl:output message="tns:GenerateFRDReportSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckIsExtractFRDReportExisted">
+      <wsdl:input message="tns:CheckIsExtractFRDReportExistedSoapIn" />
+      <wsdl:output message="tns:CheckIsExtractFRDReportExistedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckNoDataExtractFRDReport">
+      <wsdl:input message="tns:CheckNoDataExtractFRDReportSoapIn" />
+      <wsdl:output message="tns:CheckNoDataExtractFRDReportSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PCIExportReport">
+      <wsdl:input message="tns:PCIExportReportSoapIn" />
+      <wsdl:output message="tns:PCIExportReportSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_ExportByWebServices">
+      <wsdl:input message="tns:_ExportByWebServicesSoapIn" />
+      <wsdl:output message="tns:_ExportByWebServicesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_ExportWSByWebServices">
+      <wsdl:input message="tns:_ExportWSByWebServicesSoapIn" />
+      <wsdl:output message="tns:_ExportWSByWebServicesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_ExportByWebServicesUsingDataReader">
+      <wsdl:input message="tns:_ExportByWebServicesUsingDataReaderSoapIn" />
+      <wsdl:output message="tns:_ExportByWebServicesUsingDataReaderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPager">
+      <wsdl:input message="tns:_BasicPagerSoapIn" />
+      <wsdl:output message="tns:_BasicPagerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithSeparatedMethod">
+      <wsdl:input message="tns:_BasicPagerWithSeparatedMethodSoapIn" />
+      <wsdl:output message="tns:_BasicPagerWithSeparatedMethodSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithOneMethod">
+      <wsdl:input message="tns:_BasicPagerWithOneMethodSoapIn" />
+      <wsdl:output message="tns:_BasicPagerWithOneMethodSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerSPASingleMethod">
+      <wsdl:input message="tns:_BasicPagerSPASingleMethodSoapIn" />
+      <wsdl:output message="tns:_BasicPagerSPASingleMethodSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerSPAMultipleMethod">
+      <wsdl:input message="tns:_BasicPagerSPAMultipleMethodSoapIn" />
+      <wsdl:output message="tns:_BasicPagerSPAMultipleMethodSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithExport">
+      <wsdl:input message="tns:_BasicPagerWithExportSoapIn" />
+      <wsdl:output message="tns:_BasicPagerWithExportSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithSPASingleMethodExport">
+      <wsdl:input message="tns:_BasicPagerWithSPASingleMethodExportSoapIn" />
+      <wsdl:output message="tns:_BasicPagerWithSPASingleMethodExportSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithSPAMultipleMethodExport">
+      <wsdl:input message="tns:_BasicPagerWithSPAMultipleMethodExportSoapIn" />
+      <wsdl:output message="tns:_BasicPagerWithSPAMultipleMethodExportSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PCIServicesSoap" type="tns:PCIServicesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetReports">
+      <soap:operation soapAction="http://tempuri.org/GetReports" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteNonQueryCommand">
+      <soap:operation soapAction="http://tempuri.org/ExecuteNonQueryCommand" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteQueryCommand">
+      <soap:operation soapAction="http://tempuri.org/ExecuteQueryCommand" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReportsAsDataSet">
+      <soap:operation soapAction="http://tempuri.org/GetReportsAsDataSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteNonQueryCommandOnExternalDB">
+      <soap:operation soapAction="http://tempuri.org/ExecuteNonQueryCommandOnExternalDB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReportsFromExternalDB">
+      <soap:operation soapAction="http://tempuri.org/GetReportsFromExternalDB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EncryptText">
+      <soap:operation soapAction="http://tempuri.org/EncryptText" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DecryptText">
+      <soap:operation soapAction="http://tempuri.org/DecryptText" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcquirerMerchantsVisa">
+      <soap:operation soapAction="http://tempuri.org/GetAcquirerMerchantsVisa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportAcquirerVisaMerchantsExcelL4">
+      <soap:operation soapAction="http://tempuri.org/ExportAcquirerVisaMerchantsExcelL4" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportAcquirerVisaMerchantsExcelL3">
+      <soap:operation soapAction="http://tempuri.org/ExportAcquirerVisaMerchantsExcelL3" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVisaScoreCard">
+      <soap:operation soapAction="http://tempuri.org/GetVisaScoreCard" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFDROptedOutReport">
+      <soap:operation soapAction="http://tempuri.org/GetFDROptedOutReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportAcquirerVisaScoreCardExcel">
+      <soap:operation soapAction="http://tempuri.org/ExportAcquirerVisaScoreCardExcel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcquirerMerchantsMaster">
+      <soap:operation soapAction="http://tempuri.org/GetAcquirerMerchantsMaster" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportAcquirerMasterMerchantsExcel">
+      <soap:operation soapAction="http://tempuri.org/ExportAcquirerMasterMerchantsExcel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcquirerMerchantsDiscover">
+      <soap:operation soapAction="http://tempuri.org/GetAcquirerMerchantsDiscover" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportAcquirerDiscoverMerchantsExcel">
+      <soap:operation soapAction="http://tempuri.org/ExportAcquirerDiscoverMerchantsExcel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportFDROptedOutReportExcel">
+      <soap:operation soapAction="http://tempuri.org/ExportFDROptedOutReportExcel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExtractFRDReport">
+      <soap:operation soapAction="http://tempuri.org/GetExtractFRDReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertExtractFRDReport">
+      <soap:operation soapAction="http://tempuri.org/InsertExtractFRDReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateFRDReport">
+      <soap:operation soapAction="http://tempuri.org/GenerateFRDReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckIsExtractFRDReportExisted">
+      <soap:operation soapAction="http://tempuri.org/CheckIsExtractFRDReportExisted" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckNoDataExtractFRDReport">
+      <soap:operation soapAction="http://tempuri.org/CheckNoDataExtractFRDReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PCIExportReport">
+      <soap:operation soapAction="http://tempuri.org/PCIExportReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_ExportByWebServices">
+      <soap:operation soapAction="http://tempuri.org/_ExportByWebServices" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_ExportWSByWebServices">
+      <soap:operation soapAction="http://tempuri.org/_ExportWSByWebServices" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_ExportByWebServicesUsingDataReader">
+      <soap:operation soapAction="http://tempuri.org/_ExportByWebServicesUsingDataReader" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPager">
+      <soap:operation soapAction="http://tempuri.org/_BasicPager" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithSeparatedMethod">
+      <soap:operation soapAction="http://tempuri.org/_BasicPagerWithSeparatedMethod" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithOneMethod">
+      <soap:operation soapAction="http://tempuri.org/_BasicPagerWithOneMethod" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerSPASingleMethod">
+      <soap:operation soapAction="http://tempuri.org/_BasicPagerSPASingleMethod" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerSPAMultipleMethod">
+      <soap:operation soapAction="http://tempuri.org/_BasicPagerSPAMultipleMethod" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithExport">
+      <soap:operation soapAction="http://tempuri.org/_BasicPagerWithExport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithSPASingleMethodExport">
+      <soap:operation soapAction="http://tempuri.org/_BasicPagerWithSPASingleMethodExport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithSPAMultipleMethodExport">
+      <soap:operation soapAction="http://tempuri.org/_BasicPagerWithSPAMultipleMethodExport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PCIServicesSoap12" type="tns:PCIServicesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetReports">
+      <soap12:operation soapAction="http://tempuri.org/GetReports" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteNonQueryCommand">
+      <soap12:operation soapAction="http://tempuri.org/ExecuteNonQueryCommand" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteQueryCommand">
+      <soap12:operation soapAction="http://tempuri.org/ExecuteQueryCommand" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReportsAsDataSet">
+      <soap12:operation soapAction="http://tempuri.org/GetReportsAsDataSet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteNonQueryCommandOnExternalDB">
+      <soap12:operation soapAction="http://tempuri.org/ExecuteNonQueryCommandOnExternalDB" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReportsFromExternalDB">
+      <soap12:operation soapAction="http://tempuri.org/GetReportsFromExternalDB" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EncryptText">
+      <soap12:operation soapAction="http://tempuri.org/EncryptText" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DecryptText">
+      <soap12:operation soapAction="http://tempuri.org/DecryptText" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcquirerMerchantsVisa">
+      <soap12:operation soapAction="http://tempuri.org/GetAcquirerMerchantsVisa" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportAcquirerVisaMerchantsExcelL4">
+      <soap12:operation soapAction="http://tempuri.org/ExportAcquirerVisaMerchantsExcelL4" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportAcquirerVisaMerchantsExcelL3">
+      <soap12:operation soapAction="http://tempuri.org/ExportAcquirerVisaMerchantsExcelL3" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVisaScoreCard">
+      <soap12:operation soapAction="http://tempuri.org/GetVisaScoreCard" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFDROptedOutReport">
+      <soap12:operation soapAction="http://tempuri.org/GetFDROptedOutReport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportAcquirerVisaScoreCardExcel">
+      <soap12:operation soapAction="http://tempuri.org/ExportAcquirerVisaScoreCardExcel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcquirerMerchantsMaster">
+      <soap12:operation soapAction="http://tempuri.org/GetAcquirerMerchantsMaster" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportAcquirerMasterMerchantsExcel">
+      <soap12:operation soapAction="http://tempuri.org/ExportAcquirerMasterMerchantsExcel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcquirerMerchantsDiscover">
+      <soap12:operation soapAction="http://tempuri.org/GetAcquirerMerchantsDiscover" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportAcquirerDiscoverMerchantsExcel">
+      <soap12:operation soapAction="http://tempuri.org/ExportAcquirerDiscoverMerchantsExcel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportFDROptedOutReportExcel">
+      <soap12:operation soapAction="http://tempuri.org/ExportFDROptedOutReportExcel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExtractFRDReport">
+      <soap12:operation soapAction="http://tempuri.org/GetExtractFRDReport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertExtractFRDReport">
+      <soap12:operation soapAction="http://tempuri.org/InsertExtractFRDReport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateFRDReport">
+      <soap12:operation soapAction="http://tempuri.org/GenerateFRDReport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckIsExtractFRDReportExisted">
+      <soap12:operation soapAction="http://tempuri.org/CheckIsExtractFRDReportExisted" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckNoDataExtractFRDReport">
+      <soap12:operation soapAction="http://tempuri.org/CheckNoDataExtractFRDReport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PCIExportReport">
+      <soap12:operation soapAction="http://tempuri.org/PCIExportReport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_ExportByWebServices">
+      <soap12:operation soapAction="http://tempuri.org/_ExportByWebServices" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_ExportWSByWebServices">
+      <soap12:operation soapAction="http://tempuri.org/_ExportWSByWebServices" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_ExportByWebServicesUsingDataReader">
+      <soap12:operation soapAction="http://tempuri.org/_ExportByWebServicesUsingDataReader" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPager">
+      <soap12:operation soapAction="http://tempuri.org/_BasicPager" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithSeparatedMethod">
+      <soap12:operation soapAction="http://tempuri.org/_BasicPagerWithSeparatedMethod" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithOneMethod">
+      <soap12:operation soapAction="http://tempuri.org/_BasicPagerWithOneMethod" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerSPASingleMethod">
+      <soap12:operation soapAction="http://tempuri.org/_BasicPagerSPASingleMethod" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerSPAMultipleMethod">
+      <soap12:operation soapAction="http://tempuri.org/_BasicPagerSPAMultipleMethod" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithExport">
+      <soap12:operation soapAction="http://tempuri.org/_BasicPagerWithExport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithSPASingleMethodExport">
+      <soap12:operation soapAction="http://tempuri.org/_BasicPagerWithSPASingleMethodExport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithSPAMultipleMethodExport">
+      <soap12:operation soapAction="http://tempuri.org/_BasicPagerWithSPAMultipleMethodExport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PCIServices">
+    <wsdl:port name="PCIServicesSoap" binding="tns:PCIServicesSoap">
+      <soap:address location="http://pcireskin-ws-qa.local/v100_int/Business.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PCIServicesSoap12" binding="tns:PCIServicesSoap12">
+      <soap12:address location="http://pcireskin-ws-qa.local/v100_int/Business.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

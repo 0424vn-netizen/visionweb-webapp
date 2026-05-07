@@ -1,0 +1,2950 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s1="http://microsoft.com/wsdl/types/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:import namespace="http://microsoft.com/wsdl/types/" />
+      <s:element name="ValidateApiToken">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="tns:ApiAuthToken" />
+            <s:element minOccurs="1" maxOccurs="1" name="isLoadUser" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ApiAuthToken">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="AsClientId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ApiClientId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RemoteIp" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ApiVersion" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ValidateApiTokenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValidateApiTokenResult" type="tns:AuthorizationResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="AuthorizationResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Result" type="tns:LoginActions" />
+          <s:element minOccurs="0" maxOccurs="1" name="AuthorizedUser" type="tns:User" />
+          <s:element minOccurs="0" maxOccurs="1" name="Permissions" type="tns:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="Roles" type="tns:ArrayOfString" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="LoginActions">
+        <s:restriction base="s:string">
+          <s:enumeration value="Success" />
+          <s:enumeration value="Fail" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="User">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="AsClientId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SiteId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="UserRecId" type="s1:guid" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="EntityTypeId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="EntityId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserFullName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetUserPassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="tns:ApiAuthToken" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserPasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserPasswordResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetValidateUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="tns:ApiAuthToken" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetValidateUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetValidateUserResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertLogPMAPI">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="requestID" type="s1:guid" />
+            <s:element minOccurs="0" maxOccurs="1" name="processingStep" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="message" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="data1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="data2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="data3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="data4" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="data5" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xmlMessage" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xmlErrorResponse" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="requestDTS" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertLogPMAPIResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertLogPMAPIResult" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBatchSummaryByEntity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestedUser" type="tns:User" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:GenericReportFilter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GenericReportFilter">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:GenericReportFilterNoViewLevel">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="ViewLevel" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="ViewLevelValidate" type="tns:DataViewLevel" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="GenericReportFilterNoViewLevel">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BaseFilter">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="FromDate" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ToDate" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="FromDateValidate" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="ToDateValidate" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="HierarchyFilterMode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="HierarchyFilterValue" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="PageSize" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="CurrentPageIndex" type="s:int" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="BaseFilter" />
+      <s:simpleType name="DataViewLevel">
+        <s:restriction base="s:string">
+          <s:enumeration value="None" />
+          <s:enumeration value="Merchant" />
+          <s:enumeration value="Hierarchy" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="GetBatchSummaryByEntityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBatchSummaryByEntityResult" type="tns:ReportResponseOfBatchHierarchySummary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ReportResponseOfBatchHierarchySummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Result" type="tns:ArrayOfBatchHierarchySummary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Total" type="tns:BatchHierarchySummary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Paging" type="tns:Pagination" />
+          <s:element minOccurs="0" maxOccurs="1" name="Validation" type="tns:ErrorModel" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfBatchHierarchySummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="BatchHierarchySummary" nillable="true" type="tns:BatchHierarchySummary" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="BatchHierarchySummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="EntityId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="KeyedPercent" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AvgTrans" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionCount" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BankCardSale" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="BankCardReturn" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="BankCardNet" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="NonBankCardSale" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="NonBankCardReturn" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="NonBankCardNet" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotalBankCardSale" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotalBankCardReturn" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotalBankCardNet" nillable="true" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Pagination">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CurrentPageIndex" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PageSize" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="NumberOfRecords" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ErrorModel">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Messages" type="tns:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetBatchSummaryByMerchant">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestedUser" type="tns:User" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:MerchantSummaryFilter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="MerchantSummaryFilter">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BaseFilter">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="MerchantNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="FromDate" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ToDate" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="FromDateValidate" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="ToDateValidate" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="PageSize" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="CurrentPageIndex" type="s:int" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="GetBatchSummaryByMerchantResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBatchSummaryByMerchantResult" type="tns:ReportResponseOfBatchSummary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ReportResponseOfBatchSummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Result" type="tns:ArrayOfBatchSummary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Total" type="tns:BatchSummary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Paging" type="tns:Pagination" />
+          <s:element minOccurs="0" maxOccurs="1" name="Validation" type="tns:ErrorModel" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfBatchSummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="BatchSummary" nillable="true" type="tns:BatchSummary" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="BatchSummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ReportDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TerminalNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FileSource" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BatchNumber" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="KeyedPercent" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="AvgTrans" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionCount" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="BankCardSale" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="BankCardReturn" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="BankCardNet" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="NonBankCardSale" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="NonBankCardReturn" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="NonBankCardNet" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotalBankCardSale" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotalBankCardReturn" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotalBankCardNet" nillable="true" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetBatchDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestedUser" type="tns:User" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:BatchDetailFilter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="BatchDetailFilter">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:DetailPagingFilter">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="BatchNumber" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="DetailPagingFilter">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:DetailFilter">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="PageSize" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="CurrentPageIndex" type="s:int" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="DetailFilter">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BaseFilter">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="MerchantNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ReportDate" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="ReportDateValidate" type="s:dateTime" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="GetBatchDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBatchDetailResult" type="tns:ReportResponseOfTransactionDetailBatch" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ReportResponseOfTransactionDetailBatch">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Result" type="tns:ArrayOfTransactionDetailBatch" />
+          <s:element minOccurs="0" maxOccurs="1" name="Total" type="tns:TransactionDetailBatch" />
+          <s:element minOccurs="0" maxOccurs="1" name="Paging" type="tns:Pagination" />
+          <s:element minOccurs="0" maxOccurs="1" name="Validation" type="tns:ErrorModel" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfTransactionDetailBatch">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TransactionDetailBatch" nillable="true" type="tns:TransactionDetailBatch" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TransactionDetailBatch">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TerminalNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FileSource" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Keyed" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EMV" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CardType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CardNumber" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionAmount" nillable="true" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetCardSummary">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestedUser" type="tns:User" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:CardSummaryFilter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CardSummaryFilter">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:GenericReportFilterNoViewLevel">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="BatchNumber" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="GetCardSummaryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCardSummaryResult" type="tns:ReportResponseOfCardSummary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ReportResponseOfCardSummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Result" type="tns:ArrayOfCardSummary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Total" type="tns:CardSummary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Paging" type="tns:Pagination" />
+          <s:element minOccurs="0" maxOccurs="1" name="Validation" type="tns:ErrorModel" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfCardSummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CardSummary" nillable="true" type="tns:CardSummary" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CardSummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CardType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionCount" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionAmount" nillable="true" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetTransactions">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestedUser" type="tns:User" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:TransactionSearchFilter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TransactionSearchFilter">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:GenericReportFilterNoViewLevel">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="First6CardNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Last4CardNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="AuthorizationNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="TransactionOperator" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="TransactionOperatorValidate" type="tns:TransactionOperator" />
+              <s:element minOccurs="1" maxOccurs="1" name="TransactionAmountFrom" nillable="true" type="s:decimal" />
+              <s:element minOccurs="1" maxOccurs="1" name="TransactionAmountTo" nillable="true" type="s:decimal" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:simpleType name="TransactionOperator">
+        <s:restriction base="s:string">
+          <s:enumeration value="None" />
+          <s:enumeration value="EqualTo" />
+          <s:enumeration value="Between" />
+          <s:enumeration value="GreaterThan" />
+          <s:enumeration value="LessThan" />
+          <s:enumeration value="PlusMinus5" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="GetTransactionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTransactionsResult" type="tns:ReportResponseOfTransactionDetail" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ReportResponseOfTransactionDetail">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Result" type="tns:ArrayOfTransactionDetail" />
+          <s:element minOccurs="0" maxOccurs="1" name="Total" type="tns:TransactionDetail" />
+          <s:element minOccurs="0" maxOccurs="1" name="Paging" type="tns:Pagination" />
+          <s:element minOccurs="0" maxOccurs="1" name="Validation" type="tns:ErrorModel" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfTransactionDetail">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TransactionDetail" nillable="true" type="tns:TransactionDetail" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TransactionDetail">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="EntityID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MerchantName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReportDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BatchNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Matched" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TerminalNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FileSource" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Keyed" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EMV" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CardType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CardNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExpirationDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AuthorizationNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionAmount" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetVoucher">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestedUser" type="tns:User" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:VoucherFilter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="VoucherFilter">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:DetailFilter">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="TransactionId" type="s1:guid" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="GetVoucherResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVoucherResult" type="tns:Voucher" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Voucher">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CardType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FileSource" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MerchantNumber" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="CardNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BatchNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AuthorizationNumber" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionAmount" nillable="true" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="MerchantName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address2" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetReturnSummaryByEntity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestedUser" type="tns:User" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:GenericReportFilter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReturnSummaryByEntityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetReturnSummaryByEntityResult" type="tns:ReportResponseOfReturnHierarchySummary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ReportResponseOfReturnHierarchySummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Result" type="tns:ArrayOfReturnHierarchySummary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Total" type="tns:ReturnHierarchySummary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Paging" type="tns:Pagination" />
+          <s:element minOccurs="0" maxOccurs="1" name="Validation" type="tns:ErrorModel" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfReturnHierarchySummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ReturnHierarchySummary" nillable="true" type="tns:ReturnHierarchySummary" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ReturnHierarchySummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="EntityId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SaleCount" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="SaleAmount" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ReturnsCount" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="FullReturn" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="PartialReturn" nillable="true" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="NoMatch" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="NetAmount" nillable="true" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetReturnSummaryByMerchant">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestedUser" type="tns:User" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:MerchantSummaryFilter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReturnSummaryByMerchantResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetReturnSummaryByMerchantResult" type="tns:ReportResponseOfReturnSummary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ReportResponseOfReturnSummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Result" type="tns:ArrayOfReturnSummary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Total" type="tns:ReturnSummary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Paging" type="tns:Pagination" />
+          <s:element minOccurs="0" maxOccurs="1" name="Validation" type="tns:ErrorModel" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfReturnSummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ReturnSummary" nillable="true" type="tns:ReturnSummary" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ReturnSummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ReportDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TerminalNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BatchNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Keyed" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CardType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CardNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExpirationDate" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionAmount" nillable="true" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="Matched" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAuthorizationLogSummary">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestedUser" type="tns:User" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:GenericReportFilter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAuthorizationLogSummaryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAuthorizationLogSummaryResult" type="tns:ReportResponseOfAuthorizationLogSummary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ReportResponseOfAuthorizationLogSummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Result" type="tns:ArrayOfAuthorizationLogSummary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Total" type="tns:AuthorizationLogSummary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Paging" type="tns:Pagination" />
+          <s:element minOccurs="0" maxOccurs="1" name="Validation" type="tns:ErrorModel" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfAuthorizationLogSummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="AuthorizationLogSummary" nillable="true" type="tns:AuthorizationLogSummary" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="AuthorizationLogSummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="EntityId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionCount" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="SaleAmount" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ReturnAmount" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="NetAmount" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="AuthorizationCount" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="AuthorizationAmount" nillable="true" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAuthorizationLogDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestedUser" type="tns:User" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:MerchantSummaryFilter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAuthorizationLogDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAuthorizationLogDetailResult" type="tns:ReportResponseOfAuthorizationDetail" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ReportResponseOfAuthorizationDetail">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Result" type="tns:ArrayOfAuthorizationDetail" />
+          <s:element minOccurs="0" maxOccurs="1" name="Total" type="tns:AuthorizationDetail" />
+          <s:element minOccurs="0" maxOccurs="1" name="Paging" type="tns:Pagination" />
+          <s:element minOccurs="0" maxOccurs="1" name="Validation" type="tns:ErrorModel" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfAuthorizationDetail">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="AuthorizationDetail" nillable="true" type="tns:AuthorizationDetail" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="AuthorizationDetail">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ReportDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Keyed" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EMV" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CardType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CardNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExpirationDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AuthorizationNumber" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="AuthorizationAmount" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionAmount" nillable="true" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="ApprovedDeclined" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ResponseCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AVS" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CVV" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AuthorizationSource" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MOTO" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetPaymentSummaryByEntity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestedUser" type="tns:User" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:GenericReportFilter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPaymentSummaryByEntityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPaymentSummaryByEntityResult" type="tns:ReportResponseOfDepositHierarchySummary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ReportResponseOfDepositHierarchySummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Result" type="tns:ArrayOfDepositHierarchySummary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Total" type="tns:DepositHierarchySummary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Paging" type="tns:Pagination" />
+          <s:element minOccurs="0" maxOccurs="1" name="Validation" type="tns:ErrorModel" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfDepositHierarchySummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DepositHierarchySummary" nillable="true" type="tns:DepositHierarchySummary" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DepositHierarchySummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="EntityId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DepositCount" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="DepositAmount" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="DebitCount" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="DebitAmount" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="NetDeposit" nillable="true" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetPaymentSummaryByMerchant">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestedUser" type="tns:User" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:MerchantSummaryFilter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPaymentSummaryByMerchantResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPaymentSummaryByMerchantResult" type="tns:ReportResponseOfDepositSummary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ReportResponseOfDepositSummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Result" type="tns:ArrayOfDepositSummary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Total" type="tns:DepositSummary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Paging" type="tns:Pagination" />
+          <s:element minOccurs="0" maxOccurs="1" name="Validation" type="tns:ErrorModel" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfDepositSummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DepositSummary" nillable="true" type="tns:DepositSummary" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DepositSummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ReportDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DepositDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RoutingNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DDANumber" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DepositCount" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="DepositAmount" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="DebitCount" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="DebitAmount" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="NetDepositAmount" nillable="true" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetPaymentDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestedUser" type="tns:User" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:MerchantSummaryFilter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPaymentDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPaymentDetailResult" type="tns:ReportResponseOfDepositDetail" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ReportResponseOfDepositDetail">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Result" type="tns:ArrayOfDepositDetail" />
+          <s:element minOccurs="0" maxOccurs="1" name="Total" type="tns:DepositDetail" />
+          <s:element minOccurs="0" maxOccurs="1" name="Paging" type="tns:Pagination" />
+          <s:element minOccurs="0" maxOccurs="1" name="Validation" type="tns:ErrorModel" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfDepositDetail">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DepositDetail" nillable="true" type="tns:DepositDetail" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DepositDetail">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ReportDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DepositDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RoutingNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DDANumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DepositTraceNumber" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DepositAmount" nillable="true" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetRetrievalSummaryByEntity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestedUser" type="tns:User" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:GenericReportFilter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRetrievalSummaryByEntityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRetrievalSummaryByEntityResult" type="tns:ReportResponseOfRetrievalHierarchySummary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ReportResponseOfRetrievalHierarchySummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Result" type="tns:ArrayOfRetrievalHierarchySummary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Total" type="tns:RetrievalHierarchySummary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Paging" type="tns:Pagination" />
+          <s:element minOccurs="0" maxOccurs="1" name="Validation" type="tns:ErrorModel" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfRetrievalHierarchySummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RetrievalHierarchySummary" nillable="true" type="tns:RetrievalHierarchySummary" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RetrievalHierarchySummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="EntityId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionCount" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="SaleAmount" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ReturnAmount" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="NetAmount" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="RetrievalCount" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="RetrievalAmount" nillable="true" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetRetrievalDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestedUser" type="tns:User" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:MerchantSummaryFilter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRetrievalDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRetrievalDetailResult" type="tns:ReportResponseOfRetrievalDetail" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ReportResponseOfRetrievalDetail">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Result" type="tns:ArrayOfRetrievalDetail" />
+          <s:element minOccurs="0" maxOccurs="1" name="Total" type="tns:RetrievalDetail" />
+          <s:element minOccurs="0" maxOccurs="1" name="Paging" type="tns:Pagination" />
+          <s:element minOccurs="0" maxOccurs="1" name="Validation" type="tns:ErrorModel" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfRetrievalDetail">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RetrievalDetail" nillable="true" type="tns:RetrievalDetail" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RetrievalDetail">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ReportDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DateReceived" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DueDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CardType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CardNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReferenceNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReasonCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionAmount" nillable="true" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetChargebackSummaryByEntity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestedUser" type="tns:User" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:GenericReportFilter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetChargebackSummaryByEntityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetChargebackSummaryByEntityResult" type="tns:ReportResponseOfChargebackHierarchySummary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ReportResponseOfChargebackHierarchySummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Result" type="tns:ArrayOfChargebackHierarchySummary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Total" type="tns:ChargebackHierarchySummary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Paging" type="tns:Pagination" />
+          <s:element minOccurs="0" maxOccurs="1" name="Validation" type="tns:ErrorModel" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfChargebackHierarchySummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ChargebackHierarchySummary" nillable="true" type="tns:ChargebackHierarchySummary" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ChargebackHierarchySummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="EntityId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionCount" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="SaleAmount" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ReturnAmount" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="NetAmount" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ChargebackCount" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="FirstChargebackCount" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="FirstChargebackAmount" nillable="true" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetChargebackDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestedUser" type="tns:User" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:MerchantSummaryFilter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetChargebackDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetChargebackDetailResult" type="tns:ReportResponseOfChargebackDetail" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ReportResponseOfChargebackDetail">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Result" type="tns:ArrayOfChargebackDetail" />
+          <s:element minOccurs="0" maxOccurs="1" name="Total" type="tns:ChargebackDetail" />
+          <s:element minOccurs="0" maxOccurs="1" name="Paging" type="tns:Pagination" />
+          <s:element minOccurs="0" maxOccurs="1" name="Validation" type="tns:ErrorModel" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfChargebackDetail">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ChargebackDetail" nillable="true" type="tns:ChargebackDetail" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ChargebackDetail">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ReportDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CardType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CardNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReasonCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReasonText" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReferenceNumber" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FirstChargebackAmount" nillable="true" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetVoidsRejectSummaryByEntity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestedUser" type="tns:User" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:GenericReportFilter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVoidsRejectSummaryByEntityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVoidsRejectSummaryByEntityResult" type="tns:ReportResponseOfVoidRejectHierarchySummary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ReportResponseOfVoidRejectHierarchySummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Result" type="tns:ArrayOfVoidRejectHierarchySummary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Total" type="tns:VoidRejectHierarchySummary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Paging" type="tns:Pagination" />
+          <s:element minOccurs="0" maxOccurs="1" name="Validation" type="tns:ErrorModel" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfVoidRejectHierarchySummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="VoidRejectHierarchySummary" nillable="true" type="tns:VoidRejectHierarchySummary" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="VoidRejectHierarchySummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="EntityType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PlatformId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EntityId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EntityName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionCount" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="SaleAmount" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ReturnAmount" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="NetAmount" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="VoidRejectCount" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="VoidRejectAmount" nillable="true" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetVoidsRejectDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestedUser" type="tns:User" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:MerchantSummaryFilter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVoidsRejectDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVoidsRejectDetailResult" type="tns:ReportResponseOfVoidRejectDetail" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ReportResponseOfVoidRejectDetail">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Result" type="tns:ArrayOfVoidRejectDetail" />
+          <s:element minOccurs="0" maxOccurs="1" name="Total" type="tns:VoidRejectDetail" />
+          <s:element minOccurs="0" maxOccurs="1" name="Paging" type="tns:Pagination" />
+          <s:element minOccurs="0" maxOccurs="1" name="Validation" type="tns:ErrorModel" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfVoidRejectDetail">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="VoidRejectDetail" nillable="true" type="tns:VoidRejectDetail" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="VoidRejectDetail">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ReportDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="BatchNumber" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Keyed" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EntryModeDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CardType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CardDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CardNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AuthorizationNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReasonCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReasonCodeDescription" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionAmount" nillable="true" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetMerchantList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestedUser" type="tns:User" />
+            <s:element minOccurs="0" maxOccurs="1" name="filter" type="tns:HierarchyPagingFilter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="HierarchyPagingFilter">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:HierarchyFilter">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="PageSize" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="CurrentPageIndex" type="s:int" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="HierarchyFilter">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BaseFilter">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="HierarchyFilterMode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="HierarchyFilterValue" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="GetMerchantListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMerchantListResult" type="tns:ReportResponseOfMerchantSummary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ReportResponseOfMerchantSummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Result" type="tns:ArrayOfMerchantSummary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Total" type="tns:MerchantSummary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Paging" type="tns:Pagination" />
+          <s:element minOccurs="0" maxOccurs="1" name="Validation" type="tns:ErrorModel" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfMerchantSummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="MerchantSummary" nillable="true" type="tns:MerchantSummary" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="MerchantSummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="MerchantNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MerchantName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CorporateName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SysPrinAgent" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SalesAgent" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HeadquarterMerchantNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ChainCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Bank" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Agent" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Corp" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NorthChain" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NorthSalesAgent" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MasterChain" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SalesmanNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MemphisChain" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MasterSalesAgent" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MCCSIC" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MerchantStatus" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="LastBatchActivity" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Phone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetMerchantComments">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestedUser" type="tns:User" />
+            <s:element minOccurs="0" maxOccurs="1" name="filter" type="tns:MerchantInformationPagingFilter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="MerchantInformationPagingFilter">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:MerchantInformationFilter">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="PageSize" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="CurrentPageIndex" type="s:int" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="MerchantInformationFilter">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BaseFilter">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="MerchantNumber" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="GetMerchantCommentsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMerchantCommentsResult" type="tns:ReportResponseOfMerchantComment" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ReportResponseOfMerchantComment">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Result" type="tns:ArrayOfMerchantComment" />
+          <s:element minOccurs="0" maxOccurs="1" name="Total" type="tns:MerchantComment" />
+          <s:element minOccurs="0" maxOccurs="1" name="Paging" type="tns:Pagination" />
+          <s:element minOccurs="0" maxOccurs="1" name="Validation" type="tns:ErrorModel" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfMerchantComment">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="MerchantComment" nillable="true" type="tns:MerchantComment" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="MerchantComment">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="MerchantNumber" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CommentedDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="PostedBy" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CommentText" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReports">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="spName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:ArrayOfFilterParameter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfFilterParameter">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="FilterParameter" nillable="true" type="tns:FilterParameter" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="FilterParameter">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ParameterName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ParameterValue" />
+          <s:element minOccurs="0" maxOccurs="1" name="ParameterType" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsOutParameter" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetReportsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetReportsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteNonQueryCommand">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="spName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:ArrayOfFilterParameter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteNonQueryCommandResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExecuteNonQueryCommandResult" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="OutputParams" type="tns:ArrayOfFilterParameter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteQueryCommand">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="spName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:ArrayOfFilterParameter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteQueryCommandResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExecuteQueryCommandResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="OutputParams" type="tns:ArrayOfFilterParameter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReportsAsDataSet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="spName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:ArrayOfFilterParameter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReportsAsDataSetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetReportsAsDataSetResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExportFlatReport">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="spaName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:ArrayOfFilterParameter" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resources" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="currencyFormat" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="hasRQColumn" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="columnsCustomView" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExportFlatReportResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="EncryptText">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="encryptStr" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="clientID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EncryptTextResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EncryptTextResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DecryptText">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="decryptStr" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="clientID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DecryptTextResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DecryptTextResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EncryptTextWithMultiKey">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="plainText" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="clientID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EncryptTextWithMultiKeyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EncryptTextWithMultiKeyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_ExportByWebServices">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serializedExportParam" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="storedProcName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAnyType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="anyType" nillable="true" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="_ExportByWebServicesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_ExportByWebServicesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_ExportWSByWebServices">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serializedExportParam" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="storedProcName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_ExportWSByWebServicesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_ExportWSByWebServicesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_ExportByWebServicesUsingDataReader">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="info" type="tns:ExportInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ExportInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FileName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExportColumnHeaders" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExportColumnNames" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExportTotalColumnNames" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExportSortExpression" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExportFilterExpression" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FileType" type="tns:ExportFileType" />
+          <s:element minOccurs="0" maxOccurs="1" name="StoredProcName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Parameters" type="tns:ArrayOfAnyType" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReportHeader" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="ExportFileType">
+        <s:restriction base="s:string">
+          <s:enumeration value="EXCEL" />
+          <s:enumeration value="CSV" />
+          <s:enumeration value="WORD" />
+          <s:enumeration value="PDF" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="_ExportByWebServicesUsingDataReaderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="_ExportByWebServicesUsingDataReaderResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPager">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="startIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sortExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filterExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="callbackName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="totalColumns" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="webMethodName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="methodParams" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="outParamPos" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfInt">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="int" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfDecimal">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="decimal" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="_BasicPagerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_BasicPagerResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="totalRecords" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="totalValues" type="tns:ArrayOfDecimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="notifyMessage" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paramOuts" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerWithSeparatedMethod">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="startIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sortExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filterExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="totalColumns" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="webMethodName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="methodParams" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="outParamPos" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerWithSeparatedMethodResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_BasicPagerWithSeparatedMethodResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="totalRecords" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="totalValues" type="tns:ArrayOfDecimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="notifyMessage" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paramOuts" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerWithOneMethod">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="startIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sortExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filterExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="totalColumns" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="webMethodName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="methodParams" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="outParamPos" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerWithOneMethodResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_BasicPagerWithOneMethodResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="totalRecords" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="totalValues" type="tns:ArrayOfDecimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="notifyMessage" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paramOuts" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerSPASingleMethod">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="startIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sortExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filterExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="callbackName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pagingSuffix" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="totalSuffix" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="totalColumns" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="webMethodName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="methodParams" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="outParamPos" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerSPASingleMethodResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_BasicPagerSPASingleMethodResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="totalRecords" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="totalValues" type="tns:ArrayOfDecimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="notifyMessage" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paramOuts" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerSPAMultipleMethod">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="startIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sortExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filterExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="callbackName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pagingSuffix" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="totalSuffix" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="totalColumns" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="webMethodName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="methodParams" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="outParamPos" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerSPAMultipleMethodResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_BasicPagerSPAMultipleMethodResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="totalRecords" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="totalValues" type="tns:ArrayOfDecimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="notifyMessage" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paramOuts" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerWithExport">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="webMethodName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sortExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filterExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerWithExportResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_BasicPagerWithExportResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerWithSPASingleMethodExport">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="webMethodName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sortExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filterExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerWithSPASingleMethodExportResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_BasicPagerWithSPASingleMethodExportResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerWithSPAMultipleMethodExport">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="webMethodName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sortExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filterExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerWithSPAMultipleMethodExportResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_BasicPagerWithSPAMultipleMethodExportResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://microsoft.com/wsdl/types/">
+      <s:simpleType name="guid">
+        <s:restriction base="s:string">
+          <s:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}" />
+        </s:restriction>
+      </s:simpleType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ValidateApiTokenSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidateApiToken" />
+  </wsdl:message>
+  <wsdl:message name="ValidateApiTokenSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidateApiTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserPasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserPassword" />
+  </wsdl:message>
+  <wsdl:message name="GetUserPasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetValidateUserSoapIn">
+    <wsdl:part name="parameters" element="tns:GetValidateUser" />
+  </wsdl:message>
+  <wsdl:message name="GetValidateUserSoapOut">
+    <wsdl:part name="parameters" element="tns:GetValidateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertLogPMAPISoapIn">
+    <wsdl:part name="parameters" element="tns:InsertLogPMAPI" />
+  </wsdl:message>
+  <wsdl:message name="InsertLogPMAPISoapOut">
+    <wsdl:part name="parameters" element="tns:InsertLogPMAPIResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBatchSummaryByEntitySoapIn">
+    <wsdl:part name="parameters" element="tns:GetBatchSummaryByEntity" />
+  </wsdl:message>
+  <wsdl:message name="GetBatchSummaryByEntitySoapOut">
+    <wsdl:part name="parameters" element="tns:GetBatchSummaryByEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBatchSummaryByMerchantSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBatchSummaryByMerchant" />
+  </wsdl:message>
+  <wsdl:message name="GetBatchSummaryByMerchantSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBatchSummaryByMerchantResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBatchDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBatchDetail" />
+  </wsdl:message>
+  <wsdl:message name="GetBatchDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBatchDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCardSummarySoapIn">
+    <wsdl:part name="parameters" element="tns:GetCardSummary" />
+  </wsdl:message>
+  <wsdl:message name="GetCardSummarySoapOut">
+    <wsdl:part name="parameters" element="tns:GetCardSummaryResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTransactionsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTransactions" />
+  </wsdl:message>
+  <wsdl:message name="GetTransactionsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTransactionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetVoucherSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVoucher" />
+  </wsdl:message>
+  <wsdl:message name="GetVoucherSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVoucherResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetReturnSummaryByEntitySoapIn">
+    <wsdl:part name="parameters" element="tns:GetReturnSummaryByEntity" />
+  </wsdl:message>
+  <wsdl:message name="GetReturnSummaryByEntitySoapOut">
+    <wsdl:part name="parameters" element="tns:GetReturnSummaryByEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetReturnSummaryByMerchantSoapIn">
+    <wsdl:part name="parameters" element="tns:GetReturnSummaryByMerchant" />
+  </wsdl:message>
+  <wsdl:message name="GetReturnSummaryByMerchantSoapOut">
+    <wsdl:part name="parameters" element="tns:GetReturnSummaryByMerchantResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAuthorizationLogSummarySoapIn">
+    <wsdl:part name="parameters" element="tns:GetAuthorizationLogSummary" />
+  </wsdl:message>
+  <wsdl:message name="GetAuthorizationLogSummarySoapOut">
+    <wsdl:part name="parameters" element="tns:GetAuthorizationLogSummaryResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAuthorizationLogDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAuthorizationLogDetail" />
+  </wsdl:message>
+  <wsdl:message name="GetAuthorizationLogDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAuthorizationLogDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPaymentSummaryByEntitySoapIn">
+    <wsdl:part name="parameters" element="tns:GetPaymentSummaryByEntity" />
+  </wsdl:message>
+  <wsdl:message name="GetPaymentSummaryByEntitySoapOut">
+    <wsdl:part name="parameters" element="tns:GetPaymentSummaryByEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPaymentSummaryByMerchantSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPaymentSummaryByMerchant" />
+  </wsdl:message>
+  <wsdl:message name="GetPaymentSummaryByMerchantSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPaymentSummaryByMerchantResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPaymentDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPaymentDetail" />
+  </wsdl:message>
+  <wsdl:message name="GetPaymentDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPaymentDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRetrievalSummaryByEntitySoapIn">
+    <wsdl:part name="parameters" element="tns:GetRetrievalSummaryByEntity" />
+  </wsdl:message>
+  <wsdl:message name="GetRetrievalSummaryByEntitySoapOut">
+    <wsdl:part name="parameters" element="tns:GetRetrievalSummaryByEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRetrievalDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRetrievalDetail" />
+  </wsdl:message>
+  <wsdl:message name="GetRetrievalDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRetrievalDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetChargebackSummaryByEntitySoapIn">
+    <wsdl:part name="parameters" element="tns:GetChargebackSummaryByEntity" />
+  </wsdl:message>
+  <wsdl:message name="GetChargebackSummaryByEntitySoapOut">
+    <wsdl:part name="parameters" element="tns:GetChargebackSummaryByEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetChargebackDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetChargebackDetail" />
+  </wsdl:message>
+  <wsdl:message name="GetChargebackDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetChargebackDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetVoidsRejectSummaryByEntitySoapIn">
+    <wsdl:part name="parameters" element="tns:GetVoidsRejectSummaryByEntity" />
+  </wsdl:message>
+  <wsdl:message name="GetVoidsRejectSummaryByEntitySoapOut">
+    <wsdl:part name="parameters" element="tns:GetVoidsRejectSummaryByEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetVoidsRejectDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVoidsRejectDetail" />
+  </wsdl:message>
+  <wsdl:message name="GetVoidsRejectDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVoidsRejectDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMerchantListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMerchantList" />
+  </wsdl:message>
+  <wsdl:message name="GetMerchantListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMerchantListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMerchantCommentsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMerchantComments" />
+  </wsdl:message>
+  <wsdl:message name="GetMerchantCommentsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMerchantCommentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetReportsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetReports" />
+  </wsdl:message>
+  <wsdl:message name="GetReportsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetReportsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteNonQueryCommandSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteNonQueryCommand" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteNonQueryCommandSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteNonQueryCommandResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteQueryCommandSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteQueryCommand" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteQueryCommandSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteQueryCommandResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetReportsAsDataSetSoapIn">
+    <wsdl:part name="parameters" element="tns:GetReportsAsDataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetReportsAsDataSetSoapOut">
+    <wsdl:part name="parameters" element="tns:GetReportsAsDataSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExportFlatReportSoapIn">
+    <wsdl:part name="parameters" element="tns:ExportFlatReport" />
+  </wsdl:message>
+  <wsdl:message name="ExportFlatReportSoapOut">
+    <wsdl:part name="parameters" element="tns:ExportFlatReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="EncryptTextSoapIn">
+    <wsdl:part name="parameters" element="tns:EncryptText" />
+  </wsdl:message>
+  <wsdl:message name="EncryptTextSoapOut">
+    <wsdl:part name="parameters" element="tns:EncryptTextResponse" />
+  </wsdl:message>
+  <wsdl:message name="DecryptTextSoapIn">
+    <wsdl:part name="parameters" element="tns:DecryptText" />
+  </wsdl:message>
+  <wsdl:message name="DecryptTextSoapOut">
+    <wsdl:part name="parameters" element="tns:DecryptTextResponse" />
+  </wsdl:message>
+  <wsdl:message name="EncryptTextWithMultiKeySoapIn">
+    <wsdl:part name="parameters" element="tns:EncryptTextWithMultiKey" />
+  </wsdl:message>
+  <wsdl:message name="EncryptTextWithMultiKeySoapOut">
+    <wsdl:part name="parameters" element="tns:EncryptTextWithMultiKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="_ExportByWebServicesSoapIn">
+    <wsdl:part name="parameters" element="tns:_ExportByWebServices" />
+  </wsdl:message>
+  <wsdl:message name="_ExportByWebServicesSoapOut">
+    <wsdl:part name="parameters" element="tns:_ExportByWebServicesResponse" />
+  </wsdl:message>
+  <wsdl:message name="_ExportWSByWebServicesSoapIn">
+    <wsdl:part name="parameters" element="tns:_ExportWSByWebServices" />
+  </wsdl:message>
+  <wsdl:message name="_ExportWSByWebServicesSoapOut">
+    <wsdl:part name="parameters" element="tns:_ExportWSByWebServicesResponse" />
+  </wsdl:message>
+  <wsdl:message name="_ExportByWebServicesUsingDataReaderSoapIn">
+    <wsdl:part name="parameters" element="tns:_ExportByWebServicesUsingDataReader" />
+  </wsdl:message>
+  <wsdl:message name="_ExportByWebServicesUsingDataReaderSoapOut">
+    <wsdl:part name="parameters" element="tns:_ExportByWebServicesUsingDataReaderResponse" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerSoapIn">
+    <wsdl:part name="parameters" element="tns:_BasicPager" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerSoapOut">
+    <wsdl:part name="parameters" element="tns:_BasicPagerResponse" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerWithSeparatedMethodSoapIn">
+    <wsdl:part name="parameters" element="tns:_BasicPagerWithSeparatedMethod" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerWithSeparatedMethodSoapOut">
+    <wsdl:part name="parameters" element="tns:_BasicPagerWithSeparatedMethodResponse" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerWithOneMethodSoapIn">
+    <wsdl:part name="parameters" element="tns:_BasicPagerWithOneMethod" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerWithOneMethodSoapOut">
+    <wsdl:part name="parameters" element="tns:_BasicPagerWithOneMethodResponse" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerSPASingleMethodSoapIn">
+    <wsdl:part name="parameters" element="tns:_BasicPagerSPASingleMethod" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerSPASingleMethodSoapOut">
+    <wsdl:part name="parameters" element="tns:_BasicPagerSPASingleMethodResponse" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerSPAMultipleMethodSoapIn">
+    <wsdl:part name="parameters" element="tns:_BasicPagerSPAMultipleMethod" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerSPAMultipleMethodSoapOut">
+    <wsdl:part name="parameters" element="tns:_BasicPagerSPAMultipleMethodResponse" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerWithExportSoapIn">
+    <wsdl:part name="parameters" element="tns:_BasicPagerWithExport" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerWithExportSoapOut">
+    <wsdl:part name="parameters" element="tns:_BasicPagerWithExportResponse" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerWithSPASingleMethodExportSoapIn">
+    <wsdl:part name="parameters" element="tns:_BasicPagerWithSPASingleMethodExport" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerWithSPASingleMethodExportSoapOut">
+    <wsdl:part name="parameters" element="tns:_BasicPagerWithSPASingleMethodExportResponse" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerWithSPAMultipleMethodExportSoapIn">
+    <wsdl:part name="parameters" element="tns:_BasicPagerWithSPAMultipleMethodExport" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerWithSPAMultipleMethodExportSoapOut">
+    <wsdl:part name="parameters" element="tns:_BasicPagerWithSPAMultipleMethodExportResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ApiServicesSoap">
+    <wsdl:operation name="ValidateApiToken">
+      <wsdl:input message="tns:ValidateApiTokenSoapIn" />
+      <wsdl:output message="tns:ValidateApiTokenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserPassword">
+      <wsdl:input message="tns:GetUserPasswordSoapIn" />
+      <wsdl:output message="tns:GetUserPasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetValidateUser">
+      <wsdl:input message="tns:GetValidateUserSoapIn" />
+      <wsdl:output message="tns:GetValidateUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertLogPMAPI">
+      <wsdl:input message="tns:InsertLogPMAPISoapIn" />
+      <wsdl:output message="tns:InsertLogPMAPISoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBatchSummaryByEntity">
+      <wsdl:input message="tns:GetBatchSummaryByEntitySoapIn" />
+      <wsdl:output message="tns:GetBatchSummaryByEntitySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBatchSummaryByMerchant">
+      <wsdl:input message="tns:GetBatchSummaryByMerchantSoapIn" />
+      <wsdl:output message="tns:GetBatchSummaryByMerchantSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBatchDetail">
+      <wsdl:input message="tns:GetBatchDetailSoapIn" />
+      <wsdl:output message="tns:GetBatchDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCardSummary">
+      <wsdl:input message="tns:GetCardSummarySoapIn" />
+      <wsdl:output message="tns:GetCardSummarySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactions">
+      <wsdl:input message="tns:GetTransactionsSoapIn" />
+      <wsdl:output message="tns:GetTransactionsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVoucher">
+      <wsdl:input message="tns:GetVoucherSoapIn" />
+      <wsdl:output message="tns:GetVoucherSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReturnSummaryByEntity">
+      <wsdl:input message="tns:GetReturnSummaryByEntitySoapIn" />
+      <wsdl:output message="tns:GetReturnSummaryByEntitySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReturnSummaryByMerchant">
+      <wsdl:input message="tns:GetReturnSummaryByMerchantSoapIn" />
+      <wsdl:output message="tns:GetReturnSummaryByMerchantSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAuthorizationLogSummary">
+      <wsdl:input message="tns:GetAuthorizationLogSummarySoapIn" />
+      <wsdl:output message="tns:GetAuthorizationLogSummarySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAuthorizationLogDetail">
+      <wsdl:input message="tns:GetAuthorizationLogDetailSoapIn" />
+      <wsdl:output message="tns:GetAuthorizationLogDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPaymentSummaryByEntity">
+      <wsdl:input message="tns:GetPaymentSummaryByEntitySoapIn" />
+      <wsdl:output message="tns:GetPaymentSummaryByEntitySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPaymentSummaryByMerchant">
+      <wsdl:input message="tns:GetPaymentSummaryByMerchantSoapIn" />
+      <wsdl:output message="tns:GetPaymentSummaryByMerchantSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPaymentDetail">
+      <wsdl:input message="tns:GetPaymentDetailSoapIn" />
+      <wsdl:output message="tns:GetPaymentDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRetrievalSummaryByEntity">
+      <wsdl:input message="tns:GetRetrievalSummaryByEntitySoapIn" />
+      <wsdl:output message="tns:GetRetrievalSummaryByEntitySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRetrievalDetail">
+      <wsdl:input message="tns:GetRetrievalDetailSoapIn" />
+      <wsdl:output message="tns:GetRetrievalDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetChargebackSummaryByEntity">
+      <wsdl:input message="tns:GetChargebackSummaryByEntitySoapIn" />
+      <wsdl:output message="tns:GetChargebackSummaryByEntitySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetChargebackDetail">
+      <wsdl:input message="tns:GetChargebackDetailSoapIn" />
+      <wsdl:output message="tns:GetChargebackDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVoidsRejectSummaryByEntity">
+      <wsdl:input message="tns:GetVoidsRejectSummaryByEntitySoapIn" />
+      <wsdl:output message="tns:GetVoidsRejectSummaryByEntitySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVoidsRejectDetail">
+      <wsdl:input message="tns:GetVoidsRejectDetailSoapIn" />
+      <wsdl:output message="tns:GetVoidsRejectDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMerchantList">
+      <wsdl:input message="tns:GetMerchantListSoapIn" />
+      <wsdl:output message="tns:GetMerchantListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMerchantComments">
+      <wsdl:input message="tns:GetMerchantCommentsSoapIn" />
+      <wsdl:output message="tns:GetMerchantCommentsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReports">
+      <wsdl:input message="tns:GetReportsSoapIn" />
+      <wsdl:output message="tns:GetReportsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteNonQueryCommand">
+      <wsdl:input message="tns:ExecuteNonQueryCommandSoapIn" />
+      <wsdl:output message="tns:ExecuteNonQueryCommandSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteQueryCommand">
+      <wsdl:input message="tns:ExecuteQueryCommandSoapIn" />
+      <wsdl:output message="tns:ExecuteQueryCommandSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReportsAsDataSet">
+      <wsdl:input message="tns:GetReportsAsDataSetSoapIn" />
+      <wsdl:output message="tns:GetReportsAsDataSetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExportFlatReport">
+      <wsdl:input message="tns:ExportFlatReportSoapIn" />
+      <wsdl:output message="tns:ExportFlatReportSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EncryptText">
+      <wsdl:input message="tns:EncryptTextSoapIn" />
+      <wsdl:output message="tns:EncryptTextSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DecryptText">
+      <wsdl:input message="tns:DecryptTextSoapIn" />
+      <wsdl:output message="tns:DecryptTextSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EncryptTextWithMultiKey">
+      <wsdl:input message="tns:EncryptTextWithMultiKeySoapIn" />
+      <wsdl:output message="tns:EncryptTextWithMultiKeySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_ExportByWebServices">
+      <wsdl:input message="tns:_ExportByWebServicesSoapIn" />
+      <wsdl:output message="tns:_ExportByWebServicesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_ExportWSByWebServices">
+      <wsdl:input message="tns:_ExportWSByWebServicesSoapIn" />
+      <wsdl:output message="tns:_ExportWSByWebServicesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_ExportByWebServicesUsingDataReader">
+      <wsdl:input message="tns:_ExportByWebServicesUsingDataReaderSoapIn" />
+      <wsdl:output message="tns:_ExportByWebServicesUsingDataReaderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPager">
+      <wsdl:input message="tns:_BasicPagerSoapIn" />
+      <wsdl:output message="tns:_BasicPagerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithSeparatedMethod">
+      <wsdl:input message="tns:_BasicPagerWithSeparatedMethodSoapIn" />
+      <wsdl:output message="tns:_BasicPagerWithSeparatedMethodSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithOneMethod">
+      <wsdl:input message="tns:_BasicPagerWithOneMethodSoapIn" />
+      <wsdl:output message="tns:_BasicPagerWithOneMethodSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerSPASingleMethod">
+      <wsdl:input message="tns:_BasicPagerSPASingleMethodSoapIn" />
+      <wsdl:output message="tns:_BasicPagerSPASingleMethodSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerSPAMultipleMethod">
+      <wsdl:input message="tns:_BasicPagerSPAMultipleMethodSoapIn" />
+      <wsdl:output message="tns:_BasicPagerSPAMultipleMethodSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithExport">
+      <wsdl:input message="tns:_BasicPagerWithExportSoapIn" />
+      <wsdl:output message="tns:_BasicPagerWithExportSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithSPASingleMethodExport">
+      <wsdl:input message="tns:_BasicPagerWithSPASingleMethodExportSoapIn" />
+      <wsdl:output message="tns:_BasicPagerWithSPASingleMethodExportSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithSPAMultipleMethodExport">
+      <wsdl:input message="tns:_BasicPagerWithSPAMultipleMethodExportSoapIn" />
+      <wsdl:output message="tns:_BasicPagerWithSPAMultipleMethodExportSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ApiServicesSoap" type="tns:ApiServicesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidateApiToken">
+      <soap:operation soapAction="http://tempuri.org/ValidateApiToken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserPassword">
+      <soap:operation soapAction="http://tempuri.org/GetUserPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetValidateUser">
+      <soap:operation soapAction="http://tempuri.org/GetValidateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertLogPMAPI">
+      <soap:operation soapAction="http://tempuri.org/InsertLogPMAPI" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBatchSummaryByEntity">
+      <soap:operation soapAction="http://tempuri.org/GetBatchSummaryByEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBatchSummaryByMerchant">
+      <soap:operation soapAction="http://tempuri.org/GetBatchSummaryByMerchant" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBatchDetail">
+      <soap:operation soapAction="http://tempuri.org/GetBatchDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCardSummary">
+      <soap:operation soapAction="http://tempuri.org/GetCardSummary" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactions">
+      <soap:operation soapAction="http://tempuri.org/GetTransactions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVoucher">
+      <soap:operation soapAction="http://tempuri.org/GetVoucher" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReturnSummaryByEntity">
+      <soap:operation soapAction="http://tempuri.org/GetReturnSummaryByEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReturnSummaryByMerchant">
+      <soap:operation soapAction="http://tempuri.org/GetReturnSummaryByMerchant" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAuthorizationLogSummary">
+      <soap:operation soapAction="http://tempuri.org/GetAuthorizationLogSummary" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAuthorizationLogDetail">
+      <soap:operation soapAction="http://tempuri.org/GetAuthorizationLogDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPaymentSummaryByEntity">
+      <soap:operation soapAction="http://tempuri.org/GetPaymentSummaryByEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPaymentSummaryByMerchant">
+      <soap:operation soapAction="http://tempuri.org/GetPaymentSummaryByMerchant" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPaymentDetail">
+      <soap:operation soapAction="http://tempuri.org/GetPaymentDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRetrievalSummaryByEntity">
+      <soap:operation soapAction="http://tempuri.org/GetRetrievalSummaryByEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRetrievalDetail">
+      <soap:operation soapAction="http://tempuri.org/GetRetrievalDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChargebackSummaryByEntity">
+      <soap:operation soapAction="http://tempuri.org/GetChargebackSummaryByEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChargebackDetail">
+      <soap:operation soapAction="http://tempuri.org/GetChargebackDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVoidsRejectSummaryByEntity">
+      <soap:operation soapAction="http://tempuri.org/GetVoidsRejectSummaryByEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVoidsRejectDetail">
+      <soap:operation soapAction="http://tempuri.org/GetVoidsRejectDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMerchantList">
+      <soap:operation soapAction="http://tempuri.org/GetMerchantList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMerchantComments">
+      <soap:operation soapAction="http://tempuri.org/GetMerchantComments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReports">
+      <soap:operation soapAction="http://tempuri.org/GetReports" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteNonQueryCommand">
+      <soap:operation soapAction="http://tempuri.org/ExecuteNonQueryCommand" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteQueryCommand">
+      <soap:operation soapAction="http://tempuri.org/ExecuteQueryCommand" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReportsAsDataSet">
+      <soap:operation soapAction="http://tempuri.org/GetReportsAsDataSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportFlatReport">
+      <soap:operation soapAction="http://tempuri.org/ExportFlatReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EncryptText">
+      <soap:operation soapAction="http://tempuri.org/EncryptText" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DecryptText">
+      <soap:operation soapAction="http://tempuri.org/DecryptText" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EncryptTextWithMultiKey">
+      <soap:operation soapAction="http://tempuri.org/EncryptTextWithMultiKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_ExportByWebServices">
+      <soap:operation soapAction="http://tempuri.org/_ExportByWebServices" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_ExportWSByWebServices">
+      <soap:operation soapAction="http://tempuri.org/_ExportWSByWebServices" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_ExportByWebServicesUsingDataReader">
+      <soap:operation soapAction="http://tempuri.org/_ExportByWebServicesUsingDataReader" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPager">
+      <soap:operation soapAction="http://tempuri.org/_BasicPager" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithSeparatedMethod">
+      <soap:operation soapAction="http://tempuri.org/_BasicPagerWithSeparatedMethod" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithOneMethod">
+      <soap:operation soapAction="http://tempuri.org/_BasicPagerWithOneMethod" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerSPASingleMethod">
+      <soap:operation soapAction="http://tempuri.org/_BasicPagerSPASingleMethod" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerSPAMultipleMethod">
+      <soap:operation soapAction="http://tempuri.org/_BasicPagerSPAMultipleMethod" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithExport">
+      <soap:operation soapAction="http://tempuri.org/_BasicPagerWithExport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithSPASingleMethodExport">
+      <soap:operation soapAction="http://tempuri.org/_BasicPagerWithSPASingleMethodExport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithSPAMultipleMethodExport">
+      <soap:operation soapAction="http://tempuri.org/_BasicPagerWithSPAMultipleMethodExport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ApiServicesSoap12" type="tns:ApiServicesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidateApiToken">
+      <soap12:operation soapAction="http://tempuri.org/ValidateApiToken" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserPassword">
+      <soap12:operation soapAction="http://tempuri.org/GetUserPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetValidateUser">
+      <soap12:operation soapAction="http://tempuri.org/GetValidateUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertLogPMAPI">
+      <soap12:operation soapAction="http://tempuri.org/InsertLogPMAPI" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBatchSummaryByEntity">
+      <soap12:operation soapAction="http://tempuri.org/GetBatchSummaryByEntity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBatchSummaryByMerchant">
+      <soap12:operation soapAction="http://tempuri.org/GetBatchSummaryByMerchant" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBatchDetail">
+      <soap12:operation soapAction="http://tempuri.org/GetBatchDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCardSummary">
+      <soap12:operation soapAction="http://tempuri.org/GetCardSummary" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactions">
+      <soap12:operation soapAction="http://tempuri.org/GetTransactions" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVoucher">
+      <soap12:operation soapAction="http://tempuri.org/GetVoucher" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReturnSummaryByEntity">
+      <soap12:operation soapAction="http://tempuri.org/GetReturnSummaryByEntity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReturnSummaryByMerchant">
+      <soap12:operation soapAction="http://tempuri.org/GetReturnSummaryByMerchant" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAuthorizationLogSummary">
+      <soap12:operation soapAction="http://tempuri.org/GetAuthorizationLogSummary" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAuthorizationLogDetail">
+      <soap12:operation soapAction="http://tempuri.org/GetAuthorizationLogDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPaymentSummaryByEntity">
+      <soap12:operation soapAction="http://tempuri.org/GetPaymentSummaryByEntity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPaymentSummaryByMerchant">
+      <soap12:operation soapAction="http://tempuri.org/GetPaymentSummaryByMerchant" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPaymentDetail">
+      <soap12:operation soapAction="http://tempuri.org/GetPaymentDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRetrievalSummaryByEntity">
+      <soap12:operation soapAction="http://tempuri.org/GetRetrievalSummaryByEntity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRetrievalDetail">
+      <soap12:operation soapAction="http://tempuri.org/GetRetrievalDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChargebackSummaryByEntity">
+      <soap12:operation soapAction="http://tempuri.org/GetChargebackSummaryByEntity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChargebackDetail">
+      <soap12:operation soapAction="http://tempuri.org/GetChargebackDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVoidsRejectSummaryByEntity">
+      <soap12:operation soapAction="http://tempuri.org/GetVoidsRejectSummaryByEntity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVoidsRejectDetail">
+      <soap12:operation soapAction="http://tempuri.org/GetVoidsRejectDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMerchantList">
+      <soap12:operation soapAction="http://tempuri.org/GetMerchantList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMerchantComments">
+      <soap12:operation soapAction="http://tempuri.org/GetMerchantComments" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReports">
+      <soap12:operation soapAction="http://tempuri.org/GetReports" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteNonQueryCommand">
+      <soap12:operation soapAction="http://tempuri.org/ExecuteNonQueryCommand" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteQueryCommand">
+      <soap12:operation soapAction="http://tempuri.org/ExecuteQueryCommand" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReportsAsDataSet">
+      <soap12:operation soapAction="http://tempuri.org/GetReportsAsDataSet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportFlatReport">
+      <soap12:operation soapAction="http://tempuri.org/ExportFlatReport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EncryptText">
+      <soap12:operation soapAction="http://tempuri.org/EncryptText" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DecryptText">
+      <soap12:operation soapAction="http://tempuri.org/DecryptText" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EncryptTextWithMultiKey">
+      <soap12:operation soapAction="http://tempuri.org/EncryptTextWithMultiKey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_ExportByWebServices">
+      <soap12:operation soapAction="http://tempuri.org/_ExportByWebServices" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_ExportWSByWebServices">
+      <soap12:operation soapAction="http://tempuri.org/_ExportWSByWebServices" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_ExportByWebServicesUsingDataReader">
+      <soap12:operation soapAction="http://tempuri.org/_ExportByWebServicesUsingDataReader" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPager">
+      <soap12:operation soapAction="http://tempuri.org/_BasicPager" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithSeparatedMethod">
+      <soap12:operation soapAction="http://tempuri.org/_BasicPagerWithSeparatedMethod" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithOneMethod">
+      <soap12:operation soapAction="http://tempuri.org/_BasicPagerWithOneMethod" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerSPASingleMethod">
+      <soap12:operation soapAction="http://tempuri.org/_BasicPagerSPASingleMethod" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerSPAMultipleMethod">
+      <soap12:operation soapAction="http://tempuri.org/_BasicPagerSPAMultipleMethod" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithExport">
+      <soap12:operation soapAction="http://tempuri.org/_BasicPagerWithExport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithSPASingleMethodExport">
+      <soap12:operation soapAction="http://tempuri.org/_BasicPagerWithSPASingleMethodExport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithSPAMultipleMethodExport">
+      <soap12:operation soapAction="http://tempuri.org/_BasicPagerWithSPAMultipleMethodExport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ApiServices">
+    <wsdl:port name="ApiServicesSoap" binding="tns:ApiServicesSoap">
+      <soap:address location="http://localhost:20001/ApiServices.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ApiServicesSoap12" binding="tns:ApiServicesSoap12">
+      <soap12:address location="http://localhost:20001/ApiServices.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

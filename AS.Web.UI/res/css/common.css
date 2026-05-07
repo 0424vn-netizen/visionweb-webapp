@@ -1,0 +1,546 @@
+﻿body *
+{
+    font-family:Arial, Helvetica, Sans-serif;
+         
+}
+body 
+{
+    font-size:12px;
+    color:#333333;
+    background-color:#FFF;
+    padding: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0px;
+    overflow-x:hidden;
+}
+
+.PageTitleArea
+{
+    padding-top:10px;
+    padding-bottom:10px;   
+}
+.PageTitle
+{
+    font-size:19px !important;
+    font-weight:bold !important;
+    margin-left:3px;
+    margin-top:5px;
+}
+.GridTitle
+{
+    font-size:14px !important;
+}
+/*----------Panel-----------*/
+
+.ContainerPanelWithBorder
+{ 
+    border-style:solid; 
+    border-width:1px;        
+    border-color:#014165;    
+} 
+.ContainerPanelButton
+{ 
+    width:100%;     
+    text-align: right;
+    margin-bottom:10px;          
+} 
+.ContainerPanelButtonGrey
+{
+    background-color:#a6a6a6;       
+    text-align: right;
+    margin-bottom:10px; 
+    padding-top:10px;
+    padding-bottom:10px;   
+    padding-right:10px; 
+}
+.ContainerPanelHeader
+{
+    font-weight:bold; 
+    color:#FFF; 
+    height:22px; 
+    padding-top:6px; 
+    padding-left:10px; 
+  
+}           
+.ContainerPanelGreyPadding, .ContainerPanelGreyNoPadding
+{
+    background-color:#e5e5e5;                   
+}
+.ContainerPanelGreyPadding
+{                   
+    padding-top:6px; 
+    padding-bottom:6px;    
+}
+.ContainerPanelWhiteNoPadding
+{
+}
+.ContainerPanelWhitePadding
+{
+    padding-top:6px; 
+    padding-bottom:6px;    
+}
+
+
+.PanelGreyPadding, .PanelGreyNoPadding
+{
+    background-color:#e5e5e5; 
+    font-style:italic; 
+    
+}
+.PanelGreyPadding
+{
+    padding-top:15px; 
+    padding-left:15px; 
+    padding-bottom:15px; 
+}
+.PanelFooterScroll
+{                
+    padding-top:10px; 
+    padding-bottom:10px; 
+    padding-right:10px; 
+    text-align:right;
+    height:26px;
+}
+
+
+
+.ChartContainer
+{
+    background:#e4e4e4 url("../images/Chart/line_chart_bg.gif") repeat-x;
+    border-color:#014165;
+    border-width:1px;
+    border-style:solid;
+    padding:10px;
+}
+
+.risklightgrayrow{
+	    background-color: #dfe0e0 !important;
+    }
+    .paramfilterbox{
+	    margin-bottom: 10px;
+    }
+    .paramfilterbox,
+    .paramfilterboxheader{
+	    display:block;
+	    background-color:#c9cbcb;
+    }
+    .paramfilterbox,
+    .paramfilterboxmain{
+	    background-color:#fff;
+    }
+    .paramfilterbox,
+    .paramfilterboxheader table th,
+    .paramfilterbox .paramfilterboxheader table td{
+	    border-width: 0px;
+
+    }
+    
+/*--------End Panel-------------*/
+
+
+/*---------Button, Link...-------------*/
+.LinkHome
+{  
+    text-decoration:none;
+    padding-left:10px;
+    padding-right:10px;
+    font-size:12px;
+}
+.LinkHome:hover
+{
+    text-decoration:underline;
+}
+.NavLink
+{
+    color: blue;
+}
+.HyperlinkNoUnderline
+{
+    text-decoration:none;
+}
+.filteringInputs input[type=text],
+input[type=text].normal,
+input[type=password].normal,
+input[type=text].disable,
+input[type=password].disable
+{
+	height: 22px;
+    line-height: 22px;
+    font-size:12px
+}
+.filteringInputs input[type=text],
+input[type=text].normal,
+input[type=password].normal
+{                                        
+    border: 1px solid #CCC;
+    background-color: #FFF;	
+    color:#333333;
+    
+    
+}
+textarea.normal
+{
+    border: 1px solid #CCC;
+    background-color: #FFF;	
+    font-size:12px !important;
+}
+.rgPager input[type=text]
+{
+	border: 1px solid #CCC;
+    background-color: #FFF;	
+    color:#333333;
+}
+input[type=text].disable,
+input[type=password].disable
+{                                        
+    border: 1px solid #CCC;
+    background-color: #ece9d8;	 
+}
+
+@-moz-document url-prefix() {
+  input[type=text].normal,
+  input[type=password].normal,
+  .filteringInputs input[type=text],
+  input[type=text].disable,
+  input[type=password].disable
+  {
+	height: auto;
+    padding-top: 4px;
+	padding-bottom : 4px;
+  }
+}
+.rcButtons input[type=button],
+.rcButtons input[type=submit]
+{
+    color: #000;
+    font-weight:inherit;                             
+    border: inherit;     
+    height:inherit;
+    margin: inherit;
+    padding-left:inherit;
+    padding-right:inherit;    
+    cursor:inherit;
+    border: 1px solid #A7A7A7;
+}
+input[type=button],
+input[type=submit]
+{
+    color:#FFF;
+    font-weight:bold;                             
+    border: none;     
+    height:24px;
+    margin: 0px;
+    padding-left:5px;
+    padding-right:5px;    
+    cursor:pointer;                                
+}
+input.ShortSubmitButton[type=button],
+input.ShortSubmitButton[type=submit]
+{
+    color:#FFF;
+    font-weight:bold;
+    height:18px;                           
+    border:0 none;                              
+    width:45px;                         
+}
+input[type=submit].LongSubmitButtonLeft,
+input[type=submit].LongSubmitButtonRight
+{ 
+    width:6px; 
+    margin: 0px;
+    padding: 0px;
+}
+
+input[type=submit].exportExcel,
+input[type=submit].exportWord,
+input[type=submit].exportCsv,
+input[type=submit].exportPdf,
+input[type=button].exportExcel,
+input[type=button].exportWord,
+input[type=button].exportCsv,
+input[type=button].exportPdf
+{ 
+    width:16px; 
+    height:16px;
+    border:0 none;
+    outline: none;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+}
+input[type=submit].exportExcel,
+input[type=button].exportExcel
+{ 
+    background: url(../images/excel.gif) no-repeat center center;
+}
+input[type=submit].exportWord,
+input[type=button].exportWord
+{ 
+    background: url(../images/word.gif) no-repeat center center;
+}
+input[type=submit].exportCsv,
+input[type=button].exportCsv
+{ 
+    background: url(../images/csv.gif) no-repeat center center;
+}
+input[type=submit].exportPdf,
+input[type=button].exportPdf
+{ 
+    background: url(../images/pdf.gif) no-repeat center center;
+}
+
+.ProgressBarDiv
+{	
+	width: 30px;
+	display:block;		
+	background-color: Transparent;	
+	background-repeat: repeat-x;
+	height: 20px;	
+	border: solid 1px #555;
+}
+.ProgressBarCell_Red, .ProgressBarCell_Yellow, .ProgressBarCell
+{    
+    display:block;
+    float:left;
+    height:20px;
+    text-align:left;
+}
+.ProgressBarCell_Yellow
+{
+    background:url("../images/ProgressBar_yellow.jpg") repeat-x scroll 0 0 White;
+}
+.ProgressBarCell_Red
+{
+    background:url("../images/ProgressBar_red.jpg") repeat-x scroll 0 0 White;
+}
+.ProgressBarCell
+{
+    background:url("../images/ProgressBar.jpg") repeat-x scroll 0 0 White;
+}
+.NumberCell  {
+    background-color:Transparent;   
+    font-weight:bold;
+    height:20px;
+    padding-left:32px;
+    padding-top:2px;
+    text-align:center;
+    vertical-align:middle;
+    width:20px;
+}
+
+.EditButtonAssignment  
+{
+    background:url("../images/icon_edit.png") no-repeat scroll center center transparent;
+    border-color:inherit;
+    border-style:none;
+    border-width:0;
+    cursor:pointer;
+    height:32px;
+    outline:medium none;
+    width:32px;
+}
+.AddButtonAssignment  
+{
+    background:url("../images/icon_add.png") no-repeat scroll center center transparent;
+    border-color:inherit;
+    border-style:none;
+    border-width:0;   
+    cursor:pointer; 
+    height:32px;
+    width:32px;
+}
+.DeleteButtonAssignment  
+{
+    background:url("../images/icon_del.png") no-repeat scroll center center transparent;
+    border-color:inherit;
+    border-style:none;
+    border-width:0;   
+    cursor:pointer; 
+    height:32px;
+    width:32px;
+}
+
+
+/*---------End Button, Link...------------*/
+
+/*----------Table --------------------------------*/
+table.MPSBorder, table.Dashboard
+{
+    border-collapse:collapse;
+    border-color:#014165;
+    border-width:1px;   
+}
+
+table.MPSBorder td, table.MPSBorder th
+{    
+    border-color:#014165;     
+    padding:4px 7px 4px 7px;   
+    height:30px;   
+}
+
+table.MPSBorder > td, table.MPSBorder > th, table.Dashboard >td, table.Dashboard > th
+{        
+    border-width:1px;         
+}
+
+
+table.Dashboard td, table.Dashboard th
+{    
+    border-color:#014165;    
+    padding:0px 5px 0px 0px !important;         
+}
+
+table.MPSBorder tr.AltRow
+{
+    background-color:#E5E5E5;
+}
+table.MPSBorder td.AltRow
+{
+    background-color:#E5E5E5;
+}
+table.MPSBorder .Title
+{
+    font-weight: bold;
+    text-align: center;
+}
+table.MPSBorder .Caption
+{
+    font-weight: bold;    
+}
+
+.InfoHeader
+{
+    font-size: 12px;
+    font-weight: bolder;
+}
+.NoBorder
+{
+    border-width:0px !important;
+}
+/*-----------End of Table -------------------*/
+
+.dollarL
+{
+    float:left;
+    vertical-align:middle;
+    margin:6px 2px 0px 2px;
+    overflow:hidden;
+        }
+
+
+.dollarM
+{
+    float:left;
+    
+    overflow:hidden;
+        }
+                
+
+.dollarR
+{
+    float:left;
+    vertical-align:middle;
+    margin:6px 2px 0px 2px;
+    overflow:hidden;
+}
+.ForPrint
+{
+    visibility: hidden;
+    display:none;
+}
+.mps_stmt_AccInfoSum
+{
+    width: 360px;
+}
+@media print
+{
+     .ForPrint
+     {      
+         visibility: visible !important;
+         display: block !important;
+     }
+     .mps_stmt_AccInfoSum
+    {
+        width: 300px !important;
+        
+    }
+}
+@media print
+{
+     .FormButtonPrinter
+     {
+      visibility: hidden;
+     }
+}
+
+@media print
+{
+     .noprint
+     {
+      visibility: hidden;
+     }
+}
+
+/*--------------------------------------------Landing page-------------------------------------------------*/
+.LP_HEADER {
+    color: Black;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 15px;
+    padding-left: 30px;
+}
+.LP_DIV_IN_TD {
+    background-image: url("../images/Landing/logo_bg.png");
+    background-repeat: no-repeat;
+    height: 80px;
+    text-align: center;
+    vertical-align: middle;
+    width: 132px;
+    position:relative; 
+    margin:20px; 
+}
+.LP_DIV_LOGO 
+{
+	background-repeat: no-repeat;
+    background-position:center center;	
+    background-color:#FFF; 
+	color: Black;
+	font-weight: bold;
+	height: 34px;
+	left: 1px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	padding-top: 20px;
+	position: absolute;
+	text-align: center;
+	text-decoration: none;
+	top: 17px;
+	width: 126px;
+ 	display:block;
+    border-top:1px solid #CCC;	
+    border-bottom:1px solid #CCC;	
+}
+.LP_DIV_EDIT_BUTTON 
+{
+    left: 108px;
+    padding-right: 5px;
+    text-align: right;
+    top: 1px;
+    position: absolute; 
+    z-index: 3;
+}
+.rgFilterRow td
+{
+    text-align:center;
+}
+/*  */
+.RadGrid_Default tr.rgAltRow.highlighted, .RadGrid_Default tr.rgAltRow.highlighted td.rgSorted
+{
+    background-color:#ffa4a4 !important; 
+}
+.RadGrid_Default tr.rgRow.highlighted, .RadGrid_Default tr.rgRow.highlighted td.rgSorted
+{
+    background-color:#ffb1b1 !important; 
+}

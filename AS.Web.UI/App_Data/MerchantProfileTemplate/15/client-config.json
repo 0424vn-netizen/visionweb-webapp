@@ -1,0 +1,58 @@
+{
+  "DefaultProcessor": "Default",
+  "HasMultiProcessor": true,
+  "DecryptColumns": "EncryptedTaxID,TaxID,OwnerSSN,DDANumber,RoutingNumber",
+  "Columns": [
+    {
+      "UniqueName": "MerchantID",
+      "Key": "Entity",
+      "ASFormat": "StaticString",
+      "ReSourceKey": "MerchantID",
+      "Width": 130
+    },
+    {
+      "UniqueName": "DBAName",
+      "Key": "EntityName",
+      "ASFormat": "DynamicString",
+      "ReSourceKey": "MerchantName",
+      "Width": 220,
+      "ItemAlign": "left"
+    },
+    {
+      "UniqueName": "ChainNumber",
+      "Key": "ChainNumber",
+      "ASFormat": "DynamicString",
+      "ReSourceKey": "Chain",
+      "Width": 100
+    },
+    {
+      "UniqueName": "Phone",
+      "Key": "Phone",
+      "ASFormat": "Phone",
+      "ReSourceKey": "Phone",
+      "Width": 130
+    },
+    {
+      "UniqueName": "Address",
+      "Key": "Address",
+      "ASFormat": "DynamicString",
+      "ReSourceKey": "Address",
+      "Width": 200,
+      "ItemAlign": "left"
+    },
+    {
+      "UniqueName": "OnlineStatus",
+      "Key": "Status",
+      "ASFormat": "DynamicString",
+      "ReSourceKey": "OnlineStatus",
+      "Width": 80
+    },
+    {
+      "UniqueName": "LastBatchActivity",
+      "Key": "LastBatchActivity",
+      "ASFormat": "Date",
+      "ReSourceKey": "LastBatchActivity",
+      "Width": 80
+    }
+  ]
+}

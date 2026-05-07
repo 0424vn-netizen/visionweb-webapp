@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <style type="text/css">
+        td {
+            border-style: solid;
+            border-width: thin;
+        }
+
+        tr.borderBottom td {
+            border-bottom-style: solid;
+            border-bottom-width: thin;
+        }
+
+        tr.borderTop td {
+            border-top-style: solid;
+            border-top-width: thin;
+            background-color: #CFCFCF;
+            font-weight: bold;
+        }
+
+        tr.display-none {
+            display: none;
+        }
+    </style>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+</head>
+<body>
+    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+        <tr>
+            <th colspan="13" align="left">
+                <b>[tpl_MerchantCardPinDebitInformation_htm_MCI_PINDebit]</b>
+            </th>
+            <th></th>
+        </tr>
+        <tr class="borderTop">
+            <td style="width: 7%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </td>
+            <td>[tpl_MerchantCardInformation_htm_OtherVolumePercent]
+            </td>
+            <td>[tpl_MerchantCardInformation_htm_OtherItemRate]
+            </td>
+            <td>[tpl_MerchantCardPinDebitInformation_htm_OnlineDebitFeeFlag]
+            </td>
+        </tr>
+        [CARDTYPE_DETAIL]
+        
+    </table>
+</body>
+</html>

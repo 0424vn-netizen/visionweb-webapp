@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ClientExtendedSettings>
+  <ExtendedSetting settingName="HASH_COLUMNS" data="FullCardNumber,AccountNumber,CardNumber,FullAccountNumber,First6CardNumber"/>
+  <ExtendedSetting settingName="HASH_CLIENTIDS" data="15,17,29,39,42,49,69,82,91,95,97,115,122,126,144,152,158,165,170,176,181,186,187,191,200,1000,218"/>
+  <ExtendedSetting settingName="SyncDataForShadowUnderwritings" data="181"/>
+</ClientExtendedSettings>

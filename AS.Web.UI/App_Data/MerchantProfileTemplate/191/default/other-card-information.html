@@ -1,0 +1,68 @@
+﻿<div class="row" id="othercardinfo">
+    <div class="col-xs-9" data-toggle="collapse" data-target="#ciOtherCardInformation">
+        <h2 class="grid-title">
+            {{res:OtherCardInformation}}
+        </h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 in" id="ciOtherCardInformation">
+        <table class="ASTable">
+            <tr class="Row">
+                <td class="heading">
+                    {{res:AMEXHeader}}
+                </td>
+                <td>
+                    {{data:AMEX}}
+                <td class="heading">
+                    {{res:PinDebitHeader}}
+                </td>
+                <td>
+                    {{data:PinDebit||OtherCardInformation}}
+                </td>
+            </tr>
+            <tr class="AltRow">
+                <td class="heading">
+                    {{res:AMEXONEPOINT}}
+                </td>
+                <td>
+                    {{data:AMEXONPOINT||OtherCardInformation}}
+                </td>
+                <td class="heading">
+                    {{res:JCBHeader}}
+                </td>
+                <td>
+                    {{data:JCB||OtherCardInformation}}
+                </td>
+            </tr>
+            <tr class="Row">
+                <td class="heading">
+                    {{res:DiscoverHeader}}
+                </td>
+                <td>
+                    {{data:Discover||OtherCardInformation}}
+                </td>
+                <td class="heading">
+                    {{res:WrightExpressHeader}}
+                </td>
+                <td>
+                    {{data:WrightExpress||OtherCardInformation}}
+                </td>
+            </tr>
+            <tr class="AltRow">
+                <td class="heading">
+                    {{res:DiscoverFullAQC}}
+                </td>
+                <td>
+                    {{data:DiscoverFullAQC||OtherCardInformation}}
+                </td>
+                <td class="heading">
+                    {{res:VoyagerHeader}}
+                </td>
+                <td>
+                    {{data:Voyager||OtherCardInformation}}
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

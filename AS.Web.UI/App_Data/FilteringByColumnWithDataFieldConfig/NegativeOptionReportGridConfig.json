@@ -1,0 +1,32 @@
+[
+  {
+    "dataField": "TransactionCount",
+    "validation": "IntegerGreaterThanEqualZero",
+    "filterMenus": [
+      "NoFilter",
+      "EqualTo",
+      "NotEqualTo",
+      "GreaterThan",
+      "LessThan",
+      "GreaterThanOrEqualTo",
+      "LessThanOrEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "MerchantCount",
+    "validation": "IntegerGreaterThanEqualZero",
+    "filterMenus": [
+      "NoFilter",
+      "EqualTo",
+      "NotEqualTo",
+      "GreaterThan",
+      "LessThan",
+      "GreaterThanOrEqualTo",
+      "LessThanOrEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  }
+]

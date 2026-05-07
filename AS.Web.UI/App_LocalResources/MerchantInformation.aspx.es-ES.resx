@@ -1,0 +1,888 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="MerchantID.HeaderText" xml:space="preserve">
+    <value># Comerciante </value>
+  </data>
+  <data name="MerchantID.HeaderTooltip" xml:space="preserve">
+    <value>ID de Comerciante</value>
+  </data>
+  <data name="MerchantID.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="SalesOffice.HeaderText" xml:space="preserve">
+    <value>Oficina de Ventas</value>
+  </data>
+  <data name="SalesOffice.HeaderTooltip" xml:space="preserve">
+    <value>Oficina de Ventas</value>
+  </data>
+  <data name="SalesOffice.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="BankNumber.HeaderText" xml:space="preserve">
+    <value>Número de Banco</value>
+  </data>
+  <data name="BankNumber.HeaderTooltip" xml:space="preserve">
+    <value>Número de Banco</value>
+  </data>
+  <data name="BankNumber.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="Chain.HeaderText" xml:space="preserve">
+    <value>Cadena</value>
+  </data>
+  <data name="Chain.HeaderTooltip" xml:space="preserve">
+    <value>Número de Cadena</value>
+  </data>
+  <data name="Chain.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="PartnerID.HeaderText" xml:space="preserve">
+    <value>Identificación de Asociados</value>
+  </data>
+  <data name="PartnerID.HeaderTooltip" xml:space="preserve">
+    <value>Identificación de Asociados</value>
+  </data>
+  <data name="PartnerID.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="Phone.HeaderText" xml:space="preserve">
+    <value>Teléfono</value>
+  </data>
+  <data name="Phone.HeaderTooltip" xml:space="preserve">
+    <value>Teléfono</value>
+  </data>
+  <data name="Phone.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="Last4TaxID.HeaderText" xml:space="preserve">
+    <value>4 últimos Identificación Fiscal </value>
+  </data>
+  <data name="Last4TaxID.HeaderTooltip" xml:space="preserve">
+    <value>4 últimos Identificación Fiscal </value>
+  </data>
+  <data name="Last4TaxID.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="SalesUnit.HeaderText" xml:space="preserve">
+    <value>Unidad de Ventas</value>
+  </data>
+  <data name="SalesUnit.HeaderTooltip" xml:space="preserve">
+    <value>Unidad de Ventas</value>
+  </data>
+  <data name="SalesUnit.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="Agent.HeaderText" xml:space="preserve">
+    <value>Agente</value>
+  </data>
+  <data name="AgentOwner.HeaderText" xml:space="preserve">
+    <value>Agent Owner</value>
+  </data>
+  <data name="Agent.HeaderTooltip" xml:space="preserve">
+    <value>Agente</value>
+  </data>
+  <data name="Agent.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="MCCSIC.HeaderText" xml:space="preserve">
+    <value>MCC/SIC</value>
+  </data>
+  <data name="MCCSIC.HeaderTooltip" xml:space="preserve">
+    <value>Código de Categoría de Comerciante/Clasificación Industrial Estándar</value>
+  </data>
+  <data name="MCCSIC.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="Address.HeaderText" xml:space="preserve">
+    <value>Dirección</value>
+  </data>
+  <data name="Address.HeaderTooltip" xml:space="preserve">
+    <value>Dirección</value>
+  </data>
+  <data name="Address.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="OpenDate.HeaderText" xml:space="preserve">
+    <value>Fecha de Apertura</value>
+  </data>
+  <data name="OpenDate.HeaderTooltip" xml:space="preserve">
+    <value>Fecha de Apertura</value>
+  </data>
+  <data name="OpenDate.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="MerchantStatus.HeaderText" xml:space="preserve">
+    <value>Estatus del Comerciante</value>
+  </data>
+  <data name="MerchantStatus.HeaderTooltip" xml:space="preserve">
+    <value>Estatus del Comerciante</value>
+  </data>
+  <data name="MerchantStatus.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="OnlineStatus.HeaderText" xml:space="preserve">
+    <value>Estatus En Línea</value>
+  </data>
+  <data name="OnlineStatus.HeaderTooltip" xml:space="preserve">
+    <value>Estatus En Línea</value>
+  </data>
+  <data name="OnlineStatus.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="OptIn.HeaderText" xml:space="preserve">
+    <value>Incluirse</value>
+  </data>
+  <data name="OptIn.HeaderTooltip" xml:space="preserve">
+    <value>Incluirse</value>
+  </data>
+  <data name="OptIn.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="LastBatchActivity.HeaderText" xml:space="preserve">
+    <value>Actividad del Último Lote</value>
+  </data>
+  <data name="LastBatchActivity.HeaderTooltip" xml:space="preserve">
+    <value>Actividad del Último Lote</value>
+  </data>
+  <data name="LastBatchActivity.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="Email.HeaderText" xml:space="preserve">
+    <value>Correo electrónico</value>
+  </data>
+  <data name="Email.HeaderTooltip" xml:space="preserve">
+    <value>Correo electrónico</value>
+  </data>
+  <data name="Email.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="DateLastActive.HeaderText" xml:space="preserve">
+    <value>Última Fecha en que Estuvo Activo</value>
+  </data>
+  <data name="DateLastActive.HeaderTooltip" xml:space="preserve">
+    <value>Última Fecha en que Estuvo Activo</value>
+  </data>
+  <data name="DateLastActive.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="SeqNo.HeaderText" xml:space="preserve">
+    <value>No. de Secuencia</value>
+  </data>
+  <data name="SeqNo.HeaderTooltip" xml:space="preserve">
+    <value>No. de Secuencia</value>
+  </data>
+  <data name="SeqNo.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ClerkCode.HeaderText" xml:space="preserve">
+    <value>Código de Empleado</value>
+  </data>
+  <data name="ClerkCode.HeaderTooltip" xml:space="preserve">
+    <value>Código de Empleado</value>
+  </data>
+  <data name="ClerkCode.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="MemoData.HeaderText" xml:space="preserve">
+    <value>Datos de Memo</value>
+  </data>
+  <data name="MemoData.HeaderTooltip" xml:space="preserve">
+    <value>Datos de Memo</value>
+  </data>
+  <data name="MemoData.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="MerchantName.HeaderText" xml:space="preserve">
+    <value>Nombre del Comerciante</value>
+  </data>
+  <data name="MerchantName.HeaderTooltip" xml:space="preserve">
+    <value>Nombre del Comerciante</value>
+  </data>
+  <data name="MerchantName.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="TimeEntered.HeaderText" xml:space="preserve">
+    <value>Hora Ingresado</value>
+  </data>
+  <data name="TermID.HeaderText" xml:space="preserve">
+    <value>Identificación de Term.</value>
+  </data>
+  <data name="TermID.HeaderTooltip" xml:space="preserve">
+    <value>Identificación de Term.</value>
+  </data>
+  <data name="TermID.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="OpCode.HeaderText" xml:space="preserve">
+    <value>Código Op.</value>
+  </data>
+  <data name="OpCode.HeaderTooltip" xml:space="preserve">
+    <value>Código Op.</value>
+  </data>
+  <data name="OpCode.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="LastAction.HeaderText" xml:space="preserve">
+    <value>Última Acción</value>
+  </data>
+  <data name="LastAction.HeaderTooltip" xml:space="preserve">
+    <value>Última Acción</value>
+  </data>
+  <data name="LastAction.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="LastUpdated.HeaderText" xml:space="preserve">
+    <value>Actualización Más Reciente</value>
+  </data>
+  <data name="LastUpdated.HeaderTooltip" xml:space="preserve">
+    <value>Actualización Más Reciente</value>
+  </data>
+  <data name="LastUpdated.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="DateTime.HeaderText" xml:space="preserve">
+    <value>Fecha/Hora</value>
+  </data>
+  <data name="DateTime.HeaderTooltip" xml:space="preserve">
+    <value>Fecha/Hora</value>
+  </data>
+  <data name="DateTime.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="UserID.HeaderText" xml:space="preserve">
+    <value>ID de Usuario</value>
+  </data>
+  <data name="UserID.HeaderTooltip" xml:space="preserve">
+    <value>ID de Usuario</value>
+  </data>
+  <data name="UserID.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="Message.HeaderText" xml:space="preserve">
+    <value>Mensaje</value>
+  </data>
+  <data name="Message.HeaderTooltip" xml:space="preserve">
+    <value>Mensaje</value>
+  </data>
+  <data name="Message.HtmlEncode" xml:space="preserve">
+    <value>True</value>
+  </data>
+  <data name="Bank.HeaderText" xml:space="preserve">
+    <value>Banco</value>
+  </data>
+  <data name="Bank.HeaderTooltip" xml:space="preserve">
+    <value>Banco</value>
+  </data>
+  <data name="Bank.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="Association.HeaderText" xml:space="preserve">
+    <value>Asociación</value>
+  </data>
+  <data name="Association.HeaderTooltip" xml:space="preserve">
+    <value>Asociación</value>
+  </data>
+  <data name="Association.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="SYS_PRIN_AGENT.HeaderText" xml:space="preserve">
+    <value>SYS/PRIN/AGENTE</value>
+  </data>
+  <data name="SYS_PRIN_AGENT.HeaderTooltip" xml:space="preserve">
+    <value>SYS/PRIN/AGENTE</value>
+  </data>
+  <data name="SYS_PRIN_AGENT.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="SalesAgent.HeaderText" xml:space="preserve">
+    <value>Gerente de Agentes de Venta</value>
+  </data>
+  <data name="SalesAgent.HeaderTooltip" xml:space="preserve">
+    <value>Gerente de Agentes de Venta</value>
+  </data>
+  <data name="SalesAgent.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="Headquarter.HeaderText" xml:space="preserve">
+    <value>Sede</value>
+  </data>
+  <data name="Headquarter.HeaderTooltip" xml:space="preserve">
+    <value>Sede</value>
+  </data>
+  <data name="Headquarter.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ISO.HeaderText" xml:space="preserve">
+    <value>ISO</value>
+  </data>
+  <data name="ISO.HeaderTooltip" xml:space="preserve">
+    <value>ISO</value>
+  </data>
+  <data name="ISO.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>Perfil del Comerciante</value>
+  </data>
+  <data name="uxAddCommentResource1.Text" xml:space="preserve">
+    <value>Agregar Comentario</value>
+  </data>
+  <data name="uxClearCommentResource1.Text" xml:space="preserve">
+    <value>Borrar Comentario</value>
+  </data>
+  <data name="uxDrilldownGridResource1.HierarchySettings.CollapseTooltip" xml:space="preserve">
+    <value>Colapsar</value>
+  </data>
+  <data name="uxDrilldownGridResource1.HierarchySettings.ExpandTooltip" xml:space="preserve">
+    <value>Expandir</value>
+  </data>
+  <data name="uxDrilldownGridResource1.MasterTableView.NoDetailRecordsText" xml:space="preserve">
+    <value>No se encontraron resultados. Ajuste sus criterios de filtrado.</value>
+  </data>
+  <data name="uxDrilldownGridResource1.MasterTableView.NoMasterRecordsText" xml:space="preserve">
+    <value>No se encontraron resultados. Ajuste sus criterios de filtrado.</value>
+  </data>
+  <data name="uxGridCSRCommentResource1.HierarchySettings.CollapseTooltip" xml:space="preserve">
+    <value>Colapsar</value>
+  </data>
+  <data name="uxGridCSRCommentResource1.HierarchySettings.ExpandTooltip" xml:space="preserve">
+    <value>Expandir</value>
+  </data>
+  <data name="uxGridCSRCommentResource1.MasterTableView.NoDetailRecordsText" xml:space="preserve">
+    <value>No se encontraron resultados. Ajuste sus criterios de filtrado.</value>
+  </data>
+  <data name="uxGridCSRCommentResource1.MasterTableView.NoMasterRecordsText" xml:space="preserve">
+    <value>No se encontraron resultados. Ajuste sus criterios de filtrado.</value>
+  </data>
+  <data name="uxMemoGridResource1.HierarchySettings.CollapseTooltip" xml:space="preserve">
+    <value>Colapsar</value>
+  </data>
+  <data name="uxMemoGridResource1.HierarchySettings.ExpandTooltip" xml:space="preserve">
+    <value>Expandir</value>
+  </data>
+  <data name="uxMemoGridResource1.MasterTableView.NoDetailRecordsText" xml:space="preserve">
+    <value>No se encontraron datos.</value>
+  </data>
+  <data name="uxMemoGridResource1.MasterTableView.NoMasterRecordsText" xml:space="preserve">
+    <value>No se encontraron datos.</value>
+  </data>
+  <data name="MerchantProfile_aspx_cs_AccountStatus" xml:space="preserve">
+    <value>Estatus de la Cuenta</value>
+  </data>
+  <data name="MerchantProfile_aspx_cs_AddCommentOn" xml:space="preserve">
+    <value>Perfil del Comerciante: Agregar comentario</value>
+  </data>
+  <data name="MerchantProfile_aspx_cs_BackTo" xml:space="preserve">
+    <value>Volver a</value>
+  </data>
+  <data name="MerchantProfile_aspx_cs_CSRComments" xml:space="preserve">
+    <value>Comentarios CSR</value>
+  </data>
+  <data name="MerchantProfile_aspx_cs_Lastbatch" xml:space="preserve">
+    <value>Último Lote</value>
+  </data>
+  <data name="MerchantProfile_aspx_cs_MerchantList" xml:space="preserve">
+    <value>Lista de Comerciantes</value>
+  </data>
+  <data name="MerchantProfile_aspx_cs_MerchantMemos" xml:space="preserve">
+    <value>Memos del Comerciante</value>
+  </data>
+  <data name="MerchantProfile_aspx_cs_MerchantProfile" xml:space="preserve">
+    <value>Perfil del Comerciante:{0}</value>
+  </data>
+  <data name="MerchantProfile_aspx_cs_SearchAllMerchants" xml:space="preserve">
+    <value>Buscar todos los Comerciantes</value>
+  </data>
+  <data name="MerchantProfile_aspx_cs_SearchBy" xml:space="preserve">
+    <value>Buscar por {0} {1}</value>
+  </data>
+  <data name="MerchantProfile_aspx_cs_Status" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="MerchantProfile_aspx_cs_View" xml:space="preserve">
+    <value>Ver</value>
+  </data>
+  <data name="uxExporterCommentTopResource1.GridHeader" xml:space="preserve">
+    <value>Comentarios CSR</value>
+  </data>
+  <data name="uxExportMemolistTopResource1.GridHeader" xml:space="preserve">
+    <value>Memos del Comerciante</value>
+  </data>
+  <data name="uxPageTitleCM2Resource1.PageTitle" xml:space="preserve">
+    <value>Perfil del Comerciante</value>
+  </data>
+  <data name="uxPageTitleCM2Resource1.ReportTitle" xml:space="preserve">
+    <value>Perfil del Comerciante</value>
+  </data>
+  <data name="uxPageTitleCMResource1.PageTitle" xml:space="preserve">
+    <value>Perfil del Comerciante</value>
+  </data>
+  <data name="uxPageTitleCMResource1.ReportTitle" xml:space="preserve">
+    <value>Perfil del Comerciante</value>
+  </data>
+  <data name="MICChain.HeaderText" xml:space="preserve">
+    <value>MIC Cadena</value>
+  </data>
+  <data name="MICChain.HeaderTooltip" xml:space="preserve">
+    <value>MIC Cadena</value>
+  </data>
+  <data name="ChainNumber.HeaderText" xml:space="preserve">
+    <value>Cadena</value>
+  </data>
+  <data name="ChainNumber.HeaderTooltip" xml:space="preserve">
+    <value>Cadena</value>
+  </data>
+  <data name="SYS_PRIN.HeaderText" xml:space="preserve">
+    <value>SIS/IMPR</value>
+  </data>
+  <data name="SYS_PRIN.HeaderTooltip" xml:space="preserve">
+    <value>SIS/IMPR</value>
+  </data>
+  <data name="Corporate.HeaderText" xml:space="preserve">
+    <value>Corporativa</value>
+  </data>
+  <data name="Corporate.HeaderTooltip" xml:space="preserve">
+    <value>Corporativa</value>
+  </data>
+  <data name="btnExportMultiResource.Text" xml:space="preserve">
+    <value>EXPORTAR</value>
+  </data>
+  <data name="ClosedDate.HeaderText" xml:space="preserve">
+    <value>Fecha Cerrada</value>
+  </data>
+  <data name="ClosedDate.HeaderTooltip" xml:space="preserve">
+    <value>Fecha Cerrada</value>
+  </data>
+  <data name="Status.HeaderText" xml:space="preserve">
+    <value>Estatus</value>
+  </data>
+  <data name="Status.HeaderTooltip" xml:space="preserve">
+    <value>Estatus</value>
+  </data>
+  <data name="SiteAccess.HeaderText" xml:space="preserve">
+    <value>Acceso al Sitio</value>
+  </data>
+  <data name="SiteAccess.HeaderTooltip" xml:space="preserve">
+    <value>Acceso al Sitio</value>
+  </data>
+  <data name="EmailAddress.HeaderText" xml:space="preserve">
+    <value>Dirección de Correo Electrónico</value>
+  </data>
+  <data name="EmailAddress.HeaderTooltip" xml:space="preserve">
+    <value>Dirección de Correo Electrónico</value>
+  </data>
+  <data name="Region.HeaderText" xml:space="preserve">
+    <value>Región</value>
+  </data>
+  <data name="Region.HeaderTooltip" xml:space="preserve">
+    <value>Región</value>
+  </data>
+  <data name="AssociationSubGroup.HeaderText" xml:space="preserve">
+    <value>Subgrupo de la Asociación</value>
+  </data>
+  <data name="AssociationSubGroup.HeaderTooltip" xml:space="preserve">
+    <value>Subgrupo de la Asociación</value>
+  </data>
+  <data name="SalesAgentRegionalManager.HeaderText" xml:space="preserve">
+    <value>Gerente Regional de Agentes de Venta</value>
+  </data>
+  <data name="SalesAgentRegionalManager.HeaderTooltip" xml:space="preserve">
+    <value>Gerente Regional de Agentes de Venta</value>
+  </data>
+  <data name="SalesAgentManager.HeaderText" xml:space="preserve">
+    <value>Gerente Regional de Agentes de Venta</value>
+  </data>
+  <data name="ApprovalDate.HeaderText" xml:space="preserve">
+    <value>Fecha de Aprobación</value>
+  </data>
+  <data name="ApprovalDate.HeaderTooltip" xml:space="preserve">
+    <value>Fecha de Aprobación</value>
+  </data>
+  <data name="CorporateName.HeaderText" xml:space="preserve">
+    <value>Nombre Corporativo</value>
+  </data>
+  <data name="CorporateName.HeaderTooltip" xml:space="preserve">
+    <value>Nombre Corporativo</value>
+  </data>
+  <data name="TaxID.HeaderText" xml:space="preserve">
+    <value>Identificación Fiscal</value>
+  </data>
+  <data name="TaxID.HeaderTooltip" xml:space="preserve">
+    <value>Identificación Fiscal</value>
+  </data>
+  <data name="SponsoringBank.HeaderText" xml:space="preserve">
+    <value>Banco Patrocinador</value>
+  </data>
+  <data name="SponsoringBank.HeaderTooltip" xml:space="preserve">
+    <value>Banco Patrocinador</value>
+  </data>
+  <data name="SalesBranch.HeaderText" xml:space="preserve">
+    <value>Rama de ventas</value>
+  </data>
+  <data name="SalesBranch.HeaderTooltip" xml:space="preserve">
+    <value>Rama de ventas</value>
+  </data>
+  <data name="UserName.HeaderText" xml:space="preserve">
+    <value>Nombre de Usuario</value>
+  </data>
+  <data name="UserName.HeaderTooltip" xml:space="preserve">
+    <value>Nombre de Usuario</value>
+  </data>
+  <data name="uxCommentResource1" xml:space="preserve">
+    <value>ES - Comment</value>
+  </data>
+  <data name="SponsoringBankBIN.HeaderText" xml:space="preserve">
+    <value>Patrocinando Banco BIN</value>
+  </data>
+  <data name="SponsoringBankBIN.HeaderTooltip" xml:space="preserve">
+    <value>Patrocinando Banco BIN</value>
+  </data>
+  <data name="ProcessPlatform.HeaderText" xml:space="preserve">
+    <value>Plataforma de Procesamiendo</value>
+  </data>
+  <data name="ProcessPlatform.HeaderTooltip" xml:space="preserve">
+    <value>Plataforma de Procesamiendo</value>
+  </data>
+  <data name="CompanyName.HeaderText" xml:space="preserve">
+    <value>Nombre de la Empresa</value>
+  </data>
+  <data name="CompanyName.HeaderTooltip" xml:space="preserve">
+    <value>Nombre de la Empresa</value>
+  </data>
+  <data name="Reseller.HeaderText" xml:space="preserve">
+    <value>Revendedor</value>
+  </data>
+  <data name="Reseller.HeaderTooltip" xml:space="preserve">
+    <value>Revendedor</value>
+  </data>
+  <data name="Partner.HeaderText" xml:space="preserve">
+    <value>El socio</value>
+  </data>
+  <data name="Partner.HeaderTooltip" xml:space="preserve">
+    <value>El socio</value>
+  </data>
+  <data name="SubSalesAgent.HeaderText" xml:space="preserve">
+    <value>Agente de Sub-Venta</value>
+  </data>
+  <data name="SubSalesAgent.HeaderTooltip" xml:space="preserve">
+    <value>Agente de Sub-Venta</value>
+  </data>
+  <data name="FundingMethod.HeaderText" xml:space="preserve">
+    <value>Método de financiación</value>
+  </data>
+  <data name="FundingMethod.HeaderTooltip" xml:space="preserve">
+    <value>Método de financiación</value>
+  </data>
+  <data name="Platform.HeaderText" xml:space="preserve">
+    <value>Plataforma</value>
+  </data>
+  <data name="Platform.HeaderTooltip" xml:space="preserve">
+    <value>Plataforma</value>
+  </data>
+  <data name="ReferralPartner.HeaderText" xml:space="preserve">
+    <value>Referral Partner</value>
+  </data>
+  <data name="ReferralPartner.HeaderTooltip" xml:space="preserve">
+    <value>Referral Partner</value>
+  </data>
+  <data name="Acquirer.HeaderText" xml:space="preserve">
+    <value>Adquiridora</value>
+  </data>
+  <data name="Acquirer.HeaderTooltip" xml:space="preserve">
+    <value>Adquiridora</value>
+  </data>
+  <data name="SubAcquirer.HeaderText" xml:space="preserve">
+    <value>Sub-Adquirente</value>
+  </data>
+  <data name="SubAcquirer.HeaderTooltip" xml:space="preserve">
+    <value>Sub-Adquirente</value>
+  </data>
+  <data name="AcquirerName.HeaderText" xml:space="preserve">
+    <value>Acquirer Name</value>
+  </data>
+  <data name="AcquirerName.HeaderTooltip" xml:space="preserve">
+    <value>Acquirer Name</value>
+  </data>
+  <data name="BankName.HeaderText" xml:space="preserve">
+    <value>Bank Name</value>
+  </data>
+  <data name="BankName.HeaderTooltip" xml:space="preserve">
+    <value>Bank Name</value>
+  </data>
+  <data name="SubAcquirerName.HeaderText" xml:space="preserve">
+    <value>Sub-Acquirer Name</value>
+  </data>
+  <data name="SubAcquirerName.HeaderTooltip" xml:space="preserve">
+    <value>Sub-Acquirer  Name</value>
+  </data>
+  <data name="Group.HeaderText" xml:space="preserve">
+    <value>Grupo</value>
+  </data>
+  <data name="Group.HeaderTooltip" xml:space="preserve">
+    <value>Grupo</value>
+  </data>
+  <data name="SecondaryAccesChain.HeaderText" xml:space="preserve">
+    <value>Cadena de acceso secundario</value>
+  </data>
+  <data name="SecondaryAccesChain.HeaderTooltip" xml:space="preserve">
+    <value>Cadena de acceso secundario</value>
+  </data>
+  <data name="Tenant.HeaderText" xml:space="preserve">
+    <value>Tenant</value>
+  </data>
+  <data name="Tenant.HeaderTooltip" xml:space="preserve">
+    <value>Tenant</value>
+  </data>
+  <data name="SubMerchant.HeaderText" xml:space="preserve">
+    <value>Sub-Merchant</value>
+  </data>
+  <data name="SubMerchant.HeaderTooltip" xml:space="preserve">
+    <value>Sub-Merchant</value>
+  </data>
+  <data name="BusinessChain.HeaderText" xml:space="preserve">
+    <value>Cadena comercial</value>
+  </data>
+  <data name="BusinessChain.HeaderTooltip" xml:space="preserve">
+    <value>Cadena comercial</value>
+  </data>
+  <data name="BankChain.HeaderText" xml:space="preserve">
+    <value>Cadena bancaria</value>
+  </data>
+  <data name="BankChain.HeaderTooltip" xml:space="preserve">
+    <value>Cadena bancaria</value>
+  </data>
+  <data name="CorporateChain.HeaderText" xml:space="preserve">
+    <value>Cadena corporativa</value>
+  </data>
+  <data name="CorporateChain.HeaderTooltip" xml:space="preserve">
+    <value>Cadena corporativa</value>
+  </data>
+  <data name="AgentChain.HeaderText" xml:space="preserve">
+    <value>Cadena de agentes</value>
+  </data>
+  <data name="AgentChain.HeaderTooltip" xml:space="preserve">
+    <value>Cadena de agentes</value>
+  </data>
+  <data name="ReferralSource.HeaderText" xml:space="preserve">
+    <value>Fuente de referencia</value>
+  </data>
+  <data name="ReferralSource.HeaderTooltip" xml:space="preserve">
+    <value>Fuente de referencia</value>
+  </data>
+  <data name="Portfolio.HeaderText" xml:space="preserve">
+    <value>Portafolio</value>
+  </data>
+  <data name="Portfolio.HeaderTooltip" xml:space="preserve">
+    <value>Portafolio</value>
+  </data>
+  <data name="Processor.HeaderText" xml:space="preserve">
+    <value>Procesador</value>
+  </data>
+  <data name="Processor.HeaderTooltip" xml:space="preserve">
+    <value>Procesador</value>
+  </data>
+  <data name="Channel.HeaderText" xml:space="preserve">
+    <value>Canal</value>
+  </data>
+  <data name="Channel.HeaderTooltip" xml:space="preserve">
+    <value>Canal</value>
+  </data>
+  <data name="SalesRep.HeaderText" xml:space="preserve">
+    <value>Representante de Ventas</value>
+  </data>
+  <data name="SalesRep.HeaderTooltip" xml:space="preserve">
+    <value>Representante de Ventas</value>
+  </data>
+  <data name="SalesPerson.HeaderText" xml:space="preserve">
+    <value>Vendedor</value>
+  </data>
+  <data name="SalesPerson.HeaderTooltip" xml:space="preserve">
+    <value>Vendedor</value>
+  </data>
+  <data name="Provider.HeaderText" xml:space="preserve">
+    <value>Proveedor</value>
+  </data>
+  <data name="Provider.HeaderTooltip" xml:space="preserve">
+    <value>Proveedor</value>
+  </data>
+  <data name="Market.HeaderText" xml:space="preserve">
+    <value>Mercado</value>
+  </data>
+  <data name="Market.HeaderTooltip" xml:space="preserve">
+    <value>Mercado</value>
+  </data>
+  <data name="PRIN_Bank.HeaderText" xml:space="preserve">
+    <value>PRIN/banco</value>
+  </data>
+  <data name="PRIN_Bank.HeaderTooltip" xml:space="preserve">
+    <value>PRIN/banco</value>
+  </data>
+  <data name="EPICID.HeaderText" xml:space="preserve">
+    <value>Identificación de EPIC</value>
+  </data>
+  <data name="EPICID.HeaderTooltip" xml:space="preserve">
+    <value>Identificación de EPIC</value>
+  </data>
+  <data name="Office.HeaderText" xml:space="preserve">
+    <value>Oficina</value>
+  </data>
+  <data name="Office.HeaderTooltip" xml:space="preserve">
+    <value>Oficina</value>
+  </data>
+  <data name="SalesChannel.HeaderText" xml:space="preserve">
+    <value>Canal de ventas</value>
+  </data>
+  <data name="SalesChannel.HeaderTooltip" xml:space="preserve">
+    <value>Canal de ventas</value>
+  </data>
+  <data name="CoBrand.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CoBrand.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TimeEntered.HeaderTooltip" xml:space="preserve">
+    <value>Hora Ingresado</value>
+  </data>
+  <data name="TimeEntered.HtmlEncode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="SalesAgentManager.HeaderTooltip" xml:space="preserve">
+    <value>Gerente Regional de Agentes de Venta</value>
+  </data>
+  <data name="Placeholder1.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Placeholder1.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Placeholder2.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Placeholder2.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AgentID.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AgentID.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+</root>

@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ConnectionSettings>
+<!--When the app first starts, it inserts a log record with clientId = 0. This need to be specify-->
+  <Client id="0">
+    <ConnectionSetting name="SEC_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="LOG_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="RM_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN"   	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+  </Client>
+
+  <!--PPI-->
+  <Client id="15">
+    <ConnectionSetting name="SEC_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="LOG_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="RM_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN"  	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+  </Client>
+  
+  <!--FIS-->
+  <Client id="22">
+    <ConnectionSetting name="SEC_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="LOG_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="RM_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN"   	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=MULTI_PCI;Trusted_Connection=Yes;Connect Timeout=20;" />
+  </Client>
+  
+  <!--MPS-->
+  <Client id="23">
+    <ConnectionSetting name="SEC_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=MPS;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="RM_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=MPS;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=MPS;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=MPS;Trusted_Connection=Yes;Connect Timeout=20;" />
+  </Client>
+  
+  <!--ORI-->
+  <Client id="29">
+    <ConnectionSetting name="SEC_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="LOG_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="RM_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN"  	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=MULTI_PCI;Trusted_Connection=Yes;Connect Timeout=20;"/>
+  </Client>
+      
+  <!--TNBCI-->
+  <Client id="49">
+    <ConnectionSetting name="SEC_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="LOG_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="RM_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN"   	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=MULTI_PCI;Trusted_Connection=Yes;Connect Timeout=20;" />
+  </Client>
+
+  <!--IPMT-->
+  <Client id="65">
+    <ConnectionSetting name="SEC_DBCONN" connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="LOG_DBCONN" connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="RM_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" connectionString="Server=192.168.105.58,56793;Database=IPMT_PCI;uid=multi_pci2;pwd=0r1g1nal;Connect Timeout=20;"/>
+  </Client>
+
+  <!--PIVOT-->
+  <Client id="82">
+    <ConnectionSetting name="SEC_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="LOG_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="RM_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN"  	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=MULTI_PCI;Trusted_Connection=Yes;Connect Timeout=20;"/>
+  </Client>
+
+  <!--SNET-->
+  <Client id="86">
+    <ConnectionSetting name="SEC_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="LOG_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="RM_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN"  	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=MULTI_PCI;Trusted_Connection=Yes;Connect Timeout=20;" />
+  </Client>
+  
+  <!--TOTAL-->
+  <Client id="89">
+    <ConnectionSetting name="SEC_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="LOG_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="RM_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN"  	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=MULTI_PCI;Trusted_Connection=Yes;Connect Timeout=20;"/>
+  </Client>
+   
+  <!--FULTON-->
+  <Client id="91">
+    <ConnectionSetting name="SEC_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="LOG_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="RM_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN"  	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=MULTI_PCI;Trusted_Connection=Yes;Connect Timeout=20;"/>
+  </Client>
+  
+  <!--NTS-->
+  <Client id="95">
+    <ConnectionSetting name="SEC_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="LOG_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="RM_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN"  	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+  </Client>
+
+  <!--WRFC-->
+  <Client id="97">
+    <ConnectionSetting name="SEC_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="LOG_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="RM_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN"  	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+  </Client>
+  
+  <!--SignaPay-->
+  <Client id="113">
+	<ConnectionSetting name="SEC_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="LOG_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="RM_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="MS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="CS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="MB_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+  </Client>
+
+  <!--CLEARENT-->
+  <Client id="115">
+    <ConnectionSetting name="SEC_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="LOG_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="RM_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+  </Client>
+  
+  <!--PUREPORTAL-->
+  <Client id="118">
+	<ConnectionSetting name="SEC_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=AperiaSecurity;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="LOG_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=AperiaLogs;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="RM_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="MS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="CS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="MB_DBCONN"  	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="PCI_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=MULTI_PCI;Trusted_Connection=Yes;Connect Timeout=20;"/>
+	<ConnectionSetting name="LEAD_DBCONN"  	connectionString="Server=192.168.105.58,56793;Database=LEADs;Trusted_Connection=Yes;Connect Timeout=20;" />	
+  </Client>
+
+  <!--SOFTEK-->
+  <Client id="122">
+    <ConnectionSetting name="SEC_DBCONN"	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="LOG_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="RM_DBCONN"  	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN"  	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN"  	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN"  	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=MULTI_PCI;Trusted_Connection=Yes;Connect Timeout=20;"/>
+  </Client>
+
+  <!--CAYAN-->
+  <Client id="126">
+    <ConnectionSetting name="SEC_DBCONN"	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="LOG_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="RM_DBCONN"  	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN"  	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN"  	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN"  	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=MULTI_PCI;Trusted_Connection=Yes;Connect Timeout=20;"/>
+  </Client>
+  
+  <!--SPHERE-->
+  <Client id="144">
+     <ConnectionSetting name="SEC_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+     <ConnectionSetting name="LOG_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+     <ConnectionSetting name="RM_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+     <ConnectionSetting name="MS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+     <ConnectionSetting name="MB_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+     <ConnectionSetting name="CS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+     <ConnectionSetting name="PCI_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=MULTI_PCI;Trusted_Connection=Yes;Connect Timeout=20;" />
+  </Client>
+  
+  <!--RS2-->
+  <Client id="152">
+    <ConnectionSetting name="SEC_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="LOG_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="RM_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN"  	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=MULTI_PCI;Trusted_Connection=Yes;Connect Timeout=20;"/>
+  </Client>
+  
+  <!--PUREPORTALDEMO-->
+  <Client id="998">
+	<ConnectionSetting name="SEC_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=AperiaSecurity;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="LOG_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=AperiaLogs;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="RM_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="MS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="CS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="MB_DBCONN"  	connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="PCI_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=MULTI_PCI;Trusted_Connection=Yes;Connect Timeout=20;"/>
+	<ConnectionSetting name="LEAD_DBCONN"  	connectionString="Server=192.168.105.58,56793;Database=LEADs;Trusted_Connection=Yes;Connect Timeout=20;" />	
+  </Client>
+
+  <!--FIS DEMO-->
+  <Client id="1000">
+    <ConnectionSetting name="SEC_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=FIS_DEMO;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="RM_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=FIS_DEMO;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=FIS_DEMO;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=FIS_DEMO;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=FIS_DEMO;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN"   	connectionString="Server=192.168.105.58,56793;Database=MULTI_PCI;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="LOG_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=FIS_DEMO;Trusted_Connection=Yes;Connect Timeout=20;" />
+  </Client>
+  
+  <!--RISK FULTON DEMO-->
+  <Client id="58">
+    <ConnectionSetting name="SEC_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=FIS_DEMO;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="LOG_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=FIS_DEMO;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="RM_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=FIS_DEMO;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="MS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=FIS_DEMO;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="CS_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=FIS_DEMO;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="MB_DBCONN"   	connectionString="Server=192.168.105.58,56793;Database=FIS_DEMO;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" 	connectionString="Server=192.168.105.58,56793;Database=MULTI_PCI;Trusted_Connection=Yes;Connect Timeout=20;" />
+  </Client>
+
+  <!--MLS/Titanium-->
+  <Client id="39">
+	<ConnectionSetting name="SEC_DBCONN" connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />  
+	<ConnectionSetting name="LOG_DBCONN" connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />  
+	<ConnectionSetting name="RM_DBCONN" connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />  
+	<ConnectionSetting name="MS_DBCONN" connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />  
+	<ConnectionSetting name="MB_DBCONN" connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />  
+	<ConnectionSetting name="CS_DBCONN" connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+  </Client>
+  
+  <!--PAYA-->
+  <Client id="76">
+	<ConnectionSetting name="SEC_DBCONN" connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />  
+	<ConnectionSetting name="LOG_DBCONN" connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />  
+	<ConnectionSetting name="RM_DBCONN" connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />  
+	<ConnectionSetting name="MS_DBCONN" connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />  
+	<ConnectionSetting name="MB_DBCONN" connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />  
+	<ConnectionSetting name="CS_DBCONN" connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="PCI_DBCONN" connectionString="Server=192.168.105.58,56793;Database=MULTI_PCI;Trusted_Connection=Yes;Connect Timeout=20;"/>
+  </Client>
+  
+  <!--FIPS-->
+  <Client id="69">
+	<ConnectionSetting name="SEC_DBCONN" connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="LOG_DBCONN" connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="RM_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="MS_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="MB_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="CS_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="PCI_DBCONN" connectionString="Server=192.168.105.58,56793;Database=MULTI_PCI;Trusted_Connection=Yes;Connect Timeout=20;"/>
+  </Client>
+  
+  <!--DYNAMIC-->
+  <Client id="176">
+	<ConnectionSetting name="SEC_DBCONN" connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="LOG_DBCONN" connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="RM_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="MS_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="MB_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="CS_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="PCI_DBCONN" connectionString="Server=192.168.105.58,56793;Database=MULTI_PCI;Trusted_Connection=Yes;Connect Timeout=20;"/>
+  </Client>
+  
+  <Client id="165">
+	<ConnectionSetting name="SEC_DBCONN" connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="LOG_DBCONN" connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="RM_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="MS_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="MB_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="CS_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="PCI_DBCONN" connectionString="Server=192.168.105.58,56793;Database=MULTI_PCI;Trusted_Connection=Yes;Connect Timeout=20;"/>
+  </Client>
+  
+  <Client id="170">
+	<ConnectionSetting name="SEC_DBCONN" connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+  	<ConnectionSetting name="LOG_DBCONN" connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="RM_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="MS_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="MB_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="CS_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="PCI_DBCONN" connectionString="Server=192.168.105.58,56793;Database=MULTI_PCI;Trusted_Connection=Yes;Connect Timeout=20;"/>
+  </Client>
+  
+  <Client id="181">
+	<ConnectionSetting name="SEC_DBCONN" connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="LOG_DBCONN" connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="RM_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="MS_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="MB_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="CS_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="PCI_DBCONN" connectionString="Server=192.168.105.58,56793;Database=MULTI_PCI;Trusted_Connection=Yes;Connect Timeout=20;"/>
+  </Client>
+  
+  <Client id="191">
+	<ConnectionSetting name="SEC_DBCONN" connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="LOG_DBCONN" connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="RM_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="MS_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="CS_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="MB_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="PCI_DBCONN" connectionString="Server=192.168.105.58,56793;Database=MULTI_PCI;Trusted_Connection=Yes;Connect Timeout=20;"/>
+  </Client>
+  
+  <Client id="158">
+	<ConnectionSetting name="SEC_DBCONN" connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="LOG_DBCONN" connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="RM_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="MS_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="MB_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="CS_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=FIS;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="PCI_DBCONN" connectionString="Server=192.168.105.58,56793;Database=MULTI_PCI;Trusted_Connection=Yes;Connect Timeout=20;"/>
+  </Client>
+  
+  <Client id="187">
+	<ConnectionSetting name="SEC_DBCONN" connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="LOG_DBCONN" connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="RM_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="MS_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="MB_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="CS_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+  </Client>
+  
+  <Client id="186">
+	<ConnectionSetting name="SEC_DBCONN" connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="LOG_DBCONN" connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="RM_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="MS_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="MB_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="CS_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+  </Client>
+  
+  <Client id="200">
+	<ConnectionSetting name="SEC_DBCONN" connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="LOG_DBCONN" connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="RM_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="MS_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="MB_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+	<ConnectionSetting name="CS_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+  </Client>
+
+	<Client id="218">
+		<ConnectionSetting name="SEC_DBCONN" connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+		<ConnectionSetting name="LOG_DBCONN" connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+		<ConnectionSetting name="RM_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+		<ConnectionSetting name="MS_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+		<ConnectionSetting name="MB_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+		<ConnectionSetting name="CS_DBCONN"  connectionString="Server=192.168.105.58,56793;Database=VisionWeb;Trusted_Connection=Yes;Connect Timeout=20;" />
+    <ConnectionSetting name="PCI_DBCONN" connectionString="Server=192.168.105.58,56793;Database=MULTI_PCI;Trusted_Connection=Yes;Connect Timeout=20;"/>
+	</Client>
+</ConnectionSettings>

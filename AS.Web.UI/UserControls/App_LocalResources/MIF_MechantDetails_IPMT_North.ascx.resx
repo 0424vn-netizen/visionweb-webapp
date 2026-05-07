@@ -1,0 +1,1140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ABA1.CellTitle" xml:space="preserve">
+    <value>ABA 1 (Encrypted Routing Number):</value>
+  </data>
+  <data name="AcceptSigCapRej.CellTitle" xml:space="preserve">
+    <value>Sig-Cap Accept Rejects:</value>
+  </data>
+  <data name="ACHDelayDays.CellTitle" xml:space="preserve">
+    <value>ACH Delay Days:</value>
+  </data>
+  <data name="ACHSuspenseHoldFlag.CellTitle" xml:space="preserve">
+    <value>ACH Suspense Hold Flag:</value>
+  </data>
+  <data name="ACHSuspenseReleaseFlag.CellTitle" xml:space="preserve">
+    <value>ACH Suspense Release Flag:</value>
+  </data>
+  <data name="ActivationDate.CellTitle" xml:space="preserve">
+    <value>Activation Date:</value>
+  </data>
+  <data name="AffiliateAddress.CellTitle" xml:space="preserve">
+    <value>Address:</value>
+  </data>
+  <data name="AffiliateCity.CellTitle" xml:space="preserve">
+    <value>City:</value>
+  </data>
+  <data name="AffiliateState.CellTitle" xml:space="preserve">
+    <value>State:</value>
+  </data>
+  <data name="AlianceKeyIDLevel.CellTitle" xml:space="preserve">
+    <value>Alliance Key ID/Label:</value>
+  </data>
+  <data name="AmexDiscountOption.CellTitle" xml:space="preserve">
+    <value>AMEX Discount option:</value>
+  </data>
+  <data name="ApprovalDate.CellTitle" xml:space="preserve">
+    <value>Approval Date:</value>
+  </data>
+  <data name="Attention.CellTitle" xml:space="preserve">
+    <value>Attention:</value>
+  </data>
+  <data name="AuthorizationLimit.CellTitle" xml:space="preserve">
+    <value>Authorization Limit:</value>
+  </data>
+  <data name="AuthType.CellTitle" xml:space="preserve">
+    <value>Auth Type:</value>
+  </data>
+  <data name="AutoBillback.CellTitle" xml:space="preserve">
+    <value>Auto Billback:</value>
+  </data>
+  <data name="AutoRebate.CellTitle" xml:space="preserve">
+    <value>Auto Rebate:</value>
+  </data>
+  <data name="BankBranch.CellTitle" xml:space="preserve">
+    <value>Bank Branch:</value>
+  </data>
+  <data name="BankwireBene.CellTitle" xml:space="preserve">
+    <value>Bankwire Bene:</value>
+  </data>
+  <data name="BankwireBeneBank.CellTitle" xml:space="preserve">
+    <value>Bankwire Bene Bank:</value>
+  </data>
+  <data name="BankwireInfoForBene.CellTitle" xml:space="preserve">
+    <value>Bankwire Info For Bene:</value>
+  </data>
+  <data name="BillBackOn.CellTitle" xml:space="preserve">
+    <value>Bill Back On:</value>
+  </data>
+  <data name="BillbackRounding.CellTitle" xml:space="preserve">
+    <value>Bill Back Rounding:</value>
+  </data>
+  <data name="BranchDepInd.CellTitle" xml:space="preserve">
+    <value>Branch Dep Ind:</value>
+  </data>
+  <data name="BranchDepositor.CellTitle" xml:space="preserve">
+    <value>Branch Depositor:</value>
+  </data>
+  <data name="BundleID.CellTitle" xml:space="preserve">
+    <value>Bundle Id:</value>
+  </data>
+  <data name="BUWEffDt.CellTitle" xml:space="preserve">
+    <value>BUW Effective Date:</value>
+  </data>
+  <data name="BUWNotification.CellTitle" xml:space="preserve">
+    <value>BUW Notification:</value>
+  </data>
+  <data name="BUWNotificationDate.CellTitle" xml:space="preserve">
+    <value>BUW Notification Date:</value>
+  </data>
+  <data name="BUWNotificationFlag.CellTitle" xml:space="preserve">
+    <value>BUW Notification Flag:</value>
+  </data>
+  <data name="BUWReasonCd.CellTitle" xml:space="preserve">
+    <value>BUW Reason Code:</value>
+  </data>
+  <data name="BUWStopDt.CellTitle" xml:space="preserve">
+    <value>BUW Stop Date:</value>
+  </data>
+  <data name="CardholderID.CellTitle" xml:space="preserve">
+    <value>TMP Cardholder Id:</value>
+  </data>
+  <data name="CashAdvanceVend.CellTitle" xml:space="preserve">
+    <value>Cash Advance Vend:</value>
+  </data>
+  <data name="ChargebackRetMediaAddress.CellTitle" xml:space="preserve">
+    <value>Chargeback/Ret Media Address:</value>
+  </data>
+  <data name="ClearBankEffectiveDate1.CellTitle" xml:space="preserve">
+    <value>Effective Date:</value>
+  </data>
+  <data name="ClearBankEffectiveDate2.CellTitle" xml:space="preserve">
+    <value>Effective Date:</value>
+  </data>
+  <data name="ClearingbankCode_Description1.CellTitle" xml:space="preserve">
+    <value>Clearing Bank:</value>
+  </data>
+  <data name="ClearingbankCode_Description2.CellTitle" xml:space="preserve">
+    <value>Clearing Bank2:</value>
+  </data>
+  <data name="ClearingBankICANum.CellTitle" xml:space="preserve">
+    <value>Clearingbank ICA Num:</value>
+  </data>
+  <data name="ClearingBankPlatformCode.CellTitle" xml:space="preserve">
+    <value>Clearingbank Platform Code:</value>
+  </data>
+  <data name="ClosedDate.CellTitle" xml:space="preserve">
+    <value>Closed Date:</value>
+  </data>
+  <data name="CloseReasonCode.CellTitle" xml:space="preserve">
+    <value>Close Reason Code:</value>
+  </data>
+  <data name="ConfirmationIndicator.CellTitle" xml:space="preserve">
+    <value>Confirmation Indicator:</value>
+  </data>
+  <data name="Contact.CellTitle" xml:space="preserve">
+    <value>Contact (First Middle Last):</value>
+  </data>
+  <data name="ContractDate.CellTitle" xml:space="preserve">
+    <value>Contract Date:</value>
+  </data>
+  <data name="ConvenienceFeeABA_DDA.CellTitle" xml:space="preserve">
+    <value>Convenience Fee Funding:</value>
+  </data>
+  <data name="CorporateAddress.CellTitle" xml:space="preserve">
+    <value>Corporate Address:</value>
+  </data>
+  <data name="CorporateAttention.CellTitle" xml:space="preserve">
+    <value>Corporate Attention:</value>
+  </data>
+  <data name="CorporateCity.CellTitle" xml:space="preserve">
+    <value>Corporate City:</value>
+  </data>
+  <data name="CorporateCountry.CellTitle" xml:space="preserve">
+    <value>Corporate Country:</value>
+  </data>
+  <data name="CorporateName.CellTitle" xml:space="preserve">
+    <value>Corporate Name:</value>
+  </data>
+  <data name="CorporatePostalZip.CellTitle" xml:space="preserve">
+    <value>Corporate Postal Zip:</value>
+  </data>
+  <data name="CorporateTelephone.CellTitle" xml:space="preserve">
+    <value>Corporate Telephone:</value>
+  </data>
+  <data name="CP2100EffectiveDate.CellTitle" xml:space="preserve">
+    <value>CP2100 Effective Date:</value>
+  </data>
+  <data name="CP2100ReceivedDate.CellTitle" xml:space="preserve">
+    <value>CP2100 Received Date:</value>
+  </data>
+  <data name="CreditBINInclusion.CellTitle" xml:space="preserve">
+    <value>Credit BIN Inclusion:</value>
+  </data>
+  <data name="CreditLimit.CellTitle" xml:space="preserve">
+    <value>Credit limit:</value>
+  </data>
+  <data name="CumCrd.CellTitle" xml:space="preserve">
+    <value>CUM Crd:</value>
+  </data>
+  <data name="DailyDate.CellTitle" xml:space="preserve">
+    <value>Daily Date:</value>
+  </data>
+  <data name="DailyLimit.CellTitle" xml:space="preserve">
+    <value>Day Limit:</value>
+  </data>
+  <data name="DailyOverride.CellTitle" xml:space="preserve">
+    <value>Daily Override:</value>
+  </data>
+  <data name="DBAName.CellTitle" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="DDA1.CellTitle" xml:space="preserve">
+    <value>DDA 1:</value>
+  </data>
+  <data name="DelayDays.CellTitle" xml:space="preserve">
+    <value>Delay days:</value>
+  </data>
+  <data name="DelayedBillingStartDate.CellTitle" xml:space="preserve">
+    <value>Delayed Billing Start Date:</value>
+  </data>
+  <data name="DeliveryMethod.CellTitle" xml:space="preserve">
+    <value>Delivery Method:</value>
+  </data>
+  <data name="DiscoverDiscountOption.CellTitle" xml:space="preserve">
+    <value>Discover Discount option:</value>
+  </data>
+  <data name="DisputeDisposition.CellTitle" xml:space="preserve">
+    <value>Dispute Disposition:</value>
+  </data>
+  <data name="Domestic_Foreign.CellTitle" xml:space="preserve">
+    <value>Domestic/Foreign:</value>
+  </data>
+  <data name="EMVIndicator.CellTitle" xml:space="preserve">
+    <value>EMV Indicator:</value>
+  </data>
+  <data name="EncryptionType.CellTitle" xml:space="preserve">
+    <value>Encryption Type:</value>
+  </data>
+  <data name="EnhancedReporting.CellTitle" xml:space="preserve">
+    <value>Enhanced Reporting:</value>
+  </data>
+  <data name="ETFAmount.CellTitle" xml:space="preserve">
+    <value>ETF Amount:</value>
+  </data>
+  <data name="ETFFlag.CellTitle" xml:space="preserve">
+    <value>ETF Flag:</value>
+  </data>
+  <data name="ETFTermDate.CellTitle" xml:space="preserve">
+    <value>ETF Term Date:</value>
+  </data>
+  <data name="ExcessiveChargebackInd.CellTitle" xml:space="preserve">
+    <value>Excessive Chargeback Ind:</value>
+  </data>
+  <data name="ExclusionIndicator.CellTitle" xml:space="preserve">
+    <value>Exclusion Indicator:</value>
+  </data>
+  <data name="FANFInd.CellTitle" xml:space="preserve">
+    <value>FANF Ind:</value>
+  </data>
+  <data name="FedBUWPercentage.CellTitle" xml:space="preserve">
+    <value>Fed BUW Percentage:</value>
+  </data>
+  <data name="FireSafetyInd.CellTitle" xml:space="preserve">
+    <value>Fire Safety Ind:</value>
+  </data>
+  <data name="FirstPostingDate.CellTitle" xml:space="preserve">
+    <value>First Posting Date:</value>
+  </data>
+  <data name="FiscalDate.CellTitle" xml:space="preserve">
+    <value>Fiscal Date:</value>
+  </data>
+  <data name="FormCertStat.CellTitle" xml:space="preserve">
+    <value>Form Cert Stat:</value>
+  </data>
+  <data name="FormCertStatRcvdDt.CellTitle" xml:space="preserve">
+    <value>Form Cert Stat Received Date:</value>
+  </data>
+  <data name="FraudScoring.CellTitle" xml:space="preserve">
+    <value>Fraud Scoring:</value>
+  </data>
+  <data name="FraudScoringEffDate.CellTitle" xml:space="preserve">
+    <value>Fraud Scoring Effective Date:</value>
+  </data>
+  <data name="FundBankCode_Description1.CellTitle" xml:space="preserve">
+    <value>Funding Bank:</value>
+  </data>
+  <data name="FundBankCode_Description2.CellTitle" xml:space="preserve">
+    <value>Funding Bank 2:</value>
+  </data>
+  <data name="FundBankEffectiveDate1.CellTitle" xml:space="preserve">
+    <value>Effective Date:</value>
+  </data>
+  <data name="FundBankEffectiveDate2.CellTitle" xml:space="preserve">
+    <value>Effective Date:</value>
+  </data>
+  <data name="FundingAdvanceAmount.CellTitle" xml:space="preserve">
+    <value>Fund Advance Amt:</value>
+  </data>
+  <data name="FundingNotificationContact.CellTitle" xml:space="preserve">
+    <value>Contact:</value>
+  </data>
+  <data name="FundingNotificationFax.CellTitle" xml:space="preserve">
+    <value>Fax #:</value>
+  </data>
+  <data name="FundingNotificationPhone.CellTitle" xml:space="preserve">
+    <value>Phone #:</value>
+  </data>
+  <data name="FundingNotificatonMthd.CellTitle" xml:space="preserve">
+    <value>Funding Notification Mthd:</value>
+  </data>
+  <data name="FundingPayToMerchant.CellTitle" xml:space="preserve">
+    <value>Fund Pay To Merch:</value>
+  </data>
+  <data name="FundingSplitPct.CellTitle" xml:space="preserve">
+    <value>Fund Split Pct:</value>
+  </data>
+  <data name="HardCopyReportDestination.CellTitle" xml:space="preserve">
+    <value>Hardcopy Report Destination:</value>
+  </data>
+  <data name="HoldChargebacks.CellTitle" xml:space="preserve">
+    <value>Hold Chargebacks:</value>
+  </data>
+  <data name="HostedRecurringPymts.CellTitle" xml:space="preserve">
+    <value>Hosted Recurring Pymts:</value>
+  </data>
+  <data name="ImprinterQtyToBill.CellTitle" xml:space="preserve">
+    <value>Imprinter Qty to Bill:</value>
+  </data>
+  <data name="IRSFilingName.CellTitle" xml:space="preserve">
+    <value>IRS Filing Name:</value>
+  </data>
+  <data name="Last30DayDate.CellTitle" xml:space="preserve">
+    <value>30 Day Date:</value>
+  </data>
+  <data name="Last30DayLimit.CellTitle" xml:space="preserve">
+    <value>30 Day Limit:</value>
+  </data>
+  <data name="Last30DayOverride.CellTitle" xml:space="preserve">
+    <value>30 Day Override:</value>
+  </data>
+  <data name="Last4ABA.CellTitle" xml:space="preserve">
+    <value>Last 4 ABA:</value>
+  </data>
+  <data name="Last4DDANumber.CellTitle" xml:space="preserve">
+    <value>Last4 DDA Number:</value>
+  </data>
+  <data name="Last4TaxId.CellTitle" xml:space="preserve">
+    <value>Last 4 Tax Id:</value>
+  </data>
+  <data name="LastCancellationDate.CellTitle" xml:space="preserve">
+    <value>Last Cancellation date:</value>
+  </data>
+  <data name="LastChangeDate.CellTitle" xml:space="preserve">
+    <value>Last Change Date:</value>
+  </data>
+  <data name="LastCharge.CellTitle" xml:space="preserve">
+    <value>Last Charge:</value>
+  </data>
+  <data name="LastPostingDate.CellTitle" xml:space="preserve">
+    <value>Last Posting Date:</value>
+  </data>
+  <data name="LastSettleDate.CellTitle" xml:space="preserve">
+    <value>Last Settle Date:</value>
+  </data>
+  <data name="LegalName.CellTitle" xml:space="preserve">
+    <value>Legal Name:</value>
+  </data>
+  <data name="Literal1.Text" xml:space="preserve">
+    <value>Merchant Information</value>
+  </data>
+  <data name="Literal10.Text" xml:space="preserve">
+    <value>Fax #:</value>
+  </data>
+  <data name="Literal11.Text" xml:space="preserve">
+    <value>Channel Name:</value>
+  </data>
+  <data name="Literal12.Text" xml:space="preserve">
+    <value>Zip 1:</value>
+  </data>
+  <data name="Literal13.Text" xml:space="preserve">
+    <value>Primary Email:</value>
+  </data>
+  <data name="Literal14.Text" xml:space="preserve">
+    <value>DBA Name:</value>
+  </data>
+  <data name="Literal15.Text" xml:space="preserve">
+    <value>Zip 2:</value>
+  </data>
+  <data name="Literal16.Text" xml:space="preserve">
+    <value>Descriptor Name:</value>
+  </data>
+  <data name="Literal17.Text" xml:space="preserve">
+    <value>Attention:</value>
+  </data>
+  <data name="Literal18.Text" xml:space="preserve">
+    <value>Country:</value>
+  </data>
+  <data name="Literal19.Text" xml:space="preserve">
+    <value>Descriptor Phone:</value>
+  </data>
+  <data name="Literal2.Text" xml:space="preserve">
+    <value>Internal Merchant ID:</value>
+  </data>
+  <data name="Literal20.Text" xml:space="preserve">
+    <value>URL:</value>
+  </data>
+  <data name="Literal21.Text" xml:space="preserve">
+    <value>Status:</value>
+  </data>
+  <data name="Literal22.Text" xml:space="preserve">
+    <value>Descriptor City:</value>
+  </data>
+  <data name="Literal23.Text" xml:space="preserve">
+    <value>Paperless Merchant Indicator:</value>
+  </data>
+  <data name="Literal24.Text" xml:space="preserve">
+    <value>Store #:</value>
+  </data>
+  <data name="Literal25.Text" xml:space="preserve">
+    <value>Descriptor State:</value>
+  </data>
+  <data name="Literal26.Text" xml:space="preserve">
+    <value>Seasonal:</value>
+  </data>
+  <data name="Literal28.Text" xml:space="preserve">
+    <value>Hierarchy Information</value>
+  </data>
+  <data name="Literal29.Text" xml:space="preserve">
+    <value>Client Name:</value>
+  </data>
+  <data name="Literal3.Text" xml:space="preserve">
+    <value>Address:</value>
+  </data>
+  <data name="Literal30.Text" xml:space="preserve">
+    <value>Chain:</value>
+  </data>
+  <data name="Literal31.Text" xml:space="preserve">
+    <value>Program Code</value>
+  </data>
+  <data name="Literal32.Text" xml:space="preserve">
+    <value>Client Login:</value>
+  </data>
+  <data name="Literal33.Text" xml:space="preserve">
+    <value>Sales Agent:</value>
+  </data>
+  <data name="Literal34.Text" xml:space="preserve">
+    <value>Program Name</value>
+  </data>
+  <data name="Literal35.Text" xml:space="preserve">
+    <value>Insert Timestamp</value>
+  </data>
+  <data name="Literal36.Text" xml:space="preserve">
+    <value>Marker Bank:</value>
+  </data>
+  <data name="Literal37.Text" xml:space="preserve">
+    <value>Entitlement Sales Agent:</value>
+  </data>
+  <data name="Literal38.Text" xml:space="preserve">
+    <value>Update Timestamp</value>
+  </data>
+  <data name="Literal39.Text" xml:space="preserve">
+    <value>Business:</value>
+  </data>
+  <data name="Literal4.Text" xml:space="preserve">
+    <value>Phone:</value>
+  </data>
+  <data name="Literal40.Text" xml:space="preserve">
+    <value>Relationship Mananger:</value>
+  </data>
+  <data name="Literal41.Text" xml:space="preserve">
+    <value>Deposits:</value>
+  </data>
+  <data name="Literal42.Text" xml:space="preserve">
+    <value>Bank:</value>
+  </data>
+  <data name="Literal43.Text" xml:space="preserve">
+    <value>Master Sales Agent:</value>
+  </data>
+  <data name="Literal44.Text" xml:space="preserve">
+    <value>DDAs</value>
+  </data>
+  <data name="Literal45.Text" xml:space="preserve">
+    <value>Transaction Rollup</value>
+  </data>
+  <data name="Literal46.Text" xml:space="preserve">
+    <value>Agent:</value>
+  </data>
+  <data name="Literal47.Text" xml:space="preserve">
+    <value>Branch Number:</value>
+  </data>
+  <data name="Literal48.Text" xml:space="preserve">
+    <value>Divert Funding</value>
+  </data>
+  <data name="Literal49.Text" xml:space="preserve">
+    <value>Corp:</value>
+  </data>
+  <data name="Literal5.Text" xml:space="preserve">
+    <value>External Merchant ID:</value>
+  </data>
+  <data name="Literal50.Text" xml:space="preserve">
+    <value>Non Bank Adjustment:</value>
+  </data>
+  <data name="Literal51.Text" xml:space="preserve">
+    <value>Deposit Adjustment:</value>
+  </data>
+  <data name="Literal52.Text" xml:space="preserve">
+    <value>Chargebacks:</value>
+  </data>
+  <data name="Literal53.Text" xml:space="preserve">
+    <value>Chargeback/reversal:</value>
+  </data>
+  <data name="Literal54.Text" xml:space="preserve">
+    <value>Interchange/Amts:</value>
+  </data>
+  <data name="Literal55.Text" xml:space="preserve">
+    <value>Disc./Serv:</value>
+  </data>
+  <data name="Literal56.Text" xml:space="preserve">
+    <value>Fees:</value>
+  </data>
+  <data name="Literal57.Text" xml:space="preserve">
+    <value>Financial Adjustment:</value>
+  </data>
+  <data name="Literal6.Text" xml:space="preserve">
+    <value>City:</value>
+  </data>
+  <data name="Literal68.Text" xml:space="preserve">
+    <value>Program Details</value>
+  </data>
+  <data name="Literal69.Text" xml:space="preserve">
+    <value>Funding Category</value>
+  </data>
+  <data name="Literal7.Text" xml:space="preserve">
+    <value>Fax Ind:</value>
+  </data>
+  <data name="Literal8.Text" xml:space="preserve">
+    <value>External Agent Ind:</value>
+  </data>
+  <data name="Literal9.Text" xml:space="preserve">
+    <value>State:</value>
+  </data>
+  <data name="MagneticStripeLoyality.CellTitle" xml:space="preserve">
+    <value>Magnetic Stripe Loyalty:</value>
+  </data>
+  <data name="MasterCardCA.CellTitle" xml:space="preserve">
+    <value>Mastercard CA:</value>
+  </data>
+  <data name="MCDiscountOption.CellTitle" xml:space="preserve">
+    <value>M/C Discount option:</value>
+  </data>
+  <data name="MCIRAMEligible.CellTitle" xml:space="preserve">
+    <value>MC IRAM Eligible:</value>
+  </data>
+  <data name="MCMID.CellTitle" xml:space="preserve">
+    <value>MC MID:</value>
+  </data>
+  <data name="MediaType.CellTitle" xml:space="preserve">
+    <value>Media Type:</value>
+  </data>
+  <data name="MemBilledDate.CellTitle" xml:space="preserve">
+    <value>Membership Billed Date:</value>
+  </data>
+  <data name="MerchantPhone.CellTitle" xml:space="preserve">
+    <value>Phone:</value>
+  </data>
+  <data name="MerchantTypeCode.CellTitle" xml:space="preserve">
+    <value>Merchant Type Code:</value>
+  </data>
+  <data name="MgmtFeeDate.CellTitle" xml:space="preserve">
+    <value>Mgmt Fee Date</value>
+  </data>
+  <data name="MinAmount.CellTitle" xml:space="preserve">
+    <value>Min Amount:</value>
+  </data>
+  <data name="MinReserve.CellTitle" xml:space="preserve">
+    <value>Min Reserve:</value>
+  </data>
+  <data name="MotoEcommerce.CellTitle" xml:space="preserve">
+    <value>MOTO/Ecommerce:</value>
+  </data>
+  <data name="MultiCurrency.CellTitle" xml:space="preserve">
+    <value>Multi-Currency:</value>
+  </data>
+  <data name="MultiPayTokenHierarchyLevel.CellTitle" xml:space="preserve">
+    <value>Multi Pay Token Hierarchy Level:</value>
+  </data>
+  <data name="MultiPayTokenOverrideInd.CellTitle" xml:space="preserve">
+    <value>Multi Pay Token Override Ind:</value>
+  </data>
+  <data name="NachDate1.CellTitle" xml:space="preserve">
+    <value>Nach date 1:</value>
+  </data>
+  <data name="NotificationInd.CellTitle" xml:space="preserve">
+    <value>Notification Ind:</value>
+  </data>
+  <data name="OffsetInd1.CellTitle" xml:space="preserve">
+    <value>Offset Ind 1:</value>
+  </data>
+  <data name="Participation.CellTitle" xml:space="preserve">
+    <value>Participation:</value>
+  </data>
+  <data name="PayCode.CellTitle" xml:space="preserve">
+    <value>Pay Code:</value>
+  </data>
+  <data name="PayCycle.CellTitle" xml:space="preserve">
+    <value>Paycycle:</value>
+  </data>
+  <data name="PayeeFlag.CellTitle" xml:space="preserve">
+    <value>Payee Flag:</value>
+  </data>
+  <data name="PayeezyEffectiveDate.CellTitle" xml:space="preserve">
+    <value>Payeezy Effective Date:</value>
+  </data>
+  <data name="PayeezyIndicator.CellTitle" xml:space="preserve">
+    <value>Payeezy Indicator:</value>
+  </data>
+  <data name="PreNoteDays.CellTitle" xml:space="preserve">
+    <value>Pre-Note Days:</value>
+  </data>
+  <data name="PreNoteInd.CellTitle" xml:space="preserve">
+    <value>Pre-Note Ind:</value>
+  </data>
+  <data name="PrimaryNetwork.CellTitle" xml:space="preserve">
+    <value>Primary Network:</value>
+  </data>
+  <data name="ProcessingEmailContactName1.CellTitle" xml:space="preserve">
+    <value>Contact Name 1:</value>
+  </data>
+  <data name="ProcessingEmailContactName2.CellTitle" xml:space="preserve">
+    <value>Contact Name 2:</value>
+  </data>
+  <data name="ProcessingEmailContactName3.CellTitle" xml:space="preserve">
+    <value>Contact Name 3:</value>
+  </data>
+  <data name="ProcessingEmailContactName4.CellTitle" xml:space="preserve">
+    <value>Contact Name 4:</value>
+  </data>
+  <data name="ProcessingEmailContactName5.CellTitle" xml:space="preserve">
+    <value>Contact Name 5:</value>
+  </data>
+  <data name="ProcessingEmailContactName6.CellTitle" xml:space="preserve">
+    <value>Contact Name 6:</value>
+  </data>
+  <data name="ProcessingEmailContactPhone1.CellTitle" xml:space="preserve">
+    <value>Phone No 1:</value>
+  </data>
+  <data name="ProcessingEmailContactPhone2.CellTitle" xml:space="preserve">
+    <value>Phone No 2:</value>
+  </data>
+  <data name="ProcessingEmailContactPhone3.CellTitle" xml:space="preserve">
+    <value>Phone No 3:</value>
+  </data>
+  <data name="ProcessingEmailContactPhone4.CellTitle" xml:space="preserve">
+    <value>Phone No 4:</value>
+  </data>
+  <data name="ProcessingEmailContactPhone5.CellTitle" xml:space="preserve">
+    <value>Phone No 5:</value>
+  </data>
+  <data name="ProcessingEmailContactPhone6.CellTitle" xml:space="preserve">
+    <value>Phone No 6:</value>
+  </data>
+  <data name="ProcessingEmailTypeCD1.CellTitle" xml:space="preserve">
+    <value>Email Type Code 1:</value>
+  </data>
+  <data name="ProcessingEmailTypeCD2.CellTitle" xml:space="preserve">
+    <value>Email Type Code 2:</value>
+  </data>
+  <data name="ProcessingEmailTypeCD3.CellTitle" xml:space="preserve">
+    <value>Email Type Code 3:</value>
+  </data>
+  <data name="ProcessingEmailTypeCD4.CellTitle" xml:space="preserve">
+    <value>Email Type Code 4:</value>
+  </data>
+  <data name="ProcessingEmailTypeCD5.CellTitle" xml:space="preserve">
+    <value>Email Type Code 5:</value>
+  </data>
+  <data name="ProcessingEmailTypeCD6.CellTitle" xml:space="preserve">
+    <value>Email Type Code 6:</value>
+  </data>
+  <data name="ProcessingEmailVal1.CellTitle" xml:space="preserve">
+    <value>Email/URL Address 1:</value>
+  </data>
+  <data name="ProcessingEmailVal2.CellTitle" xml:space="preserve">
+    <value>Email/URL Address 2:</value>
+  </data>
+  <data name="ProcessingEmailVal3.CellTitle" xml:space="preserve">
+    <value>Email/URL Address 3:</value>
+  </data>
+  <data name="ProcessingEmailVal4.CellTitle" xml:space="preserve">
+    <value>Email/URL Address 4:</value>
+  </data>
+  <data name="ProcessingEmailVal5.CellTitle" xml:space="preserve">
+    <value>Email/URL Address 5:</value>
+  </data>
+  <data name="ProcessingEmailVal6.CellTitle" xml:space="preserve">
+    <value>Email/URL Address 6:</value>
+  </data>
+  <data name="ProgramRegistrationID.CellTitle" xml:space="preserve">
+    <value>Program Registration Id:</value>
+  </data>
+  <data name="PTSIndicator.CellTitle" xml:space="preserve">
+    <value>PTS Indicator:</value>
+  </data>
+  <data name="PurchLrgTkt.CellTitle" xml:space="preserve">
+    <value>Purchase Lrg.Tkt:</value>
+  </data>
+  <data name="QuasiCashAcceptFlag.CellTitle" xml:space="preserve">
+    <value>Quasi Cash Accept Flag:</value>
+  </data>
+  <data name="RebateOn.CellTitle" xml:space="preserve">
+    <value>Rebate On:</value>
+  </data>
+  <data name="RecapCode.CellTitle" xml:space="preserve">
+    <value>Recap Code:</value>
+  </data>
+  <data name="RejectNotification.CellTitle" xml:space="preserve">
+    <value>Reject Notification:</value>
+  </data>
+  <data name="ReportFreq.CellTitle" xml:space="preserve">
+    <value>Report Freq:</value>
+  </data>
+  <data name="RetailerRateTable.CellTitle" xml:space="preserve">
+    <value>Retailer Rate Table:</value>
+  </data>
+  <data name="RevenueBooked.CellTitle" xml:space="preserve">
+    <value>Revenue Booked:</value>
+  </data>
+  <data name="RPPPercent.CellTitle" xml:space="preserve">
+    <value>RPP %:</value>
+  </data>
+  <data name="RVSL24hrProcessInd.CellTitle" xml:space="preserve">
+    <value>RVSL 24hr Process:</value>
+  </data>
+  <data name="RVSLDaylightSavingInd.CellTitle" xml:space="preserve">
+    <value>RVSL Daylight Saving Ind:</value>
+  </data>
+  <data name="RVSLTimezone.CellTitle" xml:space="preserve">
+    <value>RVSL Timezone:</value>
+  </data>
+  <data name="SalesLimit.CellTitle" xml:space="preserve">
+    <value>Sales Limit:</value>
+  </data>
+  <data name="SalesTaxIndicator.CellTitle" xml:space="preserve">
+    <value>Sales Tax Indicator:</value>
+  </data>
+  <data name="SecondaryNetwork.CellTitle" xml:space="preserve">
+    <value>Secondary Network:</value>
+  </data>
+  <data name="SecondarySecurityCode.CellTitle" xml:space="preserve">
+    <value>Secondary Security Code:</value>
+  </data>
+  <data name="SecurityCode.CellTitle" xml:space="preserve">
+    <value>Primary Security Code:</value>
+  </data>
+  <data name="ServiceLevel.CellTitle" xml:space="preserve">
+    <value>Service Level:</value>
+  </data>
+  <data name="SIC.CellTitle" xml:space="preserve">
+    <value>SIC:</value>
+  </data>
+  <data name="SignatureCapture.CellTitle" xml:space="preserve">
+    <value>Signature Capture:</value>
+  </data>
+  <data name="SiteAccess.CellTitle" xml:space="preserve">
+    <value>Site Access:</value>
+  </data>
+  <data name="SparkExclusion.CellTitle" xml:space="preserve">
+    <value>Spark Exclusion:</value>
+  </data>
+  <data name="StatementType.CellTitle" xml:space="preserve">
+    <value>Statement Type:</value>
+  </data>
+  <data name="StBUWPercentage.CellTitle" xml:space="preserve">
+    <value>St BUW Percentage:</value>
+  </data>
+  <data name="stmtFaxNumber.CellTitle" xml:space="preserve">
+    <value>Fax #:</value>
+  </data>
+  <data name="SupplyBillInd.CellTitle" xml:space="preserve">
+    <value>Supply Billing Ind:</value>
+  </data>
+  <data name="SupplyShBillInd.CellTitle" xml:space="preserve">
+    <value>Supply S/H Billing Ind:</value>
+  </data>
+  <data name="SurchargeExcep.CellTitle" xml:space="preserve">
+    <value>Surcharge Excep:</value>
+  </data>
+  <data name="TaxEffectiveYear.CellTitle" xml:space="preserve">
+    <value>Tax Effective Year:</value>
+  </data>
+  <data name="TaxExemptInd.CellTitle" xml:space="preserve">
+    <value>Tax Exempt Ind:</value>
+  </data>
+  <data name="TaxId.CellTitle" xml:space="preserve">
+    <value>Tax Id:</value>
+  </data>
+  <data name="Temp30DayLimit.CellTitle" xml:space="preserve">
+    <value>Temp 30 Day Limit:</value>
+  </data>
+  <data name="TempDailyLimit.CellTitle" xml:space="preserve">
+    <value>Temp Daily Limit:</value>
+  </data>
+  <data name="TempFromDate.CellTitle" xml:space="preserve">
+    <value>Temp From Date:</value>
+  </data>
+  <data name="TempToDate.CellTitle" xml:space="preserve">
+    <value>Temp to Date:</value>
+  </data>
+  <data name="ThirdPartyProcessorCode.CellTitle" xml:space="preserve">
+    <value>Third Party Processor Code:</value>
+  </data>
+  <data name="ThirdPartyProcessorText.CellTitle" xml:space="preserve">
+    <value>Third Party Processor Text:</value>
+  </data>
+  <data name="TinType.CellTitle" xml:space="preserve">
+    <value>Tin Type:</value>
+  </data>
+  <data name="TinValidationCode.CellTitle" xml:space="preserve">
+    <value>Tin Validation Code:</value>
+  </data>
+  <data name="TinValidationDate.CellTitle" xml:space="preserve">
+    <value>TIN Validation Date:</value>
+  </data>
+  <data name="Title.CellTitle" xml:space="preserve">
+    <value>Title:</value>
+  </data>
+  <data name="TMPAuthorizationSource.CellTitle" xml:space="preserve">
+    <value>TMP Authorization Source:</value>
+  </data>
+  <data name="TMPEntryMode.CellTitle" xml:space="preserve">
+    <value>TMP Entry Mode:</value>
+  </data>
+  <data name="TMPPOSTerminalCap.CellTitle" xml:space="preserve">
+    <value>TMP POS Terminal Cap:</value>
+  </data>
+  <data name="TMPRequest.CellTitle" xml:space="preserve">
+    <value>TMP Request:</value>
+  </data>
+  <data name="TMPServiceLevel.CellTitle" xml:space="preserve">
+    <value>TMP Service Level:</value>
+  </data>
+  <data name="TransArmorTokenType.CellTitle" xml:space="preserve">
+    <value>TransArmor Token Type:</value>
+  </data>
+  <data name="TrustKeeperIndicator.CellTitle" xml:space="preserve">
+    <value>Trust Keeper Indicator:</value>
+  </data>
+  <data name="TurfEFFDate.CellTitle" xml:space="preserve">
+    <value>Turf EFF Date:</value>
+  </data>
+  <data name="TurfTaxUPDReason.CellTitle" xml:space="preserve">
+    <value>Turf Tax Update Reason:</value>
+  </data>
+  <data name="TurfUPDDate.CellTitle" xml:space="preserve">
+    <value>Turf Update Date:</value>
+  </data>
+  <data name="Type1.CellTitle" xml:space="preserve">
+    <value>Type 1:</value>
+  </data>
+  <data name="uxExporSplitFunding.Title" xml:space="preserve">
+    <value>Split Funding</value>
+  </data>
+  <data name="uxExportAccountCancellation.Title" xml:space="preserve">
+    <value>Account Cancellation</value>
+  </data>
+  <data name="uxExportACH.Title" xml:space="preserve">
+    <value>ACH</value>
+  </data>
+  <data name="uxExportAuthorizationReversals.Title" xml:space="preserve">
+    <value>Authorization Reversals</value>
+  </data>
+  <data name="uxExportBankingInformation.Title" xml:space="preserve">
+    <value>Banking Information</value>
+  </data>
+  <data name="uxExportBankwireInformation.Title" xml:space="preserve">
+    <value>Bankwire Information</value>
+  </data>
+  <data name="uxExportBillback.Title" xml:space="preserve">
+    <value>Billback</value>
+  </data>
+  <data name="uxExportBilling.Title" xml:space="preserve">
+    <value>Billing</value>
+  </data>
+  <data name="uxExportBillingInformation.Title" xml:space="preserve">
+    <value>Billing Information</value>
+  </data>
+  <data name="uxExportBillingPricingType.Title" xml:space="preserve">
+    <value>Pricing Type</value>
+  </data>
+  <data name="uxExportBusinessInformation.Title" xml:space="preserve">
+    <value>Business Information</value>
+  </data>
+  <data name="uxExportChargebackInformation.Title" xml:space="preserve">
+    <value>Chargeback Information</value>
+  </data>
+  <data name="uxExportDiscountInformation.Title" xml:space="preserve">
+    <value>Discount Information</value>
+  </data>
+  <data name="uxExportEarlyTerminatioFees.Title" xml:space="preserve">
+    <value>Early Termination Fees</value>
+  </data>
+  <data name="uxExportFees.Title" xml:space="preserve">
+    <value>Fees</value>
+  </data>
+  <data name="uxExportFundingDetails.Title" xml:space="preserve">
+    <value>Funding Details</value>
+  </data>
+  <data name="uxExportFundingExclusion.Title" xml:space="preserve">
+    <value>Funding Exclusion</value>
+  </data>
+  <data name="uxExportFundingInformation.Title" xml:space="preserve">
+    <value>Funding Information</value>
+  </data>
+  <data name="uxExportGlobalePricing.Title" xml:space="preserve">
+    <value>Global ePricing</value>
+  </data>
+  <data name="uxExportImprinter.Title" xml:space="preserve">
+    <value>Imprinter</value>
+  </data>
+  <data name="uxExportInterchangeCompliance.Title" xml:space="preserve">
+    <value>Interchange/Compliance</value>
+  </data>
+  <data name="uxExportMerchantCardInformation.Title" xml:space="preserve">
+    <value>Merchant Card Information</value>
+  </data>
+  <data name="uxExportPayeezy.Title" xml:space="preserve">
+    <value>Payeezy</value>
+  </data>
+  <data name="uxExportProcessingDates.Title" xml:space="preserve">
+    <value>Processing Dates</value>
+  </data>
+  <data name="uxExportProcessingEmail.Title" xml:space="preserve">
+    <value>Processing Email</value>
+  </data>
+  <data name="uxExportProgramProducts.Title" xml:space="preserve">
+    <value>Program &amp; Products</value>
+  </data>
+  <data name="uxExportProgramServicesParticipation.Title" xml:space="preserve">
+    <value>Program/Services Participation</value>
+  </data>
+  <data name="uxExportPTSSettings.Title" xml:space="preserve">
+    <value>PTS Settings</value>
+  </data>
+  <data name="uxExportReporting.Title" xml:space="preserve">
+    <value>Reporting</value>
+  </data>
+  <data name="uxExportReportingSettings.Title" xml:space="preserve">
+    <value>Reporting Settings</value>
+  </data>
+  <data name="uxExportRevolvingPaymentsPlan.Title" xml:space="preserve">
+    <value>Revolving Payments Plan</value>
+  </data>
+  <data name="uxExportSignatureCapture.Title" xml:space="preserve">
+    <value>Signature Capture</value>
+  </data>
+  <data name="uxExportStatement.Title" xml:space="preserve">
+    <value>Statement</value>
+  </data>
+  <data name="uxExportSupplyBilling.Title" xml:space="preserve">
+    <value>Supply Billing</value>
+  </data>
+  <data name="uxExportTerminalNetworkInformation.Title" xml:space="preserve">
+    <value>Terminal Network Information</value>
+  </data>
+  <data name="uxExportTransactionProcessing.Title" xml:space="preserve">
+    <value>Transaction Processing</value>
+  </data>
+  <data name="uxExportTransArmor.Title" xml:space="preserve">
+    <value>TransArmor</value>
+  </data>
+  <data name="uxExportTrustKeeper.Title" xml:space="preserve">
+    <value>TrustKeeper</value>
+  </data>
+  <data name="uxLegalIRSInformation.Title" xml:space="preserve">
+    <value>Legal / IRS Information</value>
+  </data>
+  <data name="VerifoneVSPBrand.CellTitle" xml:space="preserve">
+    <value>Verifone VSP Brand:</value>
+  </data>
+  <data name="VIDebitAccept.CellTitle" xml:space="preserve">
+    <value>VI Debit Accept:</value>
+  </data>
+  <data name="VIIRAMEligible.CellTitle" xml:space="preserve">
+    <value>VI IRAM Eligible:</value>
+  </data>
+  <data name="VIMercVerValue.CellTitle" xml:space="preserve">
+    <value>VI Mer Ver Value:</value>
+  </data>
+  <data name="VIMVIReserve.CellTitle" xml:space="preserve">
+    <value>VI MVI Reserve:</value>
+  </data>
+  <data name="VIRelationParticipant.CellTitle" xml:space="preserve">
+    <value>VI Relation Participant:</value>
+  </data>
+  <data name="VisaDiscountOption.CellTitle" xml:space="preserve">
+    <value>Visa Discount option:</value>
+  </data>
+  <data name="VolTierINTCH.CellTitle" xml:space="preserve">
+    <value>Vol.Tier INTCH:</value>
+  </data>
+  <data name="VSPDomain.CellTitle" xml:space="preserve">
+    <value>VSP Domain:</value>
+  </data>
+  <data name="ZeroInterchangeIndicator.CellTitle" xml:space="preserve">
+    <value>Zero Interchange Indicator:</value>
+  </data>
+  <data name="Zip1.CellTitle" xml:space="preserve">
+    <value>Zip 1:</value>
+  </data>
+  <data name="Zip2.CellTitle" xml:space="preserve">
+    <value>Zip 2:</value>
+  </data>
+  <data name="ExternalPrintInd.CellTitle" xml:space="preserve">
+    <value>External Print Ind:</value>
+  </data>
+  <data name="Literal70.Text" xml:space="preserve">
+    <value>No data found.</value>
+  </data>
+  <data name="uxExportACH.FileName" xml:space="preserve">
+    <value>ACH</value>
+  </data>
+  <data name="uxExportBankwireInformation.FileName" xml:space="preserve">
+    <value>Bankwire Information</value>
+  </data>
+  <data name="uxExportMerchantCardInformation.FileName" xml:space="preserve">
+    <value>Merchant Card Information</value>
+  </data>
+  <data name="uxExportProcessingEmail.FileName" xml:space="preserve">
+    <value>Processing Email</value>
+  </data>
+  <data name="uxExportProgramServicesParticipation.FileName" xml:space="preserve">
+    <value>Program/Services Participation</value>
+  </data>
+  <data name="uxLegalIRSInformation.FileName" xml:space="preserve">
+    <value>Legal / IRS Information</value>
+  </data>
+  <data name="LiteralResourceOR.Text" xml:space="preserve">
+    <value>or</value>
+  </data>
+  <data name="MIF_MerchantDetails_Text_RiskInformation" xml:space="preserve">
+    <value>Risk Information</value>
+  </data>
+</root>

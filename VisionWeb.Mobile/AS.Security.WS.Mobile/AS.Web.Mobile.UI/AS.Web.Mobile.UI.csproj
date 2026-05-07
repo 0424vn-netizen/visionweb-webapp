@@ -1,0 +1,614 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{061A772C-AFE9-439D-B4BD-7A9FF5C2B279}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AS.Web.Mobile.UI</RootNamespace>
+    <AssemblyName>AS.Web.Mobile.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AS.Common, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libraries\AS.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="AS.LoneStar.Client.StatementApi, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libraries\AS.LoneStar.Client.StatementApi.dll</HintPath>
+    </Reference>
+    <Reference Include="AS.Security.WS.Entities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\AS.Security.WS.Entities\bin\Debug\AS.Security.WS.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libraries\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\3rdLibrary\MVC\MVC5\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.RedisSessionStateProvider">
+      <HintPath>..\..\..\..\..\3rdLibrary\Redis\Microsoft.Web.RedisSessionStateProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Services3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libraries\Microsoft.Web.Services3.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject, Version=3.0.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libraries\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Web.Common, Version=3.0.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libraries\Ninject.Web.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="StackExchange.Redis.StrongName">
+      <HintPath>..\..\..\..\..\3rdLibrary\Redis\StackExchange.Redis.StrongName.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\3rdLibrary\MVC\MVC5\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libraries\MVC5\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libraries\MVC5\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libraries\MVC5\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libraries\MVC5\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libraries\MVC5\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libraries\MVC5\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebActivator, Version=1.5.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libraries\WebActivator.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\3rdLibrary\WebGrease\WebGrease.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\ClientExtendedSettings.xml" />
+    <Content Include="App_Data\LoginPageConfigs.xml" />
+    <Content Include="App_Data\tpl_AlertEmail.htm" />
+    <Content Include="App_Data\tpl_AlertEmail_BNK8714.htm" />
+    <Content Include="App_Data\tpl_EmailForgotPassword.htm" />
+    <Content Include="App_Data\tpl_ForgotPassword.htm" />
+    <Content Include="App_Themes\default\login.css" />
+    <Content Include="App_Themes\default\logo.png" />
+    <Content Include="App_Themes\default\master.css" />
+    <Content Include="App_Themes\default\update.css" />
+    <Content Include="App_Themes\ems\login.css" />
+    <Content Include="App_Themes\ems\logo.png" />
+    <Content Include="App_Themes\ems\master.css" />
+    <Content Include="App_Themes\ems\update.css" />
+    <Content Include="App_Themes\FBNJ\login.css" />
+    <Content Include="App_Themes\FBNJ\logo.png" />
+    <Content Include="App_Themes\FBNJ\master.css" />
+    <Content Include="App_Themes\FBNJ\update.css" />
+    <Content Include="App_Themes\fisdemo\login.css" />
+    <Content Include="App_Themes\fisdemo\logo.png" />
+    <Content Include="App_Themes\fisdemo\master.css" />
+    <Content Include="App_Themes\fisdemo\update.css" />
+    <Content Include="App_Themes\fis\general.css" />
+    <Content Include="App_Themes\fis\login.css" />
+    <Content Include="App_Themes\fis\logo.png" />
+    <Content Include="App_Themes\fis\master.css" />
+    <Content Include="App_Themes\fis\update.css" />
+    <Content Include="App_Themes\fulton\login.css" />
+    <Content Include="App_Themes\fulton\logo.png" />
+    <Content Include="App_Themes\fulton\master.css" />
+    <Content Include="App_Themes\fulton\update.css" />
+    <Content Include="App_Themes\mcps\login.css" />
+    <Content Include="App_Themes\mcps\logo.png" />
+    <Content Include="App_Themes\mcps\master.css" />
+    <Content Include="App_Themes\mcps\update.css" />
+    <Content Include="App_Themes\monetary\login.css" />
+    <Content Include="App_Themes\monetary\logo.png" />
+    <Content Include="App_Themes\monetary\master.css" />
+    <Content Include="App_Themes\monetary\update.css" />
+    <Content Include="App_Themes\NTS\login.css" />
+    <Content Include="App_Themes\NTS\logo.png" />
+    <Content Include="App_Themes\NTS\master.css" />
+    <Content Include="App_Themes\NTS\update.css" />
+    <Content Include="App_Themes\orion\login.css" />
+    <Content Include="App_Themes\orion\logo.png" />
+    <Content Include="App_Themes\orion\master.css" />
+    <Content Include="App_Themes\orion\update.css" />
+    <Content Include="App_Themes\pivot\login.css" />
+    <Content Include="App_Themes\pivot\logo.png" />
+    <Content Include="App_Themes\pivot\master.css" />
+    <Content Include="App_Themes\pivot\update.css" />
+    <Content Include="App_Themes\ppi\login.css" />
+    <Content Include="App_Themes\ppi\logo.png" />
+    <Content Include="App_Themes\ppi\master.css" />
+    <Content Include="App_Themes\ppi\update.css" />
+    <Content Include="App_Themes\sfti\login.css" />
+    <Content Include="App_Themes\sfti\logo.png" />
+    <Content Include="App_Themes\sfti\master.css" />
+    <Content Include="App_Themes\sfti\update.css" />
+    <Content Include="App_Themes\snet\login.css" />
+    <Content Include="App_Themes\snet\logo.png" />
+    <Content Include="App_Themes\snet\master.css" />
+    <Content Include="App_Themes\snet\update.css" />
+    <Content Include="App_Themes\tnbci\login.css" />
+    <Content Include="App_Themes\tnbci\logo.png" />
+    <Content Include="App_Themes\tnbci\master.css" />
+    <Content Include="App_Themes\tnbci\update.css" />
+    <Content Include="App_Themes\total\login.css" />
+    <Content Include="App_Themes\total\logo.png" />
+    <Content Include="App_Themes\total\master.css" />
+    <Content Include="App_Themes\total\update.css" />
+    <Content Include="App_Themes\tsys\login.css" />
+    <Content Include="App_Themes\tsys\logo.png" />
+    <Content Include="App_Themes\tsys\master.css" />
+    <Content Include="App_Themes\tsys\update.css" />
+    <Content Include="App_Themes\WRFC\login.css" />
+    <Content Include="App_Themes\WRFC\logo.png" />
+    <Content Include="App_Themes\WRFC\master.css" />
+    <Content Include="App_Themes\WRFC\update.css" />
+    <Content Include="Content\css\default\master.css" />
+    <Content Include="Content\css\EMS\master.css" />
+    <Content Include="Content\css\FBNJ\master.css" />
+    <Content Include="Content\css\FIS\login.css" />
+    <Content Include="Content\css\FIS\master.css" />
+    <Content Include="Content\css\FIS\settings.css" />
+    <Content Include="Content\css\FIS\update.css" />
+    <Content Include="Content\css\fonts.css" />
+    <Content Include="Content\css\kendo\Default\sprite.png" />
+    <Content Include="Content\css\kendo\Default\sprite_2x.png" />
+    <Content Include="Content\css\kendo\kendo.common.min.css" />
+    <Content Include="Content\css\kendo\kendo.default.min.css" />
+    <Content Include="Content\css\kendo\kendo.mobile.all.min.css" />
+    <Content Include="Content\css\MCPS\master.css" />
+    <Content Include="Content\css\NTS\master.css" />
+    <Content Include="Content\css\ORION\master.css" />
+    <Content Include="Content\css\pickadatecss\default.css" />
+    <Content Include="Content\css\pickadatecss\default.date.css" />
+    <Content Include="404.htm" />
+    <Content Include="403.htm" />
+    <Content Include="500.htm" />
+    <Content Include="Content\css\pivot\master.css" />
+    <Content Include="Content\css\PPI\master.css" />
+    <Content Include="Content\css\SNET\master.css" />
+    <Content Include="Content\css\TNBCI\master.css" />
+    <Content Include="Content\css\WRFC\master.css" />
+    <Content Include="Content\fonts\icomoon.svg" />
+    <Content Include="Content\images\calendar.svg" />
+    <Content Include="Content\images\ic-error.svg" />
+    <Content Include="Content\images\ic_warning_time_out.svg" />
+    <Content Include="Content\images\spinner_static.png" />
+    <Content Include="Content\images\sprites.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\app.js" />
+    <Content Include="Scripts\batch.js" />
+    <Content Include="Scripts\chargeback.js" />
+    <Content Include="Scripts\chargebackbydate.js" />
+    <Content Include="Scripts\core.chart.js" />
+    <Content Include="Scripts\floatlabel.js" />
+    <Content Include="Scripts\dashboard.js" />
+    <Content Include="Scripts\datefilter.js" />
+    <Content Include="Scripts\kendo\kendo.calendar.min.js" />
+    <Content Include="Scripts\kendo\kendo.color.min.js" />
+    <Content Include="Scripts\kendo\kendo.core.min.js" />
+    <Content Include="Scripts\kendo\kendo.data.min.js" />
+    <Content Include="Scripts\kendo\kendo.dataviz.chart.min.js" />
+    <Content Include="Scripts\kendo\kendo.dataviz.core.min.js" />
+    <Content Include="Scripts\kendo\kendo.dataviz.themes.min.js" />
+    <Content Include="Scripts\kendo\kendo.draganddrop.min.js" />
+    <Content Include="Scripts\kendo\kendo.drawing.min.js" />
+    <Content Include="Scripts\kendo\kendo.dropdownlist.min.js" />
+    <Content Include="Scripts\kendo\kendo.list.min.js" />
+    <Content Include="Scripts\kendo\kendo.popup.min.js" />
+    <Content Include="Scripts\kendo\kendo.userevents.min.js" />
+    <Content Include="Scripts\kendo\kendo.window.min.js" />
+    <Content Include="Scripts\lib\jquery-3.0.0.min.js" />
+    <Content Include="Scripts\lib\jquery-migrate-3.0.0.min.js" />
+    <Content Include="Scripts\pickadatejs\legacy.js" />
+    <Content Include="Scripts\pickadatejs\picker.date.js" />
+    <Content Include="Scripts\pickadatejs\picker.js" />
+    <Content Include="Scripts\retrievalbydate.js" />
+    <Content Include="Scripts\statement.js" />
+    <Content Include="Scripts\deposit.js" />
+    <Content Include="Scripts\lib\as.events.js" />
+    <Content Include="Scripts\lib\as.infinityScroll.js" />
+    <Content Include="Scripts\lib\as.customvalidation.js" />
+    <Content Include="Scripts\lib\headroom.js" />
+    <Content Include="Scripts\lib\jquery.validate.js" />
+    <Content Include="Scripts\lib\jquery.validate.min.js" />
+    <Content Include="Scripts\lib\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\lib\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\lib\mustache.js" />
+    <Content Include="Scripts\retrieval.js" />
+    <Content Include="Scripts\updatemyprofile.js" />
+    <Content Include="Scripts\viewfullsite.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_GlobalResources\Constants.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Constants.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Messages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Messages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Templates.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Templates.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\LoginRouteHandler.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\LoginPageManager.cs" />
+    <Compile Include="App_Start\NinjectDependencyResolver.cs" />
+    <Compile Include="App_Start\NinjectWebCommon.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BatchController.cs" />
+    <Compile Include="Controllers\CommonController.cs" />
+    <Compile Include="Controllers\ChargebackController.cs" />
+    <Compile Include="Controllers\DashboardController.cs" />
+    <Compile Include="Controllers\DepositController.cs" />
+    <Compile Include="Controllers\MobileController.cs" />
+    <Compile Include="Controllers\RetrievalController.cs" />
+    <Compile Include="Controllers\StatementController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountViewModel.cs" />
+    <Compile Include="Models\BatchViewModel.cs" />
+    <Compile Include="Models\ChargbacksViewModel.cs" />
+    <Compile Include="Models\CommonViewModel.cs" />
+    <Compile Include="Models\DashboardViewModel.cs" />
+    <Compile Include="Models\DetailUrlViewModel.cs" />
+    <Compile Include="Models\ForgotPasswordViewModel.cs" />
+    <Compile Include="Models\MerchantViewModel.cs" />
+    <Compile Include="Models\ObjectDetailViewModel.cs" />
+    <Compile Include="Models\PagingViewModel.cs" />
+    <Compile Include="Models\DepositViewModel.cs" />
+    <Compile Include="Models\RetrievalViewModel.cs" />
+    <Compile Include="Models\StatementViewModel.cs" />
+    <Compile Include="Models\UpdateMyProfileViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Content\less\common\components\cardview.less" />
+    <Content Include="Content\less\common\components\form.less" />
+    <Content Include="Content\less\common\components\icons.less" />
+    <Content Include="Content\less\common\components\listview.less" />
+    <Content Include="Content\less\common\components\navigation.less" />
+    <Content Include="Content\less\common\extensions\normalize.less" />
+    <Content Include="Content\less\common\fonts.less" />
+    <Content Include="Content\less\common\components\general.less" />
+    <Content Include="Content\less\default\master.less" />
+    <Content Include="Content\less\common\settings.less" />
+    <Content Include="Views\Shared\_LoginLayout.cshtml" />
+    <Content Include="Views\Shared\_PageLayout.cshtml" />
+    <Content Include="Views\Batch\Index.cshtml" />
+    <Content Include="Content\less\default\settings.less" />
+    <Content Include="Views\Batch\Detail.cshtml" />
+    <Content Include="Content\less\common\components\login.less" />
+    <Content Include="Views\Account\Finish.cshtml" />
+    <Content Include="Content\less\common\components\modal.less" />
+    <Content Include="Views\Statement\Index.cshtml" />
+    <Content Include="Views\Batch\_CardSummary.cshtml" />
+    <Content Include="Views\Retrieval\Index.cshtml" />
+    <Content Include="Views\Chargeback\Index.cshtml" />
+    <Content Include="Content\less\ems\master.less" />
+    <Content Include="Content\less\ems\settings.less" />
+    <Content Include="Content\less\FBNJ\master.less" />
+    <Content Include="Content\less\FBNJ\settings.less" />
+    <Content Include="Content\less\FIS\master.less" />
+    <Content Include="Content\less\FIS\settings.less" />
+    <Content Include="Content\less\mcps\master.less" />
+    <Content Include="Content\less\mcps\settings.less" />
+    <Content Include="Content\less\NTS\master.less" />
+    <Content Include="Content\less\NTS\settings.less" />
+    <Content Include="Content\less\orion\master.less" />
+    <Content Include="Content\less\orion\settings.less" />
+    <Content Include="Content\less\pivot\master.less" />
+    <Content Include="Content\less\pivot\settings.less" />
+    <Content Include="Content\less\ppi\master.less" />
+    <Content Include="Content\less\ppi\settings.less" />
+    <Content Include="Content\less\snet\master.less" />
+    <Content Include="Content\less\snet\settings.less" />
+    <Content Include="Content\less\tnbci\master.less" />
+    <Content Include="Content\less\tnbci\settings.less" />
+    <Content Include="Content\less\WRFC\master.less" />
+    <Content Include="Content\less\WRFC\settings.less" />
+    <Content Include="Views\Shared\_Sidebar.cshtml" />
+    <Content Include="Views\Deposit\Index.cshtml" />
+    <Content Include="Views\Shared\_MerchantList.cshtml" />
+    <Content Include="Content\less\fisdemo\master.less" />
+    <Content Include="Content\less\fisdemo\settings.less" />
+    <Content Include="Content\less\fulton\master.less" />
+    <Content Include="Content\less\fulton\settings.less" />
+    <Content Include="Content\less\total\master.less" />
+    <Content Include="Content\less\total\settings.less" />
+    <Content Include="Content\fonts\icomoon.eot" />
+    <Content Include="Content\fonts\icomoon.ttf" />
+    <Content Include="Content\fonts\icomoon.woff" />
+    <Content Include="Content\fonts\SourceSansPro-Light.ttf" />
+    <Content Include="Content\fonts\SourceSansPro-Light.woff" />
+    <Content Include="Content\fonts\SourceSansPro-Light.woff2" />
+    <Content Include="Content\fonts\SourceSansPro-Regular.ttf" />
+    <Content Include="Content\fonts\SourceSansPro-Regular.woff" />
+    <Content Include="Content\fonts\SourceSansPro-Regular.woff2" />
+    <Content Include="Content\fonts\SourceSansPro-Semibold.woff" />
+    <Content Include="Content\fonts\SourceSansPro-Semibold.woff2" />
+    <Content Include="Content\less\common\components\datetime.less" />
+    <Content Include="Content\less\common\components\window.less" />
+    <Content Include="Content\less\common\components\dropdown.less" />
+    <Content Include="Content\less\common\components\chart.less" />
+    <Content Include="Content\less\common\components\layout.less" />
+    <Content Include="Content\less\common\components\update-profile.less" />
+    <None Include="Content\less\common\components\_alert.less" />
+    <None Include="Content\less\common\components\checkbox-radio.less" />
+    <Content Include="Content\less\FIS\login.less" />
+    <Content Include="Content\less\FIS\update.less" />
+    <None Include="Content\less\common\mixins.less" />
+    <None Include="Content\less\common\components\tab.less" />
+    <Content Include="Views\Account\_ForgotPasswordStep1.cshtml" />
+    <Content Include="Views\Account\_ForgotPasswordStep2.cshtml" />
+    <Content Include="Views\Deposit\_ListView.cshtml" />
+    <Content Include="Views\Deposit\_DataItem.cshtml" />
+    <Content Include="Views\Shared\_MerchantListMenu.cshtml" />
+    <Content Include="Views\Batch\_BatchDataItem.cshtml" />
+    <Content Include="Views\Batch\_BatchListView.cshtml" />
+    <Content Include="Views\Batch\_BatchDetailListView.cshtml" />
+    <Content Include="Views\Batch\_BatchDetailDataItem.cshtml" />
+    <Content Include="Views\Retrieval\_ListView.cshtml" />
+    <Content Include="Views\Retrieval\_DataItem.cshtml" />
+    <Content Include="Views\Chargeback\_DataItem.cshtml" />
+    <Content Include="Views\Chargeback\_ListView.cshtml" />
+    <Content Include="Views\Statement\_TSYSStatementListView.cshtml" />
+    <Content Include="Views\Statement\TSYSStatementIndex.cshtml" />
+    <Content Include="Views\Statement\GlobalWRFCStatementIndex.cshtml" />
+    <Content Include="Views\Statement\_GlobalWRFCStatementListView.cshtml" />
+    <Content Include="Views\Statement\GlobalWRFCStatementDetail.cshtml" />
+    <Content Include="Views\Common\TermsCondition.cshtml" />
+    <Content Include="Views\Common\PrivacyPolicy.cshtml" />
+    <Content Include="Views\Chargeback\ChargebackByDate.cshtml" />
+    <Content Include="Views\Retrieval\RetrievalByDate.cshtml" />
+    <Content Include="Views\Account\_SSOLogout.cshtml" />
+    <Content Include="Views\Account\UpdateMyProfile.cshtml" />
+    <Content Include="Views\Dashboard\_VolumeAnalysis.cshtml" />
+    <Content Include="Views\Dashboard\_CardVolume.cshtml" />
+    <Content Include="Views\Dashboard\_MonthlyVolume.cshtml" />
+    <Content Include="Views\Dashboard\Index.cshtml" />
+    <Content Include="Views\Statement\_DepositsSummary.cshtml" />
+    <Content Include="Views\Statement\_CardSummary.cshtml" />
+    <Content Include="Views\Statement\_SettlementDiscount.cshtml" />
+    <Content Include="Views\Statement\_Surcharge.cshtml" />
+    <Content Include="Views\Statement\_OtherFees.cshtml" />
+    <Content Include="Views\Statement\_More.cshtml" />
+    <Content Include="Views\Statement\_WRFCPlanSummary.cshtml" />
+    <Content Include="Views\Statement\_WRFCDepositsSummary.cshtml" />
+    <Content Include="Views\Statement\_WRFCAdjustmentSummary.cshtml" />
+    <Content Include="Views\Statement\_WRFCChargebacksSummary.cshtml" />
+    <Content Include="Views\Statement\_WRFCFeesSummary.cshtml" />
+    <Content Include="Views\Statement\_WRFCMoreSummary.cshtml" />
+    <Content Include="Views\Common\_HeaderReport.cshtml" />
+    <Content Include="Views\Common\NoPermission.cshtml" />
+    <Content Include="Views\Statement\_GenericStatementListView.cshtml" />
+    <Content Include="Views\Statement\GenericStatementIndex.cshtml" />
+    <Content Include="Views\Dashboard\_MTDChart.cshtml" />
+    <Content Include="Views\Dashboard\_YTDChart.cshtml" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Views\Common\_HeaderReportForDetail.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\Retrieval\_ListViewByDate.cshtml" />
+    <Content Include="Views\Chargeback\_ListViewByDate.cshtml" />
+    <Content Include="Views\Statement\_DepositItemSummary.cshtml" />
+    <Content Include="Content\less\fisdemo\update.less" />
+    <Content Include="Content\less\fisdemo\login.less" />
+    <Content Include="Content\less\fulton\update.less" />
+    <Content Include="Content\less\mcps\update.less" />
+    <Content Include="Content\less\NTS\update.less" />
+    <Content Include="Content\less\orion\update.less" />
+    <Content Include="Content\less\pivot\update.less" />
+    <Content Include="Content\less\ppi\update.less" />
+    <Content Include="Content\less\snet\update.less" />
+    <Content Include="Content\less\default\login.less" />
+    <Content Include="Content\less\default\update.less" />
+    <Content Include="Content\less\ems\login.less" />
+    <Content Include="Content\less\ems\update.less" />
+    <Content Include="Content\less\fulton\login.less" />
+    <Content Include="Content\less\mcps\login.less" />
+    <Content Include="Content\less\NTS\login.less" />
+    <Content Include="Content\less\orion\login.less" />
+    <Content Include="Content\less\pivot\login.less" />
+    <Content Include="Content\less\ppi\login.less" />
+    <Content Include="Content\less\snet\login.less" />
+    <Content Include="Content\less\tnbci\login.less" />
+    <Content Include="Content\less\tnbci\update.less" />
+    <Content Include="Content\less\total\login.less" />
+    <Content Include="Content\less\total\update.less" />
+    <Content Include="Content\less\WRFC\login.less" />
+    <Content Include="Content\less\WRFC\update.less" />
+    <Content Include="Content\less\FBNJ\login.less" />
+    <Content Include="Content\less\FBNJ\update.less" />
+    <Content Include="Views\Common\NoPermissionAccessError.cshtml" />
+    <Content Include="Views\Statement\_MonthlyMessage.cshtml" />
+    <Content Include="Content\less\tsys\login.less" />
+    <Content Include="Content\less\tsys\master.less" />
+    <Content Include="Content\less\tsys\settings.less" />
+    <Content Include="Content\less\tsys\update.less" />
+    <Content Include="Content\less\sfti\login.less" />
+    <Content Include="Content\less\sfti\master.less" />
+    <Content Include="Content\less\sfti\settings.less" />
+    <Content Include="Content\less\sfti\update.less" />
+    <Content Include="Content\less\monetary\login.less" />
+    <Content Include="Content\less\monetary\master.less" />
+    <Content Include="Content\less\monetary\settings.less" />
+    <Content Include="Content\less\monetary\update.less" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="wse3policyCache.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\Logs\" />
+    <Folder Include="Content\img\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\AS.Tax.Security.Web.Services\AS.Tax.Security.Web.Services.csproj">
+      <Project>{c4ad7b28-a433-45a0-a9b3-572871798bbf}</Project>
+      <Name>AS.Tax.Security.Web.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AS.Web.Mobile.Business\AS.Web.Mobile.Business.csproj">
+      <Project>{5192d3a9-a60a-40ed-b50d-0de6346c6963}</Project>
+      <Name>AS.Web.Mobile.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AS.Web.Mobile.Common\AS.Web.Mobile.Common.csproj">
+      <Project>{53750696-0800-41e2-935e-2d60ffd2c4b9}</Project>
+      <Name>AS.Web.Mobile.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AS.Web.Mobile.Security\AS.Web.Mobile.Security.csproj">
+      <Project>{28448d1f-03b6-47e9-bac9-521c5d90ef13}</Project>
+      <Name>AS.Web.Mobile.Security</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AS.WS.Mobile.Domain\AS.WS.Mobile.Domain.csproj">
+      <Project>{b184fa41-22e3-4e53-a51a-578e89e530f3}</Project>
+      <Name>AS.WS.Mobile.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App_GlobalResources\Constants.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Constants.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>MobileResources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\Templates.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Templates.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>MobileResources</CustomToolNamespace>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App_GlobalResources\Messages.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Messages.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>MobileResources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>9959</DevelopmentServerPort>
+          <DevelopmentServerVPath>/mobile</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

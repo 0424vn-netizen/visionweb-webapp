@@ -1,0 +1,16 @@
+﻿.risk-merchant-detail {
+    margin-bottom: 3px;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #00A8F7;
+    cursor: pointer;
+    margin: 21px 0 9px -1px;
+    line-height: 36px;
+    font-family: Lato;
+    white-space: nowrap;
+    margin-top: -6px !important;
+}
+
+.position-fixed .raDiv {
+    position: fixed !important;
+}

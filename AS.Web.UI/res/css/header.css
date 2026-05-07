@@ -1,0 +1,679 @@
+/* Typography Variables */
+/* Layout variables */
+/* === FONT === */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../font/Lato300.eot');
+  src: local('Lato Light'), local('Lato-Light'), url('../font/Lato300.eot') format('embedded-opentype'), url('../font/Lato300.woff') format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font/Lato400.eot');
+  src: local('Lato Regular'), local('Lato-Regular'), url('../font/Lato400.eot') format('embedded-opentype'), url('../font/Lato400.woff') format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../font/Lato700.eot');
+  src: local('Lato Bold'), local('Lato-Bold'), url('../font/Lato700.eot') format('embedded-opentype'), url('../font/Lato700.woff') format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  src: url('../font/Latoitalic300.eot');
+  src: local('Lato Italic Light'), local('Lato-LightItalic'), url('../font/Latoitalic300.eot') format('embedded-opentype'), url('../font/Latoitalic300.woff') format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../font/Latoitalic400.eot');
+  src: local('Lato Italic Regular'), local('Lato-RegularItalic'), url('../font/Latoitalic400.eot') format('embedded-opentype'), url('../font/Latoitalic400.woff') format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../font/Latoitalic700.eot');
+  src: local('Lato Italic Bold'), local('Lato-BoldItalic'), url('../font/Latoitalic700.eot') format('embedded-opentype'), url('../font/Latoitalic700.woff') format('woff');
+}
+@font-face {
+  text-rendering: optimizeLegibility;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Source Sans Pro";
+  src: url("../font/Source-Sans-Pro-regular-webfont.woff") format("woff");
+}
+@font-face {
+  text-rendering: optimizeLegibility;
+  font-weight: 600;
+  font-style: normal;
+  font-family: "Source Sans Pro";
+  src: url("../font/Source-Sans-Pro-semibold-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), url('../font/iconfont.woff') format('woff'), url('../font/iconfont.ttf') format('truetype'), url('../font/iconfont.svg#fontawesome') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.white-bg-shadow {
+  max-width: 100%;
+  width: auto;
+  height: 59px;
+  margin-top: -59px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-bottom: 10px solid;
+}
+body {
+  padding-top: 30px;
+  background-image: url('../img/white-background.png');
+  padding-bottom: 20px;
+  background-position: top left;
+  background-repeat: repeat-x;
+  min-height: 100vh;
+}
+.logo {
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+.navbar,
+.main-navbar .navbar-nav > li > a,
+.main-navbar .navbar-nav > .open > a,
+.main-navbar .navbar-nav > .open > a:hover,
+.main-navbar .navbar-nav > .open > a:focus {
+  background-color: transparent;
+}
+.navbar .nav > li > .dropdown-menu:after,
+.navbar .nav > li > .dropdown-menu:before {
+  border-right-color: transparent;
+  border-left-color: transparent;
+}
+.welcomebar.navbar {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0 20px;
+  min-height: 20px;
+}
+.welcomebar.navbar.qa {
+  background-color: #bb00b0;
+}
+.navbar,
+.main-navbar .navbar-nav > li > a,
+.welcomebar a[disabled]:hover {
+  color: #999999;
+}
+.welcomebar.qa .navbar-text,
+.welcomebar.qa .navbar-link {
+  color: #ffffff;
+}
+.welcomebar .navbar-text {
+  margin: 5px 0;
+}
+.welcomebar a[disabled] {
+  cursor: not-allowed;
+}
+.site-header {
+  padding: 10px 20px 0;
+}
+.site-header .navbar-default {
+  display: table;
+  width: 100%;
+}
+.logo {
+  width: 300px;
+  height: 80px;
+  display: block;
+  text-indent: -9999px;
+  box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+}
+.navbar {
+  border: none;
+}
+.navbar-toggle {
+  margin-right: 0;
+}
+.caret {
+  margin-left: 3px;
+}
+.navbar-header,
+.main-navbar {
+  display: table-cell;
+  vertical-align: middle;
+}
+.site-header .navbar-header {
+  float: none !important;
+  width: 300px;
+}
+.site-header .main-navbar {
+  float: none !important;
+}
+.main-navbar {
+  padding: 0px;
+}
+.main-navbar .navbar-nav {
+  float: right;
+  text-align: right;
+}
+.main-navbar .navbar-nav > li {
+  float: none;
+  display: inline-block;
+  text-align: left;
+}
+.main-navbar .navbar-nav > li > a {
+  font-size: 14px;
+  padding: 0px 0px 4px;
+  margin-left: 20px;
+}
+.site-header .navbar-default {
+  display: table;
+}
+.navbar-collapse.collapse {
+  display: inline-block !important;
+}
+.navbar {
+  font-family: Lato, Helvetica, Arial, sans-serif;
+}
+.navbar .nav > li > .dropdown-menu:after {
+  position: absolute;
+  top: -6px;
+  right: 20px;
+  display: inline-block;
+  border-right: 6px solid;
+  border-bottom: 6px solid;
+  border-left: 6px solid;
+  content: '';
+  -moz-transform: scale(0.99999);
+}
+.navbar .nav > li > .dropdown-menu:before {
+  position: absolute;
+  top: -7px;
+  right: 19px;
+  display: inline-block;
+  border-right: 7px solid;
+  border-bottom: 7px solid;
+  border-left: 7px solid;
+  content: '';
+  -moz-transform: scale(0.99999);
+}
+.border-wrapper {
+  border: 1px solid #e8e8e8;
+}
+.dropdown-menu {
+  left: auto;
+  right: 0px;
+  z-index: 9998;
+  border-radius: 0;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  right: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+}
+.dropdown-submenu > a:after {
+  display: block;
+  content: " ";
+  float: left;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px;
+  border-left-width: 0;
+  margin-top: 6px;
+  margin-left: -12px;
+}
+.navbar-inverse .navbar-link,
+.navbar-inverse .navbar-link:hover {
+  text-decoration: none;
+  border-bottom: 1px dotted;
+}
+.welcomebar .navbar-text.navbar-text-left {
+  margin-right: 0;
+  margin-top: 7px;
+}
+.welcomebar .navbar-text.navbar-text-left .navbar-link.user-name {
+  max-width: 142px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 0;
+}
+.welcomebar .navbar-text.navbar-text-right {
+  margin-right: 3px;
+  margin: 0;
+  margin-top: 7px;
+}
+.welcomebar .navbar-text .RadComboBox input[type="text"] {
+  font-size: 13px;
+}
+.welcomebar a.navbar-link {
+  display: inline-block;
+  vertical-align: top;
+}
+/* Black */
+.welcomebar.navbar {
+  background-color: #000000;
+}
+/* Gray */
+.welcomebar {
+  font-size: 13px;
+}
+.welcomebar .navbar-text,
+.welcomebar .navbar-link {
+  color: #999999;
+}
+.welcomebar .navbar-link:hover,
+.welcomebar .navbar-link:focus {
+  color: #ffffff;
+}
+.main-navbar .nav > li > a:hover,
+.main-navbar .nav > li > a:focus,
+.main-navbar .navbar-nav > .active > a,
+.main-navbar .navbar-nav > .active > a:hover,
+.main-navbar .navbar-nav > .active > a:focus,
+.main-navbar .navbar-nav > .open > a,
+.main-navbar .navbar-nav > .open > a:hover,
+.main-navbar .navbar-nav > .open > a:focus {
+  color: #333333;
+}
+.navbar .nav > li > .dropdown-menu:after,
+.navbar .nav > li > .dropdown-menu:before {
+  border-right-color: transparent;
+  border-left-color: transparent;
+}
+.main-navbar .navbar-nav > li > a,
+.btn-old-browser {
+  text-transform: uppercase;
+}
+.main-navbar .navbar-nav > li > a,
+.font-weight-bold {
+  font-weight: 700;
+}
+.site-header .navbar-default {
+  display: table;
+}
+/* Begin Welcome Bar's RadComboBox */
+#merchantInfo,
+#NavRiskManagement,
+.anchor-link {
+  padding-top: 30px;
+  /* Fix anchor problem with welcomebar */
+  margin-top: -30px;
+  height: 0;
+  line-height: 0px;
+  display: block;
+}
+.anchor-link-no-padding {
+  height: 0px;
+  line-height: 0px;
+  display: block;
+}
+.info-link {
+  background: transparent url('../img/information.png') top left no-repeat;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 6px;
+}
+.welcome-bar {
+  margin-left: 10px !important;
+}
+.welcome-bar .RadComboBox {
+  margin-top: -1px;
+  margin-left: 0px;
+  margin-right: 0;
+}
+.welcome-bar .RadComboBox .rcbReadOnly .rcbInputCell .rcbInput {
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  padding: 2px 0px 2px 9px;
+  color: #999999;
+  background-color: #1E1E1E;
+  border-color: #3F3F3F;
+  min-height: 22px;
+  line-height: 1;
+}
+.welcome-bar .RadComboBox_Default .rcbArrowCell {
+  width: 18px;
+}
+.welcome-bar .RadComboBox_Default .rcbFocused .rcbReadOnly .rcbInput,
+.welcome-bar .RadComboBox_Default .rcbHovered .rcbReadOnly .rcbInput {
+  color: #999999;
+}
+.welcome-bar .RadComboBox .rcbArrowCell a {
+  width: 18px;
+  height: 22px;
+  background: none;
+  background-color: #1E1E1E;
+  border-left: none;
+  border-color: #3F3F3F;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  margin-top: 0px;
+}
+.welcome-bar .RadComboBox .rcbArrowCell a:before {
+  content: " ";
+  width: 0px;
+  height: 0px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0);
+  border-top-color: #999999;
+  -moz-transform: scale(0.9999);
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  margin-top: 4px;
+}
+.welcome-bar .RadComboBox .rcbArrowCell a:hover,
+.welcome-bar .RadComboBox .rcbArrowCell a:focus {
+  background-color: #1E1E1E;
+}
+.welcome-bar .RadComboBox_Default .rcbFocused .rcbReadOnly .rcbInput,
+.welcome-bar .RadComboBox_Default .rcbHovered .rcbReadOnly .rcbInput,
+.welcome-bar .RadComboBox_Default .rcbFocused .rcbArrowCell a,
+.welcome-bar .RadComboBox_Default .rcbHovered .rcbArrowCell a {
+  border-color: #cccccc;
+}
+.welcome-bar .RadComboBox_Default .rcbFocused .rcbReadOnly .rcbInput,
+.welcome-bar .RadComboBox_Default .rcbFocused .rcbArrowCell a {
+  -webkit-border-bottom-left-radius: 0px;
+  -moz-border-bottom-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  -moz-border-bottom-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.select-lang-dropdown.RadComboBoxDropDown_Default {
+  color: #999999;
+  border-color: #cccccc;
+  margin-top: -2px;
+  background-color: #1E1E1E;
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  -webkit-border-bottom-left-radius: 2px;
+  -moz-border-bottom-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  -webkit-border-bottom-right-radius: 2px;
+  -moz-border-bottom-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.select-lang-dropdown.RadComboBoxDropDown_Default .rcbItem {
+  color: #999999;
+}
+.select-lang-dropdown.RadComboBoxDropDown .rcbItem,
+.select-lang-dropdown.RadComboBoxDropDown .rcbHovered,
+.select-lang-dropdown.RadComboBoxDropDown .rcbDisabled,
+.select-lang-dropdown.RadComboBoxDropDown .rcbLoading,
+.select-lang-dropdown.RadComboBoxDropDown .rcbCheckAllItems,
+.select-lang-dropdown.RadComboBoxDropDown .rcbCheckAllItemsHovered {
+  padding: 1px 4px;
+  margin: 0px;
+}
+.select-lang-dropdown .RadComboBoxDropDown_Default .rcbHovered {
+  color: #333333;
+  background-color: #DFDFDF;
+}
+.rcbSlide {
+  z-index: 9999 !important;
+}
+.rcbSlide.select-lang-dropdown-parent {
+  z-index: 2999 !important;
+}
+.rcbSlide.onTopModal {
+  z-index: 6000 !important;
+}
+.RadComboBox .rcbInput {
+  padding: 0 5px 0 !important;
+  line-height: 24px!important;
+}
+.RadComboBox .rcbArrowCell {
+  width: 22px;
+}
+.RadComboBox .rcbArrowCell {
+  background-image: none;
+}
+.RadComboBox table td.rcbInputCell {
+  padding: 0;
+}
+.RadComboBox .rcbInput {
+  border: 1px solid #e8e8e8;
+  background: #FFFFFF;
+  height: 26px;
+}
+.RadComboBox .rcbInputCell {
+  height: 100%;
+}
+.RadComboBoxDropDown_Default {
+  border: 1px solid #e8e8e8;
+}
+.RadComboBox table {
+  display: block!important;
+}
+.RadComboBox_Default .rcbInput,
+.RadComboBox_Default .rcbReadOnly .rcbInput,
+.RadComboBox_Default .rcbFocused .rcbInput,
+.RadComboBox_Default .rcbFocused .rcbReadOnly .rcbInput,
+.RadInput_Default .riTextBox {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #3e3e3e;
+}
+.RadComboBox .rcbArrowCell,
+.RadComboBox .rcbArrowCell a {
+  width: 22px;
+  height: 26px;
+  text-indent: -9999px;
+  border: none;
+}
+.RadComboBox .rcbArrowCell a {
+  background: transparent url("../img/combobox_arrow.png") center center no-repeat;
+}
+.RadComboBox .rcbArrowCell a:hover {
+  border-bottom: none;
+}
+.RadComboBox .rcbInputCell {
+  background-image: none;
+}
+.RadComboBoxDropDown_Default {
+  font-size: 14px;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 22px;
+}
+.RadComboBoxDropDown .rcbItem,
+.RadComboBoxDropDown .rcbHovered,
+.RadComboBoxDropDown .rcbDisabled,
+.RadComboBoxDropDown .rcbLoading,
+.RadComboBoxDropDown .rcbCheckAllItems,
+.RadComboBoxDropDown .rcbCheckAllItemsHovered {
+  min-height: 22px;
+}
+.RadGrid_Default .rgPageText,
+.RadGrid_Default .rgPageGo {
+  margin-top: 2px;
+  line-height: 22px;
+  display: inline-block;
+}
+.RadGrid_Default .rgPageComboBox {
+  width: 60px !important;
+  margin-right: 0 !important;
+}
+.rgPageComboBox .rcbArrowCell a {
+  background: transparent url("../img/grid_combobox_arrow.png") center center no-repeat;
+  width: 20px;
+  height: 22px;
+}
+.RadComboBox > table td {
+  border: none!important;
+}
+.RadGrid_Default .rgMasterTable .RadComboBox > table tr td:first-child {
+  border: none!important;
+}
+.RadMenu_Default .rmGroup,
+.RadMenu_Default .rmMultiColumn,
+.RadMenu_Default .rmGroup .rmVertical {
+  background: #ffffff;
+}
+.RadGrid_Default .rgPagePrev,
+.RadGrid_Default .rgPageNext {
+  width: 10px;
+  margin-top: 3px;
+  border-width: 0;
+  height: 20px;
+}
+.RadGrid_Default .rgPagePrev,
+.RadGrid_Default .rgPagePrev:hover {
+  background: transparent url("../img/arrow_left.png") center center no-repeat;
+  text-indent: -9999px;
+  text-decoration: none;
+}
+.RadGrid_Default .rgPageNext,
+.RadGrid_Default .rgPageNext:hover {
+  background: transparent url("../img/arrow_right.png") center center no-repeat;
+  text-indent: -9999px;
+  text-decoration: none;
+}
+.RadGrid_Default .rgEditRow {
+  background-color: #CCCCCC;
+  background-image: none;
+}
+.RadGrid_Default .rgEditRow td {
+  color: #3e3e3e;
+}
+.RadGrid_Default .rgEditForm {
+  border-bottom: none;
+}
+.RadMenu_Default .rmFirst {
+  margin-top: 4px;
+}
+.RadMenu_Default .rmVertical {
+  padding-bottom: 4px !important;
+}
+.RadMenu_Default,
+.RadMenu_Default .rmFocused,
+.RadMenu_Default a.rmLink {
+  background-image: none !important;
+  width: 160px !important;
+  text-decoration: none !important;
+}
+.RadMenu_Default .rmFocused .rmText,
+.RadMenu_Default .rmLink .rmText {
+  padding: 0 15px !important;
+  margin: 0 4px !important;
+}
+.RadMenu_Default .rmLink:hover .rmText,
+.RadMenu_Default .rmFocused .rmText {
+  color: #333333 !important;
+  background-color: #B9B9B9 !important;
+  background-image: none !important;
+}
+/* End Welcome Bar's RadComboBox */
+/*dropdownlist menu*/
+.dropdown-menu {
+  left: auto;
+  right: 0px;
+  z-index: 9998;
+}
+.dropdown-submenu:hover > a:after {
+  border-right-color: #ffffff;
+}
+.navbar .nav > li > .dropdown-menu:after {
+  border-bottom-color: #ffffff;
+}
+.navbar .nav > li > .dropdown-menu:before {
+  border-bottom-color: rgba(0, 0, 0, 0.15);
+}
+.dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a,
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  background-color: #CECECE;
+  color: #333333;
+}
+.dropdown-submenu > a:after {
+  border-color: transparent;
+  border-right-color: #cccccc;
+}
+.dropdown-submenu > a:hover:after,
+.dropdown-submenu > a:focus:after {
+  border-right-color: #FFFFFF;
+}
+.dropdown-submenu:hover > a:after {
+  border-right-color: #ffffff;
+}
+/*view following browser*/
+.k-ie .welcome-bar .RadComboBox,
+.k-ff .welcome-bar .RadComboBox,
+.k-safari .welcome-bar .RadComboBox {
+  margin-top: -2px;
+}
+.k-ie .RadGrid_Default .h-pager .rgPageText,
+.k-ie .RadGrid_Default .h-pager .rgPageGo {
+  margin-top: 9px;
+  line-height: 12px;
+  display: inline-block;
+}
+.customPager .rgPageText,
+.customPager .rgPageNum,
+.customPager .rgPagePrev,
+.customPager .rgPageNext {
+  vertical-align: top;
+}
+@media (max-width: 768px) {
+  /* Bootstrap Overwrite & Extend */
+  .navbar-header {
+    display: block;
+  }
+  .main-navbar {
+    max-width: none;
+    padding-top: 0px;
+  }
+  .main-navbar.collapse {
+    display: none !important;
+  }
+  .main-navbar.in {
+    display: block;
+  }
+  .main-navbar .navbar-nav {
+    margin: 0;
+  }
+  .navbar-default .navbar-collapse {
+    border: 0px;
+    box-shadow: none;
+  }
+  .navbar-toggle {
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+  .navbar .nav > li > .dropdown-menu:after,
+  .navbar-default .nav > li > .dropdown-menu:before,
+  .dropdown-submenu > a:after {
+    display: none;
+  }
+  .open .dropdown-menu {
+    display: block;
+  }
+  .dropdown-menu .dropdown-menu {
+    display: block;
+    padding-left: 20px;
+  }
+}
+.body-maintenance{
+    background-color:white;
+}
+

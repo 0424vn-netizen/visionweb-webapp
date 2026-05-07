@@ -1,0 +1,77 @@
+﻿<div class="row" id="merchinfo">
+    <div class="col-md-9" data-toggle="collapse" data-target="#ciMerchantInformation">
+        <h2 class="grid-title mt-3x">
+            {{res:MerchantInformation}}
+        </h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 in" id="ciMerchantInformation">
+        <table class="ASTable" id="tblMerchantInformation">
+            <colgroup>
+                <col style="width: 110px">
+                <col style="width: 320px">
+                <col style="width: 65px">
+                <col>
+                <col style="width: 125px">
+                <col>
+            </colgroup>
+            <tbody>
+                <tr class="Row">
+                    <td class="heading valign-middle">
+                        {{res:MerchantID}}
+                    </td>
+                    <td>
+                        {{data:MerchantNumber||MerchantInformation}}
+                    </td>
+                    <td class="heading valign-middle">
+                        {{res:Contact}}
+                    </td>
+                    <td>
+                        {{data:Contact||MerchantInformation}}
+                    </td>
+                    <td class="heading valign-middle">
+                        {{res:Status}}
+                    </td>
+                    <td>
+                        {{data:Status||MerchantInformation}}
+                    </td>
+                </tr>
+                <tr class="AltRow">
+                    <td class="heading valign-middle">
+                        {{res:MerchantName}}
+                    </td>
+                    <td>
+                        {{data:MerchantName||MerchantInformation}}
+                    </td>
+                    <td class="heading valign-middle">
+                        {{res:Phone}}
+                    </td>
+                    <td>
+                        {{data:Phone|Phone|MerchantInformation}}
+                    </td>
+                    <td class="heading valign-middle">
+                        {{res:LastBatchActivity}}
+                    </td>
+                    <td>
+                        {{data:LastBactchActivity|BatchLink|MerchantInformation}}
+                    </td>
+                </tr>
+                <tr class="Row">                  
+                    <td class="heading valign-middle">
+                        {{res:Address}}
+                    </td>
+                    <td>
+                        {{data:Address|Address|MerchantInformation}}
+                    </td>
+                    <td class="heading valign-middle">
+                        {{res:Email}}
+                    </td>
+                    <td colspan="3">
+                        {{data:Email||MerchantInformation}}
+                    </td>
+                </tr>               
+            </tbody>
+        </table>
+    </div>
+</div>

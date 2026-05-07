@@ -1,0 +1,59 @@
+﻿<div class="row" id="bankinfo">
+    <div class="col-xs-12" data-toggle="collapse" data-target="#ciAccountInformation" aria-expanded="true">
+        <h2 class="grid-title">
+            {{res:AccountInformation}}
+        </h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 collapse in" id="ciAccountInformation" aria-expanded="true" style="">
+        <table class="ASTable" aria-hidden="true">
+            <tbody>
+                <tr class="Row">
+                    <td class="heading">
+                        {{res:AccountInformation}}
+                    </td>
+                    <td class="heading">
+                        {{res:Program}}
+                    </td>
+                    <td class="heading">
+                        {{res:AccountNumber}}
+                    </td>
+                </tr>
+                <tr class="AltRow">
+                    <td>
+                        {{res:AmericanExpress}}
+                    </td>
+                    <td>
+                        {{data:AmexProgram||AccountInformation}}
+                    </td>
+                    <td>
+                        {{data:AMEXAccountNumber||AccountInformation}}
+                    </td>
+                </tr>
+                <tr class="Row">
+                    <td>
+                        {{res:Discover}}
+                    </td>
+                    <td>
+                        {{data:DiscoverProgram||AccountInformation}}
+                    </td>
+                    <td>
+                        {{data:DiscoverAccountNumber||AccountInformation}}
+                    </td>
+                </tr>
+                <tr class="AltRow">
+                    <td>
+                        {{res:DinersClub}}
+                    </td>
+                    <td>
+                        {{data:DinersClubProgram||AccountInformation}}
+                    </td>
+                    <td>
+                        {{data:DinersClubAccountNumber||AccountInformation}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

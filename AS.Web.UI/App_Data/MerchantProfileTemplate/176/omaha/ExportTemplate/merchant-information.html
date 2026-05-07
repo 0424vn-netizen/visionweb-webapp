@@ -1,0 +1,71 @@
+﻿<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <th colspan="6" align="left">
+      <b> {{res:MerchantInformation}}</b>
+    </th>
+  </tr>
+  <tbody>
+    <tr class="Row">
+      <td class="heading valign-middle">
+        {{res:MerchantID}}
+      </td>
+      <td>
+          &nbsp;{{data:MerchantNumber}}
+      </td>
+      <td class="heading valign-middle">
+        {{res:Contact}}
+      </td>
+      <td>
+        {{data:Contact}}
+      </td>
+      <td class="heading valign-middle">
+        {{res:Status}}
+      </td>
+      <td>
+        {{data:Status}}
+      </td>
+    </tr>
+    <tr class="AltRow">
+      <td class="heading valign-middle">
+        {{res:MerchantName}}
+      </td>
+      <td>
+        {{data:MerchantName}}
+      </td>
+      <td class="heading valign-middle">
+        {{res:Phone}}
+      </td>
+      <td>
+        {{data:Phone|Phone}}
+      </td>
+      <td class="heading valign-middle">
+        {{res:LastBatchActivity}}
+      </td>
+      <td>
+        {{data:LastBactchActivity}}
+      </td>
+    </tr>
+    <tr class="Row">
+      <td class="heading valign-middle">
+        {{res:Address}}
+      </td>
+      <td>
+        {{data:Address|Address}}
+      </td>
+      <td class="heading valign-middle">
+        {{res:Email}}
+      </td>
+      <td colspan="3">
+        {{data:Email}}
+      </td>
+    </tr>
+    <tr class="AltRow">
+      <td class="heading valign-middle">
+        {{res:Url}}
+      </td>
+      <td colspan="5">
+        {{data:MerchantWebsite}}
+      </td>
+    </tr>
+  </tbody>
+</table>

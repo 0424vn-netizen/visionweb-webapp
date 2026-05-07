@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AS_ASGrid_FilterMenu_NoFilter" xml:space="preserve">
+    <value>No Filter</value>
+  </data>
+  <data name="AS_ASGrid_FilterMenu_Contains" xml:space="preserve">
+    <value>Contains</value>
+  </data>
+  <data name="AS_ASGrid_FilterMenu_DoesNotContain" xml:space="preserve">
+    <value>Does Not Contain</value>
+  </data>
+  <data name="AS_ASGrid_FilterMenu_StartsWith" xml:space="preserve">
+    <value>Starts With</value>
+  </data>
+  <data name="AS_ASGrid_FilterMenu_EndsWith" xml:space="preserve">
+    <value>Ends With</value>
+  </data>
+  <data name="AS_ASGrid_FilterMenu_EqualTo" xml:space="preserve">
+    <value>Equal To</value>
+  </data> 
+  <data name="AS_ASGrid_FilterMenu_NotEqualTo" xml:space="preserve">
+    <value>Not Equal To</value>
+  </data>
+  <data name="AS_ASGrid_FilterMenu_GreaterThan" xml:space="preserve">
+    <value>Greater Than</value>
+  </data>
+  <data name="AS_ASGrid_FilterMenu_LessThan" xml:space="preserve">
+    <value>Less Than</value>
+  </data>
+  <data name="AS_ASGrid_FilterMenu_GreaterThanOrEqualTo" xml:space="preserve">
+    <value>Greater Than or Equal To</value>
+  </data>
+  <data name="AS_ASGrid_FilterMenu_LessThanOrEqualTo" xml:space="preserve">
+    <value>Less Than or Equal To</value>
+  </data>
+  <data name="AS_ASGrid_FilterMenu_IsNull" xml:space="preserve">
+    <value>Is Null (blanks)</value>
+  </data>
+  <data name="AS_ASGrid_FilterMenu_NotIsNull" xml:space="preserve">
+    <value>Is Not Null (non-blanks)</value>
+  </data>  
+  <data name="AS_ASGrid_ReportTotal" xml:space="preserve">
+    <value>Report Total</value>
+  </data>
+  <data name="AS_ASRepeater_NoDataFound" xml:space="preserve">
+    <value>No data found.</value>
+  </data>
+  <data name="AS_CommonJS_Msg_PrintPage_Alert" xml:space="preserve">
+    <value>Sorry, your browser doesn\'t support this feature.\n Please go to "File" and choose the "Print" option </value>
+    <comment>n</comment>
+  </data>
+  <data name="AS_CustomPager_PagerInformationString" xml:space="preserve">
+    <value>Displaying page {0} of {1}, Records {2} - {3} of {4}.</value>
+  </data>
+  <data name="AS_FilteringOptions_DateOption_Daily" xml:space="preserve">
+    <value>Daily</value>
+  </data>
+  <data name="AS_FilteringOptions_DateOption_DateRange" xml:space="preserve">
+    <value>Date Range </value>
+  </data>
+  <data name="AS_FilteringOptions_DateOption_Monthly" xml:space="preserve">
+    <value>Monthly</value>
+  </data>
+  <data name="AS_FilteringOptions_DateOption_Weekly" xml:space="preserve">
+    <value>Weekly</value>
+  </data>
+  <data name="AS_FilteringOptions_DateOption_Yearly" xml:space="preserve">
+    <value>Yearly</value>
+  </data>
+  <data name="AS_FilteringOptions_Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="AS_HierarchyGrid_NoRecord" xml:space="preserve">
+    <value>No records to display.</value>
+  </data>
+  <data name="AS_ReportFilterJS_Msg_Date_FromThanTo" xml:space="preserve">
+    <value>{0} must be greater than {1}.</value>
+    <comment>n</comment>
+  </data>
+  <data name="AS_ReportFilterJS_Msg_Date_Invalid" xml:space="preserve">
+    <value>{0} is invalid. Please enter MM/DD/YYYY.</value>
+    <comment>n</comment>
+  </data>
+  <data name="AS_ReportFilterJS_Msg_Date_MoreThanToday" xml:space="preserve">
+    <value>{0} must not be greater than today\'s date.</value>
+    <comment>n</comment>
+  </data>
+  <data name="AS_ReportFilterJS_Msg_TheBeginDate" xml:space="preserve">
+    <value>the begin date</value>
+    <comment>n</comment>
+  </data>
+  <data name="AS_ReportFilterJS_Msg_TheDate" xml:space="preserve">
+    <value>The date</value>
+    <comment>n</comment>
+  </data>
+  <data name="AS_ReportFilterJS_Msg_TheDateFormat" xml:space="preserve">
+    <value>The date format</value>
+    <comment>n</comment>
+  </data>
+  <data name="AS_ReportFilterJS_Msg_TheEndDate" xml:space="preserve">
+    <value>The end date</value>
+    <comment>n</comment>
+  </data>
+  <data name="AS_RiskParameterJS_Msg_ERR_ERR_MINEXCEED" xml:space="preserve">
+    <value>The value of this field may not lower than</value>
+    <comment>n</comment>
+  </data>
+  <data name="AS_RiskParameterJS_Msg_ERR_MAXEXCEED" xml:space="preserve">
+    <value>The value of this field may not exceed</value>
+    <comment>n</comment>
+  </data>
+  <data name="forgotPassword1_aspx_RequiredField" xml:space="preserve">
+    <value>This field is a required field.</value>
+  </data>
+  <data name="RadDatePicker_CancelButtonCaption" xml:space="preserve">
+    <value>CANCEL</value>
+  </data>
+  <data name="RadDatePicker_OkButtonCaption" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="RadDatePicker_TodayButtonCaption" xml:space="preserve">
+    <value>TODAY</value>
+  </data>
+  <data name="RiskEntities_Header_Assignment" xml:space="preserve">
+    <value>Assignment:</value>
+  </data>
+  <data name="RiskGeneral_Active" xml:space="preserve">
+    <value>Activate</value>
+  </data>
+  <data name="RiskGeneral_Deactive" xml:space="preserve">
+    <value>Deactivate</value>
+  </data>
+  <data name="RiskScoreFromRequired" xml:space="preserve">
+    <value>Risk Score From: This is a required field.</value>
+  </data>
+  <data name="RiskScoreToRequired" xml:space="preserve">
+    <value>Risk Score To: This is a required field.</value>
+  </data>
+  <data name="UserProfile_ascx_PasswordAtLeastNumberic" xml:space="preserve">
+    <value>The password must contain at least 1 numeric character(s).</value>
+  </data>
+  <data name="UserProfile_ascx_PasswordLength" xml:space="preserve">
+    <value>The password length must be between 8 and 50 characters.</value>
+  </data>
+  <data name="UserProfile_ascx_PasswordLowerCase" xml:space="preserve">
+    <value>The password must contain at least 1 lower case character(s).</value>
+  </data>
+  <data name="UserProfile_ascx_PasswordUpperCase" xml:space="preserve">
+    <value>The password must contain at least 1 upper case character(s).</value>
+  </data>
+  <data name="AS_FilterImageTooltip" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="uxReportDateDatePopupButtonToolTip" xml:space="preserve">
+    <value>Open the calendar popup.</value>
+  </data>
+  <data name="ActionBar_Alert_Name" xml:space="preserve">
+    <value>Alerts</value>
+  </data>
+  <data name="ActionBar_Alert_Title" xml:space="preserve">
+    <value>Alert Feed</value>
+  </data>
+  <data name="ActionBar_Alert_Tooltip" xml:space="preserve">
+    <value>Click to show alerts</value>
+  </data>
+  <data name="ActionBar_Clear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="ActionBar_Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="ActionBar_CloseText" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="ActionBar_Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="ActionBar_DismissText" xml:space="preserve">
+    <value>Dismiss</value>
+  </data>
+  <data name="ActionBar_LastMonth" xml:space="preserve">
+    <value>Last Month</value>
+  </data>
+  <data name="ActionBar_LastWeek" xml:space="preserve">
+    <value>Last Week</value>
+  </data>
+  <data name="ActionBar_NoItem" xml:space="preserve">
+    <value>No item</value>
+  </data>
+  <data name="ActionBar_Older" xml:space="preserve">
+    <value>Older</value>
+  </data>
+  <data name="ActionBar_ThisMonth" xml:space="preserve">
+    <value>This Month</value>
+  </data>
+  <data name="ActionBar_ThisWeek" xml:space="preserve">
+    <value>This Week</value>
+  </data>
+  <data name="ActionBar_ThreeWeeksAgo" xml:space="preserve">
+    <value>Three Weeks Ago</value>
+  </data>
+  <data name="ActionBar_ToDay" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="ActionBar_TwoWeeksAgo" xml:space="preserve">
+    <value>Two Weeks Ago</value>
+  </data>
+  <data name="ActionBar_ViewText" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="ActionBar_Yesterday" xml:space="preserve">
+    <value>Yesterday</value>
+  </data>
+  <data name="Hierarchy_Association" xml:space="preserve">
+    <value>Association</value>
+  </data>
+  <data name="Login_Environment_Label" xml:space="preserve">
+    <value>Environment</value>
+  </data>
+  <data name="Alert_ClearAll" xml:space="preserve">
+    <value>Clear All</value>
+  </data>
+  <data name="Alert_CloseFeed" xml:space="preserve">
+    <value>Close Feed</value>
+  </data>
+  <data name="Alert_Data_Alice" xml:space="preserve">
+    <value>ALICE</value>
+  </data>
+  <data name="Alert_Data_All" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="Alert_Data_CaseManagement" xml:space="preserve">
+    <value>Case Management</value>
+  </data>
+  <data name="Alert_Data_Read" xml:space="preserve">
+    <value>Read</value>
+  </data>
+  <data name="Alert_Data_UnRead" xml:space="preserve">
+    <value>Unread</value>
+  </data>
+  <data name="Alert_DismissAll" xml:space="preserve">
+    <value>Dismiss All</value>
+  </data>
+  <data name="Alert_MarkAllRead" xml:space="preserve">
+    <value>Mark All As Read</value>
+  </data>
+  <data name="Alert_MarkRead" xml:space="preserve">
+    <value>Mark As Read</value>
+  </data>
+  <data name="Alert_NoItem" xml:space="preserve">
+    <value>No alerts to see</value>
+  </data>
+  <data name="Alert_NoItemTitle" xml:space="preserve">
+    <value>All caught up</value>
+  </data>
+  <data name="Alert_OpenFeed" xml:space="preserve">
+    <value>Open Feed</value>
+  </data>
+  <data name="Alert_Show" xml:space="preserve">
+    <value>Show:</value>
+  </data>
+  <data name="Alert_UnRead" xml:space="preserve">
+    <value>Unread</value>
+  </data>
+  <data name="Alert_Multiplechoices" xml:space="preserve">
+    <value>Multiple choices</value>
+  </data>
+  <data name="Alert_Singlechoices" xml:space="preserve">
+    <value>Single choice</value>
+  </data>
+  <data name="Alert_Source" xml:space="preserve">
+    <value>SOURCE</value>
+  </data>
+  <data name="Alert_Status" xml:space="preserve">
+    <value>STATUS</value>
+  </data>
+  <data name="ActivationStatus_Active" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="ActivationStatus_All" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="ActivationStatus_NeverActive" xml:space="preserve">
+    <value>Never Active</value>
+  </data>
+  <data name="Statement_aspx_cs_STMT" xml:space="preserve">
+    <value>STMT</value>
+  </data>
+  <data name="AS_ReportFilterJS_Msg_Date_24Month" xml:space="preserve">
+    <value>No results found. Adjust your filtering criteria.</value>
+  </data>
+  <data name="AS_CommonJS_Msg_IncludedSpeciaCharacters" xml:space="preserve">
+      <value>Fields cannot include the following special characters &amp;#, and there must be a space after the less-than symbol &lt;.</value>
+  </data>
+  <data name="InvalidDate" xml:space="preserve">
+    <value>The date format is invalid. Please enter MM/DD/YYYY.</value>
+  </data>
+</root>

@@ -1,0 +1,31 @@
+﻿<table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+        <th colspan="2" align="left">
+            <b> {{res:AccountInformation}}</b>
+        </th>
+    </tr>
+    <tbody>
+        <tr class="Row">
+            <td class="heading">
+                {{res:AccountInformation}}
+            </td>
+            <td class="heading">
+                {{res:Status}}
+            </td>
+            <td class="heading">
+                {{res:EffectiveDate}}
+            </td>
+        </tr>
+        <tr class="AltRow">
+            <td>
+                {{res:DiscoverMAP}}
+            </td>
+            <td>
+                {{data:DiscoverRetained|AccountStatus|AccountInformation|DiscoverNonRetained}}
+            </td>
+            <td class="text-left">
+                {{data:EffectiveDate|AccountEffectedDate|AccountInformation|DiscoverRetained}}
+            </td>
+        </tr>
+    </tbody>
+</table>

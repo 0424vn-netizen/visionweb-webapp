@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ExtendedSettings>
+<!--For export file by report type DLL-->
+<!--Thin report: 1-->
+  <ExtendedSetting reportType="1" 
+     nameSpace="AS.VW.Scheduler.Tasks.ThinReport.ExportFile" 
+     DLLPath="D:\TFS_US\VisionWeb\FE\Front End Reskin\AS.VW.Scheduler.Tasks.ThinReport\bin\Debug\"
+     DLLName="AS.VW.Scheduler.Tasks.ThinReport.dll"
+     
+  />
+</ExtendedSettings>

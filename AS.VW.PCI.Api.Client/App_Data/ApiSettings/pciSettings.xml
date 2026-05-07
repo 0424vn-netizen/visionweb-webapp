@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<apiSettings>
+  <api name="default" source="pci" ssl="true" disabled="false">
+    <baseUrl value="https://pci-api-qa.local/api-microservice" />
+    <authentication mode="none" />
+  </api>
+  <api name="auth/token" source="pci"></api>
+  <api name="user/CreateUser" source="pci"></api>
+  <api name="user/UpdateUser" source="pci"></api>
+  <api name="user/GetMasterMerchant" source="pci"></api>
+  <api name="user/GetHierarchyID" source="pci"></api>
+  <api name="user/UpdSecRoleByUserID" source="pci"></api>
+  <api name="user/UpdateOptInOut" source="pci"></api>
+  <api name="user/GetAllHierarchyForAO" source="pci"></api>
+  <api name="user/GetUsers" source="pci"></api>
+</apiSettings>

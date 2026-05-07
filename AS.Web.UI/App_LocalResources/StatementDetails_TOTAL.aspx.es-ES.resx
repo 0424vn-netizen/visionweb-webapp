@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Literal10Resource1.Text" xml:space="preserve">
+    <value>Tasas y promociones mensuales</value>
+  </data>
+  <data name="Literal11Resource1.Text" xml:space="preserve">
+    <value>Tasas de procesamiento</value>
+  </data>
+  <data name="Literal12Resource1.Text" xml:space="preserve">
+    <value>TASAS EN FUNCIÓN DE EVENTOS</value>
+  </data>
+  <data name="Literal13Resource1.Text" xml:space="preserve">
+    <value>Tasas totales de procesamiento facturadas a su cuenta</value>
+  </data>
+  <data name="Literal14Resource1.Text" xml:space="preserve">
+    <value>EN LAS NOTICIAS</value>
+  </data>
+  <data name="Literal15Resource1.Text" xml:space="preserve">
+    <value>DETALLES DE DEPÓSITOS POR DÍA</value>
+  </data>
+  <data name="Literal16Resource1.Text" xml:space="preserve">
+    <value>Número de Referencia</value>
+  </data>
+  <data name="Literal17Resource1.Text" xml:space="preserve">
+    <value>Número de transacciones</value>
+  </data>
+  <data name="Literal18Resource1.Text" xml:space="preserve">
+    <value>Ventas</value>
+  </data>
+  <data name="Literal19Resource1.Text" xml:space="preserve">
+    <value>Reembolsos</value>
+  </data>
+  <data name="Literal1Resource1.Text" xml:space="preserve">
+    <value>Fecha de declaración</value>
+  </data>
+  <data name="Literal20Resource1.Text" xml:space="preserve">
+    <value>Depósito total</value>
+  </data>
+  <data name="Literal210Resource1.Text" xml:space="preserve">
+    <value>Ventas totales + reembolsos</value>
+  </data>
+  <data name="Literal21Resource1.Text" xml:space="preserve">
+    <value>No se encontraron datos.</value>
+  </data>
+  <data name="Literal22Resource1.Text" xml:space="preserve">
+    <value>TASAS Y PROMOCIONES MENSUALES</value>
+  </data>
+  <data name="Literal23Resource1.Text" xml:space="preserve">
+    <value>Descrioción de tasa</value>
+  </data>
+  <data name="Literal24Resource1.Text" xml:space="preserve">
+    <value>Ctd.</value>
+  </data>
+  <data name="Literal25Resource1.Text" xml:space="preserve">
+    <value>Tasa por elemento</value>
+  </data>
+  <data name="Literal26Resource1.Text" xml:space="preserve">
+    <value>Tasa total</value>
+  </data>
+  <data name="Literal27Resource1.Text" xml:space="preserve">
+    <value>No se encontraron datos.</value>
+  </data>
+  <data name="Literal28Resource1.Text" xml:space="preserve">
+    <value>TASAS DE PROCESAMIENTO</value>
+  </data>
+  <data name="Literal29Resource1.Text" xml:space="preserve">
+    <value>Tipo de Tarjeta</value>
+  </data>
+  <data name="Literal2Resource1.Text" xml:space="preserve">
+    <value>Preguntas</value>
+  </data>
+  <data name="Literal30Resource1.Text" xml:space="preserve">
+    <value>Tarifa</value>
+  </data>
+  <data name="Literal31Resource1.Text" xml:space="preserve">
+    <value>Ventas</value>
+  </data>
+  <data name="Literal320Resource1.Text" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="Literal321Resource1.Text" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="Literal32Resource1.Text" xml:space="preserve">
+    <value>Reembolsos</value>
+  </data>
+  <data name="Literal33Resource1.Text" xml:space="preserve">
+    <value>Tasa total</value>
+  </data>
+  <data name="Literal34Resource1.Text" xml:space="preserve">
+    <value>TASA DEL ÍNDICE DE PROCESAMIENTO</value>
+  </data>
+  <data name="Literal35Resource1.Text" xml:space="preserve">
+    <value>No se encontraron datos.</value>
+  </data>
+  <data name="Literal36Resource1.Text" xml:space="preserve">
+    <value>TASA DE TRANSACCIÓN</value>
+  </data>
+  <data name="Literal370Resource1.Text" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="Literal37Resource1.Text" xml:space="preserve">
+    <value>No se encontraron datos.</value>
+  </data>
+  <data name="Literal38Resource1.Text" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="Literal3Resource1.Text" xml:space="preserve">
+    <value>Declaración mensual</value>
+  </data>
+  <data name="Literal4Resource1.Text" xml:space="preserve">
+    <value>DECLARACIÓN A SIMPLE VISTA</value>
+  </data>
+  <data name="Literal5Resource1.Text" xml:space="preserve">
+    <value>DEPÓSITOS</value>
+  </data>
+  <data name="Literal6Resource1.Text" xml:space="preserve">
+    <value>Ventas</value>
+  </data>
+  <data name="Literal7Resource1.Text" xml:space="preserve">
+    <value>Reembolsos</value>
+  </data>
+  <data name="Literal8Resource1.Text" xml:space="preserve">
+    <value>Depósitos totales a su cuenta</value>
+  </data>
+  <data name="Literal9Resource1.Text" xml:space="preserve">
+    <value>FACTURADOS A SU CUENTA</value>
+  </data>
+  <data name="ltEDFNoDataResource1.Text" xml:space="preserve">
+    <value>No se encontraron datos.</value>
+  </data>
+  <data name="ltEDFQtyResource1.Text" xml:space="preserve">
+    <value>Ctd.</value>
+  </data>
+  <data name="ltEDFRateResource1.Text" xml:space="preserve">
+    <value>Tarifa</value>
+  </data>
+  <data name="ltEDFTotalChargeResource1.Text" xml:space="preserve">
+    <value>Cargo Total</value>
+  </data>
+  <data name="ltEDFTypeResource1.Text" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="ltEventDrivenFeesResource1.Text" xml:space="preserve">
+    <value>TASAS EN FUNCIÓN DE EVENTOS</value>
+  </data>
+  <data name="ltExportToPDFTextResource1.Text" xml:space="preserve">
+    <value>EXPORTAR A PDF</value>
+  </data>
+  <data name="ltMerchantIDLabelResource1.Text" xml:space="preserve">
+    <value>Identificación De Comerciante</value>
+  </data>
+  <data name="ltTotalProcFeesResource1.Text" xml:space="preserve">
+    <value>TASAS TOTALES DE PROCESAMIENTO</value>
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>DETALLES DE DECLARACIÓN</value>
+  </data>
+  <data name="pdf_template_MerchantID" xml:space="preserve">
+    <value>Identificación De Comerciante</value>
+  </data>
+  <data name="pdf_template_of" xml:space="preserve">
+    <value>de</value>
+  </data>
+  <data name="pdf_template_Page" xml:space="preserve">
+    <value>Página</value>
+  </data>
+  <data name="pdf_template_Question" xml:space="preserve">
+    <value>Preguntas</value>
+  </data>
+  <data name="pdf_template_StatementDate" xml:space="preserve">
+    <value>Fecha de declaración</value>
+  </data>
+  <data name="StatementDetails_TOTAL_aspx_cs_Date" xml:space="preserve">
+    <value>FECHA</value>
+  </data>
+  <data name="text_cardtype_capitallize" xml:space="preserve">
+    <value>TIPO DE TARJETA</value>
+  </data>
+  <data name="text_fee_description_capitallize" xml:space="preserve">
+    <value>DESCRIPCIÓN DE TASA</value>
+  </data>
+  <data name="text_itemfee_capitallize" xml:space="preserve">
+    <value>TASA POR ELEMENTO</value>
+  </data>
+  <data name="text_qty_capitallize" xml:space="preserve">
+    <value>CTD.</value>
+  </data>
+  <data name="text_rate_capitallize" xml:space="preserve">
+    <value>TARIFA</value>
+  </data>
+  <data name="text_refund_capitallize" xml:space="preserve">
+    <value>REEMBOLSOS</value>
+  </data>
+  <data name="text_sale_capitallize" xml:space="preserve">
+    <value>VENTAS</value>
+  </data>
+  <data name="text_totalcharge_capitallize" xml:space="preserve">
+    <value>CARGO TOTAL</value>
+  </data>
+  <data name="text_totalfee_capitallize" xml:space="preserve">
+    <value>TASA TOTAL</value>
+  </data>
+  <data name="text_TotalSales_Refunds_capitalize" xml:space="preserve">
+    <value>VENTAS TOTALES + REEMBOLSOS</value>
+  </data>
+  <data name="text_total_capitallize" xml:space="preserve">
+    <value>TOTAL</value>
+  </data>
+  <data name="text_Type_capitallize" xml:space="preserve">
+    <value>TIPO</value>
+  </data>
+  <data name="uxExportPDFResource1.ToolTip" xml:space="preserve">
+    <value>Exportar a PDF</value>
+  </data>
+</root>

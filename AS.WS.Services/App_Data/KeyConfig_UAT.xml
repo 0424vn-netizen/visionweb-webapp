@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Clients>
+	<client id="15"   name="PPI" 	 keyPath="\\CHIWINPROD201\kcomp\vw_1.xml" />
+	<client id="22"   name="FIS" 	 keyPath="\\CHIWINPROD201\kcomp\FIS.xml" />
+	<client id="29"   name="ORION" 	 keyPath="\\CHIWINPROD201\kcomp\vw_1.xml" />
+	<client id="49"   name="TNBCI" 	 keyPath="\\CHIWINPROD201\kcomp\vw_1.xml" />
+	<client id="65"   name="IPMT" 	 keyPath="\\CHIWINPROD201\kcomp\vw_1.xml" />
+	<client id="82"   name="PIVOTAL" keyPath="\\CHIWINPROD201\kcomp\vw_1.xml" />
+	<client id="86"   name="SNET" 	 keyPath="\\CHIWINPROD201\kcomp\vw_1.xml" />
+	<client id="89"   name="TOTAL" 	 keyPath="\\CHIWINPROD201\kcomp\vw_1.xml" />
+	<client id="91"   name="FULTON"  keyPath="\\CHIWINPROD201\kcomp\vw_1.xml" />
+	<client id="95"   name="NTS" 	 keyPath="\\CHIWINPROD201\kcomp\vw_1.xml" />
+  	<client id="97"   name="WRFC" 	 keyPath="\\CHIWINPROD201\kcomp\vw_1.xml" />
+	<client id="119"  name="eVance"	 keyPath="\\CHIWINPROD201\kcomp\vw_1.xml" />
+	<client id="122"  name="SFTI" 	 keyPath="\\CHIWINPROD201\kcomp\vw_1.xml" />
+	<client id="126"  name="CAYAN" 	 keyPath="\\CHIWINPROD201\kcomp\vw_1.xml" />
+	<client id="127"  name="PAYLINE" keyPath="\\CHIWINPROD201\kcomp\vw_1.xml" />
+	<client id="129"  name="MON" 	 keyPath="\\CHIWINPROD201\kcomp\vw_1.xml" />
+	<client id="1000" name="DEMO" 	 keyPath="\\CHIWINPROD201\kcomp\FIS_D.xml"  />
+	<client id="115"  name="CLEARENT" 	 keyPath="\\CHIWINPROD201\kcomp\vw_1.xml" />
+	<client id="113"  name="SIGNAPAY" 	 keyPath="\\CHIWINPROD201\kcomp\vw_1.xml" />
+	<client id="142"  name="ALLIEDWALLET"	 keyPath="\\CHIWINPROD201\kcomp\vw_1.xml"/>
+	
+	<client id="144"  name="SPHERE"	 keyPath="\\CHIWINPROD201\kcomp\vw_1.xml"/>
+	
+	<client id="152"  name="RS2"	 keyPath="\\CHIWINPROD201\kcomp\vw_1.xml"/>
+	<client id="76"  name="Paya"	 keyPath="\\CHIWINPROD201\kcomp\vw_1.xml"/>
+	<client id="39"  name="MLS"	 keyPath="\\CHIWINPROD201\kcomp\vw_1.xml"/>
+	<client id="69"  name="FIPS" 	 keyPath="\\CHIWINPROD201\kcomp\vw_1.xml" />
+	<client id="165"  name="GREENBOX" 	 keyPath="\\CHIWINPROD201\kcomp\vw_1.xml" />
+	<client id="176" name="DYNAMICS" keyPath="\\CHIWINPROD201\kcomp\vw_1.xml"></client>
+	<client id="170" name="ProCare" keyPath="\\CHIWINPROD201\kcomp\vw_1.xml"></client>
+	<client id="181" name="KYBNK" keyPath="\\CHIWINPROD201\kcomp\vw_1.xml"></client>
+	<client id="160" name="EIRTH" keyPath="\\CHIWINPROD201\kcomp\vw_1.xml"></client>
+	<client id="158" name="FORTIS" keyPath="\\CHIWINPROD201\kcomp\vw_1.xml"></client>
+	<client id="191" name="WOODFOREST" keyPath="\\CHIWINPROD201\kcomp\vw_1.xml"></client>
+	<client id="187" name="AVIDIA" keyPath="\\CHIWINPROD201\kcomp\vw_1.xml"></client>
+	<client id="186" name="MBH" keyPath="\\CHIWINPROD201\kcomp\vw_1.xml"></client>
+	<client id="200" name="MBH" keyPath="\\CHIWINPROD201\kcomp\vw_1.xml"></client>
+  <client id="206" name="MBH" keyPath="\\CHIWINPROD201\kcomp\vw_1.xml"></client>
+  <client id="217" name="SPR" keyPath="\\CHIWINPROD201\kcomp\vw_1.xml"></client>
+	<client id="218" name="STAX" keyPath="\\CHIWINPROD201\kcomp\vw_1.xml"></client>
+</Clients>

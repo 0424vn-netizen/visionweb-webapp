@@ -1,0 +1,535 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ReportDate.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ADF.HeaderText" xml:space="preserve">
+    <value>A/D/F</value>
+  </data>
+  <data name="ADF.HeaderTooltip" xml:space="preserve">
+    <value>Approved/Declined or Forced Sale</value>
+  </data>
+  <data name="ADF.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ADFTooltip.HeaderDescription" xml:space="preserve">
+     <value>Indicates if an authorization was approved (A), declined (D), or forced sale (F).&lt;br&gt;&lt;strong class='color-title'&gt;Hover:&lt;/strong&gt; Displays description</value>  
+  </data>
+  <data name="ResponseCode.HeaderText" xml:space="preserve">
+    <value>RC</value>
+  </data>
+  <data name="ResponseCode.HeaderTooltip" xml:space="preserve">
+    <value>Response Code</value>
+  </data>
+  <data name="ResponseCode.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ResponseCodeTooltip.HeaderDescription" xml:space="preserve">
+     <value>Response code for an approved or declined authorization&lt;br&gt;&lt;strong class='color-title'&gt;Hover:&lt;/strong&gt; Displays response code description</value>  
+  </data>
+  <data name="AuthCode.HeaderText" xml:space="preserve">
+    <value>Auth Code</value>
+  </data>
+  <data name="AuthCode.HeaderTooltip" xml:space="preserve">
+    <value>Authorization Code</value>
+  </data>
+  <data name="AuthCode.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="AuthCodeTooltip.HeaderDescription" xml:space="preserve">
+     <value>Alphanumeric authorization code provided by the card issuer</value>  
+  </data>
+  <data name="AVS.HeaderText" xml:space="preserve">
+    <value>AVS</value>
+  </data>
+  <data name="AVS.HeaderTooltip" xml:space="preserve">
+    <value>Address Vertification System</value>
+  </data>
+  <data name="AVS.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="AVSTooltip.HeaderDescription" xml:space="preserve">
+     <value>Address Verification Service code&lt;br&gt;&lt;strong class='color-title'&gt;Hover:&lt;/strong&gt; Displays AVS code description</value>  
+  </data>
+  <data name="CVV.HeaderText" xml:space="preserve">
+    <value>CVV</value>
+  </data>
+  <data name="CVV.HeaderTooltip" xml:space="preserve">
+    <value>Cardholder Verification Value</value>
+  </data>
+  <data name="CVV.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CVVTooltip.HeaderDescription" xml:space="preserve">
+     <value>Cardholder Verification Value code</value>  
+  </data>
+  <data name="KeyedEntry.HeaderText" xml:space="preserve">
+    <value>Keyed</value>
+  </data>
+  <data name="KeyedEntry.HeaderTooltip" xml:space="preserve">
+    <value>KEYED or SWIPED</value>
+  </data>
+  <data name="KeyedEntry.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="KeyedEntryTooltip.HeaderDescription" xml:space="preserve">
+     <value>Indicates if the authorization or transaction was entered manually (Y) or swiped (N)</value>  
+  </data>
+  <data name="SettleType.HeaderText" xml:space="preserve">
+    <value>Settled</value>
+  </data>
+  <data name="SettleType.HeaderTooltip" xml:space="preserve">
+    <value>Settled</value>
+  </data>
+  <data name="SettleType.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="SettleTypeTooltip.HeaderDescription" xml:space="preserve">
+     <value>Indicates that a merchant has received funds for a sale</value>  
+  </data>
+  <data name="FileSource.HeaderText" xml:space="preserve">
+    <value>File Source</value>
+  </data>
+  <data name="FileSource.HeaderTooltip" xml:space="preserve">
+    <value>File Source</value>
+  </data>
+  <data name="FileSource.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="FileSourceTooltip.HeaderDescription" xml:space="preserve">
+     <value>The abbreviated file name</value>  
+  </data>
+  <data name="ASGridBoundColumnResource18.HeaderText" xml:space="preserve">
+    <value># Batch</value>
+  </data>
+  <data name="ASGridBoundColumnResource18.HeaderTooltip" xml:space="preserve">
+    <value>Batch Count</value>
+  </data>
+  <data name="ASGridBoundColumnResource18.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource19.HeaderText" xml:space="preserve">
+    <value>Batch $</value>
+  </data>
+  <data name="ASGridBoundColumnResource19.HeaderTooltip" xml:space="preserve">
+    <value>Batch Amount</value>
+  </data>
+  <data name="ASGridBoundColumnResource19.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TransDate.HeaderText" xml:space="preserve">
+    <value>Trans Date</value>
+  </data>
+  <data name="TransDate.HeaderTooltip" xml:space="preserve">
+    <value>Transaction Date</value>
+  </data>
+  <data name="TransDate.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TransDateTooltip.HeaderDescription" xml:space="preserve">
+    <value>Date of the transaction or authorization</value>  
+  </data>
+  <data name="TerminalNumber.HeaderText" xml:space="preserve">
+    <value>Terminal #</value>
+  </data>
+  <data name="TerminalNumber.HeaderTooltip" xml:space="preserve">
+    <value>Terminal Number</value>
+  </data>
+  <data name="TerminalNumber.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TerminalNumberTooltip.HeaderDescription" xml:space="preserve">
+    <value>Terminal number used by merchant for the authorization or transaction</value>  
+  </data>
+  <data name="CardType.HeaderText" xml:space="preserve">
+    <value>Card</value>
+  </data>
+  <data name="CardType.HeaderTooltip" xml:space="preserve">
+    <value>Card Type Code</value>
+  </data>
+  <data name="CardType.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CardTypeTooltip.HeaderDescription" xml:space="preserve">
+     <value>Card brand abbreviation&lt;br&gt;&lt;strong class='color-title'&gt;Hover:&lt;/strong&gt; Displays full card brand name</value>  
+  </data>
+  <data name="CountryCode.HeaderText" xml:space="preserve">
+    <value>Ctry</value>
+  </data>
+  <data name="CountryCode.HeaderTooltip" xml:space="preserve">
+    <value>Country Code</value>
+  </data>
+  <data name="CountryCode.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CountryCodeTooltip.HeaderDescription" xml:space="preserve">
+     <value>Country from which the card was issued.</value>  
+  </data>
+  <data name="CardNumber.HeaderText" xml:space="preserve">
+    <value>Acct Number</value>
+  </data>
+  <data name="CardNumber.HeaderTooltip" xml:space="preserve">
+    <value>Account Number</value>
+  </data>
+  <data name="CardNumber.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CardNumberTooltip.HeaderDescription" xml:space="preserve">
+     <value>Card’s primary account number (PAN)</value>  
+  </data>
+  <data name="PartialCardNumber.HeaderText" xml:space="preserve">
+    <value>Acct Number</value>
+  </data>
+  <data name="PartialCardNumber.HeaderTooltip" xml:space="preserve">
+    <value>Account Number</value>
+  </data>
+  <data name="PartialCardNumber.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="PartialCardNumberTooltip.HeaderDescription" xml:space="preserve">
+     <value>Card’s primary account number (PAN)</value>  
+  </data>
+  <data name="ExpirationDate.HeaderText" xml:space="preserve">
+    <value>Expire</value>
+  </data>
+  <data name="ExpirationDate.HeaderTooltip" xml:space="preserve">
+    <value>Expiration Date</value>
+  </data>
+  <data name="ExpirationDate.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ExpirationDateTooltip.HeaderDescription" xml:space="preserve">
+    <value>Card expiration MM/YY</value>  
+  </data>
+  <data name="TransType.HeaderText" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="TransType.HeaderTooltip" xml:space="preserve">
+    <value>Transaction Type</value>
+  </data>
+  <data name="TransType.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TransTypeTooltip.HeaderDescription" xml:space="preserve">
+    <value>Transaction type: Authorization (Auth), Sale, or Return</value>  
+  </data>
+  <data name="Amount.HeaderText" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="Amount.HeaderTooltip" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="Amount.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="AmountTooltip.HeaderDescription" xml:space="preserve">
+    <value>Transaction amount</value>  
+  </data>
+  <data name="Literal1Resource1.Text" xml:space="preserve">
+    <value>Days:</value>
+  </data>
+  <data name="Literal2Resource1.Text" xml:space="preserve">
+    <value>Sort 1:</value>
+  </data>
+  <data name="Literal3Resource1.Text" xml:space="preserve">
+    <value>Sort 2:</value>
+  </data>
+  <data name="Literal4Resource1.Text" xml:space="preserve">
+    <value>Sort 3:</value>
+  </data>
+  <data name="ltTransactionHistoryResource1.Text" xml:space="preserve">
+    <value>Transaction History</value>
+  </data>
+  <data name="optAsc1Resource1.Text" xml:space="preserve">
+    <value>Ascend</value>
+  </data>
+  <data name="optAsc2Resource1.Text" xml:space="preserve">
+    <value>Ascend</value>
+  </data>
+  <data name="optAsc3Resource1.Text" xml:space="preserve">
+    <value>Ascend</value>
+  </data>
+  <data name="optDesc1Resource1.Text" xml:space="preserve">
+    <value>Descend</value>
+  </data>
+  <data name="optDesc2Resource1.Text" xml:space="preserve">
+    <value>Descend</value>
+  </data>
+  <data name="optDesc3Resource1.Text" xml:space="preserve">
+    <value>Descend</value>
+  </data>
+  <data name="uxTransactionDetailsResource1.HierarchySettings.CollapseTooltip" xml:space="preserve">
+    <value>Collapse</value>
+  </data>
+  <data name="uxTransactionDetailsResource1.HierarchySettings.ExpandTooltip" xml:space="preserve">
+    <value>Expand</value>
+  </data>
+  <data name="uxTransactionDetailsResource1.MasterTableView.NoDetailRecordsText" xml:space="preserve">
+    <value>No results found. Adjust your filtering criteria.</value>
+  </data>
+  <data name="uxTransactionDetailsResource1.MasterTableView.NoMasterRecordsText" xml:space="preserve">
+    <value>No results found. Adjust your filtering criteria.</value>
+  </data>
+  <data name="RiskTransactionHistory_ascx_cs_NewWindow" xml:space="preserve">
+    <value>View Transaction on new window</value>
+  </data>
+  <data name="RiskTransactionHistory_ascx_cs_TransactionHistory" xml:space="preserve">
+    <value>TRANSACTION HISTORY</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_AcctNumber" xml:space="preserve">
+    <value>Acct Number</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_Amount" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_AuthCode" xml:space="preserve">
+    <value>Auth Code</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_AVS" xml:space="preserve">
+    <value>AVS</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_A_D_F" xml:space="preserve">
+    <value>A/D/F</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_BatchDollar" xml:space="preserve">
+    <value>Batch $</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_Card" xml:space="preserve">
+    <value>Card</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_CVV2" xml:space="preserve">
+    <value>CVV</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_Expire" xml:space="preserve">
+    <value>Expire</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_FileSource" xml:space="preserve">
+    <value>File Source</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_F_D" xml:space="preserve">
+    <value>F/D</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_Keyed" xml:space="preserve">
+    <value>Keyed</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_RC" xml:space="preserve">
+    <value>RC</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_ReportDate" xml:space="preserve">
+    <value>Report Date</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_Settled" xml:space="preserve">
+    <value>Settled</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_SharpBatch" xml:space="preserve">
+    <value># Batch</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_TerminalSharp" xml:space="preserve">
+    <value>Terminal #</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_TransDate" xml:space="preserve">
+    <value>Trans Date</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="ReportDate.HeaderText" xml:space="preserve">
+    <value>Report Date</value>
+  </data>
+  <data name="ReportDate.HeaderTooltip" xml:space="preserve">
+    <value>Report Date</value>
+  </data>
+  <data name="ReportDateTooltip.HeaderDescription" xml:space="preserve">
+    <value>Date that a transaction or authorization was made available to be reviewed in VisionWeb Risk.</value>  
+  </data>
+  <data name="EMVIndicator.HeaderText" xml:space="preserve">
+    <value>EMV</value>
+  </data>
+  <data name="EMVIndicator.HeaderTooltip" xml:space="preserve">
+    <value>EMV</value>
+  </data>
+  <data name="EMVIndicatorTooltip.HeaderDescription" xml:space="preserve">
+     <value>Europay, Mastercard, and Visa – Indicates if the chip on a card was read to perform the authorization or transaction if the value displayed is Chip.</value>  
+  </data>
+  <data name="OrderByHighestToLowest" xml:space="preserve">
+    <value>Highest to Lowest</value>
+  </data>
+  <data name="OrderByLowestToHighest" xml:space="preserve">
+    <value>Lowest to Highest</value>
+  </data>
+  <data name="OrderByMostRecent" xml:space="preserve">
+    <value>Most recent</value>
+  </data>
+  <data name="OrderByOldest" xml:space="preserve">
+    <value>Oldest</value>
+  </data>
+  <data name="OrderByAscend" xml:space="preserve">
+    <value>Ascend</value>
+  </data>
+  <data name="OrderByDescend" xml:space="preserve">
+    <value>Descend</value>
+  </data>
+  <data name="ASGridBoundColumnResource22.HeaderText" xml:space="preserve">
+    <value>Acct Used #</value>
+  </data>
+  <data name="ASGridBoundColumnResource22.HeaderTooltip" xml:space="preserve">
+    <value>Last 30 Days Count</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_Ctry" xml:space="preserve">
+    <value>Ctry</value>
+  </data>
+  <data name="TransactionHistoryColumn_xml_EMV" xml:space="preserve">
+    <value>EMV</value>
+  </data>
+  <data name="uxExportTransactionHistoryResource.FileName" xml:space="preserve">
+    <value>Risk Management - Risk Analysis - Transaction History</value>
+  </data>
+  <data name="MatchCode.HeaderText" xml:space="preserve">
+    <value>Match</value>
+  </data>
+  <data name="MatchCode.HeaderTooltip" xml:space="preserve">
+    <value>Match</value>
+  </data>
+  <data name="MatchCodeTooltip.HeaderDescription" xml:space="preserve">
+    <value>Indicates if a return is matched (M), partially matched (P) or unmatched (U) to a previous sale within 90 days from the return date.&lt;br&gt;&lt;strong class='color-title'&gt;Hover:&lt;/strong&gt; Displays description</value> 
+  </data>
+  <data name="BinNumber.HeaderText" xml:space="preserve">
+    <value>BIN</value>
+  </data>
+  <data name="BinNumber.HeaderTooltip" xml:space="preserve">
+    <value>Bank Identification Number (six or eight digits)</value>
+  </data>
+  <data name="BinNumberTooltip.HeaderDescription" xml:space="preserve">
+    <value>Bank Identification Number (six or eight digits)</value>  
+  </data>
+  <data name="TransactionHistoryColumn_xml_Match" xml:space="preserve">
+    <value>Match</value>
+  </data>
+	<data name="DupeCount.HeaderText" xml:space="preserve">
+    <value>Acct Used #</value>
+  </data>
+	<data name="DupeCount.HeaderTooltip" xml:space="preserve">
+    <value>Account Used Count</value>
+  </data>
+	<data name="DupeCountTooltip.HeaderDescription" xml:space="preserve">
+    <value>&lt;strong class='color-title'&gt;Account Used Count&lt;/strong&gt;&lt;br&gt;Number of times the Acct Number was used for the transaction Type displayed during the last 30 days including today.&lt;br&gt;&lt;strong class='color-title'&gt;Hover:&lt;/strong&gt; The total amount of either authorization, and sale or return transactions during the last 30 days including today.</value>  
+  </data>
+</root>

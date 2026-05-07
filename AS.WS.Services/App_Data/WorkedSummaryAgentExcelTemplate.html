@@ -1,0 +1,62 @@
+﻿<!--BEGIN_HEADER-->
+<html>
+<head>
+<title>[REPORT_TITLE]</title>
+<style type="text/css">
+table{border:1px solid #000;border-collapse:collapse;width:100%;}td,th{border:1px solid #000;padding:3px;text-align:center;}td.dt{text-align:left;}.s{border-right:none;width:30px;}.n{border-left:none; text-align:left;}
+</style>
+</head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+<body>
+<table>
+<tr><td class='dt' colspan='9'><b>[REPORT_TITLE]</b></td></tr>
+<!--END_HEADER-->
+
+<!--BEGIN_REPORT_HEADER-->
+<tr>
+    <th colspan='2' width='30%'>[tpl_AgentOrAssignment]</th>
+    <th width='10%'>[tpl_TotalAssigned]</th>
+    <th width='10%'>[tpl_TotalWorked]</th>
+    <th width='10%'>[tpl_TotalWorkedPriorToDateRange]</th>
+    <th width='10%'>[tpl_WorkedPercentage]</th>
+    <th width='10%'>[tpl_CasesClosed]</th>
+    <th width='10%'>[tpl_CasesOpened]</th>
+    <th width='10%'>[tpl_PendingPercentage]</th>
+    <th width='10%'>[tpl_TotalPending]</th>
+</tr>
+<!--END_REPORT_HEADER-->
+
+<!--BEGIN_AGENT-->
+<tr>
+    <td colspan='2' class='n'><b>[RECORD_NAME]</b></td>
+    <td>[TOTAL_ASSIGNED]</td>
+    <td>[TOTAL_WORKED]</td>
+    <td>[TOTAL_WORKED_PRIOR_TO_DATE_RANGE]</td>
+    <td>[PER_WORKED]</td>
+    <td>[CASE_CLOSED]</td>
+    <td>[CASE_OPENED]</td>
+    <td>[PER_PENDING]</td>
+    <td>[TOTAL_PENDING]</td>
+</tr>
+<!--END_AGENT-->
+
+<!--BEGIN_ASSIGNMENT-->
+<tr>
+    <td class='s'></td>
+    <td class='n'>[RECORD_NAME]</td>
+    <td>[TOTAL_ASSIGNED]</td>
+    <td>[TOTAL_WORKED]</td>  
+    <td>[TOTAL_WORKED_PRIOR_TO_DATE_RANGE]</td>
+    <td>[PER_WORKED]</td>
+    <td>[CASE_CLOSED]</td>
+    <td>[CASE_OPENED]</td>
+    <td>[PER_PENDING]</td>
+    <td>[TOTAL_PENDING]</td>
+</tr>
+<!--END_ASSIGNMENT-->
+
+<!--BEGIN_FOOTER-->
+</table>
+</body>
+</html>
+<!--END_FOOTER-->

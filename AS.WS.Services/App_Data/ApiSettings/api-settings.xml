@@ -1,0 +1,10 @@
+﻿<apiSettings>
+  <groupSetting>
+    <api code="GetApproverGroups" name="merchant-decision/get-approver-groups" />
+    <api code="GetApproverGroupsByUser" name="merchant-decision/get-approver-groups-by-userid" />
+    <api code="UpdateApproverGroupMember" name="merchant-decision/update-approver-groups-member" />
+    <api code="CreateDocumentType" name="document-type/create-document-type" />
+    <api code="UpdateDocumentType" name="document-type/edit-document-type" />
+    <api code="UpdateFullNameForApproverGroup" name="decision-maintenance/update-member-name-from-vw" />
+  </groupSetting>
+</apiSettings>

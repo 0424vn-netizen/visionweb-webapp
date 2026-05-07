@@ -1,0 +1,67 @@
+﻿<table border="0">
+    <tr>
+        <th colspan="2">
+            <b> {{res:RiskInformation}}</b>
+        </th>
+    </tr>
+    <colgroup>
+        <col style="width: 160px" />
+        <col />
+    </colgroup>
+    <tbody>
+        <tr class="Row">
+            <td class="heading">
+                {{res:ClassificationName}}
+            </td>
+            <td>
+                {{data:MerchantClassificationName||RiskInformation}}
+            </td>
+        </tr>
+        <tr>
+            <td class="heading">
+                {{res:Multiplier}}
+            </td>
+            <td>
+                {{data:Multiplier||RiskInformation}}
+            </td>
+        </tr>
+        <tr>
+            <td class="heading">
+                {{res:RiskScore}}
+            </td>
+            <td>
+                {{data:TotalRS||RiskInformation}}
+            </td>
+        </tr>
+        <!--RISK_REPORT_EXTEND_START--><!--Name:GverifyCode:Name-->
+        <tr>
+            <td class="heading">
+                {{res:GverifyCode}}
+            </td>
+            <td>
+                {{data:GVerifyCode||RiskInformation}}
+            </td>
+        </tr>
+        <!--RISK_REPORT_EXTEND_END-->
+        <!--RISK_REPORT_EXTEND_START--><!--Name:GauthenticateCode:Name-->
+        <tr>
+            <td class="heading">
+                {{res:GauthenticateCode}}
+            </td>
+            <td>
+                {{data:GAuthenticateCode||RiskInformation}}
+            </td>
+        </tr>
+        <!--RISK_REPORT_EXTEND_END-->
+        <!--RISK_REPORT_EXTEND_START--><!--Name:G2Compass:Name-->
+        <tr>
+            <td class="heading">
+                {{res:G2CompassAutoApprovalIndicator}}
+            </td>
+            <td>
+                {{data:G2CompassAutoApprovalIndicator||RiskInformation}}
+            </td>
+        </tr>
+        <!--RISK_REPORT_EXTEND_END-->
+    </tbody>
+</table>

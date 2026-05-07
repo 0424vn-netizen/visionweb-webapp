@@ -1,0 +1,107 @@
+{
+  "DefaultProcessor": "default",
+  "DecryptColumns": "EncryptedTaxID,TaxID,OwnerSSN,DDANumber,RoutingNumber",
+  "Columns": [
+    {
+      "UniqueName": "MerchantID",
+      "Key": "Entity",
+      "ASFormat": "StaticString",
+      "ReSourceKey": "MerchantID",
+      "Width": 130
+    },
+    {
+      "UniqueName": "DBAName",
+      "Key": "EntityName",
+      "ASFormat": "DynamicString",
+      "ReSourceKey": "MerchantName",
+      "Width": 180,
+      "ItemAlign": "left"
+    },
+    {
+      "UniqueName": "EntityNumber2",
+      "Key": "EntityNumber2",
+      "ASFormat": "DynamicString",
+      "ReSourceKey": "SponsorBank",
+      "Width": 130
+    },
+    {
+      "UniqueName": "EntityNumber3",
+      "Key": "EntityNumber3",
+      "ASFormat": "DynamicString",
+      "ReSourceKey": "BIN",
+      "Width": 130
+    },
+    {
+      "UniqueName": "EntityNumber4",
+      "Key": "EntityNumber4",
+      "ASFormat": "DynamicString",
+      "ReSourceKey": "Partner",
+      "Width": 130
+    },
+    {
+      "UniqueName": "EntityNumber5",
+      "Key": "EntityNumber5",
+      "ASFormat": "DynamicString",
+      "ReSourceKey": "SubPartner",
+      "Width": 130
+    },
+    {
+      "UniqueName": "Address",
+      "Key": "Address",
+      "ASFormat": "DynamicString",
+      "ReSourceKey": "Address",
+      "Width": 200,
+      "ItemAlign": "left"
+    },
+    {
+      "UniqueName": "ChainNumber",
+      "Key": "ChainNumber",
+      "ASFormat": "DynamicString",
+      "ReSourceKey": "ChainNumber",
+      "Width": 130
+    },
+    {
+      "UniqueName": "MCCSIC",
+      "Key": "MCCSIC",
+      "ASFormat": "DynamicString",
+      "ReSourceKey": "MCCSIC",
+      "Width": 130
+    },
+    {
+      "UniqueName": "Phone",
+      "Key": "Phone",
+      "ASFormat": "Phone",
+      "ReSourceKey": "Phone",
+      "Width": 130
+    },
+    {
+      "UniqueName": "Email",
+      "Key": "Email",
+      "ASFormat": "DynamicString",
+      "ReSourceKey": "Email",
+      "Width": 220,
+      "ItemAlign": "left"
+    },
+    {
+      "UniqueName": "OpenDate",
+      "Key": "OpenDate",
+      "ASFormat": "Date",
+      "ReSourceKey": "OpenDate",
+      "Width": 80
+    },
+    {
+      "UniqueName": "MerchantStatus",
+      "Key": "MerchantStatus",
+      "ASFormat": "DynamicString",
+      "ReSourceKey": "MerchantStatus",
+      "Width": 80
+    },
+    {
+      "UniqueName": "LastBatchActivity",
+      "Key": "LastBatchActivity",
+      "ASFormat": "Date",
+      "ReSourceKey": "LastBatchActivity",
+      "Width": 80
+    }
+  ]
+}

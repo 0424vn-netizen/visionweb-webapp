@@ -1,0 +1,140 @@
+﻿
+body *
+{
+    font-family: Arial,Helvetica, Sans-serif;
+}
+body
+{
+    font-size: 12px;
+    background-color: #FFF;
+    color: #333333;
+}
+
+.normal
+{
+    border: 1px solid #E7E7E7;
+    background-color: #FFF;
+    height: 25px;
+    line-height: 20px;
+    color: #333333;
+}
+
+.highlight-text
+{
+    color: #566C11 !important;
+}
+
+.highlight-text > a, .highlight-text > a:hover, .highlight-text > a:focus
+{
+    color: #566C11 !important;
+    text-decoration: none;
+}
+
+.LoginForm
+{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f5ef; /*background-color: #FFB6C1;*/
+    width: 392px;
+    padding: 30px 35px 10px;
+}
+
+.LoginForm .form-group {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.LoginFormMiddle
+{
+    color: Red;
+    padding: 5px 0px;
+}
+
+.LoginFormTitle
+{
+    background: url("images/title_form.png") no-repeat scroll top left transparent;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.LoginButton
+{
+    border-width: 0px;
+    color: White;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.LoginButton
+{
+    background: url("images/login_btn.png") repeat-x scroll center center transparent !important;
+    height: 30px;
+    width: 108px;
+}
+
+.LoginBanner
+{
+}
+
+.LoginBannerLogo
+{
+    background: url("images/login_logo.png") no-repeat scroll center center transparent;
+    height: 160px;
+}
+
+.SloganLeft
+{
+    background: url("images/slogan_left.png") no-repeat scroll top right transparent;
+    height: 250px;
+    width: 394px;
+    margin-right: 25px;
+    margin-top: 20px;
+}
+
+.SloganBottom
+{
+    display: none;
+}
+
+.form-input
+{
+    padding: 0 0 20px;
+    display: block;
+    vertical-align: middle;
+}
+
+.form-label
+{
+    padding: 0 0 10px 0;
+    display: block;
+    font-size: 14px;
+}
+
+.forgot-pw
+{
+    float: right;
+    padding-top: 10px;
+}
+
+.Message
+{
+    display: none;
+}
+
+.enviroment-type {
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 1.57;
+    text-transform: capitalize;
+    color: #39b54a;
+    background-color: #daecdc;
+    border: 1px solid #39b54a;
+}

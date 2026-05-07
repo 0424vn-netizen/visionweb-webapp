@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MobileRedirectSetting baseMobileUrl="https://vwreskin-ms-qa.local/mobile/" systemApplied="2" xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform" xdt:Transform="Replace">
+	<Urls>
+    <Url clientId="22" name="fis" alias="fis" />
+    <Url clientId="29" name="orion" alias="orion" />
+    <Url clientId="49" name="tnbci" alias="tnbci" />
+    <Url clientId="89" name="total" alias="total" />
+    <Url clientId="91" name="fulton" alias="fulton" />
+    
+		<Url clientId="126" name="tsys" alias="tsys" />
+<!--<Url clientId="97" name="wrfc" alias="wrfc" />-->
+    <Url clientId="126" name="tsys" alias="tsys" />
+    <Url clientId="129" name="monetary" alias="monetary" />
+    <Url clientId="122" name="sfti" alias="sfti" />
+    <Url clientId="144" name="sphere" alias="sphere" />
+    <Url clientId="76" name="sphere" alias="paya" />
+    <Url clientId="39" name="titanium" alias="titanium" />
+    
+	</Urls>
+	<Redirects>
+		<!-- <Redirect agent="window" active="true" />   -->
+		<Redirect agent="mobile|ip(hone|od)|opera m(obi|ini)|blazer|dolfin|dolphin|skyfire|zune" active="true" />
+	</Redirects>
+</MobileRedirectSetting>
+
+	

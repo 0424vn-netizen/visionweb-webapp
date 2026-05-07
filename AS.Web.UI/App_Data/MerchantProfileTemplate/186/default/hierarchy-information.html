@@ -1,0 +1,41 @@
+﻿<div class="row" id="hierarchyinfo">
+    <div class="col-md-12" data-toggle="collapse" data-target="#ciHierarchyInformation" aria-expanded="true">
+        <h2 class="grid-title">
+            {{res:HierarchyInformation}}
+        </h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 collapse in" id="ciHierarchyInformation" aria-expanded="true">
+        <table class="ASTable">
+            <colgroup>
+                <col class="w-45">
+                <col class="w-55">
+            </colgroup>
+            <tr class="Row">
+                <td class="heading">
+                    {{res:Platform}}
+                </td>
+                <td>
+                    {{data:MBHPLATFORM|Hierarchy|HierarchyInformation|EntityNumber1}}
+                </td>
+            </tr>
+            <tr class="AltRow">
+                <td class="heading">
+                    {{res:Channel}}
+                </td>
+                <td>
+                    {{data:MBHCHANNEL|Hierarchy|HierarchyInformation|EntityNumber2}}
+                </td>
+            </tr>
+            <tr class="Row">
+                <td class="heading">
+                    {{res:Chain}}
+                </td>
+                <td>
+                    {{data:CHAIN|ChainLink|HierarchyInformation}}
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

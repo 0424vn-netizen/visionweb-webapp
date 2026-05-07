@@ -1,0 +1,78 @@
+﻿<!--BEGIN_HEADER-->
+<html>
+<head>
+<title>[REPORT_TITLE]</title>
+<style type="text/css">
+table{border:1px solid #000;border-collapse:collapse;width:100%;}td,th{border:1px solid #000;padding:3px;text-align:center;}td.dt{text-align:left;}.s1,.s2,.s3{border-right:none;}.s1{width:30px;}.s2{width:60px;}.s3{width:90px;}.n{border-width:0 0 0 1px;}
+</style>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+</head>
+<body>
+<table>
+<tr><td class='dt' colspan='9'><b>[REPORT_TITLE]</b></td></tr>
+<!--END_HEADER-->
+
+<!--BEGIN_REPORT_HEADER-->
+<tr>
+    <th width='8%' class='n'></th>
+    <th width='40%' colspan='3'>[tpl_Assignment]</th>
+    <th width='8%'>[tpl_TotalViolations]</th>
+    <th width='14%'>[tpl_DistinctNumberOfMerchants]</th>
+    <th width='14%'>[tpl_TotalMerchantsWorked]</th>
+    <th width='8%'>[tpl_WorkedPercentage]</th>
+    <th width='8%'>[tpl_PendingPercentage]</th>
+</tr>
+<!--END_REPORT_HEADER-->
+
+<!--BEGIN_DATE-->
+<tr>
+    <td class='dt'>
+        <b>[REPORT_DATE]</b>
+    </td>
+    <td colspan='8'></td>
+</tr>
+<!--END_DATE-->
+
+<!--BEGIN_ASSIGNMENT-->
+<tr>
+    <td class='n'></td>
+    <td class='dt' colspan='3'>[ASSIGNMENT_NAME]</td>
+    <td>[TOTAL_VIOLATIONS]</td>
+    <td>[DISTINCT_OF_MERCHANTS]</td>
+    <td>[TOTAL_MERCHANTS_WORKED]</td>
+    <td>[PER_WORKED]</td>
+    <td>[PER_PENDING]</td>
+</tr>
+<!--END_ASSIGNMENT-->
+
+<!--BEGIN_PARAMETER_HEADER-->
+<tr>
+    <th class='n'></th>
+    <th class='n'></th>
+    <th>[tpl_ParamNumber]</th>
+    <th>[tpl_ParamName]</th>
+    <th>[tpl_ParamPercentageNumberMoney]</th>
+    <th>[tpl_ParamTH]</th>
+    <th>[tpl_TotalViolations]</th>
+    <th colspan='2'></th>
+</tr>
+<!--END_PARAMETER_HEADER-->
+
+<!--BEGIN_PARAMETER-->
+<tr>
+    <td class='n'></td>
+    <td class='n'></td>
+    <td class='dt'>[PARAMETER_ID]</td>
+    <td class='dt'>[PARAMETER_NAME]</td>
+    <td>[PARAMETER_INDICATOR]</td>
+    <td>[PARAMETER_THRESHOLD]</td>
+    <td>[TOTAL_VIOLATIONS]</td>
+    <td colspan='2'></td>
+</tr>
+<!--END_PARAMETER-->
+
+<!--BEGIN_FOOTER-->
+</table>
+</body>
+</html>
+<!--END_FOOTER-->

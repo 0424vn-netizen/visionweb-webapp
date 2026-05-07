@@ -1,0 +1,110 @@
+﻿<div class="row" id="merchantcardinfo">
+  <div class="col-xs-9" data-toggle="collapse" data-target="#ciMerchantCardInformation">
+    <h2 class="grid-title">
+      {{res:MerchantCardInformation}}
+    </h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12 in" id="ciMerchantCardInformation">
+      <div class="table-responsive">          
+          <table class="ASTable format-table">             
+              <thead>
+                  <tr>
+                      <th style="width: 10%"></th>
+                      <th>
+                          {{res:ProcSW}}
+                      </th>
+                      <th>
+                          {{res:FeeClass}}
+                      </th>
+                      <th>
+                          {{res:QualRate}}
+                      </th>
+                      <th>
+                          {{res:MidQualRate}}
+                      </th>
+                      <th>
+                          {{res:NonQualRate}}
+                      </th>
+                      <th>
+                          {{res:ITCFeeFlag}}
+                      </th>
+                      <th>
+                          {{res:DAFlag}}
+                      </th>
+                      <th>
+                          {{res:DAVolLessThan1000}}
+                      </th>
+                      <th>
+                          {{res:DAItemLessThan1000}}
+                      </th>
+                      <th>
+                          {{res:DAVolGreaterThan1000}}
+                      </th>
+                      <th>
+                          {{res:DAItemGreaterThan1000}}
+                      </th>
+                      <th>
+                          {{res:MerchantPricingGrid}}
+                      </th>
+                      <th>
+                          {{res:TieredDiscountGrid}}
+                      </th>
+                      <th>
+                          {{res:ERR}}
+                      </th>
+                      <th>
+                          {{res:OtherVolume}}
+                      </th>
+                      <th>
+                          {{res:OtherItemRate}}
+                      </th>
+                      <th>
+                          {{res:DiscountMethod}}
+                      </th>
+                      <th>
+                          {{res:AmexOnePTRate}}
+                      </th>
+                      <th>
+                          {{res:AmexOnePTPerItemFee}}
+                      </th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <!--LOOP_START--><!--Loop:MerchantCardInformation:Loop-->
+                  <tr>
+                      <td class="font-weight-bold" style="width: 20px">{{data:CardType|Resource}}</td>
+                      <td>{{data:ProcessSW}}</td>
+                      <td>{{data:FeeClass}}</td>
+                      <td>{{data:QualRate}}</td>
+                      <td>{{data:MidQualRate}}</td>
+                      <td>{{data:NonQualRate}}</td>
+                      <td title="{{data:InterchangeFeeFlagDesc|RawText}}">
+                          {{data:InterchangeFeeFlag}}
+                      </td>
+                      <td title="{{data:DuesAndAssessmentFlagDesc|RawText}}">
+                          {{data:DuesAssessmentFlag}}
+                      </td>
+                      <td>{{data:DueAsmtVolLower1}}</td>
+                      <td>{{data:DueAsmtItemLower1}}</td>
+                      <td>{{data:DueAsmtVolGreater1}}</td>
+                      <td>{{data:DueAsmtItemGreater1}}</td>
+                      <td>{{data:MerchantPricingGrid}}</td>
+                      <td>{{data:TieredDiscountGrid}}</td>
+                      <td>{{data:ERR}}</td>
+                      <td>{{data:OtherVolume}}</td>
+                      <td>{{data:OtherItemRate}}</td>
+                      <td title="{{data:DiscountMethodDesc|RawText}}">
+                        {{data:DiscountMethod}}
+                      </td>
+                      <td>{{data:AmexOnePTRate}}</td>
+                      <td>{{data:AmexOnePTPerItemFee}}</td>
+                  </tr>
+                  <!--LOOP_END-->
+              </tbody>
+          </table>
+          {{data:NoRecordsToDisplay|NoRecords|MerchantCardInformation}}
+      </div>
+  </div>
+</div>

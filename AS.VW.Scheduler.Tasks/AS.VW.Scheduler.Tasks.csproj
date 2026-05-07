@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7C50A993-005F-4FC9-9F8F-E0226406AD0C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AS.VW.Scheduler.Tasks</RootNamespace>
+    <AssemblyName>AS.VW.Scheduler.Tasks</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ABCpdf, Version=9.1.1.4, Culture=neutral, PublicKeyToken=a7a0b3f5184f2169, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\3rdLibrary\ABCPdf\9.1.1.4\ABCpdf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AS.Archive">
+      <HintPath>..\Libraries\AS.Archive.dll</HintPath>
+    </Reference>
+    <Reference Include="AS.Common">
+      <HintPath>..\Libraries\UpgradeDllForSonarIssues\AS.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml">
+      <HintPath>..\..\3rdLibrary\OpenXML\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="ITask">
+      <HintPath>..\Libraries\ITask.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\3rdLibrary\log4net\2.0.15\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=e44a2bc38ed2c13c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\3rdLibrary\EntLib\2010\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
+      <HintPath>..\..\3rdLibrary\Microsoft\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Services3">
+      <HintPath>..\..\3rdLibrary\WSE\Microsoft.Web.Services3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Codes\Interfaces\IExtension.cs" />
+    <Compile Include="Codes\Models\DefaultParameterModel.cs" />
+    <Compile Include="Codes\Models\FileNameExtension.cs" />
+    <Compile Include="Codes\Models\ExportReportModel.cs" />
+    <Compile Include="Configs\Configurations.cs" />
+    <Compile Include="Codes\Interfaces\ITaskManager.cs" />
+    <Compile Include="Codes\Models\Processer.cs" />
+    <Compile Include="Entities\ExportTemplate.cs" />
+    <Compile Include="Entities\ExtractMode.cs" />
+    <Compile Include="Entities\StatisticReportColumn.cs" />
+    <Compile Include="ExportReports.cs" />
+    <Compile Include="ExtractReport.cs" />
+    <Compile Include="General\GeneralFuncLibraries.cs" />
+    <Compile Include="JoinStatementPDF.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ExtractMerchant.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Codes\TaskManager.cs" />
+    <Compile Include="Codes\WebServices.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".transformconfig" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="App_VNQA.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="App_INT.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="App_PROD.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="App_QAI.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="App_STAG.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="App_UAT.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="wse3policyCache.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AS.VW.Common\AS.VW.Common.csproj">
+      <Project>{d2fafdfd-5632-4a4b-8348-ad1440f8b73b}</Project>
+      <Name>AS.VW.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AS.VW.Entities\AS.VW.Entities.csproj">
+      <Project>{b17dedd5-7a6a-40ac-b161-aab78e7ff46f}</Project>
+      <Name>AS.VW.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AS.VW.PDFStatementCreator\AS.VW.PDFStatementCreator.csproj">
+      <Project>{2f999a70-75b5-44df-82f0-3b9d59dd92ec}</Project>
+      <Name>AS.VW.PDFStatementCreator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AS.VW.Repository\AS.VW.Repository.csproj">
+      <Project>{9fe56cf7-9eb6-4318-bec5-7e3c26f9b246}</Project>
+      <Name>AS.VW.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AS.Web.Business\AS.Web.Business.csproj">
+      <Project>{852a18c9-edef-40d8-85f9-c07f0b0af535}</Project>
+      <Name>AS.Web.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AS.WS.Business\AS.WS.Business.csproj">
+      <Project>{3bd049d7-e1c8-4958-bcf1-9f50fce4beba}</Project>
+      <Name>AS.WS.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AS.WS.Data\AS.WS.Data.csproj">
+      <Project>{2c7dea90-88be-435c-983a-e60d599e8dad}</Project>
+      <Name>AS.WS.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AS.WS.Entities\AS.WS.Entities.csproj">
+      <Project>{1a7d7bc9-9ccc-4be9-a219-9dde5188a6a7}</Project>
+      <Name>AS.WS.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\ExportTemplateConfigurations.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="App_Data\MgmtReporting\StatisticReportColumns.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\MerchantAlertHistoryTemplate\" />
+    <Folder Include="App_Data\StatisticsTemplate\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

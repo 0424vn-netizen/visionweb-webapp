@@ -1,0 +1,287 @@
+[
+  {
+    "dataField": "TransactionDate",
+    "validation": "DateMMddyyyy",
+    "filterMenus": [
+      "NoFilter",
+      "EqualTo",
+      "NotEqualTo",
+      "GreaterThan",
+      "LessThan",
+      "GreaterThanOrEqualTo",
+      "LessThanOrEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "Issuer",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "AcquirerID",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "MerchantNumber",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "MerchantName",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "FraudType",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "FraudSubType",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "PartialCardNumber",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "TransactionAmount",
+    "validation": "Number",
+    "filterMenus": [
+      "NoFilter",
+      "EqualTo",
+      "NotEqualTo",
+      "GreaterThan",
+      "LessThan",
+      "GreaterThanOrEqualTo",
+      "LessThanOrEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "PostDate",
+    "validation": "DateMMddyyyy",
+    "filterMenus": [
+      "NoFilter",
+      "EqualTo",
+      "NotEqualTo",
+      "GreaterThan",
+      "LessThan",
+      "GreaterThanOrEqualTo",
+      "LessThanOrEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "SettleDate",
+    "validation": "DateMMddyyyy",
+    "filterMenus": [
+      "NoFilter",
+      "EqualTo",
+      "NotEqualTo",
+      "GreaterThan",
+      "LessThan",
+      "GreaterThanOrEqualTo",
+      "LessThanOrEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "FraudReportDate",
+    "validation": "DateMMddyyyy",
+    "filterMenus": [
+      "NoFilter",
+      "EqualTo",
+      "NotEqualTo",
+      "GreaterThan",
+      "LessThan",
+      "GreaterThanOrEqualTo",
+      "LessThanOrEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "AuthResponseCode",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "POSEntryMode",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "TerminalID",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "TerminalCapability",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "AcquirerReferenceNumber",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "CVCCode",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "SecureCode",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  },
+  {
+    "dataField": "CardholderPresence",
+    "filterMenus": [
+      "NoFilter",
+      "Contains",
+      "DoesNotContain",
+      "StartsWith",
+      "EndsWith",
+      "EqualTo",
+      "NotEqualTo",
+      "IsNull",
+      "NotIsNull"
+    ]
+  }
+]

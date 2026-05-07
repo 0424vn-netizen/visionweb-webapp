@@ -1,0 +1,64 @@
+﻿
+body *
+{
+    font-family:Arial,Helvetica, Sans-serif;   
+           
+}
+body
+{
+    font-size:12px;     
+    background-color:#FFF;
+    color:#333333;
+}
+
+.normal
+{
+   border-width:0px !important;
+   background-color: #FFF;	
+   height: 20px;
+   line-height: 20px; 
+   color:#333333;
+}
+
+.LoginFormTop
+{
+    background:url("images/login_form_t.png") no-repeat scroll 0 0 transparent;
+    width:462px;
+    height:297px;
+    position:relative;
+}
+.LoginFormMiddle
+{
+    background:url("images/login_form_m.png") repeat-y scroll 0 0 transparent;
+    width:462px;                 
+    position:relative;
+}
+.LoginFormBottom
+{
+    background:url("images/login_form_b.png") no-repeat scroll 0 0 transparent;
+    width:462px;            
+    height:10px;
+    position:relative;
+}
+
+.LoginButton
+{    
+    border-width:0px;
+    color:White;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.LoginButton
+{
+    background:url("images/login_btn.png") repeat-x scroll center center transparent !important;
+}
+.LoginBanner
+{
+    background:url("images/login_bg.jpg") repeat-x scroll 0 0 transparent;            
+}
+.LoginBannerLogo
+{
+    background:url("images/login_logo.jpg") no-repeat scroll 0 0 transparent;            
+    height:89px;
+}

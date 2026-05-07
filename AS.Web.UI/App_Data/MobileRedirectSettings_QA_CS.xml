@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MobileRedirectSetting baseMobileUrl="http://localhost:9999/mobile/" systemApplied="2">
+  <Urls>
+    <Url clientId="22" name="fis" alias="fis" />
+    <Url clientId="29" name="orion" alias="orion" />
+    <Url clientId="49" name="tnbci" alias="tnbci" />
+    <Url clientId="89" name="total" alias="total" />
+    <Url clientId="91" name="fulton" alias="fulton" />
+    <Url clientId="97" name="wrfc" alias="wrfc" />
+    <Url clientId="144" name="sphere" alias="sphere" />
+   <Url clientId="152" name="rs2" alias="rs2" />
+   <Url clientId="76" name="Paya" alias="Paya" />
+     <Url clientId="39" name="MLS" alias="MLS" />
+     <Url clientId="76" name="paya" alias="paya" />
+  </Urls>
+  <Redirects>
+    <Redirect agent="Mobile|iP(hone|od)|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune" active="true" />
+  </Redirects>
+</MobileRedirectSetting>

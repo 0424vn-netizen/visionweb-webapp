@@ -1,0 +1,1506 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="MerchantInformation" xml:space="preserve">
+    <value>Información del Comerciante</value>
+  </data>
+  <data name="Excel" xml:space="preserve">
+    <value>Excel</value>
+  </data>
+  <data name="ApprovalDate" xml:space="preserve">
+    <value>Fecha de Aprobación:</value>
+  </data>
+  <data name="ClosedDate" xml:space="preserve">
+    <value>Fecha Cerrada:</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Estatus:</value>
+  </data>
+  <data name="SiteAccess" xml:space="preserve">
+    <value>Acceso al Sitio:</value>
+  </data>
+  <data name="TaxID" xml:space="preserve">
+    <value>Identificación Fiscal:</value>
+  </data>
+  <data name="SIC_MCC" xml:space="preserve">
+    <value>SIC/MCC:</value>
+  </data>
+  <data name="AverageSalesAmount" xml:space="preserve">
+    <value>Suma Promedio de Ventas:</value>
+  </data>
+  <data name="BankInformation" xml:space="preserve">
+    <value>Información del Banco</value>
+  </data>
+  <data name="EXPORT" xml:space="preserve">
+    <value>EXPORTAR</value>
+  </data>
+  <data name="MerchantID" xml:space="preserve">
+    <value># Comerciante: </value>
+  </data>
+  <data name="BankName" xml:space="preserve">
+    <value>Nombre del Banco:</value>
+  </data>
+  <data name="Routing" xml:space="preserve">
+    <value># Ruta Bancaria:</value>
+  </data>
+  <data name="DDA" xml:space="preserve">
+    <value>DDA #:</value>
+  </data>
+  <data name="HierarchyInformation" xml:space="preserve">
+    <value>Información Jerárquica</value>
+  </data>
+  <data name="SponsoringBank" xml:space="preserve">
+    <value>Banco Patrocinador:</value>
+  </data>
+  <data name="SponsoringBankBIN" xml:space="preserve">
+    <value>Patrocinando Banco BIN:</value>
+  </data>
+  <data name="ProcessorInformation" xml:space="preserve">
+    <value>Información Procesador</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Comuníquese con:</value>
+  </data>
+  <data name="Corporate" xml:space="preserve">
+    <value>Corporación:</value>
+  </data>
+  <data name="BusinessChain" xml:space="preserve">
+    <value>Cadena comercial:</value>
+  </data>
+  <data name="Region" xml:space="preserve">
+    <value>Región:</value>
+  </data>
+  <data name="AssociationSubGroup" xml:space="preserve">
+    <value>Subgrupo de la Asociación</value>
+  </data>
+  <data name="BankChain" xml:space="preserve">
+    <value>Cadena bancaria:</value>
+  </data>
+  <data name="SalesAgentRegionalManager" xml:space="preserve">
+    <value>Gerente Regional de Agentes de Venta:</value>
+  </data>
+  <data name="SalesAgentManager" xml:space="preserve">
+    <value>Gerente de Agentes de Venta:</value>
+  </data>
+  <data name="SalesAgent" xml:space="preserve">
+    <value>Agente de Ventas:</value>
+  </data>
+  <data name="Chain" xml:space="preserve">
+    <value>Cadena:</value>
+  </data>
+  <data name="AccountInformation" xml:space="preserve">
+    <value>Información de Cuenta</value>
+  </data>
+  <data name="Program" xml:space="preserve">
+    <value>Programa</value>
+  </data>
+  <data name="AccountNumber" xml:space="preserve">
+    <value>Número de Cuenta</value>
+  </data>
+  <data name="AmericanExpress" xml:space="preserve">
+    <value>American Express</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Dirección: </value>
+  </data>
+  <data name="SalesBranch" xml:space="preserve">
+    <value>Rama de ventas:</value>
+  </data>
+  <data name="SponsorBank" xml:space="preserve">
+    <value>Banco Patrocinador:</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Correo electrónico:</value>
+  </data>
+  <data name="MerchantName" xml:space="preserve">
+    <value>Nombre del Comerciante:</value>
+  </data>
+  <data name="CreateNewChain" xml:space="preserve">
+    <value>Crear Nueva Cadena</value>
+  </data>
+  <data name="AddToExistingChain" xml:space="preserve">
+    <value>Agregar a Cadena Existente</value>
+  </data>
+  <data name="OwnerName" xml:space="preserve">
+    <value>Nombre del Propietario:</value>
+  </data>
+  <data name="Discover" xml:space="preserve">
+    <value>Discover</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Teléfono:</value>
+  </data>
+  <data name="DinerClub" xml:space="preserve">
+    <value>Diner Club</value>
+  </data>
+  <data name="OwnerSSN" xml:space="preserve">
+    <value>Numero Seguro Social(SSN) del Propietario</value>
+  </data>
+  <data name="Fax" xml:space="preserve">
+    <value>Fax:</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>El sitio de Web:</value>
+  </data>
+  <data name="ContractualInformation" xml:space="preserve">
+    <value>Información Contractual</value>
+  </data>
+  <data name="LastBatchActivity" xml:space="preserve">
+    <value>Actividad del Último Lote:</value>
+  </data>
+  <data name="AnnualVolume" xml:space="preserve">
+    <value>Volumen Anual:</value>
+  </data>
+  <data name="AverageTicket" xml:space="preserve">
+    <value>Registro de Transacción de Promedio:</value>
+  </data>
+  <data name="HighTicket" xml:space="preserve">
+    <value>Alto Ticket:</value>
+  </data>
+  <data name="MOTO" xml:space="preserve">
+    <value>%MOTO:</value>
+  </data>
+  <data name="eCommerce" xml:space="preserve">
+    <value>%Comercio electrónico:</value>
+  </data>
+  <data name="CardNotPresent" xml:space="preserve">
+    <value>%Tarjeta no Presente:</value>
+  </data>
+  <data name="BusinessInformation" xml:space="preserve">
+    <value>Información Comercial</value>
+  </data>
+  <data name="FICO" xml:space="preserve">
+    <value>FICO:</value>
+  </data>
+  <data name="CorporateChain" xml:space="preserve">
+    <value>Cadena corporativa</value>
+  </data>
+  <data name="AgentChain" xml:space="preserve">
+    <value>Cadena de agentes</value>
+  </data>
+  <data name="BusinessType" xml:space="preserve">
+    <value>Tipo de Negocio:</value>
+  </data>
+  <data name="CorporateAddress" xml:space="preserve">
+    <value>Dirección Corporativa:</value>
+  </data>
+  <data name="CorporateName" xml:space="preserve">
+    <value>Nombre Corporativo:</value>
+  </data>
+  <data name="OR" xml:space="preserve">
+    <value> o </value>
+  </data>
+  <data name="Seasonal" xml:space="preserve">
+    <value>De temporada:</value>
+  </data>
+  <data name="Url" xml:space="preserve">
+    <value>Dirección URL:</value>
+  </data>
+  <data name="SubAcquirer" xml:space="preserve">
+    <value>Sub-Adquirente</value>
+  </data>
+  <data name="Acquirer" xml:space="preserve">
+    <value>Adquiridora</value>
+  </data>
+  <data name="SalesPerson" xml:space="preserve">
+    <value>Vendedor</value>
+  </data>
+  <data name="DiscoverMAP" xml:space="preserve">
+    <value>Discover MAP</value>
+  </data>
+  <data name="_NonRetained" xml:space="preserve">
+    <value>No Retenido</value>
+  </data>
+  <data name="NotAvailable" xml:space="preserve">
+    <value>No Disponible</value>
+  </data>
+  <data name="Retained" xml:space="preserve">
+    <value>Retenido</value>
+  </data>
+  <data name="RiskInformation" xml:space="preserve">
+    <value>Información de Riesgo</value>
+  </data>
+  <data name="ViewRiskReport" xml:space="preserve">
+    <value>Ver Informe de Riesgo</value>
+  </data>
+  <data name="G2CompassAutoApprovalIndicator" xml:space="preserve">
+    <value>Indicador de aprobación automática G2 Compass:</value>
+  </data>
+  <data name="ClassificationName" xml:space="preserve">
+    <value>Nombre de Clasificación:</value>
+  </data>
+  <data name="GauthenticateCode" xml:space="preserve">
+    <value>Código Gauthenticate:</value>
+  </data>
+  <data name="GverifyCode" xml:space="preserve">
+    <value>Código Gverify:</value>
+  </data>
+  <data name="Multiplier" xml:space="preserve">
+    <value>Multiplicador:</value>
+  </data>
+  <data name="RiskScore" xml:space="preserve">
+    <value>Calificación de Riesgo:</value>
+  </data>
+  <data name="SecondaryAccessChain" xml:space="preserve">
+    <value>Cadena de acceso secundario:</value>
+  </data>
+  <data name="CHAIN_Add_Existing_Secondary" xml:space="preserve">
+    <value>Agregar a Cadena de acceso secundario Existente</value>
+  </data>
+  <data name="CHAIN_Create_New_Secondary" xml:space="preserve">
+    <value>Crear Nueva Cadena de acceso secundario</value>
+  </data>
+  <data name="Bank" xml:space="preserve">
+    <value>Banco:</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>Grupo:</value>
+  </data>
+  <data name="Association" xml:space="preserve">
+    <value>Asociación:</value>
+  </data>
+  <data name="OpenDate" xml:space="preserve">
+    <value>Fecha de Apertura:</value>
+  </data>
+  <data name="WRIGHTEXPRESS3" xml:space="preserve">
+    <value>&gt;WRIGHT EXPRESS</value>
+  </data>
+  <data name="UnregRate" xml:space="preserve">
+    <value>Tarifa no regulada</value>
+  </data>
+  <data name="RegPct" xml:space="preserve">
+    <value>Porcentaje Regular</value>
+  </data>
+  <data name="RegRate" xml:space="preserve">
+    <value>Tarifa Regular</value>
+  </data>
+  <data name="VisaAssocFees" xml:space="preserve">
+    <value>Comisiones Asociadas con Visa</value>
+  </data>
+  <data name="AcqrPrFee" xml:space="preserve">
+    <value>Cargo de Pr del Adq.</value>
+  </data>
+  <data name="MisuseAuthFee" xml:space="preserve">
+    <value>Cargo por Uso Indebido de Autorización</value>
+  </data>
+  <data name="ISA" xml:space="preserve">
+    <value>ISA</value>
+  </data>
+  <data name="ZeroFloor" xml:space="preserve">
+    <value>Piso Cero</value>
+  </data>
+  <data name="IntlAcq" xml:space="preserve">
+    <value>Adq. Internacional</value>
+  </data>
+  <data name="MCAssocFees" xml:space="preserve">
+    <value>Cargos Asociados con MC</value>
+  </data>
+  <data name="NABUFee" xml:space="preserve">
+    <value>Cargo por Acceso a la Red y Uso de Marca (NABU)</value>
+  </data>
+  <data name="CrossBorderFee" xml:space="preserve">
+    <value>Comisión Transfronteriza</value>
+  </data>
+  <data name="AcqSupportFee" xml:space="preserve">
+    <value>Cargo de Soporte al Adq.</value>
+  </data>
+  <data name="ReversalFee" xml:space="preserve">
+    <value>Cargo de Inversión</value>
+  </data>
+  <data name="DiscFullAcqAssocFees" xml:space="preserve">
+    <value>Disc Full Acq Assoc Fees</value>
+  </data>
+  <data name="INTLProcessFlag" xml:space="preserve">
+    <value>Indicador de Proceso INTERNACIONAL</value>
+  </data>
+  <data name="INTLServiceFlag" xml:space="preserve">
+    <value>Indicador de Servicio INTERNACIONAL</value>
+  </data>
+  <data name="DataUsageFlag" xml:space="preserve">
+    <value>Indicador de Uso de Datos</value>
+  </data>
+  <data name="MerchantCardInformation" xml:space="preserve">
+    <value>Información De Tarjeta Del Comerciante</value>
+  </data>
+  <data name="MC" xml:space="preserve">
+    <value>MC</value>
+  </data>
+  <data name="MCDB" xml:space="preserve">
+    <value>MC DB</value>
+  </data>
+  <data name="VISA" xml:space="preserve">
+    <value>VISA</value>
+  </data>
+  <data name="VISADB" xml:space="preserve">
+    <value>BD VISA</value>
+  </data>
+  <data name="DISCFULLACQ" xml:space="preserve">
+    <value>DISC FULL ACQ</value>
+  </data>
+  <data name="DISCFULLACQDB" xml:space="preserve">
+    <value>DISC FULL ACQ DB</value>
+  </data>
+  <data name="DISCPASSTHRU" xml:space="preserve">
+    <value>DISC PASS THRU</value>
+  </data>
+  <data name="AMEXONEPT" xml:space="preserve">
+    <value>AMEXONEPT</value>
+  </data>
+  <data name="AMEXPASSTHROUGHHeader" xml:space="preserve">
+    <value>AMEX PASS THROUGH:</value>
+  </data>
+  <data name="AMEXPASSTHROUGH" xml:space="preserve">
+    <value>AMEX PASS THROUGH</value>
+  </data>
+  <data name="VOYAGER" xml:space="preserve">
+    <value>VOYAGER</value>
+  </data>
+  <data name="GENERICDEBIT" xml:space="preserve">
+    <value>DÉBITO GENÉRICO</value>
+  </data>
+  <data name="DINERS" xml:space="preserve">
+    <value>DINERS</value>
+  </data>
+  <data name="EBTCASHB" xml:space="preserve">
+    <value>EBT CASH/B</value>
+  </data>
+  <data name="EBTFSTMP" xml:space="preserve">
+    <value>EBT F/STMP</value>
+  </data>
+  <data name="EBTTAPE" xml:space="preserve">
+    <value>EBT-TAPE</value>
+  </data>
+  <data name="JCB" xml:space="preserve">
+    <value>JCB</value>
+  </data>
+  <data name="ProcSW" xml:space="preserve">
+    <value>SW Proc.</value>
+  </data>
+  <data name="FeeClass" xml:space="preserve">
+    <value>Clase de Cargo</value>
+  </data>
+  <data name="QualRate" xml:space="preserve">
+    <value>Tarifa de Calificación</value>
+  </data>
+  <data name="MidQualRate" xml:space="preserve">
+    <value>Tarifa Intermedia (Mid-Qualified)</value>
+  </data>
+  <data name="NonQualRate" xml:space="preserve">
+    <value>Tarifa  No Calificada (Non-Qualified)</value>
+  </data>
+  <data name="ITCFeeFlag" xml:space="preserve">
+    <value>Indicador de Cargo de Intercambio</value>
+  </data>
+  <data name="DAFlag" xml:space="preserve">
+    <value>Indicador de Cuotas y Gravámenes</value>
+  </data>
+  <data name="DAVolLessThan1000" xml:space="preserve">
+    <value>Vol. de Cuotas y Gravámenes &lt;1.000</value>
+  </data>
+  <data name="DAItemLessThan1000" xml:space="preserve">
+    <value>Unidad de Cuotas y Gravámenes &lt;1.000</value>
+  </data>
+  <data name="DAVolGreaterThan1000" xml:space="preserve">
+    <value>Vol. de Cuotas y Gravámenes &gt;1.000</value>
+  </data>
+  <data name="DAItemGreaterThan1000" xml:space="preserve">
+    <value>Unidad de Cuotas y Gravámenes &gt;1.000</value>
+  </data>
+  <data name="MerchantPricingGrid" xml:space="preserve">
+    <value>Cuadro de Precios del Comerciante</value>
+  </data>
+  <data name="TieredDiscountGrid" xml:space="preserve">
+    <value>Cuadro de Descuentos por Niveles</value>
+  </data>
+  <data name="ERR" xml:space="preserve">
+    <value>% ERROR</value>
+  </data>
+  <data name="OtherVolume" xml:space="preserve">
+    <value>Otro % de Volumen</value>
+  </data>
+  <data name="OtherItemRate" xml:space="preserve">
+    <value>Otras Tarifas</value>
+  </data>
+  <data name="DiscountMethod" xml:space="preserve">
+    <value>Método de Descuento</value>
+  </data>
+  <data name="AmexOnePTRate" xml:space="preserve">
+    <value>Amex OnePT Rate</value>
+  </data>
+  <data name="AmexOnePTPerItemFee" xml:space="preserve">
+    <value>Tarifa Amex OnePt</value>
+  </data>
+  <data name="MerchantCardInformationPINDebit" xml:space="preserve">
+    <value>Información De Tarjeta Del Comerciante - Débito PIN</value>
+  </data>
+  <data name="ACCELHeader" xml:space="preserve">
+    <value>ACCEL</value>
+  </data>
+  <data name="AFFNHeader" xml:space="preserve">
+    <value>AFFN</value>
+  </data>
+  <data name="ALASKAOPTIONHeader" xml:space="preserve">
+    <value>OPCIÓN ALASKA</value>
+  </data>
+  <data name="CU24Header" xml:space="preserve">
+    <value>CU24:</value>
+  </data>
+  <data name="INTERLINKHeader" xml:space="preserve">
+    <value>INTERLINK:</value>
+  </data>
+  <data name="JEANIEHeader" xml:space="preserve">
+    <value>JEANIE</value>
+  </data>
+  <data name="MAESTROHeader" xml:space="preserve">
+    <value>MAESTRO</value>
+  </data>
+  <data name="NYCEHeader" xml:space="preserve">
+    <value>NYCE</value>
+  </data>
+  <data name="PULSEHeader" xml:space="preserve">
+    <value>PULSE</value>
+  </data>
+  <data name="SHAZAMHeader" xml:space="preserve">
+    <value>SHAZAM:</value>
+  </data>
+  <data name="STARHeader" xml:space="preserve">
+    <value>STAR</value>
+  </data>
+  <data name="OnlineDebitFeeFlag" xml:space="preserve">
+    <value>Indicador de Cargo de Débito En Línea</value>
+  </data>
+  <data name="ReportAccess" xml:space="preserve">
+    <value>Acceso al Informe</value>
+  </data>
+  <data name="HQDailyMonthlyTransactionReport" xml:space="preserve">
+    <value>Informe Diario/Mensual de Transacciones de la Sede</value>
+  </data>
+  <data name="EmailRecipientsComma" xml:space="preserve">
+    <value>Destinatarios del Correo Electrónico (separados con coma):</value>
+  </data>
+  <data name="DepositType" xml:space="preserve">
+    <value>Tipo de Depósito:</value>
+  </data>
+  <data name="ETCType" xml:space="preserve">
+    <value>Tipo de ETC</value>
+  </data>
+  <data name="ETCCutoff" xml:space="preserve">
+    <value>Límite ETC</value>
+  </data>
+  <data name="SeasonalMerchant" xml:space="preserve">
+    <value>Comerciante Estacional:</value>
+  </data>
+  <data name="StatementMailFlag" xml:space="preserve">
+    <value>Indicador de Envío por Correo de Estado de Cuenta</value>
+  </data>
+  <data name="StatementICPrintOptions" xml:space="preserve">
+    <value>Opciones de Impresión I/C del Estado de Cuenta</value>
+  </data>
+  <data name="StatementOnlineDebitFeePrintOption" xml:space="preserve">
+    <value>Opción de Impresión de Cargo de Débito de Estado de Cuenta en Línea:</value>
+  </data>
+  <data name="StatementHoldFlag" xml:space="preserve">
+    <value>Indicador de Retención de Estado de Cuenta</value>
+  </data>
+  <data name="Misc1" xml:space="preserve">
+    <value>Misc. 1:</value>
+  </data>
+  <data name="Misc2" xml:space="preserve">
+    <value>Misc. 2:</value>
+  </data>
+  <data name="TinType" xml:space="preserve">
+    <value>Tipo de Identificación Fiscal</value>
+  </data>
+  <data name="SparkExclID" xml:space="preserve">
+    <value>Identificación de Spark Excl</value>
+  </data>
+  <data name="ClientName" xml:space="preserve">
+    <value>Nombre del Cliente:</value>
+  </data>
+  <data name="ClientLogin" xml:space="preserve">
+    <value>Acceso (Login) de Clientes:</value>
+  </data>
+  <data name="SysPrinAgent" xml:space="preserve">
+    <value>SYS/PRIN/AGENTE:</value>
+  </data>
+  <data name="HeadqrtrMerchant" xml:space="preserve">
+    <value>Sede Comercial</value>
+  </data>
+  <data name="MerchantType" xml:space="preserve">
+    <value>Tipo de Comerciante:</value>
+  </data>
+  <data name="ChainCode" xml:space="preserve">
+    <value>Código de Cadena:</value>
+  </data>
+  <data name="DaysHold" xml:space="preserve">
+    <value>Días de Retención:</value>
+  </data>
+  <data name="ACHMonthly" xml:space="preserve">
+    <value>ACH Mensual:</value>
+  </data>
+  <data name="DisbursementMethodDeposit" xml:space="preserve">
+    <value>Método de Desembolso: Depósito:</value>
+  </data>
+  <data name="DisbursementMethodAdjustments" xml:space="preserve">
+    <value>Método de Desembolso: Ajustes:</value>
+  </data>
+  <data name="DisbursementMethodDiscount" xml:space="preserve">
+    <value>Método de Desembolso: Descuento:</value>
+  </data>
+  <data name="DisbursementMethodGenericDebit" xml:space="preserve">
+    <value>Método de Desembolso: Débito Genérico:</value>
+  </data>
+  <data name="DisbursementDetail" xml:space="preserve">
+    <value>Detalles del Desembolso:</value>
+  </data>
+  <data name="OtherCardInformation" xml:space="preserve">
+    <value>Otra Información De Tarjeta</value>
+  </data>
+  <data name="AMEXHeader" xml:space="preserve">
+    <value>AMEX:</value>
+  </data>
+  <data name="PinDebitHeader" xml:space="preserve">
+    <value>Débito con Pin</value>
+  </data>
+  <data name="AMEXONEPOINT" xml:space="preserve">
+    <value>AMEX ONEPOINT:</value>
+  </data>
+  <data name="JCBHeader" xml:space="preserve">
+    <value>JCB:</value>
+  </data>
+  <data name="WrightExpressHeader" xml:space="preserve">
+    <value>Wright Express</value>
+  </data>
+  <data name="DiscoverFullAQC" xml:space="preserve">
+    <value>Discover Compras Totales:</value>
+  </data>
+  <data name="VoyagerHeader" xml:space="preserve">
+    <value>Voyager</value>
+  </data>
+  <data name="PricingInformation" xml:space="preserve">
+    <value>Información De Precios</value>
+  </data>
+  <data name="DailyDeposit" xml:space="preserve">
+    <value>Depósito Diario</value>
+  </data>
+  <data name="WeeklyDeposit" xml:space="preserve">
+    <value>Depósito Semanal</value>
+  </data>
+  <data name="DailyAuthAmount" xml:space="preserve">
+    <value>Suma Diaria Autorizada</value>
+  </data>
+  <data name="AvgTicketAmount" xml:space="preserve">
+    <value>Suma Promedio de Ticket</value>
+  </data>
+  <data name="AuthGrid" xml:space="preserve">
+    <value>Cuadro de Autorización</value>
+  </data>
+  <data name="UserDefinedGrid" xml:space="preserve">
+    <value>Cuadro Definido por el Usuario</value>
+  </data>
+  <data name="IncomeFactors" xml:space="preserve">
+    <value>Factores de Ingreso</value>
+  </data>
+  <data name="AccountFee1" xml:space="preserve">
+    <value>Cargo de Cuenta 1</value>
+  </data>
+  <data name="AccountFee2" xml:space="preserve">
+    <value>Cargo de Cuenta 2</value>
+  </data>
+  <data name="AccountFee3" xml:space="preserve">
+    <value>Cargo de Cuenta 3</value>
+  </data>
+  <data name="AccountFee4" xml:space="preserve">
+    <value>Cargo de Cuenta 4</value>
+  </data>
+  <data name="AccountFee5" xml:space="preserve">
+    <value>Cargo de Cuenta 5</value>
+  </data>
+  <data name="RecurringFeeFlag" xml:space="preserve">
+    <value>Indicador de Cargo Recurrente</value>
+  </data>
+  <data name="RecurFeeInd" xml:space="preserve">
+    <value>Ind. Cargo Recurrente</value>
+  </data>
+  <data name="RecurFeeAmt" xml:space="preserve">
+    <value>Suma de Cargo Recurrente</value>
+  </data>
+  <data name="RecurFeeDesc" xml:space="preserve">
+    <value>Descripción de Cargo Recurrente</value>
+  </data>
+  <data name="StmtBundleOption" xml:space="preserve">
+    <value>Opción de Paquete de Estado de Cuenta</value>
+  </data>
+  <data name="BundlePct" xml:space="preserve">
+    <value>Porcentaje del Paquete</value>
+  </data>
+  <data name="BundleRate" xml:space="preserve">
+    <value>Tarifa del Paquete</value>
+  </data>
+  <data name="BatchHeaderFee" xml:space="preserve">
+    <value>Cargo de Encabezado de Lotes</value>
+  </data>
+  <data name="ReturnTransactionFee" xml:space="preserve">
+    <value>Cargo por Transacción de Devolución</value>
+  </data>
+  <data name="ChargebackFee" xml:space="preserve">
+    <value>Cargo de Reembolso</value>
+  </data>
+  <data name="RetrievalFee" xml:space="preserve">
+    <value>Cargo de Recuperación</value>
+  </data>
+  <data name="SalesTransFee" xml:space="preserve">
+    <value>Cargo por Transacción de Venta</value>
+  </data>
+  <data name="OtherItemCharge" xml:space="preserve">
+    <value>Otros Cargos</value>
+  </data>
+  <data name="WebsiteUsage" xml:space="preserve">
+    <value>Uso del Sitio de Internet</value>
+  </data>
+  <data name="IVRUsage" xml:space="preserve">
+    <value>Uso de IVR</value>
+  </data>
+  <data name="UnregPct" xml:space="preserve">
+    <value>Porcentaje no regulado</value>
+  </data>
+  <data name="AddRM" xml:space="preserve">
+    <value>Agregar RM</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Enviar</value>
+  </data>
+  <data name="PINDebit" xml:space="preserve">
+    <value>PDB</value>
+  </data>
+  <data name="TerminalInformation" xml:space="preserve">
+    <value>Información De Terminal</value>
+  </data>
+  <data name="RelationshipManager30Characters" xml:space="preserve">
+    <value>El campo Gerente de Relaciones debe ser de 30 caracteres o menos y no puede incluir caracteres especiales</value>
+  </data>
+  <data name="EmailAddressFormat" xml:space="preserve">
+    <value>Usted ha ingresado un formato incorrecto de dirección de correo electrónico. Inténtelo de nuevo.</value>
+  </data>
+  <data name="RelationshipManager" xml:space="preserve">
+    <value>Gerente De Relaciones:</value>
+  </data>
+  <data name="PrefixMrMs" xml:space="preserve">
+    <value>No se permiten prefijos o sufijos (por ejemplo Sr./Sra./Jr.).</value>
+  </data>
+  <data name="MerchantMemos" xml:space="preserve">
+    <value>Memos Del Comerciante</value>
+  </data>
+  <data name="ACCEL" xml:space="preserve">
+    <value>ACCEL</value>
+  </data>
+  <data name="AFFN" xml:space="preserve">
+    <value>AFFN</value>
+  </data>
+  <data name="ALASKAOPTION" xml:space="preserve">
+    <value>OPCIÓN ALASKA</value>
+  </data>
+  <data name="CU24" xml:space="preserve">
+    <value>CU24</value>
+  </data>
+  <data name="INTERLINK" xml:space="preserve">
+    <value>INTERLINK</value>
+  </data>
+  <data name="JEANIE" xml:space="preserve">
+    <value>JEANIE</value>
+  </data>
+  <data name="MAESTRO" xml:space="preserve">
+    <value>MAESTRO</value>
+  </data>
+  <data name="NoRecordsToDisplay" xml:space="preserve">
+    <value>No se encontraron datos.</value>
+  </data>
+  <data name="NYCE" xml:space="preserve">
+    <value>NYCE</value>
+  </data>
+  <data name="PULSE" xml:space="preserve">
+    <value>PULSE</value>
+  </data>
+  <data name="SHAZAM" xml:space="preserve">
+    <value>SHAZAM</value>
+  </data>
+  <data name="STAR" xml:space="preserve">
+    <value>STAR</value>
+  </data>
+  <data name="AXPONEPTPerItem" xml:space="preserve">
+    <value>AXPONEPT&lt;br /&gt;Per Item</value>
+  </data>
+  <data name="AXPONEPTRate" xml:space="preserve">
+    <value>AXPONEPT&lt;br /&gt;Rate</value>
+  </data>
+  <data name="AMEX" xml:space="preserve">
+    <value>AMEX</value>
+  </data>
+  <data name="WRIGHTEXPRESS" xml:space="preserve">
+    <value>WRIGHT EXPRESS</value>
+  </data>
+  <data name="DiscMethod" xml:space="preserve">
+    <value>Método de descuento</value>
+  </data>
+  <data name="MerchPricingGrid" xml:space="preserve">
+    <value>Cuadrícula de precios del comerciante</value>
+  </data>
+  <data name="OtherItemRate2" xml:space="preserve">
+    <value>Other Item&lt;br /&gt;Rate</value>
+  </data>
+  <data name="OtherVol" xml:space="preserve">
+    <value>Otro porcentaje de volumen</value>
+  </data>
+  <data name="TieredDiscGrid" xml:space="preserve">
+    <value>Tiered Disc Grid</value>
+  </data>
+  <data name="AchIncExcl" xml:space="preserve">
+    <value>Exclusión de ingresos de la Cámara de Compensación Automatizada:</value>
+  </data>
+  <data name="AuthsSameAmt" xml:space="preserve">
+    <value>Número de autorizaciones de la misma cantidad:</value>
+  </data>
+  <data name="BatchReturnAmt" xml:space="preserve">
+    <value>Cantidad de lotes de devolución:</value>
+  </data>
+  <data name="BatchReturnCount" xml:space="preserve">
+    <value>Total de lotes de devolución:</value>
+  </data>
+  <data name="BelowFloorAmt" xml:space="preserve">
+    <value>Cantidad debajo del límite:</value>
+  </data>
+  <data name="ChainHdqtrPct" xml:space="preserve">
+    <value>Porcentaje de la oficina central de la cadena:</value>
+  </data>
+  <data name="ChargebackOccurrences" xml:space="preserve">
+    <value>Número de casos de contracargos:</value>
+  </data>
+  <data name="DailyAuthDeclinePct" xml:space="preserve">
+    <value>Porcentaje de autorizaciones rechazadas diariamente:</value>
+  </data>
+  <data name="DailyAuthsCardPct" xml:space="preserve">
+    <value>Porcentaje de autorizaciones diarias de tarjetas:</value>
+  </data>
+  <data name="DailyAuthsCount" xml:space="preserve">
+    <value>Total de las autorizaciones diarias:</value>
+  </data>
+  <data name="DailyRetrievalAmt" xml:space="preserve">
+    <value>Cantidad de recuperaciones diarias:</value>
+  </data>
+  <data name="DailyRetrievalCount" xml:space="preserve">
+    <value>Total de recuperaciones diarias:</value>
+  </data>
+  <data name="DailyTransPerCard" xml:space="preserve">
+    <value>Número de transacciones diarias por tarjeta:</value>
+  </data>
+  <data name="ExcludeAdjChargebacks" xml:space="preserve">
+    <value>Exclusión de ajustes y contracargos:</value>
+  </data>
+  <data name="FundLmtDay" xml:space="preserve">
+    <value>Día de límite de fondos:</value>
+  </data>
+  <data name="Limit30Day" xml:space="preserve">
+    <value>Límite de 30 días:</value>
+  </data>
+  <data name="MaxAuthAmt" xml:space="preserve">
+    <value>Cantidad máxima autorizada:</value>
+  </data>
+  <data name="MaxReturnAmt" xml:space="preserve">
+    <value>Cantidad máxima de devoluciones:</value>
+  </data>
+  <data name="MaxTKTOs" xml:space="preserve">
+    <value>Número máximo de TKTO:</value>
+  </data>
+  <data name="MTDChargebackPct" xml:space="preserve">
+    <value>Porcentaje del contracargo del mes hasta la fecha:</value>
+  </data>
+  <data name="ReturnCountPct" xml:space="preserve">
+    <value>Porcentaje del total de las devoluciones:</value>
+  </data>
+  <data name="ReturnVolPct" xml:space="preserve">
+    <value>Porcentaje del volumen de devoluciones:</value>
+  </data>
+  <data name="RoundDiscount" xml:space="preserve">
+    <value>Descuentos redondeados:</value>
+  </data>
+  <data name="SameAmtPct" xml:space="preserve">
+    <value>Porcentaje de la misma cantidad:</value>
+  </data>
+  <data name="TransactionEstimates" xml:space="preserve">
+    <value>Estimados De Transacciones</value>
+  </data>
+  <data name="VoiceAuthPct" xml:space="preserve">
+    <value>Porcentaje de autorizaciones por voz:</value>
+  </data>
+  <data name="WeeklyBatches" xml:space="preserve">
+    <value>Número de lotes semanales:</value>
+  </data>
+  <data name="AssessmentCode" xml:space="preserve">
+    <value>Código de evaluación:</value>
+  </data>
+  <data name="ConfirmLtrSuppRtrlCode" xml:space="preserve">
+    <value>Confirmar código de carta de apoyo para la recuperación:</value>
+  </data>
+  <data name="ConfirmLtrSuppRtrlPrint" xml:space="preserve">
+    <value>Confirmar impresión de carta de apoyo para la recuperación:</value>
+  </data>
+  <data name="TapeRefFlag" xml:space="preserve">
+    <value>Emblema de cinta de referencia:</value>
+  </data>
+  <data name="FinancialAcctType" xml:space="preserve">
+    <value>Financial Acct Type:</value>
+  </data>
+  <data name="CityStateZip" xml:space="preserve">
+    <value>Ciudad/Estado/Código postal:</value>
+  </data>
+  <data name="BankcardCity" xml:space="preserve">
+    <value>Tarjeta Bancaria Ciudad:</value>
+  </data>
+  <data name="ReOpenDate" xml:space="preserve">
+    <value>Fecha de reapertura:</value>
+  </data>
+  <data name="BankcardState" xml:space="preserve">
+    <value>Tarjeta Bancaria Estado:</value>
+  </data>
+  <data name="LastNonMonDate" xml:space="preserve">
+    <value>Última fecha diferente a lunes:</value>
+  </data>
+  <data name="RetailCity" xml:space="preserve">
+    <value>Ciudad de minorista:</value>
+  </data>
+  <data name="ContactPhone" xml:space="preserve">
+    <value>Teléfono de contacto:</value>
+  </data>
+  <data name="LastActiveDate" xml:space="preserve">
+    <value>Última fecha activa:</value>
+  </data>
+  <data name="RetailState" xml:space="preserve">
+    <value>Estado de minorista:</value>
+  </data>
+  <data name="LegalName" xml:space="preserve">
+    <value>Nombre legal:</value>
+  </data>
+  <data name="LastReviewDate" xml:space="preserve">
+    <value>Última fecha de revisión:</value>
+  </data>
+  <data name="CSPhone" xml:space="preserve">
+    <value>Teléfono de CS:</value>
+  </data>
+  <data name="PayeezyIndicatorEffectiveDate" xml:space="preserve">
+    <value>Fecha de vigencia/Indicador de Payeezy:</value>
+  </data>
+  <data name="PayeezyTransArmorServiceCode" xml:space="preserve">
+    <value>Código de servicio de TransArmor de Payeezy:</value>
+  </data>
+  <data name="MCVIPOSFlags" xml:space="preserve">
+    <value>Emblema de punto de venta (Point of Sale, POS) de Mastercard/Visa:</value>
+  </data>
+  <data name="ChargebackAdviceSW" xml:space="preserve">
+    <value>Contracargo, se recomienda deslizar:</value>
+  </data>
+  <data name="RetrievalFlag" xml:space="preserve">
+    <value>Emblema de recuperación:</value>
+  </data>
+  <data name="OneTimeExpenseFlag" xml:space="preserve">
+    <value>Emblema de gasto único:</value>
+  </data>
+  <data name="OneTimeIncomeFlag" xml:space="preserve">
+    <value>Emblema de ingreso único:</value>
+  </data>
+  <data name="12BLetterType" xml:space="preserve">
+    <value>Tipo de letra 12B:</value>
+  </data>
+  <data name="12BMailFlag" xml:space="preserve">
+    <value>Emblema de correo 12B:</value>
+  </data>
+  <data name="MerchantCSPhoneNumber" xml:space="preserve">
+    <value>Número de teléfono de comerciante CS:</value>
+  </data>
+  <data name="TransArmorSecurityLevel" xml:space="preserve">
+    <value>Nivel de seguridad TransArmor:</value>
+  </data>
+  <data name="TransArmorEncryptionType" xml:space="preserve">
+    <value>Tipo de cifrado de TransArmor:</value>
+  </data>
+  <data name="TransArmorTokenIndicator" xml:space="preserve">
+    <value>Indicador de token de TransArmor:</value>
+  </data>
+  <data name="TransArmorTokenType" xml:space="preserve">
+    <value>Tipo de token de TransArmor:</value>
+  </data>
+  <data name="EMVIndicator" xml:space="preserve">
+    <value>Indicador de Europay, Mastercard y Visa (EMV):</value>
+  </data>
+  <data name="RebateRate1" xml:space="preserve">
+    <value>Tasa de bonificación 1</value>
+  </data>
+  <data name="RebateRate2" xml:space="preserve">
+    <value>Tasa de bonificación 2</value>
+  </data>
+  <data name="MerchantCardInformationPrivateLabel" xml:space="preserve">
+    <value>Información De Tarjeta Del Comerciante - Etiqueta Privada</value>
+  </data>
+  <data name="MerchantCard" xml:space="preserve">
+    <value>Etiqueta privada</value>
+  </data>
+  <data name="12BLtrCst" xml:space="preserve">
+    <value>Costo de carta 12B</value>
+  </data>
+  <data name="AFDNonParticipationFee" xml:space="preserve">
+    <value>Tasa de no participación AFD</value>
+  </data>
+  <data name="AMEXAssocFees" xml:space="preserve">
+    <value>Tasas asociadas a AMEX:</value>
+  </data>
+  <data name="AMEXNetworkFee" xml:space="preserve">
+    <value>Tasa de redes AMEX</value>
+  </data>
+  <data name="AVSNetworkFee" xml:space="preserve">
+    <value>Tasa de redes AVS</value>
+  </data>
+  <data name="AsstServCst" xml:space="preserve">
+    <value>Costo de servicio de asistencia</value>
+  </data>
+  <data name="AuthExpGridID" xml:space="preserve">
+    <value>Identificación de cuadrícula de gastos autenticada</value>
+  </data>
+  <data name="AuthFeeflag" xml:space="preserve">
+    <value>Emblema de tasa autenticado</value>
+  </data>
+  <data name="AuthSurcharge" xml:space="preserve">
+    <value>Recargo de autenticación</value>
+  </data>
+  <data name="AVSAcquirerMCFee" xml:space="preserve">
+    <value>Tasa AVS de adquiriente de Mastercard</value>
+  </data>
+  <data name="AVSCst" xml:space="preserve">
+    <value>Costo de AVS</value>
+  </data>
+  <data name="BINICAFeeExpense" xml:space="preserve">
+    <value>Gasto de tasa BIN/ICA</value>
+  </data>
+  <data name="BINICAFeeIncome" xml:space="preserve">
+    <value>Ingreso de tasa BIN/ICA</value>
+  </data>
+  <data name="ChgbkCst" xml:space="preserve">
+    <value>Costo de contracargo</value>
+  </data>
+  <data name="CVC2FeeIndicator" xml:space="preserve">
+    <value>Indicador de tasa de CVC 2</value>
+  </data>
+  <data name="CVC2FeeSurcharge" xml:space="preserve">
+    <value>Recargo de CVC 2</value>
+  </data>
+  <data name="DiscFullAcqAssoc" xml:space="preserve">
+    <value>Descuento total de adquiriente asociado:</value>
+  </data>
+  <data name="ETCConfLtrCst" xml:space="preserve">
+    <value>Costo de carta de confirmación de ETC</value>
+  </data>
+  <data name="ETCItemCst" xml:space="preserve">
+    <value>Costo de artículo ETC</value>
+  </data>
+  <data name="FANFCNPSurcharge" xml:space="preserve">
+    <value>Recargo CNP de Asistencia Financiera para Familias Necesitadas</value>
+  </data>
+  <data name="FANFCPSurcharge" xml:space="preserve">
+    <value>Recargo CP de Asistencia Financiera para Familias Necesitadas</value>
+  </data>
+  <data name="FANFFeeFlag" xml:space="preserve">
+    <value>Emblema de tasa de Asistencia Financiera para Familias Necesitadas</value>
+  </data>
+  <data name="FixCst" xml:space="preserve">
+    <value>Costo fijo</value>
+  </data>
+  <data name="HelpDeskCst" xml:space="preserve">
+    <value>Costo de asistencia técnica</value>
+  </data>
+  <data name="ImprntCst" xml:space="preserve">
+    <value>Costo de imprenta</value>
+  </data>
+  <data name="ItemCst" xml:space="preserve">
+    <value>Costo de artículo</value>
+  </data>
+  <data name="KilobyteFeeIndicator" xml:space="preserve">
+    <value>Indicador de tasa de kilobyte</value>
+  </data>
+  <data name="KilobyteSurcharge" xml:space="preserve">
+    <value>Recargo de kilobyte</value>
+  </data>
+  <data name="LicenseFlatExpense" xml:space="preserve">
+    <value>Gasto fijo de licencia</value>
+  </data>
+  <data name="LicenseFlatIncome" xml:space="preserve">
+    <value>Ingreso fijo de licencia</value>
+  </data>
+  <data name="LicenseFlatOccurrenceIndicator" xml:space="preserve">
+    <value>Licencia de indicador de ocurrencia fija</value>
+  </data>
+  <data name="LicensePerItemExpense" xml:space="preserve">
+    <value>Gasto de licencia por artículo</value>
+  </data>
+  <data name="LicensePerItemIncome" xml:space="preserve">
+    <value>Ingreso de licencia por artículo</value>
+  </data>
+  <data name="LicenseRateExpense" xml:space="preserve">
+    <value>Tasa de gasto de licencia</value>
+  </data>
+  <data name="LicenseRateIncome" xml:space="preserve">
+    <value>Tasa de ingreso de licencia</value>
+  </data>
+  <data name="MCAssocFeesHeader" xml:space="preserve">
+    <value>Tasas asociadas a Mastercard:</value>
+  </data>
+  <data name="MCICAAVSExpense" xml:space="preserve">
+    <value>Gasto AVS ICA de Mastercard</value>
+  </data>
+  <data name="MCICAAVSIncome" xml:space="preserve">
+    <value>Ingreso AVS ICA de Mastercard</value>
+  </data>
+  <data name="OneTimeCst" xml:space="preserve">
+    <value>Costo único</value>
+  </data>
+  <data name="OtherPctCst" xml:space="preserve">
+    <value>Costo de otro porcentaje</value>
+  </data>
+  <data name="PrintCst" xml:space="preserve">
+    <value>Costo de impresión</value>
+  </data>
+  <data name="ProcessFeeExpense" xml:space="preserve">
+    <value>Gasto de tasa de procesamiento</value>
+  </data>
+  <data name="ProcessFeeIncome" xml:space="preserve">
+    <value>Ingreso de tasa de procesamiento</value>
+  </data>
+  <data name="RCCst" xml:space="preserve">
+    <value>Costo de R/C</value>
+  </data>
+  <data name="TapeCst" xml:space="preserve">
+    <value>Costo de cinta</value>
+  </data>
+  <data name="TermCst" xml:space="preserve">
+    <value>Costo de término</value>
+  </data>
+  <data name="TransIntegrityFee" xml:space="preserve">
+    <value>Tasa de integridad de transferencia</value>
+  </data>
+  <data name="UserDepExpGridID" xml:space="preserve">
+    <value>Identificación de cuadrícula de gastos dependientes del usuario</value>
+  </data>
+  <data name="VisaAssocFeesHeader" xml:space="preserve">
+    <value>Tasas asociadas a VISA:</value>
+  </data>
+  <data name="WBCstMC" xml:space="preserve">
+    <value>Costo de WB M/C</value>
+  </data>
+  <data name="WBCstVS" xml:space="preserve">
+    <value>Costo de WB VS</value>
+  </data>
+  <data name="AcctChg1StartDate" xml:space="preserve">
+    <value>Cambio de fecha de inicio de cuenta 1</value>
+  </data>
+  <data name="AcctChg1StopDate" xml:space="preserve">
+    <value>Cambio de fecha de cese de cuenta 1</value>
+  </data>
+  <data name="AcctChg2StartDate" xml:space="preserve">
+    <value>Cambio de fecha de inicio de cuenta 2</value>
+  </data>
+  <data name="AcctChg2StopDate" xml:space="preserve">
+    <value>Cambio de fecha de cese de cuenta 2</value>
+  </data>
+  <data name="AcctChg3StartDate" xml:space="preserve">
+    <value>Cambio de fecha de inicio de cuenta 3</value>
+  </data>
+  <data name="AcctChg3StopDate" xml:space="preserve">
+    <value>Cambio de fecha de cese de cuenta 3</value>
+  </data>
+  <data name="AcctChg4StartDate" xml:space="preserve">
+    <value>Cambio de fecha de inicio de cuenta 4</value>
+  </data>
+  <data name="AcctChg4StopDate" xml:space="preserve">
+    <value>Cambio de fecha de cese de cuenta 4</value>
+  </data>
+  <data name="AchChg" xml:space="preserve">
+    <value>Cambio de la Cámara de Compensación Automatizada</value>
+  </data>
+  <data name="ACHRejectFee" xml:space="preserve">
+    <value>Rechazos de la Cámara de Compensación Automatizada</value>
+  </data>
+  <data name="BatchCst" xml:space="preserve">
+    <value>Costo de lote</value>
+  </data>
+  <data name="eIDSIndicator" xml:space="preserve">
+    <value>Indicador eIDS</value>
+  </data>
+  <data name="ETCConfLtrChg" xml:space="preserve">
+    <value>Cambio de carta de confirmación de ETC</value>
+  </data>
+  <data name="ExpenseFactors" xml:space="preserve">
+    <value>Factores de gastos:</value>
+  </data>
+  <data name="MerchantFeeControlGrid" xml:space="preserve">
+    <value>Cuadrícula de control de tasa del comerciante</value>
+  </data>
+  <data name="FloatFlg" xml:space="preserve">
+    <value>Emblema de fondo</value>
+  </data>
+  <data name="HelpDeskChg" xml:space="preserve">
+    <value>Cambio de asistencia técnica</value>
+  </data>
+  <data name="ICItemCst" xml:space="preserve">
+    <value>Costo de artículo IC</value>
+  </data>
+  <data name="ImprintChg" xml:space="preserve">
+    <value>Cambio de impresión</value>
+  </data>
+  <data name="IntraFeeFlg" xml:space="preserve">
+    <value>Emblema de tasa Intra</value>
+  </data>
+  <data name="IntraItemCst" xml:space="preserve">
+    <value>Costo de artículo Intra</value>
+  </data>
+  <data name="MerchantAdvChg" xml:space="preserve">
+    <value>Cambio de ventajas para comerciantes</value>
+  </data>
+  <data name="MFCOtherFee1" xml:space="preserve">
+    <value>Otra tasa de costo marginal de factor 1</value>
+  </data>
+  <data name="MFCOtherFee2" xml:space="preserve">
+    <value>Otra tasa de costo marginal de factor 2</value>
+  </data>
+  <data name="MinVolFeeChg" xml:space="preserve">
+    <value>Cambio de tasa de volumen mínimo</value>
+  </data>
+  <data name="MinVolFeeFlag" xml:space="preserve">
+    <value>Emblema de tasa de volumen mínimo</value>
+  </data>
+  <data name="OneTimeChg" xml:space="preserve">
+    <value>Cambio único</value>
+  </data>
+  <data name="OneTimeSetupFeeAmt" xml:space="preserve">
+    <value>Cantidad de tasa de configuración única</value>
+  </data>
+  <data name="PayeezyMonthlyFee" xml:space="preserve">
+    <value>Tasa mensual de Payeezy</value>
+  </data>
+  <data name="PayeezySetupFee" xml:space="preserve">
+    <value>Tasa de configuración de Payeezy</value>
+  </data>
+  <data name="PrintChg" xml:space="preserve">
+    <value>Cambio de impresión</value>
+  </data>
+  <data name="PulseDebitNetworkFee" xml:space="preserve">
+    <value>Tasa de redes de débito Pulse</value>
+  </data>
+  <data name="RCChg" xml:space="preserve">
+    <value>Cambio de R/C</value>
+  </data>
+  <data name="RetrievalFaxFlag" xml:space="preserve">
+    <value>Emblema de recuperación de fax</value>
+  </data>
+  <data name="StarDebitNetworkFee" xml:space="preserve">
+    <value>Tasa de redes de débito Star</value>
+  </data>
+  <data name="StmtBundle" xml:space="preserve">
+    <value>Paquete de declaraciones</value>
+  </data>
+  <data name="TermChgStartDate" xml:space="preserve">
+    <value>Cambio de fecha de inicio de término</value>
+  </data>
+  <data name="TermChgStopDate" xml:space="preserve">
+    <value>Cambio de fecha de cese de término</value>
+  </data>
+  <data name="TermChg" xml:space="preserve">
+    <value>Cambio de término</value>
+  </data>
+  <data name="eIDSFee" xml:space="preserve">
+    <value>Tasa eIDS</value>
+  </data>
+  <data name="DoNotPassTIF" xml:space="preserve">
+    <value>No transmita la tasa de integridad de transacción al comerciante</value>
+  </data>
+  <data name="PassTIF" xml:space="preserve">
+    <value>Transmita la tasa de integridad de transacción al comerciante</value>
+  </data>
+  <data name="DoNotPassNPF" xml:space="preserve">
+    <value>No transmita la tasa de participación en la red al comerciante</value>
+  </data>
+  <data name="PassNPF" xml:space="preserve">
+    <value>Transmita la tasa de integridad de transacción al comerciante</value>
+  </data>
+  <data name="Paypal" xml:space="preserve">
+    <value>Paypal:</value>
+  </data>
+  <data name="or1" xml:space="preserve">
+    <value>o</value>
+  </data>
+  <data name="DiscoverHeader" xml:space="preserve">
+    <value>Discover:</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="UserID" xml:space="preserve">
+    <value>ID de Usuario</value>
+  </data>
+  <data name="UserIDHeader" xml:space="preserve">
+    <value>ID de Usuario:</value>
+  </data>
+  <data name="FundingMethod" xml:space="preserve">
+    <value>Método de financiación</value>
+  </data>
+  <data name="FundingMethodHeader" xml:space="preserve">
+    <value>Método de financiación:</value>
+  </data>
+  <data name="EffectiveDate" xml:space="preserve">
+    <value>Fecha de Validez</value>
+  </data>
+  <data name="CardTypes" xml:space="preserve">
+    <value>Tipos de Tarjeta</value>
+  </data>
+  <data name="DiscoverRetained" xml:space="preserve">
+    <value>Retenido</value>
+  </data>
+  <data name="DiscoverNonRetained" xml:space="preserve">
+    <value>No Retenido</value>
+  </data>
+  <data name="Portfolio" xml:space="preserve">
+    <value>Portafolio:</value>
+  </data>
+  <data name="Processor" xml:space="preserve">
+    <value>Procesador:</value>
+  </data>
+  <data name="Channel" xml:space="preserve">
+    <value>Canal:</value>
+  </data>
+  <data name="Partner" xml:space="preserve">
+    <value>El socio:</value>
+  </data>
+  <data name="SalesRep" xml:space="preserve">
+    <value>Representante de Ventas:</value>
+  </data>
+  <data name="SiteAccessText" xml:space="preserve">
+    <value>Acceso al Sitio</value>
+  </data>
+  <data name="Provider" xml:space="preserve">
+    <value>Proveedor</value>
+  </data>
+  <data name="Market" xml:space="preserve">
+    <value>Mercado</value>
+  </data>
+  <data name="Agent" xml:space="preserve">
+    <value>Agente</value>
+  </data>
+  <data name="AllProviders" xml:space="preserve">
+    <value>Todos los proveedores</value>
+  </data>
+  <data name="AllChannels" xml:space="preserve">
+    <value>Todos los canales</value>
+  </data>
+  <data name="AllMarkets" xml:space="preserve">
+    <value>Todos los mercados</value>
+  </data>
+  <data name="AllAgents" xml:space="preserve">
+    <value>Todos los agentes</value>
+  </data>
+  <data name="PRIN_Bank" xml:space="preserve">
+    <value>PRIN/banco</value>
+  </data>
+  <data name="EPICID" xml:space="preserve">
+    <value>Identificación de EPIC</value>
+  </data>
+  <data name="Platform" xml:space="preserve">
+    <value>Plataforma:</value>
+  </data>
+  <data name="Office" xml:space="preserve">
+    <value>Oficina</value>
+  </data>
+  <data name="AgentRes" xml:space="preserve">
+    <value>Agent:</value>
+  </data>
+  <data name="ISO" xml:space="preserve">
+    <value>ISO:</value>
+  </data>
+  <data name="MerchantHierarchy" xml:space="preserve">
+    <value>Jerarquía del Comerciante</value>
+  </data>
+  <data name="Principal" xml:space="preserve">
+    <value>Principal:</value>
+  </data>
+  <data name="SalesChannel" xml:space="preserve">
+    <value>Canal de ventas</value>
+  </data>
+  <data name="ReferralPartner" xml:space="preserve">
+    <value>Socio de referencia</value>
+  </data>
+  <data name="ReferralPartnerHeader" xml:space="preserve">
+    <value>Socio de referencia</value>
+  </data>
+  <data name="ReferralSource" xml:space="preserve">
+    <value>Fuente de referencia</value>
+  </data>
+  <data name="ReferralSourceHeader" xml:space="preserve">
+    <value>Fuente de referencia</value>
+  </data>
+  <data name="ReferralPartnerId" xml:space="preserve">
+    <value>Referral Partner User ID</value>
+  </data>
+  <data name="ReferralPartnerIdHeader" xml:space="preserve">
+    <value>Referral Partner User ID</value>
+  </data>
+  <data name="ReferralSourceId" xml:space="preserve">
+    <value>Referral Source User ID</value>
+  </data>
+  <data name="ReferralSourceIdHeader" xml:space="preserve">
+    <value>Referral Source User ID</value>
+  </data>
+  <data name="UserName.HeaderText" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+  <data name="UserName.HeaderTooltip" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+  <data name="Tenant" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CoBrand" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AsstServChg" xml:space="preserve">
+    <value>Cambio de servicio de asistencia</value>
+  </data>
+  <data name="AgentID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Placeholder1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Placeholder2" xml:space="preserve">
+    <value />
+  </data>
+</root>

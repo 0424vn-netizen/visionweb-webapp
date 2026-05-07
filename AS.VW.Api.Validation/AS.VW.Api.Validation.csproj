@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A39D190E-A8C1-4312-AE39-7001C1B9B29B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AS.VW.Api.Validation</RootNamespace>
+    <AssemblyName>AS.VW.Api.Validation</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FluentValidation">
+      <HintPath>..\..\3rdLibrary\FluentValidation\FluentValidation.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BatchDetailFilterValidator.cs" />
+    <Compile Include="CardSummaryFilterValidator.cs" />
+    <Compile Include="CompositeValidator.cs" />
+    <Compile Include="CustomValidationFailure.cs" />
+    <Compile Include="DataViewLevelValidator.cs" />
+    <Compile Include="DateFilterValidator.cs" />
+    <Compile Include="DetailFilterValidator.cs" />
+    <Compile Include="GeneralExtentions.cs" />
+    <Compile Include="HierarchyFilterValidator.cs" />
+    <Compile Include="MerchantNumberFilterValidator.cs" />
+    <Compile Include="MerchantSummaryFilterValidator.cs" />
+    <Compile Include="PagingFilterValidator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyValidators\ExceptCharactersPropertyValidator.cs" />
+    <Compile Include="PropertyValidators\ExceptPatternPropertyValidator.cs" />
+    <Compile Include="PropertyValidators\LengthWhenNotEmptyPropertyValidator.cs" />
+    <Compile Include="PropertyValidators\MatchesWhenNotEmptyPropertyValidator.cs" />
+    <Compile Include="ReportFilterValidator.cs" />
+    <Compile Include="Resources\ResourceApi.Designer.cs">
+      <DependentUpon>ResourceApi.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="TransactionSearchFilterValidator.cs" />
+    <Compile Include="CustomValidationException.cs" />
+    <Compile Include="ValidatorExtensions.cs" />
+    <Compile Include="ValidatorFilterExtensions.cs" />
+    <Compile Include="VendorAuthorizationDetailFilterValidator.cs" />
+    <Compile Include="VendorAuthorizationFilterValidator.cs" />
+    <Compile Include="VoucherFilterValidator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagramValidator.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ResourceApi.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceApi.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AS.VW.Api.Model\AS.VW.Api.Model.csproj">
+      <Project>{6e67138b-ad0e-4f74-8501-9c2a23a79128}</Project>
+      <Name>AS.VW.Api.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+	<page request="~/as" transferTo="~/Login.aspx?id=0&amp;theme=default"/>
+	<page request="~/pivot" transferTo="~/Login.aspx?id=82&amp;theme=pivot"/>
+	
+	<page request="~/orion" transferTo="~/Login.aspx?id=29&amp;theme=orion"/>
+	<page request="~/empower" transferTo="~/Login.aspx?id=29&amp;theme=poremp&amp;contact=POREMP"/>
+	<page request="orion.mymerchantinfo.com/" transferTo="~/Login.aspx?id=29&amp;theme=orion"/>
+	<page request="empower.mymerchantinfo.com/" transferTo="~/Login.aspx?id=29&amp;theme=poremp&amp;contact=POREMP"/>
+	<page request="~/VisionWebDemo01" transferTo="~/Login.aspx?id=58&amp;theme=default"/>
+	<page request="~/VisionWebDemo02" transferTo="~/Login.aspx?id=999&amp;theme=default"/>
+	
+	<page request="~/demo" transferTo="~/LoginFIS.aspx?id=1000&amp;theme=Default"/>
+	<page request="~/fulton" transferTo="~/LoginFB.aspx?id=91&amp;theme=FULTON"/>
+	<page request="~/Intrust" transferTo="~/LoginFISBNK.aspx?id=22&amp;theme=BNK8714&amp;ins=LOGIN_INSTRUCTIONS_BNK8714&amp;email=BNK8714&amp;forgot=INTRUST"/>
+	<page request="~/Wheatland" transferTo="~/LoginFISBNK.aspx?id=22&amp;theme=BNK8714_Agent&amp;ins=LOGIN_INSTRUCTIONS_BNK8714_Agent&amp;email=BNK8714&amp;forgot=WHEATLAND"/>
+	<page request="~/asdemo" transferTo="~/Login.aspx?id=1000&amp;theme=default"/>
+	<page request="~/fbdemo" transferTo="~/LoginFBDEMO.aspx?id=1000&amp;theme=FULTON_CHN_DEMO&amp;contact=FBDEMO&amp;contactus=FBDEMO"/>
+	
+	<page request="~/ppi" transferTo="~/Login.aspx?id=15&amp;theme=ppi"/>
+	<page request="~/tnbci" transferTo="~/LoginTNBCI.aspx?id=49&amp;theme=TNBCI"/>
+	<page request="~/wrfc" transferTo="~/Login.aspx?id=97&amp;theme=WRFC"/>
+	<page request="~/windriver" transferTo="~/Login.aspx?id=97&amp;theme=WRFC"/>
+	<page request="~/nts" transferTo="~/Login.aspx?id=95&amp;theme=NTS"/>
+	<page request="~/tsys" transferTo="~/Login.aspx?id=126&amp;theme=TSYS"/>
+	<page request="ops-aperia.cayan.internal/" transferTo="~/Login.aspx?id=126&amp;theme=CAYAN"/>
+	<page request="20.2.33.3/" transferTo="~/Login.aspx?id=126&amp;theme=CAYAN"/>
+	<page request="20.2.34.3/" transferTo="~/Login.aspx?id=126&amp;theme=CAYAN"/>
+	<page request="~/fultondemo" transferTo="~/LoginFBDemo.aspx?id=1000&amp;theme=FULTON_DEMO"/>
+	
+	<page request="~/sfti" transferTo="~/Login.aspx?id=122&amp;theme=Softek"/>
+	<!--<page request="~/tib" transferTo="~/Login.aspx?id=118&amp;theme=TIB"/>
+	<page request="mypureportal.net/" transferTo="~/Login.aspx?id=118&amp;theme=TIB"/>
+	<page request="www.mypureportal.net/" transferTo="~/Login.aspx?id=118&amp;theme=TIB"/>
+	<page request="172.16.49.7/" transferTo="~/Login.aspx?id=118&amp;theme=TIB"/>-->
+	<page request="~/cayandemo" transferTo="~/Login.aspx?id=1000&amp;theme=TSYS_DEMO&amp;contact=CAYANDemo&amp;contactus=CAYANDemo"/>
+	<page request="~/tibdemo" transferTo="~/Login.aspx?id=998&amp;theme=PUREPORTALDEMO"/>
+	
+	<page request="~/clearent" transferTo="~/Login.aspx?id=115&amp;theme=CLEARENT"/>
+	<page request="~/anovia" transferTo="~/Login.aspx?id=144&amp;theme=SPHERE"/>
+	<page request="~/rs2" transferTo="~/Login.aspx?id=152&amp;theme=RS2&amp;contact=Extend"/>
+	<page request="~/titanium" transferTo="~/Login.aspx?id=39&amp;theme=MLS"/>
+	<page request="~/FIPS" transferTo="~/Login.aspx?id=69&amp;theme=FIPS"/>
+	
+	<page request="demo.merchantintel.net/" transferTo="~/Login.aspx?id=1000&amp;theme=default"/>
+	
+	<page request="~/GRNBX" transferTo="~/Login.aspx?id=165&amp;theme=GRNBX"/>
+	<page request="~/dynamics" transferTo="~/Login.aspx?id=176&amp;theme=DYNMX"/>
+	<page request="~/procare" transferTo="~/Login.aspx?id=170&amp;theme=PRCR"/>
+	<page request="~/KYBNK" transferTo="~/Login.aspx?id=181&amp;theme=KYBNK"/>
+	<page request="~/FORTIS" transferTo="~/Login.aspx?id=158&amp;theme=FORTIS"/>
+	<page request="~/wfnb" transferTo="~/Login.aspx?id=191&amp;theme=wfnb"/>
+	<page request="~/avidia" transferTo="~/Login.aspx?id=187&amp;theme=avidia"/>
+	<page request="~/mbh" transferTo="~/Login.aspx?id=186&amp;theme=mbh"/>
+	
+	<!-- For scanning purpose -->
+	<page request="~/esqr" transferTo="~/Login.aspx?id=200&amp;theme=esqr"/>
+	<page request="~/maverick" transferTo="~/Login.aspx?id=206&amp;theme=mvrk"/>
+  <page request="~/threadedpayments" transferTo="~/Login.aspx?id=207&amp;theme=trdbk"/>
+  <page request="~/spherecommerce" transferTo="~/Login.aspx?id=217&amp;theme=SPR"/>
+	<page request="~/stax" transferTo="~/Login.aspx?id=218&amp;theme=STAX"/>
+</configs>

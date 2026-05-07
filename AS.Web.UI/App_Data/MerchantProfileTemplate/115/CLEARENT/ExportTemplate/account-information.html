@@ -1,0 +1,53 @@
+﻿<table border="0">
+    <tr>
+        <th colspan="2">
+            <b> {{res:AccountInformation}}</b>
+        </th>
+    </tr>
+    <tbody>
+        <tr class="Row">
+            <td class="heading">
+                {{res:AccountInformation}}
+            </td>
+            <td class="heading">
+                {{res:Program}}
+            </td>
+            <td class="heading">
+                {{res:AccountNumber}}
+            </td>
+        </tr>
+        <tr class="AltRow">
+            <td>
+                {{res:AmericanExpress}}
+            </td>
+            <td>
+                &nbsp;{{data:AmexProgram||AccountInformation}}
+            </td>
+            <td>
+                &nbsp;{{data:AMEXAccountNumber||AccountInformation}}
+            </td>
+        </tr>
+        <tr class="Row">
+            <td>
+                {{res:Discover}}
+            </td>
+            <td>
+                &nbsp;{{data:DiscoverProgram||AccountInformation}}
+            </td>
+            <td>
+                &nbsp;{{data:DiscoverAccountNumber||AccountInformation}}
+            </td>
+        </tr>
+        <tr class="AltRow">
+            <td>
+                {{res:DinersClub}}
+            </td>
+            <td>
+                &nbsp;{{data:DinersClubProgram||AccountInformation}}
+            </td>
+            <td>
+                &nbsp;{{data:DinersClubAccountNumber||AccountInformation}}
+            </td>
+        </tr>
+    </tbody>
+</table>

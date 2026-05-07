@@ -1,0 +1,64 @@
+﻿<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <th colspan="4" align="left">
+      <b> {{res:OtherCardInformation}}</b>
+    </th>
+  </tr>
+  <tbody>
+    <tr class="Row">
+      <td class="heading">
+        {{res:AMEXHeader}}
+      </td>
+      <td>
+        {{data:AMEX}}
+      <td class="heading">
+        {{res:PinDebitHeader}}
+      </td>
+      <td>
+        {{data:PinDebit||OtherCardInformation}}
+      </td>
+    </tr>
+    <tr class="AltRow">
+      <td class="heading">
+        {{res:AMEXONEPOINT}}
+      </td>
+      <td>
+        {{data:AMEXONPOINT||OtherCardInformation}}
+      </td>
+      <td class="heading">
+        {{res:JCBHeader}}
+      </td>
+      <td>
+        {{data:JCB||OtherCardInformation}}
+      </td>
+    </tr>
+    <tr class="Row">
+      <td class="heading">
+        {{res:DiscoverHeader}}
+      </td>
+      <td>
+        {{data:Discover||OtherCardInformation}}
+      </td>
+      <td class="heading">
+        {{res:WrightExpressHeader}}
+      </td>
+      <td>
+        {{data:WrightExpress||OtherCardInformation}}
+      </td>
+    </tr>
+    <tr class="AltRow">
+      <td class="heading">
+        {{res:DiscoverFullAQC}}
+      </td>
+      <td>
+        {{data:DiscoverFullAQC||OtherCardInformation}}
+      </td>
+      <td class="heading">
+        {{res:VoyagerHeader}}
+      </td>
+      <td>
+        {{data:Voyager||OtherCardInformation}}
+      </td>
+    </tr>
+  </tbody>
+</table>

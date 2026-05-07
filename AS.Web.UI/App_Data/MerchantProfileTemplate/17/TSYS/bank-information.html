@@ -1,0 +1,35 @@
+﻿<div class="row" id="bankinfo">
+    <div class="col-xs-12" data-toggle="collapse" data-target="#ciBankInformation" aria-expanded="true">
+        <h2 class="grid-title">
+            {{res:BankInformation}}
+        </h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 collapse in" id="ciBankInformation" aria-expanded="true" style="">
+        <table class="ASTable" aria-hidden="true">
+            <colgroup>
+                <col class="w-40">
+                <col class="w-60">
+            </colgroup>
+            <tbody>
+                <tr class="Row">
+                    <td class="heading">
+                        {{res:TransitRouting}}
+                    </td>
+                    <td>
+                        {{data:RoutingNumber|PartialData|BankInformation}}
+                    </td>
+                </tr>
+                <tr class="AltRow">
+                    <td class="heading">
+                        {{res:Acct}}
+                    </td>
+                    <td>
+                        {{data:AccountNumber|DDAView|BankInformation}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{852A18C9-EDEF-40D8-85F9-C07F0B0AF535}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AS.Web.Business</RootNamespace>
+    <AssemblyName>AS.Web.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AS.Common">
+      <HintPath>..\Libraries\UpgradeDllForSonarIssues\AS.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="AS.Controls">
+      <HintPath>..\..\3rdLibrary\Aperia\VisionWeb\Webform\AS.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="componentspace.saml2">
+      <HintPath>..\Libraries\componentspace.saml2.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\Libraries\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\3rdLibrary\log4net\2.0.15\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Services3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\3rdLibrary\WSE\Microsoft.Web.Services3.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.1.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\3rdLibrary\Newtonsoft\Newtonsoft.Json.12.0.2\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DocServices.cs" />
+    <Compile Include="General\GeneralFuncsLib.cs" />
+    <Compile Include="General\GeneralFuncsLib.Utilities.cs" />
+    <Compile Include="General\FilterParameterExtensions.cs" />
+    <Compile Include="PCI\IPciServices.cs" />
+    <Compile Include="IReportServices.cs" />
+    <Compile Include="Logger\PciLoggerManager.cs" />
+    <Compile Include="LogStopWatch.cs" />
+    <Compile Include="ObjectsConverter.cs" />
+    <Compile Include="PauseMerchantAlert\Impl\PauseMerchantAlertBusiness.cs" />
+    <Compile Include="PauseMerchantAlert\Interfaces\IPauseMerchantAlertBusiness.cs" />
+    <Compile Include="PauseMerchantAlert\Models\PauseMerchantAlertModels.cs" />
+    <Compile Include="PCI\PciServices.cs" />
+    <Compile Include="PCI\WebServices\PciWebServicesClientProtocol.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PCI\Models\BasePciModel.cs" />
+    <Compile Include="PCI\Models\GenerateSamlContentModel.cs" />
+    <Compile Include="PCI\Models\GetUserInPciModel.cs" />
+    <Compile Include="PCI\Models\PciLogInfoModel.cs" />
+    <Compile Include="PCI\SsoPciFuncsLib.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ReportServices.cs" />
+    <Compile Include="RiskReport\ForwardDeliveryBussiness.cs" />
+    <Compile Include="RiskReport\IForwardDeliveryBussiness.cs" />
+    <Compile Include="RiskReport\IRiskReportNoteBussiness.cs" />
+    <Compile Include="RiskReport\Models\CalculateForwardDeliveryModel.cs" />
+    <Compile Include="RiskReport\Models\DeleteRiskReportNoteModel.cs" />
+    <Compile Include="RiskReport\Models\GetDetailRiskReportNoteModel.cs" />
+    <Compile Include="RiskReport\Models\GetForwardDeliveryModel.cs" />
+    <Compile Include="RiskReport\Models\GetRiskReportNoteModel.cs" />
+    <Compile Include="RiskReport\Models\UpdateRiskReportNoteModel.cs" />
+    <Compile Include="RiskReport\RiskReportNoteBussiness.cs" />
+    <Compile Include="Risk\RM_MCF_GeneralFuncsLib.cs" />
+    <Compile Include="Shared\Constants\ForwardDeliveryConstants.cs" />
+    <Compile Include="Shared\Constants\GlobalConstants.cs" />
+    <Compile Include="Shared\Constants\ManageAssignmentConstanst.cs" />
+    <Compile Include="Shared\Constants\PciConstants.cs" />
+    <Compile Include="Shared\Constants\RiskReportConstants.cs" />
+    <Compile Include="Shared\Constants\RiskReportNoteConstants.cs" />
+    <Compile Include="Shared\Constants\UserProfileConstants.cs" />
+    <Compile Include="Shared\Enums\EnumAction.cs" />
+    <Compile Include="Shared\Enums\EnumClient.cs" />
+    <Compile Include="Shared\Enums\EnumEnviroment.cs" />
+    <Compile Include="Shared\Enums\EnumFWDAction.cs" />
+    <Compile Include="Shared\Enums\EnumPage.cs" />
+    <Compile Include="Shared\Enums\EnumTimeZone.cs" />
+    <Compile Include="Shared\Enums\EnumToHtml.cs" />
+    <Compile Include="Shared\Models\BuildToHtmlModel.cs" />
+    <Compile Include="Shared\Models\IsAllowClientModel.cs" />
+    <Compile Include="Web References\DocWebServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\PciWebServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ReportService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://192.168.119.5/DocProcessor.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\DocWebServices\</RelPath>
+      <UpdateFromURL>http://192.168.119.5/DocProcessor.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>AS_Web_Business_DocWebServices_DocProcessor</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:20001/ReportingServices.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ReportService\</RelPath>
+      <UpdateFromURL>http://localhost:20001/ReportingServices.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>AS_Web_Business_ReportService_fdc_ReportingServices</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://pcireskin-ws-qa.local/v100_int/Business.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\PciWebServices\</RelPath>
+      <UpdateFromURL>http://pcireskin-ws-qa.local/v100_int/Business.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>AS_Web_Business_PciWebServices_PCIServices</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <Compile Include="General\GeneralFuncsLib.Cryptophy.cs" />
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\PciWebServices\Business.wsdl" />
+    <None Include="Web References\PciWebServices\FilterParameter.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PciWebServices\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ReportService\ReportingServices.disco" />
+    <None Include="Web References\ReportService\ReportingServices.wsdl" />
+    <None Include="Web References\ReportService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AS.Security.WS.Entities\AS.Security.WS.Entities.csproj">
+      <Project>{f517cfa0-1869-468c-9531-89f4daf52d93}</Project>
+      <Name>AS.Security.WS.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AS.WS.Entities\AS.WS.Entities.csproj">
+      <Project>{1A7D7BC9-9CCC-4BE9-A219-9DDE5188A6A7}</Project>
+      <Name>AS.WS.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\ReportService\FilterParameter1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\DocWebServices\DocProcessor.disco" />
+    <None Include="Web References\DocWebServices\DocProcessor.wsdl" />
+    <None Include="Web References\DocWebServices\DocumentMetadataInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\DocWebServices\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFolder1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\PciWebServices\Business.disco" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,5 @@
+<apiSettings xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform" xdt:Transform="Replace">
+  <groupSetting rootUrl ="https://localhost:6001/api/" apiToken="6251A8E0BD3640D6BC12D07071F9FA88">
+    <api code="UpdateChainNumber" name="processingmerchant/update-chain-number" />
+  </groupSetting>
+</apiSettings>

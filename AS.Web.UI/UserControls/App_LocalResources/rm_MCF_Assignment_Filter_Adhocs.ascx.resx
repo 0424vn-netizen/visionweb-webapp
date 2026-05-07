@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblHierarchyResource1.Text" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="lblHierarchyResource2.Text" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="lblProfileResource1.Text" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="lblSICResource1.Text" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="lblStateResource1.Text" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="Literal10Resource1.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Literal1Resource1.Text" xml:space="preserve">
+    <value>Merchant Count:</value>
+  </data>
+  <data name="Literal2Resource1.Text" xml:space="preserve">
+    <value>Watch Status:</value>
+  </data>
+  <data name="Literal3Resource1.Text" xml:space="preserve">
+    <value>Approval Date:</value>
+  </data>
+  <data name="Literal4Resource1.Text" xml:space="preserve">
+    <value>Demographic</value>
+  </data>
+  <data name="Literal5Resource1.Text" xml:space="preserve">
+    <value>Demographic</value>
+  </data>
+  <data name="Literal6Resource1.Text" xml:space="preserve">
+    <value>SIC:</value>
+  </data>
+  <data name="Literal7Resource1.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Literal8Resource1.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Literal9Resource1.Text" xml:space="preserve">
+    <value>Profile:</value>
+  </data>
+  <data name="ltAdhocFilterResource1.Text" xml:space="preserve">
+    <value>Adhoc Filters</value>
+  </data>
+  <data name="ltSummaryResource1.Text" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="uxBtnMerchantCountResource1.Text" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="Risk_Assignment_Filter_Adhocs_ascx_cs_Hierarchy" xml:space="preserve">
+    <value>Hierarchy</value>
+  </data>
+  <data name="Risk_Assignment_Filter_Adhocs_ascx_cs_ViewMore" xml:space="preserve">
+    <value>view more...</value>
+  </data>
+  <data name="Risk_Assignment_Filter_Adhocs_ascx_State.Text" xml:space="preserve">
+    <value>State, Territory, or Province</value>
+  </data>
+  <data name="ltEditResource1.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="ltFromResource1.Text" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="ltToResource1.Text" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="ValidatorLabel1Resource1.Text" xml:space="preserve">
+    <value>Merchants ID:</value>
+  </data>
+  <data name="VltLblMerchantRangeResource1.Text" xml:space="preserve">
+    <value>Merchant # Range:</value>
+  </data>
+  <data name="Risk_Assignment_Filters_Resource_Message" xml:space="preserve">
+    <value>Based on the filters you have selected, the user(s) will be working with up to {0} merchants.\nWould you like to continue?</value>
+  </data>
+  <data name="lblHRCodeResource1.Text" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="Literal11Resource1.Text" xml:space="preserve">
+    <value>HR Code:</value>
+  </data>
+  <data name="Literal12Resource1.Text" xml:space="preserve">
+    <value>High Risk</value>
+  </data>
+  <data name="lbIsGreater.Text" xml:space="preserve">
+    <value>&gt;=</value>
+  </data>
+  <data name="lbIsSmaller.Text" xml:space="preserve">
+    <value>&lt;=</value>
+  </data>
+  <data name="Literal19Resource1.Text" xml:space="preserve">
+    <value>Merchant Rank:</value>
+  </data>
+  <data name="Literal21Resource1.Text" xml:space="preserve">
+    <value>ACH Hold Days:</value>
+  </data>
+  <data name="Literal24Resource1.Text" xml:space="preserve">
+    <value>Owner Last Name:</value>
+  </data>
+  <data name="Literal27Resource1.Text" xml:space="preserve">
+    <value>Zip 3:</value>
+  </data>
+  <data name="Literal30Resource1.Text" xml:space="preserve">
+    <value>Merchant Funding Status:</value>
+  </data>
+  <data name="Literal33Resource1.Text" xml:space="preserve">
+    <value>Credit Score:</value>
+  </data>
+  <data name="Literal35Resource1.Text" xml:space="preserve">
+    <value>FICO Credit Score</value>
+  </data>
+  <data name="Literal14ResourceMerchantClassifications.Text" xml:space="preserve">
+    <value>Merchant Classifications:</value>
+  </data>
+  <data name="Literal41Resource1.Text" xml:space="preserve">
+    <value>First Batch Date:</value>
+  </data>
+  <data name="FutureDeliveryIndicatorResource1.Text" xml:space="preserve">
+    <value>Future Delivery Indicator:</value>
+  </data>
+  <data name="lblG2CompassResource1.Text" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="lblGauthenticateCodeResource1.Text" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="lblGverifyCodeResource1.Text" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="LiteralResourceG2Compass.Text" xml:space="preserve">
+    <value>G2 Compass Auto Approval Indicator:</value>
+  </data>
+  <data name="LiteralResourceGauthenticateCode.Text" xml:space="preserve">
+    <value>Gauthenticate Code:</value>
+  </data>
+  <data name="LiteralResourceGverifyCode.Text" xml:space="preserve">
+    <value>Gverify Code:</value>
+  </data>
+  <data name="lblG2Compass" xml:space="preserve">
+    <value>G2 Compass Auto Approval Indicator</value>
+  </data>
+  <data name="lblGauthenticateCode" xml:space="preserve">
+    <value>Gauthenticate Code</value>
+  </data>
+  <data name="lblGverifyCode" xml:space="preserve">
+    <value>Gverify Code</value>
+  </data>
+  <data name="Risk_ascx_cs_MessageCode" xml:space="preserve">
+    <value>The following {0} will be {1} this assignment:</value>
+  </data>
+  <data name="Risk_Filter_ascx_cs_ExcludedFrom" xml:space="preserve">
+    <value>excluded from</value>
+  </data>
+  <data name="Risk_Filter_ascx_cs_IncludedIn" xml:space="preserve">
+    <value>included in</value>
+  </data>
+  <data name="Risk_Filter_ascx_cs_NA" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="ExcludeMerchantsClosedStatus.Text" xml:space="preserve">
+    <value>Exclude Merchants - Closed Status</value>
+  </data>
+</root>

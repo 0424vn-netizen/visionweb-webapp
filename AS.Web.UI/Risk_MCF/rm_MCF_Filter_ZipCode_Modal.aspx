@@ -1,0 +1,34 @@
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPagePopup.master" AutoEventWireup="true" CodeFile="rm_MCF_Filter_ZipCode_Modal.aspx.cs" Inherits="rm_MCF_Filter_ZipCode_Modal" Title="Select ZipCode" meta:resourcekey="PageResource1" %>
+
+<%@ Register Src="~/UserControls/rm_MCF_FilterZipCode.ascx" TagName="Risk_ZipCode2" TagPrefix="uc1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server"></asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPage" runat="Server">
+    <as:ASModalContainer ID="uxModalContainer" runat="server" WidthCssClass="modal-md" ContainerCssClass="container" Width="">
+        <div class="row">
+            <div class="col-md-12 on-top">
+                <as:RadioButtonList ID="uxRadioMode" runat="server" RepeatDirection="horizontal" CssClass="radio-button-list dark-blue"
+                    AutoPostBack="true" OnSelectedIndexChanged="uxRadioMode_SelectedIndexChanged" meta:resourcekey="uxRadioModeResource1">
+                    <asp:ListItem Text="Include" meta:resourcekey="ListItemResource1"></asp:ListItem>
+                    <asp:ListItem Text="Exclude" meta:resourcekey="ListItemResource2"></asp:ListItem>
+                </as:RadioButtonList>
+            </div>
+        </div>
+        <div class="height-16"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <uc1:Risk_ZipCode2 ID="uxZipCodeFilter" runat="server" WidthUC="600" HeightUC="500" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 form-action-container text-right">
+                <as:Button ID="btnClose" runat="server" Text="Close" OnClick="btnClose_Click" CssClass="btn btn-default" meta:resourcekey="btnCloseResource1" />
+            </div>
+        </div>
+    </as:ASModalContainer>
+    <as:ASRadCodeBlock ID="radCodeBlock" runat="server">
+        <script type="text/javascript">
+            parent.setModalID("ZipCodeModal");
+        </script>
+    </as:ASRadCodeBlock>
+</asp:Content>
+

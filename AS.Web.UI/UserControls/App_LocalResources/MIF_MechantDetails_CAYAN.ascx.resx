@@ -1,0 +1,1357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="LinkButton6Resource1.Text" xml:space="preserve">
+    <value>Excel</value>
+  </data>
+  <data name="Literal1Resource1.Text" xml:space="preserve">
+    <value>&gt;WRIGHT EXPRESS</value>
+  </data>
+  <data name="LiteralResource1.Text" xml:space="preserve">
+    <value>Merchant Information</value>
+  </data>
+  <data name="LiteralResource10.Title" xml:space="preserve">
+    <value>Business Information</value>
+  </data>
+  <data name="LiteralResource100.Text" xml:space="preserve">
+    <value>Unreg Rate</value>
+  </data>
+  <data name="LiteralResource101.Text" xml:space="preserve">
+    <value>Reg Pct</value>
+  </data>
+  <data name="LiteralResource102.Text" xml:space="preserve">
+    <value>Reg Rate</value>
+  </data>
+  <data name="LiteralResource103.Text" xml:space="preserve">
+    <value>Visa Assoc Fees</value>
+  </data>
+  <data name="LiteralResource104.Text" xml:space="preserve">
+    <value>Acqr Pr Fee</value>
+  </data>
+  <data name="LiteralResource105.Text" xml:space="preserve">
+    <value>Misuse Auth Fee</value>
+  </data>
+  <data name="LiteralResource106.Text" xml:space="preserve">
+    <value>ISA</value>
+  </data>
+  <data name="LiteralResource107.Text" xml:space="preserve">
+    <value>Zero Floor</value>
+  </data>
+  <data name="LiteralResource108.Text" xml:space="preserve">
+    <value>Intl Acq</value>
+  </data>
+  <data name="LiteralResource109.Text" xml:space="preserve">
+    <value>MC Assoc Fees</value>
+  </data>
+  <data name="LiteralResource11.Text" xml:space="preserve">
+    <value>EXPORT</value>
+  </data>
+  <data name="LiteralResource110.Text" xml:space="preserve">
+    <value>NABU Fee</value>
+  </data>
+  <data name="LiteralResource111.Text" xml:space="preserve">
+    <value>Cross Border Fee</value>
+  </data>
+  <data name="LiteralResource112.Text" xml:space="preserve">
+    <value>Acq Support Fee</value>
+  </data>
+  <data name="LiteralResource113.Text" xml:space="preserve">
+    <value>Reversal Fee</value>
+  </data>
+  <data name="LiteralResource114.Text" xml:space="preserve">
+    <value>Disc Full Acq Assoc Fees</value>
+  </data>
+  <data name="LiteralResource115.Text" xml:space="preserve">
+    <value>INTL Process Flag</value>
+  </data>
+  <data name="LiteralResource116.Text" xml:space="preserve">
+    <value>INTL Service Flag</value>
+  </data>
+  <data name="LiteralResource117.Text" xml:space="preserve">
+    <value>Data Usage Flag</value>
+  </data>
+  <data name="LiteralResource118.Text" xml:space="preserve">
+    <value>Merchant Card Information</value>
+  </data>
+  <data name="LiteralResource119.Text" xml:space="preserve">
+    <value>MC</value>
+  </data>
+  <data name="LiteralResource12.Text" xml:space="preserve">
+    <value>Excel</value>
+  </data>
+  <data name="LiteralResource120.Text" xml:space="preserve">
+    <value>MC DB</value>
+  </data>
+  <data name="LiteralResource121.Text" xml:space="preserve">
+    <value>VISA</value>
+  </data>
+  <data name="LiteralResource122.Text" xml:space="preserve">
+    <value>VISA DB</value>
+  </data>
+  <data name="LiteralResource123.Text" xml:space="preserve">
+    <value>DISC FULL ACQ</value>
+  </data>
+  <data name="LiteralResource124.Text" xml:space="preserve">
+    <value>DISC FULL ACQ DB</value>
+  </data>
+  <data name="LiteralResource125.Text" xml:space="preserve">
+    <value>DISC PASS THRU</value>
+  </data>
+  <data name="LiteralResource126.Text" xml:space="preserve">
+    <value>AMEXONEPT</value>
+  </data>
+  <data name="LiteralResource127.Text" xml:space="preserve">
+    <value>AMEX PASS THROUGH:</value>
+  </data>
+  <data name="LiteralResource128.Text" xml:space="preserve">
+    <value>VOYAGER</value>
+  </data>
+  <data name="LiteralResource129.Text" xml:space="preserve">
+    <value>GENERIC DEBIT</value>
+  </data>
+  <data name="LiteralResource13.Text" xml:space="preserve">
+    <value>Corporate Name:</value>
+  </data>
+  <data name="LiteralResource130.Text" xml:space="preserve">
+    <value>DINERS</value>
+  </data>
+  <data name="LiteralResource131.Text" xml:space="preserve">
+    <value>EBT CASH/B</value>
+  </data>
+  <data name="LiteralResource132.Text" xml:space="preserve">
+    <value>EBT F/STMP</value>
+  </data>
+  <data name="LiteralResource133.Text" xml:space="preserve">
+    <value>EBT-TAPE</value>
+  </data>
+  <data name="LiteralResource134.Text" xml:space="preserve">
+    <value>JCB</value>
+  </data>
+  <data name="LiteralResource135.Text" xml:space="preserve">
+    <value>Proc SW</value>
+  </data>
+  <data name="LiteralResource136.Text" xml:space="preserve">
+    <value>Fee Class</value>
+  </data>
+  <data name="LiteralResource137.Text" xml:space="preserve">
+    <value>Qual Rate</value>
+  </data>
+  <data name="LiteralResource138.Text" xml:space="preserve">
+    <value>MidQual Rate</value>
+  </data>
+  <data name="LiteralResource139.Text" xml:space="preserve">
+    <value>NonQual Rate</value>
+  </data>
+  <data name="LiteralResource14.Text" xml:space="preserve">
+    <value>Corporate Address:</value>
+  </data>
+  <data name="LiteralResource140.Text" xml:space="preserve">
+    <value>ITC Fee Flag</value>
+  </data>
+  <data name="LiteralResource141.Text" xml:space="preserve">
+    <value>D &amp; A Flag</value>
+  </data>
+  <data name="LiteralResource142.Text" xml:space="preserve">
+    <value>D &amp; A Vol &lt;1.000</value>
+  </data>
+  <data name="LiteralResource143.Text" xml:space="preserve">
+    <value>D &amp; A Item &lt;1.000</value>
+  </data>
+  <data name="LiteralResource144.Text" xml:space="preserve">
+    <value>D &amp; A Vol &gt;1.000</value>
+  </data>
+  <data name="LiteralResource145.Text" xml:space="preserve">
+    <value>D &amp; A Item &gt;1.000</value>
+  </data>
+  <data name="LiteralResource146.Text" xml:space="preserve">
+    <value>Merchant Pricing Grid</value>
+  </data>
+  <data name="LiteralResource147.Text" xml:space="preserve">
+    <value>Tiered Discount Grid</value>
+  </data>
+  <data name="LiteralResource148.Text" xml:space="preserve">
+    <value>ERR %</value>
+  </data>
+  <data name="LiteralResource149.Text" xml:space="preserve">
+    <value>Other Volume %</value>
+  </data>
+  <data name="LiteralResource15.Text" xml:space="preserve">
+    <value>Fax:</value>
+  </data>
+  <data name="LiteralResource150.Text" xml:space="preserve">
+    <value>Other Item Rate</value>
+  </data>
+  <data name="LiteralResource151.Text" xml:space="preserve">
+    <value>Discount Method</value>
+  </data>
+  <data name="LiteralResource152.Text" xml:space="preserve">
+    <value>Amex OnePT Rate</value>
+  </data>
+  <data name="LiteralResource153.Text" xml:space="preserve">
+    <value>Amex OnePT Per Item Fee</value>
+  </data>
+  <data name="LiteralResource154.Text" xml:space="preserve">
+    <value>Merchant Card Information – PIN Debit</value>
+  </data>
+  <data name="LiteralResource155.Text" xml:space="preserve">
+    <value>EXPORT</value>
+  </data>
+  <data name="LiteralResource156.Text" xml:space="preserve">
+    <value>Excel</value>
+  </data>
+  <data name="LiteralResource157.Text" xml:space="preserve">
+    <value>ACCEL:</value>
+  </data>
+  <data name="LiteralResource158.Text" xml:space="preserve">
+    <value>AFFN:</value>
+  </data>
+  <data name="LiteralResource159.Text" xml:space="preserve">
+    <value>ALASKA OPTION:</value>
+  </data>
+  <data name="LiteralResource16.Text" xml:space="preserve">
+    <value>Open Date:</value>
+  </data>
+  <data name="LiteralResource160.Text" xml:space="preserve">
+    <value>CU24:</value>
+  </data>
+  <data name="LiteralResource161.Text" xml:space="preserve">
+    <value>INTERLINK:</value>
+  </data>
+  <data name="LiteralResource162.Text" xml:space="preserve">
+    <value>JEANIE:</value>
+  </data>
+  <data name="LiteralResource163.Text" xml:space="preserve">
+    <value>MAESTRO:</value>
+  </data>
+  <data name="LiteralResource164.Text" xml:space="preserve">
+    <value>NYCE:</value>
+  </data>
+  <data name="LiteralResource165.Text" xml:space="preserve">
+    <value>PULSE:</value>
+  </data>
+  <data name="LiteralResource166.Text" xml:space="preserve">
+    <value>SHAZAM:</value>
+  </data>
+  <data name="LiteralResource167.Text" xml:space="preserve">
+    <value>STAR:</value>
+  </data>
+  <data name="LiteralResource168.Text" xml:space="preserve">
+    <value>STAR:</value>
+  </data>
+  <data name="LiteralResource169.Text" xml:space="preserve">
+    <value>STAR:</value>
+  </data>
+  <data name="LiteralResource17.Text" xml:space="preserve">
+    <value>Closed Date:</value>
+  </data>
+  <data name="LiteralResource170.Text" xml:space="preserve">
+    <value>Other Volume %</value>
+  </data>
+  <data name="LiteralResource171.Text" xml:space="preserve">
+    <value>Other Item Rate</value>
+  </data>
+  <data name="LiteralResource172.Text" xml:space="preserve">
+    <value>Online Debit Fee Flag</value>
+  </data>
+  <data name="LiteralResource173.Text" xml:space="preserve">
+    <value>Report Access</value>
+  </data>
+  <data name="LiteralResource174.Text" xml:space="preserve">
+    <value>HQ Daily/Monthly Transaction Report</value>
+  </data>
+  <data name="LiteralResource175.Text" xml:space="preserve">
+    <value>Email Recipients (comma separated):</value>
+  </data>
+  <data name="LiteralResource18.Text" xml:space="preserve">
+    <value>Status:</value>
+  </data>
+  <data name="LiteralResource19.Text" xml:space="preserve">
+    <value>Site Access:</value>
+  </data>
+  <data name="LiteralResource2.Text" xml:space="preserve">
+    <value>Merchant ID:</value>
+  </data>
+  <data name="LiteralResource20.Text" xml:space="preserve">
+    <value>Tax ID:</value>
+  </data>
+  <data name="LiteralResource21.Text" xml:space="preserve">
+    <value>SIC/MCC:</value>
+  </data>
+  <data name="LiteralResource22.Text" xml:space="preserve">
+    <value>Deposit Type:</value>
+  </data>
+  <data name="LiteralResource23.Text" xml:space="preserve">
+    <value>ETC Type:</value>
+  </data>
+  <data name="LiteralResource24.Text" xml:space="preserve">
+    <value>ETC Cutoff:</value>
+  </data>
+  <data name="LiteralResource25.Text" xml:space="preserve">
+    <value>Seasonal Merchant:</value>
+  </data>
+  <data name="LiteralResource26.Text" xml:space="preserve">
+    <value>Statement Mail Flag:</value>
+  </data>
+  <data name="LiteralResource27.Text" xml:space="preserve">
+    <value>Statement I/C Print Options:</value>
+  </data>
+  <data name="LiteralResource28.Text" xml:space="preserve">
+    <value>Statement Online Debit Fee Print Option:</value>
+  </data>
+  <data name="LiteralResource29.Text" xml:space="preserve">
+    <value>Statement Hold Flag:</value>
+  </data>
+  <data name="LiteralResource3.Text" xml:space="preserve">
+    <value>Contact:</value>
+  </data>
+  <data name="LiteralResource30.Text" xml:space="preserve">
+    <value>Misc. 1:</value>
+  </data>
+  <data name="LiteralResource31.Text" xml:space="preserve">
+    <value>Misc. 2:</value>
+  </data>
+  <data name="LiteralResource32.Text" xml:space="preserve">
+    <value>Tin Type:</value>
+  </data>
+  <data name="LiteralResource33.Text" xml:space="preserve">
+    <value>Spark Excl ID:</value>
+  </data>
+  <data name="LiteralResource34.Text" xml:space="preserve">
+    <value>Hierarchy Information</value>
+  </data>
+  <data name="LiteralResource35.Text" xml:space="preserve">
+    <value>EXPORT</value>
+  </data>
+  <data name="LiteralResource36.Text" xml:space="preserve">
+    <value>Excel</value>
+  </data>
+  <data name="LiteralResource37.Text" xml:space="preserve">
+    <value>Client Name:</value>
+  </data>
+  <data name="LiteralResource38.Text" xml:space="preserve">
+    <value>Client Login:</value>
+  </data>
+  <data name="LiteralResource39.Text" xml:space="preserve">
+    <value>Sales Agent:</value>
+  </data>
+  <data name="LiteralResource4.Text" xml:space="preserve">
+    <value>Status:</value>
+  </data>
+  <data name="LiteralResource40.Text" xml:space="preserve">
+    <value>Sys/Prin/Agent:</value>
+  </data>
+  <data name="LiteralResource41.Text" xml:space="preserve">
+    <value>Headqrtr Merchant:</value>
+  </data>
+  <data name="LiteralResource42.Text" xml:space="preserve">
+    <value>Merchant Type:</value>
+  </data>
+  <data name="LiteralResource43.Text" xml:space="preserve">
+    <value>Chain Code:</value>
+  </data>
+  <data name="LiteralResource44.Title" xml:space="preserve">
+    <value>Bank Information</value>
+  </data>
+  <data name="LiteralResource45.Text" xml:space="preserve">
+    <value>EXPORT</value>
+  </data>
+  <data name="LiteralResource46.Text" xml:space="preserve">
+    <value>Excel</value>
+  </data>
+  <data name="LiteralResource47.Text" xml:space="preserve">
+    <value>Bank Name:</value>
+  </data>
+  <data name="LiteralResource48.Text" xml:space="preserve">
+    <value>Routing #:</value>
+  </data>
+  <data name="LiteralResource49.Text" xml:space="preserve">
+    <value>DDA #:</value>
+  </data>
+  <data name="LiteralResource5.Text" xml:space="preserve">
+    <value>Merchant Name:</value>
+  </data>
+  <data name="LiteralResource50.Text" xml:space="preserve">
+    <value>Days Hold:</value>
+  </data>
+  <data name="LiteralResource51.Text" xml:space="preserve">
+    <value>ACH Monthly:</value>
+  </data>
+  <data name="LiteralResource52.Text" xml:space="preserve">
+    <value>Disbursement Method: Deposit:</value>
+  </data>
+  <data name="LiteralResource53.Text" xml:space="preserve">
+    <value>Disbursement Method: Adjustments:</value>
+  </data>
+  <data name="LiteralResource54.Text" xml:space="preserve">
+    <value>Disbursement Method: Discount:</value>
+  </data>
+  <data name="LiteralResource55.Text" xml:space="preserve">
+    <value>Disbursement Method: Generic Debit:</value>
+  </data>
+  <data name="LiteralResource56.Text" xml:space="preserve">
+    <value>Disbursement Detail:</value>
+  </data>
+  <data name="LiteralResource57.Text" xml:space="preserve">
+    <value>Other Card Information</value>
+  </data>
+  <data name="LiteralResource58.Text" xml:space="preserve">
+    <value>EXPORT</value>
+  </data>
+  <data name="LiteralResource59.Text" xml:space="preserve">
+    <value>Excel</value>
+  </data>
+  <data name="LiteralResource6.Text" xml:space="preserve">
+    <value>Phone:</value>
+  </data>
+  <data name="LiteralResource60.Text" xml:space="preserve">
+    <value>AMEX:</value>
+  </data>
+  <data name="LiteralResource61.Text" xml:space="preserve">
+    <value>Pin Debit:</value>
+  </data>
+  <data name="LiteralResource62.Text" xml:space="preserve">
+    <value>AMEX ONEPOINT:</value>
+  </data>
+  <data name="LiteralResource63.Text" xml:space="preserve">
+    <value>JCB:</value>
+  </data>
+  <data name="LiteralResource64.Text" xml:space="preserve">
+    <value>Discover:</value>
+  </data>
+  <data name="LiteralResource65.Text" xml:space="preserve">
+    <value>Wright Express:</value>
+  </data>
+  <data name="LiteralResource66.Text" xml:space="preserve">
+    <value>Discover Full AQC:</value>
+  </data>
+  <data name="LiteralResource67.Text" xml:space="preserve">
+    <value>Voyager:</value>
+  </data>
+  <data name="LiteralResource68.Text" xml:space="preserve">
+    <value>Pricing Information</value>
+  </data>
+  <data name="LiteralResource69.Text" xml:space="preserve">
+    <value>EXPORT</value>
+  </data>
+  <data name="LiteralResource7.Text" xml:space="preserve">
+    <value>Last Batch Activity:</value>
+  </data>
+  <data name="LiteralResource70.Text" xml:space="preserve">
+    <value>Excel</value>
+  </data>
+  <data name="LiteralResource71.Text" xml:space="preserve">
+    <value>Daily Deposit</value>
+  </data>
+  <data name="LiteralResource72.Text" xml:space="preserve">
+    <value>Weekly Deposit</value>
+  </data>
+  <data name="LiteralResource73.Text" xml:space="preserve">
+    <value>Daily Auth Amount</value>
+  </data>
+  <data name="LiteralResource74.Text" xml:space="preserve">
+    <value>Avg. Ticket Amount</value>
+  </data>
+  <data name="LiteralResource75.Text" xml:space="preserve">
+    <value>Auth Grid</value>
+  </data>
+  <data name="LiteralResource76.Text" xml:space="preserve">
+    <value>User Defined Grid</value>
+  </data>
+  <data name="LiteralResource77.Text" xml:space="preserve">
+    <value>Income Factors</value>
+  </data>
+  <data name="LiteralResource78.Text" xml:space="preserve">
+    <value>Account Fee 1</value>
+  </data>
+  <data name="LiteralResource79.Text" xml:space="preserve">
+    <value>Account Fee 2</value>
+  </data>
+  <data name="LiteralResource8.Text" xml:space="preserve">
+    <value>Address:</value>
+  </data>
+  <data name="LiteralResource80.Text" xml:space="preserve">
+    <value>Account Fee 3</value>
+  </data>
+  <data name="LiteralResource81.Text" xml:space="preserve">
+    <value>Account Fee 4</value>
+  </data>
+  <data name="LiteralResource82.Text" xml:space="preserve">
+    <value>Account Fee 5</value>
+  </data>
+  <data name="LiteralResource83.Text" xml:space="preserve">
+    <value>Recurring Fee Flag</value>
+  </data>
+  <data name="LiteralResource84.Text" xml:space="preserve">
+    <value>Recur Fee Ind</value>
+  </data>
+  <data name="LiteralResource85.Text" xml:space="preserve">
+    <value>Recur Fee Amt</value>
+  </data>
+  <data name="LiteralResource86.Text" xml:space="preserve">
+    <value>Recur Fee Desc</value>
+  </data>
+  <data name="LiteralResource87.Text" xml:space="preserve">
+    <value>Stmt Bundle Option</value>
+  </data>
+  <data name="LiteralResource88.Text" xml:space="preserve">
+    <value>Bundle Pct</value>
+  </data>
+  <data name="LiteralResource89.Text" xml:space="preserve">
+    <value>Bundle Rate</value>
+  </data>
+  <data name="LiteralResource9.Text" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="LiteralResource90.Text" xml:space="preserve">
+    <value>Batch Header Fee</value>
+  </data>
+  <data name="LiteralResource91.Text" xml:space="preserve">
+    <value>Return Transaction Fee</value>
+  </data>
+  <data name="LiteralResource92.Text" xml:space="preserve">
+    <value>Chargeback Fee</value>
+  </data>
+  <data name="LiteralResource93.Text" xml:space="preserve">
+    <value>Retrieval Fee</value>
+  </data>
+  <data name="LiteralResource94.Text" xml:space="preserve">
+    <value>Sales Trans Fee</value>
+  </data>
+  <data name="LiteralResource95.Text" xml:space="preserve">
+    <value>Other Volume %</value>
+  </data>
+  <data name="LiteralResource96.Text" xml:space="preserve">
+    <value>Other Item Charge</value>
+  </data>
+  <data name="LiteralResource97.Text" xml:space="preserve">
+    <value>Website Usage</value>
+  </data>
+  <data name="LiteralResource98.Text" xml:space="preserve">
+    <value>IVR Usage</value>
+  </data>
+  <data name="LiteralResource99.Text" xml:space="preserve">
+    <value>Unreg Pct</value>
+  </data>
+  <data name="uxbtnAddResource1.Text" xml:space="preserve">
+    <value>Add RM</value>
+  </data>
+  <data name="uxbtnCancelResource1.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="uxbtnEditResource1.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="uxbtnSaveResource1.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="uxUpdateEmailResource1.Text" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="MIF_MerchantDetails_FDRCS_Text_BankInformation" xml:space="preserve">
+    <value>Bank Information</value>
+  </data>
+  <data name="MIF_MerchantDetails_FDRCS_Text_BusinessInformation" xml:space="preserve">
+    <value>Business Information</value>
+  </data>
+  <data name="MIF_MerchantDetails_FDRCS_Text_HierarchyInformation" xml:space="preserve">
+    <value>Hierarchy Information</value>
+  </data>
+  <data name="MIF_MerchantDetails_FDRCS_Text_MerchantCardInformation" xml:space="preserve">
+    <value>Merchant Card Information</value>
+  </data>
+  <data name="MIF_MerchantDetails_FDRCS_Text_OtherCardInformation" xml:space="preserve">
+    <value>Other Card Information</value>
+  </data>
+  <data name="MIF_MerchantDetails_FDRCS_Text_PINDebit" xml:space="preserve">
+    <value>PIN Debit</value>
+  </data>
+  <data name="MIF_MerchantDetails_FDRCS_Text_PricingInformation" xml:space="preserve">
+    <value>Pricing Information</value>
+  </data>
+  <data name="MIF_MerchantDetails_FDRCS_Text_TerminalInformation" xml:space="preserve">
+    <value>Terminal Information</value>
+  </data>
+  <data name="MIF_MerchantDetail_FDRASCX_Text_AtLeast30NoSpecialChars.Message" xml:space="preserve">
+    <value>Relationship Manager field must be 30 characters or less and may not include special characters</value>
+  </data>
+  <data name="MIF_MerchantDetail_FDRASCX_Text_IncorrectEmail.Message" xml:space="preserve">
+    <value>You have entered an incorrect email address format. Please try again.</value>
+  </data>
+  <data name="MIF_MerchantDetail_FDRASCX_Text_NA" xml:space="preserve">
+    <value>Not Available</value>
+  </data>
+  <data name="MIF_MerchantDetail_FDRASCX_Text_RelationshipManager.Text" xml:space="preserve">
+    <value>Relationship Manager:</value>
+  </data>
+  <data name="MIF_MerchantDetail_FDRASCX_Text_UnallowPrefixSuffix.Message" xml:space="preserve">
+    <value>Prefix or suffix (for example Mr./Ms/Sir/Jr.) are not allowed.</value>
+  </data>
+  <data name="MIF_MerchantDetails_FDRCS_Text_NotAvailable" xml:space="preserve">
+    <value>Not Available</value>
+  </data>
+  <data name="MIF_MerchantDetails_FDRCS_Text_Memos" xml:space="preserve">
+    <value>Merchant Memos</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInformationTitle.Text" xml:space="preserve">
+    <value>Merchant Card Information - Pin Debit</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInformation_ACCEL_Header.Text" xml:space="preserve">
+    <value>ACCEL</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInformation_AFFN_Header.Text" xml:space="preserve">
+    <value>AFFN</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInformation_ALASKAOPTION_Header.Text" xml:space="preserve">
+    <value>ALASKA OPTION</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInformation_CU24_Header.Text" xml:space="preserve">
+    <value>CU24</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInformation_INTERLINK_Header.Text" xml:space="preserve">
+    <value>INTERLINK</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInformation_JEANIE_Header.Text" xml:space="preserve">
+    <value>JEANIE</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInformation_MAESTRO_Header.Text" xml:space="preserve">
+    <value>MAESTRO</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInformation_Norecords.Text" xml:space="preserve">
+    <value>No records to display.</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInformation_NYCE_Header.Text" xml:space="preserve">
+    <value>NYCE</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInformation_OnlineDebitFeeFlag_Header.Text" xml:space="preserve">
+    <value>Online Debit Fee Flag</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInformation_OtherItemRate_Header.Text" xml:space="preserve">
+    <value>Other Item Rate</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInformation_OtherVolume_Header.Text" xml:space="preserve">
+    <value>Other Volume %</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInformation_PULSE_Header.Text" xml:space="preserve">
+    <value>PULSE</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInformation_SHAZAM_Header.Text" xml:space="preserve">
+    <value>SHAZAM</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInformation_STAR_Header.Text" xml:space="preserve">
+    <value>STAR</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_AXPONEPTPerItem_Header.Text" xml:space="preserve">
+    <value>AXPONEPT&lt;br /&gt;Per Item</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_AXPONEPTRate_Header.Text" xml:space="preserve">
+    <value>AXPONEPT&lt;br /&gt;Rate</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_CardAMEXONEPT_Header.Text" xml:space="preserve">
+    <value>AMEXONEPT</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_CardAMEXPASSTHRU_Header.Text" xml:space="preserve">
+    <value>AMEX PASS THROUGH:</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_CardAMEX_Header.Text" xml:space="preserve">
+    <value>AMEX</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_CardDINERS_Header.Text" xml:space="preserve">
+    <value>DINERS</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_CardDISCFULLACQDB_Header.Text" xml:space="preserve">
+    <value>DISC FULL ACQ DB</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_CardDISCPASSTHRU_Header.Text" xml:space="preserve">
+    <value>DISC PASS THRU</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_CardEBTCASHB_Header.Text" xml:space="preserve">
+    <value>EBT CASH/B</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_CardEBTFSTMP_Header.Text" xml:space="preserve">
+    <value>EBT F/STMP</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_CardEBTTAPE_Header.Text" xml:space="preserve">
+    <value>EBT-TAPE</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_CardGENERICDEBIT_Header.Text" xml:space="preserve">
+    <value>GENERIC DEBIT</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_CardJCB_Header.Text" xml:space="preserve">
+    <value>JCB</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_CardMCDB_Header.Text" xml:space="preserve">
+    <value>MC DB</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_CardMC_Header.Text" xml:space="preserve">
+    <value>MC</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_CardVISADB_Header.Text" xml:space="preserve">
+    <value>VISA DB</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_CardVISA_Header.Text" xml:space="preserve">
+    <value>VISA</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_CardVOYAGER_Header.Text" xml:space="preserve">
+    <value>VOYAGER</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_CardWRIGHTEXPRESS_Header.Text" xml:space="preserve">
+    <value>WRIGHT EXPRESS</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_DAFlag_Header.Text" xml:space="preserve">
+    <value>D&amp;A Flag</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_DAItemgreatThan1000_Header.Text" xml:space="preserve">
+    <value>D&amp;A&lt;br /&gt;Item&lt;br /&gt;&gt;1.000</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_DAItemlessThan1000_Header.Text" xml:space="preserve">
+    <value>D&amp;A&lt;br /&gt;Item&lt;br /&gt;&lt;1.000</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_DAVolgreatThan1000_Header.Text" xml:space="preserve">
+    <value>D&amp;A&lt;br /&gt;Vol&lt;br /&gt;&gt;1.000</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_DAVollessThan1000_Header.Text" xml:space="preserve">
+    <value>D&amp;A&lt;br /&gt;Vol&lt;br /&gt; &lt;1.000</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_DiscMethod_Header.Text" xml:space="preserve">
+    <value>Disc Method</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_ERR_Header.Text" xml:space="preserve">
+    <value>ERR %</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_FeeClass_Header.Text" xml:space="preserve">
+    <value>Fee Class</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_ITCFeeFlag_Header.Text" xml:space="preserve">
+    <value>ITC Fee Flag</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_MerchPricingGrid_Header.Text" xml:space="preserve">
+    <value>Merch Pricing Grid</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_MidQualRate_Header.Text" xml:space="preserve">
+    <value>MidQual Rate</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_NonQualRate_Header.Text" xml:space="preserve">
+    <value>NonQual Rate</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_OtherItemRate_Header.Text" xml:space="preserve">
+    <value>Other Item&lt;br /&gt;Rate</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_OtherVol_Header.Text" xml:space="preserve">
+    <value>Other Vol %</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_ProcSW_Header.Text" xml:space="preserve">
+    <value>Proc SW</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_QualRate_Header.Text" xml:space="preserve">
+    <value>Qual Rate</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_TieredDiscGrid_Header.Text" xml:space="preserve">
+    <value>Tiered Disc Grid</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_Title.Text" xml:space="preserve">
+    <value>Merchant Card Information</value>
+  </data>
+  <data name="LiteralResourceTransactionEstimates_AchIncExcl_Header.Text" xml:space="preserve">
+    <value>Ach Inc Excl:</value>
+  </data>
+  <data name="LiteralResourceTransactionEstimates_AuthsSameAmt_Header.Text" xml:space="preserve">
+    <value># Auths Same Amt:</value>
+  </data>
+  <data name="LiteralResourceTransactionEstimates_BatchReturnAmt_Header.Text" xml:space="preserve">
+    <value>Batch Return Amt:</value>
+  </data>
+  <data name="LiteralResourceTransactionEstimates_BatchReturnCount_Header.Text" xml:space="preserve">
+    <value>Batch Return Count:</value>
+  </data>
+  <data name="LiteralResourceTransactionEstimates_BelowFloorAmt_Header.Text" xml:space="preserve">
+    <value>Below Floor Amt:</value>
+  </data>
+  <data name="LiteralResourceTransactionEstimates_ChainHdqtrPct_Header.Text" xml:space="preserve">
+    <value>Chain Hdqtr Pct:</value>
+  </data>
+  <data name="LiteralResourceTransactionEstimates_ChargebackOccurrences_Header.Text" xml:space="preserve">
+    <value># Chargeback Occurrences:</value>
+  </data>
+  <data name="LiteralResourceTransactionEstimates_DailyAuthDeclinePct_Header.Text" xml:space="preserve">
+    <value>Daily Auth Decline Pct:</value>
+  </data>
+  <data name="LiteralResourceTransactionEstimates_DailyAuthsCardPct_Header.Text" xml:space="preserve">
+    <value>Daily Auths Card Pct:</value>
+  </data>
+  <data name="LiteralResourceTransactionEstimates_DailyAuthsCount_Header.Text" xml:space="preserve">
+    <value>Daily Auths Count:</value>
+  </data>
+  <data name="LiteralResourceTransactionEstimates_DailyRetrievalAmt_Header.Text" xml:space="preserve">
+    <value>Daily Retrieval Amt:</value>
+  </data>
+  <data name="LiteralResourceTransactionEstimates_DailyRetrievalCount_Header.Text" xml:space="preserve">
+    <value>Daily Retrieval Count:</value>
+  </data>
+  <data name="LiteralResourceTransactionEstimates_DailyTransPerCard_Header.Text" xml:space="preserve">
+    <value># Daily Trans Per Card:</value>
+  </data>
+  <data name="LiteralResourceTransactionEstimates_ExcludeAdjChargebacks_Header.Text" xml:space="preserve">
+    <value>Exclude Adj &amp; Chargebacks:</value>
+  </data>
+  <data name="LiteralResourceTransactionEstimates_FundLmtDay_Header.Text" xml:space="preserve">
+    <value>Fund Lmt Day:</value>
+  </data>
+  <data name="LiteralResourceTransactionEstimates_Limit30Day_Header.Text" xml:space="preserve">
+    <value>Limit 30 Day:</value>
+  </data>
+  <data name="LiteralResourceTransactionEstimates_MaxAuthAmt_Header.Text" xml:space="preserve">
+    <value>Max Auth Amt:</value>
+  </data>
+  <data name="LiteralResourceTransactionEstimates_MaxReturnAmt_Header.Text" xml:space="preserve">
+    <value>Max Return Amt:</value>
+  </data>
+  <data name="LiteralResourceTransactionEstimates_MaxTKTOs_Header.Text" xml:space="preserve">
+    <value>Max # TKTOs:</value>
+  </data>
+  <data name="LiteralResourceTransactionEstimates_MTDChargebackPct_Header.Text" xml:space="preserve">
+    <value>MTD Chargeback Pct:</value>
+  </data>
+  <data name="LiteralResourceTransactionEstimates_ReturnCountPct_Header.Text" xml:space="preserve">
+    <value>Return Count Pct:</value>
+  </data>
+  <data name="LiteralResourceTransactionEstimates_ReturnVolPct_Header.Text" xml:space="preserve">
+    <value>Return Vol Pct:</value>
+  </data>
+  <data name="LiteralResourceTransactionEstimates_RoundDiscount_Header.Text" xml:space="preserve">
+    <value>Round Discount:</value>
+  </data>
+  <data name="LiteralResourceTransactionEstimates_SameAmtPct_Header.Text" xml:space="preserve">
+    <value>Same Amt Pct:</value>
+  </data>
+  <data name="LiteralResourceTransactionEstimates_Title.Text" xml:space="preserve">
+    <value>Transaction Estimates</value>
+  </data>
+  <data name="LiteralResourceTransactionEstimates_VoiceAuthPct_Header.Text" xml:space="preserve">
+    <value>Voice Auth Pct:</value>
+  </data>
+  <data name="LiteralResourceTransactionEstimates_WeeklyBatches_Header.Text" xml:space="preserve">
+    <value># Weekly Batches:</value>
+  </data>
+  <data name="LiteralResource176.Text" xml:space="preserve">
+    <value>Assessment Code:</value>
+  </data>
+  <data name="LiteralResource177.Text" xml:space="preserve">
+    <value>Confirm Ltr Supp Rtrl Code:</value>
+  </data>
+  <data name="LiteralResource178.Text" xml:space="preserve">
+    <value>Confirm Ltr Supp Rtrl Print:</value>
+  </data>
+  <data name="LiteralResource179.Text" xml:space="preserve">
+    <value>Tape Ref Flag:</value>
+  </data>
+  <data name="LiteralResource180.Text" xml:space="preserve">
+    <value>Financial Acct Type:</value>
+  </data>
+  <data name="LiteralResource181.Text" xml:space="preserve">
+    <value>City/State/Zip:</value>
+  </data>
+  <data name="LiteralResource182.Text" xml:space="preserve">
+    <value>Bankcard City:</value>
+  </data>
+  <data name="LiteralResource183.Text" xml:space="preserve">
+    <value>ReOpen Date:</value>
+  </data>
+  <data name="LiteralResource184.Text" xml:space="preserve">
+    <value>Bankcard State:</value>
+  </data>
+  <data name="LiteralResource185.Text" xml:space="preserve">
+    <value>Last NonMon Date:</value>
+  </data>
+  <data name="LiteralResource186.Text" xml:space="preserve">
+    <value>Retail City:</value>
+  </data>
+  <data name="LiteralResource187.Text" xml:space="preserve">
+    <value>Contact Phone:</value>
+  </data>
+  <data name="LiteralResource188.Text" xml:space="preserve">
+    <value>Last Active Date:</value>
+  </data>
+  <data name="LiteralResource189.Text" xml:space="preserve">
+    <value>Retail State:</value>
+  </data>
+  <data name="LiteralResource190.Text" xml:space="preserve">
+    <value>Legal Name:</value>
+  </data>
+  <data name="LiteralResource191.Text" xml:space="preserve">
+    <value>Last Review Date:</value>
+  </data>
+  <data name="LiteralResource192.Text" xml:space="preserve">
+    <value>CS Phone:</value>
+  </data>
+  <data name="LiteralResource193.Text" xml:space="preserve">
+    <value>Payeezy Indicator/Effective Date:</value>
+  </data>
+  <data name="LiteralResource194.Text" xml:space="preserve">
+    <value>Payeezy TransArmor Service Code:</value>
+  </data>
+  <data name="LiteralResource195.Text" xml:space="preserve">
+    <value>MC/VI POS Flags:</value>
+  </data>
+  <data name="LiteralResource196.Text" xml:space="preserve">
+    <value>Chargeback Advice SW:</value>
+  </data>
+  <data name="LiteralResource197.Text" xml:space="preserve">
+    <value>Retrieval Flag:</value>
+  </data>
+  <data name="LiteralResource198.Text" xml:space="preserve">
+    <value>One Time Expense Flag:</value>
+  </data>
+  <data name="LiteralResource199.Text" xml:space="preserve">
+    <value>One Time Income Flag:</value>
+  </data>
+  <data name="LiteralResource200.Text" xml:space="preserve">
+    <value>12B Letter Type:</value>
+  </data>
+  <data name="LiteralResource201.Text" xml:space="preserve">
+    <value>12B Mail Flag:</value>
+  </data>
+  <data name="LiteralResource202.Text" xml:space="preserve">
+    <value>Merchant CS Phone Number:</value>
+  </data>
+  <data name="LiteralResource203.Text" xml:space="preserve">
+    <value>TransArmor Security Level:</value>
+  </data>
+  <data name="LiteralResource204.Text" xml:space="preserve">
+    <value>TransArmor Encryption Type:</value>
+  </data>
+  <data name="LiteralResource205.Text" xml:space="preserve">
+    <value>TransArmor Token Indicator:</value>
+  </data>
+  <data name="LiteralResource206.Text" xml:space="preserve">
+    <value>TransArmor Token Type:</value>
+  </data>
+  <data name="LiteralResource207.Text" xml:space="preserve">
+    <value>EMV Indicator:</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_RebateRate1_Header.Text" xml:space="preserve">
+    <value>Rebate Rate 1</value>
+  </data>
+  <data name="LiteralResourceMerchantCardInfo_RebateRate2_Header.Text" xml:space="preserve">
+    <value>Rebate Rate 2</value>
+  </data>
+  <data name="LiteralResourceMerchCardInfoPrivateLabel_Title.Text" xml:space="preserve">
+    <value>Merchant Card Information - Private Label</value>
+  </data>
+  <data name="LiteralResourceMerchCardInfoPrivateLabel_TitleExport" xml:space="preserve">
+    <value>Merchant Card</value>
+  </data>
+  <data name="LiteralResourceMerchCardInfo_TitleExport" xml:space="preserve">
+    <value>Merchant Card</value>
+  </data>
+
+  <data name="LiteralResourcePricing12BLtrCst_Header.Text" xml:space="preserve">
+    <value>12B Ltr Cst</value>
+  </data>
+  <data name="LiteralResourcePricingAFDNonParticipationFee_Header.Text" xml:space="preserve">
+    <value>AFD Non-Participation Fee</value>
+  </data>
+  <data name="LiteralResourcePricingAMEXAssocFees_Header.Text" xml:space="preserve">
+    <value>AMEX Assoc Fees:</value>
+  </data>
+  <data name="LiteralResourcePricingAMEXNetworkFee_Header.Text" xml:space="preserve">
+    <value>AVS Network Fee</value>
+  </data>
+  <data name="LiteralResourcePricingAsstServCst_Header.Text" xml:space="preserve">
+    <value>Asst Serv Cst</value>
+  </data>
+  <data name="LiteralResourcePricingAuthExpGridID_Header.Text" xml:space="preserve">
+    <value>Auth Exp Grid ID</value>
+  </data>
+  <data name="LiteralResourcePricingAuthFeeflag_Header.Text" xml:space="preserve">
+    <value>Auth Fee flag</value>
+  </data>
+  <data name="LiteralResourcePricingAuthSurcharge_Header.Text" xml:space="preserve">
+    <value>Auth Surcharge</value>
+  </data>
+  <data name="LiteralResourcePricingAVSAcquirerMCFee_Header.Text" xml:space="preserve">
+    <value>AVS Acquirer MC Fee</value>
+  </data>
+  <data name="LiteralResourcePricingAVSCst_Header.Text" xml:space="preserve">
+    <value>AVS Cst</value>
+  </data>
+  <data name="LiteralResourcePricingBINICAFeeExpense_Header.Text" xml:space="preserve">
+    <value>BIN/ICA Fee Expense</value>
+  </data>
+  <data name="LiteralResourcePricingBINICAFeeIncome_Header.Text" xml:space="preserve">
+    <value>BIN/ICA Fee Income</value>
+  </data>
+  <data name="LiteralResourcePricingChgbkCst_Header.Text" xml:space="preserve">
+    <value>Chgbk Cst</value>
+  </data>
+  <data name="LiteralResourcePricingCVC2FeeIndicator_Header.Text" xml:space="preserve">
+    <value>CVC2 Fee Indicator</value>
+  </data>
+  <data name="LiteralResourcePricingCVC2FeeSurcharge_Header.Text" xml:space="preserve">
+    <value>CVC2 Surcharge</value>
+  </data>
+  <data name="LiteralResourcePricingDiscFullAcqAssoc_Header.Text" xml:space="preserve">
+    <value>Disc Full Acq Assoc:</value>
+  </data>
+  <data name="LiteralResourcePricingETCConfLtrCst_Header.Text" xml:space="preserve">
+    <value>ETC Conf Ltr Cst</value>
+  </data>
+  <data name="LiteralResourcePricingETCItemCst_Header.Text" xml:space="preserve">
+    <value>ETC Item Cst</value>
+  </data>
+  <data name="LiteralResourcePricingFANFCNPSurcharge_Header.Text" xml:space="preserve">
+    <value>FANF CNP Surcharge</value>
+  </data>
+  <data name="LiteralResourcePricingFANFCPSurcharge_Header.Text" xml:space="preserve">
+    <value>FANF CP Surcharge</value>
+  </data>
+  <data name="LiteralResourcePricingFANFFeeFlag_Header.Text" xml:space="preserve">
+    <value>FANF Fee Flag</value>
+  </data>
+  <data name="LiteralResourcePricingFixCst_Header.Text" xml:space="preserve">
+    <value>Fix Cst</value>
+  </data>
+  <data name="LiteralResourcePricingHelpDeskCst_Header.Text" xml:space="preserve">
+    <value>Help Desk Cst</value>
+  </data>
+  <data name="LiteralResourcePricingImprntCst_Header.Text" xml:space="preserve">
+    <value>Imprnt Cst</value>
+  </data>
+  <data name="LiteralResourcePricingItemCst_Header.Text" xml:space="preserve">
+    <value>Item Cst</value>
+  </data>
+  <data name="LiteralResourcePricingKilobyteFeeIndicator_Header.Text" xml:space="preserve">
+    <value>Kilobyte Fee Indicator</value>
+  </data>
+  <data name="LiteralResourcePricingKilobyteSurcharge_Header.Text" xml:space="preserve">
+    <value>Kilobyte Surcharge</value>
+  </data>
+  <data name="LiteralResourcePricingLicenseFlatExpense_Header.Text" xml:space="preserve">
+    <value>License Flat Expense</value>
+  </data>
+  <data name="LiteralResourcePricingLicenseFlatIncome_Header.Text" xml:space="preserve">
+    <value>License Flat Income</value>
+  </data>
+  <data name="LiteralResourcePricingLicenseFlatOccurrenceIndicator_Header.Text" xml:space="preserve">
+    <value>License Flat Occurrence Indicator</value>
+  </data>
+  <data name="LiteralResourcePricingLicensePerItemExpense_Header.Text" xml:space="preserve">
+    <value>License Per Item Expense</value>
+  </data>
+  <data name="LiteralResourcePricingLicensePerItemIncome_Header.Text" xml:space="preserve">
+    <value>License Per Item Income</value>
+  </data>
+  <data name="LiteralResourcePricingLicenseRateExpense_Header.Text" xml:space="preserve">
+    <value>License Rate Expense</value>
+  </data>
+  <data name="LiteralResourcePricingLicenseRateIncome_Header.Text" xml:space="preserve">
+    <value>License Rate Income</value>
+  </data>
+  <data name="LiteralResourcePricingMCAssocFees_Header.Text" xml:space="preserve">
+    <value>MC Assoc Fees:</value>
+  </data>
+  <data name="LiteralResourcePricingMCICAAVSExpense_Header.Text" xml:space="preserve">
+    <value>MC ICA AVS Expense</value>
+  </data>
+  <data name="LiteralResourcePricingMCICAAVSIncome_Header.Text" xml:space="preserve">
+    <value>MC ICA AVS Income</value>
+  </data>
+  <data name="LiteralResourcePricingOneTimeCst_Header.Text" xml:space="preserve">
+    <value>One Time Cst</value>
+  </data>
+  <data name="LiteralResourcePricingOtherPctCst_Header.Text" xml:space="preserve">
+    <value>Other Pct Cst</value>
+  </data>
+  <data name="LiteralResourcePricingPrintCst_Header.Text" xml:space="preserve">
+    <value>Print Cst</value>
+  </data>
+  <data name="LiteralResourcePricingProcessFeeExpense_Header.Text" xml:space="preserve">
+    <value>Process Fee Expense</value>
+  </data>
+  <data name="LiteralResourcePricingProcessFeeIncome_Header.Text" xml:space="preserve">
+    <value>Process Fee Income</value>
+  </data>
+  <data name="LiteralResourcePricingRCCst_Header.Text" xml:space="preserve">
+    <value>R/C Cst</value>
+  </data>
+  <data name="LiteralResourcePricingTapeCst_Header.Text" xml:space="preserve">
+    <value>Tape Cst</value>
+  </data>
+  <data name="LiteralResourcePricingTermCst_Header.Text" xml:space="preserve">
+    <value>Term Cst</value>
+  </data>
+  <data name="LiteralResourcePricingTransIntegrityFee_Header.Text" xml:space="preserve">
+    <value>Trans Integrity Fee</value>
+  </data>
+  <data name="LiteralResourcePricingUserDepExpGridID_Header.Text" xml:space="preserve">
+    <value>User Dep Exp Grid ID</value>
+  </data>
+  <data name="LiteralResourcePricingVisaAssocFees_Header.Text" xml:space="preserve">
+    <value>Visa Assoc Fees:</value>
+  </data>
+  <data name="LiteralResourcePricingWBCstMC_Header.Text" xml:space="preserve">
+    <value>WB Cst M/C</value>
+  </data>
+  <data name="LiteralResourcePricingWBCstVS_Header.Text" xml:space="preserve">
+    <value>WB Cst VS</value>
+  </data>
+  <data name="LiteralResourcePricing_AcctChg1StartDate_Header.Text" xml:space="preserve">
+    <value>Acct Chg1 Start Date</value>
+  </data>
+  <data name="LiteralResourcePricing_AcctChg1StopDate_Header.Text" xml:space="preserve">
+    <value>Acct Chg1 Stop Date</value>
+  </data>
+  <data name="LiteralResourcePricing_AcctChg2StartDate_Header.Text" xml:space="preserve">
+    <value>Acct Chg2 Start Date</value>
+  </data>
+  <data name="LiteralResourcePricing_AcctChg2StopDate_Header.Text" xml:space="preserve">
+    <value>Acct Chg2 Stop Date</value>
+  </data>
+  <data name="LiteralResourcePricing_AcctChg3StartDate_Header.Text" xml:space="preserve">
+    <value>Acct Chg3 Start Date</value>
+  </data>
+  <data name="LiteralResourcePricing_AcctChg3StopDate_Header.Text" xml:space="preserve">
+    <value>Acct Chg3 Stop Date</value>
+  </data>
+  <data name="LiteralResourcePricing_AcctChg4StartDate_Header.Text" xml:space="preserve">
+    <value>Acct Chg4 Start Date</value>
+  </data>
+  <data name="LiteralResourcePricing_AcctChg4StopDate_Header.Text" xml:space="preserve">
+    <value>Acct Chg4 Stop Date</value>
+  </data>
+  <data name="LiteralResourcePricing_AchChg_Header.Text" xml:space="preserve">
+    <value>Ach Chg</value>
+  </data>
+  <data name="LiteralResourcePricing_ACHRejectFee_Header.Text" xml:space="preserve">
+    <value>ACH Reject Fee</value>
+  </data>
+  <data name="LiteralResourcePricing_AsstServChg_Header.Text" xml:space="preserve">
+    <value>Asst Serv Chg</value>
+  </data>
+  <data name="LiteralResourcePricing_BatchCst_Header.Text" xml:space="preserve">
+    <value>Batch Cst</value>
+  </data>
+  <data name="LiteralResourcePricing_eIDSIndicator_Header.Text" xml:space="preserve">
+    <value>eIDS Indicator</value>
+  </data>
+  <data name="LiteralResourcePricing_ETCConfLtrChg_Header.Text" xml:space="preserve">
+    <value>ETC Conf Ltr Chg</value>
+  </data>
+  <data name="LiteralResourcePricing_ExpenseFactors_Header.Text" xml:space="preserve">
+    <value>Expense Factors:</value>
+  </data>
+  <data name="LiteralResourcePricing_FeeControl_Header.Text" xml:space="preserve">
+    <value>Merchant Fee Control Grid</value>
+  </data>
+  <data name="LiteralResourcePricing_FloatFlg_Header.Text" xml:space="preserve">
+    <value>Float Flg</value>
+  </data>
+  <data name="LiteralResourcePricing_HelpDeskChg_Header.Text" xml:space="preserve">
+    <value>Help Desk Chg</value>
+  </data>
+  <data name="LiteralResourcePricing_ICItemCst_Header.Text" xml:space="preserve">
+    <value>IC Item Cst</value>
+  </data>
+  <data name="LiteralResourcePricing_ImprintChg_Header.Text" xml:space="preserve">
+    <value>Imprint Chg</value>
+  </data>
+  <data name="LiteralResourcePricing_IntraFeeFlg_Header.Text" xml:space="preserve">
+    <value>Intra Fee Flg</value>
+  </data>
+  <data name="LiteralResourcePricing_IntraItemCst_Header.Text" xml:space="preserve">
+    <value>Intra Item Cst</value>
+  </data>
+  <data name="LiteralResourcePricing_MerchantAdvChg_Header.Text" xml:space="preserve">
+    <value>Merchant Adv Chg</value>
+  </data>
+  <data name="LiteralResourcePricing_MFCOtherFee1_Header.Text" xml:space="preserve">
+    <value>MFC Other Fee 1</value>
+  </data>
+  <data name="LiteralResourcePricing_MFCOtherFee2_Header.Text" xml:space="preserve">
+    <value>MFC Other Fee 2</value>
+  </data>
+  <data name="LiteralResourcePricing_MinVolFeeChg_Header.Text" xml:space="preserve">
+    <value>Min Vol Fee Chg</value>
+  </data>
+  <data name="LiteralResourcePricing_MinVolFeeFlag_Header.Text" xml:space="preserve">
+    <value>Min Vol Fee Flag</value>
+  </data>
+  <data name="LiteralResourcePricing_OneTimeChg_Header.Text" xml:space="preserve">
+    <value>One Time Chg</value>
+  </data>
+  <data name="LiteralResourcePricing_OneTimeSetupFeeAmt_Header.Text" xml:space="preserve">
+    <value>One Time Setup Fee Amt</value>
+  </data>
+  <data name="LiteralResourcePricing_PayeezyMonthlyFee_Header.Text" xml:space="preserve">
+    <value>Payeezy Monthly Fee</value>
+  </data>
+  <data name="LiteralResourcePricing_PayeezySetupFee_Header.Text" xml:space="preserve">
+    <value>Payeezy Setup Fee</value>
+  </data>
+  <data name="LiteralResourcePricing_PrintChg_Header.Text" xml:space="preserve">
+    <value>Print Chg</value>
+  </data>
+  <data name="LiteralResourcePricing_PulseDebitNetworkFee_Header.Text" xml:space="preserve">
+    <value>Pulse Debit Network Fee</value>
+  </data>
+  <data name="LiteralResourcePricing_RCChg_Header.Text" xml:space="preserve">
+    <value>R/C Chg</value>
+  </data>
+  <data name="LiteralResourcePricing_RetrievalFaxFlag_Header.Text" xml:space="preserve">
+    <value>Retrieval Fax Flag</value>
+  </data>
+  <data name="LiteralResourcePricing_StarDebitNetworkFee_Header.Text" xml:space="preserve">
+    <value>Star Debit Network Fee</value>
+  </data>
+  <data name="LiteralResourcePricing_StmtBundle_Header.Text" xml:space="preserve">
+    <value>Stmt Bundle</value>
+  </data>
+  <data name="LiteralResourcePricing_TermChgStartDate_Header.Text" xml:space="preserve">
+    <value>Term Chg Start Date</value>
+  </data>
+  <data name="LiteralResourcePricing_TermChgStopDate_Header.Text" xml:space="preserve">
+    <value>Term Chg Stop Date</value>
+  </data>
+  <data name="LiteralResourcePricing_TermChg_Header.Text" xml:space="preserve">
+    <value>Term Chg</value>
+  </data>
+  <data name="LiteralResource_Pricing_eIDSFee_Header.Text" xml:space="preserve">
+    <value>eIDS Fee</value>
+  </data>
+  <data name="MIF_MerchantDetails_CAYAN_ExportTooltop1" xml:space="preserve">
+    <value>Do not pass the transaction integrity fee to the merchant</value>
+  </data>
+  <data name="MIF_MerchantDetails_CAYAN_ExportTooltop2" xml:space="preserve">
+    <value>Pass the transaction integrity fee to the merchant</value>
+  </data>
+  <data name="MIF_MerchantDetails_CAYAN_ExportTooltop3" xml:space="preserve">
+    <value>Do not pass the Network Participation Fee to the merchant</value>
+  </data>
+  <data name="MIF_MerchantDetails_CAYAN_ExportTooltop4" xml:space="preserve">
+    <value>Pass the Network Participation Fee to the merchant</value>
+  </data>
+  <data name="LiteralResourceOtherCard_Paypal_Header.Text" xml:space="preserve">
+    <value>Paypal:</value>
+  </data>
+  <data name="LiteralResourceOR.Text" xml:space="preserve">
+    <value>or</value>
+  </data>
+  <data name="MIF_MerchantDetails_Text_RiskInformation" xml:space="preserve">
+    <value>Risk Information</value>
+  </data>
+</root>

@@ -1,0 +1,3 @@
+﻿<cacheconfigs>
+  <cache pattern="rm_DQNextQReportPopup.aspx" duration="3600"/><!--second-->
+</cacheconfigs>

@@ -1,0 +1,1301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Ping">
+        <s:complexType />
+      </s:element>
+      <s:element name="PingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PingResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReports">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="spName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:ArrayOfFilterParameter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfFilterParameter">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="FilterParameter" nillable="true" type="tns:FilterParameter" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="FilterParameter">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ParameterName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ParameterValue" />
+          <s:element minOccurs="0" maxOccurs="1" name="ParameterType" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsOutParameter" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetReportsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetReportsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHashData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="plainText" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHashDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetHashDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteNonQueryCommand">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="spName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:ArrayOfFilterParameter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteNonQueryCommandResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExecuteNonQueryCommandResult" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="OutputParams" type="tns:ArrayOfFilterParameter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteQueryCommand">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="spName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:ArrayOfFilterParameter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteQueryCommandResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExecuteQueryCommandResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="OutputParams" type="tns:ArrayOfFilterParameter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReportsAsDataSet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="spName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:ArrayOfFilterParameter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReportsAsDataSetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetReportsAsDataSetResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExportFlatReport">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="spaName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:ArrayOfFilterParameter" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resources" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="currencyFormat" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="hasRQColumn" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="columnsCustomView" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExportFlatReportResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="EncryptText">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="encryptStr" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="clientID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EncryptTextResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EncryptTextResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DecryptText">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="decryptStr" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="clientID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DecryptTextResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DecryptTextResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EncryptTextWithMultiKey">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="plainText" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="clientID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EncryptTextWithMultiKeyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EncryptTextWithMultiKeyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetApproveGroup">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetApproveGroupResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetApproveGroupResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatetApproveGroup">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fullName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="groups" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfInt">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="int" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UpdatetApproveGroupResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdatetApproveGroupResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateUpdateDocumentType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:ArrayOfFilterParameter" />
+            <s:element minOccurs="0" maxOccurs="1" name="data" type="tns:DocumentTypeModel" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="DocumentTypeModel">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsActive" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="SourceId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="SourceIdList" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsSyncData" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="CreatedBy" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CreateUpdateDocumentTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateUpdateDocumentTypeResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_ExportByWebServices">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serializedExportParam" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="storedProcName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAnyType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="anyType" nillable="true" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="_ExportByWebServicesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_ExportByWebServicesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_ExportWSByWebServices">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serializedExportParam" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="storedProcName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_ExportWSByWebServicesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_ExportWSByWebServicesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_ExportByWebServicesUsingDataReader">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="info" type="tns:ExportInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ExportInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FileName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExportColumnHeaders" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExportColumnNames" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExportTotalColumnNames" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExportSortExpression" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExportFilterExpression" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FileType" type="tns:ExportFileType" />
+          <s:element minOccurs="0" maxOccurs="1" name="StoredProcName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Parameters" type="tns:ArrayOfAnyType" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReportHeader" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="ExportFileType">
+        <s:restriction base="s:string">
+          <s:enumeration value="EXCEL" />
+          <s:enumeration value="CSV" />
+          <s:enumeration value="WORD" />
+          <s:enumeration value="PDF" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="_ExportByWebServicesUsingDataReaderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="_ExportByWebServicesUsingDataReaderResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPager">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="startIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sortExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filterExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="callbackName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="totalColumns" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="webMethodName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="methodParams" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="outParamPos" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfDecimal">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="decimal" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="_BasicPagerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_BasicPagerResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="totalRecords" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="totalValues" type="tns:ArrayOfDecimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="notifyMessage" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paramOuts" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerWithSeparatedMethod">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="startIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sortExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filterExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="totalColumns" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="webMethodName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="methodParams" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="outParamPos" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerWithSeparatedMethodResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_BasicPagerWithSeparatedMethodResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="totalRecords" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="totalValues" type="tns:ArrayOfDecimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="notifyMessage" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paramOuts" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerWithOneMethod">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="startIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sortExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filterExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="totalColumns" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="webMethodName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="methodParams" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="outParamPos" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerWithOneMethodResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_BasicPagerWithOneMethodResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="totalRecords" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="totalValues" type="tns:ArrayOfDecimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="notifyMessage" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paramOuts" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerSPASingleMethod">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="startIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sortExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filterExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="callbackName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pagingSuffix" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="totalSuffix" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="totalColumns" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="webMethodName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="methodParams" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="outParamPos" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerSPASingleMethodResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_BasicPagerSPASingleMethodResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="totalRecords" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="totalValues" type="tns:ArrayOfDecimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="notifyMessage" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paramOuts" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerSPAMultipleMethod">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="startIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sortExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filterExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="callbackName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pagingSuffix" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="totalSuffix" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="totalColumns" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="webMethodName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="methodParams" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="0" maxOccurs="1" name="outParamPos" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerSPAMultipleMethodResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_BasicPagerSPAMultipleMethodResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="totalRecords" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="totalValues" type="tns:ArrayOfDecimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="notifyMessage" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paramOuts" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerWithExport">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="webMethodName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sortExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filterExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerWithExportResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_BasicPagerWithExportResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerWithSPASingleMethodExport">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="webMethodName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sortExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filterExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerWithSPASingleMethodExportResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_BasicPagerWithSPASingleMethodExportResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerWithSPAMultipleMethodExport">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="webMethodName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sortExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filterExpression" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_BasicPagerWithSPAMultipleMethodExportResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_BasicPagerWithSPAMultipleMethodExportResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="PingSoapIn">
+    <wsdl:part name="parameters" element="tns:Ping" />
+  </wsdl:message>
+  <wsdl:message name="PingSoapOut">
+    <wsdl:part name="parameters" element="tns:PingResponse" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetReportsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetReports" />
+  </wsdl:message>
+  <wsdl:message name="GetReportsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetReportsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetHashDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetHashData" />
+  </wsdl:message>
+  <wsdl:message name="GetHashDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetHashDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteNonQueryCommandSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteNonQueryCommand" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteNonQueryCommandSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteNonQueryCommandResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteQueryCommandSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteQueryCommand" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteQueryCommandSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteQueryCommandResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetReportsAsDataSetSoapIn">
+    <wsdl:part name="parameters" element="tns:GetReportsAsDataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetReportsAsDataSetSoapOut">
+    <wsdl:part name="parameters" element="tns:GetReportsAsDataSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExportFlatReportSoapIn">
+    <wsdl:part name="parameters" element="tns:ExportFlatReport" />
+  </wsdl:message>
+  <wsdl:message name="ExportFlatReportSoapOut">
+    <wsdl:part name="parameters" element="tns:ExportFlatReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="EncryptTextSoapIn">
+    <wsdl:part name="parameters" element="tns:EncryptText" />
+  </wsdl:message>
+  <wsdl:message name="EncryptTextSoapOut">
+    <wsdl:part name="parameters" element="tns:EncryptTextResponse" />
+  </wsdl:message>
+  <wsdl:message name="DecryptTextSoapIn">
+    <wsdl:part name="parameters" element="tns:DecryptText" />
+  </wsdl:message>
+  <wsdl:message name="DecryptTextSoapOut">
+    <wsdl:part name="parameters" element="tns:DecryptTextResponse" />
+  </wsdl:message>
+  <wsdl:message name="EncryptTextWithMultiKeySoapIn">
+    <wsdl:part name="parameters" element="tns:EncryptTextWithMultiKey" />
+  </wsdl:message>
+  <wsdl:message name="EncryptTextWithMultiKeySoapOut">
+    <wsdl:part name="parameters" element="tns:EncryptTextWithMultiKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetApproveGroupSoapIn">
+    <wsdl:part name="parameters" element="tns:GetApproveGroup" />
+  </wsdl:message>
+  <wsdl:message name="GetApproveGroupSoapOut">
+    <wsdl:part name="parameters" element="tns:GetApproveGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdatetApproveGroupSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdatetApproveGroup" />
+  </wsdl:message>
+  <wsdl:message name="UpdatetApproveGroupSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdatetApproveGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateUpdateDocumentTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateUpdateDocumentType" />
+  </wsdl:message>
+  <wsdl:message name="CreateUpdateDocumentTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateUpdateDocumentTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="_ExportByWebServicesSoapIn">
+    <wsdl:part name="parameters" element="tns:_ExportByWebServices" />
+  </wsdl:message>
+  <wsdl:message name="_ExportByWebServicesSoapOut">
+    <wsdl:part name="parameters" element="tns:_ExportByWebServicesResponse" />
+  </wsdl:message>
+  <wsdl:message name="_ExportWSByWebServicesSoapIn">
+    <wsdl:part name="parameters" element="tns:_ExportWSByWebServices" />
+  </wsdl:message>
+  <wsdl:message name="_ExportWSByWebServicesSoapOut">
+    <wsdl:part name="parameters" element="tns:_ExportWSByWebServicesResponse" />
+  </wsdl:message>
+  <wsdl:message name="_ExportByWebServicesUsingDataReaderSoapIn">
+    <wsdl:part name="parameters" element="tns:_ExportByWebServicesUsingDataReader" />
+  </wsdl:message>
+  <wsdl:message name="_ExportByWebServicesUsingDataReaderSoapOut">
+    <wsdl:part name="parameters" element="tns:_ExportByWebServicesUsingDataReaderResponse" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerSoapIn">
+    <wsdl:part name="parameters" element="tns:_BasicPager" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerSoapOut">
+    <wsdl:part name="parameters" element="tns:_BasicPagerResponse" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerWithSeparatedMethodSoapIn">
+    <wsdl:part name="parameters" element="tns:_BasicPagerWithSeparatedMethod" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerWithSeparatedMethodSoapOut">
+    <wsdl:part name="parameters" element="tns:_BasicPagerWithSeparatedMethodResponse" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerWithOneMethodSoapIn">
+    <wsdl:part name="parameters" element="tns:_BasicPagerWithOneMethod" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerWithOneMethodSoapOut">
+    <wsdl:part name="parameters" element="tns:_BasicPagerWithOneMethodResponse" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerSPASingleMethodSoapIn">
+    <wsdl:part name="parameters" element="tns:_BasicPagerSPASingleMethod" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerSPASingleMethodSoapOut">
+    <wsdl:part name="parameters" element="tns:_BasicPagerSPASingleMethodResponse" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerSPAMultipleMethodSoapIn">
+    <wsdl:part name="parameters" element="tns:_BasicPagerSPAMultipleMethod" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerSPAMultipleMethodSoapOut">
+    <wsdl:part name="parameters" element="tns:_BasicPagerSPAMultipleMethodResponse" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerWithExportSoapIn">
+    <wsdl:part name="parameters" element="tns:_BasicPagerWithExport" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerWithExportSoapOut">
+    <wsdl:part name="parameters" element="tns:_BasicPagerWithExportResponse" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerWithSPASingleMethodExportSoapIn">
+    <wsdl:part name="parameters" element="tns:_BasicPagerWithSPASingleMethodExport" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerWithSPASingleMethodExportSoapOut">
+    <wsdl:part name="parameters" element="tns:_BasicPagerWithSPASingleMethodExportResponse" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerWithSPAMultipleMethodExportSoapIn">
+    <wsdl:part name="parameters" element="tns:_BasicPagerWithSPAMultipleMethodExport" />
+  </wsdl:message>
+  <wsdl:message name="_BasicPagerWithSPAMultipleMethodExportSoapOut">
+    <wsdl:part name="parameters" element="tns:_BasicPagerWithSPAMultipleMethodExportResponse" />
+  </wsdl:message>
+  <wsdl:portType name="BaseServiceSoap">
+    <wsdl:operation name="Ping">
+      <wsdl:input message="tns:PingSoapIn" />
+      <wsdl:output message="tns:PingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReports">
+      <wsdl:input message="tns:GetReportsSoapIn" />
+      <wsdl:output message="tns:GetReportsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHashData">
+      <wsdl:input message="tns:GetHashDataSoapIn" />
+      <wsdl:output message="tns:GetHashDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteNonQueryCommand">
+      <wsdl:input message="tns:ExecuteNonQueryCommandSoapIn" />
+      <wsdl:output message="tns:ExecuteNonQueryCommandSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteQueryCommand">
+      <wsdl:input message="tns:ExecuteQueryCommandSoapIn" />
+      <wsdl:output message="tns:ExecuteQueryCommandSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReportsAsDataSet">
+      <wsdl:input message="tns:GetReportsAsDataSetSoapIn" />
+      <wsdl:output message="tns:GetReportsAsDataSetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExportFlatReport">
+      <wsdl:input message="tns:ExportFlatReportSoapIn" />
+      <wsdl:output message="tns:ExportFlatReportSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EncryptText">
+      <wsdl:input message="tns:EncryptTextSoapIn" />
+      <wsdl:output message="tns:EncryptTextSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DecryptText">
+      <wsdl:input message="tns:DecryptTextSoapIn" />
+      <wsdl:output message="tns:DecryptTextSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EncryptTextWithMultiKey">
+      <wsdl:input message="tns:EncryptTextWithMultiKeySoapIn" />
+      <wsdl:output message="tns:EncryptTextWithMultiKeySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApproveGroup">
+      <wsdl:input message="tns:GetApproveGroupSoapIn" />
+      <wsdl:output message="tns:GetApproveGroupSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatetApproveGroup">
+      <wsdl:input message="tns:UpdatetApproveGroupSoapIn" />
+      <wsdl:output message="tns:UpdatetApproveGroupSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateUpdateDocumentType">
+      <wsdl:input message="tns:CreateUpdateDocumentTypeSoapIn" />
+      <wsdl:output message="tns:CreateUpdateDocumentTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_ExportByWebServices">
+      <wsdl:input message="tns:_ExportByWebServicesSoapIn" />
+      <wsdl:output message="tns:_ExportByWebServicesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_ExportWSByWebServices">
+      <wsdl:input message="tns:_ExportWSByWebServicesSoapIn" />
+      <wsdl:output message="tns:_ExportWSByWebServicesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_ExportByWebServicesUsingDataReader">
+      <wsdl:input message="tns:_ExportByWebServicesUsingDataReaderSoapIn" />
+      <wsdl:output message="tns:_ExportByWebServicesUsingDataReaderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPager">
+      <wsdl:input message="tns:_BasicPagerSoapIn" />
+      <wsdl:output message="tns:_BasicPagerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithSeparatedMethod">
+      <wsdl:input message="tns:_BasicPagerWithSeparatedMethodSoapIn" />
+      <wsdl:output message="tns:_BasicPagerWithSeparatedMethodSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithOneMethod">
+      <wsdl:input message="tns:_BasicPagerWithOneMethodSoapIn" />
+      <wsdl:output message="tns:_BasicPagerWithOneMethodSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerSPASingleMethod">
+      <wsdl:input message="tns:_BasicPagerSPASingleMethodSoapIn" />
+      <wsdl:output message="tns:_BasicPagerSPASingleMethodSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerSPAMultipleMethod">
+      <wsdl:input message="tns:_BasicPagerSPAMultipleMethodSoapIn" />
+      <wsdl:output message="tns:_BasicPagerSPAMultipleMethodSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithExport">
+      <wsdl:input message="tns:_BasicPagerWithExportSoapIn" />
+      <wsdl:output message="tns:_BasicPagerWithExportSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithSPASingleMethodExport">
+      <wsdl:input message="tns:_BasicPagerWithSPASingleMethodExportSoapIn" />
+      <wsdl:output message="tns:_BasicPagerWithSPASingleMethodExportSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithSPAMultipleMethodExport">
+      <wsdl:input message="tns:_BasicPagerWithSPAMultipleMethodExportSoapIn" />
+      <wsdl:output message="tns:_BasicPagerWithSPAMultipleMethodExportSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BaseServiceSoap" type="tns:BaseServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Ping">
+      <soap:operation soapAction="http://tempuri.org/Ping" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReports">
+      <soap:operation soapAction="http://tempuri.org/GetReports" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHashData">
+      <soap:operation soapAction="http://tempuri.org/GetHashData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteNonQueryCommand">
+      <soap:operation soapAction="http://tempuri.org/ExecuteNonQueryCommand" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteQueryCommand">
+      <soap:operation soapAction="http://tempuri.org/ExecuteQueryCommand" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReportsAsDataSet">
+      <soap:operation soapAction="http://tempuri.org/GetReportsAsDataSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportFlatReport">
+      <soap:operation soapAction="http://tempuri.org/ExportFlatReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EncryptText">
+      <soap:operation soapAction="http://tempuri.org/EncryptText" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DecryptText">
+      <soap:operation soapAction="http://tempuri.org/DecryptText" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EncryptTextWithMultiKey">
+      <soap:operation soapAction="http://tempuri.org/EncryptTextWithMultiKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApproveGroup">
+      <soap:operation soapAction="http://tempuri.org/GetApproveGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatetApproveGroup">
+      <soap:operation soapAction="http://tempuri.org/UpdatetApproveGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateUpdateDocumentType">
+      <soap:operation soapAction="http://tempuri.org/CreateUpdateDocumentType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_ExportByWebServices">
+      <soap:operation soapAction="http://tempuri.org/_ExportByWebServices" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_ExportWSByWebServices">
+      <soap:operation soapAction="http://tempuri.org/_ExportWSByWebServices" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_ExportByWebServicesUsingDataReader">
+      <soap:operation soapAction="http://tempuri.org/_ExportByWebServicesUsingDataReader" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPager">
+      <soap:operation soapAction="http://tempuri.org/_BasicPager" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithSeparatedMethod">
+      <soap:operation soapAction="http://tempuri.org/_BasicPagerWithSeparatedMethod" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithOneMethod">
+      <soap:operation soapAction="http://tempuri.org/_BasicPagerWithOneMethod" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerSPASingleMethod">
+      <soap:operation soapAction="http://tempuri.org/_BasicPagerSPASingleMethod" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerSPAMultipleMethod">
+      <soap:operation soapAction="http://tempuri.org/_BasicPagerSPAMultipleMethod" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithExport">
+      <soap:operation soapAction="http://tempuri.org/_BasicPagerWithExport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithSPASingleMethodExport">
+      <soap:operation soapAction="http://tempuri.org/_BasicPagerWithSPASingleMethodExport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithSPAMultipleMethodExport">
+      <soap:operation soapAction="http://tempuri.org/_BasicPagerWithSPAMultipleMethodExport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BaseServiceSoap12" type="tns:BaseServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Ping">
+      <soap12:operation soapAction="http://tempuri.org/Ping" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReports">
+      <soap12:operation soapAction="http://tempuri.org/GetReports" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHashData">
+      <soap12:operation soapAction="http://tempuri.org/GetHashData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteNonQueryCommand">
+      <soap12:operation soapAction="http://tempuri.org/ExecuteNonQueryCommand" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteQueryCommand">
+      <soap12:operation soapAction="http://tempuri.org/ExecuteQueryCommand" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReportsAsDataSet">
+      <soap12:operation soapAction="http://tempuri.org/GetReportsAsDataSet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportFlatReport">
+      <soap12:operation soapAction="http://tempuri.org/ExportFlatReport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EncryptText">
+      <soap12:operation soapAction="http://tempuri.org/EncryptText" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DecryptText">
+      <soap12:operation soapAction="http://tempuri.org/DecryptText" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EncryptTextWithMultiKey">
+      <soap12:operation soapAction="http://tempuri.org/EncryptTextWithMultiKey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApproveGroup">
+      <soap12:operation soapAction="http://tempuri.org/GetApproveGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatetApproveGroup">
+      <soap12:operation soapAction="http://tempuri.org/UpdatetApproveGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateUpdateDocumentType">
+      <soap12:operation soapAction="http://tempuri.org/CreateUpdateDocumentType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_ExportByWebServices">
+      <soap12:operation soapAction="http://tempuri.org/_ExportByWebServices" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_ExportWSByWebServices">
+      <soap12:operation soapAction="http://tempuri.org/_ExportWSByWebServices" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_ExportByWebServicesUsingDataReader">
+      <soap12:operation soapAction="http://tempuri.org/_ExportByWebServicesUsingDataReader" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPager">
+      <soap12:operation soapAction="http://tempuri.org/_BasicPager" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithSeparatedMethod">
+      <soap12:operation soapAction="http://tempuri.org/_BasicPagerWithSeparatedMethod" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithOneMethod">
+      <soap12:operation soapAction="http://tempuri.org/_BasicPagerWithOneMethod" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerSPASingleMethod">
+      <soap12:operation soapAction="http://tempuri.org/_BasicPagerSPASingleMethod" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerSPAMultipleMethod">
+      <soap12:operation soapAction="http://tempuri.org/_BasicPagerSPAMultipleMethod" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithExport">
+      <soap12:operation soapAction="http://tempuri.org/_BasicPagerWithExport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithSPASingleMethodExport">
+      <soap12:operation soapAction="http://tempuri.org/_BasicPagerWithSPASingleMethodExport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_BasicPagerWithSPAMultipleMethodExport">
+      <soap12:operation soapAction="http://tempuri.org/_BasicPagerWithSPAMultipleMethodExport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BaseService">
+    <wsdl:port name="BaseServiceSoap" binding="tns:BaseServiceSoap">
+      <soap:address location="http://localhost:20001/ReportingServices.asmx" />
+    </wsdl:port>
+    <wsdl:port name="BaseServiceSoap12" binding="tns:BaseServiceSoap12">
+      <soap12:address location="http://localhost:20001/ReportingServices.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

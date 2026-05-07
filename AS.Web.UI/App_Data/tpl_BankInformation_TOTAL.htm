@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <style type="text/css">
+        td
+        {
+            border-style:solid;
+            border-width:thin;            
+        }
+        tr.borderBottom td
+        {
+            border-bottom-style:solid;
+            border-bottom-width:thin;
+        }
+        tr.borderTop td
+        {
+            border-top-style:solid;
+            border-top-width:thin;               
+        }
+    </style>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+</head>
+<body>
+    <table cellspacing="0" cellpadding="0" border="0">
+        <tr>
+            <th colspan="2" align="left"> 
+                <b>[tpl_BankInformation_htm_BankInformation]</b>
+            </th>
+           
+        </tr>
+        <tr class="borderTop">
+            <td width="40%" >                
+                [tpl_BankInformation_htm_RoutingSharp]
+            </td>
+            <td>
+                BI_ROUTING_#
+            </td>
+        </tr>
+        <tr class="borderBottom">
+            <td >
+                [tpl_BankInformation_htm_DDASharp]
+            </td>
+            <td>
+                BI_DDA_#
+            </td>
+        </tr>        
+    </table>
+</body>
+</html>

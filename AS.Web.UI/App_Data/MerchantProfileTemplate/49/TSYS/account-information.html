@@ -1,0 +1,37 @@
+﻿<div class="row" id="accountInfo">
+    <div class="col-xs-12" data-toggle="collapse" data-target="#ciAccountInformation">
+        <h2 class="grid-title">
+            {{res:AccountInformation}}
+        </h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 in" id="ciAccountInformation">
+        <table class="ASTable">
+            <tbody>
+                <tr class="Row">
+                    <td class="heading">
+                        {{res:AccountInformation}}
+                    </td>
+                    <td class="heading">
+                        {{res:Status}}
+                    </td>
+                    <td class="heading">
+                        {{res:EffectiveDate}}
+                    </td>
+                </tr>
+                <tr class="AltRow">
+                    <td>
+                        {{res:DiscoverMAP}}
+                    </td>
+                    <td>
+                        {{data:DiscoverRetained|AccountStatus|AccountInformation|DiscoverNonRetained}}
+                    </td>
+                    <td class="text-left">
+                        {{data:EffectiveDate|AccountEffectedDate|AccountInformation|DiscoverRetained}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sitemapsettings>
+  <sitemaps key="RemoveDuplicateSitemap">
+    <!--Required config-->
+    <sitemap parent ="" title ="Manage Roles" />
+    <sitemap parent ="" title ="Gestionar Roles" /> 
+    
+    <!--End required config-->
+    <!--Case dashboard-->
+    <sitemap parent ="Case Mgmt" title ="Dashboard" />
+    <sitemap parent ="GESTIÓN DE CASOS" title ="EL TABLERO DE CONTROL" />
+    <!--End-->
+    <!--Margin dashboard-->
+    <sitemap parent ="Margin Analysis" title ="Margin Analysis Dashboard" />
+    <sitemap parent ="Análisis de margen" title ="Panel de Análisis de Margen" />
+    <!--End-->
+    <sitemap parent ="" title ="Temporarily Exclude Work Queue" />
+    <sitemap parent ="" title ="Excluir la cola de trabajo temporal" />
+    <!--Alice dashboard-->
+    <sitemap parent ="ALICE" title ="Dashboard" />
+    <sitemap parent ="ALICE" title ="El tablero de control" />
+    <sitemap parent ="ALICE" title ="El tablero de control" />
+    <!--End-->
+    <!--Notification Setting-->
+    <sitemap parent ="Admin" title ="Notification Settings" />
+    <sitemap parent ="Administración" title ="Notification Settings Spanish" />
+    <!--End-->
+  </sitemaps>
+</sitemapsettings>

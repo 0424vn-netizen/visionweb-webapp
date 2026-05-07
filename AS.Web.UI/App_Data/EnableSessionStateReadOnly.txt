@@ -1,0 +1,10 @@
+﻿CardHistoryModal.aspx
+VoucherModal.aspx
+rm_AddRiskCommentModal.aspx
+BatchDetailModal.aspx
+rm_DQReasonModal.aspx
+rm_TransactionDetailsModal.aspx
+rm_MCF_DQReasonModal.aspx
+rm_MCF_TransactionDetailsModal.aspx
+Header.aspx
+rm_MCF_DQBarometerReportPopup.aspx

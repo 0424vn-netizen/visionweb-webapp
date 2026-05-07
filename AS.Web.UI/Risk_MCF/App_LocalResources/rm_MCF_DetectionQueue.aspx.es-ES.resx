@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnRequeueResource1.Text" xml:space="preserve">
+    <value>Volver a poner en cola</value>
+  </data>
+  <data name="optAllMerchantAssignmentsResource1.Text" xml:space="preserve">
+    <value>Todas las Asignaciones</value>
+  </data>
+  <data name="optAllMerchantResource1.Text" xml:space="preserve">
+    <value>Todos</value>
+  </data>
+  <data name="optAsc1Resource1.Text" xml:space="preserve">
+    <value>En ascenso</value>
+  </data>
+  <data name="optDesc1Resource1.Text" xml:space="preserve">
+    <value>En descenso</value>
+  </data>
+  <data name="optDesc2Resource1.Text" xml:space="preserve">
+    <value>En descenso</value>
+  </data>
+  <data name="optMyAssignmentsResource1.Text" xml:space="preserve">
+    <value>Mis Asignaciones</value>
+  </data>
+  <data name="optNextQResource1.Text" xml:space="preserve">
+    <value>Cola Siguiente</value>
+  </data>
+  <data name="optNotWorkedMerchantResource1.Text" xml:space="preserve">
+    <value>Sin trabajo</value>
+  </data>
+  <data name="optRainbowResource1.Text" xml:space="preserve">
+    <value>Informe del barómetro</value>
+  </data>
+  <data name="optRequeuedMerchantResource1.Text" xml:space="preserve">
+    <value>Vuelto a colocar en cola     </value>
+  </data>
+  <data name="optSecurityResource1.Text" xml:space="preserve">
+    <value>Informe de seguridad</value>
+  </data>
+  <data name="optWorkedMerchantResource1.Text" xml:space="preserve">
+    <value>Trabajado</value>
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>Cola de Detección</value>
+  </data>
+  <data name="rm_DetectionQueue_aspx_AndResource1.Text" xml:space="preserve">
+    <value>Y:</value>
+  </data>
+  <data name="rm_DetectionQueue_aspx_AssignmentNameResource1.Text" xml:space="preserve">
+    <value> Nombre de asignación:</value>
+  </data>
+  <data name="rm_DetectionQueue_aspx_ColorLegendResource1.Text" xml:space="preserve">
+    <value>Leyenda de Colores</value>
+  </data>
+  <data name="rm_DetectionQueue_aspx_DateResource1.Text" xml:space="preserve">
+    <value>Fecha:</value>
+  </data>
+  <data name="rm_DetectionQueue_aspx_FilterResource1.Text" xml:space="preserve">
+    <value>FILTRO</value>
+  </data>
+  <data name="rm_DetectionQueue_aspx_OrderByResource1.Text" xml:space="preserve">
+    <value>Ordenar por:</value>
+  </data>
+  <data name="uxReportDateResource1.DatePopupButton.ToolTip" xml:space="preserve">
+    <value>Abrir calendario emergente.</value>
+  </data>
+  <data name="uxSearchDetectionQueueResource1.Text" xml:space="preserve">
+    <value>Enviar</value>
+  </data>
+  <data name="msgAlert1" xml:space="preserve">
+    <value>El formato de fecha es inválido. Ingrese MM/DD/AAAA</value>
+  </data>
+  <data name="msgAlert2" xml:space="preserve">
+    <value>Fecha: la fecha no puede ir más allá de la fecha de hoy</value>
+  </data>
+  <data name="rm_DetectionQueue_aspx_cs_MessageBox" xml:space="preserve">
+    <value>El próximo informe de cola solo está disponible la fecha del informe sea hoy</value>
+  </data>
+  <data name="rm_DetectionQueue_aspx_cs_MessageBox1" xml:space="preserve">
+    <value>No se encontraron comerciantes con alertas de asignación {0} en {1} o todos los comerciantes alertados están trabajando.</value>
+  </data>
+  <data name="uxPageTitleResource1.ReportTitle" xml:space="preserve">
+    <value>Cola de Detección</value>
+    <comment>n</comment>
+  </data>
+  <data name="RainbowColumn_xml_AuthPercent" xml:space="preserve">
+    <value>% Autorización</value>
+  </data>
+  <data name="RainbowColumn_xml_AvgTktPercent" xml:space="preserve">
+    <value>Registro de Transacción de Promedio %</value>
+  </data>
+  <data name="RainbowColumn_xml_CB" xml:space="preserve">
+    <value>CB</value>
+  </data>
+  <data name="RainbowColumn_xml_DeclPercent" xml:space="preserve">
+    <value>% Declinado</value>
+  </data>
+  <data name="RainbowColumn_xml_DupBin" xml:space="preserve">
+    <value>Número Duplicado de Identificación de Banco</value>
+  </data>
+  <data name="RainbowColumn_xml_DupPercent" xml:space="preserve">
+    <value>% Dup</value>
+  </data>
+  <data name="RainbowColumn_xml_EvenPercent" xml:space="preserve">
+    <value>% Par</value>
+  </data>
+  <data name="RainbowColumn_xml_FC" xml:space="preserve">
+    <value>FC</value>
+  </data>
+  <data name="RainbowColumn_xml_KeyPercent" xml:space="preserve">
+    <value>% Tecla</value>
+  </data>
+  <data name="RainbowColumn_xml_LastBatchDate" xml:space="preserve">
+    <value>Fecha del Último Lote</value>
+  </data>
+  <data name="RainbowColumn_xml_MerchantName" xml:space="preserve">
+    <value>Nombre del Comerciante</value>
+  </data>
+  <data name="RainbowColumn_xml_MTDollar" xml:space="preserve">
+    <value>MT$</value>
+  </data>
+  <data name="RainbowColumn_xml_Profile" xml:space="preserve">
+    <value>Perfil</value>
+  </data>
+  <data name="RainbowColumn_xml_RiskScore" xml:space="preserve">
+    <value>Calificación de Riesgo</value>
+  </data>
+  <data name="RainbowColumn_xml_RtnPercent" xml:space="preserve">
+    <value>% Devoluciones</value>
+  </data>
+  <data name="RainbowColumn_xml_SharpBatch" xml:space="preserve">
+    <value># Lote</value>
+  </data>
+  <data name="RainbowColumn_xml_SharpNeg" xml:space="preserve">
+    <value># Neg</value>
+  </data>
+  <data name="RainbowColumn_xml_SharpRptAuth" xml:space="preserve">
+    <value># Autorizaciones Rpt</value>
+  </data>
+  <data name="RainbowColumn_xml_SharpTkts" xml:space="preserve">
+    <value># Registros</value>
+  </data>
+  <data name="RainbowColumn_xml_SharpZero" xml:space="preserve">
+    <value># Cero</value>
+  </data>
+  <data name="RainbowColumn_xml_SIC" xml:space="preserve">
+    <value>CIE</value>
+  </data>
+  <data name="RainbowColumn_xml_TotalVolume" xml:space="preserve">
+    <value>Volumen Total</value>
+  </data>
+  <data name="RainbowColumn_xml_VolPercent" xml:space="preserve">
+    <value>% Vol</value>
+  </data>
+  <data name="rm_DetectionQueue_aspx_ViewResource1.Text" xml:space="preserve">
+    <value>Vista de Pagina:</value>
+  </data>
+  <data name="msgMerchantWorked" xml:space="preserve">
+    <value>Este comerciante fue trabajado anteriormente por {0} en {1}.</value>
+  </data>
+  <data name="RainbowColumn_xml_BusinessAge" xml:space="preserve">
+    <value>Antigüedad del negocio</value>
+  </data>
+  <data name="CheckNotWorkedMerchantCountEqualThanZero.Text" xml:space="preserve">
+    <value>Todos los comerciantes alertados en {0} han sido trabajados.</value>
+  </data>
+  <data name="CheckNotWorkedMerchantCountGreaterThanZero.Text" xml:space="preserve">
+    <value>Todos los comerciantes alertados han sido asignados a los usuarios para trabajar  en la Cola Siguiente, pero no todos han sido trabajados.</value>
+  </data>
+  <data name="CheckNotWorkedMerchantCountLessThanZero.Text" xml:space="preserve">
+    <value>No hay comerciantes con alertas en {0}. Seleccione otro nombre de asignación.</value>
+  </data>
+  <data name="btnAddToWorkQueueResource.Text" xml:space="preserve">
+    <value>Agregar a la Cola de Trabajos</value>
+  </data>
+  <data name="btnRemoveFromQueueResource.Text" xml:space="preserve">
+    <value>Retirar a la cola de Trabajos</value>
+  </data>
+  <data name="RainbowColumn_xml_TotalOfWorked" xml:space="preserve">
+    <value>#TRBDO 30</value>
+  </data>
+  <data name="RainbowColumn_xml_WorkQueueName" xml:space="preserve">
+    <value>CTA</value>
+  </data>
+  <data name="Risk_HasNoWorkQueueAs" xml:space="preserve">
+    <value>No hay asignación de cola de trabajos que volver a colocar en cola.</value>
+  </data>
+  <data name="btnAdvancedFilterResource.Text" xml:space="preserve">
+    <value>Filtro avanzado</value>
+  </data>
+  <data name="btnRefreshResource.Text" xml:space="preserve">
+    <value>Refrescar</value>
+  </data>
+  <data name="Literal7Resource.Text" xml:space="preserve">
+    <value>Actualizar el resumen</value>
+  </data>
+  <data name="lblFilter.Text" xml:space="preserve">
+    <value>Filtro:</value>
+  </data>
+</root>

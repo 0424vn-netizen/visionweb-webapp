@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActionDelete" xml:space="preserve">
+    <value>Borrar</value>
+  </data>
+  <data name="ActionRename" xml:space="preserve">
+    <value>Renombrar</value>
+  </data>
+  <data name="btnApply" xml:space="preserve">
+    <value>Aplicar</value>
+  </data>
+  <data name="btnClose" xml:space="preserve">
+    <value>Cerrar</value>
+  </data>
+  <data name="ButtonBack" xml:space="preserve">
+    <value>Atrás</value>
+  </data>
+  <data name="ButtonCancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="ButtonClose" xml:space="preserve">
+    <value>Cerrar</value>
+  </data>
+  <data name="ButtonDone" xml:space="preserve">
+    <value>Terminado</value>
+  </data>
+  <data name="ButtonSave" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="LblBetween" xml:space="preserve">
+    <value>Entre</value>
+  </data>
+  <data name="LblFilterApplied" xml:space="preserve">
+    <value>Filtro aplicado</value>
+  </data>
+  <data name="LblFilterMoreItem" xml:space="preserve">
+    <value>filtros</value>
+  </data>
+  <data name="LblFilterName" xml:space="preserve">
+    <value>El nombre del filtro:</value>
+  </data>
+  <data name="LblFilterOneItem" xml:space="preserve">
+    <value>filtro</value>
+  </data>
+  <data name="LblFrom" xml:space="preserve">
+    <value>Desde</value>
+  </data>
+  <data name="LblGreaterThan" xml:space="preserve">
+    <value>Mayor Que</value>
+  </data>
+  <data name="LblLessThan" xml:space="preserve">
+    <value>Menor que</value>
+  </data>
+  <data name="LblTo" xml:space="preserve">
+    <value>Para</value>
+  </data>
+  <data name="LinkAdvancedFilter" xml:space="preserve">
+    <value>Filtro avanzado</value>
+  </data>
+  <data name="LinkClearAll" xml:space="preserve">
+    <value>Borrar todo</value>
+  </data>
+  <data name="LinkDeselectAll" xml:space="preserve">
+    <value>Desmarcar todo</value>
+  </data>
+  <data name="LinkRefresh" xml:space="preserve">
+    <value>Refrescar</value>
+  </data>
+  <data name="LinkSaveFilter" xml:space="preserve">
+    <value>Guardar filtro </value>
+  </data>
+  <data name="LinkSelectedAll" xml:space="preserve">
+    <value>Seleccionar todo</value>
+  </data>
+  <data name="LinkUpdateFilter" xml:space="preserve">
+    <value>Actualizar filtro</value>
+  </data>
+  <data name="MsgDateAvailableFilter" xml:space="preserve">
+    <value>Algunos criterios de filtrado no estarán disponibles antes del {0}</value>
+  </data>
+  <data name="Msg_FilterName_Only10Item" xml:space="preserve">
+    <value>Ha alcanzado el número máximo de filtros guardados.</value>
+  </data>
+  <data name="Msg_FilterName_Require" xml:space="preserve">
+    <value>El nombre del filtro es un campo obligatorio.</value>
+  </data>
+  <data name="Msg_FilterName_SpecialCharacter" xml:space="preserve">
+    <value>El nombre del filtro no debe incluir los siguientes caracteres especiales: \'&amp;#\' y debe haber un espacio después de \‘&lt;\’.</value>
+  </data>
+  <data name="Msg_FilterName_Unique" xml:space="preserve">
+    <value>Este nombre ya está en uso. Por favor, ingrese otro nombre.</value>
+  </data>
+  <data name="NA" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="NoRecentFilterData" xml:space="preserve">
+    <value>No tiene filtros recientes.</value>
+  </data>
+  <data name="NoSavedFilterData" xml:space="preserve">
+    <value>No tiene filtros guardados.</value>
+  </data>
+  <data name="PlaceHolderExpandFilter" xml:space="preserve">
+    <value>Haga clic aquí para ampliar el filtro</value>
+  </data>
+  <data name="PlaceHolderNoAvailableFilter" xml:space="preserve">
+    <value>No hay filtros disponibles para agregar</value>
+  </data>
+  <data name="PlaceHolderSelectFilter" xml:space="preserve">
+    <value>Haga clic aquí para escribir o seleccionar un nuevo filtro</value>
+  </data>
+  <data name="TitleAdvancedFilter" xml:space="preserve">
+    <value>Filtro avanzado</value>
+  </data>
+  <data name="TitleCollapse" xml:space="preserve">
+    <value>Colapsar</value>
+  </data>
+  <data name="TitleExpand" xml:space="preserve">
+    <value>Expandir</value>
+  </data>
+  <data name="TitleNoItemFilter" xml:space="preserve">
+    <value>No hay filtro</value>
+  </data>
+  <data name="TitleRecentFilter" xml:space="preserve">
+    <value>Filtros recientes</value>
+  </data>
+  <data name="TitleSavedFilter" xml:space="preserve">
+    <value>Guardar filtro</value>
+  </data>
+  <data name="TitleSuggestedFilters" xml:space="preserve">
+    <value>Filtros Disponibles</value>
+  </data>
+  <data name="ValidateFromNumber" xml:space="preserve">
+    <value>El Desde debe ser un carácter numérico.</value>
+  </data>
+  <data name="ValidateFromRequired" xml:space="preserve">
+    <value>Este campo es requerido.</value>
+  </data>
+  <data name="ValidateGreaterThan" xml:space="preserve">
+    <value>El valor "Hasta" debe ser superior al del valor "Desde".</value>
+  </data>
+  <data name="ValidateMsgNumber" xml:space="preserve">
+    <value>Ingrese un valor numérico solamente.</value>
+  </data>
+  <data name="ValidateMsgRequired" xml:space="preserve">
+    <value>Este campo es requerido.</value>
+  </data>
+  <data name="ValidateToNumber" xml:space="preserve">
+    <value>El Hasta debe ser un carácter numérico.</value>
+  </data>
+  <data name="ValidateToRequired" xml:space="preserve">
+    <value>Este campo es requerido.</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Sí</value>
+  </data>
+  <data name="LinkSaveAsFilter" xml:space="preserve">
+    <value>Guardar como</value>
+  </data>
+  <data name="btnGenerateReport" xml:space="preserve">
+    <value>Generate Report</value>
+  </data>
+  <data name="LblAscending" xml:space="preserve">
+    <value>Ascending</value>
+  </data>
+  <data name="LblDescending" xml:space="preserve">
+    <value>Descending</value>
+  </data>
+  <data name="Daily" xml:space="preserve">
+    <value>Diario</value>
+  </data>
+  <data name="DateRange" xml:space="preserve">
+    <value>Rango de Fechas</value>
+  </data>
+  <data name="DateRangeDisplay" xml:space="preserve">
+    <value>Rango</value>
+  </data>
+  <data name="FromDateGreaterThanToDate" xml:space="preserve">
+    <value>La fecha final debe ser mayor que la fecha inicial.</value>
+  </data>
+  <data name="GreaterThanToday" xml:space="preserve">
+    <value>La fecha no debe ser mayor a la fecha de hoy.</value>
+  </data>
+  <data name="InvalidDate" xml:space="preserve">
+    <value>El formato de fecha es inválido. Ingrese MM/DD/AAAA</value>
+  </data>
+  <data name="ValidateMerchantDateChangeMsg" xml:space="preserve">
+    <value>Se eliminarán los comerciantes seleccionados debido al cambio de fecha y hora.</value>
+  </data>
+  <data name="NoResults" xml:space="preserve">
+    <value>No hay resultados que coincidan.</value>
+  </data>
+  <data name="LblFiltersApplied" xml:space="preserve">
+    <value>Filtros Aplicados</value>
+  </data>
+  <data name="lblOrderBy" xml:space="preserve">
+    <value>Ordenar por:</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>Todos</value>
+  </data>
+  <data name="MIFStatus_Open_Closed180Days" xml:space="preserve">
+    <value>Abierto y cerrado en 180 días</value>
+  </data>
+  <data name="MIFStatus_Open" xml:space="preserve">
+    <value>Apertura</value>
+  </data>
+  <data name="SelectMerchantText" xml:space="preserve">
+    <value>Seleccione un comerciante</value>
+  </data>
+  <data name="LblAddSubFilters" xml:space="preserve">
+    <value>Agregar subfiltros</value>
+  </data>
+  <data name="FromInvalidDate" xml:space="preserve">
+    <value>From: The date format is invalid. Please enter MM/DD/YYYY.</value>
+  </data>
+  <data name="ToInvalidDate" xml:space="preserve">
+    <value>To: The date format is invalid. Please enter MM/DD/YYYY.</value>
+  </data>
+  <data name="FromGreaterThanToday" xml:space="preserve">
+    <value>From: The date must not be greater than today's date.</value>
+  </data>
+  <data name="ToGreaterThanToday" xml:space="preserve">
+    <value>To: The date must not be greater than today's date.</value>
+  </data>
+  <data name="Msg25CharacterLimit" xml:space="preserve">
+    <value>You have exceeded the 25 character limit.</value>
+  </data>
+  <data name="MsgCharacterLimit" xml:space="preserve">
+    <value>Allowed characters are 0-9, A-Z, dashes(-), underscores(_) and periods(.)</value>
+  </data>
+  <data name="ButtonCancelEdit" xml:space="preserve">
+    <value>Cancelar Edición</value>
+  </data>
+  <data name="CMS" xml:space="preserve">
+    <value>CMS</value>
+  </data>
+  <data name="Risk" xml:space="preserve">
+    <value>Riesgo</value>
+  </data>
+  <data name="DateBetween24Month" xml:space="preserve">
+    <value>No se encontraron resultados. Ajuste sus criterios de filtrado.</value>
+  </data>
+</root>

@@ -1,0 +1,630 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AssignedToCardViewResource.Text" xml:space="preserve">
+    <value>Asignado a</value>
+  </data>
+  <data name="AssignedtoResourcekey.HeaderText" xml:space="preserve">
+    <value>Asignado a</value>
+  </data>
+  <data name="AssignedtoResourcekey.HeaderTooltip" xml:space="preserve">
+    <value>Asignado a</value>
+  </data>
+  <data name="CaseNumberResourcekey.HeaderText" xml:space="preserve">
+    <value>Caso</value>
+  </data>
+  <data name="CaseNumberResourcekey.HeaderTooltip" xml:space="preserve">
+    <value>Número de Caso</value>
+  </data>
+  <data name="ClosedOnCardViewResource.Text" xml:space="preserve">
+    <value>Cerrado El</value>
+  </data>
+  <data name="ClosedOnResource.Text" xml:space="preserve">
+    <value>Cerrado El:</value>
+  </data>
+  <data name="ClosedOnResourcekey.HeaderText" xml:space="preserve">
+    <value>Cerrado El</value>
+  </data>
+  <data name="ClosedOnResourcekey.HeaderTooltip" xml:space="preserve">
+    <value>Cerrado El</value>
+  </data>
+  <data name="DescriptionResourcekey.HeaderText" xml:space="preserve">
+    <value>Descripción</value>
+  </data>
+  <data name="DescriptionResourcekey.HeaderTooltip" xml:space="preserve">
+    <value>Descripción</value>
+  </data>
+  <data name="ExportCaseIdTitle.HeaderText" xml:space="preserve">
+    <value>ID the caso - Titulo del caso</value>
+  </data>
+  <data name="ExportPriority.HeaderText" xml:space="preserve">
+    <value>Prioridad</value>
+  </data>
+  <data name="FilesResourcekey.HeaderText" xml:space="preserve">
+    <value>Archivo(s)</value>
+  </data>
+  <data name="FilesResourcekey.HeaderTooltip" xml:space="preserve">
+    <value>Archivo(s)</value>
+  </data>
+  <data name="FollowupCardViewResource.Text" xml:space="preserve">
+    <value>Dar seguimiento a</value>
+  </data>
+  <data name="FollowUpOnResourcekey.HeaderText" xml:space="preserve">
+    <value>Dar seguimiento a</value>
+  </data>
+  <data name="FollowUpOnResourcekey.HeaderTooltip" xml:space="preserve">
+    <value>Dar seguimiento a</value>
+  </data>
+  <data name="FollowupResource.Text" xml:space="preserve">
+    <value>Dar seguimiento a:</value>
+  </data>
+  <data name="LastClosedOnCardViewResource.Text" xml:space="preserve">
+    <value>Usltimo Cerrado</value>
+  </data>
+  <data name="LastClosedOnResource.Text" xml:space="preserve">
+    <value>Usltimo Cerrado:</value>
+  </data>
+  <data name="LastClosedOnResourceKey.HeaderText" xml:space="preserve">
+    <value>Usltimo cerrado</value>
+  </data>
+  <data name="LastUpdateOnCardViewResource.Text" xml:space="preserve">
+    <value>Actualización Más Reciente el</value>
+  </data>
+  <data name="LastUpdateOnResource.Text" xml:space="preserve">
+    <value>Actualización Más Reciente El:</value>
+  </data>
+  <data name="LastUpdateOnResourcekey.HeaderText" xml:space="preserve">
+    <value>Actualización Más Reciente el</value>
+  </data>
+  <data name="LastUpdateOnResourcekey.HeaderTooltip" xml:space="preserve">
+    <value>Actualización Más Reciente el</value>
+  </data>
+  <data name="lblNotAssigned" xml:space="preserve">
+    <value>No Asignado</value>
+  </data>
+  <data name="ltAssignedToResource.Text" xml:space="preserve">
+    <value>Asignado a</value>
+  </data>
+  <data name="ltCaseHistoryAssignedToResource.Text" xml:space="preserve">
+    <value>Asignado a:</value>
+  </data>
+  <data name="ltCaseHistoryPriorityResource.Text" xml:space="preserve">
+    <value>Prioridad:</value>
+  </data>
+  <data name="ltCaseHistoryStatusResource.Text" xml:space="preserve">
+    <value>Estado:</value>
+  </data>
+  <data name="ltCaseHistoryTypeResource.Text" xml:space="preserve">
+    <value>Tipo:</value>
+  </data>
+  <data name="ltDocument1Resource1.Text" xml:space="preserve">
+    <value>Ingresar comentario nuevo (límite de 7000 caracteres por comentario)</value>
+  </data>
+  <data name="ltDocument2Resource1.Text" xml:space="preserve">
+    <value>Problemas:</value>
+  </data>
+  <data name="ltOwnershipResource.Text" xml:space="preserve">
+    <value>Grupo de Propiedad</value>
+  </data>
+  <data name="OpenedByCardViewResource.Text" xml:space="preserve">
+    <value>Abierto Por</value>
+  </data>
+  <data name="OpenedByResource.Text" xml:space="preserve">
+    <value>Abierto Por:</value>
+  </data>
+  <data name="OpenedByResourcekey.HeaderText" xml:space="preserve">
+    <value>Abierto Por</value>
+  </data>
+  <data name="OpenedByResourcekey.HeaderTooltip" xml:space="preserve">
+    <value>Abierto Por</value>
+  </data>
+  <data name="OpenedOnCardViewResource.Text" xml:space="preserve">
+    <value>Abierto En</value>
+  </data>
+  <data name="OpenedOnResource.Text" xml:space="preserve">
+    <value>Abierto En:</value>
+  </data>
+  <data name="OpenedOnResourcekey.HeaderText" xml:space="preserve">
+    <value>Abierto el</value>
+  </data>
+  <data name="OpenedOnResourcekey.HeaderTooltip" xml:space="preserve">
+    <value>Abierto el</value>
+  </data>
+  <data name="OwnershipGroupCardViewResource.Text" xml:space="preserve">
+    <value>Grupo Propietario</value>
+  </data>
+  <data name="OwnershipGroupResourcekey.HeaderText" xml:space="preserve">
+    <value>Grupo Propietario</value>
+  </data>
+  <data name="OwnershipGroupResourcekey.HeaderTooltip" xml:space="preserve">
+    <value>Grupo Propietario</value>
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>Hostorial del Caso</value>
+  </data>
+  <data name="PrioritylevelResourcekey.HeaderText" xml:space="preserve">
+    <value>Nivel Prioritario</value>
+  </data>
+  <data name="PrioritylevelResourcekey.HeaderTooltip" xml:space="preserve">
+    <value>Nivel Prioritario</value>
+  </data>
+  <data name="ReopenedOnCardViewResource.Text" xml:space="preserve">
+    <value>Reabierto En</value>
+  </data>
+  <data name="ReopenedOnResource.Text" xml:space="preserve">
+    <value>Reabierto En:</value>
+  </data>
+  <data name="ReopenedOnResourceKey.HeaderText" xml:space="preserve">
+    <value>Reabierto En</value>
+  </data>
+  <data name="RoleCardViewResource.Text" xml:space="preserve">
+    <value>Papel</value>
+  </data>
+  <data name="RoleResource.Text" xml:space="preserve">
+    <value>Rol:</value>
+  </data>
+  <data name="RoleResourcekey.HeaderText" xml:space="preserve">
+    <value>Rol</value>
+  </data>
+  <data name="RoleResourcekey.HeaderTooltip" xml:space="preserve">
+    <value>Rol</value>
+  </data>
+  <data name="StaticStringResourcekey.HeaderTooltip" xml:space="preserve">
+    <value>Estatus</value>
+  </data>
+  <data name="StaticStringResourcekey.Text" xml:space="preserve">
+    <value>Estatus</value>
+  </data>
+  <data name="StatusResourcekey.HeaderText" xml:space="preserve">
+    <value>Estatus</value>
+  </data>
+  <data name="TypeCardViewResource.Text" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="TypeExport.HeaderText" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="TypeResourceKey.HeaderText" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="uxbtnOpenNewCaseResourceKey.Text" xml:space="preserve">
+    <value>Abrir Caso Nuevo</value>
+  </data>
+  <data name="uxbtnOpenNewCaseResourceKey.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxbtnSubmitCommentAndOpenNewCaseResourceKey.Text" xml:space="preserve">
+    <value>Enviar Comentario y Abrir Caso Nuevo</value>
+  </data>
+  <data name="uxbtnSubmitCommentAndOpenNewCaseResourceKey.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxbtnSubmitCommentResource1.Text" xml:space="preserve">
+    <value>Enviar</value>
+  </data>
+  <data name="uxbtnSubmitCommentResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxCaseHistoryApplyFilter.Text" xml:space="preserve">
+    <value>Aplicar</value>
+  </data>
+  <data name="uxCaseHistoryPriorityFilter.Text" xml:space="preserve">
+    <value>Prioridad:</value>
+  </data>
+  <data name="uxCaseHistoryStatusFilter.Text" xml:space="preserve">
+    <value>Estado:</value>
+  </data>
+  <data name="uxCaseHistoryTypeFilter.Text" xml:space="preserve">
+    <value>Tipo:</value>
+  </data>
+  <data name="uxDefaultSettingLinkResource1.Text" xml:space="preserve">
+    <value>CONFIGURACIÓN PREDETERMINADA</value>
+  </data>
+  <data name="uxExporterResourcekey.filename" xml:space="preserve">
+    <value>Historial del Caso</value>
+  </data>
+  <data name="uxExporterResourcekey.gridtitle" xml:space="preserve">
+    <value>Historial del Caso</value>
+  </data>
+  <data name="uxExporterResourcekeyGridTile.Text" xml:space="preserve">
+    <value>Historial del Caso</value>
+  </data>
+  <data name="uxExportFileName.Text" xml:space="preserve">
+    <value>Historia del caso  - {0} - {1}</value>
+  </data>
+  <data name="uxExport_CommentsResourceKey.filename" xml:space="preserve">
+    <value>Notas del Caso</value>
+  </data>
+  <data name="uxExport_CommentsResourceKey.GridHeader" xml:space="preserve">
+    <value>Notas del Caso</value>
+  </data>
+  <data name="uxExport_CommentsResourceKey.GridTitle" xml:space="preserve">
+    <value>Notas del Caso</value>
+  </data>
+  <data name="uxFDCTicketColumnResource1.HeaderText" xml:space="preserve">
+    <value>Caso</value>
+  </data>
+  <data name="uxFDCTicketColumnResource1.HeaderTooltip" xml:space="preserve">
+    <value>Número de Caso</value>
+  </data>
+  <data name="uxFDCTicketColumnResource10.HeaderText" xml:space="preserve">
+    <value>Problema</value>
+  </data>
+  <data name="uxFDCTicketColumnResource10.HeaderTooltip" xml:space="preserve">
+    <value>Problema</value>
+  </data>
+  <data name="uxFDCTicketColumnResource11.HeaderText" xml:space="preserve">
+    <value>Abierto el</value>
+  </data>
+  <data name="uxFDCTicketColumnResource11.HeaderTooltip" xml:space="preserve">
+    <value>Abierto el</value>
+  </data>
+  <data name="uxFDCTicketColumnResource12.HeaderText" xml:space="preserve">
+    <value>Actualización Más Reciente el</value>
+  </data>
+  <data name="uxFDCTicketColumnResource12.HeaderTooltip" xml:space="preserve">
+    <value>Actualización Más Reciente el</value>
+  </data>
+  <data name="uxFDCTicketColumnResource13.HeaderText" xml:space="preserve">
+    <value>Dar seguimiento a</value>
+  </data>
+  <data name="uxFDCTicketColumnResource13.HeaderTooltip" xml:space="preserve">
+    <value>Dar seguimiento a</value>
+  </data>
+  <data name="uxFDCTicketColumnResource14.HeaderText" xml:space="preserve">
+    <value>Cerrado El</value>
+  </data>
+  <data name="uxFDCTicketColumnResource14.HeaderTooltip" xml:space="preserve">
+    <value>Cerrado El</value>
+  </data>
+  <data name="uxFDCTicketColumnResource2.HeaderText" xml:space="preserve">
+    <value>Identificación del Ticket</value>
+  </data>
+  <data name="uxFDCTicketColumnResource2.HeaderTooltip" xml:space="preserve">
+    <value>Identificación del Ticket</value>
+  </data>
+  <data name="uxFDCTicketColumnResource3.HeaderText" xml:space="preserve">
+    <value># de Tickets FD</value>
+  </data>
+  <data name="uxFDCTicketColumnResource3.HeaderTooltip" xml:space="preserve">
+    <value>Número de Tickets FD</value>
+  </data>
+  <data name="uxFDCTicketColumnResource4.HeaderText" xml:space="preserve">
+    <value>Descripción</value>
+  </data>
+  <data name="uxFDCTicketColumnResource4.HeaderTooltip" xml:space="preserve">
+    <value>Descripción</value>
+  </data>
+  <data name="uxFDCTicketColumnResource5.HeaderText" xml:space="preserve">
+    <value>Asignado a</value>
+  </data>
+  <data name="uxFDCTicketColumnResource5.HeaderTooltip" xml:space="preserve">
+    <value>Asignado a</value>
+  </data>
+  <data name="uxFDCTicketColumnResource6.HeaderText" xml:space="preserve">
+    <value>Nivel Prioritario</value>
+  </data>
+  <data name="uxFDCTicketColumnResource6.HeaderTooltip" xml:space="preserve">
+    <value>Nivel Prioritario</value>
+  </data>
+  <data name="uxFDCTicketColumnResource7.HeaderText" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="uxFDCTicketColumnResource7.HeaderTooltip" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="uxFDCTicketColumnResource8.HeaderText" xml:space="preserve">
+    <value>Último Comentario</value>
+  </data>
+  <data name="uxFDCTicketColumnResource8.HeaderTooltip" xml:space="preserve">
+    <value>Último Comentario</value>
+  </data>
+  <data name="uxFDCTicketColumnResource9.HeaderText" xml:space="preserve">
+    <value>Tipo de Problema</value>
+  </data>
+  <data name="uxFDCTicketColumnResource9.HeaderTooltip" xml:space="preserve">
+    <value>Tipo de Problema</value>
+  </data>
+  <data name="uxFDCTicketResourcekey.HierarchySettings.CollapseTooltip" xml:space="preserve">
+    <value>Colapsar</value>
+  </data>
+  <data name="uxFDCTicketResourcekey.HierarchySettings.ExpandTooltip" xml:space="preserve">
+    <value>Expandir</value>
+  </data>
+  <data name="uxFDCTicketResourcekey.MasterTableView.NoDetailRecordsText" xml:space="preserve">
+    <value>No se encontraron resultados. Ajuste sus criterios de filtrado.</value>
+  </data>
+  <data name="uxFDCTicketResourcekey.MasterTableView.NoMasterRecordsText" xml:space="preserve">
+    <value>No se encontraron resultados. Ajuste sus criterios de filtrado.</value>
+  </data>
+  <data name="uxIssuesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxMerchantInitiatedTicketsColumnResource.HeaderText" xml:space="preserve">
+    <value>Caso</value>
+  </data>
+  <data name="uxMerchantInitiatedTicketsColumnResource.HeaderTooltip" xml:space="preserve">
+    <value>Número de Caso</value>
+  </data>
+  <data name="uxMerchantInitiatedTicketsColumnResource1.HeaderText" xml:space="preserve">
+    <value>Descripción</value>
+  </data>
+  <data name="uxMerchantInitiatedTicketsColumnResource1.HeaderTooltip" xml:space="preserve">
+    <value>Descripción</value>
+  </data>
+  <data name="uxMerchantInitiatedTicketsColumnResource10.HeaderText" xml:space="preserve">
+    <value>Actualización Más Reciente el</value>
+  </data>
+  <data name="uxMerchantInitiatedTicketsColumnResource10.HeaderTooltip" xml:space="preserve">
+    <value>Actualización Más Reciente el</value>
+  </data>
+  <data name="uxMerchantInitiatedTicketsColumnResource11.HeaderText" xml:space="preserve">
+    <value>Dar seguimiento a</value>
+  </data>
+  <data name="uxMerchantInitiatedTicketsColumnResource11.HeaderTooltip" xml:space="preserve">
+    <value>Dar seguimiento a</value>
+  </data>
+  <data name="uxMerchantInitiatedTicketsColumnResource12.HeaderText" xml:space="preserve">
+    <value>Cerrado El</value>
+  </data>
+  <data name="uxMerchantInitiatedTicketsColumnResource12.HeaderTooltip" xml:space="preserve">
+    <value>Cerrado El</value>
+  </data>
+  <data name="uxMerchantInitiatedTicketsColumnResource2.HeaderText" xml:space="preserve">
+    <value>Grupo Propietario</value>
+  </data>
+  <data name="uxMerchantInitiatedTicketsColumnResource2.HeaderTooltip" xml:space="preserve">
+    <value>Grupo Propietario</value>
+  </data>
+  <data name="uxMerchantInitiatedTicketsColumnResource2.Text" xml:space="preserve">
+    <value>Grupo de Propiedad</value>
+  </data>
+  <data name="uxMerchantInitiatedTicketsColumnResource3.HeaderText" xml:space="preserve">
+    <value>Asignado a</value>
+  </data>
+  <data name="uxMerchantInitiatedTicketsColumnResource3.HeaderTooltip" xml:space="preserve">
+    <value>Asignado a</value>
+  </data>
+  <data name="uxMerchantInitiatedTicketsColumnResource4.HeaderText" xml:space="preserve">
+    <value>Nivel Prioritario</value>
+  </data>
+  <data name="uxMerchantInitiatedTicketsColumnResource4.HeaderTooltip" xml:space="preserve">
+    <value>Nivel Prioritario</value>
+  </data>
+  <data name="uxMerchantInitiatedTicketsColumnResource5.HeaderText" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="uxMerchantInitiatedTicketsColumnResource5.HeaderTooltip" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="uxMerchantInitiatedTicketsColumnResource6.HeaderText" xml:space="preserve">
+    <value>Último Comentario</value>
+  </data>
+  <data name="uxMerchantInitiatedTicketsColumnResource6.HeaderTooltip" xml:space="preserve">
+    <value>Último Comentario</value>
+  </data>
+  <data name="uxMerchantInitiatedTicketsColumnResource7.HeaderText" xml:space="preserve">
+    <value>Tipo de Problema</value>
+  </data>
+  <data name="uxMerchantInitiatedTicketsColumnResource7.HeaderTooltip" xml:space="preserve">
+    <value>Tipo de Problema</value>
+  </data>
+  <data name="uxMerchantInitiatedTicketsColumnResource8.HeaderText" xml:space="preserve">
+    <value>Problema</value>
+  </data>
+  <data name="uxMerchantInitiatedTicketsColumnResource8.HeaderTooltip" xml:space="preserve">
+    <value>Problema</value>
+  </data>
+  <data name="uxMerchantInitiatedTicketsColumnResource9.HeaderText" xml:space="preserve">
+    <value>Abierto el</value>
+  </data>
+  <data name="uxMerchantInitiatedTicketsColumnResource9.HeaderTooltip" xml:space="preserve">
+    <value>Abierto el</value>
+  </data>
+  <data name="uxMerchantInitiatedTicketsExporterResourceKey.filename" xml:space="preserve">
+    <value>Ticket Iniciado por el Comerciante</value>
+  </data>
+  <data name="uxMerchantInitiatedTicketsExporterResourceKey.gridtitle" xml:space="preserve">
+    <value>Ticket Iniciado por el Comerciante</value>
+  </data>
+  <data name="uxMerchantInitiatedTicketsResourceKey.HierarchySettings.CollapseTooltip" xml:space="preserve">
+    <value>Colapsar</value>
+  </data>
+  <data name="uxMerchantInitiatedTicketsResourceKey.HierarchySettings.ExpandTooltip" xml:space="preserve">
+    <value>Expandir</value>
+  </data>
+  <data name="uxMerchantInitiatedTicketsResourceKey.MasterTableView.NoDetailRecordsText" xml:space="preserve">
+    <value>No se encontraron resultados. Ajuste sus criterios de filtrado.</value>
+  </data>
+  <data name="uxMerchantInitiatedTicketsResourceKey.MasterTableView.NoMasterRecordsText" xml:space="preserve">
+    <value>No se encontraron resultados. Ajuste sus criterios de filtrado.</value>
+  </data>
+  <data name="uxReloadPageResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxReloadPageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="uxReportCommentsColumnResource.HeaderText" xml:space="preserve">
+    <value>Fecha/Hora</value>
+  </data>
+  <data name="uxReportCommentsColumnResource.HeaderTooltip" xml:space="preserve">
+    <value>Fecha/Hora</value>
+  </data>
+  <data name="uxReportCommentsColumnResource1.HeaderText" xml:space="preserve">
+    <value>Agregado Por</value>
+  </data>
+  <data name="uxReportCommentsColumnResource1.HeaderTooltip" xml:space="preserve">
+    <value>Agregado Por</value>
+  </data>
+  <data name="uxReportCommentsColumnResource2.HeaderText" xml:space="preserve">
+    <value>Rol</value>
+  </data>
+  <data name="uxReportCommentsColumnResource2.HeaderTooltip" xml:space="preserve">
+    <value>Rol</value>
+  </data>
+  <data name="uxReportCommentsColumnResource3.HeaderText" xml:space="preserve">
+    <value>Comentario</value>
+  </data>
+  <data name="uxReportCommentsColumnResource3.HeaderTooltip" xml:space="preserve">
+    <value>Comentario</value>
+  </data>
+  <data name="uxReportCommentsColumnResource4.HeaderText" xml:space="preserve">
+    <value>Problemas</value>
+  </data>
+  <data name="uxReportCommentsColumnResource4.HeaderTooltip" xml:space="preserve">
+    <value>Problemas</value>
+  </data>
+  <data name="uxReportCommentsColumnResource5.HeaderText" xml:space="preserve">
+    <value>Caso</value>
+  </data>
+  <data name="uxReportCommentsColumnResource5.HeaderTooltip" xml:space="preserve">
+    <value>Número de Caso</value>
+  </data>
+  <data name="uxReportCommentsResourceKey.HierarchySettings.CollapseTooltip" xml:space="preserve">
+    <value>Colapsar</value>
+  </data>
+  <data name="uxReportCommentsResourceKey.HierarchySettings.ExpandTooltip" xml:space="preserve">
+    <value>Expandir</value>
+  </data>
+  <data name="uxReportCommentsResourceKey.MasterTableView.NoDetailRecordsText" xml:space="preserve">
+    <value>No se encontraron resultados. Ajuste sus criterios de filtrado.</value>
+  </data>
+  <data name="uxReportCommentsResourceKey.MasterTableView.NoMasterRecordsText" xml:space="preserve">
+    <value>No se encontraron resultados. Ajuste sus criterios de filtrado.</value>
+  </data>
+  <data name="uxReportGridCaseHistoryResourcekey.HierarchySettings.CollapseTooltip" xml:space="preserve">
+    <value>Colapsar</value>
+  </data>
+  <data name="uxReportGridCaseHistoryResourcekey.HierarchySettings.ExpandTooltip" xml:space="preserve">
+    <value>Expandir</value>
+  </data>
+  <data name="uxReportGridCaseHistoryResourcekey.MasterTableView.NoDetailRecordsText" xml:space="preserve">
+    <value>No se encontraron resultados. Ajuste sus criterios de filtrado.</value>
+  </data>
+  <data name="uxReportGridCaseHistoryResourcekey.MasterTableView.NoMasterRecordsText" xml:space="preserve">
+    <value>No se encontraron resultados. Ajuste sus criterios de filtrado.</value>
+  </data>
+   <data name="uxCaseHistoryReportGridResource1.MasterTableView.NoDetailRecordsText" xml:space="preserve">
+    <value>No se encontraron resultados. Ajuste sus criterios de filtrado.</value>
+  </data>
+  <data name="uxCaseHistoryReportGridResource1.MasterTableView.NoMasterRecordsText" xml:space="preserve">
+    <value>No se encontraron resultados. Ajuste sus criterios de filtrado.</value>
+  </data>
+</root>

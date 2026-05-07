@@ -1,0 +1,63 @@
+﻿<div class="row" id="hierarchyinfo">
+    <div class="col-md-12" data-toggle="collapse" data-target="#ciHierarchyInformation" aria-expanded="true">
+        <h2 class="grid-title">
+            {{res:HierarchyInformation}}
+        </h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 in" id="ciHierarchyInformation">
+        <table class="ASTable">
+            <tr class="Row">
+                <td class="heading valign-middle">
+                    {{res:ClientName}}
+                </td>
+                <td colspan="3">
+                    {{data:ClientName||HierarchyInformation}}
+                </td>
+            </tr>
+            <tr class="AltRow">
+                <td class="heading">
+                    {{res:ClientLogin}}
+                </td>
+                <td>
+                    {{data:ClientLogin||HierarchyInformation}}
+                </td>
+                <td class="heading">
+                    {{res:Chain}}
+                </td>
+                <td>
+                    {{data:CHAIN|ChainLink|HierarchyInformation}}
+                </td>
+            </tr>
+            <tr class="Row">
+                <td class="heading">
+                    {{res:SysPrinAgent}}
+                </td>
+                <td>
+                    {{data:EntityNumber4|AgentLink|HierarchyInformation|AGENT}}
+                </td>
+                <td class="heading">
+                    {{res:SecondaryAccessChain}}
+                </td>
+                <td>
+                    {{data:ACCESSCHAIN|SecondaryAccessChainLink|HierarchyInformation|EntityNumber5}}
+                </td>
+            </tr>
+            <tr class="AltRow">
+                <td class="heading">
+                    {{res:MerchantType}}
+                </td>
+                <td>
+                    {{data:MerchantType||HierarchyInformation}}
+                </td>
+                <td class="heading">
+                    {{res:HeadqrtrMerchant}}
+                </td>
+                <td>
+                    {{data:Headquarter|Hierarchy|HierarchyInformation}}
+                </td>
+            </tr>            
+        </table>
+    </div>
+</div>

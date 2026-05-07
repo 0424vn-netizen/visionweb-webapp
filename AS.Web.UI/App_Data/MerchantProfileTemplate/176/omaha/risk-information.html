@@ -1,0 +1,76 @@
+﻿<div class="row" id="RiskScoreInfo">
+    <div class="col-xs-8" data-toggle="collapse" data-target="#ciRiskInformation" aria-expanded="true">
+        <h2 class="grid-title">
+            {{res:RiskInformation}}
+        </h2>
+    </div>
+    <div class="col-xs-4 ipmt dropdown on-top">        
+        {{data:ViewRiskReport|ViewRiskReportLink}}
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 collapse in" id="ciRiskInformation" aria-expanded="true" style="">
+        <table class="ASTable format-table">
+            <colgroup>
+                <col style="width: 160px">
+                <col>
+            </colgroup>
+            <tbody>
+                <tr>
+                    <td class="heading">
+                        {{res:ClassificationName}}
+                    </td>
+                    <td>
+                        {{data:MerchantClassificationName||RiskInformation}}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="heading">
+                        {{res:Multiplier}}
+                    </td>
+                    <td>
+                        {{data:Multiplier||RiskInformation}}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="heading">
+                        {{res:RiskScore}}
+                    </td>
+                    <td>
+                        {{data:TotalRS||RiskInformation}}
+                    </td>
+                </tr>
+                <!--RISK_REPORT_EXTEND_START--><!--Name:GverifyCode:Name-->
+                <tr>
+                    <td class="heading">
+                        {{res:GverifyCode}}
+                    </td>
+                    <td>
+                        {{data:GVerifyCode||RiskInformation}}
+                    </td>
+                </tr>
+                <!--RISK_REPORT_EXTEND_END-->
+                <!--RISK_REPORT_EXTEND_START--><!--Name:GauthenticateCode:Name-->
+                <tr>
+                    <td class="heading">
+                        {{res:GauthenticateCode}}
+                    </td>
+                    <td>
+                        {{data:GauthenticateCode||RiskInformation}}
+                    </td>
+                </tr>
+                <!--RISK_REPORT_EXTEND_END-->
+                <!--RISK_REPORT_EXTEND_START--><!--Name:G2Compass:Name-->
+                <tr>
+                    <td class="heading">
+                        {{res:G2CompassAutoApprovalIndicator}}
+                    </td>
+                    <td>
+                        {{data:G2CompassAutoApprovalIndicator||RiskInformation}}
+                    </td>
+                </tr>
+                <!--RISK_REPORT_EXTEND_END-->
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,81 @@
+﻿<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <th colspan="2" align="left">
+      <b> {{res:HierarchyInformation}}</b>
+    </th>
+  </tr>
+  <tbody>
+      <tr class="Row">
+          <td class="heading">
+              {{res:Bank}}
+          </td>
+          <td>
+              &nbsp;{{data:EntityNumber1Text||HierarchyInformation}}
+          </td>
+      </tr>
+      <tr class="AltRow">
+          <td class="heading">
+              {{res:Group}}
+          </td>
+          <td>
+              &nbsp;{{data:EntityNumber5Text||HierarchyInformation}}
+          </td>
+      </tr>
+      <tr class="Row">
+          <td class="heading">
+              {{res:Association}}
+          </td>
+          <td>
+              &nbsp;{{data:EntityNumber3Text||HierarchyInformation}}
+          </td>
+      </tr>
+      <tr class="AltRow">
+          <td class="heading">
+              {{res:FundingMethod}}
+          </td>
+          <td>
+              &nbsp;{{data:EntityNumber2Text||HierarchyInformation}}
+          </td>
+      </tr>
+      <tr class="Row">
+          <td class="heading">
+              {{res:ReferralPartner}}
+          </td>
+          <td>
+              &nbsp;{{data:EntityNumber4Text||HierarchyInformation}}
+          </td>
+      </tr>
+      <tr class="AltRow">
+          <td class="heading">
+              {{res:ReferralSource}}
+          </td>
+          <td>
+              &nbsp;{{data:EntityNumber6Text||HierarchyInformation}}
+          </td>
+      </tr>
+      <tr class="Row">
+          <td class="heading">
+              {{res:ReferralPartnerId}}
+          </td>
+          <td>
+              &nbsp;{{data:ReferralPartnerNumber||HierarchyInformation}}
+          </td>
+      </tr>
+      <tr class="AltRow">
+          <td class="heading">
+              {{res:ReferralSourceId}}
+          </td>
+          <td>
+              &nbsp;{{data:ReferralSourceNumber||HierarchyInformation}}
+          </td>
+      </tr>
+      <tr class="AltRow">
+          <td class="heading">
+              {{res:Chain}}
+          </td>
+          <td>
+              &nbsp;{{data:CHAIN|ChainLink|HierarchyInformation}}
+          </td>
+      </tr>
+  </tbody>
+</table>

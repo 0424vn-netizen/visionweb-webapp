@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ltContactUsResource1.Text" xml:space="preserve">
+    <value>Comuníquese con Nosotros</value>
+  </data>
+  <data name="ltCustomerServiceResource1.Text" xml:space="preserve">
+    <value>Servicio de Atención al Cliente:</value>
+  </data>
+  <data name="ltFaxResource1.Text" xml:space="preserve">
+    <value>Fax:</value>
+  </data>
+  <data name="ltMailingAddressResource1.Text" xml:space="preserve">
+    <value>Dirección de Correo:</value>
+  </data>
+  <data name="ltSubjectResource1.Text" xml:space="preserve">
+    <value>Asunto:</value>
+  </data>
+  <data name="ltToMailResource1.Text" xml:space="preserve">
+    <value>Para Enviar por Correo:</value>
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>Comuníquese con Nosotros</value>
+  </data>
+  <data name="uxClearResource1.Text" xml:space="preserve">
+    <value>Borrar</value>
+  </data>
+  <data name="uxCSFaxResource1.Text" xml:space="preserve">
+    <value>(xxx) 247- x951</value>
+  </data>
+  <data name="uxCSPhoneNumberResource1.Text" xml:space="preserve">
+    <value>(800) 846-4472</value>
+  </data>
+  <data name="uxSendEmailResource1.Text" xml:space="preserve">
+    <value>Enviar correo electrónico</value>
+  </data>
+  <data name="uxToResource1.Text" xml:space="preserve">
+    <value>Servicios de Atención a Comerciantes</value>
+  </data>
+  <data name="ContactUs_aspx_cs_ContactInfo" xml:space="preserve">
+    <value>Información de Contacto</value>
+  </data>
+  <data name="ContactUs_aspx_cs_MailBody" xml:space="preserve">
+    <value>De: &lt;FROM_EMAIL&gt;&lt;br/&gt;
+Expedido: &lt;DATE&gt;&lt;br/&gt;
+Para: &lt;TO_EMAIL&gt;&lt;br/&gt;
+Sujeto: &lt;SUBJECT&gt;&lt;br/&gt;
+Este correo electronicó se envia en nombre de &lt;BEHALF_EMAIL&gt;</value>
+  </data>
+  <data name="ContactUs_aspx_Validator_RequiredBody.Message" xml:space="preserve">
+    <value>El campo Cuerpo es obligatorio. Ingrese información para enviar el correo electrónico</value>
+  </data>
+  <data name="ContactUs_aspx_Validator_RequiredFromEmail.Message" xml:space="preserve">
+    <value>Desde Correo Electrónico es un campo requerido. Ingrese información para enviar el mensaje.</value>
+  </data>
+  <data name="uxPageTitleResource1.ReportTitle" xml:space="preserve">
+    <value>Comuníquese con Nosotros</value>
+  </data>
+  <data name="uxBodyLabelResource1.Text" xml:space="preserve">
+    <value>Cuerpo:</value>
+  </data>
+  <data name="uxFromLabelResource1.Text" xml:space="preserve">
+    <value>Del correo:</value>
+  </data>
+  <data name="ContactUs_aspx_Validator_InvalidContactNumber.Message" xml:space="preserve">
+    <value>Invalid Contact Number format.</value>
+  </data>
+  <data name="ContactUs_aspx_Validator_RequiredBusinessName.Message" xml:space="preserve">
+    <value>El nombre de la empresa es un campo obligatorio. Ingrese los datos para enviar un correo electrónico.</value>
+  </data>
+  <data name="ContactUs_aspx_Validator_RequiredContactName.Message" xml:space="preserve">
+    <value>El nombre del contacto es un campo obligatorio. Ingrese los datos para enviar un correo electrónico.</value>
+  </data>
+  <data name="ContactUs_aspx_Validator_RequiredContactNumber.Message" xml:space="preserve">
+    <value>El número de contacto es un campo obligatorio. Ingrese los datos para enviar un correo electrónico.</value>
+  </data>
+  <data name="ContactUs_aspx_Validator_RequiredMIDorVT.Message" xml:space="preserve">
+    <value>El número de identificación del comerciante o terminal virtual es un campo obligatorio. Ingrese los datos para enviar un correo electrónico.</value>
+  </data>
+  <data name="ltBusinessName.Text" xml:space="preserve">
+    <value>Nombre de la empresa:</value>
+  </data>
+  <data name="ltContactName.Text" xml:space="preserve">
+    <value>Nombre de contacto:</value>
+  </data>
+  <data name="ltContactNumber.Text" xml:space="preserve">
+    <value>Número de teléfono de contacto:</value>
+  </data>
+  <data name="ltMIDorVT.Text" xml:space="preserve">
+    <value>N.º de identificación de comerciante o del terminal virtual:</value>
+  </data>
+  <data name="ContactUs_aspx_Validator_RequiredContactEmail.Message" xml:space="preserve">
+    <value>El correo electrónico de contacto es un campo obligatorio. Ingrese los datos para enviar un correo electrónico.</value>
+  </data>
+  <data name="ContactUs_aspx_Validator_RequiredDescofIssue.Message" xml:space="preserve">
+    <value>La mensaje es un campo obligatorio.  Ingrese los datos para enviar un correo electrónico.</value>
+  </data>
+  <data name="uxContactEmailLabel.Text" xml:space="preserve">
+    <value>Correo electrónico de contacto:</value>
+  </data>
+  <data name="uxDescForIssueLabel.Text" xml:space="preserve">
+    <value>Mensaje:</value>
+  </data>
+  <data name="ContactUs_aspx_Validator_RequiredMerchantID.Message" xml:space="preserve">
+    <value>ID de Comerciante es un campo obligatorio. Ingrese los datos para enviar un correo electrónico.</value>
+  </data>
+  <data name="ltEmailAddress.Text" xml:space="preserve">
+    <value>Dirección de Correo Electrónico:</value>
+  </data>
+  <data name="ltMerchantID.Text" xml:space="preserve">
+    <value>ID de Comerciante:</value>
+  </data>
+	<data name="ltMerchantIDorChain.Text" xml:space="preserve">
+    <value>Cuenta Comerciante # o Cadena #:</value>
+  </data>
+  <data name="RequiredFieldMessage" xml:space="preserve">
+    <value>{0} es un campo obligatorio. Ingrese los datos para enviar un correo electrónico.</value>
+  </data>
+</root>

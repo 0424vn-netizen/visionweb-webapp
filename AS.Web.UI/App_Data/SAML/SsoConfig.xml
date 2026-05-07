@@ -1,0 +1,15 @@
+﻿<?xml version="1.0"?>
+<sso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <client id="89" name="Total">
+    <setting certPath="~/App_Data/SAML/sso-testing.pfx" certPassword="password1" signResponse="false" signAssertion="true" encryptAssertion="false">
+      <add key="AuthnRequest.IdpUrl" value="http://localhost:20002/AS.Web.UI/freeaccess/spsimulator.aspx" />
+      <add key="AuthnRequest.RelayState" value="" />
+      <add key="AuthnRequest.NameIdPolicy.Format" value="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent" />
+      <add key="AuthnRequest.NameIdPolicy.SpNameQualifier" value="" />
+      <add key="AuthnRequest.NameIdPolicy.AllowCreate" value="1" />
+      <add key="AuthnRequest.Issuer.NameId" value="http://certifyIdentity.tmsoffice.com" />
+      <add key="AuthnRequest.AssertionConsumerServiceIndex" value="0" />
+      <add key="AuthnRequest.AttributeConsumingServiceIndex" value="0" />
+    </setting>
+  </client>
+</sso>

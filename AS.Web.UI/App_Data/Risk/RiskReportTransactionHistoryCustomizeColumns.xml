@@ -1,0 +1,28 @@
+<page>
+  <column Key="Work" ASFormat="DynamicString" IsDefault="true" OrderNo="340"/>
+  <column Key="Worked" ASFormat="Integer" IsDefault="true" OrderNo="335"/>
+  <column Key="ParametersWorked" ASFormat="Integer" IsDefault="true" OrderNo="230"/>
+  <column Key="Requeued" ASFormat="DynamicString" IsDefault="true" OrderNo="280"/>
+  <column Key="MerchantName" ASFormat="DynamicString" IsDefault="true" OrderNo="-1"/>
+  <column Key="ReportDate" ASFormat="Integer"  DefaultValue="N/A"  OrderNo="15" />
+  <column Key="TransDate" ASFormat="Percentage" DefaultValue="N/A"  OrderNo="20" />
+  <column Key="CardType" ASFormat="Integer" DefaultValue="N/A"  OrderNo="25" />
+  <column Key="CountryCode" ASFormat="Percentage" DefaultValue="N/A"  OrderNo="35" />
+  <column Key="CardNumber" ASFormat="Currency" DefaultValue="N/A" OrderNo="30" />
+  <column Key="BinNumber" ASFormat="Percentage"  DefaultValue="N/A" OrderNo="40" />
+  <column Key="DupeCount" ASFormat="Currency" DefaultValue="N/A"  OrderNo="45" />
+  <column Key="ExpirationDate" ASFormat="Integer" DefaultValue="N/A"  OrderNo="80" />
+  <column Key="TransType" ASFormat="Currency" OrderNo="85"/>
+  <column Key="Amount" ASFormat="Percentage" DefaultValue="N/A"  OrderNo="90" />
+  <column Key="MatchCode" ASFormat="Percentage" DefaultValue="N/A"  OrderNo="95" />
+  <column Key="ADF" ASFormat="Percentage" DefaultValue="N/A"  OrderNo="175" />
+  <column Key="ResponseCode" ASFormat="Currency" DefaultValue="N/A"  OrderNo="170" />
+  <column Key="AuthCode" ASFormat="Percentage0Digits"  CustomFormat="#,#0" OrderNo="180" />
+  <column Key="AVS" ASFormat="Currency" OrderNo="185" />
+  <column Key="CVV" ASFormat="Currency" OrderNo="210" />
+  <column Key="KeyedEntry" ASFormat="Currency" OrderNo="240" />
+  <column Key="EMVIndicator" ASFormat="Integer" DefaultValue="N/A"  OrderNo="245" />
+  <column Key="SettleType" ASFormat="Percentage" DefaultValue="N/A"  OrderNo="255" />
+  <column Key="FileSource" ASFormat="Percentage"  DefaultValue="N/A"  OrderNo="250" />
+  <column Key="TerminalNumber" ASFormat="Integer" DefaultValue="N/A"  OrderNo="260" />
+</page>

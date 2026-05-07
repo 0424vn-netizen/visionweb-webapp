@@ -1,0 +1,81 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <style type="text/css">
+        td {
+            border-style: solid;
+            border-width: thin;
+        }
+
+        tr.borderBottom td {
+            border-bottom-style: solid;
+            border-bottom-width: thin;
+        }
+
+        tr.borderTop td {
+            border-top-style: solid;
+            border-top-width: thin;
+        }
+    </style>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+</head>
+<body>
+    <table cellspacing="0" cellpadding="0" border="0">
+        <tr>
+            <th colspan="2" align="left">
+                [tpl_HierarchyInformation_htm_HierarchyInformation]
+            </th>
+        </tr>
+        <tr>
+            <td>
+                [tpl_HierarchyInformation_EMS_htm_ISO]
+            </td>
+            <td>
+                HI_ISO
+            </td>
+        </tr>
+        <tr>
+            <td>
+                [tpl_HierarchyInformation_htm_Agent]
+            </td>
+            <td>
+                HI_AGENT
+            </td>
+        </tr>
+        <tr class="borderBottom">
+            <td>
+                [tpl_HierarchyInformation_Paya_htm_Merchant]
+            </td>
+            <td>
+                HI_MERCHANT
+            </td>
+        </tr>
+
+        <tr class="borderBottom">
+            <td>
+                [tpl_HierarchyInformation_Paya_htm_Parent_Regional]
+            </td>
+            <td>
+                HI_PARENT_REGIONAL
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                [tpl_HierarchyInformation_FIS_htm_Chain]
+            </td>
+            <td>
+                HI_CHAIN
+            </td>
+        </tr>
+        <tr class="borderBottom">
+            <td>
+                [tpl_HierarchyInformation_Paya_htm_SecondaryChain]
+            </td>
+            <td>
+                HI_SECONDARYCHAIN
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

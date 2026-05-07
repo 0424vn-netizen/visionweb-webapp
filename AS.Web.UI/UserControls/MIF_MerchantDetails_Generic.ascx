@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="MIF_MerchantDetails_Generic.ascx.cs" Inherits="As.VisionWeb.Web.MerchantDetailsGenericControl" %>
+<div runat="server" id="merchantInfoDetail"></div>

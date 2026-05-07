@@ -1,0 +1,41 @@
+<page>
+  <column Key="Work" ASFormat="DynamicString" IsDefault="true" OrderNo="340"/>
+  <column Key="Worked" ASFormat="Integer" IsDefault="true" OrderNo="335"/>
+  <column Key="ParametersWorked" ASFormat="Integer" IsDefault="true" OrderNo="230"/>
+  <column Key="Requeued" ASFormat="DynamicString" IsDefault="true" OrderNo="280"/>
+  <column Key="MerchantName" ASFormat="DynamicString" IsDefault="true" OrderNo="-1"/>
+  <column Key="ACHRejects" ASFormat="Currency"  DefaultValue="N/A" OrderNo="5" />
+  <column Key="AuthCount" ASFormat="Integer"  DefaultValue="N/A"  OrderNo="15" />
+  <column Key="AuthApprovalPercent" ASFormat="Percentage" DefaultValue="N/A"  OrderNo="20" />
+  <column Key="DeclinedAuthorizationCount" ASFormat="Integer" DefaultValue="N/A"  OrderNo="25" />
+  <column Key="DeclinedAuthorizationCountPercent" ASFormat="Percentage" DefaultValue="N/A"  OrderNo="35" />
+  <column Key="DeclinedAuthorizationAmount" ASFormat="Currency" DefaultValue="N/A" OrderNo="30" />
+  <column Key="DeclinedAuthorizationAmountPercent" ASFormat="Percentage"  DefaultValue="N/A" OrderNo="40" />
+  <column Key="AVGTicket" ASFormat="Currency" DefaultValue="N/A"  OrderNo="45" />
+  <column Key="ChargeBackCount" ASFormat="Integer" DefaultValue="N/A"  OrderNo="80" />
+  <column Key="ChargeBackVolume" ASFormat="Currency" OrderNo="85"/>
+  <column Key="ChargeBackCountPercent" ASFormat="Percentage" DefaultValue="N/A"  OrderNo="90" />
+  <column Key="ChargeBackPercent" ASFormat="Percentage" DefaultValue="N/A"  OrderNo="95" />
+  <column Key="ForeignCardCountPercent" ASFormat="Percentage" DefaultValue="N/A"  OrderNo="175" />
+  <column Key="Foreign" ASFormat="Currency" DefaultValue="N/A"  OrderNo="170" />
+  <column Key="KeyedPercent" ASFormat="Percentage0Digits"  CustomFormat="#,#0" OrderNo="180" />
+  <column Key="LargeTrans" ASFormat="Currency" OrderNo="185" />
+  <column Key="Volume" ASFormat="Currency" OrderNo="210" />
+  <column Key="Retrievals" ASFormat="Currency" OrderNo="240" />
+  <column Key="FirstRetrievalCount" ASFormat="Integer" DefaultValue="N/A"  OrderNo="245" />
+  <column Key="RetrievalAmountPercent" ASFormat="Percentage" DefaultValue="N/A"  OrderNo="255" />
+  <column Key="RetrievalCountPercent" ASFormat="Percentage"  DefaultValue="N/A"  OrderNo="250" />
+  <column Key="ReturnCount" ASFormat="Integer" DefaultValue="N/A"  OrderNo="260" />
+  <column Key="ReturnCountPercent" ASFormat="Percentage" DefaultValue="N/A"  OrderNo="270" />
+  <column Key="Returns" ASFormat="Currency" DefaultValue="N/A"  OrderNo="265" />
+  <column Key="ReturnPercent" ASFormat="Percentage0Digits"  CustomFormat="#,#0" OrderNo="275" />
+  <column Key="SalesCount" ASFormat="Integer" DefaultValue="N/A"  OrderNo="295" />
+  <column Key="SaleAmount" ASFormat="Currency" DefaultValue="N/A" OrderNo="300" />
+  <column Key="PrepaidCardSalesPercent" ASFormat="Percentage" OrderNo="200" />
+  <column Key="FirstChargebackRDRCount" ASFormat="Integer" OrderNo="190" />
+  <column Key="FirstChargebackRDRAmount" ASFormat="Currency" OrderNo="190" />
+  <column Key="PostChargebackRDRCount" ASFormat="Integer" OrderNo="190" />
+  <column Key="PostChargebackRDRAmount" ASFormat="Integer" OrderNo="190" />
+	<column Key="PostChargebackRDRCountPercent" ASFormat="Percentage" OrderNo="190" />
+	<column Key="PostChargebackRDRAmountPercent" ASFormat="Percentage" OrderNo="190" />
+</page>

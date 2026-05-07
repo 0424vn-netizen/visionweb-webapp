@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{328ADF58-0B7C-4E2B-B474-D16FF5B1D320}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AS.VW.Api.Business</RootNamespace>
+    <AssemblyName>AS.VW.Api.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AS.Common">
+      <HintPath>..\Libraries\UpgradeDllForSonarIssues\AS.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper, Version=3.2.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper.Net4, Version=3.2.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\AutoMapper.Net4.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Services3">
+      <HintPath>..\..\3rdLibrary\Microsoft\Microsoft.Web.Services3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApiWebServices.cs" />
+    <Compile Include="EnumTypeConverter.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Repository\Interfaces\IChargebackRepository.cs" />
+    <Compile Include="Repository\Interfaces\IMerchantInformationRepository.cs" />
+    <Compile Include="Repository\Interfaces\IPaymentRepository.cs" />
+    <Compile Include="Repository\Interfaces\IRetrievalRepository.cs" />
+    <Compile Include="Repository\Interfaces\IReturnRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\Bases\AuthenticatedRepositoryBase.cs" />
+    <Compile Include="Repository\Interfaces\IAuthenticatedRepository.cs" />
+    <Compile Include="Repository\Interfaces\IAuthorizationRepository.cs" />
+    <Compile Include="Repository\Interfaces\IBatchRepository.cs" />
+    <Compile Include="Repository\Interfaces\ISecurityRepository.cs" />
+    <Compile Include="Repository\Interfaces\ITransactionRepository.cs" />
+    <Compile Include="Repository\Interfaces\IVoidsRejectRepository.cs" />
+    <Compile Include="Repository\Mock\MockSecurityRepository.cs" />
+    <Compile Include="Repository\Bases\ReportRepositoryBase.cs" />
+    <Compile Include="Repository\WebServices\WsChargebackRepository.cs" />
+    <Compile Include="Repository\WebServices\WsMerchantInfomationRepository.cs" />
+    <Compile Include="Repository\WebServices\WsAuthorizationRepository.cs" />
+    <Compile Include="Repository\WebServices\WsBatchRepository.cs" />
+    <Compile Include="Repository\WebServices\WsPaymentRepository.cs" />
+    <Compile Include="Repository\WebServices\WsRetrievalRepository.cs" />
+    <Compile Include="Repository\WebServices\WsReturnRepository.cs" />
+    <Compile Include="Repository\WebServices\WsSecurityRepository.cs" />
+    <Compile Include="Repository\WebServices\WsTransactionRepository.cs" />
+    <Compile Include="Repository\WebServices\WsVoidsRejectRepository.cs" />
+    <Compile Include="IServiceAdapter.cs" />
+    <Compile Include="Web References\vw_ApiServicesProxy\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\vw_ApiServicesProxy\ApiServices.wsdl" />
+    <None Include="Web References\vw_ApiServicesProxy\AuthorizationResult1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\vw_ApiServicesProxy\FilterParameter.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\vw_ApiServicesProxy\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\vw_ApiServicesProxy\ReportResponseOfAuthorizationDetail1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\vw_ApiServicesProxy\ReportResponseOfAuthorizationLogSummary1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\vw_ApiServicesProxy\ReportResponseOfBatchHierarchySummary1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\vw_ApiServicesProxy\ReportResponseOfBatchSummary1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\vw_ApiServicesProxy\ReportResponseOfCardSummary1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\vw_ApiServicesProxy\ReportResponseOfChargebackDetail1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\vw_ApiServicesProxy\ReportResponseOfChargebackHierarchySummary.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\vw_ApiServicesProxy\ReportResponseOfDepositDetail1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\vw_ApiServicesProxy\ReportResponseOfDepositHierarchySummary1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\vw_ApiServicesProxy\ReportResponseOfDepositSummary1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\vw_ApiServicesProxy\ReportResponseOfMerchantComment1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\vw_ApiServicesProxy\ReportResponseOfMerchantSummary1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\vw_ApiServicesProxy\ReportResponseOfRetrievalDetail1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\vw_ApiServicesProxy\ReportResponseOfRetrievalHierarchySummary.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\vw_ApiServicesProxy\ReportResponseOfReturnHierarchySummary1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\vw_ApiServicesProxy\ReportResponseOfReturnSummary1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\vw_ApiServicesProxy\ReportResponseOfTransactionDetail1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\vw_ApiServicesProxy\ReportResponseOfTransactionDetailBatch1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\vw_ApiServicesProxy\ReportResponseOfVoidRejectDetail1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\vw_ApiServicesProxy\ReportResponseOfVoidRejectHierarchySummary1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\vw_ApiServicesProxy\Voucher1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:20001/ApiServices.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\vw_ApiServicesProxy\</RelPath>
+      <UpdateFromURL>http://localhost:20001/ApiServices.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>AS_VW_Api_Business_vw_ApiServices_vw_ApiServices</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AS.VW.Api.Model\AS.VW.Api.Model.csproj">
+      <Project>{6e67138b-ad0e-4f74-8501-9c2a23a79128}</Project>
+      <Name>AS.VW.Api.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\vw_ApiServicesProxy\ApiServices.disco" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\AutoMapper.3.2.1\tools\AutoMapper.targets" Condition="Exists('..\packages\AutoMapper.3.2.1\tools\AutoMapper.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

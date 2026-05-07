@@ -1,0 +1,75 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageLogin.master.cs" Inherits="MasterPageLogin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head id="Head1" runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="Head" runat="server">
+    </asp:ContentPlaceHolder>
+   
+    <tek:RadCodeBlock ID="RadCodeBlock1" runat="server">
+        <link href="res/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+        <!--[if lt IE 9]>
+          <script src="res/js/bootstrap/html5shiv.js"></script>
+          <script src="res/js/bootstrap/respond.min.js"></script>
+        <![endif]-->
+        <script src="res/js/jquery/jquery-3.6.0.min.js" type="text/javascript"></script>
+        <script src="res/js/jquery/jquery-migrate-3.3.2.min.js" type="text/javascript"></script>
+        <script src="res/js/jquery/jquery.cookie.js" type="text/javascript"></script>
+        <script src="res/js/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+        <script src="res/js/common/common.js" type="text/javascript"></script>
+        <script src="res/js/common/sessiontimeout.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            var uxWindow_ClientID = '<%=uxWindow.ClientID %>'; 
+            window.logoutOpt = '<%= Request.Cookies.AllKeys.Contains("logout_opt") ? Request.Cookies["logout_opt"].Value : "0" %>';
+        </script>
+        <script src="<%=ResolveUrl("~") %>res/js/MasterPageLogin.js" type="text/javascript" defer="defer"></script>
+    </tek:RadCodeBlock>
+</head>
+<body id="uxBody" runat="server" class="body-login">
+    <form id="form1" runat="server">
+
+        <asp:ContentPlaceHolder ID="ContentPage" runat="server">
+        </asp:ContentPlaceHolder>
+        <div class="old-browser-warning-container hide">
+            <div class="old-browser-warning text-center">
+                <img src="../res/img/ic-warning-time-out.svg">
+                <h3 class="unsupportedBrowser">Your browser is not supported.</h3>
+                <button type="button" class="btn-close">&times;</button>
+                <p class="warning-text">
+                   Please use the latest version of <b>Edge, Chrome</b> and <b> Firefox</b> with a minimum screen resolution of 1280x1024 for the optimized experience.                            
+                </p>                             
+                <p>
+                   <img src="../res/img/EdgeLogo.png" class="icon-browser">
+                   <img src="../res/img/Chrome.png" class="icon-browser ml-20">
+                   <img src="../res/img/Firefox.png" class="icon-browser ml-20">                 
+                </p>  
+                <div class="mt-6x">
+                    <a style="cursor: pointer" onclick="closeUnsupportModal()">Continue to visit this website</a>
+                </div>
+            </div>        
+            <asp:HiddenField ID="uxHddDayLightSaving" runat="server" />
+            <asp:HiddenField ID="uxHddClientTimezone" runat="server" />
+        </div>
+        <asp:ScriptManager ID="ScriptManager1" runat="server" />
+        <tek:RadWindowManager Modal="true" runat="server" ID="uxWindow" VisibleStatusbar="false"
+            ReloadOnShow="true">
+            <Windows>
+                <tek:RadWindow ID="radForgetWindow" runat="server" AutoSize="true" />
+                <tek:RadWindow ID="radForceWindow" runat="server" AutoSize="true"  />
+                <tek:RadWindow ID="radPwdExpiredAlert" runat="server"  AutoSize="true" />
+                <tek:RadWindow ID="radForgotWndMsg" runat="server"  AutoSize="true" >
+                </tek:RadWindow>
+            </Windows>
+        </tek:RadWindowManager>
+        <tek:RadCodeBlock runat="server" ID="RadCodeBlock2">                
+            <script type="text/javascript">
+                var uxHddDayLightSaving_ClientID = '<%=uxHddDayLightSaving.ClientID %>'; 
+                var uxHddClientTimezone_ClientID = '<%=uxHddClientTimezone.ClientID %>';
+            </script>
+        </tek:RadCodeBlock>
+    </form>
+</body>
+</html>

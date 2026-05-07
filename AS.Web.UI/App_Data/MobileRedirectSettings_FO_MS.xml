@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MobileRedirectSetting baseMobileUrl="https://m.merchantintel.com/" systemApplied="2">
+  <Urls>
+    <Url clientId="29" name="orion" alias="orion" />
+    <Url clientId="89" name="total" alias="total" />
+    <Url clientId="49" name="tnbci" alias="tnbci" />
+    <Url clientId="1000" name="demo" alias="demo" />
+    <Url clientId="97" name="wrfc" alias="wrfc" />
+    <Url clientId="126" name="tsys" alias="tsys" />
+    <Url clientId="122" name="sfti" alias="sfti" />
+    <Url clientId="144" name="sphere" alias="sphere" />
+    <Url clientId="152" name="RS2" alias="RS2" />
+    <Url clientId="39" name="titanium" alias="titanium" />
+    <Url clientId="76" name="paya" alias="paya" />
+  </Urls>
+  <Redirects>
+    <Redirect agent="Mobile|iP(hone|od)|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune" active="true" />
+   <!--  <Redirect agent="window" active="true" /> -->
+  </Redirects>
+</MobileRedirectSetting>

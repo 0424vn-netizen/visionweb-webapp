@@ -1,0 +1,12 @@
+{
+  "SsoTrackingForClient": ["All"],
+  "IsDebug": true,
+  "IsLogRequest": true,
+  "OtherConfigs": [
+    {
+      "ClientId": 0,
+      "name": "RedirectingToUrl",
+      "value": ""
+    }
+  ]
+}

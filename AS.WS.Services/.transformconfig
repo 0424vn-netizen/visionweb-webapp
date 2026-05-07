@@ -1,0 +1,25 @@
+﻿ENVS:INT
+ENVS:VNQA
+ENVS:QA
+ENVS:UAT
+ENVS:STAG
+ENVS:PROD
+ENVS:FO
+
+TRANSFORM_FILE:web.config
+TRANSFORM_FILE:wse3Token.config
+TRANSFORM_FILE:App_Data\ConnStringSettings.xml
+TRANSFORM_FILE:App_Data\KeyConfig.xml
+TRANSFORM_FILE:App_Data\ClientExtendedSettings.xml
+
+//For windowservice 
+//TRANSFORM_FILE:App.config
+//TRANSFORM_FILE_REPLACE:App.config=>ConsoleApp1.dll.config
+
+//PUBLUSH_DIR => change to TRANFORM_PACKAGE_ORIGIN_PATH
+//TRANFORM_PACKAGE_ORIGIN_PATH: D:\Publish\VW\MT
+
+//TRANSFORM_ENV:VNQA
+
+// = true for web legacy only
+LEGACY_WEB:true

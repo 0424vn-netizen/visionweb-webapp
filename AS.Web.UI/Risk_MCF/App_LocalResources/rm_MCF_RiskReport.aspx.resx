@@ -1,0 +1,890 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ASGridBoundColumnResource1.HeaderText" xml:space="preserve">
+    <value>Month</value>
+  </data>
+  <data name="ASGridBoundColumnResource1.HeaderTooltip" xml:space="preserve">
+    <value>Month</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ASGridBoundColumnResource1.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource10.HeaderText" xml:space="preserve">
+    <value># CB</value>
+  </data>
+  <data name="ASGridBoundColumnResource10.HeaderTooltip" xml:space="preserve">
+    <value>Chargebacks Count</value>
+  </data>
+  <data name="ASGridBoundColumnResource10.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource11.HeaderText" xml:space="preserve">
+    <value>CB % (#)</value>
+  </data>
+  <data name="ASGridBoundColumnResource11.HeaderTooltip" xml:space="preserve">
+    <value>Chargebacks Count Percentage</value>
+  </data>
+  <data name="ASGridBoundColumnResource11.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource12.HeaderText" xml:space="preserve">
+    <value>Ttl CB ($)</value>
+  </data>
+  <data name="ASGridBoundColumnResource12.HeaderTooltip" xml:space="preserve">
+    <value>Chargebacks Amount</value>
+  </data>
+  <data name="ASGridBoundColumnResource12.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource13.HeaderText" xml:space="preserve">
+    <value>CB % ($)</value>
+  </data>
+  <data name="ASGridBoundColumnResource13.HeaderTooltip" xml:space="preserve">
+    <value>Chargebacks Amount Percentage</value>
+  </data>
+  <data name="ASGridBoundColumnResource13.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource14.HeaderText" xml:space="preserve">
+    <value>Avg CB</value>
+  </data>
+  <data name="ASGridBoundColumnResource14.HeaderTooltip" xml:space="preserve">
+    <value>Average Chargebacks</value>
+  </data>
+  <data name="ASGridBoundColumnResource14.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource15.HeaderText" xml:space="preserve">
+    <value>FC % (#)</value>
+  </data>
+  <data name="ASGridBoundColumnResource15.HeaderTooltip" xml:space="preserve">
+    <value>Foreign Card Count Percentage</value>
+  </data>
+  <data name="ASGridBoundColumnResource15.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource16.HeaderText" xml:space="preserve">
+    <value>FC % ($)</value>
+  </data>
+  <data name="ASGridBoundColumnResource16.HeaderTooltip" xml:space="preserve">
+    <value>Foreign Card Amount Percentage</value>
+  </data>
+  <data name="ASGridBoundColumnResource16.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource17.HeaderText" xml:space="preserve">
+    <value>Month</value>
+  </data>
+  <data name="ASGridBoundColumnResource17.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource18.HeaderText" xml:space="preserve">
+    <value># Swiped</value>
+  </data>
+  <data name="ASGridBoundColumnResource18.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource19.HeaderText" xml:space="preserve">
+    <value>% Swiped</value>
+  </data>
+  <data name="ASGridBoundColumnResource19.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource2.HeaderText" xml:space="preserve">
+    <value># Sales</value>
+  </data>
+  <data name="ASGridBoundColumnResource2.HeaderTooltip" xml:space="preserve">
+    <value>Sales Count</value>
+  </data>
+  <data name="ASGridBoundColumnResource2.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource20.HeaderText" xml:space="preserve">
+    <value>$ Swiped</value>
+  </data>
+  <data name="ASGridBoundColumnResource20.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource21.HeaderText" xml:space="preserve">
+    <value>% Swiped ($)</value>
+  </data>
+  <data name="ASGridBoundColumnResource21.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource22.HeaderText" xml:space="preserve">
+    <value># Keyed</value>
+  </data>
+  <data name="ASGridBoundColumnResource22.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource23.HeaderText" xml:space="preserve">
+    <value>% Keyed</value>
+  </data>
+  <data name="ASGridBoundColumnResource23.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource24.HeaderText" xml:space="preserve">
+    <value>$ Keyed</value>
+  </data>
+  <data name="ASGridBoundColumnResource24.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource25.HeaderText" xml:space="preserve">
+    <value>% Keyed ($)</value>
+  </data>
+  <data name="ASGridBoundColumnResource25.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource26.HeaderText" xml:space="preserve">
+    <value>Month</value>
+  </data>
+  <data name="ASGridBoundColumnResource26.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource27.HeaderText" xml:space="preserve">
+    <value># Total Auth</value>
+  </data>
+  <data name="ASGridBoundColumnResource27.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource28.HeaderText" xml:space="preserve">
+    <value>$ Total Auth</value>
+  </data>
+  <data name="ASGridBoundColumnResource28.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource29.HeaderText" xml:space="preserve">
+    <value># Appr</value>
+  </data>
+  <data name="ASGridBoundColumnResource29.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource3.HeaderText" xml:space="preserve">
+    <value>Ttl Sales</value>
+  </data>
+  <data name="ASGridBoundColumnResource3.HeaderTooltip" xml:space="preserve">
+    <value>Total Sales</value>
+  </data>
+  <data name="ASGridBoundColumnResource3.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource30.HeaderText" xml:space="preserve">
+    <value>% Appr(#)</value>
+  </data>
+  <data name="ASGridBoundColumnResource30.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource31.HeaderText" xml:space="preserve">
+    <value>$ Appr</value>
+  </data>
+  <data name="ASGridBoundColumnResource31.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource32.HeaderText" xml:space="preserve">
+    <value>% Appr ($)</value>
+  </data>
+  <data name="ASGridBoundColumnResource32.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource33.HeaderText" xml:space="preserve">
+    <value># Decl</value>
+  </data>
+  <data name="ASGridBoundColumnResource33.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource34.HeaderText" xml:space="preserve">
+    <value>% Decl (#)</value>
+  </data>
+  <data name="ASGridBoundColumnResource34.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource35.HeaderText" xml:space="preserve">
+    <value>$ Decl</value>
+  </data>
+  <data name="ASGridBoundColumnResource35.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource36.HeaderText" xml:space="preserve">
+    <value>% Decl ($)</value>
+  </data>
+  <data name="ASGridBoundColumnResource36.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource37.HeaderText" xml:space="preserve">
+    <value>Report Date</value>
+  </data>
+  <data name="ASGridBoundColumnResource37.HeaderTooltip" xml:space="preserve">
+    <value>Report Date</value>
+  </data>
+  <data name="ASGridBoundColumnResource37.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource38.HeaderText" xml:space="preserve">
+    <value>Terminal #</value>
+  </data>
+  <data name="ASGridBoundColumnResource38.HeaderTooltip" xml:space="preserve">
+    <value>Termial Number</value>
+  </data>
+  <data name="ASGridBoundColumnResource38.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource39.HeaderText" xml:space="preserve">
+    <value>Source</value>
+  </data>
+  <data name="ASGridBoundColumnResource39.HeaderTooltip" xml:space="preserve">
+    <value>File Source</value>
+  </data>
+  <data name="ASGridBoundColumnResource39.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource4.HeaderText" xml:space="preserve">
+    <value>Avg Sales</value>
+  </data>
+  <data name="ASGridBoundColumnResource4.HeaderTooltip" xml:space="preserve">
+    <value>Average Sales</value>
+  </data>
+  <data name="ASGridBoundColumnResource4.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource40.HeaderText" xml:space="preserve">
+    <value>Batch #</value>
+  </data>
+  <data name="ASGridBoundColumnResource40.HeaderTooltip" xml:space="preserve">
+    <value>Batch Number</value>
+  </data>
+  <data name="ASGridBoundColumnResource40.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource41.HeaderText" xml:space="preserve">
+    <value># Trans</value>
+  </data>
+  <data name="ASGridBoundColumnResource41.HeaderTooltip" xml:space="preserve">
+    <value>Transaction Count</value>
+  </data>
+  <data name="ASGridBoundColumnResource41.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource42.HeaderText" xml:space="preserve">
+    <value># Keyed</value>
+  </data>
+  <data name="ASGridBoundColumnResource42.HeaderTooltip" xml:space="preserve">
+    <value>Keyed Entry Count</value>
+  </data>
+  <data name="ASGridBoundColumnResource42.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource43.HeaderText" xml:space="preserve">
+    <value>Sales</value>
+  </data>
+  <data name="ASGridBoundColumnResource43.HeaderTooltip" xml:space="preserve">
+    <value>Settled Sales</value>
+  </data>
+  <data name="ASGridBoundColumnResource43.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource44.HeaderText" xml:space="preserve">
+    <value>Returns</value>
+  </data>
+  <data name="ASGridBoundColumnResource44.HeaderTooltip" xml:space="preserve">
+    <value>Settled Returns</value>
+  </data>
+  <data name="ASGridBoundColumnResource44.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource45.HeaderText" xml:space="preserve">
+    <value>Net</value>
+  </data>
+  <data name="ASGridBoundColumnResource45.HeaderTooltip" xml:space="preserve">
+    <value>Settled Net</value>
+  </data>
+  <data name="ASGridBoundColumnResource45.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource46.HeaderText" xml:space="preserve">
+    <value>Sales</value>
+  </data>
+  <data name="ASGridBoundColumnResource46.HeaderTooltip" xml:space="preserve">
+    <value>Non-Settled Sales</value>
+  </data>
+  <data name="ASGridBoundColumnResource46.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource47.HeaderText" xml:space="preserve">
+    <value>Returns</value>
+  </data>
+  <data name="ASGridBoundColumnResource47.HeaderTooltip" xml:space="preserve">
+    <value>Non-Settled Returns</value>
+  </data>
+  <data name="ASGridBoundColumnResource47.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource48.HeaderText" xml:space="preserve">
+    <value>Net</value>
+  </data>
+  <data name="ASGridBoundColumnResource48.HeaderTooltip" xml:space="preserve">
+    <value>Non-Settled Net</value>
+  </data>
+  <data name="ASGridBoundColumnResource48.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource49.HeaderText" xml:space="preserve">
+    <value>Sales</value>
+  </data>
+  <data name="ASGridBoundColumnResource49.HeaderTooltip" xml:space="preserve">
+    <value>Total Sales</value>
+  </data>
+  <data name="ASGridBoundColumnResource49.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource5.HeaderText" xml:space="preserve">
+    <value># Rtrns</value>
+  </data>
+  <data name="ASGridBoundColumnResource5.HeaderTooltip" xml:space="preserve">
+    <value>Returns Count</value>
+  </data>
+  <data name="ASGridBoundColumnResource5.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource50.HeaderText" xml:space="preserve">
+    <value>Returns</value>
+  </data>
+  <data name="ASGridBoundColumnResource50.HeaderTooltip" xml:space="preserve">
+    <value>Total Returns</value>
+  </data>
+  <data name="ASGridBoundColumnResource50.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource51.HeaderText" xml:space="preserve">
+    <value>Net</value>
+  </data>
+  <data name="ASGridBoundColumnResource51.HeaderTooltip" xml:space="preserve">
+    <value>Total Net</value>
+  </data>
+  <data name="ASGridBoundColumnResource51.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource52.HeaderText" xml:space="preserve">
+    <value>Tkt</value>
+  </data>
+  <data name="ASGridBoundColumnResource52.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource53.HeaderText" xml:space="preserve">
+    <value>Open Date</value>
+  </data>
+  <data name="ASGridBoundColumnResource53.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource54.HeaderText" xml:space="preserve">
+    <value>Assigned To</value>
+  </data>
+  <data name="ASGridBoundColumnResource54.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource55.HeaderText" xml:space="preserve">
+    <value>Follow Up Date</value>
+  </data>
+  <data name="ASGridBoundColumnResource55.HeaderTooltip" xml:space="preserve">
+    <value>Follow Up Date</value>
+  </data>
+  <data name="ASGridBoundColumnResource55.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource56.HeaderText" xml:space="preserve">
+    <value>Closed</value>
+  </data>
+  <data name="ASGridBoundColumnResource56.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource57.HeaderText" xml:space="preserve">
+    <value>Changed Date</value>
+  </data>
+  <data name="ASGridBoundColumnResource57.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource58.HeaderText" xml:space="preserve">
+    <value>Changed By</value>
+  </data>
+  <data name="ASGridBoundColumnResource58.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource59.HeaderText" xml:space="preserve">
+    <value>Reason</value>
+  </data>
+  <data name="ASGridBoundColumnResource59.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource6.HeaderText" xml:space="preserve">
+    <value>Rtrn % (#)</value>
+  </data>
+  <data name="ASGridBoundColumnResource6.HeaderTooltip" xml:space="preserve">
+    <value>Returns Count Percentage</value>
+  </data>
+  <data name="ASGridBoundColumnResource6.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource60.HeaderText" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="ASGridBoundColumnResource60.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource61.HeaderText" xml:space="preserve">
+    <value>Resolution</value>
+  </data>
+  <data name="ASGridBoundColumnResource61.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource62.HeaderText" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="ASGridBoundColumnResource62.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource63.HeaderText" xml:space="preserve">
+    <value>Date/Time</value>
+  </data>
+  <data name="ASGridBoundColumnResource63.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource64.HeaderText" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="ASGridBoundColumnResource64.HeaderTooltip" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="ASGridBoundColumnResource64.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource65.HeaderText" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="ASGridBoundColumnResource65.HeaderTooltip" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="ASGridBoundColumnResource65.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource66.HeaderText" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="ASGridBoundColumnResource66.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource7.HeaderText" xml:space="preserve">
+    <value>Ttl Rtrn</value>
+  </data>
+  <data name="ASGridBoundColumnResource7.HeaderTooltip" xml:space="preserve">
+    <value>Total Returns</value>
+  </data>
+  <data name="ASGridBoundColumnResource7.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource8.HeaderText" xml:space="preserve">
+    <value>Rtrn % ($)</value>
+  </data>
+  <data name="ASGridBoundColumnResource8.HeaderTooltip" xml:space="preserve">
+    <value>Returns Amount Percentage</value>
+  </data>
+  <data name="ASGridBoundColumnResource8.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ASGridBoundColumnResource9.HeaderText" xml:space="preserve">
+    <value>Avg Rtrns</value>
+  </data>
+  <data name="ASGridBoundColumnResource9.HeaderTooltip" xml:space="preserve">
+    <value>Average Returns</value>
+  </data>
+  <data name="ASGridBoundColumnResource9.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="GridHTMLEditorColumnResource1.HeaderText" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="GridHTMLEditorColumnResource1.HeaderTooltip" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="GridHTMLEditorColumnResource1.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="Literal10Resource1.Text" xml:space="preserve">
+    <value>Status:</value>
+  </data>
+  <data name="Literal11Resource1.Text" xml:space="preserve">
+    <value>Assigned To:</value>
+  </data>
+  <data name="Literal14Resource1.Text" xml:space="preserve">
+    <value>Risk Comments</value>
+  </data>
+  <data name="Literal1Resource1.Text" xml:space="preserve">
+    <value>Merchant ID</value>
+  </data>
+  <data name="Literal2Resource1.Text" xml:space="preserve">
+    <value>FILTER</value>
+  </data>
+  <data name="Literal3Resource1.Text" xml:space="preserve">
+    <value>Merchant Information: #</value>
+  </data>
+  <data name="Literal4Resource1.Text" xml:space="preserve">
+    <value>Merchant ID</value>
+  </data>
+  <data name="Literal5Resource1.Text" xml:space="preserve">
+    <value>Risk Management</value>
+  </data>
+  <data name="Literal6Resource1.Text" xml:space="preserve">
+    <value>Add Investigation</value>
+  </data>
+  <data name="Literal9Resource1.Text" xml:space="preserve">
+    <value>Reason:</value>
+  </data>
+  <data name="ltMerchantNameResource1.Text" xml:space="preserve">
+    <value>Merchant Name or Merchant ID</value>
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>Risk Report</value>
+  </data>
+  <data name="uxAuthorizationDataGridResource1.HierarchySettings.CollapseTooltip" xml:space="preserve">
+    <value>Collapse</value>
+  </data>
+  <data name="uxAuthorizationDataGridResource1.HierarchySettings.ExpandTooltip" xml:space="preserve">
+    <value>Expand</value>
+  </data>
+  <data name="uxAuthorizationDataGridResource1.MasterTableView.NoDetailRecordsText" xml:space="preserve">
+    <value>No data found.</value>
+  </data>
+  <data name="uxAuthorizationDataGridResource1.MasterTableView.NoMasterRecordsText" xml:space="preserve">
+    <value>No data found.</value>
+  </data>
+  <data name="uxInvestigateResource1.Text" xml:space="preserve">
+    <value>Investigate</value>
+  </data>
+  <data name="uxNewRiskCommentLinkResource1.Text" xml:space="preserve">
+    <value>New Comment</value>
+  </data>
+  <data name="uxRiskNotesResource1.Text" xml:space="preserve">
+    <value>MCPS Risk Notes</value>
+  </data>
+  <data name="uxSearchButtonResource1.Text" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="rm_RiskReport_aspx_cs_FollowUpDate" xml:space="preserve">
+    <value>Follow Up Date can only be a current or a future date.</value>
+  </data>
+  <data name="rm_RiskReport_aspx_cs_SaveInvestigation" xml:space="preserve">
+    <value>Save Investigation</value>
+  </data>
+  <data name="rm_RiskReport_js_CommentNotExceed1000" xml:space="preserve">
+    <value>Comment: This field must not exceed 1000 characters.</value>
+  </data>
+  <data name="rm_RiskReport_js_FollowUpDateFormat" xml:space="preserve">
+    <value>Follow Up Date has to be in a valid format : mm/dd/yyyy</value>
+  </data>
+  <data name="rm_RiskReport_js_FollowUpDateNotPast" xml:space="preserve">
+    <value>Follow Up Date can only be a current or a future date.</value>
+  </data>
+  <data name="rm_RiskReport_js_GridHeaderBC" xml:space="preserve">
+    <value>*** SETTLED ***</value>
+  </data>
+  <data name="rm_RiskReport_js_GridHeaderBS" xml:space="preserve">
+    <value>Batch Summary</value>
+  </data>
+  <data name="rm_RiskReport_js_GridHeaderNBC" xml:space="preserve">
+    <value>*** NON-SETTLED ***</value>
+  </data>
+  <data name="rm_RiskReport_js_GridHeaderToTal" xml:space="preserve">
+    <value>*** TOTAL ***</value>
+  </data>
+  <data name="rm_RiskReport_js_MustSelectAssignedTo" xml:space="preserve">
+    <value>You must select an Assigned To.</value>
+  </data>
+  <data name="rm_RiskReport_js_MustSelectReason" xml:space="preserve">
+    <value>You must select a Reason.</value>
+  </data>
+  <data name="rm_RiskReport_js_MustSelectResolution" xml:space="preserve">
+    <value>You must select a Resolution when closing an investigation.</value>
+  </data>
+  <data name="rm_RiskReport_js_MustSelectStatus" xml:space="preserve">
+    <value>You must select a Status.</value>
+  </data>
+  <data name="uxExportAuthorizationResourcekey1.FileName" xml:space="preserve">
+    <value>Risk Management - Merchant Information - Risk Report - Authorization Data</value>
+  </data>
+  <data name="uxExportAuthorizationResourcekey1.GridHeader" xml:space="preserve">
+    <value>Authorization Data</value>
+  </data>
+  <data name="uxExportBatchHistoryResourcekey1.FileName" xml:space="preserve">
+    <value>Risk Management - Merchant Information - Risk Report - Batch History</value>
+  </data>
+  <data name="uxExportBatchHistoryResourcekey1.GridHeader" xml:space="preserve">
+    <value>Batch History</value>
+  </data>
+  <data name="uxExportEscHistoryResource1.FileName" xml:space="preserve">
+    <value>Risk Management - Merchant Information - Risk Report - Investigation Comments</value>
+  </data>
+  <data name="uxExportEscHistoryResource1.GridHeader" xml:space="preserve">
+    <value>Investigation Comments</value>
+  </data>
+  <data name="uxExportEscHistoryResource1.GridTitle" xml:space="preserve">
+    <value>Investigation Comments</value>
+  </data>
+  <data name="uxExportSalesResourcekey1.FileName" xml:space="preserve">
+    <value>Risk Management - Merchant Information - Risk Report - Sales Data</value>
+  </data>
+  <data name="uxExportSalesResourcekey1.GridHeader" xml:space="preserve">
+    <value>Sales Data</value>
+  </data>
+  <data name="uxExportSwipeKeyRateResourcekey1.FileName" xml:space="preserve">
+    <value>Risk Management - Merchant Information - Risk Report - Swipe - Key Rate Data</value>
+  </data>
+  <data name="uxExportSwipeKeyRateResourcekey1.GridHeader" xml:space="preserve">
+    <value>Swipe - Key Rate Data</value>
+  </data>
+  <data name="uxRiskCommentsExportResource1.FileName" xml:space="preserve">
+    <value>Risk Management - Merchant Information - Risk Report - Risk Comments</value>
+  </data>
+  <data name="Literal12Resource1.Text" xml:space="preserve">
+    <value>Follow Up Date:</value>
+    <comment>n</comment>
+  </data>
+  <data name="uxPageTitleResource1.ReportTitle" xml:space="preserve">
+    <value>Risk Report</value>
+  </data>
+  <data name="Literal7.Text" xml:space="preserve">
+    <value>Date Investigation Started:</value>
+  </data>
+  <data name="Literal8.Text" xml:space="preserve">
+    <value>Close Investigation:</value>
+  </data>
+  <data name="ResolutionResource1.Text" xml:space="preserve">
+    <value>Resolution:</value>
+  </data>
+  <data name="uxMerchantListResource1.EmptyMessage" xml:space="preserve">
+    <value>enter at least 3 digits of the merchant name or merchant ID</value>
+  </data>
+  <data name="uxBatchHistoryGridResource1.MasterTableView.NoDetailRecordsText" xml:space="preserve">
+    <value>No results found. Adjust your filtering criteria.</value>
+  </data>
+  <data name="uxBatchHistoryGridResource1.MasterTableView.NoMasterRecordsText" xml:space="preserve">
+    <value>No results found. Adjust your filtering criteria.</value>
+  </data>
+  <data name="uxEscHistoryGridResource1.MasterTableView.NoDetailRecordsText" xml:space="preserve">
+    <value>No data found.</value>
+  </data>
+  <data name="uxEscHistoryGridResource1.MasterTableView.NoMasterRecordsText" xml:space="preserve">
+    <value>No data found.</value>
+  </data>
+  <data name="uxRiskCommentsResource1.MasterTableView.NoDetailRecordsText" xml:space="preserve">
+    <value>No data found.</value>
+  </data>
+  <data name="uxRiskCommentsResource1.MasterTableView.NoMasterRecordsText" xml:space="preserve">
+    <value>No data found.</value>
+  </data>
+  <data name="uxSalesDataGridResource1.MasterTableView.NoDetailRecordsText" xml:space="preserve">
+    <value>No data found.</value>
+  </data>
+  <data name="uxSalesDataGridResource1.MasterTableView.NoMasterRecordsText" xml:space="preserve">
+    <value>No data found.</value>
+  </data>
+  <data name="uxSwipeKeyRateDataGridResource1.MasterTableView.NoDetailRecordsText" xml:space="preserve">
+    <value>No data found.</value>
+  </data>
+  <data name="uxSwipeKeyRateDataGridResource1.MasterTableView.NoMasterRecordsText" xml:space="preserve">
+    <value>No data found.</value>
+  </data>
+  <data name="ASGridBoundColumnSavingsLossAmt.HeaderText" xml:space="preserve">
+    <value>Savings/Loss</value>
+    <comment>31486</comment>
+  </data>
+  <data name="ASGridBoundColumnSavingsLossAmt.HeaderToolTip" xml:space="preserve">
+    <value>Savings/Loss</value>
+    <comment>31486</comment>
+  </data>
+  <data name="GainLossResource1.Text" xml:space="preserve">
+    <value>Saving/Loss:</value>
+    <comment>31486</comment>
+  </data>
+  <data name="Literal15Resource1.Text" xml:space="preserve">
+    <value>Transaction Volume Analysis</value>
+  </data>
+  <data name="Literal7Resource1.Text" xml:space="preserve">
+    <value>Batch History</value>
+  </data>
+  <data name="uxInvestigationAnchorResource1.Text" xml:space="preserve">
+    <value>Investigation</value>
+  </data>
+  <data name="uxRiskCommentAnchorResource1.Text" xml:space="preserve">
+    <value>Risk Comments</value>
+  </data>
+  <data name="LiteralDaysResource1.Text" xml:space="preserve">
+    <value>Days:</value>
+  </data>
+  <data name="Literal16Resource1.Text" xml:space="preserve">
+    <value>Investigation Comments</value>
+  </data>
+  <data name="rm_RiskReport_js_TextNotAllowed" xml:space="preserve">
+    <value>Special characters are not allowed in this field.</value>
+  </data>
+  <data name="rm_RiskReport_js_ValidationSpecialCharacter" xml:space="preserve">
+    <value>Merchant Name must not include the following special characters:  &lt; , &gt; or &amp;#.</value>
+  </data>
+  <data name="uxBatchHistoryGridResource1.GridName" xml:space="preserve">
+    <value>Risk Management - Merchant Information - Risk Report - Batch History</value>
+  </data>
+  <data name="ASGridBoundColumnResourceUserID.HeaderText" xml:space="preserve">
+    <value>User ID</value>
+  </data>
+  <data name="ASGridBoundColumnResourceUserID.HeaderTooltip" xml:space="preserve">
+    <value>User ID</value>
+  </data>
+  <data name="uxCaseHistoryAnchorResource1.Text" xml:space="preserve">
+    <value>Case History</value>
+  </data>
+  <data name="SecurityReportResource.Text" xml:space="preserve">
+    <value>Security Report</value>
+  </data>
+  <data name="MerchantProfileResource.Text" xml:space="preserve">
+    <value>Merchant Profile</value>
+  </data>
+  <data name="uxAddNoteAnchorResource1.Text" xml:space="preserve">
+    <value>Add Note</value>
+  </data>
+  <data name="uxMerchantNoteAnchorResource1.Text" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="uxInvalidFormatMerchantID.Text" xml:space="preserve">
+    <value>Invalid format. Only numeric characters (0-9), alpha characters (a-z, A-Z), and/or the symbol (-) are allowed in this field.</value>
+  </data>
+  <data name="uxbtnOpenNewCaseResourceKey.Text" xml:space="preserve">
+    <value>Open New Case</value>
+  </data>
+  <data name="AddNote_js_Characters" xml:space="preserve">
+    <value>Characters</value>
+  </data>
+  <data name="AddNote_js_msg1" xml:space="preserve">
+    <value>You are not able to type more than</value>
+  </data>
+  <data name="AddNote_js_Required" xml:space="preserve">
+    <value>Comment: This is a required field.</value>
+  </data>
+  <data name="uxReportTitleResource1.Text" xml:space="preserve">
+    <value>Risk Report</value>
+  </data>
+</root>

@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<intruders>
+
+  <page name="login.aspx">
+    <controls>
+      <!--<item name="txtUserName" type="System.String" minLength="0" maxLength="50" regExp="[0-9a-zA-Z-_]{0,50}"/>-->
+      <item name="txtUserName" type="System.String" minLength="0" maxLength="50"/>
+      <item name="txtPassword" type="System.String" minLength="0" maxLength="50"/>
+    </controls>
+  </page>
+
+  <page name="sitejump.aspx">
+    <controls>
+      <item name="uxUserID" type="System.String" minLength="0" maxLength="50" regExp="[0-9a-zA-Z-_]{0,50}"/>
+    </controls>
+  </page>
+
+  <page name="rm_groupmaintenance.aspx">
+    <controls>
+      <item name="uxAddGroupText" type="System.String" minLength="0" maxLength="50" />
+      <item name="uxAddDescription" type="System.String" minLength="0" maxLength="500"/>
+      <item name="uxGroupText" type="System.String" minLength="0" maxLength="50" />
+      <item name="uxDescription" type="System.String" minLength="0" maxLength="500" />
+    </controls>
+  </page>
+
+  <page name="rm_escalationmaintenance.aspx">
+    <controls>
+      <item name="uxAddEscalationText" type="System.String" minLength="0" maxLength="100" />
+      <item name="uxEscalationText" type="System.String" minLength="0" maxLength="100" />
+    </controls>
+  </page>
+
+  <page name="rm_resolutionmaintenance.aspx">
+    <controls>
+      <item name="uxAddResolutionText" type="System.String" minLength="0" maxLength="100" />
+      <item name="uxResolutionText" type="System.String" minLength="0" maxLength="100" />
+    </controls>
+  </page>
+
+  <page name="rm_mcf_groupmaintenance.aspx">
+    <controls>
+      <item name="uxAddGroupText" type="System.String" minLength="0" maxLength="50" />
+      <item name="uxAddDescription" type="System.String" minLength="0" maxLength="500"/>
+      <item name="uxGroupText" type="System.String" minLength="0" maxLength="50" />
+      <item name="uxDescription" type="System.String" minLength="0" maxLength="500" />
+    </controls>
+  </page>
+
+  <page name="rm_mcf_escalationmaintenance.aspx">
+    <controls>
+      <item name="uxAddEscalationText" type="System.String" minLength="0" maxLength="100" />
+      <item name="uxEscalationText" type="System.String" minLength="0" maxLength="100" />
+    </controls>
+  </page>
+
+  <page name="rm_mcf_resolutionmaintenance.aspx">
+    <controls>
+      <item name="uxAddResolutionText" type="System.String" minLength="0" maxLength="100" />
+      <item name="uxResolutionText" type="System.String" minLength="0" maxLength="100" />
+    </controls>
+  </page>
+
+
+  <!-- End Manage Users-->
+
+  <!-- Manage Roles-->
+  <page name="createrole_modal.aspx">
+    <controls>
+      <usercontrols>
+        <uc name="uxManageRole" type="managerole.ascx"/>
+      </usercontrols>
+    </controls>
+  </page>
+
+  <page name="editrole_modal.aspx">
+    <controls>
+      <usercontrols>
+        <uc name="uxManageRole" type="managerole.ascx"/>
+      </usercontrols>
+    </controls>
+  </page>
+
+  <usercontrol type="managerole.ascx">
+    <item name="uxRoleName" type="System.String" minLength="2" maxLength="100" allowEmpty="false" />
+    <item name="uxRoleDes" type="System.String" minLength="2" maxLength="300" allowEmpty="false" />
+  </usercontrol>
+
+  <!-- End Manage Roles-->
+
+  <!-- Manage MS Roles-->
+  <page name="CreateMSRole_Modal.aspx">
+    <controls>
+      <usercontrols>
+        <uc name="uxManageMSRole" type="ManageMSRole.ascx"/>
+      </usercontrols>
+    </controls>
+  </page>
+
+  <page name="EditMSRole_Modal.aspx">
+    <controls>
+      <usercontrols>
+        <uc name="uxManageMSRole" type="ManageMSRole.ascx"/>
+      </usercontrols>
+    </controls>
+  </page>
+
+  <usercontrol type="uxManageMSRole.ascx">
+    <item name="uxRoleName" type="System.String" minLength="2" maxLength="100" allowEmpty="false" />
+    <item name="uxRoleDes" type="System.String" minLength="2" maxLength="300" allowEmpty="false" />
+  </usercontrol>
+
+  <!-- End Manage MS Roles-->
+
+
+  <!--Manage Profile -->
+  <page name="manageprofile.aspx">
+    <controls>
+      <usercontrols>
+        <uc name="uxUpdateProfile" type="userprofile.ascx"/>
+      </usercontrols>
+    </controls>
+  </page>
+  <usercontrol type="userprofile.ascx">
+    <item name="uxUserName" type="System.String" minLength="0" maxLength="255" allowEmpty="true" />
+    <item name="uxFirstName" type="System.String" minLength="2" maxLength="50" allowEmpty="false" />
+    <item name="uxLastName" type="System.String" minLength="2" maxLength="50" allowEmpty="false" />
+    <item name="uxEmail" type="System.String" minLength="0" maxLength="200" allowEmpty="true" regExp="\w+([-+.']+\w+)*@\w+([-.]+\w+)*\.\w+([-.]\w+)*"/>
+    <item name="uxOldPass" type="System.String" minLength="0" maxLength="50" allowEmpty="true" />
+    <item name="uxPassword" type="System.String" minLength="8" maxLength="50" allowEmpty="true" regExp="[^&lt;&gt;]{8,50}"/>
+    <item name="uxConfirmPass" type="System.String" minLength="8" maxLength="50" allowEmpty="true" regExp="[^&lt;&gt;]{8,50}"/>
+    <item name="uxAnswer" type="System.String" minLength="0" maxLength="50" allowEmpty="true" />
+  </usercontrol>
+  <!--End Manage Profile -->
+
+  <!--Contact us-->
+  <page name="contactus.aspx">
+    <controls>
+      <item name="uxTo" type="System.String" minLength="1" maxLength="200" allowEmpty="false"/>
+      <item name="uxFrom" type="System.String" minLength="1" maxLength="250" allowEmpty="false" regExp="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"/>
+      <item name="uxSubject" type="System.String" minLength="1" maxLength="50" allowEmpty="false" />
+      <item name="uxBody" type="System.String" minLength="1" maxLength="1100" allowEmpty="false" />
+    </controls>
+  </page>
+  <!--End Contact us-->
+
+  <!--Risk Module -->
+  <!--Risk Report-->
+  <page name="rm_riskreport.aspx">
+    <controls>
+      <item name="uxMerchantNumber" type="System.String" minLength="0" maxLength="16" allowEmpty="true" regExp="[\-a-zA-Z0-9 ]{0,16}" />
+      <item name="uxComments" type="System.String" minLength="0" maxLength="1000" allowEmpty="true"  />
+    </controls>
+  </page>
+  <page name="rm_mcf_riskreport.aspx">
+    <controls>
+      <item name="uxMerchantNumber" type="System.String" minLength="0" maxLength="16" allowEmpty="true" regExp="[\-a-z0-9 ]{0,16}" />
+      <item name="uxComments" type="System.String" minLength="0" maxLength="1000" allowEmpty="true"  />
+    </controls>
+  </page>
+  <!--End Risk Report-->
+  <!--End Risk Module -->
+
+  <!-- Card Search -->
+  <page name="cardsearch.aspx">
+    <controls>
+      <item name="uxMerchantNumber" type="System.String" minLength="0" maxLength="16" regExp="[\-a-z0-9 ]{1,16}" allowEmpty="true" />
+      <item name="txtFullCard" type="System.String" minLength="15" maxLength="20" allowEmpty="true" regExp="[0-9]{15,20}" />
+      <item name="uxFirst6" type="System.String" minLength="6" maxLength="6" allowEmpty="true" regExp="[0-9]{6}" />
+      <item name="uxLast4" type="System.String" minLength="4" maxLength="4" allowEmpty="true" regExp="[0-9]{4}" />
+    </controls>
+  </page>
+  <!-- End Card Search -->
+
+  <!-- Tech Console -->
+  <page name="authorizationsearch.aspx">
+    <controls>
+      <item name="uxTerminalID" type="System.String" minLength="0" maxLength="20" allowEmpty="true" regExp="[a-zA-Z0-9]*"></item>
+      <item name="uxAuthID" type="System.String" minLength="0" maxLength="16" allowEmpty="true" regExp="[a-zA-Z0-9]*"></item>
+    </controls>
+  </page>
+  <page name="capturesearch.aspx">
+    <controls>
+      <item name="uxRefNumber" type="System.String" minLength="0" maxLength="25" allowEmpty="true" regExp="[a-zA-Z0-9]*"></item>
+      <item name="uxAuthID" type="System.String" minLength="0" maxLength="16" allowEmpty="true" regExp="[a-zA-Z0-9]*"></item>
+      <item name="uxTerminalNumber" type="System.String" minLength="0" maxLength="20" allowEmpty="true" regExp="[a-zA-Z0-9]*"></item>
+      <item name="uxBatchNumber" type="System.String" minLength="0" maxLength="20" allowEmpty="true" regExp="[a-zA-Z0-9]*"></item>
+    </controls>
+  </page>
+  <page name="batchcapturesearch.aspx">
+    <controls>
+      <item name="uxBatchNumber" type="System.String" minLength="0" maxLength="20" allowEmpty="true" regExp="[a-zA-Z0-9]*"></item>
+      <item name="uxTerminalNumber" type="System.String" minLength="0" maxLength="20" allowEmpty="true" regExp="[a-zA-Z0-9]*"></item>
+      <item name="uxCardType" type="System.String" minLength="0" maxLength="10" allowEmpty="true" regExp="[a-zA-Z0-9]*"></item>
+    </controls>
+  </page>
+  <!-- End Tech Console -->
+
+  <!-- Create Assignment -->
+  <page name="rm_assignment_createnew.aspx">
+    <controls>
+      <usercontrols>
+        <uc name="uxAssInfo" type="risk_assignment_info.ascx"/>
+        <uc name="uxFilters" type ="risk_assignment_filters.ascx"/>
+      </usercontrols>
+    </controls>
+  </page>
+
+  <page name="rm_assignment_createnew_marketdata.aspx">
+    <controls>
+      <usercontrols>
+        <uc name="uxAssInfo" type="risk_assignment_info.ascx"/>
+        <uc name="uxFilters" type ="risk_assignment_markedata_filters.ascx"/>
+      </usercontrols>
+    </controls>
+  </page>
+
+  <usercontrol type="risk_assignment_filters.ascx">
+    <item name="txtMerchantRangeFrom" type="System.String" minLength="0" maxLength="16" allowEmpty="true" regExp="[\-a-z0-9 ]{0,16}"/>
+    <item name="txtMerchantRangeTo" type="System.String" minLength="0" maxLength="16" allowEmpty="true" regExp="[\-a-z0-9 ]{0,16}"/>
+  </usercontrol>
+  <usercontrol type="risk_assignment_info.ascx">
+    <item name="uxAssignmentName" type="System.String" minLength="0" maxLength="200" allowEmpty="true"/>
+  </usercontrol>
+  <usercontrol type="risk_assignment_markedata_filters.ascx">
+    <item name="txtMerchantRangeFrom" type="System.String" minLength="0" maxLength="16" allowEmpty="true" regExp="[0-9]{0,16}"/>
+    <item name="txtMerchantRangeTo" type="System.String" minLength="0" maxLength="16" allowEmpty="true" regExp="[0-9]{0,16}"/>
+  </usercontrol>
+
+  <page name="rm_mcf_assignment_createnew.aspx">
+    <controls>
+      <usercontrols>
+        <uc name="uxAssInfo" type="rm_mcf_assignment_info.ascx"/>
+        <uc name="uxFilters" type ="rm_mcf_assignment_filters.ascx"/>
+      </usercontrols>
+    </controls>
+  </page>
+
+  <page name="rm_mcf_assignment_createnew_marketdata.aspx">
+    <controls>
+      <usercontrols>
+        <uc name="uxAssInfo" type="rm_mcf_assignment_info.ascx"/>
+        <uc name="uxFilters" type ="rm_mcf_assignment_marketdata_filters.ascx"/>
+      </usercontrols>
+    </controls>
+  </page>
+
+
+  <usercontrol type="rm_mcf_assignment_filters.ascx">
+    <item name="txtMerchantRangeFrom" type="System.String" minLength="0" maxLength="16" allowEmpty="true" regExp="[\-a-z0-9 ]{0,16}"/>
+    <item name="txtMerchantRangeTo" type="System.String" minLength="0" maxLength="16" allowEmpty="true" regExp="[\-a-z0-9 ]{0,16}"/>
+  </usercontrol>
+  <usercontrol type="rm_mcf_assignment_info.ascx">
+    <item name="uxAssignmentName" type="System.String" minLength="0" maxLength="200" allowEmpty="true"/>
+  </usercontrol>
+  <usercontrol type="rm_mcf_assignment_marketdata_filters.ascx">
+    <item name="txtMerchantRangeFrom" type="System.String" minLength="0" maxLength="16" allowEmpty="true" regExp="[0-9]{0,16}"/>
+    <item name="txtMerchantRangeTo" type="System.String" minLength="0" maxLength="16" allowEmpty="true" regExp="[0-9]{0,16}"/>
+  </usercontrol>
+
+  <!-- End Create Assignment -->
+
+  <!-- Risk Score -->
+  <page name ="rm_riskscore.aspx">
+    <controls>
+      <usercontrols>
+        <uc name ="uxRiskScore" type ="riskscore.ascx"/>
+      </usercontrols>
+    </controls>
+  </page>
+  <usercontrol type ="riskscore.ascx">
+    <item name="uxParameterIndicatorFrom" type="System.String" minLength="0" maxLength="9" allowEmpty="false" regExp="[0-9]{0,9}"/>
+    <item name="uxParameterIndicatorTo" type="System.String" minLength="0" maxLength="9" allowEmpty="false" regExp="[0-9]{0,9}"/>
+    <item name="uxParameterThreshold" type="System.String" minLength="0" maxLength="9" allowEmpty="true" regExp="[0-9]{0,9}"/>
+    <item name="uxParameterScore" type="System.String" minLength="0" maxLength="9" allowEmpty="false" regExp="[0-9]{0,9}"/>
+  </usercontrol>
+
+  <page name ="rm_mcf_riskscore.aspx">
+    <controls>
+      <usercontrols>
+        <uc name ="uxRiskScore" type ="rm_mcf_score.ascx"/>
+      </usercontrols>
+    </controls>
+  </page>
+  <usercontrol type ="rm_mcf_score.ascx">
+    <item name="uxParameterIndicatorFrom" type="System.String" minLength="0" maxLength="9" allowEmpty="false" regExp="[0-9]{0,9}"/>
+    <item name="uxParameterIndicatorTo" type="System.String" minLength="0" maxLength="9" allowEmpty="false" regExp="[0-9]{0,9}"/>
+    <item name="uxParameterThreshold" type="System.String" minLength="0" maxLength="9" allowEmpty="true" regExp="[0-9]{0,9}"/>
+    <item name="uxParameterScore" type="System.String" minLength="0" maxLength="9" allowEmpty="false" regExp="[0-9]{0,9}"/>
+  </usercontrol>
+  <!--End Risk Score-->
+
+  <!--Adhoc create-->
+  <page name ="rm_adhoccreate.aspx">
+    <controls>
+      <usercontrols>
+        <uc name ="uxFilters" type ="risk_assignment_filter_Adhocs.ascx"/>
+      </usercontrols>
+    </controls>
+  </page>
+  <usercontrol type ="risk_assignment_filter_adhocs.ascx">
+    <item name="txtMerchantNumber" type="System.String" minLength="0" maxLength="20" allowEmpty="true" regExp="[0-9]{0,20}"/>
+    <item name="txtMerchantRangeFrom" type="System.String" minLength="0" maxLength="16" allowEmpty="true" regExp="[0-9]{0,16}"/>
+    <item name="txtMerchantRangeTo" type="System.String" minLength="0" maxLength="16" allowEmpty="true" regExp="[0-9]{0,16}"/>
+  </usercontrol>
+
+  <page name ="rm_mcf_adhoccreate.aspx">
+    <controls>
+      <usercontrols>
+        <uc name ="uxFilters" type ="rm_mcf_assignment_filter_adhocs.ascx"/>
+      </usercontrols>
+    </controls>
+  </page>
+  <usercontrol type ="rm_mcf_assignment_filter_adhocs.ascx">
+    <item name="txtMerchantNumber" type="System.String" minLength="0" maxLength="20" allowEmpty="true" regExp="[0-9]{0,20}"/>
+    <item name="txtMerchantRangeFrom" type="System.String" minLength="0" maxLength="16" allowEmpty="true" regExp="[0-9]{0,16}"/>
+    <item name="txtMerchantRangeTo" type="System.String" minLength="0" maxLength="16" allowEmpty="true" regExp="[0-9]{0,16}"/>
+  </usercontrol>
+  <!--End Adhoc create-->
+
+  <!-- porfolio credit -->
+  <page name="rm_portfoliocredits.aspx">
+    <controls>
+      <item name="uxTransactionAmount" type="System.String" minLength="0" maxLength="255" allowEmpty="false" regExp="[0-9]{0,255}"/>
+    </controls>
+  </page>
+  <page name="rm_mcf_portfoliocredits.aspx">
+    <controls>
+      <item name="uxTransactionAmount" type="System.String" minLength="0" maxLength="255" allowEmpty="false" regExp="[0-9]{0,255}"/>
+    </controls>
+  </page>
+  <!-- end porfolio credit -->
+
+  <!-- Service send message -->
+  <page name="servicemessage_createnew.aspx">
+    <controls>
+      <item name="txtPostedBy" type="System.String" minLength="0" maxLength="50" allowEmpty="false" />
+      <item name="txtMessage" type="System.String" minLength="0" maxLength="1100" allowEmpty="true" />
+    </controls>
+  </page>
+  <!-- End service send message -->
+
+  <!-- Message create new -->
+  <page name="message_createnew.aspx">
+    <controls>
+      <item name="txtPostedBy" type="System.String" minLength="0" maxLength="50" allowEmpty="false" />
+      <item name="txtMessage" type="System.String" minLength="0" maxLength="1100" allowEmpty="false" />
+    </controls>
+  </page>
+  <!-- End message create new -->
+
+  <!-- Merchant profile -->
+  <page name="casesearch.aspx">
+    <controls>
+      <usercontrols>
+        <uc name ="uxMessageEditor" type="messageeditor.ascx"/>
+      </usercontrols>
+    </controls>
+  </page>
+  <usercontrol type ="messageeditor.ascx">
+    <item name="uxMessage" type="System.String" minLength="0" maxLength="1000" allowEmpty="true" regExp="[^&lt;&gt;]{0,1000}"/>
+  </usercontrol>
+  <page name="merchantprofile.aspx">
+    <controls>
+      <usercontrols>
+        <uc name="uxMessageEditor" type="messageeditor.ascx"></uc>
+      </usercontrols>
+    </controls>
+  </page>
+  <page name="merchantinformation.aspx">
+    <controls>
+      <usercontrols>
+        <uc name="uxMessageEditor" type="messageeditor.ascx"></uc>
+      </usercontrols>
+    </controls>
+  </page>
+  <!-- End merchant profile -->
+
+  <!-- Message create new -->
+  <page name="casemanagement.aspx">
+    <controls>
+      <item name="uxCommentText" type="System.String" minLength="0" maxLength="7000" allowEmpty="true" />
+    </controls>
+  </page>
+  <!-- End message create new -->
+
+
+  <page name="rm_addriskcommentmodal.aspx">
+    <controls>
+      <item name="uxComment" type="System.String" minLength="0" maxLength="7000" allowEmpty="true" />
+    </controls>
+  </page>
+  <page name="rm_mcf_addriskcommentmodal.aspx">
+    <controls>
+      <item name="uxComment" type="System.String" minLength="0" maxLength="7000" allowEmpty="true" />
+    </controls>
+  </page>
+
+  <usercontrol type="mgmtreport_reportfilter.ascx">
+    <item name="uxMerchantNumber" type="System.String" minLength="0" maxLength="8500" regExp="[\-a-zA-Z0-9 ]{0,16}" allowEmpty="true"/>
+    <item name="uxMerchantName" type="System.String" minLength="0" maxLength="60" regExp="[^`~!@#$%^&amp;*()_+=|\][{}:;&quot;'?/\\&gt;\&lt;.,-]*$" allowEmpty="true"/>
+  </usercontrol>
+  <page name="64_rm_mgmtreport_merchantdetail.aspx">
+    <controls>
+      <usercontrols>
+        <uc name="uxReportFilter" type="mgmtreport_reportfilter.ascx"/>
+      </usercontrols>
+    </controls>
+  </page>
+
+</intruders>

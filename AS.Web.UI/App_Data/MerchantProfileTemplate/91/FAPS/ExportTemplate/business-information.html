@@ -1,0 +1,66 @@
+﻿<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <th colspan="2" align="left">
+      <b> {{res:BusinessInformation}}</b>
+    </th>
+  </tr>
+  <tbody>
+      <tr class="Row">
+          <td class="heading">
+              {{res:ApprovalDate}}
+          </td>
+          <td>
+              {{data:ApprovalDate|Date|BusinessInformation}}
+          </td>
+      </tr>
+      <tr class="AltRow">
+          <td class="heading">
+              {{res:ClosedDate}}
+          </td>
+          <td>
+              {{data:ClosedDate|Date|BusinessInformation}}
+          </td>
+      </tr>
+      <tr class="Row">
+          <td class="heading">
+              {{res:Status}}
+          </td>
+          <td>
+              {{data:ActivityStatus||BusinessInformation}}
+          </td>
+      </tr>
+      <tr class="AltRow">
+          <td class="heading valign-middle">
+              {{res:SiteAccess}}
+          </td>
+          <td>
+              {{data:SiteAccess|SiteAcessLinkExport|BusinessInformation}}
+
+          </td>
+      </tr>
+      <tr class="Row">
+          <td class="heading">
+              {{res:TaxID}}
+          </td>
+          <td>
+              {{data:PartialTaxID||BusinessInformation}}
+          </td>
+      </tr>
+      <tr class="AltRow">
+          <td class="heading">
+              {{res:SIC_MCC}}
+          </td>
+          <td>
+              {{data:SICCode|SIC|BusinessInformation}}
+          </td>
+      </tr>
+      <tr class="Row">
+          <td class="heading">
+              {{res:AverageSalesAmount}}
+          </td>
+          <td>
+              {{data:Avg_Ticket_Amt|Currency|BusinessInformation}}
+          </td>
+      </tr>
+  </tbody>
+</table>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MobileRedirectSetting baseMobileUrl="http://localhost:9959/mobile/" systemApplied="2">
+  <Urls>
+  </Urls>
+  <Redirects>
+    <!--<Redirect agent="Mobile|iP(hone|od)|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune" active="true" />-->
+    <Redirect agent="window" active="true" />
+  </Redirects>
+</MobileRedirectSetting>
+

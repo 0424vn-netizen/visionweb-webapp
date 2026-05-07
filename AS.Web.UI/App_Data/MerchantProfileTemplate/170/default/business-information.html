@@ -1,0 +1,76 @@
+﻿<div class="row" id="businessinfo">
+    <div class="col-xs-12" data-toggle="collapse" data-target="#ciBusinessInformation" aria-expanded="true">
+        <h2 class="grid-title">            
+            {{res:BusinessInformation}}
+        </h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 collapse in" id="ciBusinessInformation" aria-expanded="true" style="">
+        <table class="ASTable">
+            <colgroup>
+                <col class="w-45">
+                <col class="w-55">
+            </colgroup>
+            <tbody>
+                <tr class="Row">
+                    <td class="heading">
+                        {{res:CorporateName}}
+                    </td>
+                    <td>
+                        {{data:CorporateName||BusinessInformation}}
+                    </td>
+                </tr>
+
+                <tr class="AltRow">
+                    <td class="heading">
+                        {{res:ApprovalDate}}
+                    </td>
+                    <td>
+                        {{data:ApprovalDate|Date|BusinessInformation}}
+                    </td>
+                </tr>
+                <tr class="Row">
+                    <td class="heading">
+                        {{res:ClosedDate}}
+                    </td>
+                    <td>
+                        {{data:ClosedDate|Date|BusinessInformation}}
+                    </td>
+                </tr>
+                <tr class="AltRow">
+                    <td class="heading">
+                        {{res:Status}}
+                    </td>
+                    <td>
+                        {{data:Status||BusinessInformation}}
+                    </td>
+                </tr>
+                <tr class="Row">
+                    <td class="heading valign-middle">
+                        {{res:SiteAccess}}
+                    </td>
+                    <td>
+                        {{data:OptStatus|OptStatusAction|BusinessInformation}}
+                    </td>
+                </tr>
+                <tr class="AltRow">
+                    <td class="heading">
+                        {{res:TaxID}}
+                    </td>
+                    <td>
+                        {{data:TaxID|TaxView|BusinessInformation}}
+                    </td>
+                </tr>
+                <tr class="Row">
+                    <td class="heading">
+                        {{res:SIC_MCC}}
+                    </td>
+                    <td>
+                        {{data:SICCode|SIC|BusinessInformation}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

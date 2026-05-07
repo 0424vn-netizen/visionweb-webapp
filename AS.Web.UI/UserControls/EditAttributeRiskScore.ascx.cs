@@ -1,0 +1,480 @@
+﻿using AS.Common.DBManager;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Text.RegularExpressions;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+public partial class UserControls_EditAttributeRiskScore : GlobalUserControl
+{
+    #region Properties
+
+
+    public delegate void SubmitHander(object sender, int resultCode);
+    public event SubmitHander Submit;
+
+    enum DataBindAction
+    {
+        BindAttributeList,
+        BindOperandList,
+        BindMetricList,
+        Save
+    }
+
+
+    public int SelectedAttributeID
+    {
+        get
+        {
+            if (uxAttributeNameList.SelectedValue != null)
+                return uxAttributeNameList.SelectedValue.Split('_')[0].ToInt();
+            else
+                return 0;
+        }
+    }
+    string FieldType
+    {
+        get
+        {
+            if (uxAttributeNameList.SelectedValue != null)
+                return uxAttributeNameList.SelectedValue.Split('_')[1];
+            else
+                return string.Empty;
+        }
+    }
+    public int RedId
+    {
+        get
+        {
+            if (!string.IsNullOrEmpty(uxhdRedId.Value))
+                return uxhdRedId.Value.ToInt();
+            else
+                return 0;
+        }
+        set
+        {
+            uxhdRedId.Value = value.ToString();
+        }
+    }
+
+    public string RangeName
+    {
+        get
+        {
+            return uxRangeName.Text.Trim();
+        }
+        set
+        {
+            uxRangeName.Text = value;
+        }
+    }
+
+    public int FromValue
+    {
+        get
+        {
+            int v = 0;
+            int.TryParse(uxFrom.Text, out v);
+            return v;
+        }
+        set
+        {
+            uxFrom.Text = value.ToString();
+        }
+    }
+    public int ToValue
+    {
+        get
+        {
+            int v = 0;
+            int.TryParse(uxTo.Text, out v);
+            return v;
+        }
+        set
+        {
+            uxTo.Text = value.ToString();
+        }
+    }
+    public int OperandKey
+    {
+        get
+        {
+
+            if (!string.IsNullOrEmpty(uxOperand.SelectedValue))
+                return uxOperand.SelectedValue.ToInt();
+            else
+                return 0;
+        }
+        set
+        {
+            uxOperand.SelectedValue = value.ToString();
+            uxOperand_SelectedIndexChanged(null, null);
+        }
+    }
+
+    public bool IsBinded
+    {
+        get
+        {
+            if (ViewState["IsBinded"] != null)
+                return ViewState["IsBinded"].ToBoolean();
+            else
+                return false;
+        }
+        set
+        {
+            ViewState["IsBinded"] = value;
+        }
+    }
+
+    public string MetricValue
+    {
+        get
+        {
+            AttributeInformation obj = (AttributeInformation)GeneralFuncsLib.ConvertXMLToObject(XMLMetricOperand, typeof(AttributeInformation));
+            if (obj.Metrics != null)
+            {
+                if (uxMetric.CheckBoxes)
+                {
+                    if (uxMetric.CheckedItems.Count > 0)
+                    {
+                        return string.Join(";", uxMetric.CheckedItems.Select(x => x.Value).ToList());
+                    }
+                }
+                else
+                {
+                    return uxMetric.SelectedValue.ToString();
+                }
+                return string.Empty;
+            }
+            else
+            {
+                return uxMetricListTextHide.Value.Trim().Replace(',', ';').TrimStart(';').TrimEnd(';');
+            }
+        }
+        set
+        {
+            AttributeInformation obj = (AttributeInformation)GeneralFuncsLib.ConvertXMLToObject(XMLMetricOperand, typeof(AttributeInformation));
+            if (obj.Metrics != null)
+            {
+                if (uxMetric.CheckBoxes)
+                {
+                    foreach (var v in value.Split(';'))
+                    {
+                        uxMetric.Items.Where(i => i.Value.Equals(v)).FirstOrDefault().Checked = true;
+                    }
+                }
+                else
+                {
+                    uxMetric.SelectedValue = value;
+                }
+            }
+            else
+            {
+                if (!string.IsNullOrEmpty(value) && value.ToString().Split(';').Count() > 2)
+                    uxMetricListText.Text = value.ToString().Split(';').Count() + " " + GetLocalResourceObject("LiteralResourceFindMoreitem").ToString();
+                else
+                    uxMetricListText.Text = value;
+
+                uxMetricListTextHide.Value = value;
+            }
+        }
+    }
+    public int Score
+    {
+        get
+        {
+            return uxScore.Text.Trim().ToInt();
+        }
+        set
+        {
+            uxScore.Text = value.ToString();
+        }
+    }
+    public bool isFromTo
+    {
+        get
+        {
+            return uxAttributeNameList.SelectedValue.ToString().Split('_')[1].Equals(((int)AttributeRiskScoreMode.FromTo).ToString()); //  1 is from/to mode, 2 is operand
+        }
+    }
+
+    string XMLMetricOperand
+    {
+        get
+        {
+            if (ViewState["XMLMetricOperand"] != null)
+                return ViewState["XMLMetricOperand"].ToString();
+            else
+                return null;
+        }
+        set
+        {
+            ViewState["XMLMetricOperand"] = value;
+        }
+
+    }
+
+    #endregion
+    #region events
+
+    protected override void OnDataBindControls(Enum type, object sender)
+    {
+        if (this.Page.IsIntruderDetected) return;
+        FilterParameterCollection parameters = new FilterParameterCollection();
+        parameters.AddLoggedInUserParamsWithRecId();
+        switch ((DataBindAction)type)
+        {
+            case DataBindAction.BindAttributeList:
+                {
+                    DataTable td = WebServices.RiskServices.GetReports("spa_RM_MRS_Get_AttributeList", parameters);
+                    uxAttributeNameList.Items.Clear();
+                    foreach (DataRow r in td.Rows)
+                    {
+                        uxAttributeNameList.Items.Add(new Telerik.Web.UI.RadComboBoxItem(r["AttributeName"].ToASString(), string.Format("{0}_{1}", r["AttributeID"].ToASString(), r["FieldType"].ToASString())));
+                    }
+                }
+                break;
+            case DataBindAction.BindOperandList:
+                {
+                    parameters.Add(new FilterParameter("@AttributeID", SelectedAttributeID, DbType.Int32));
+                    DataTable td = WebServices.RiskServices.GetReports("spa_RM_MRS_Get_MetricOperandByAttribute", parameters);
+                    if (td.HasData())
+                    {
+                        XMLMetricOperand = td.Rows[0][0].ToASString();
+                    }
+                    AttributeInformation obj = (AttributeInformation)GeneralFuncsLib.ConvertXMLToObject(XMLMetricOperand, typeof(AttributeInformation));
+                    uxOperand.Items.Clear();
+                    foreach (Operand o in obj.Operands.Items)
+                    {
+                        uxOperand.Items.Add(new Telerik.Web.UI.RadComboBoxItem(HttpUtility.HtmlDecode(o.Text), o.Value));
+                    }
+                    OnDataBindControls(DataBindAction.BindMetricList);
+                }
+                break;
+            case DataBindAction.BindMetricList:
+                {
+                    if (uxOperand.SelectedItem != null && (uxOperand.SelectedItem.Text.Trim().Equals("=")))
+                    {
+                        uxMetric.CheckBoxes = true;
+                    }
+                    else
+                    {
+                        uxMetric.CheckBoxes = false;
+                    }
+                    AttributeInformation obj = (AttributeInformation)GeneralFuncsLib.ConvertXMLToObject(XMLMetricOperand, typeof(AttributeInformation));
+                    uxMetric.Items.Clear();
+                    if (uxOperand.SelectedValue != null && !string.IsNullOrEmpty(uxOperand.SelectedValue))
+                    {
+                        if (obj.Metrics != null)
+                        {
+                            uxMetric.Visible = true;
+                            uxMetricListPanel.Visible = false;
+                            uxValidatorLabeluxMetricListText.Visible = false;
+                            uxValidatorLabeluxMetric.Visible = true;
+
+                            List<Metric> metrics = obj.Metrics.GetMetricByOperand(uxOperand.SelectedValue);
+                            foreach (Metric m in metrics)
+                            {
+                                uxMetric.Items.Add(new Telerik.Web.UI.RadComboBoxItem(HttpUtility.HtmlDecode(m.Text), m.Value));
+                            }
+                        }
+                        else
+                        {
+                            uxMetric.Visible = false;
+                            uxMetricListPanel.Visible = true;
+                            uxValidatorLabeluxMetricListText.Visible = true;
+                            uxValidatorLabeluxMetric.Visible = false;
+                            string queryString = this.Page.BuildSecureQueryString("SelectedAttributeID=" + uxAttributeNameList.SelectedValue.ToString().Split('_')[0] + "&OperandValue=" + uxOperand.SelectedValue + "&SelectedMetricID=" + "&FromEdit=1");
+                            btnlinkFindOwner.Attributes["onclick"] = "return ShowPopupModal('" + ResolveUrl("~/") + "FindOwners.aspx?" + queryString + "', 'auto'); return false;";
+
+                        }
+                    }
+                }
+                break;
+            case DataBindAction.Save:
+                {
+                    Save();
+                }
+                break;
+        }
+    }
+
+    public void BindAttributeList()
+    {
+
+        OnDataBindControls(DataBindAction.BindAttributeList);
+        if (uxAttributeNameList.SelectedItem == null)
+        {
+            SetSelectedAttributeName(uxhdAttributeId.Value.ToASString());
+        }
+        if (string.IsNullOrEmpty(uxRangeName.Text))
+            uxRangeName.Text = uxhdRangeName.Value.ToASString();
+    }
+
+    public void BindMetricList()
+    {
+        OnDataBindControls(DataBindAction.BindMetricList);
+    }
+
+    public void SetSelectedAttributeName(string value)
+    {
+        var item = uxAttributeNameList.Items.Where(i => i.Value.Split('_')[0].Equals(value)).FirstOrDefault();
+        if (item != null)
+        {
+            item.Selected = true;
+            uxAttributeNameList_SelectedIndexChanged(null, null);
+        }
+
+    }
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        uxMetricListText.Attributes["onkeypress"] = "return false;";
+    }
+
+    protected void uxAttributeNameList_SelectedIndexChanged(object sender, Telerik.Web.UI.RadComboBoxSelectedIndexChangedEventArgs e)
+    {
+        if (uxAttributeNameList.SelectedValue != null)
+        {
+            uxRangeName.Enabled = true;
+            if (isFromTo)
+            {
+                uxFrom.Enabled = uxTo.Enabled = uxScore.Enabled = true;
+                uxOperand.Enabled = uxMetric.Enabled = false;
+                uxOperand.ClearSelection();
+                uxMetric.ClearSelection();
+                uxScore.Text = string.Empty;
+            }
+            else
+            {
+                uxFrom.Enabled = uxTo.Enabled = false;
+                uxFrom.Text = uxTo.Text = string.Empty;
+                uxOperand.Enabled = uxMetric.Enabled = uxScore.Enabled = true;
+                OnDataBindControls(DataBindAction.BindOperandList);
+                OnDataBindControls(DataBindAction.BindMetricList);
+            }
+            SetValidattionMode();
+        }
+    }
+
+    void SetValidattionMode()
+    {
+        if (isFromTo)
+        {
+            uxUpdate.OnClientClick = "return doValidFromToEdit();";
+        }
+        else
+        {
+            AttributeInformation obj = (AttributeInformation)GeneralFuncsLib.ConvertXMLToObject(XMLMetricOperand, typeof(AttributeInformation));
+            if (obj.Metrics != null)
+            {
+                uxUpdate.OnClientClick = "return doValidOperandEditCombobox();";
+            }
+            else
+            {
+                uxUpdate.OnClientClick = "return doValidOperandEditModal();";
+            }
+        }
+    }
+
+    void Save()
+    {
+        string spaName = "spa_RM_MRS_Save_AttributeRiskScore";
+        FilterParameterCollection parameters = new FilterParameterCollection();
+        parameters.AddLoggedInUserParamsWithRecId();
+        parameters.Add(new FilterParameter("@RecordID", RedId, DbType.Int32));
+        parameters.Add(new FilterParameter("@AttributeID", SelectedAttributeID, DbType.Int32));
+        parameters.Add(new FilterParameter("@RangName", RangeName, DbType.AnsiString));
+        if (isFromTo)
+        {
+            parameters.Add(new FilterParameter("@FromValue", FromValue, DbType.Int32));
+            parameters.Add(new FilterParameter("@ToValue", ToValue, DbType.Int32));
+        }
+        else
+        {
+            parameters.Add(new FilterParameter("@OperandKey", OperandKey, DbType.Int32));
+            parameters.Add(new FilterParameter("@MetricValue", MetricValue, DbType.AnsiString));
+        }
+        parameters.Add(new FilterParameter("@Score", Score, DbType.Int32));
+        parameters.Add(new FilterParameter("@FieldType", FieldType, DbType.Int32));
+        parameters.Add(new FilterParameter("@ReturnValue", 0, DbType.Int32, true));
+        WebServices.RiskServices.ExecuteNonQueryCommand(spaName, parameters, out parameters);
+
+        int result = parameters.FindFilterParameterByName("@ReturnValue", false).ParameterValue.ToInt();
+        // 1 is success, 0 - failed, -1 duplicate
+        if (result > 0)
+        {
+            if (!isFromTo)
+                uxAttributeRiskScoreMsg.Message = GetLocalResourceObject("AttributeRiskScoreOperandOverlap").ToASString();
+            else
+                uxAttributeRiskScoreMsg.Message = GetLocalResourceObject("AttributeRiskScoreRangeOverlap").ToASString();
+
+            uxAttributeRiskScoreMsg.ShowOnLoad = true;
+        }
+        if (result == 0 && this.Submit != null)
+        {
+            Submit(this, 1);
+        }
+
+    }
+    protected void uxUpdate_Click(object sender, EventArgs e)
+    {
+        if ((ctrlValidatorAttribute.IsValid() && ctrlValidatorOperand.IsValid()) || ctrlValidatorAttribute.IsValid() && ctrlValidatorFromTo.IsValid())
+        {
+            Save();
+        }
+    }
+    protected void uxCancel_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    #endregion
+
+    protected bool AttributeName_ValidateInput(Control control)
+    {
+        return uxAttributeNameList.SelectedValue != null;
+    }
+    protected bool uxToGreaterOrEqualThan_ValidateInput(Control control)
+    {
+        return ToValue >= FromValue;
+    }
+    protected bool uxMetric_ValidateInput(Control control)
+    {
+        if (uxMetric.CheckBoxes)
+            return uxMetric.CheckedItems.Count > 0;
+        else
+            return uxMetric.SelectedValue != null;
+    }
+    protected void uxOperand_SelectedIndexChanged(object sender, Telerik.Web.UI.RadComboBoxSelectedIndexChangedEventArgs e)
+    {
+        if (uxOperand.SelectedItem != null && (uxOperand.SelectedItem.Text.Trim().Equals("=")))
+        {
+            uxMetric.CheckBoxes = true;
+        }
+        else
+        {
+            uxMetric.CheckBoxes = false;
+        }
+        OnDataBindControls(DataBindAction.BindMetricList);
+    }
+    protected bool checkRangeName_ValidateInput(Control control)
+    {
+        Regex reg = new Regex(WebSiteConstants.REG_SPECIAL_CHARACTERS);
+        return reg.IsMatch(uxRangeName.Text);
+
+    }
+
+    protected override void OnPreRender(EventArgs e)
+    {
+        base.OnPreRender(e);
+    }
+    protected bool uxMetricListText_ValidateInput(Control control)
+    {
+        return uxMetricListTextHide.Value.Trim().Length > 0;
+    }
+
+}
