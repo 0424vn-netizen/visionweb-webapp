@@ -261,6 +261,62 @@ namespace VW.PCI.Api.Client
             };
         }
 
+        public IApiResponse<CreateUserResponse> CreateUser(int applicationId, CreateUserRequest request)
+        {
+            Logger.Debug($"CreateUser::Start. ApplicationId={applicationId}, Request={JsonConvert.SerializeObject(request)}");
+            var result = Execute<CreateUserRequest, CreateUserResponse>(applicationId, "user/CreateUser", request);
+            Logger.Debug($"CreateUser::End. Response={JsonConvert.SerializeObject(result.Data)}");
+            return result;
+        }
+
+        public IApiResponse<UpdateUserResponse> UpdateUser(int applicationId, UpdateUserRequest request)
+        {
+            Logger.Debug($"UpdateUser::Start. ApplicationId={applicationId}, Request={JsonConvert.SerializeObject(request)}");
+            var result = Execute<UpdateUserRequest, UpdateUserResponse>(applicationId, "user/UpdateUser", request);
+            Logger.Debug($"UpdateUser::End. Response={JsonConvert.SerializeObject(result.Data)}");
+            return result;
+        }
+
+        public IApiResponse<GetMasterMerchantResponse> GetMasterMerchant(int applicationId, GetMasterMerchantRequest request)
+        {
+            Logger.Debug($"GetMasterMerchant::Start. ApplicationId={applicationId}, Request={JsonConvert.SerializeObject(request)}");
+            var result = Execute<GetMasterMerchantRequest, GetMasterMerchantResponse>(applicationId, "user/GetMasterMerchant", request);
+            Logger.Debug($"GetMasterMerchant::End. Response={JsonConvert.SerializeObject(result.Data)}");
+            return result;
+        }
+
+        public IApiResponse<List<HierarchyIDItem>> GetHierarchyID(int applicationId, GetHierarchyIDRequest request)
+        {
+            Logger.Debug($"GetHierarchyID::Start. ApplicationId={applicationId}, Request={JsonConvert.SerializeObject(request)}");
+            var result = Execute<GetHierarchyIDRequest, List<HierarchyIDItem>>(applicationId, "user/GetHierarchyID", request);
+            Logger.Debug($"GetHierarchyID::End. Response={JsonConvert.SerializeObject(result.Data)}");
+            return result;
+        }
+
+        public IApiResponse<UpdSecRoleByUserIDResponse> UpdSecRoleByUserID(int applicationId, UpdSecRoleByUserIDRequest request)
+        {
+            Logger.Debug($"UpdSecRoleByUserID::Start. ApplicationId={applicationId}, Request={JsonConvert.SerializeObject(request)}");
+            var result = Execute<UpdSecRoleByUserIDRequest, UpdSecRoleByUserIDResponse>(applicationId, "user/UpdSecRoleByUserID", request);
+            Logger.Debug($"UpdSecRoleByUserID::End. Response={JsonConvert.SerializeObject(result.Data)}");
+            return result;
+        }
+
+        public IApiResponse<UpdateOptInOutResponse> UpdateOptInOut(int applicationId, UpdateOptInOutRequest request)
+        {
+            Logger.Debug($"UpdateOptInOut::Start. ApplicationId={applicationId}, Request={JsonConvert.SerializeObject(request)}");
+            var result = Execute<UpdateOptInOutRequest, UpdateOptInOutResponse>(applicationId, "user/UpdateOptInOut", request);
+            Logger.Debug($"UpdateOptInOut::End. Response={JsonConvert.SerializeObject(result.Data)}");
+            return result;
+        }
+
+        public IApiResponse<List<HierarchyForAOItem>> GetAllHierarchyForAO(int applicationId, GetAllHierarchyForAORequest request)
+        {
+            Logger.Debug($"GetAllHierarchyForAO::Start. ApplicationId={applicationId}, Request={JsonConvert.SerializeObject(request)}");
+            var result = Execute<GetAllHierarchyForAORequest, List<HierarchyForAOItem>>(applicationId, "user/GetAllHierarchyForAO", request);
+            Logger.Debug($"GetAllHierarchyForAO::End. Response={JsonConvert.SerializeObject(result.Data)}");
+            return result;
+        }
+
         public IApiResponse<GetUsersResponse> GetUsers(int applicationId, GetUsersRequest request)
         {
             Logger.Debug($"GetUsers::Start. ApplicationId={applicationId}, Request={JsonConvert.SerializeObject(request)}");

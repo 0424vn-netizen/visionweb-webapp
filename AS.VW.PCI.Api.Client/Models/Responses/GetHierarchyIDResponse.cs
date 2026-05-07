@@ -1,13 +1,7 @@
 using System;
-using System.Collections.Generic;
 
 namespace AS.VW.PCI.Api.Client.Models.Responses
 {
-    public class GetHierarchyIDResponse
-    {
-        public List<HierarchyIDItem> Data { get; set; }
-    }
-
     public class HierarchyIDItem
     {
         public string HierarchyID { get; set; }

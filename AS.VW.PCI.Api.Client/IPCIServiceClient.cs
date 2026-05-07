@@ -1,6 +1,7 @@
 using AS.VW.PCI.Api.Client.Models.Common;
 using AS.VW.PCI.Api.Client.Models.Requests;
 using AS.VW.PCI.Api.Client.Models.Responses;
+using System.Collections.Generic;
 
 namespace VW.PCI.Api.Client
 {
@@ -8,19 +9,19 @@ namespace VW.PCI.Api.Client
     {
         IApiResponse<AuthTokenResponse> Authenticate(AuthTokenRequest request);
 
-        //PCIApiResponse<CreateUserResponse> CreateUser(CreateUserRequest request);
+        IApiResponse<CreateUserResponse> CreateUser(int applicationId, CreateUserRequest request);
 
-        //PCIApiResponse<UpdateUserResponse> UpdateUser(UpdateUserRequest request);
+        IApiResponse<UpdateUserResponse> UpdateUser(int applicationId, UpdateUserRequest request);
 
-        //PCIApiResponse<GetMasterMerchantResponse> GetMasterMerchant(GetMasterMerchantRequest request);
+        IApiResponse<GetMasterMerchantResponse> GetMasterMerchant(int applicationId, GetMasterMerchantRequest request);
 
-        //PCIApiResponse<GetHierarchyIDResponse> GetHierarchyID(GetHierarchyIDRequest request);
+        IApiResponse<List<HierarchyIDItem>> GetHierarchyID(int applicationId, GetHierarchyIDRequest request);
 
-        //PCIApiResponse<UpdSecRoleByUserIDResponse> UpdSecRoleByUserID(UpdSecRoleByUserIDRequest request);
+        IApiResponse<UpdSecRoleByUserIDResponse> UpdSecRoleByUserID(int applicationId, UpdSecRoleByUserIDRequest request);
 
-        //PCIApiResponse<UpdateOptInOutResponse> UpdateOptInOut(UpdateOptInOutRequest request);
+        IApiResponse<UpdateOptInOutResponse> UpdateOptInOut(int applicationId, UpdateOptInOutRequest request);
 
-        //PCIApiResponse<GetAllHierarchyForAOResponse> GetAllHierarchyForAO(GetAllHierarchyForAORequest request);
+        IApiResponse<List<HierarchyForAOItem>> GetAllHierarchyForAO(int applicationId, GetAllHierarchyForAORequest request);
 
         IApiResponse<GetUsersResponse> GetUsers(int applicationId, GetUsersRequest request);
     }

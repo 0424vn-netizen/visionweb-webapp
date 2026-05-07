@@ -1,12 +1,5 @@
-using System.Collections.Generic;
-
 namespace AS.VW.PCI.Api.Client.Models.Responses
 {
-    public class GetAllHierarchyForAOResponse
-    {
-        public List<HierarchyForAOItem> Data { get; set; }
-    }
-
     public class HierarchyForAOItem
     {
         public string HierarchyID { get; set; }
