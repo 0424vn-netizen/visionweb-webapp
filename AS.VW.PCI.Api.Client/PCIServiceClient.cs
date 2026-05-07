@@ -24,17 +24,28 @@ namespace VW.PCI.Api.Client
         [ThreadStatic]
         private static int _currentApplicationId;
 
+        private static ITokenRepository _tokenRepository;
+
         private static readonly Lazy<PCIServiceClient> _lazyInstance = new Lazy<PCIServiceClient>(() => new PCIServiceClient());
+
+        public static PCIServiceClient Instance => _lazyInstance.Value;
+
+        /// <summary>
+        /// Call once at application startup before first use.
+        /// </summary>
+        public static void Configure(ITokenRepository tokenRepository)
+        {
+            _tokenRepository = tokenRepository ?? throw new ArgumentNullException(nameof(tokenRepository));
+        }
 
         public PCIServiceClient()
             : base(VWLogger.Instance, ApiLoggingService.Instance, ApiSource, ApiSettingFile, PCIClientSettings.Instance)
         {
-            tokenProvider = new TokenProvider(base.Logger, this, new DbTokenRepository());
-        }
+            if (_tokenRepository == null)
+                throw new InvalidOperationException(
+                    "PCIServiceClient has not been configured. Call PCIServiceClient.Configure(ITokenRepository) at application startup.");
 
-        public static PCIServiceClient Instance
-        {
-            get { return _lazyInstance.Value; }
+            tokenProvider = new TokenProvider(base.Logger, this, _tokenRepository);
         }
 
         //public static void Configure(ILogger logger, ILoggingService loggingService)

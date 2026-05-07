@@ -1,6 +1,6 @@
 using AS.Common.DBManager;
 using AS.VW.PCI.Api.Client.Common;
-using AS.VW.PCI.Api.Client.Settings;
+using AS.Web.Business;
 using System;
 using System.Data;
 
@@ -28,6 +28,13 @@ namespace AS.VW.PCI.Api.Client.Providers
      */
     public class DbTokenRepository : ITokenRepository
     {
+        private readonly Func<IReportServices> _servicesFactory;
+
+        public DbTokenRepository(Func<IReportServices> servicesFactory)
+        {
+            _servicesFactory = servicesFactory;
+        }
+
         public TokenCacheEntry GetToken(int applicationId)
         {
             var parameters = new FilterParameterCollection
@@ -35,7 +42,7 @@ namespace AS.VW.PCI.Api.Client.Providers
                 new FilterParameter("@ApplicationId", applicationId, DbType.Int32)
             };
 
-            var dt = PCIClientSettings.Instance.PciReportServices.GetReports("spa_PCI_GetToken", parameters);
+            var dt = _servicesFactory().GetReports("spa_PCI_GetToken", parameters);
 
             if (dt == null || dt.Rows.Count == 0)
                 return null;
@@ -59,7 +66,7 @@ namespace AS.VW.PCI.Api.Client.Providers
                 new FilterParameter("@ExpireAt",      expireAt,      DbType.DateTime)
             };
 
-            PCIClientSettings.Instance.PciReportServices.ExecuteNonQueryCommand("spa_PCI_UpsertToken", parameters, out _);
+            _servicesFactory().ExecuteNonQueryCommand("spa_PCI_UpsertToken", parameters, out _);
         }
     }
 }

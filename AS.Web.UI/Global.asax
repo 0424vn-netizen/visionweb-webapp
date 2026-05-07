@@ -9,6 +9,7 @@
 <%@ Import Namespace="AS.VW.Api.RestClient" %>
 <%@ Import Namespace="VW.PCI.Api.Client" %>
 <%@ Import Namespace="AS.VW.PCI.Api.Client.Common" %>
+<%@ Import Namespace="AS.VW.PCI.Api.Client.Providers" %>
 
 <script RunAt="server">
 
@@ -55,7 +56,7 @@
         var rootPath = HttpContext.Current.Server.MapPath("~/");
         var appSettingsFolder = Path.Combine(rootPath, "App_Data", "ApiSettings");
         ApiSettingsManager.Setup(appSettingsFolder);
-        //PCIServiceClient.Configure(logger: VWLogger.Instance, loggingService: ApiLoggingService.Instance);
+        PCIServiceClient.Configure(new DbTokenRepository(() => WebServices.CsReportServices));
 
         System.Net.ServicePointManager.SecurityProtocol = System.Net.SecurityProtocolType.Tls12;
         System.Net.ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
