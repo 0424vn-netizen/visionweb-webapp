@@ -35,7 +35,7 @@ namespace AS.VW.PCI.Api.Client.Providers
                 new FilterParameter("@ApplicationId", applicationId, DbType.Int32)
             };
 
-            var dt = PCIClientSettings.Instance.ReportServices.GetReports("spa_PCI_GetToken", parameters);
+            var dt = PCIClientSettings.Instance.PciReportServices.GetReports("spa_PCI_GetToken", parameters);
 
             if (dt == null || dt.Rows.Count == 0)
                 return null;
@@ -59,7 +59,7 @@ namespace AS.VW.PCI.Api.Client.Providers
                 new FilterParameter("@ExpireAt",      expireAt,      DbType.DateTime)
             };
 
-            PCIClientSettings.Instance.ReportServices.ExecuteNonQueryCommand("spa_PCI_UpsertToken", parameters, out _);
+            PCIClientSettings.Instance.PciReportServices.ExecuteNonQueryCommand("spa_PCI_UpsertToken", parameters, out _);
         }
     }
 }
