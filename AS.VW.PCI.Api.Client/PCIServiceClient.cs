@@ -9,10 +9,9 @@ using AS.VW.PCI.Api.Client.Settings;
 using Newtonsoft.Json;
 using RestSharp;
 using System;
-using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.IO;
 using System.Net;
+using System.Threading;
 
 namespace VW.PCI.Api.Client
 {
@@ -22,6 +21,8 @@ namespace VW.PCI.Api.Client
         private const string ApiSettingFile = "pciSettings.xml";
 
         private TokenProvider tokenProvider { get; set; }
+
+        private static readonly AsyncLocal<int> _currentApplicationId = new AsyncLocal<int>();
 
         private static readonly Lazy<PCIServiceClient> _lazyInstance = new Lazy<PCIServiceClient>(() => new PCIServiceClient());
 
@@ -66,13 +67,13 @@ namespace VW.PCI.Api.Client
         //    _credentials = credentials;
         //}
 
-        //protected override void InterceptRequest(string trackingId, ApiSetting apiSetting, IRestRequest request)
-        //{
-        //    if (apiSetting.Name == "auth/token")
-        //        return;
+        protected override void InterceptRequest(string trackingId, ApiSetting apiSetting, IRestRequest request)
+        {
+            if (apiSetting.Name == "auth/token") return;
 
-        //    request.AddHeader("Authorization", $"Bearer {GetValidToken()}");
-        //}
+            var token = tokenProvider.GetToken(_currentApplicationId.Value);
+            request.AddHeader("Authorization", $"Bearer {token.AccessToken}");
+        }
 
         protected override void InterceptResponse(string trackingId, ApiSetting apiSetting, IRestRequest request, IRestResponse response, out bool shouldRetryPrevRequest)
         {
@@ -285,22 +286,20 @@ namespace VW.PCI.Api.Client
 
         public IApiResponse<GetUsersResponse> GetUsers(int applicationId, GetUsersRequest request)
         {
-            Logger.Debug($"GetUsers::Start function. ApplicationId={applicationId}, Request={JsonConvert.SerializeObject(request)}");
-            var trackingId = Utils.GetTrackingId();
-            var apiSetting = GetApiSetting("user/GetUsers");
-
-            var tokenResult = tokenProvider.GetToken(applicationId);
-
-            var headers = new Dictionary<string, string>
+            Logger.Debug($"GetUsers::Start. ApplicationId={applicationId}, Request={JsonConvert.SerializeObject(request)}");
+            _currentApplicationId.Value = applicationId;
+            try
             {
-                { "Authorization", $"Bearer {tokenResult.AccessToken}" }
-            };
+                var apiResponse = TryPost<GetUsersRequest, GetUsersResponse>(
+                    Utils.GetTrackingId(), GetApiSetting("user/GetUsers"), request, null, null);
 
-            var apiResponse = TryPost<GetUsersRequest, GetUsersResponse>(trackingId, apiSetting, request, null, headers);
-
-            Logger.Debug($"GetUsers::End function. Response={JsonConvert.SerializeObject(apiResponse.Data)}");
-
-            return apiResponse;
+                Logger.Debug($"GetUsers::End. Response={JsonConvert.SerializeObject(apiResponse.Data)}");
+                return apiResponse;
+            }
+            finally
+            {
+                _currentApplicationId.Value = 0;
+            }
         }
     }
 }
