@@ -29,7 +29,7 @@ namespace VW.PCI.Api.Client
         public PCIServiceClient()
             : base(VWLogger.Instance, ApiLoggingService.Instance, ApiSource, ApiSettingFile, PCIClientSettings.Instance)
         {
-            tokenProvider = new TokenProvider(base.Logger, this);
+            tokenProvider = new TokenProvider(base.Logger, this, new DbTokenRepository());
         }
 
         public static PCIServiceClient Instance
