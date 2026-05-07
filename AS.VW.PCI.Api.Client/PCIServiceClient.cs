@@ -11,7 +11,6 @@ using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.Net;
-using System.Threading;
 
 namespace VW.PCI.Api.Client
 {
@@ -22,7 +21,8 @@ namespace VW.PCI.Api.Client
 
         private TokenProvider tokenProvider { get; set; }
 
-        private static readonly AsyncLocal<int> _currentApplicationId = new AsyncLocal<int>();
+        [ThreadStatic]
+        private static int _currentApplicationId;
 
         private static readonly Lazy<PCIServiceClient> _lazyInstance = new Lazy<PCIServiceClient>(() => new PCIServiceClient());
 
@@ -71,7 +71,7 @@ namespace VW.PCI.Api.Client
         {
             if (apiSetting.Name == "auth/token") return;
 
-            var token = tokenProvider.GetToken(_currentApplicationId.Value);
+            var token = tokenProvider.GetToken(_currentApplicationId);
             request.AddHeader("Authorization", $"Bearer {token.AccessToken}");
         }
 
@@ -287,7 +287,7 @@ namespace VW.PCI.Api.Client
         public IApiResponse<GetUsersResponse> GetUsers(int applicationId, GetUsersRequest request)
         {
             Logger.Debug($"GetUsers::Start. ApplicationId={applicationId}, Request={JsonConvert.SerializeObject(request)}");
-            _currentApplicationId.Value = applicationId;
+            _currentApplicationId = applicationId;
             try
             {
                 var apiResponse = TryPost<GetUsersRequest, GetUsersResponse>(
@@ -298,7 +298,7 @@ namespace VW.PCI.Api.Client
             }
             finally
             {
-                _currentApplicationId.Value = 0;
+                _currentApplicationId = 0;
             }
         }
     }
