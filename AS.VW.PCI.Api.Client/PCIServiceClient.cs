@@ -156,54 +156,20 @@ namespace VW.PCI.Api.Client
         //public PCIApiResponse<GetUsersResponse> GetUsers(GetUsersRequest request)
         //    => Execute<GetUsersRequest, GetUsersResponse>("user/GetUsers", request);
 
-        private PCIApiResponse<TResult> Execute<TBody, TResult>(string path, TBody body, string trackingId = null)
+        private IApiResponse<TResult> Execute<TBody, TResult>(
+            int applicationId, string path, TBody body,
+            IDictionary<string, string> headers = null)
             where TBody : class, new()
             where TResult : class, new()
         {
+            _currentApplicationId = applicationId;
             try
             {
-                var apiSetting = this.GetApiSetting(path);
-                var tid = trackingId ?? Guid.NewGuid().ToString("N");
-                var response = this.PostForRestResponse<TBody, PCIApiResponse<TResult>>(apiSetting, body, trackingId: tid);
-
-                if (response.StatusCode == HttpStatusCode.OK)
-                    return new PCIApiResponse<TResult>
-                    {
-                        IsSuccess = true,
-                        StatusCode = response.StatusCode,
-                        TrackingId = tid,
-                        Data = response.Data?.Data
-                    };
-
-                var error = TryDeserializeError(response.Content);
-                return new PCIApiResponse<TResult>
-                {
-                    IsSuccess = false,
-                    StatusCode = response.StatusCode,
-                    TrackingId = error?.TrackId ?? tid,
-                    ErrorMessage = error?.ErrorMessage ?? response.StatusDescription
-                };
+                return TryPost<TBody, TResult>(Utils.GetTrackingId(), GetApiSetting(path), body, null, headers);
             }
-            catch (ApiException ex)
+            finally
             {
-                Logger.Error(ex);
-                return new PCIApiResponse<TResult>
-                {
-                    IsSuccess = false,
-                    StatusCode = ex.StatusCode,
-                    TrackingId = ex.TrackingId,
-                    ErrorMessage = ex.Message
-                };
-            }
-            catch (Exception ex)
-            {
-                Logger.Error(ex);
-                return new PCIApiResponse<TResult>
-                {
-                    IsSuccess = false,
-                    StatusCode = HttpStatusCode.InternalServerError,
-                    ErrorMessage = ex.Message
-                };
+                _currentApplicationId = 0;
             }
         }
 
@@ -298,19 +264,9 @@ namespace VW.PCI.Api.Client
         public IApiResponse<GetUsersResponse> GetUsers(int applicationId, GetUsersRequest request)
         {
             Logger.Debug($"GetUsers::Start. ApplicationId={applicationId}, Request={JsonConvert.SerializeObject(request)}");
-            _currentApplicationId = applicationId;
-            try
-            {
-                var apiResponse = TryPost<GetUsersRequest, GetUsersResponse>(
-                    Utils.GetTrackingId(), GetApiSetting("user/GetUsers"), request, null, null);
-
-                Logger.Debug($"GetUsers::End. Response={JsonConvert.SerializeObject(apiResponse.Data)}");
-                return apiResponse;
-            }
-            finally
-            {
-                _currentApplicationId = 0;
-            }
+            var result = Execute<GetUsersRequest, GetUsersResponse>(applicationId, "user/GetUsers", request);
+            Logger.Debug($"GetUsers::End. Response={JsonConvert.SerializeObject(result.Data)}");
+            return result;
         }
     }
 }
