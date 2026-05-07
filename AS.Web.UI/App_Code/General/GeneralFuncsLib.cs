@@ -4,7 +4,6 @@ using AS.Controls.Grid;
 using AS.Controls.Pages;
 using AS.Core.Common.Utilities;
 using AS.Security.WS.Entities;
-using AS.VW.PCI.Api.Client.Models.Requests;
 using AS.Web.SharedSession;
 using AS.Web.UI.Controls;
 using System;
@@ -23,7 +22,6 @@ using System.Web.Security;
 using System.Web.UI.WebControls;
 using System.Xml;
 using Telerik.Web.UI;
-using VW.PCI.Api.Client;
 using CardTypes = WebSiteEnums.CardTypes;
 
 /// <summary>
@@ -741,18 +739,6 @@ public static partial class GeneralFuncsLib
             per_codes += permission.PermissionCode + ",";
         }
         SessionManager.CurrentUserPermissions = per_codes;
-
-        
-        var test = PCIServiceClient.Instance.GetUsers(new GetUsersRequest() 
-        {
-            ASClient = 64,
-            UserName = "534705620102053",
-            ApplicationCode = "sB7%Rx1!Dv@8Nc#L",
-            ApplicationId = 215,
-            ApplicationName = "EPSG"
-        });
-
-       
 
         //Check user PCI active
         if (page.IsUserWithPermission("SiteAccessPCIAdmin") || page.IsUserWithPermission("HierarchySiteAccessPCIAdmin") || page.IsUserWithPermission("MerchantSiteAccessPCIAdmin"))

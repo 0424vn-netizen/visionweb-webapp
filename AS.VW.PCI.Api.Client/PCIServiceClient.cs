@@ -283,22 +283,22 @@ namespace VW.PCI.Api.Client
             };
         }
 
-        public IApiResponse<GetUsersResponse> GetUsers(GetUsersRequest request)
+        public IApiResponse<GetUsersResponse> GetUsers(int applicationId, GetUsersRequest request)
         {
-            Logger.Debug($"GetUsers::Start function. \nRequest: \n{JsonConvert.SerializeObject(request)}");
+            Logger.Debug($"GetUsers::Start function. ApplicationId={applicationId}, Request={JsonConvert.SerializeObject(request)}");
             var trackingId = Utils.GetTrackingId();
             var apiSetting = GetApiSetting("user/GetUsers");
 
-            var tokenResult = tokenProvider.GetToken(request).Result;
+            var tokenResult = tokenProvider.GetToken(applicationId);
 
-            Dictionary<string, string> headers = new Dictionary<string, string>();
-            headers.Add("Authorization", $"Bearer {tokenResult.AccessToken}");
-
-            Logger.Debug($"GetUsers::AccessToken {tokenResult.AccessToken}");
+            var headers = new Dictionary<string, string>
+            {
+                { "Authorization", $"Bearer {tokenResult.AccessToken}" }
+            };
 
             var apiResponse = TryPost<GetUsersRequest, GetUsersResponse>(trackingId, apiSetting, request, null, headers);
 
-            Logger.Debug($"GetUsers::End function. \nResponse: \n{JsonConvert.SerializeObject(apiResponse.Data)}");
+            Logger.Debug($"GetUsers::End function. Response={JsonConvert.SerializeObject(apiResponse.Data)}");
 
             return apiResponse;
         }

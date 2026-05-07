@@ -1,6 +1,6 @@
 namespace AS.VW.PCI.Api.Client.Models.Requests
 {
-    public class GetUsersRequest : AuthTokenRequest
+    public class GetUsersRequest
     {
         public int ASClient { get; set; }
 

@@ -22,6 +22,6 @@ namespace VW.PCI.Api.Client
 
         //PCIApiResponse<GetAllHierarchyForAOResponse> GetAllHierarchyForAO(GetAllHierarchyForAORequest request);
 
-        IApiResponse<GetUsersResponse> GetUsers(GetUsersRequest request);
+        IApiResponse<GetUsersResponse> GetUsers(int applicationId, GetUsersRequest request);
     }
 }

@@ -1,8 +1,8 @@
-﻿using AS.VW.Api.RestClient;
+using AS.VW.Api.RestClient;
 using AS.VW.PCI.Api.Client.Models.Requests;
 using AS.VW.PCI.Api.Client.Models.Responses;
-using Newtonsoft.Json;
-using System.Threading.Tasks;
+using AS.VW.PCI.Api.Client.Settings;
+using System;
 using VW.PCI.Api.Client;
 
 namespace AS.VW.PCI.Api.Client.Providers
@@ -10,7 +10,6 @@ namespace AS.VW.PCI.Api.Client.Providers
     public class TokenProvider
     {
         protected readonly ILogger Logger;
-
         protected readonly IPCIServiceClient ServiceClient;
 
         public TokenProvider(ILogger logger, IPCIServiceClient serviceClient)
@@ -19,39 +18,47 @@ namespace AS.VW.PCI.Api.Client.Providers
             ServiceClient = serviceClient;
         }
 
-        public Task<AuthTokenResponse> GetToken(AuthTokenRequest request)
+        public AuthTokenResponse GetToken(int applicationId)
         {
-            LogDebug("GetToken:: Start function");
+            LogDebug("GetToken::Start function");
 
-            var token = GetAuthenApi(request).Result;
+            var config = PCIClientConfigProvider.Instance.GetConfig(applicationId);
+            var authRequest = new AuthTokenRequest
+            {
+                ApplicationId = config.ApplicationId,
+                ApplicationName = config.ApplicationName,
+                ApplicationCode = config.ApplicationCode
+            };
 
-            LogDebug($"GetToken:: End function. {JsonConvert.SerializeObject(token)}");
-            return Task.FromResult(token);
+            var token = GetAuthenApi(authRequest);
+
+            LogDebug($"GetToken::End function. TokenType={token.TokenType}, ExpireMinutes={token.ExpireMinutes}");
+            return token;
         }
 
-        private Task<AuthTokenResponse> GetAuthenApi(AuthTokenRequest request)
+        private AuthTokenResponse GetAuthenApi(AuthTokenRequest request)
         {
             LogDebug("GetAuthenApi::Start function.");
 
-            // call API Authen        
             var authenticateRs = ServiceClient.Authenticate(request);
 
-            var result = new AuthTokenResponse
+            if (authenticateRs?.Data == null)
+                throw new InvalidOperationException(
+                    $"Authentication failed for ApplicationId={request.ApplicationId}: empty response.");
+
+            LogDebug("GetAuthenApi::End function.");
+
+            return new AuthTokenResponse
             {
                 AccessToken = authenticateRs.Data.AccessToken,
                 ExpireMinutes = authenticateRs.Data.ExpireMinutes,
-                TokenType = authenticateRs.Data.TokenType,
+                TokenType = authenticateRs.Data.TokenType
             };
-
-            LogDebug("GetAuthenApi::Start function.");
-
-            return Task.FromResult(result);
-            
         }
-        
-        private void LogDebug(string messsage)
+
+        private void LogDebug(string message)
         {
-            Logger.Debug($"TokenProvider::{messsage}");
+            Logger.Debug($"TokenProvider::{message}");
         }
     }
 }
