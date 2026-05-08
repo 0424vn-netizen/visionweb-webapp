@@ -405,12 +405,15 @@ public static partial class GeneralFuncsLib
         FilterParameterCollection parameterOut = new FilterParameterCollection();
         parameterIn = new FilterParameterCollection();
         parameterOut = new FilterParameterCollection();
-        parameterIn.Add(new FilterParameter("@ASClient", user.ASClient, System.Data.DbType.Int32));
-        parameterIn.Add(new FilterParameter("@UserName", username, System.Data.DbType.String));
-        DataTable dtCheckUser = PciWebServices.PciReportServices.GetReports("spa_SEC_CheckUserName", parameterIn);
+        var checkUserResponse = PCIServiceClient.Instance.GetUsers(SessionManager.CurrentClient, new AS.VW.PCI.Api.Client.Models.Requests.GetUsersRequest
+        {
+            ASClient = user.ASClient,
+            UserName = username
+        });
+        var dtCheckUser = checkUserResponse != null ? checkUserResponse.Data : null;
 
         string actvStatus = "1";
-        if (dtCheckUser.Rows.Count == 0)
+        if (dtCheckUser == null)
         {
             user.RecId = Guid.Empty;
             //if (IsInPCIAccessPermission)
@@ -443,7 +446,7 @@ public static partial class GeneralFuncsLib
         }
         else
         {
-            user.RecId = new Guid(dtCheckUser.Rows[0]["RecId"].ToString());
+            user.RecId = new Guid(dtCheckUser.RecId);
             //Do update user info
             parameterIn.Clear();
             parameterOut.Clear();

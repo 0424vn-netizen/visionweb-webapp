@@ -16,6 +16,7 @@ using AS.Common.Logger;
 using AS.Web.SharedSession;
 using AS.Tax.Security.Web.Services.Model;
 using AS.Web.Business.Shared.Constants;
+using VW.PCI.Api.Client;
 
 namespace As.VisionWeb.Web
 {
@@ -892,15 +893,16 @@ namespace As.VisionWeb.Web
                 FilterParameterCollection parameterIn;
                 FilterParameterCollection parameterOut;
                 //Check user name  
-                parameterIn = new FilterParameterCollection();
-                parameterOut = new FilterParameterCollection();
-                parameterIn.Add(new FilterParameter("@ASClient", user.ASClient, DbType.Int32));
-                parameterIn.Add(new FilterParameter("@UserName", user.OriginalUserID, DbType.String));
-                DataTable dtCheckUser = PciWebServices.PciReportServices.GetReports("spa_SEC_CheckUserName", parameterIn);
-
-                if (dtCheckUser.Rows.Count > 0)
+                var checkUserResponse = PCIServiceClient.Instance.GetUsers(SessionManager.CurrentClient, new AS.VW.PCI.Api.Client.Models.Requests.GetUsersRequest
                 {
-                    Guid userRecId = new Guid(dtCheckUser.Rows[0]["RecId"].ToString());
+                    ASClient = user.ASClient,
+                    UserName = user.OriginalUserID
+                });
+                var dtCheckUser = checkUserResponse != null ? checkUserResponse.Data : null;
+
+                if (dtCheckUser != null)
+                {
+                    Guid userRecId = new Guid(dtCheckUser.RecId);
                     //Do update user info
                     parameterIn.Clear();
                     parameterOut.Clear();
