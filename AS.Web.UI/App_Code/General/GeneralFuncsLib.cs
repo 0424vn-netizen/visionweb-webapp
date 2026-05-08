@@ -2299,14 +2299,16 @@ public static partial class GeneralFuncsLib
         paramUser.Add(new FilterParameter("@ASClient", SessionManager.CurrentUser.ASClient, DbType.Int32));
         if (GeneralFuncsLib.GetDataOfExtendedSetting("AllowChainAccessToPCIWithOldestMerchant") == "true" && SessionManager.CurrentUser.EntityType == 11)
         {
-            FilterParameterCollection paramMasterMerchant = new FilterParameterCollection();
-            paramMasterMerchant.Add(new FilterParameter("@ASClient", SessionManager.CurrentUser.ASClient, DbType.Int32));
-            paramMasterMerchant.AddLoggedInUserPrimaryUserID();
-            DataTable dtMasterMerchant = PciWebServices.PciReportServices.GetReports("spa_MULTI_PCI_GetMasterMerchant", paramMasterMerchant);
-            if (dtMasterMerchant != null && dtMasterMerchant.Rows.Count > 0)
+            var getMasterMerchantResponse = PCIServiceClient.Instance.GetMasterMerchant(SessionManager.CurrentClient, new AS.VW.PCI.Api.Client.Models.Requests.GetMasterMerchantRequest
             {
-                string merchantNumber = dtMasterMerchant.Rows[0]["MerchantNumber"].ToString();
-                bool isActiveMerchant = dtMasterMerchant.Rows[0]["Status"].ToBoolean();
+                ASClient = SessionManager.CurrentUser.ASClient.ToString(),
+                PrimaryUserId = SessionManager.CurrentUser.EntityID
+            });
+            var masterMerchant = getMasterMerchantResponse != null ? getMasterMerchantResponse.Data : null;
+            if (masterMerchant != null)
+            {
+                string merchantNumber = masterMerchant.MerchantNumber;
+                bool isActiveMerchant = masterMerchant.Status.ToBoolean();
                 if (isActiveMerchant && !merchantNumber.IsNullOrEmpty())
                     paramUser.Add(new FilterParameter("@UserName", merchantNumber, DbType.AnsiString));
                 else
