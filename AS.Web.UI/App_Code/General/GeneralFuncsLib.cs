@@ -763,15 +763,13 @@ public static partial class GeneralFuncsLib
             {
                 userID = SessionManager.CurrentUser.EntityID;
             }
-            AS.Common.DBManager.FilterParameterCollection _param = new AS.Common.DBManager.FilterParameterCollection();
-            _param.Add(new AS.Common.DBManager.FilterParameter("@UserId", userID, DbType.AnsiString));
-            _param.Add(new AS.Common.DBManager.FilterParameter("@ASClient", SessionManager.CurrentClient, DbType.Int32));
-            _param.Add(new AS.Common.DBManager.FilterParameter("@Result", 0, DbType.Int32, true));
-
-            AS.Common.DBManager.FilterParameterCollection _outParam = new AS.Common.DBManager.FilterParameterCollection();
-            _outParam.Add(new AS.Common.DBManager.FilterParameter("@Result", 0, DbType.Boolean, true));
-            PciWebServices.PciReportServices.ExecuteNonQueryCommand("spa_SEC_CheckLogInForVWUser", _param, out _outParam);
-            string isUserActivePCI = _outParam[0].ParameterValue.ToString();
+            var getUsersResponse = PCIServiceClient.Instance.GetUsers(WebSiteSettings.PCIApplicationId, new AS.VW.PCI.Api.Client.Models.Requests.GetUsersRequest
+            {
+                ASClient = SessionManager.CurrentClient,
+                UserName = userID
+            });
+            var pciUser = getUsersResponse?.Data;
+            string isUserActivePCI = pciUser == null ? "0" : pciUser.ActiveStatus.ToString();
 
             bool isHierachyPrimaryUser = (SessionManager.CurrentUserType == WebSiteEnums.UserHierarchyMode.Hierarchy && SessionManager.CurrentUser.UserSecRole.Contains("PRI"));
 
