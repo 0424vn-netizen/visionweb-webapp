@@ -254,16 +254,12 @@ public static partial class GeneralFuncsLib
 
     public static void SyncUserWithPCIForLockAccount(int ASClient, string userId, bool isActivate)
     {
-
-        FilterParameterCollection parameterIn = new FilterParameterCollection();
-
-        parameterIn.Add(new FilterParameter("@ASClient", ASClient, System.Data.DbType.Int32));
-        parameterIn.Add(new FilterParameter("@UserID", userId, System.Data.DbType.String));
-        parameterIn.Add(new FilterParameter("@isActive", isActivate, System.Data.DbType.Boolean));
-        var _outParam = new FilterParameterCollection();
-        PciWebServices.PciReportServices.ExecuteNonQueryCommand("spa_SEC_UpdateOptInOut", parameterIn, out _outParam);
-
-
+        PCIServiceClient.Instance.UpdateOptInOut(ASClient, new AS.VW.PCI.Api.Client.Models.Requests.UpdateOptInOutRequest
+        {
+            ASClient = ASClient.ToString(),
+            UserID = userId,
+            IsActive = isActivate
+        });
     }
 
     # region PCI Process
