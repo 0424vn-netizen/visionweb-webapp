@@ -2308,7 +2308,7 @@ public static partial class GeneralFuncsLib
             if (masterMerchant != null)
             {
                 string merchantNumber = masterMerchant.MerchantNumber;
-                bool isActiveMerchant = masterMerchant.Status.ToBoolean();
+                bool isActiveMerchant = masterMerchant.Status;
                 if (isActiveMerchant && !merchantNumber.IsNullOrEmpty())
                     paramUser.Add(new FilterParameter("@UserName", merchantNumber, DbType.AnsiString));
                 else
