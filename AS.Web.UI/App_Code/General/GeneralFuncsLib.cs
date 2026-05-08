@@ -763,12 +763,12 @@ public static partial class GeneralFuncsLib
             {
                 userID = SessionManager.CurrentUser.EntityID;
             }
-            var getUsersResponse = PCIServiceClient.Instance.GetUsers(WebSiteSettings.PCIApplicationId, new AS.VW.PCI.Api.Client.Models.Requests.GetUsersRequest
+            var getUsersResponse = PCIServiceClient.Instance.GetUsers(SessionManager.CurrentClient, new AS.VW.PCI.Api.Client.Models.Requests.GetUsersRequest
             {
                 ASClient = SessionManager.CurrentClient,
                 UserName = userID
             });
-            var pciUser = getUsersResponse?.Data;
+            var pciUser = getUsersResponse != null ? getUsersResponse.Data : null;
             string isUserActivePCI = pciUser == null ? "0" : pciUser.ActiveStatus.ToString();
 
             bool isHierachyPrimaryUser = (SessionManager.CurrentUserType == WebSiteEnums.UserHierarchyMode.Hierarchy && SessionManager.CurrentUser.UserSecRole.Contains("PRI"));

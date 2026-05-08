@@ -507,13 +507,6 @@ public class WebSiteSettings
             return ConfigurationManager.AppSettings["PCI_Enviroment"] ?? null;
         }
     }
-    public static int PCIApplicationId
-    {
-        get
-        {
-            return int.TryParse(ConfigurationManager.AppSettings["PCI_ApplicationId"], out int id) ? id : 0;
-        }
-    }
     public static WebAppConfig GetWebAppConfig()
     {
         var configFile = "App_Data/AppConfig/AppConfig.json";
