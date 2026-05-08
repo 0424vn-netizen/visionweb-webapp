@@ -547,6 +547,25 @@ public static partial class GeneralFuncsLib
     {
         return AS.Common.DataProtection.Cryptophy.SHA1(DateTime.Now.Ticks.ToString());
     }
+    public static System.Data.DataTable BuildUserDataTableForSynch(AS.VW.PCI.Api.Client.Models.Responses.GetUsersResponse user)
+    {
+        System.Data.DataTable dt = new System.Data.DataTable();
+        dt.Columns.Add("UserNameFirst");
+        dt.Columns.Add("UserNameLast");
+        dt.Columns.Add("UserNameFull");
+        dt.Columns.Add("UserPasswordType");
+        dt.Columns.Add("LoginQuestionIndex");
+        dt.Columns.Add("LoginQuestionAnswer");
+        System.Data.DataRow row = dt.NewRow();
+        row["UserNameFirst"] = (object)user.FirstName ?? System.DBNull.Value;
+        row["UserNameLast"] = (object)user.LastName ?? System.DBNull.Value;
+        row["UserNameFull"] = (object)user.FullName ?? System.DBNull.Value;
+        row["UserPasswordType"] = (object)user.PasswordType ?? System.DBNull.Value;
+        row["LoginQuestionIndex"] = System.DBNull.Value;
+        row["LoginQuestionAnswer"] = System.DBNull.Value;
+        dt.Rows.Add(row);
+        return dt;
+    }
     #endregion
 
     public static void TransferFileToClient(this Page page, byte[] buffer, string fileName)

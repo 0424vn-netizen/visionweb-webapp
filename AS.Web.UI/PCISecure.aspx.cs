@@ -7,6 +7,7 @@ using AS.Common.Logger;
 using AS.Web.Business.PCI;
 using AS.Web.Business.PCI.Models;
 using AS.Web.Business.Shared.Constants;
+using VW.PCI.Api.Client;
 
 [PagePermission("SiteAccessPCIAdmin,HierarchySiteAccessPCIAdmin,MerchantSiteAccessPCIAdmin")]
 public partial class PCISecure : NonReportPage
@@ -178,21 +179,28 @@ public partial class PCISecure : NonReportPage
 
     public GetUserInPciInfo GetUserInfoInPci(FilterParameterCollection paramRequest)
     {
-        var dtUser = PciWebServices.PciReportServices.GetReports("spa_SEC_GetUsers", paramRequest);
-        if (dtUser == null || dtUser.Rows.Count <= 0)
+        int asClient = 0;
+        string userName = null;
+        foreach (FilterParameter p in paramRequest)
         {
-            return null;
+            if (p.ParameterName == "@ASClient") asClient = int.Parse(p.ParameterValue.ToString());
+            if (p.ParameterName == "@UserName") userName = p.ParameterValue.ToString();
         }
-        Guid userId = new Guid(dtUser.Rows[0]["RecId"].ToString());
-        int asClient = int.Parse(dtUser.Rows[0]["ASClient"].ToString());
-        string userName = dtUser.Rows[0]["UserId"].ToString();
+
+        var response = PCIServiceClient.Instance.GetUsers(SessionManager.CurrentClient, new AS.VW.PCI.Api.Client.Models.Requests.GetUsersRequest
+        {
+            ASClient = asClient,
+            UserName = userName
+        });
+        var pciUser = response != null ? response.Data : null;
+        if (pciUser == null) return null;
 
         return new GetUserInPciInfo
         {
-            AsClientId = asClient,
-            UserId = userId,
-            UserName = userName,
-            UserInfo = dtUser
+            AsClientId = int.Parse(pciUser.ASClient),
+            UserId = new Guid(pciUser.RecId),
+            UserName = pciUser.UserID,
+            UserInfo = GeneralFuncsLib.BuildUserDataTableForSynch(pciUser)
         };
     }
 

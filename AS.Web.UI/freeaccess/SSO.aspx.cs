@@ -5,6 +5,7 @@ using AS.Common.DBManager;
 using AS.WEB.UI.SamlSign;
 using AS.Security.WS.Entities;
 using System.Web;
+using VW.PCI.Api.Client;
 
 namespace As.VisionWeb.Web
 {
@@ -138,16 +139,29 @@ namespace As.VisionWeb.Web
                     return false;
                 }
 
-                DataTable dtUser = PciWebServices.PciReportServices.GetReports("spa_SEC_GetUsers", _params);
-                if (dtUser.Rows.Count > 0)
+                int asClient = 0;
+                string userName = null;
+                foreach (FilterParameter p in _params)
                 {
-                    Guid userid = new Guid(dtUser.Rows[0]["RecId"].ToString());
-                    int asclient = int.Parse(dtUser.Rows[0]["ASClient"].ToString());
-                    string username = dtUser.Rows[0]["UserId"].ToString();
+                    if (p.ParameterName == "@ASClient") asClient = int.Parse(p.ParameterValue.ToString());
+                    if (p.ParameterName == "@UserName") userName = p.ParameterValue.ToString();
+                }
+
+                var getUsersResponse = PCIServiceClient.Instance.GetUsers(SessionManager.CurrentClient, new AS.VW.PCI.Api.Client.Models.Requests.GetUsersRequest
+                {
+                    ASClient = asClient,
+                    UserName = userName
+                });
+                var pciUser = getUsersResponse != null ? getUsersResponse.Data : null;
+                if (pciUser != null)
+                {
+                    Guid userid = new Guid(pciUser.RecId);
+                    int asclient = int.Parse(pciUser.ASClient);
+                    string username = pciUser.UserID;
                     string temppassword = GeneralFuncsLib.GeneratePassword();
 
                     // UPdate PCI Role
-                    GeneralFuncsLib.SynchUserToPCI(dtUser, userid, asclient, username);
+                    GeneralFuncsLib.SynchUserToPCI(GeneralFuncsLib.BuildUserDataTableForSynch(pciUser), userid, asclient, username);
                     //Save Timezone
                     if (!GeneralFuncsLib.GetCookie("ClientTimezone").IsNullOrEmpty() && !GeneralFuncsLib.GetCookie("DayLightSaving").IsNullOrEmpty())
                     {
