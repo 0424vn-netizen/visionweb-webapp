@@ -13,6 +13,7 @@ using AS.Tax.Security.Web.Services;
 using System.Text.RegularExpressions;
 using System.Text;
 using AS.Common.DataProtection;
+using VW.PCI.Api.Client;
 using System.Reflection;
 using AS.Tax.Security.Web.Services.Model;
 using System.Web.UI.HtmlControls;
@@ -1900,10 +1901,12 @@ namespace As.VisionWeb.Web
                     //Do update sec roles
                     parameterIn.Clear();
                     parameterOut.Clear();
-                    parameterIn.Add(new FilterParameter("@ASClient", user.ASClient, System.Data.DbType.Int32));
-                    parameterIn.Add(new FilterParameter("@UserID", user.RecId, System.Data.DbType.Guid));
-                    parameterIn.Add(new FilterParameter("@RoleId", hierachyInPCI, System.Data.DbType.Int32));
-                    PciWebServices.PciReportServices.ExecuteNonQueryCommand("spa_SEC_UpdSecRoleByUserID", parameterIn, out parameterOut);
+                    PCIServiceClient.Instance.UpdSecRoleByUserID(SessionManager.CurrentClient, new AS.VW.PCI.Api.Client.Models.Requests.UpdSecRoleByUserIDRequest
+                    {
+                        ASClient = user.ASClient.ToString(),
+                        UserID = user.RecId.ToString(),
+                        RoleID = hierachyInPCI.ToString()
+                    });
 
                     //Do update theme          
                     int themeID = GetThemeOfPCIUser(SessionManager.CurrentUser.OriginalUserID, SessionManager.CurrentUserRoles[0].HierarchyID);
