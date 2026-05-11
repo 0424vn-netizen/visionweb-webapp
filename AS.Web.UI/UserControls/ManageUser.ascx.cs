@@ -1885,23 +1885,26 @@ namespace As.VisionWeb.Web
                 {
                     user.RecId = new Guid(dtCheckUser.RecId);
                     //Do update user info
-                    parameterIn.Clear();
-                    parameterOut.Clear();
-                    parameterIn.Add(new FilterParameter("@RecId", user.RecId, System.Data.DbType.Guid));
-                    parameterIn.Add(new FilterParameter("@UserName", username, System.Data.DbType.String));
-                    parameterIn.Add(new FilterParameter("@ASClient", user.ASClient, System.Data.DbType.Int32));
-                    parameterIn.Add(new FilterParameter("@SystemID", 2, System.Data.DbType.Int32));
-                    parameterIn.Add(new FilterParameter("@UserNameFirst", user.UserNameFirst, System.Data.DbType.String));
-                    parameterIn.Add(new FilterParameter("@UserNameLast", user.UserNameLast, System.Data.DbType.String));
-                    parameterIn.Add(new FilterParameter("@UserNameFull", user.UserNameFull, System.Data.DbType.String));
-                    parameterIn.Add(new FilterParameter("@UserPasswordType", user.UserPasswordType, System.Data.DbType.String));
-                    parameterIn.Add(new FilterParameter("@Email", null, System.Data.DbType.String));
-                    parameterIn.Add(new FilterParameter("@LoginQuestionIndex", user.LoginQuestionIndex, System.Data.DbType.Int32));
-                    parameterIn.Add(new FilterParameter("@LoginQuestionAnswer", user.LoginQuestionAnswer, System.Data.DbType.String));
-                    parameterIn.Add(new FilterParameter("@ActvStatus", actvStatus, System.Data.DbType.String));
-                    parameterIn.Add(new FilterParameter("@HierarchyIds", hierachyInPCI.ToString(), System.Data.DbType.AnsiString));
-
-                    PciWebServices.PciReportServices.ExecuteNonQueryCommand("spa_SEC_UpdateDDSUser", parameterIn, out parameterOut);
+                    bool pciAccess = SessionManager.CurrentUserPermissions.Contains("SiteAccessPCIAdmin") ||
+                                     SessionManager.CurrentUserPermissions.Contains("HierarchySiteAccessPCIAdmin") ||
+                                     SessionManager.CurrentUserPermissions.Contains("MerchantSiteAccessPCIAdmin");
+                    PCIServiceClient.Instance.UpdateUser(SessionManager.CurrentClient, new AS.VW.PCI.Api.Client.Models.Requests.UpdateUserRequest
+                    {
+                        RecId = user.RecId.ToString(),
+                        UserName = username,
+                        AsClient = user.ASClient.ToString(),
+                        SystemID = "2",
+                        FirstName = user.UserNameFirst,
+                        LastName = user.UserNameLast,
+                        FullName = user.UserNameFull,
+                        PasswordType = user.UserPasswordType.ToString(),
+                        Email = null,
+                        LoginQuestionIndex = user.LoginQuestionIndex,
+                        LoginQuestionAnswer = user.LoginQuestionAnswer,
+                        ActiveStatus = actvStatus,
+                        HierarchyIds = hierachyInPCI.ToString(),
+                        PciAccess = pciAccess
+                    });
                 }
 
                 if (user.RecId != Guid.Empty)

@@ -904,23 +904,26 @@ namespace As.VisionWeb.Web
                 {
                     Guid userRecId = new Guid(dtCheckUser.RecId);
                     //Do update user info
-                    parameterIn.Clear();
-                    parameterOut.Clear();
-                    parameterIn.Add(new FilterParameter("@RecId", userRecId, DbType.Guid));
-                    parameterIn.Add(new FilterParameter("@UserName", user.OriginalUserID, DbType.String));
-                    parameterIn.Add(new FilterParameter("@ASClient", user.ASClient, DbType.Int32));
-                    parameterIn.Add(new FilterParameter("@SystemId", 0, DbType.Int32));
-                    parameterIn.Add(new FilterParameter("@UserNameFirst", user.UserNameFirst, DbType.String));
-                    parameterIn.Add(new FilterParameter("@UserNameLast", user.UserNameLast, DbType.String));
-                    parameterIn.Add(new FilterParameter("@UserNameFull", user.UserNameFull, DbType.String));
-                    parameterIn.Add(new FilterParameter("@UserPasswordType", user.UserPasswordType, DbType.String));
-                    parameterIn.Add(new FilterParameter("@Email", null, DbType.String));
-                    if (uxCheckChangeQuestion.Checked)
+                    bool pciAccess = SessionManager.CurrentUserPermissions.Contains("SiteAccessPCIAdmin") ||
+                                     SessionManager.CurrentUserPermissions.Contains("HierarchySiteAccessPCIAdmin") ||
+                                     SessionManager.CurrentUserPermissions.Contains("MerchantSiteAccessPCIAdmin");
+                    PCIServiceClient.Instance.UpdateUser(SessionManager.CurrentClient, new AS.VW.PCI.Api.Client.Models.Requests.UpdateUserRequest
                     {
-                        parameterIn.Add(new FilterParameter("@LoginQuestionIndex", user.LoginQuestionIndex, DbType.Int32));
-                        parameterIn.Add(new FilterParameter("@LoginQuestionAnswer", user.LoginQuestionAnswer, DbType.String));
-                    }
-                    PciWebServices.PciReportServices.ExecuteNonQueryCommand("spa_SEC_UpdateDDSUser", parameterIn, out parameterOut);
+                        RecId = userRecId.ToString(),
+                        UserName = user.OriginalUserID,
+                        AsClient = user.ASClient.ToString(),
+                        SystemID = "0",
+                        FirstName = user.UserNameFirst,
+                        LastName = user.UserNameLast,
+                        FullName = user.UserNameFull,
+                        PasswordType = user.UserPasswordType.ToString(),
+                        Email = null,
+                        LoginQuestionIndex = uxCheckChangeQuestion.Checked ? (int?)user.LoginQuestionIndex : null,
+                        LoginQuestionAnswer = uxCheckChangeQuestion.Checked ? user.LoginQuestionAnswer : null,
+                        ActiveStatus = null,
+                        HierarchyIds = null,
+                        PciAccess = pciAccess
+                    });
 
                     if (uxCheckChangePass.Checked)
                     {

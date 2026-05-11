@@ -450,23 +450,26 @@ public static partial class GeneralFuncsLib
         {
             user.RecId = new Guid(dtCheckUser.RecId);
             //Do update user info
-            parameterIn.Clear();
-            parameterOut.Clear();
-            parameterIn.Add(new FilterParameter("@RecId", user.RecId, System.Data.DbType.Guid));
-            parameterIn.Add(new FilterParameter("@UserName", user.OriginalUserID, System.Data.DbType.String));
-            parameterIn.Add(new FilterParameter("@ASClient", user.ASClient, System.Data.DbType.Int32));
-            parameterIn.Add(new FilterParameter("@SystemID", 2, System.Data.DbType.Int32));
-            parameterIn.Add(new FilterParameter("@UserNameFirst", user.UserNameFirst, System.Data.DbType.String));
-            parameterIn.Add(new FilterParameter("@UserNameLast", user.UserNameLast, System.Data.DbType.String));
-            parameterIn.Add(new FilterParameter("@UserNameFull", user.UserNameFull, System.Data.DbType.String));
-            parameterIn.Add(new FilterParameter("@UserPasswordType", user.UserPasswordType, System.Data.DbType.String));
-            parameterIn.Add(new FilterParameter("@Email", null, System.Data.DbType.String));
-            parameterIn.Add(new FilterParameter("@LoginQuestionIndex", user.LoginQuestionIndex, System.Data.DbType.Int32));
-            parameterIn.Add(new FilterParameter("@LoginQuestionAnswer", user.LoginQuestionAnswer, System.Data.DbType.String));
-            parameterIn.Add(new FilterParameter("@ActvStatus", actvStatus, System.Data.DbType.String));
-            parameterIn.Add(new FilterParameter("@HierarchyIds", hierachyInPCI.ToString(), System.Data.DbType.AnsiString));
-
-            PciWebServices.PciReportServices.ExecuteNonQueryCommand("spa_SEC_UpdateDDSUser", parameterIn, out parameterOut);
+            bool pciAccess = SessionManager.CurrentUserPermissions.Contains("SiteAccessPCIAdmin") ||
+                             SessionManager.CurrentUserPermissions.Contains("HierarchySiteAccessPCIAdmin") ||
+                             SessionManager.CurrentUserPermissions.Contains("MerchantSiteAccessPCIAdmin");
+            PCIServiceClient.Instance.UpdateUser(SessionManager.CurrentClient, new AS.VW.PCI.Api.Client.Models.Requests.UpdateUserRequest
+            {
+                RecId = user.RecId.ToString(),
+                UserName = user.OriginalUserID,
+                AsClient = user.ASClient.ToString(),
+                SystemID = "2",
+                FirstName = user.UserNameFirst,
+                LastName = user.UserNameLast,
+                FullName = user.UserNameFull,
+                PasswordType = user.UserPasswordType.ToString(),
+                Email = null,
+                LoginQuestionIndex = user.LoginQuestionIndex,
+                LoginQuestionAnswer = user.LoginQuestionAnswer,
+                ActiveStatus = actvStatus,
+                HierarchyIds = hierachyInPCI.ToString(),
+                PciAccess = pciAccess
+            });
         }
 
         if (user.RecId != Guid.Empty)
@@ -522,27 +525,26 @@ public static partial class GeneralFuncsLib
             int hierachyInPCI = GeneralFuncsLib.GetPCIRole(username);
             if (hierachyInPCI <= 0) return;
 
-            FilterParameterCollection parameterIn = new FilterParameterCollection();
-            FilterParameterCollection parameterOut = new FilterParameterCollection();
-            parameterIn.Add(new FilterParameter("@RecId", userid, System.Data.DbType.Guid));
-            parameterIn.Add(new FilterParameter("@UserName", username, System.Data.DbType.String));
-            parameterIn.Add(new FilterParameter("@ASClient", asclient, System.Data.DbType.Int32));
-            parameterIn.Add(new FilterParameter("@SystemID", 2, System.Data.DbType.Int32));
-
-            parameterIn.Add(new FilterParameter("@UserNameFirst", dtUser.Rows[0]["UserNameFirst"].ToSafeString(), System.Data.DbType.String));
-            parameterIn.Add(new FilterParameter("@UserNameLast", dtUser.Rows[0]["UserNameLast"].ToSafeString(), System.Data.DbType.String));
-            parameterIn.Add(new FilterParameter("@UserNameFull", dtUser.Rows[0]["UserNameFull"].ToSafeString(), System.Data.DbType.String));
-
-            if (dtUser.Rows[0]["UserPasswordType"] != DBNull.Value)
-                parameterIn.Add(new FilterParameter("@UserPasswordType", dtUser.Rows[0]["UserPasswordType"], System.Data.DbType.String));
-            if (dtUser.Rows[0]["LoginQuestionIndex"] != DBNull.Value)
-                parameterIn.Add(new FilterParameter("@LoginQuestionIndex", dtUser.Rows[0]["LoginQuestionIndex"], System.Data.DbType.Int32));
-            if (dtUser.Rows[0]["LoginQuestionAnswer"] != DBNull.Value)
-                parameterIn.Add(new FilterParameter("@LoginQuestionAnswer", dtUser.Rows[0]["LoginQuestionAnswer"], System.Data.DbType.String));
-            parameterIn.Add(new FilterParameter("@Email", null, System.Data.DbType.String));
-            parameterIn.Add(new FilterParameter("@ActvStatus", null, System.Data.DbType.String));
-            parameterIn.Add(new FilterParameter("@HierarchyIds", hierachyInPCI, System.Data.DbType.AnsiString));
-            PciWebServices.PciReportServices.ExecuteNonQueryCommand("spa_SEC_UpdateDDSUser", parameterIn, out parameterOut);
+            bool pciAccess = SessionManager.CurrentUserPermissions.Contains("SiteAccessPCIAdmin") ||
+                             SessionManager.CurrentUserPermissions.Contains("HierarchySiteAccessPCIAdmin") ||
+                             SessionManager.CurrentUserPermissions.Contains("MerchantSiteAccessPCIAdmin");
+            PCIServiceClient.Instance.UpdateUser(SessionManager.CurrentClient, new AS.VW.PCI.Api.Client.Models.Requests.UpdateUserRequest
+            {
+                RecId = userid.ToString(),
+                UserName = username,
+                AsClient = asclient.ToString(),
+                SystemID = "2",
+                FirstName = dtUser.Rows[0]["UserNameFirst"].ToSafeString(),
+                LastName = dtUser.Rows[0]["UserNameLast"].ToSafeString(),
+                FullName = dtUser.Rows[0]["UserNameFull"].ToSafeString(),
+                PasswordType = dtUser.Rows[0]["UserPasswordType"] != DBNull.Value ? dtUser.Rows[0]["UserPasswordType"].ToString() : null,
+                LoginQuestionIndex = dtUser.Rows[0]["LoginQuestionIndex"] != DBNull.Value ? (int?)Convert.ToInt32(dtUser.Rows[0]["LoginQuestionIndex"]) : null,
+                LoginQuestionAnswer = dtUser.Rows[0]["LoginQuestionAnswer"] != DBNull.Value ? dtUser.Rows[0]["LoginQuestionAnswer"].ToString() : null,
+                Email = null,
+                ActiveStatus = null,
+                HierarchyIds = hierachyInPCI.ToString(),
+                PciAccess = pciAccess
+            });
 
         }
     }

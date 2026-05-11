@@ -11,7 +11,7 @@ namespace AS.VW.PCI.Api.Client.Models.Requests
         public string LastName { get; set; }
         public string FullName { get; set; }
         public string PasswordType { get; set; }
-        public int LoginQuestionIndex { get; set; }
+        public int? LoginQuestionIndex { get; set; }
         public string LoginQuestionAnswer { get; set; }
         public string ActiveStatus { get; set; }
         public string HierarchyIds { get; set; }
