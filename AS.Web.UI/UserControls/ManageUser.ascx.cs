@@ -1805,14 +1805,15 @@ namespace As.VisionWeb.Web
                 {
                     if (isHierarchyPCIAccess && SessionManager.CurrentUserType == WebSiteEnums.UserHierarchyMode.Hierarchy)
                     {
-                        FilterParameterCollection param = new FilterParameterCollection();
-                        param.Add(new FilterParameter("@ASclient", SessionManager.CurrentClient, DbType.Int32));
-                        param.Add(new FilterParameter("@IsPrimaryUser", false, DbType.Boolean));
-
-                        DataTable dt = PciWebServices.PciReportServices.GetReports("spa_SEC_GetHierarchyIDFromHierarchyUser", param);
-                        if (dt.Rows.Count > 0)
+                        var hierarchyUserResponse = PCIServiceClient.Instance.GetUsers(SessionManager.CurrentClient, new AS.VW.PCI.Api.Client.Models.Requests.GetUsersRequest
                         {
-                            hierachyInPCI = int.Parse(dt.Rows[0]["HierarchyID"].ToString());
+                            ASClient = SessionManager.CurrentClient,
+                            UserName = SessionManager.CurrentUser.UserID
+                        });
+                        var hierarchyUser = hierarchyUserResponse != null ? hierarchyUserResponse.Data : null;
+                        if (hierarchyUser != null)
+                        {
+                            hierachyInPCI = hierarchyUser.HierarchyId;
                         }
                     }
                     else
