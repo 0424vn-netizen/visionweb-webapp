@@ -1854,27 +1854,32 @@ namespace As.VisionWeb.Web
                 {
                     user.RecId = Guid.Empty;
                     //Do create user
-                    parameterIn.Clear();
-                    parameterOut.Clear();
-                    parameterIn.Add(new FilterParameter("@UserId", Guid.Empty, DbType.Guid));
-                    parameterIn.Add(new FilterParameter("@ASClient", user.ASClient, System.Data.DbType.Int32));
-                    parameterIn.Add(new FilterParameter("@UserName", username, System.Data.DbType.String));
-                    parameterIn.Add(new FilterParameter("@UserNameFirst", user.UserNameFirst, System.Data.DbType.String));
-                    parameterIn.Add(new FilterParameter("@UserNameLast", user.UserNameLast, System.Data.DbType.String));
-                    parameterIn.Add(new FilterParameter("@UserNameFull", user.UserNameFull, System.Data.DbType.String));
-                    parameterIn.Add(new FilterParameter("@UserPassword", newPassword, System.Data.DbType.String));
-                    parameterIn.Add(new FilterParameter("@UserPasswordType", user.UserPasswordType, System.Data.DbType.String));
-                    parameterIn.Add(new FilterParameter("@Email", null, System.Data.DbType.String));
-                    parameterIn.Add(new FilterParameter("@LoginQuestionIndex", user.LoginQuestionIndex, System.Data.DbType.Int32));
-                    parameterIn.Add(new FilterParameter("@LoginQuestionAnswer", user.LoginQuestionAnswer, System.Data.DbType.String));
-                    parameterIn.Add(new FilterParameter("@ActiveStatus", actvStatus, System.Data.DbType.String));
-                    parameterIn.Add(new FilterParameter("@HierarchyIds", hierachyInPCI.ToString(), System.Data.DbType.AnsiString));
-                    parameterIn.Add(new FilterParameter("@CreatedBy", user.CreatedBy, System.Data.DbType.Guid));
-
-                    parameterIn[0].IsOutParameter = true;
-                    PciWebServices.PciReportServices.ExecuteNonQueryCommand("spa_SEC_CreateDDSUser", parameterIn, out parameterOut);
-                    if (parameterOut.Count > 0)
-                        user.RecId = new Guid(parameterOut[0].ParameterValue.ToString());
+                    bool pciAccess = SessionManager.CurrentUserPermissions.Contains("SiteAccessPCIAdmin") ||
+                                     SessionManager.CurrentUserPermissions.Contains("HierarchySiteAccessPCIAdmin") ||
+                                     SessionManager.CurrentUserPermissions.Contains("MerchantSiteAccessPCIAdmin");
+                    var createUserResponse = PCIServiceClient.Instance.CreateUser(SessionManager.CurrentClient, new AS.VW.PCI.Api.Client.Models.Requests.CreateUserRequest
+                    {
+                        UserName = username,
+                        AsClient = user.ASClient.ToString(),
+                        Email = null,
+                        FirstName = user.UserNameFirst,
+                        LastName = user.UserNameLast,
+                        FullName = user.UserNameFull,
+                        Password = newPassword,
+                        PasswordType = user.UserPasswordType.ToString(),
+                        LoginQuestionIndex = user.LoginQuestionIndex,
+                        LoginQuestionAnswer = user.LoginQuestionAnswer,
+                        ActiveStatus = actvStatus,
+                        HierarchyIds = hierachyInPCI.ToString(),
+                        CreatedBy = user.CreatedBy.ToString(),
+                        UserSecRole = user.UserSecRole,
+                        PciAccess = pciAccess,
+                        EntityID = user.EntityID,
+                        EntityTypeID = user.EntityType.ToString()
+                    });
+                    var createUserData = createUserResponse != null ? createUserResponse.Data : null;
+                    if (createUserData != null && !string.IsNullOrEmpty(createUserData.RecId))
+                        user.RecId = new Guid(createUserData.RecId);
                 }
                 else
                 {
