@@ -10,6 +10,8 @@ using Newtonsoft.Json;
 using RestSharp;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.IO;
 using System.Net;
 
 namespace VW.PCI.Api.Client
@@ -17,7 +19,7 @@ namespace VW.PCI.Api.Client
     public class PCIServiceClient : VWRestClient, IPCIServiceClient
     {
         private const string ApiSource = "pci";
-        private const string ApiSettingFile = "pciSettings.xml";
+        private const string ApiSettingFileBase = "pciSettings.xml";
 
         private TokenProvider tokenProvider { get; set; }
 
@@ -30,6 +32,17 @@ namespace VW.PCI.Api.Client
 
         public static PCIServiceClient Instance => _lazyInstance.Value;
 
+        private static string GetApiSettingFile()
+        {
+            var postfix = ConfigurationManager.AppSettings["PciClientConfigPostfix"] ?? string.Empty;
+            if (string.IsNullOrEmpty(postfix))
+                return ApiSettingFileBase;
+
+            var envFile = string.Format("pciSettings{0}.xml", postfix);
+            var dir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "App_Data", "ApiSettings");
+            return File.Exists(Path.Combine(dir, envFile)) ? envFile : ApiSettingFileBase;
+        }
+
         /// <summary>
         /// Call once at application startup before first use.
         /// </summary>
@@ -39,7 +52,7 @@ namespace VW.PCI.Api.Client
         }
 
         public PCIServiceClient()
-            : base(VWLogger.Instance, ApiLoggingService.Instance, ApiSource, ApiSettingFile, PCIClientSettings.Instance)
+            : base(VWLogger.Instance, ApiLoggingService.Instance, ApiSource, GetApiSettingFile(), PCIClientSettings.Instance)
         {
             if (_tokenRepository == null)
                 throw new InvalidOperationException(
