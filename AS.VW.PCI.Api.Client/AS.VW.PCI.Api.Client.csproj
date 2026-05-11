@@ -83,7 +83,11 @@
     <Compile Include="Models\Responses\UpdSecRoleByUserIDResponse.cs" />
     <Compile Include="PCIServiceClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Providers\DbTokenRepository.cs" />
+    <Compile Include="Providers\ITokenRepository.cs" />
     <Compile Include="Providers\TokenProvider.cs" />
+    <Compile Include="Settings\PCIClientConfig.cs" />
+    <Compile Include="Settings\PCIClientConfigProvider.cs" />
     <Compile Include="Settings\PCIClientSettings.cs" />
   </ItemGroup>
   <ItemGroup>
