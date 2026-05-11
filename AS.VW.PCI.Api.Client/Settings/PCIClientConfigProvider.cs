@@ -1,6 +1,7 @@
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Linq;
 
@@ -26,12 +27,18 @@ namespace AS.VW.PCI.Api.Client.Settings
                 return config;
 
             throw new InvalidOperationException(
-                $"No PCI client config found for ApplicationId={applicationId}. Check App_Data/pciClients.json.");
+                $"No PCI client config found for ApplicationId={applicationId}. Check App_Data/PciClients/pciClients.json.");
         }
 
         private static Dictionary<int, PCIClientConfig> LoadConfigs()
         {
-            var path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "App_Data", "pciClients.json");
+            var baseDir = AppDomain.CurrentDomain.BaseDirectory;
+            var postfix = ConfigurationManager.AppSettings["PciClientConfigPostfix"] ?? string.Empty;
+
+            var envPath = Path.Combine(baseDir, "App_Data", "PciClients", $"pciClients{postfix}.json");
+            var fallbackPath = Path.Combine(baseDir, "App_Data", "PciClients", "pciClients.json");
+
+            var path = !string.IsNullOrEmpty(postfix) && File.Exists(envPath) ? envPath : fallbackPath;
 
             if (!File.Exists(path))
                 throw new FileNotFoundException($"PCI client config file not found at: {path}");
@@ -40,7 +47,7 @@ namespace AS.VW.PCI.Api.Client.Settings
             var file = JsonConvert.DeserializeObject<PCIClientConfigFile>(json);
 
             if (file?.Clients == null || file.Clients.Count == 0)
-                throw new InvalidOperationException("pciClients.json is empty or malformed.");
+                throw new InvalidOperationException($"{Path.GetFileName(path)} is empty or malformed.");
 
             return file.Clients.ToDictionary(c => c.ApplicationId);
         }
