@@ -2305,12 +2305,10 @@ public static partial class GeneralFuncsLib
                 PrimaryUserId = SessionManager.CurrentUser.EntityID
             });
             var masterMerchant = getMasterMerchantResponse != null ? getMasterMerchantResponse.Data : null;
-            if (masterMerchant != null)
+            if (masterMerchant != null && !masterMerchant.MerchantNumber.IsNullOrEmpty())
             {
-                string merchantNumber = masterMerchant.MerchantNumber;
-                bool isActiveMerchant = masterMerchant.Status;
-                if (isActiveMerchant && !merchantNumber.IsNullOrEmpty())
-                    paramUser.Add(new FilterParameter("@UserName", merchantNumber, DbType.AnsiString));
+                if (masterMerchant.Status)
+                    paramUser.Add(new FilterParameter("@UserName", masterMerchant.MerchantNumber, DbType.AnsiString));
                 else
                     isShowMsg = true;
             }
